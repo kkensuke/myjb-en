@@ -1,0 +1,75 @@
+# Table of contents
+format: jb-book
+root: intro
+
+defaults:  # The defaults key will be applied to all chapters and sub-sections
+  titlesonly: false
+#options:   # The options key will be applied to all chapters, but not sub-sections
+#  numbered: 3
+
+parts:
+  - numbered: 4
+    chapters:
+    - file: basic/basic # chapters need at least one file before sections.
+#     title:
+      sections:
+#      - glob: basic/* # cannot decide the order of files
+      - file: basic/packageManager
+      - file: basic/linux
+      - file: basic/alias
+      - file: basic/github/github
+      - file: basic/github/commitMessage
+      - file: basic/path
+      - file: basic/markdown
+    - file: python/python0
+      sections:
+      - file: python/python
+      - file: python/scipy
+      - file: python/sympy
+    # - file: qc/qc
+    #   sections:
+    #   - file: qc/basics
+    #   - file: qc/qiskit
+    #   - file: qc/pennylane
+    - file: jb/jb
+      sections:
+      - file: jb/mkjb
+      - file: jb/myst
+    - file: others/others
+      sections:
+      - file: others/usefulMacApps/usefulMacApps
+      - file: others/usefulFirefoxExtensions/usefulFirefoxExtensions
+      - file: others/usefulVScodeExtensions/usefulVScodeExtensions
+      - file: others/usefulWebApps/usefulWebApps
+#      - file: others/Latex
+
+
+
+# Examples of structure of jupyter-book
+
+# ex1
+# format: jb-book
+# root: index
+# parts:
+#   - caption: Name of Part 1 # capital letters
+#     chapters:
+#     - file: path/to/part1/chapter1
+#     - file: path/to/part1/chapter2
+#       sections:
+#       - file: path/to/part1/chapter2/section1
+#   - caption: Name of Part 2
+#     chapters:
+#     - file: path/to/part2/chapter1
+#     - file: path/to/part2/chapter2
+#       sections:
+#       - file: path/to/part2/chapter2/section1
+
+# ex2
+# format: jb-book
+# root: index
+# chapters:
+# - file: path/to/chapter1
+# - url: https://example.com # When a title: entry is provided its text is used instead of the full URL.
+#   title: Example website
+# - glob: subfolder/*
+
