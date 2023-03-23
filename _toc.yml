@@ -35,13 +35,13 @@ parts:
       sections:
       - file: jb/mkjb
       - file: jb/myst
-    - file: others/others
+    - file: tools/tools
       sections:
-      - file: others/usefulMacApps/usefulMacApps
-      - file: others/usefulFirefoxExtensions/usefulFirefoxExtensions
-      - file: others/usefulVScodeExtensions/usefulVScodeExtensions
-      - file: others/usefulWebApps/usefulWebApps
-#      - file: others/Latex
+      - file: tools/usefulMacApps/usefulMacApps
+      - file: tools/usefulFirefoxExtensions/usefulFirefoxExtensions
+      - file: tools/usefulVScodeExtensions/usefulVScodeExtensions
+      - file: tools/usefulWebApps/usefulWebApps
+#      - file: tools/Latex
 
 
 
