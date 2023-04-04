@@ -727,22 +727,18 @@ alias path=&#39;echo -e ${PATH//:/\\n}&#39;
 
 
 # edit files
+alias v=&#39;vi&#39;
 alias cp=&#39;cp -iv&#39;
 alias mv=&#39;mv -iv&#39;
 alias rm=&#39;rm -iv&#39;
-alias rmrf=&#39;rm -rf&#39;
+alias rf=&#39;rm -rf&#39;
 
 
 # others
-alias b=&#39;brew&#39;
 alias his=&#39;history&#39;
 alias grep=&#39;grep --color&#39;
 alias lns=&#39;ln -s&#39;
 alias rl=&#39;exec ${SHELL} -l&#39; #reload
-
-
-# vim
-alias v=&#39;vi&#39;
 
 
 # open apps
@@ -752,6 +748,12 @@ alias vs=&#39;code&#39;
 alias firefox=&#39;open /Applications/Firefox.app&#39;
 alias chrome=&#39;open /Applications/Google\ Chrome.app&#39;
 alias safari=&#39;open /Applications/Safari.app&#39;
+
+
+# zip encrypttion
+zipen(){
+	zip -er enc.zip &quot;$@&quot;
+}
 </pre></div>
 </div>
 </section>
