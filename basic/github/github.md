@@ -48,6 +48,7 @@ Second, execute the commands below on the local computer
 ```
 [mkdir project_name]
 [cd project_name]
+
 echo "# test" >> README.md
 
 # initialize the repository
@@ -72,12 +73,14 @@ git push -u origin main
 
 
 ### push an existing repository from the command line
-If you have already made (or initialized) a local repository, you just need to use the following commands after making a remote repository.
+If you have already made (or initialized) a local repository, you just need to use the following commands to link to the remote repository. If not, see the next section: Clone.
 ```
 git remote add origin https://github.com/<Username>/<repository>.git
 git branch -M main
 git push -u origin main
 ```
+
+You can make a repository more easily with GitHub CLI: [make new repository](mk-new-repo)
 
 ### Clone
 In an arbitrary directory,
@@ -96,17 +99,6 @@ $ git push origin main
 ($ git status)
 ```
 
-<!--
-### Defference between fork and clone
-#### clone
-リモートリポジトリをローカルリポジトリに複製すること
-#### fork
-他人のリポジトリを自分のアカウントのリモートリポジトリにコピーすること
-* オリジナルのリポジトリへの貢献が前提
-* forkした場合そのリポジトリを所有する開発者に通知される
-
-1. リポジトリAをfork2. forkしたリポジトリBをローカルにclone3. cloneしたリポジトリCで開発し、リポジトリBに反映4. リポジトリAの管理者にPull Requestを送信
--->
 
 ### take new changes of the remote repository into the local repository
 ```
@@ -240,12 +232,27 @@ $ git commit -m "delete"; git push origin main
 ```
 $ brew install gh
 ```
+
+(mk-new-repo)=
 ### make a new repository based on the current directory
 ```
 $ git init; git add .
 $ git commit -m "Initial commit"
 $ gh repo create --private --source=. --push'
 ```
+
+You can define an alias like this:
+```
+# make a new repository based on the current directory
+# $1 = private or public
+ginit() {
+	git init
+	git add .
+	git commit -m "🎉 Initial commit"
+	gh repo create --"$1" --source=. --push
+}
+```
+
 ### make an alias to delete remote repository
 #### register
 ```
