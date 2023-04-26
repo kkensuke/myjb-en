@@ -657,7 +657,7 @@ title="Print to PDF"
 </section>
 <section id="basics-commands">
 <h3><span class="section-number">1.2.1.2. </span>basics commands<a class="headerlink" href="#basics-commands" title="Permalink to this headline">#</a></h3>
-<p><code class="docutils literal notranslate"><span class="pre">pwd</span></code>:	show current directory</p>
+<p><code class="docutils literal notranslate"><span class="pre">pwd</span></code>:	show the current directory</p>
 <p><code class="docutils literal notranslate"><span class="pre">mkdir</span></code>: make directory</p>
 <div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>mkdir ~/tmp
 </pre></div>
@@ -773,7 +773,7 @@ mv file5 dir3
 <div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>mv dir1 dir4
 </pre></div>
 </div>
-<p><code class="docutils literal notranslate"><span class="pre">tree</span></code>: print contents of current directory in a tree-like format. You can use <code class="docutils literal notranslate"><span class="pre">tree</span> <span class="pre">-d</span></code> to print directory contents. You can use <code class="docutils literal notranslate"><span class="pre">tree</span> <span class="pre">-L</span></code> to print directory contents up to a certain level.
+<p><code class="docutils literal notranslate"><span class="pre">tree</span></code>: print contents of the current directory in a tree-like format. You can use <code class="docutils literal notranslate"><span class="pre">tree</span> <span class="pre">-d</span></code> to print directory contents. You can use <code class="docutils literal notranslate"><span class="pre">tree</span> <span class="pre">-L</span></code> to print directory contents up to a certain level.
 You have to install <code class="docutils literal notranslate"><span class="pre">tree</span></code> command in bash first.</p>
 <div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>brew install tree
 </pre></div>
@@ -905,31 +905,31 @@ ls file<span class="o">[</span><span class="m">0</span>-9<span class="o">]</span
 </pre></div>
 </div>
 <p><code class="docutils literal notranslate"><span class="pre">find</span></code>: find files and directories</p>
-<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span><span class="c1"># search current directory for filename(not recursively)</span>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span><span class="c1"># search the current directory for filename(not recursively)</span>
 find filename
 
 <span class="c1"># search target directory recursively for lecture0~lecture9 directories (cf. -type f)</span>
 find target -name lecture<span class="o">[</span><span class="m">0</span>-9<span class="o">]</span> -type d
 
-<span class="c1"># search current directory recursively for files accessed within 1 day(. represents current directory)</span>
+<span class="c1"># search the current directory recursively for files accessed within 1 day</span>
 find . -atime -1
 
-<span class="c1"># search current directory recursively for files modified within 1 day</span>
+<span class="c1"># search the current directory recursively for files modified within 1 day</span>
 find . -mtime -1
 
-<span class="c1"># search current directory recursively for files with size between 30kB and 1MB</span>
+<span class="c1"># search the current directory recursively for files with size between 30kB and 1MB</span>
 find . -size +30k -size -1M -name <span class="s1">&#39;*.py&#39;</span>
 
 <span class="c1"># search target directory recursively for files or directories that match condition1 and condition2 (cf. -or, -not)</span>
 find target condtion1 -and condition2
 
-<span class="c1"># search current directory recursively for .txt files and remove them all.</span>
+<span class="c1"># search the current directory recursively for .txt files and remove them all.</span>
 find . -name <span class="s1">&#39;*.txt&#39;</span> -exec rm <span class="o">{}</span> <span class="se">\;</span>
 </pre></div>
 </div>
 <p><code class="docutils literal notranslate"><span class="pre">grep</span></code>: search files for patterns</p>
 <div class="highlight-bash notranslate"><div class="highlight"><pre><span></span><span class="c1"># Search any line that contains `word` in filename</span>
-grep <span class="o">[</span>-Options<span class="o">]</span> <span class="s1">&#39;word&#39;</span> filename 
+grep <span class="o">[</span>-Options<span class="o">]</span> <span class="s1">&#39;word&#39;</span> filename
 
 grep <span class="s1">&#39;word&#39;</span> file1 file2 file3
 grep <span class="s1">&#39;string1 string2&#39;</span>  filename

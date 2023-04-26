@@ -6,7 +6,7 @@ In Mac, you can use the command line with `terminal.app`
 
 ## Basic
 
-To begin with, we check shortcuts. 
+To begin with, we check shortcuts.
 
 | Command | Description |
 | --- | --- |
@@ -35,7 +35,7 @@ There are 4 special symbols and each of them represents a location.
 
 ### basics commands
 
-`pwd`:	show current directory
+`pwd`:	show the current directory
 
 `mkdir`: make directory
 ```bash
@@ -58,7 +58,7 @@ ls
 # file
 ```
 
-`mkdir -p`; make parent directories as needed 
+`mkdir -p`; make parent directories as needed
 ```bash
 mkdir -p dir/subdir/ssubdir
 ls
@@ -167,7 +167,7 @@ mv dir1 dir4
 
 
 
-`tree`: print contents of current directory in a tree-like format. You can use `tree -d` to print directory contents. You can use `tree -L` to print directory contents up to a certain level.
+`tree`: print contents of the current directory in a tree-like format. You can use `tree -d` to print directory contents. You can use `tree -L` to print directory contents up to a certain level.
 You have to install `tree` command in bash first.
 ```bash
 brew install tree
@@ -275,32 +275,32 @@ ls file[0-9]+([0-9])
 
 `find`: find files and directories
 ```bash
-# search current directory for filename(not recursively)
+# search the current directory for filename(not recursively)
 find filename
 
 # search target directory recursively for lecture0~lecture9 directories (cf. -type f)
 find target -name lecture[0-9] -type d
 
-# search current directory recursively for files accessed within 1 day(. represents current directory)
+# search the current directory recursively for files accessed within 1 day
 find . -atime -1
 
-# search current directory recursively for files modified within 1 day
+# search the current directory recursively for files modified within 1 day
 find . -mtime -1
 
-# search current directory recursively for files with size between 30kB and 1MB
+# search the current directory recursively for files with size between 30kB and 1MB
 find . -size +30k -size -1M -name '*.py'
 
 # search target directory recursively for files or directories that match condition1 and condition2 (cf. -or, -not)
 find target condtion1 -and condition2
 
-# search current directory recursively for .txt files and remove them all.
+# search the current directory recursively for .txt files and remove them all.
 find . -name '*.txt' -exec rm {} \;
 ```
 
 `grep`: search files for patterns
 ```bash
 # Search any line that contains `word` in filename
-grep [-Options] 'word' filename 
+grep [-Options] 'word' filename
 
 grep 'word' file1 file2 file3
 grep 'string1 string2'  filename
@@ -359,7 +359,7 @@ A `pipe` and a `redirect` are techniques that connects two programs by sending o
 
 **pipeline**
 
-`|` stdout to stdin. Second command will take the stdout of the previous command as stdin. 
+`|` stdout to stdin. Second command will take the stdout of the previous command as stdin.
 
 ```bash
 history | head
@@ -427,7 +427,7 @@ command1 && command2
 command1 || command2
 ```
 
-**command using the other stdout** `$()` 
+**command using the other stdout** `$()`
 
 ```bash
 date +%Y%D
