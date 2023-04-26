@@ -38,9 +38,9 @@ $ sudo /usr/local/texlive/????/bin/*/tlmgr path add
 
 ## Setting for Japanese in VScode
 
-Install [`LaTeX Workshop`](https://marketplace.visualstudio.com/items?itemName=James-Yu.latex-workshop) extension.
+1. Install [`LaTeX Workshop`](https://marketplace.visualstudio.com/items?itemName=James-Yu.latex-workshop) extension.
 
-Open `settings.json` in VScode.
+2. Open `settings.json` in VScode.
 ```zsh
 $ code ~/Library/Application\ Support/Code/User/settings.json
 ```

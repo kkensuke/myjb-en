@@ -85,6 +85,8 @@ const thebe_selector_input = "pre"
 const thebe_selector_output = ".output, .cell_output"
 </script>
     <script async="async" src="../_static/sphinx-thebe.js"></script>
+    <script>window.MathJax = {"TeX": {"Macros": {"ket": ["|#1\\rangle", 1], "bra": ["\\langle#1|", 1]}}, "options": {"processHtmlClass": "tex2jax_process|mathjax_process|math|output_area"}}</script>
+    <script defer="defer" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
     <link rel="index" title="Index" href="../genindex.html" />
     <link rel="search" title="Search" href="../search.html" />
     <link rel="next" title="4. Jupyter Book" href="../jb/jb.html" />
@@ -497,6 +499,109 @@ title="Print to PDF"
                 
   <section class="tex2jax_ignore mathjax_ignore" id="preamble">
 <h1><span class="section-number">3.2. </span>Preamble<a class="headerlink" href="#preamble" title="Permalink to this headline">#</a></h1>
+<p>In <span class="math notranslate nohighlight">\(\Latex\)</span> preamble, we can load packages, define commands, and set some options for the document.</p>
+<p>Sometimes, you can’t use some packages due to the conflict between packages and document class. Thus you need change settings in the preamble according to the document class.</p>
+<p>You also have to care about the conflict between packages because you can’t use some packages together, or you need to load them in a specific order.</p>
+<p>We are going to see some examples of the preamble for some document classes.</p>
+<div class="highlight-latex notranslate"><div class="highlight"><pre><span></span><span class="c">% mathbb</span>
+<span class="k">\newcommand</span><span class="nb">{</span><span class="k">\bbA</span><span class="nb">}{</span><span class="k">\mathbb</span><span class="nb">{</span>A<span class="nb">}}</span>
+<span class="k">\newcommand</span><span class="nb">{</span><span class="k">\bbB</span><span class="nb">}{</span><span class="k">\mathbb</span><span class="nb">{</span>B<span class="nb">}}</span>
+<span class="k">\newcommand</span><span class="nb">{</span><span class="k">\bbC</span><span class="nb">}{</span><span class="k">\mathbb</span><span class="nb">{</span>C<span class="nb">}}</span>
+<span class="k">\newcommand</span><span class="nb">{</span><span class="k">\bbD</span><span class="nb">}{</span><span class="k">\mathbb</span><span class="nb">{</span>D<span class="nb">}}</span>
+<span class="k">\newcommand</span><span class="nb">{</span><span class="k">\bbE</span><span class="nb">}{</span><span class="k">\mathbb</span><span class="nb">{</span>E<span class="nb">}}</span>
+<span class="k">\newcommand</span><span class="nb">{</span><span class="k">\bbF</span><span class="nb">}{</span><span class="k">\mathbb</span><span class="nb">{</span>F<span class="nb">}}</span>
+<span class="k">\newcommand</span><span class="nb">{</span><span class="k">\bbG</span><span class="nb">}{</span><span class="k">\mathbb</span><span class="nb">{</span>G<span class="nb">}}</span>
+<span class="k">\newcommand</span><span class="nb">{</span><span class="k">\bbH</span><span class="nb">}{</span><span class="k">\mathbb</span><span class="nb">{</span>H<span class="nb">}}</span>
+<span class="k">\newcommand</span><span class="nb">{</span><span class="k">\bbI</span><span class="nb">}{</span><span class="k">\mathbb</span><span class="nb">{</span>I<span class="nb">}}</span>
+<span class="k">\newcommand</span><span class="nb">{</span><span class="k">\bbJ</span><span class="nb">}{</span><span class="k">\mathbb</span><span class="nb">{</span>J<span class="nb">}}</span>
+<span class="k">\newcommand</span><span class="nb">{</span><span class="k">\bbK</span><span class="nb">}{</span><span class="k">\mathbb</span><span class="nb">{</span>K<span class="nb">}}</span>
+<span class="k">\newcommand</span><span class="nb">{</span><span class="k">\bbL</span><span class="nb">}{</span><span class="k">\mathbb</span><span class="nb">{</span>L<span class="nb">}}</span>
+<span class="k">\newcommand</span><span class="nb">{</span><span class="k">\bbM</span><span class="nb">}{</span><span class="k">\mathbb</span><span class="nb">{</span>M<span class="nb">}}</span>
+<span class="k">\newcommand</span><span class="nb">{</span><span class="k">\bbN</span><span class="nb">}{</span><span class="k">\mathbb</span><span class="nb">{</span>N<span class="nb">}}</span>
+<span class="k">\newcommand</span><span class="nb">{</span><span class="k">\bbO</span><span class="nb">}{</span><span class="k">\mathbb</span><span class="nb">{</span>O<span class="nb">}}</span>
+<span class="k">\newcommand</span><span class="nb">{</span><span class="k">\bbP</span><span class="nb">}{</span><span class="k">\mathbb</span><span class="nb">{</span>P<span class="nb">}}</span>
+<span class="k">\newcommand</span><span class="nb">{</span><span class="k">\bbQ</span><span class="nb">}{</span><span class="k">\mathbb</span><span class="nb">{</span>Q<span class="nb">}}</span>
+<span class="k">\newcommand</span><span class="nb">{</span><span class="k">\bbR</span><span class="nb">}{</span><span class="k">\mathbb</span><span class="nb">{</span>R<span class="nb">}}</span>
+<span class="k">\newcommand</span><span class="nb">{</span><span class="k">\bbS</span><span class="nb">}{</span><span class="k">\mathbb</span><span class="nb">{</span>S<span class="nb">}}</span>
+<span class="k">\newcommand</span><span class="nb">{</span><span class="k">\bbT</span><span class="nb">}{</span><span class="k">\mathbb</span><span class="nb">{</span>T<span class="nb">}}</span>
+<span class="k">\newcommand</span><span class="nb">{</span><span class="k">\bbU</span><span class="nb">}{</span><span class="k">\mathbb</span><span class="nb">{</span>U<span class="nb">}}</span>
+<span class="k">\newcommand</span><span class="nb">{</span><span class="k">\bbV</span><span class="nb">}{</span><span class="k">\mathbb</span><span class="nb">{</span>V<span class="nb">}}</span>
+<span class="k">\newcommand</span><span class="nb">{</span><span class="k">\bbW</span><span class="nb">}{</span><span class="k">\mathbb</span><span class="nb">{</span>W<span class="nb">}}</span>
+<span class="k">\newcommand</span><span class="nb">{</span><span class="k">\bbX</span><span class="nb">}{</span><span class="k">\mathbb</span><span class="nb">{</span>X<span class="nb">}}</span>
+<span class="k">\newcommand</span><span class="nb">{</span><span class="k">\bbY</span><span class="nb">}{</span><span class="k">\mathbb</span><span class="nb">{</span>Y<span class="nb">}}</span>
+<span class="k">\newcommand</span><span class="nb">{</span><span class="k">\bbZ</span><span class="nb">}{</span><span class="k">\mathbb</span><span class="nb">{</span>Z<span class="nb">}}</span>
+
+<span class="c">% \mathcal</span>
+<span class="k">\newcommand</span><span class="nb">{</span><span class="k">\calA</span><span class="nb">}{</span><span class="k">\mathcal</span><span class="nb">{</span>A<span class="nb">}}</span>
+<span class="k">\newcommand</span><span class="nb">{</span><span class="k">\calB</span><span class="nb">}{</span><span class="k">\mathcal</span><span class="nb">{</span>B<span class="nb">}}</span>
+<span class="k">\newcommand</span><span class="nb">{</span><span class="k">\calC</span><span class="nb">}{</span><span class="k">\mathcal</span><span class="nb">{</span>C<span class="nb">}}</span>
+<span class="k">\newcommand</span><span class="nb">{</span><span class="k">\calD</span><span class="nb">}{</span><span class="k">\mathcal</span><span class="nb">{</span>D<span class="nb">}}</span>
+<span class="k">\newcommand</span><span class="nb">{</span><span class="k">\calE</span><span class="nb">}{</span><span class="k">\mathcal</span><span class="nb">{</span>E<span class="nb">}}</span>
+<span class="k">\newcommand</span><span class="nb">{</span><span class="k">\calF</span><span class="nb">}{</span><span class="k">\mathcal</span><span class="nb">{</span>F<span class="nb">}}</span>
+<span class="k">\newcommand</span><span class="nb">{</span><span class="k">\calG</span><span class="nb">}{</span><span class="k">\mathcal</span><span class="nb">{</span>G<span class="nb">}}</span>
+<span class="k">\newcommand</span><span class="nb">{</span><span class="k">\calH</span><span class="nb">}{</span><span class="k">\mathcal</span><span class="nb">{</span>H<span class="nb">}}</span>
+<span class="k">\newcommand</span><span class="nb">{</span><span class="k">\calI</span><span class="nb">}{</span><span class="k">\mathcal</span><span class="nb">{</span>I<span class="nb">}}</span>
+<span class="k">\newcommand</span><span class="nb">{</span><span class="k">\calJ</span><span class="nb">}{</span><span class="k">\mathcal</span><span class="nb">{</span>J<span class="nb">}}</span>
+<span class="k">\newcommand</span><span class="nb">{</span><span class="k">\calK</span><span class="nb">}{</span><span class="k">\mathcal</span><span class="nb">{</span>K<span class="nb">}}</span>
+<span class="k">\newcommand</span><span class="nb">{</span><span class="k">\calL</span><span class="nb">}{</span><span class="k">\mathcal</span><span class="nb">{</span>L<span class="nb">}}</span>
+<span class="k">\newcommand</span><span class="nb">{</span><span class="k">\calM</span><span class="nb">}{</span><span class="k">\mathcal</span><span class="nb">{</span>M<span class="nb">}}</span>
+<span class="k">\newcommand</span><span class="nb">{</span><span class="k">\calN</span><span class="nb">}{</span><span class="k">\mathcal</span><span class="nb">{</span>N<span class="nb">}}</span>
+<span class="k">\newcommand</span><span class="nb">{</span><span class="k">\calO</span><span class="nb">}{</span><span class="k">\mathcal</span><span class="nb">{</span>O<span class="nb">}}</span>
+<span class="k">\newcommand</span><span class="nb">{</span><span class="k">\calP</span><span class="nb">}{</span><span class="k">\mathcal</span><span class="nb">{</span>P<span class="nb">}}</span>
+<span class="k">\newcommand</span><span class="nb">{</span><span class="k">\calQ</span><span class="nb">}{</span><span class="k">\mathcal</span><span class="nb">{</span>Q<span class="nb">}}</span>
+<span class="k">\newcommand</span><span class="nb">{</span><span class="k">\calR</span><span class="nb">}{</span><span class="k">\mathcal</span><span class="nb">{</span>R<span class="nb">}}</span>
+<span class="k">\newcommand</span><span class="nb">{</span><span class="k">\calS</span><span class="nb">}{</span><span class="k">\mathcal</span><span class="nb">{</span>S<span class="nb">}}</span>
+<span class="k">\newcommand</span><span class="nb">{</span><span class="k">\calT</span><span class="nb">}{</span><span class="k">\mathcal</span><span class="nb">{</span>T<span class="nb">}}</span>
+<span class="k">\newcommand</span><span class="nb">{</span><span class="k">\calU</span><span class="nb">}{</span><span class="k">\mathcal</span><span class="nb">{</span>U<span class="nb">}}</span>
+<span class="k">\newcommand</span><span class="nb">{</span><span class="k">\calV</span><span class="nb">}{</span><span class="k">\mathcal</span><span class="nb">{</span>V<span class="nb">}}</span>
+<span class="k">\newcommand</span><span class="nb">{</span><span class="k">\calW</span><span class="nb">}{</span><span class="k">\mathcal</span><span class="nb">{</span>W<span class="nb">}}</span>
+<span class="k">\newcommand</span><span class="nb">{</span><span class="k">\calX</span><span class="nb">}{</span><span class="k">\mathcal</span><span class="nb">{</span>X<span class="nb">}}</span>
+<span class="k">\newcommand</span><span class="nb">{</span><span class="k">\calY</span><span class="nb">}{</span><span class="k">\mathcal</span><span class="nb">{</span>Y<span class="nb">}}</span>
+<span class="k">\newcommand</span><span class="nb">{</span><span class="k">\calZ</span><span class="nb">}{</span><span class="k">\mathcal</span><span class="nb">{</span>Z<span class="nb">}}</span>
+
+<span class="c">% multiplicative group</span>
+<span class="k">\newcommand</span><span class="nb">{</span><span class="k">\Zx</span><span class="nb">}{</span><span class="k">\Z</span><span class="nb">^</span><span class="k">\times</span><span class="nb">}</span>
+<span class="k">\newcommand</span><span class="nb">{</span><span class="k">\Qx</span><span class="nb">}{</span><span class="k">\Q</span><span class="nb">^</span><span class="k">\times</span><span class="nb">}</span>
+<span class="k">\newcommand</span><span class="nb">{</span><span class="k">\Rx</span><span class="nb">}{</span><span class="k">\R</span><span class="nb">^</span><span class="k">\times</span><span class="nb">}</span>
+<span class="k">\newcommand</span><span class="nb">{</span><span class="k">\Cx</span><span class="nb">}{</span><span class="k">\C</span><span class="nb">^</span><span class="k">\times</span><span class="nb">}</span>
+
+<span class="c">% non-negative</span>
+<span class="k">\newcommand</span><span class="nb">{</span><span class="k">\Znn</span><span class="nb">}{</span><span class="k">\Z</span><span class="nb">_{</span><span class="k">\ge</span>0<span class="nb">}}</span>
+<span class="k">\newcommand</span><span class="nb">{</span><span class="k">\Qnn</span><span class="nb">}{</span><span class="k">\Q</span><span class="nb">_{</span><span class="k">\ge</span>0<span class="nb">}}</span>
+<span class="k">\newcommand</span><span class="nb">{</span><span class="k">\Rnn</span><span class="nb">}{</span><span class="k">\R</span><span class="nb">_{</span><span class="k">\ge</span>0<span class="nb">}}</span>
+
+<span class="c">% positive</span>
+<span class="k">\newcommand</span><span class="nb">{</span><span class="k">\Zpo</span><span class="nb">}{</span><span class="k">\Z</span><span class="nb">_{</span>&gt;0<span class="nb">}}</span>
+<span class="k">\newcommand</span><span class="nb">{</span><span class="k">\Qpo</span><span class="nb">}{</span><span class="k">\Q</span><span class="nb">_{</span>&gt;0<span class="nb">}}</span>
+<span class="k">\newcommand</span><span class="nb">{</span><span class="k">\Rpo</span><span class="nb">}{</span><span class="k">\R</span><span class="nb">_{</span>&gt;0<span class="nb">}}</span>
+
+<span class="c">% MathOperator</span>
+<span class="k">\DeclareMathOperator</span><span class="nb">{</span><span class="k">\sgn</span><span class="nb">}{</span>sgn<span class="nb">}</span>
+<span class="k">\DeclareMathOperator</span><span class="nb">{</span><span class="k">\sign</span><span class="nb">}{</span>sign<span class="nb">}</span>
+<span class="k">\DeclareMathOperator</span><span class="nb">{</span><span class="k">\Supp</span><span class="nb">}{</span>Supp<span class="nb">}</span>
+<span class="k">\DeclareMathOperator</span><span class="nb">{</span><span class="k">\diag</span><span class="nb">}{</span>diag<span class="nb">}</span>
+<span class="k">\DeclareMathOperator</span><span class="nb">{</span><span class="k">\E</span><span class="nb">}{</span>E<span class="nb">}</span>
+<span class="k">\DeclareMathOperator</span><span class="nb">{</span><span class="k">\Var</span><span class="nb">}{</span>Var<span class="nb">}</span>
+<span class="k">\DeclareMathOperator</span><span class="nb">{</span><span class="k">\Cov</span><span class="nb">}{</span>Cov<span class="nb">}</span>
+<span class="k">\DeclareMathOperator</span><span class="nb">{</span><span class="k">\poly</span><span class="nb">}{</span>poly<span class="nb">}</span>
+<span class="k">\DeclareMathOperator</span><span class="nb">{</span><span class="k">\SWAP</span><span class="nb">}{</span>SWAP<span class="nb">}</span>
+<span class="k">\DeclareMathOperator</span><span class="nb">{</span><span class="k">\Hom</span><span class="nb">}{</span>Hom<span class="nb">}</span>
+<span class="k">\DeclareMathOperator</span><span class="nb">{</span><span class="k">\Aut</span><span class="nb">}{</span>Aut<span class="nb">}</span>
+<span class="k">\DeclareMathOperator</span><span class="nb">{</span><span class="k">\End</span><span class="nb">}{</span>End<span class="nb">}</span>
+<span class="c">% limit type</span>
+<span class="k">\DeclareMathOperator*</span><span class="nb">{</span><span class="k">\argmin</span><span class="nb">}{</span>arg~min<span class="nb">}</span>
+<span class="k">\DeclareMathOperator*</span><span class="nb">{</span><span class="k">\argmax</span><span class="nb">}{</span>arg~max<span class="nb">}</span>
+
+<span class="c">% others</span>
+<span class="k">\renewcommand</span><span class="nb">{</span><span class="k">\bar</span><span class="nb">}</span>[1]<span class="nb">{</span><span class="k">\overline</span><span class="nb">{</span>#1<span class="nb">}}</span>
+<span class="k">\newcommand</span><span class="nb">{</span><span class="k">\combi</span><span class="nb">}</span>[2]<span class="nb">{{}_{</span>#1<span class="nb">}</span><span class="k">\text</span><span class="nb">{</span>C<span class="nb">}_{</span>#2<span class="nb">}}</span>
+<span class="k">\newcommand</span><span class="nb">{</span><span class="k">\dg</span><span class="nb">}{^</span><span class="k">\dagger</span><span class="nb">}</span>
+<span class="k">\newcommand</span><span class="nb">{</span><span class="k">\fa</span><span class="nb">}{{}^</span><span class="k">\forall</span><span class="nb">}</span>
+<span class="k">\newcommand</span><span class="nb">{</span><span class="k">\ex</span><span class="nb">}{{}^</span><span class="k">\exists</span><span class="nb">}</span>
+<span class="k">\newcommand</span><span class="nb">{</span><span class="k">\pd</span><span class="nb">}{</span><span class="k">\partial</span><span class="nb">}</span>
+<span class="k">\newcommand</span><span class="nb">{</span><span class="k">\then</span><span class="nb">}{</span><span class="k">\;\Longrightarrow\;</span><span class="nb">}</span>
+</pre></div>
+</div>
 </section>
 
     <script type="text/x-thebe-config">
