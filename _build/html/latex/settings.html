@@ -6,7 +6,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
 
-    <title>3.1. How to use latex in VScode &#8212; My note</title>
+    <title>3.1. Latex settings in VScode &#8212; My note</title>
     
   <!-- Loaded before other Sphinx assets -->
   <link href="../_static/styles/theme.css?digest=1999514e3f237ded88cf" rel="stylesheet">
@@ -235,7 +235,7 @@ const thebe_selector_output = ".output, .cell_output"
   <ul class="current">
    <li class="toctree-l2 current active">
     <a class="current reference internal" href="#">
-     3.1. How to use latex in VScode
+     3.1. Latex settings in VScode
     </a>
    </li>
    <li class="toctree-l2">
@@ -503,6 +503,11 @@ title="Print to PDF"
    3.1.2. Setting for Japanese in VScode
   </a>
  </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#make-a-template-directory">
+   3.1.3. Make a template directory
+  </a>
+ </li>
 </ul>
 
     </nav>
@@ -512,7 +517,7 @@ title="Print to PDF"
         <div class="col pl-md-3 pl-lg-5 content-container">
             <!-- Table of contents that is only displayed when printing the page -->
             <div id="jb-print-docs-body" class="onlyprint">
-                <h1>How to use latex in VScode</h1>
+                <h1>Latex settings in VScode</h1>
                 <!-- Table of contents -->
                 <div id="print-main-content">
                     <div id="jb-print-toc">
@@ -532,6 +537,11 @@ title="Print to PDF"
    3.1.2. Setting for Japanese in VScode
   </a>
  </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#make-a-template-directory">
+   3.1.3. Make a template directory
+  </a>
+ </li>
 </ul>
 
                         </nav>
@@ -542,8 +552,8 @@ title="Print to PDF"
                 
               <div>
                 
-  <section class="tex2jax_ignore mathjax_ignore" id="how-to-use-latex-in-vscode">
-<h1><span class="section-number">3.1. </span>How to use latex in VScode<a class="headerlink" href="#how-to-use-latex-in-vscode" title="Permalink to this headline">#</a></h1>
+  <section class="tex2jax_ignore mathjax_ignore" id="latex-settings-in-vscode">
+<h1><span class="section-number">3.1. </span>Latex settings in VScode<a class="headerlink" href="#latex-settings-in-vscode" title="Permalink to this headline">#</a></h1>
 <section id="install-texlive">
 <h2><span class="section-number">3.1.1. </span>Install TexLive<a class="headerlink" href="#install-texlive" title="Permalink to this headline">#</a></h2>
 <p>Download <code class="docutils literal notranslate"><span class="pre">install-tl-unx.tar.gz</span></code></p>
@@ -639,6 +649,41 @@ You have two recipes, <code class="docutils literal notranslate"><span class="pr
 <span class="w">    </span><span class="nt">&quot;latex-workshop.synctex.afterBuild.enabled&quot;</span><span class="p">:</span><span class="w"> </span><span class="kc">true</span><span class="p">,</span><span class="w"></span>
 <span class="w">    </span><span class="nt">&quot;latex-workshop.view.pdf.viewer&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;tab&quot;</span><span class="p">,</span><span class="w"></span>
 <span class="p">}</span><span class="w"></span>
+</pre></div>
+</div>
+</section>
+<section id="make-a-template-directory">
+<h2><span class="section-number">3.1.3. </span>Make a template directory<a class="headerlink" href="#make-a-template-directory" title="Permalink to this headline">#</a></h2>
+<p>Let’s make a test latex directory. Please download <code class="docutils literal notranslate"><span class="pre">.latex-report-template</span></code> from <a class="reference external" href="https://github.com/kkensuke/setting/tree/main/.home">here</a>. (remove the dot in the name when saving)</p>
+<p>The directory structure is as follows:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>latex-report-template
+|-- img/
+|-- preamble.tex
+|-- main.tex
+|-- main.pdf
+|-- ref.bib
+`-- sections/
+    |-- intro.tex
+    |-- method.tex
+    ...
+    `-- appendix.tex
+</pre></div>
+</div>
+<p>You can divide your <code class="docutils literal notranslate"><span class="pre">.tex</span></code> files into several files as above and include them in <code class="docutils literal notranslate"><span class="pre">main.tex</span></code> as follows:</p>
+<div class="highlight-latex notranslate"><div class="highlight"><pre><span></span><span class="k">\begin</span><span class="nb">{</span>document<span class="nb">}</span>
+<span class="k">\maketitle</span>
+...
+
+<span class="k">\input</span><span class="nb">{</span>sections/intro.tex<span class="nb">}</span>
+<span class="k">\input</span><span class="nb">{</span>sections/method.tex<span class="nb">}</span>
+...
+<span class="k">\newpage</span>
+<span class="k">\bibliographystyle</span><span class="nb">{</span>abbrv<span class="nb">}</span>
+<span class="k">\bibliography</span><span class="nb">{</span>ref<span class="nb">}</span>
+<span class="k">\newpage</span>
+<span class="k">\input</span><span class="nb">{</span>sections/appendix.tex<span class="nb">}</span>
+
+<span class="k">\end</span><span class="nb">{</span>document<span class="nb">}</span>
 </pre></div>
 </div>
 </section>

@@ -1,4 +1,4 @@
-# How to use latex in VScode
+# Latex settings in VScode
 
 ## Install TexLive
 
@@ -103,3 +103,39 @@ You have two recipes, `ptex2pdf*3` and `ptex2pdf -> pbibtex -> ptex2pdf*2`. The 
 }
 ```
 
+
+## Make a template directory
+Let's make a test latex directory. Please download `.latex-report-template` from [here](https://github.com/kkensuke/setting/tree/main/.home). (remove the dot in the name when saving)
+
+The directory structure is as follows:
+```
+latex-report-template
+|-- img/
+|-- preamble.tex
+|-- main.tex
+|-- main.pdf
+|-- ref.bib
+`-- sections/
+    |-- intro.tex
+    |-- method.tex
+    ...
+    `-- appendix.tex
+```
+
+You can divide your `.tex` files into several files as above and include them in `main.tex` as follows:
+```latex
+\begin{document}
+\maketitle
+...
+
+\input{sections/intro.tex}
+\input{sections/method.tex}
+...
+\newpage
+\bibliographystyle{abbrv}
+\bibliography{ref}
+\newpage
+\input{sections/appendix.tex}
+
+\end{document}
+```
