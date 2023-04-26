@@ -1,13 +1,13 @@
 ---
 title: GitHub
-summary: 
+summary:
 description: Usage of GitHub
 author: kkensuke
 date: 2022-07-06
 some_url:
 tags:
-  - 
-  - 
+  -
+  -
 ---
 # GitHub
 
@@ -17,14 +17,28 @@ tags:
 :align: center
 ```
 
-## VCS (version control system)
-When developing source code or documentation, VCS(version control system) is a system that not only saves the latest state but also saves the state at every moments so that it can be referred back to or restored later.
-Program development does not necessarily proceed in a straight line from ver1 to ver2.
-Sometimes a program is divided into two or more branches: a stable version that maintains the current state and only fixes problems, and a development versions that actively adds new functions.
-Git has a branching mechanism that allows you to branch projects and develop each branches, and also allows you to merge the branched projects.
+## Git (version control system, VSC)
+Git is a popular version control system used by developers to manage source code changes and collaborate on software development projects. It allows multiple people to work on the same codebase simultaneously and track changes made over time.
 
-## Local repository and remote repository
-There are two types of repositories: `local repositories` on your PC and `remote repositories` on a shared server. Each repository stores the history of changes and other information. This type of management is called distributed version control.
+A local repository in Git is a copy of the codebase that is stored on a developer's computer. When changes are made to the codebase, they are tracked locally using Git, and the developer can commit those changes to their local repository. This allows developers to experiment with new code changes and make revisions without affecting the codebase that other developers are working on.
+
+A remote repository, on the other hand, is a copy of the codebase that is stored on a remote server. Developers can push their local changes to the remote repository to share them with others on the team. This allows everyone on the team to see the latest changes made to the codebase and collaborate more effectively.
+
+The key difference between local and remote repositories is that local repositories are stored on a developer's computer, while remote repositories are stored on a server that can be accessed by multiple developers. Both local and remote repositories are essential to a Git workflow, as they allow developers to work on code changes independently while still keeping everyone on the team up to date with the latest changes.
+
+Here are some key terms and concepts related to Git:
+
+- Repository: A repository is a collection of files and folders that are tracked by Git. It is usually located on a server and can be accessed by multiple developers.
+- Clone: To clone a repository means to create a local copy of the repository on your own computer.
+- Add: When you add a file to a Git repository, you are telling Git to start tracking changes to that file.
+- Commit: A commit is a snapshot of the changes you have made to the files in your repository. When you commit changes, you are creating a permanent record of those changes.
+- Push: Pushing changes means sending your committed changes to the remote repository (i.e., the server where the repository is stored). This makes your changes visible to other team members who are also working on the same repository.
+- Pull: Pulling changes means retrieving changes from the remote repository and updating your local repository with those changes. This is typically done before making changes to ensure that your local repository is up-to-date with the latest changes made by other team members.
+- Branch: A branch is a separate line of development that allows you to work on changes independently of the main codebase. This can be useful when you want to experiment with new features without affecting the main codebase.
+- Merge: Merging is the process of combining changes from one branch into another. This is typically done when a feature is complete and ready to be integrated into the main codebase.
+
+These are just a few of the most common terms and concepts used in Git. Learning Git can take some time, but it's an important skill for any developer working on a team.
+
 
 ## Basic commands
 ### Create a new repository
@@ -34,6 +48,7 @@ Second, execute the commands below on the local computer
 ```
 [mkdir project_name]
 [cd project_name]
+
 echo "# test" >> README.md
 
 # initialize the repository
@@ -54,16 +69,18 @@ git push -u origin main
 
 `git init` makes repository, or `.git`, in the current directory.
 
-`git init project_name` makes a directory named project_name and `.git` in it. 
+`git init project_name` makes a directory named project_name and `.git` in it.
 
 
 ### push an existing repository from the command line
-If you have already made (or initialized) a local repository, you just need to use the following commands after making a remote repository.
+If you have already made (or initialized) a local repository, you just need to use the following commands to link to the remote repository. If not, see the next section: Clone.
 ```
 git remote add origin https://github.com/<Username>/<repository>.git
 git branch -M main
 git push -u origin main
 ```
+
+You can make a repository more easily with GitHub CLI: [make new repository](mk-new-repo)
 
 ### Clone
 In an arbitrary directory,
@@ -82,17 +99,6 @@ $ git push origin main
 ($ git status)
 ```
 
-<!--
-### Defference between fork and clone
-#### clone
-リモートリポジトリをローカルリポジトリに複製すること
-#### fork
-他人のリポジトリを自分のアカウントのリモートリポジトリにコピーすること
-* オリジナルのリポジトリへの貢献が前提
-* forkした場合そのリポジトリを所有する開発者に通知される
-
-1. リポジトリAをfork2. forkしたリポジトリBをローカルにclone3. cloneしたリポジトリCで開発し、リポジトリBに反映4. リポジトリAの管理者にPull Requestを送信
--->
 
 ### take new changes of the remote repository into the local repository
 ```
@@ -110,7 +116,7 @@ $ git merge origin main
 ### make a branch and change branches at local
 
 When you make a repository, the only main branch exists at first.
-So, you are in the main branch by default. 
+So, you are in the main branch by default.
 
 You can check the current branch by
 ```
@@ -181,7 +187,7 @@ for macOS :
 
 - one time
 ```
-$ git config --global core.excludesfile ~/.gitignore_global       
+$ git config --global core.excludesfile ~/.gitignore_global
 $ echo "function gi() { curl -sLw "\n" https://www.toptal.com/developers/gitignore/api/\$@ ;}" >> \
 ~/.rc && source ~/.rc
 ```
@@ -226,12 +232,27 @@ $ git commit -m "delete"; git push origin main
 ```
 $ brew install gh
 ```
+
+(mk-new-repo)=
 ### make a new repository based on the current directory
 ```
 $ git init; git add .
 $ git commit -m "Initial commit"
 $ gh repo create --private --source=. --push'
 ```
+
+You can define an alias like this:
+```
+# make a new repository based on the current directory
+# $1 = private or public
+ginit() {
+	git init
+	git add .
+	git commit -m "🎉 Initial commit"
+	gh repo create --"$1" --source=. --push
+}
+```
+
 ### make an alias to delete remote repository
 #### register
 ```

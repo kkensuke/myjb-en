@@ -46,22 +46,18 @@ alias path='echo -e ${PATH//:/\\n}'
 
 
 # edit files
+alias v='vi'
 alias cp='cp -iv'
 alias mv='mv -iv'
 alias rm='rm -iv'
-alias rmrf='rm -rf'
+alias rf='rm -rf'
 
 
 # others
-alias b='brew'
 alias his='history'
 alias grep='grep --color'
 alias lns='ln -s'
 alias rl='exec ${SHELL} -l' #reload
-
-
-# vim
-alias v='vi'
 
 
 # open apps
@@ -71,6 +67,12 @@ alias vs='code'
 alias firefox='open /Applications/Firefox.app'
 alias chrome='open /Applications/Google\ Chrome.app'
 alias safari='open /Applications/Safari.app'
+
+
+# zip encrypttion
+zipen(){
+	zip -er enc.zip "$@"
+}
 ```
 
 ## Mac OS settings

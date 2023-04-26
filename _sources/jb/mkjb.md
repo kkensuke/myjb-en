@@ -28,7 +28,7 @@ You can see that you are using python in the venv.
 
 ### Update pip:
 ```zsh
-$ /Users/<home>/jupyter-book/test-book/venv/bin/python3 -m pip install --upgrade pip
+$ /Users/<Username>/jupyter-book/test-book/venv/bin/python3 -m pip install --upgrade pip
 ```
 
 Install jupyter-book package
@@ -54,7 +54,7 @@ git init
 git add .
 git commit -m "first commit"
 git branch -M main
-git remote add origin https://github.com/Username/test-book.git
+git remote add origin https://github.com/<Username>/test-book.git
 git push -u origin main
 ```
 
@@ -64,7 +64,7 @@ $ ghp-import -n -p -f _build/html
 ```
 
 You can see the published website!
-https://Username.github.io/test-book
+https://<Username>.github.io/test-book
 
 
 ## Update
@@ -81,8 +81,6 @@ Update GitHub Pages
 ```zsh
 $ ghp-import -n -p -f _build/html
 ```
-
-%Command `jbgh test-book` concludes all command needed for update. See [jbgh](../basic/alias#build-and-publish-a-jupyter-book)
 
 
 ## Other ways to create jb
