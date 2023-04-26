@@ -8,6 +8,7 @@ You also have to care about the conflict between packages because you can't use 
 
 We are going to see some examples of the preamble for some document classes.
 
+You can download all the files in this page from [here](https://github.com/kkensuke/setting/tree/main/.home)(remove the dot in the name when saving).
 
 ## article
 ```latex
