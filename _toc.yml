@@ -26,6 +26,10 @@ parts:
       - file: python/python
       - file: python/scipy
       - file: python/sympy
+    - file: latex/latex
+      sections:
+      - file: latex/settings
+      - file: latex/preamble
     # - file: qc/qc
     #   sections:
     #   - file: qc/basics
