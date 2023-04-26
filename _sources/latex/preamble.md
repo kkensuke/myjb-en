@@ -9,7 +9,7 @@ You also have to care about the conflict between packages because you can't use 
 We are going to see some examples of the preamble for some document classes.
 
 
-## Article
+## article
 ```latex
 \usepackage[top=15truemm,bottom=15truemm,left=15truemm,right=15truemm]{geometry}
 \usepackage[dvipdfmx]{graphicx,hyperref,xcolor}
@@ -79,7 +79,7 @@ asdf asdf asdf asdf asdf asdf
 
 
 
-## Paper
+## revtex4-2
 ```latex
 \usepackage[top=15truemm,bottom=15truemm,left=15truemm,right=15truemm]{geometry}
 \usepackage[dvipdfmx]{graphicx,hyperref,xcolor}
