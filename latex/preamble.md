@@ -57,7 +57,7 @@ We are going to see some examples of the preamble for some document classes.
 % ---------------------------------------------------------------------------- %
 ```
 
-The contents of `main.tex` is as follows:
+The contents of `main.tex`:
 ```latex
 \documentclass[12pt]{article}
 \input{preamble}
@@ -129,7 +129,7 @@ asdf asdf asdf asdf asdf asdf
 
 
 
-The contents of `main.tex` is as follows:
+The contents of `main.tex`:
 ```latex
 \documentclass[dvipdfmx,twocolumn,preprintnumbers,superscriptaddress,nofootinbib]{revtex4-2}
 % landscape
@@ -257,7 +257,7 @@ asdf asdf asdf asdf asdf asdf
 
 
 
-The contents of `main.tex` is as follows:
+The contents of `main.tex`:
 ```latex
 \documentclass[10pt,aspectratio=169]{beamer}
 
