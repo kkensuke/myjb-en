@@ -1,6 +1,6 @@
-# Beamer
+# beamer
 
-`preamble.tex`:
+## `preamble.tex`:
 ```latex
 \usepackage{bm,mathtools,mathrsfs}
 \usepackage{algorithm,algorithmic}
@@ -85,7 +85,7 @@
 
 
 
-`main.tex`:
+## `main.tex`:
 ```latex
 \documentclass[10pt,aspectratio=169]{beamer}
 
