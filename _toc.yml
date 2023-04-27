@@ -30,6 +30,9 @@ parts:
       sections:
       - file: latex/settings
       - file: latex/preamble
+      - file: latex/article
+      - file: latex/paper
+      - file: latex/beamer
     # - file: qc/qc
     #   sections:
     #   - file: qc/basics
