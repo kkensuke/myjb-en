@@ -1,6 +1,6 @@
 # article
 
-`preamble.tex`:
+## `preamble.tex`:
 ```latex
 \usepackage[top=15truemm,bottom=15truemm,left=15truemm,right=15truemm]{geometry}
 \usepackage[dvipdfmx]{graphicx,hyperref,xcolor}
@@ -49,7 +49,7 @@
 ```
 
 
-`main.tex`:
+## `main.tex`:
 ```latex
 \documentclass[12pt]{article}
 \input{preamble}
