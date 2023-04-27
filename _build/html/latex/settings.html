@@ -85,6 +85,8 @@ const thebe_selector_input = "pre"
 const thebe_selector_output = ".output, .cell_output"
 </script>
     <script async="async" src="../_static/sphinx-thebe.js"></script>
+    <script>window.MathJax = {"TeX": {"Macros": {"ket": ["|#1\\rangle", 1], "bra": ["\\langle#1|", 1]}}, "options": {"processHtmlClass": "tex2jax_process|mathjax_process|math|output_area"}}</script>
+    <script defer="defer" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
     <link rel="index" title="Index" href="../genindex.html" />
     <link rel="search" title="Search" href="../search.html" />
     <link rel="next" title="3.2. Preamble" href="preamble.html" />
@@ -524,8 +526,12 @@ title="Print to PDF"
   </a>
  </li>
  <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#make-a-template-directory">
-   3.1.3. Make a template directory
+  <a class="reference internal nav-link" href="#lets-compile-your-latex-file">
+   3.1.3. Let’s compile your
+   <span class="math notranslate nohighlight">
+    \(\LaTeX\)
+   </span>
+   file!
   </a>
  </li>
 </ul>
@@ -558,8 +564,12 @@ title="Print to PDF"
   </a>
  </li>
  <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#make-a-template-directory">
-   3.1.3. Make a template directory
+  <a class="reference internal nav-link" href="#lets-compile-your-latex-file">
+   3.1.3. Let’s compile your
+   <span class="math notranslate nohighlight">
+    \(\LaTeX\)
+   </span>
+   file!
   </a>
  </li>
 </ul>
@@ -672,8 +682,8 @@ You have two recipes, <code class="docutils literal notranslate"><span class="pr
 </pre></div>
 </div>
 </section>
-<section id="make-a-template-directory">
-<h2><span class="section-number">3.1.3. </span>Make a template directory<a class="headerlink" href="#make-a-template-directory" title="Permalink to this headline">#</a></h2>
+<section id="lets-compile-your-latex-file">
+<h2><span class="section-number">3.1.3. </span>Let’s compile your <span class="math notranslate nohighlight">\(\LaTeX\)</span> file!<a class="headerlink" href="#lets-compile-your-latex-file" title="Permalink to this headline">#</a></h2>
 <p>Let’s make a test latex directory. Please download <code class="docutils literal notranslate"><span class="pre">.latex-report-template</span></code> from <a class="reference external" href="https://github.com/kkensuke/setting/tree/main/.home">here</a>(remove the dot in the name when saving). Then, open the directory in VScode. You can edit <code class="docutils literal notranslate"><span class="pre">main.tex</span></code> and compile it by typing <code class="docutils literal notranslate"><span class="pre">cmd</span> <span class="pre">+</span> <span class="pre">S</span></code> (Mac). Finally, you will get modified <code class="docutils literal notranslate"><span class="pre">main.pdf</span></code> in the same directory.</p>
 <p>The directory structure is as follows:</p>
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span>latex-report-template
