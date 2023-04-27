@@ -122,7 +122,7 @@ latex-report-template
     `-- appendix.tex
 ```
 
-You can divide your `.tex` files into several files as above and include them in `main.tex` as follows:
+You can divide your `main.tex` into several files as above and include them in `main.tex` as follows:
 ```latex
 \begin{document}
 \maketitle
