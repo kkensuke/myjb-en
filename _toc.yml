@@ -31,8 +31,9 @@ parts:
       - file: latex/settings
       - file: latex/preamble
       - file: latex/article
-      - file: latex/paper
+      - file: latex/revtex4-2
       - file: latex/beamer
+      - file: latex/newcommands
     # - file: qc/qc
     #   sections:
     #   - file: qc/basics

@@ -6,7 +6,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
 
-    <title>3.3. article &#8212; My note</title>
+    <title>3.4. revtex4-2 &#8212; My note</title>
     
   <!-- Loaded before other Sphinx assets -->
   <link href="../_static/styles/theme.css?digest=1999514e3f237ded88cf" rel="stylesheet">
@@ -87,8 +87,8 @@ const thebe_selector_output = ".output, .cell_output"
     <script async="async" src="../_static/sphinx-thebe.js"></script>
     <link rel="index" title="Index" href="../genindex.html" />
     <link rel="search" title="Search" href="../search.html" />
-    <link rel="next" title="3.4. revtex4-2" href="revtex4-2.html" />
-    <link rel="prev" title="3.2. Preamble" href="preamble.html" />
+    <link rel="next" title="3.5. Beamer" href="beamer.html" />
+    <link rel="prev" title="3.3. article" href="article.html" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="docsearch:language" content="en">
     
@@ -243,13 +243,13 @@ const thebe_selector_output = ".output, .cell_output"
      3.2. Preamble
     </a>
    </li>
-   <li class="toctree-l2 current active">
-    <a class="current reference internal" href="#">
+   <li class="toctree-l2">
+    <a class="reference internal" href="article.html">
      3.3. article
     </a>
    </li>
-   <li class="toctree-l2">
-    <a class="reference internal" href="revtex4-2.html">
+   <li class="toctree-l2 current active">
+    <a class="current reference internal" href="#">
      3.4. revtex4-2
     </a>
    </li>
@@ -409,7 +409,7 @@ title="Source repository"
       </li>
       
       <li>
-        <a href="https://github.com/kkensuke/myjb/issues/new?title=Issue%20on%20page%20%2Flatex/article.html&body=Your%20issue%20content%20here."
+        <a href="https://github.com/kkensuke/myjb/issues/new?title=Issue%20on%20page%20%2Flatex/revtex4-2.html&body=Your%20issue%20content%20here."
    class="headerbtn"
    data-toggle="tooltip"
 data-placement="left"
@@ -426,7 +426,7 @@ title="Open an issue"
       </li>
       
       <li>
-        <a href="https://github.com/kkensuke/myjb/edit/main//latex/article.md"
+        <a href="https://github.com/kkensuke/myjb/edit/main//latex/revtex4-2.md"
    class="headerbtn"
    data-toggle="tooltip"
 data-placement="left"
@@ -454,7 +454,7 @@ title="Edit this page"
   <div class="menu-dropdown__content">
     <ul>
       <li>
-        <a href="../_sources/latex/article.md"
+        <a href="../_sources/latex/revtex4-2.md"
    class="headerbtn"
    data-toggle="tooltip"
 data-placement="left"
@@ -503,7 +503,7 @@ title="Print to PDF"
         <div class="col pl-md-3 pl-lg-5 content-container">
             <!-- Table of contents that is only displayed when printing the page -->
             <div id="jb-print-docs-body" class="onlyprint">
-                <h1>article</h1>
+                <h1>revtex4-2</h1>
                 <!-- Table of contents -->
                 <div id="print-main-content">
                     <div id="jb-print-toc">
@@ -515,8 +515,8 @@ title="Print to PDF"
                 
               <div>
                 
-  <section class="tex2jax_ignore mathjax_ignore" id="article">
-<h1><span class="section-number">3.3. </span>article<a class="headerlink" href="#article" title="Permalink to this headline">#</a></h1>
+  <section class="tex2jax_ignore mathjax_ignore" id="revtex4-2">
+<h1><span class="section-number">3.4. </span>revtex4-2<a class="headerlink" href="#revtex4-2" title="Permalink to this headline">#</a></h1>
 <p><code class="docutils literal notranslate"><span class="pre">preamble.tex</span></code>:</p>
 <div class="highlight-latex notranslate"><div class="highlight"><pre><span></span><span class="k">\usepackage</span><span class="na">[top=15truemm,bottom=15truemm,left=15truemm,right=15truemm]</span><span class="nb">{</span>geometry<span class="nb">}</span>
 <span class="k">\usepackage</span><span class="na">[dvipdfmx]</span><span class="nb">{</span>graphicx,hyperref,xcolor<span class="nb">}</span>
@@ -525,17 +525,17 @@ title="Print to PDF"
 <span class="k">\usepackage</span><span class="nb">{</span>algorithm,algorithmic<span class="nb">}</span>
 <span class="k">\usepackage</span><span class="nb">{</span>physics<span class="nb">}</span>
 <span class="k">\usepackage</span><span class="nb">{</span>tikz<span class="nb">}</span>
-<span class="k">\usepackage</span><span class="nb">{</span>authblk<span class="nb">}</span>
+<span class="k">\usepackage</span><span class="nb">{</span>quantikz<span class="nb">}</span>
 <span class="k">\usepackage</span><span class="nb">{</span>comment<span class="nb">}</span>
 <span class="k">\usepackage</span><span class="nb">{</span>here<span class="nb">}</span>
+<span class="k">\usepackage</span><span class="nb">{</span>dcolumn<span class="nb">}</span><span class="c">% Align table columns on decimal point</span>
 
 
 <span class="c">% style setting</span>
 <span class="c">% ---------------------------------------------------------------------------- %</span>
 <span class="k">\allowdisplaybreaks</span><span class="na">[1]</span>
-<span class="k">\renewcommand\Authfont</span><span class="nb">{</span><span class="k">\fontsize</span><span class="nb">{</span>14<span class="nb">}{</span>14.4<span class="nb">}</span><span class="k">\selectfont</span><span class="nb">}</span>
-<span class="k">\renewcommand\Affilfont</span><span class="nb">{</span><span class="k">\fontsize</span><span class="nb">{</span>10<span class="nb">}{</span>10.8<span class="nb">}</span><span class="k">\itshape</span><span class="nb">}</span>
-<span class="k">\renewcommand</span><span class="nb">{</span><span class="k">\baselinestretch</span><span class="nb">}{</span>1.25<span class="nb">}</span>
+<span class="k">\renewcommand</span><span class="nb">{</span><span class="k">\baselinestretch</span><span class="nb">}{</span>1<span class="nb">}</span>
+<span class="k">\renewcommand</span><span class="nb">{</span><span class="k">\abstractname</span><span class="nb">}{</span><span class="k">\vspace</span><span class="nb">{</span>-<span class="k">\baselineskip</span><span class="nb">}}</span>
 <span class="c">% ---------------------------------------------------------------------------- %</span>
 
 
@@ -565,17 +565,38 @@ title="Print to PDF"
 </pre></div>
 </div>
 <p><code class="docutils literal notranslate"><span class="pre">main.tex</span></code>:</p>
-<div class="highlight-latex notranslate"><div class="highlight"><pre><span></span><span class="k">\documentclass</span><span class="na">[12pt]</span><span class="nb">{</span>article<span class="nb">}</span>
+<div class="highlight-latex notranslate"><div class="highlight"><pre><span></span><span class="k">\documentclass</span><span class="na">[dvipdfmx,twocolumn,preprintnumbers,superscriptaddress,nofootinbib]</span><span class="nb">{</span>revtex4-2<span class="nb">}</span>
+<span class="c">% landscape</span>
+<span class="c">% footinbib for PRL</span>
+
 <span class="k">\input</span><span class="nb">{</span>preamble<span class="nb">}</span>
 <span class="k">\allowdisplaybreaks</span><span class="na">[1]</span>
 
-<span class="k">\title</span><span class="nb">{</span>Title<span class="nb">}</span>
-<span class="k">\author</span><span class="nb">{</span>Author<span class="nb">}</span>
-<span class="k">\affil</span><span class="nb">{</span>Dept.<span class="k">\ </span>of Physics, The University of Asdf, address<span class="nb">}</span>
-<span class="k">\date</span><span class="nb">{</span><span class="k">\today</span><span class="nb">}</span>
 <span class="k">\begin</span><span class="nb">{</span>document<span class="nb">}</span>
+
+
+<span class="k">\title</span><span class="nb">{</span>Asdf of asdf for asdf<span class="nb">}</span>
+
+<span class="k">\author</span><span class="nb">{</span>Qwerty Qwerty<span class="nb">}</span>
+    <span class="k">\email</span><span class="na">[]</span><span class="nb">{</span>qwerty(at)asdf.asdf.ac.jp<span class="nb">}</span>
+    <span class="k">\affiliation</span><span class="nb">{</span>
+    Dept.<span class="k">\ </span>of Physics, The University of Qwerty, address
+    <span class="nb">}</span>
+
+    <span class="k">\author</span><span class="nb">{</span>Asdf Asdf<span class="nb">}</span>
+    <span class="k">\email</span><span class="na">[]</span><span class="nb">{</span>asdf(at)asdf.asdf.ac.jp<span class="nb">}</span>
+    <span class="k">\affiliation</span><span class="nb">{</span>
+    Dept.<span class="k">\ </span>of Physics, The University of Asdf, address
+    <span class="nb">}</span>
+
+<span class="k">\date</span><span class="nb">{</span><span class="k">\today</span><span class="nb">}</span>
+
+<span class="k">\begin</span><span class="nb">{</span>abstract<span class="nb">}</span>
+    abstract abstract abstract abstract abstract abstract abstract abstract abstract abstract abstract abstract abstract abstract abstract abstract abstract abstract abstract abstract abstract abstract abstract abstract abstract abstract abstract abstract abstract abstract abstract abstract abstract abstract abstract abstract abstract abstract abstract abstract abstract abstract abstract abstract abstract abstract abstract abstract abstract abstract abstract abstract abstract.
+<span class="k">\end</span><span class="nb">{</span>abstract<span class="nb">}</span>
+
 <span class="k">\maketitle</span>
-<span class="k">\tableofcontents</span>
+
 
 <span class="k">\section</span><span class="nb">{</span>Introduction<span class="nb">}</span>
 asdf asdf asdf asdf asdf asdf
@@ -612,17 +633,17 @@ asdf asdf asdf asdf asdf asdf
                 
     <!-- Previous / next buttons -->
 <div class='prev-next-area'>
-    <a class='left-prev' id="prev-link" href="preamble.html" title="previous page">
+    <a class='left-prev' id="prev-link" href="article.html" title="previous page">
         <i class="fas fa-angle-left"></i>
         <div class="prev-next-info">
             <p class="prev-next-subtitle">previous</p>
-            <p class="prev-next-title"><span class="section-number">3.2. </span>Preamble</p>
+            <p class="prev-next-title"><span class="section-number">3.3. </span>article</p>
         </div>
     </a>
-    <a class='right-next' id="next-link" href="revtex4-2.html" title="next page">
+    <a class='right-next' id="next-link" href="beamer.html" title="next page">
     <div class="prev-next-info">
         <p class="prev-next-subtitle">next</p>
-        <p class="prev-next-title"><span class="section-number">3.4. </span>revtex4-2</p>
+        <p class="prev-next-title"><span class="section-number">3.5. </span>Beamer</p>
     </div>
     <i class="fas fa-angle-right"></i>
     </a>
