@@ -104,7 +104,7 @@ You have two recipes, `ptex2pdf*3` and `ptex2pdf -> pbibtex -> ptex2pdf*2`. The 
 ```
 
 
-## Make a template directory
+## Let's compile your $\LaTeX$ file!
 Let's make a test latex directory. Please download `.latex-report-template` from [here](https://github.com/kkensuke/setting/tree/main/.home)(remove the dot in the name when saving). Then, open the directory in VScode. You can edit `main.tex` and compile it by typing `cmd + S` (Mac). Finally, you will get modified `main.pdf` in the same directory.
 
 The directory structure is as follows:
