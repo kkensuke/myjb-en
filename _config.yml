@@ -117,6 +117,7 @@ sphinx:
 #    - extension2
   local_extensions          :             # A list of local extensions to load by sphinx specified by "name: path" items
   config                    :             # key-value pairs to directly over-ride the Sphinx configuration
+    html_theme              :             # sphinx_book_theme
     language                : en          # en for English, ja for Japanese https://www.sphinx-doc.org/en/master/usage/configuration.html#confval-language
     bibtex_reference_style  : author_year # and label, super
     mathjax_path            : https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js
