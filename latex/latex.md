@@ -4,7 +4,7 @@
 
 $\LaTeX$ settings for VSCode.
 
-## [Preamble](./preamble.md)
+## Preamble
 
 In a `preamble.tex`, we can load packages, define commands, and set some options for the document.
 
