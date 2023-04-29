@@ -2,7 +2,7 @@
 
 The following is a list of my favorite newcommands. You can use them regardless of the document class. Aadd them to your preamble if you find them useful.
 
-## `preamble.tex`:
+## `preamble.tex`
 ```latex
 %% Latin abbreviations
 % ---------------------------------------------------------------------------- %

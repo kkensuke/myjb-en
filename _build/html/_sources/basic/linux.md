@@ -28,10 +28,10 @@ To begin with, we check shortcuts.
 
 There are 4 special symbols and each of them represents a location.
 
-/	root dir\
-\.	current dir\
-\.\.	parent dir\
-~	home dir
+`/`	root dir\
+`.`	current dir\
+`..` parent dir\
+`~`	home dir
 
 ### basics commands
 
