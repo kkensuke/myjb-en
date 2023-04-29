@@ -1,6 +1,6 @@
 # Preamble
 
-In $\LaTeX$ preamble, we can load packages, define commands, and set some options for the document.
+In a `preamble.tex`, we can load packages, define commands, and set some options for the document.
 
 Sometimes, you can't use some packages due to the conflicts between packages and document class. So, you need change settings in the preamble according to the document class.
 

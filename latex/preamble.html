@@ -85,8 +85,6 @@ const thebe_selector_input = "pre"
 const thebe_selector_output = ".output, .cell_output"
 </script>
     <script async="async" src="../_static/sphinx-thebe.js"></script>
-    <script>window.MathJax = {"TeX": {"Macros": {"ket": ["|#1\\rangle", 1], "bra": ["\\langle#1|", 1]}}, "options": {"processHtmlClass": "tex2jax_process|mathjax_process|math|output_area"}}</script>
-    <script defer="defer" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
     <link rel="index" title="Index" href="../genindex.html" />
     <link rel="search" title="Search" href="../search.html" />
     <link rel="next" title="3.3. article" href="article.html" />
@@ -519,7 +517,7 @@ title="Print to PDF"
                 
   <section class="tex2jax_ignore mathjax_ignore" id="preamble">
 <h1><span class="section-number">3.2. </span>Preamble<a class="headerlink" href="#preamble" title="Permalink to this headline">#</a></h1>
-<p>In <span class="math notranslate nohighlight">\(\LaTeX\)</span> preamble, we can load packages, define commands, and set some options for the document.</p>
+<p>In a <code class="docutils literal notranslate"><span class="pre">preamble.tex</span></code>, we can load packages, define commands, and set some options for the document.</p>
 <p>Sometimes, you can’t use some packages due to the conflicts between packages and document class. So, you need change settings in the preamble according to the document class.</p>
 <p>You also have to care about the conflicts between packages themselves because you can’t use some packages together, or you need to load them in a specific order.</p>
 <p>We are going to see some examples of the preamble for some document classes.</p>

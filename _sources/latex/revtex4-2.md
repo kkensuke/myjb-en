@@ -1,6 +1,6 @@
 # revtex4-2
 
-## `preamble.tex`:
+## `preamble.tex`
 ```latex
 \usepackage[top=15truemm,bottom=15truemm,left=15truemm,right=15truemm]{geometry}
 \usepackage[dvipdfmx]{graphicx,hyperref,xcolor}
@@ -50,7 +50,7 @@
 
 
 
-## `main.tex`:
+## `main.tex`
 ```latex
 \documentclass[dvipdfmx,twocolumn,preprintnumbers,superscriptaddress,nofootinbib]{revtex4-2}
 % landscape
