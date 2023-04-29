@@ -29,7 +29,6 @@ parts:
     - file: latex/latex
       sections:
       - file: latex/settings
-      - file: latex/preamble
       - file: latex/article
       - file: latex/revtex4-2
       - file: latex/beamer
