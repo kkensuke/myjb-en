@@ -14,7 +14,7 @@
 
 ### Constants
 
-- Constants are usually defined on a module level and written in all capital letters with underscores separating words. Examples: `MAX_OVERFLOW`, `TOTAL`.
+- Constants are usually defined on a module level and written in all capital letters with underscores separating words. Examples: `MAX_OVERFLOW`
 
 ### Variable Names
 
@@ -41,4 +41,4 @@ Unlike Python, `camelCase` is used for naming variables and functions in other p
 
 ## Abbreviations
 
-🚫 Don’t abbreviate names unless the abbreviation is widely used and understood. Recommended abbreviations are given [here](https://github.com/abbrcode/abbreviations-in-code).
+🚫 Don’t abbreviate names unless they are widely used. Recommended abbreviations are given [here](https://github.com/abbrcode/abbreviations-in-code).
