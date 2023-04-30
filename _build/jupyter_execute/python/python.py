@@ -23,7 +23,7 @@
 # In jupyter lab(notebook), a code block is called a `cell`. A cell can contain multiple lines of code.
 # To execute the code, click on the cell(colored in blue(jupyter notebook:green)) and press `Shift+Enter` key.
 
-# In[2]:
+# In[1]:
 
 
 print("Hello, world!")
@@ -35,7 +35,7 @@ print("Hello, world!")
 # 
 # If you want to comment out multiple lines, you can use `""" """` to write comments (actually, this is called docstrings).
 
-# In[1]:
+# In[2]:
 
 
 # This is a comment. No output.
@@ -51,7 +51,7 @@ print("Hello, world!")
 
 # ### Arithmetic operations
 
-# In[1]:
+# In[3]:
 
 
 print(1+1)
