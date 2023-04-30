@@ -6,4 +6,4 @@
 - [LettuceMeet](https://lettucemeet.com/)
 - [Link Lock](https://jstrieb.github.io/link-lock/create/)
 - [Online timer](https://vclock.com/timer/)
-- [PDF compressor](https://www.ilovepdf.com/compress_pdf)
+- [PDF compressor](https://www.ilovepdf.com/compress_pdf)]

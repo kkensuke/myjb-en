@@ -9,7 +9,6 @@
 \usepackage{algorithm,algorithmic}
 \usepackage{physics}
 \usepackage{tikz}
-\usepackage{quantikz}
 \usepackage{comment}
 \usepackage{here}
 \usepackage{dcolumn}% Align table columns on decimal point
