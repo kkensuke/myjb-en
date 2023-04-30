@@ -1,4 +1,4 @@
-# Others
+# Tools
 
 - [Useful Mac Apps](usefulMacApps/usefulMacApps.md)
 - [Useful Firefox Extensions](usefulFirefoxExtensions/usefulFirefoxExtensions.md)

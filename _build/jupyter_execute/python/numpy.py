@@ -11,7 +11,7 @@
 import numpy as np
 
 
-# ## Create a numpy array
+# ## Create numpy arrays
 
 # A basic way to create a `np.array` is to use the array function. It takes a list as an argument and returns a numpy array.
 
