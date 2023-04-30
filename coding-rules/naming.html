@@ -6,7 +6,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
 
-    <title>1.6. $PATH &#8212; My note</title>
+    <title>3.1. Naming Conventions &#8212; My note</title>
     
   <!-- Loaded before other Sphinx assets -->
   <link href="../_static/styles/theme.css?digest=1999514e3f237ded88cf" rel="stylesheet">
@@ -87,8 +87,8 @@ const thebe_selector_output = ".output, .cell_output"
     <script async="async" src="../_static/sphinx-thebe.js"></script>
     <link rel="index" title="Index" href="../genindex.html" />
     <link rel="search" title="Search" href="../search.html" />
-    <link rel="next" title="1.7. Markdown" href="markdown.html" />
-    <link rel="prev" title="1.5. Commit Masssages with emoji" href="github/commitMessage.html" />
+    <link rel="next" title="4. Latex" href="../latex/latex.html" />
+    <link rel="prev" title="3. Coding rules" href="coding-rules.html" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="docsearch:language" content="en">
     
@@ -149,48 +149,48 @@ const thebe_selector_output = ".output, .cell_output"
 </form><nav class="bd-links" id="bd-docs-nav" aria-label="Main">
     <div class="bd-toc-item active">
         <ul class="current nav bd-sidenav">
- <li class="toctree-l1 current active has-children">
-  <a class="reference internal" href="basic.html">
+ <li class="toctree-l1 has-children">
+  <a class="reference internal" href="../basic/basic.html">
    1. Programming basics
   </a>
-  <input checked="" class="toctree-checkbox" id="toctree-checkbox-1" name="toctree-checkbox-1" type="checkbox"/>
+  <input class="toctree-checkbox" id="toctree-checkbox-1" name="toctree-checkbox-1" type="checkbox"/>
   <label for="toctree-checkbox-1">
    <i class="fas fa-chevron-down">
    </i>
   </label>
-  <ul class="current">
+  <ul>
    <li class="toctree-l2">
-    <a class="reference internal" href="packageManager.html">
+    <a class="reference internal" href="../basic/packageManager.html">
      1.1. Homebrew and venv
     </a>
    </li>
    <li class="toctree-l2">
-    <a class="reference internal" href="linux.html">
+    <a class="reference internal" href="../basic/linux.html">
      1.2. Command line
     </a>
    </li>
    <li class="toctree-l2">
-    <a class="reference internal" href="alias.html">
+    <a class="reference internal" href="../basic/alias.html">
      1.3. Alias
     </a>
    </li>
    <li class="toctree-l2">
-    <a class="reference internal" href="github/github.html">
+    <a class="reference internal" href="../basic/github/github.html">
      1.4. GitHub
     </a>
    </li>
    <li class="toctree-l2">
-    <a class="reference internal" href="github/commitMessage.html">
+    <a class="reference internal" href="../basic/github/commitMessage.html">
      1.5. Commit Masssages with emoji
     </a>
    </li>
-   <li class="toctree-l2 current active">
-    <a class="current reference internal" href="#">
+   <li class="toctree-l2">
+    <a class="reference internal" href="../basic/path.html">
      1.6. $PATH
     </a>
    </li>
    <li class="toctree-l2">
-    <a class="reference internal" href="markdown.html">
+    <a class="reference internal" href="../basic/markdown.html">
      1.7. Markdown
     </a>
    </li>
@@ -223,18 +223,18 @@ const thebe_selector_output = ".output, .cell_output"
    </li>
   </ul>
  </li>
- <li class="toctree-l1 has-children">
-  <a class="reference internal" href="../coding-rules/coding-rules.html">
+ <li class="toctree-l1 current active has-children">
+  <a class="reference internal" href="coding-rules.html">
    3. Coding rules
   </a>
-  <input class="toctree-checkbox" id="toctree-checkbox-3" name="toctree-checkbox-3" type="checkbox"/>
+  <input checked="" class="toctree-checkbox" id="toctree-checkbox-3" name="toctree-checkbox-3" type="checkbox"/>
   <label for="toctree-checkbox-3">
    <i class="fas fa-chevron-down">
    </i>
   </label>
-  <ul>
-   <li class="toctree-l2">
-    <a class="reference internal" href="../coding-rules/naming.html">
+  <ul class="current">
+   <li class="toctree-l2 current active">
+    <a class="current reference internal" href="#">
      3.1. Naming Conventions
     </a>
    </li>
@@ -421,7 +421,7 @@ title="Source repository"
       </li>
       
       <li>
-        <a href="https://github.com/kkensuke/myjb/issues/new?title=Issue%20on%20page%20%2Fbasic/path.html&body=Your%20issue%20content%20here."
+        <a href="https://github.com/kkensuke/myjb/issues/new?title=Issue%20on%20page%20%2Fcoding-rules/naming.html&body=Your%20issue%20content%20here."
    class="headerbtn"
    data-toggle="tooltip"
 data-placement="left"
@@ -438,7 +438,7 @@ title="Open an issue"
       </li>
       
       <li>
-        <a href="https://github.com/kkensuke/myjb/edit/main//basic/path.md"
+        <a href="https://github.com/kkensuke/myjb/edit/main//coding-rules/naming.md"
    class="headerbtn"
    data-toggle="tooltip"
 data-placement="left"
@@ -466,7 +466,7 @@ title="Edit this page"
   <div class="menu-dropdown__content">
     <ul>
       <li>
-        <a href="../_sources/basic/path.md"
+        <a href="../_sources/coding-rules/naming.md"
    class="headerbtn"
    data-toggle="tooltip"
 data-placement="left"
@@ -526,26 +526,56 @@ title="Print to PDF"
     <nav id="bd-toc-nav" aria-label="Page">
         <ul class="visible nav section-nav flex-column">
  <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#add-command-search-path">
-   1.6.1. Add command search path
-  </a>
- </li>
- <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#environmental-variables">
-   1.6.2. Environmental variables
+  <a class="reference internal nav-link" href="#naming-conventions-in-python">
+   3.1.1. Naming Conventions in Python
   </a>
   <ul class="nav section-nav flex-column">
    <li class="toc-h3 nav-item toc-entry">
-    <a class="reference internal nav-link" href="#make-a-new-environmental-variable">
-     1.6.2.1. make a new environmental variable
+    <a class="reference internal nav-link" href="#package-names">
+     3.1.1.1. Package Names
     </a>
    </li>
    <li class="toc-h3 nav-item toc-entry">
-    <a class="reference internal nav-link" href="#remove-a-environmental-variable">
-     1.6.2.2. Remove a environmental variable
+    <a class="reference internal nav-link" href="#module-names">
+     3.1.1.2. Module Names
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#constants">
+     3.1.1.3. Constants
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#variable-names">
+     3.1.1.4. Variable Names
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#function-names">
+     3.1.1.5. Function Names
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#class-names">
+     3.1.1.6. Class Names
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#method-names-and-instance-variables">
+     3.1.1.7. Method Names and Instance Variables
     </a>
    </li>
   </ul>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#naming-conventions-in-other-programming-languages">
+   3.1.2. Naming conventions in Other programming languages
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#abbreviations">
+   3.1.3. Abbreviations
+  </a>
  </li>
 </ul>
 
@@ -556,7 +586,7 @@ title="Print to PDF"
         <div class="col pl-md-3 pl-lg-5 content-container">
             <!-- Table of contents that is only displayed when printing the page -->
             <div id="jb-print-docs-body" class="onlyprint">
-                <h1>$PATH</h1>
+                <h1>Naming Conventions</h1>
                 <!-- Table of contents -->
                 <div id="print-main-content">
                     <div id="jb-print-toc">
@@ -567,26 +597,56 @@ title="Print to PDF"
                         <nav aria-label="Page">
                             <ul class="visible nav section-nav flex-column">
  <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#add-command-search-path">
-   1.6.1. Add command search path
-  </a>
- </li>
- <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#environmental-variables">
-   1.6.2. Environmental variables
+  <a class="reference internal nav-link" href="#naming-conventions-in-python">
+   3.1.1. Naming Conventions in Python
   </a>
   <ul class="nav section-nav flex-column">
    <li class="toc-h3 nav-item toc-entry">
-    <a class="reference internal nav-link" href="#make-a-new-environmental-variable">
-     1.6.2.1. make a new environmental variable
+    <a class="reference internal nav-link" href="#package-names">
+     3.1.1.1. Package Names
     </a>
    </li>
    <li class="toc-h3 nav-item toc-entry">
-    <a class="reference internal nav-link" href="#remove-a-environmental-variable">
-     1.6.2.2. Remove a environmental variable
+    <a class="reference internal nav-link" href="#module-names">
+     3.1.1.2. Module Names
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#constants">
+     3.1.1.3. Constants
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#variable-names">
+     3.1.1.4. Variable Names
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#function-names">
+     3.1.1.5. Function Names
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#class-names">
+     3.1.1.6. Class Names
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#method-names-and-instance-variables">
+     3.1.1.7. Method Names and Instance Variables
     </a>
    </li>
   </ul>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#naming-conventions-in-other-programming-languages">
+   3.1.2. Naming conventions in Other programming languages
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#abbreviations">
+   3.1.3. Abbreviations
+  </a>
  </li>
 </ul>
 
@@ -598,70 +658,64 @@ title="Print to PDF"
                 
               <div>
                 
-  <section class="tex2jax_ignore mathjax_ignore" id="path">
-<h1><span class="section-number">1.6. </span>$PATH<a class="headerlink" href="#path" title="Permalink to this headline">#</a></h1>
-<p>A path usually indicates a string to identify a location of a file/directory in a directory tree.
-PATH is one of the environmental variables and is little different from the path explained above.</p>
-<p>When you input a command in the shell, the shell has to find and run the command. PATH specifies the places the shell should search for a command you input.</p>
-<p>To see the PATH, run <code class="docutils literal notranslate"><span class="pre">echo</span> <span class="pre">$PATH</span></code>:</p>
-<div class="highlight-zsh notranslate"><div class="highlight"><pre><span></span><span class="nb">echo</span> <span class="nv">$PATH</span>
-<span class="c1"># /usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin</span>
-</pre></div>
-</div>
-<p>The result shows PATH holds some directories (colon is a separator): <code class="docutils literal notranslate"><span class="pre">/usr/local/bin</span></code>, <code class="docutils literal notranslate"><span class="pre">/usr/bin</span></code>, <code class="docutils literal notranslate"><span class="pre">/bin</span></code>, <code class="docutils literal notranslate"><span class="pre">/usr/sbin</span></code>, <code class="docutils literal notranslate"><span class="pre">/sbin</span></code></p>
-<div class="admonition tip">
-<p class="admonition-title">Tip</p>
-<p>You can see other environmental variables with <code class="docutils literal notranslate"><span class="pre">printenv</span></code></p>
-</div>
-<p>When you input a command, the shell searches <code class="docutils literal notranslate"><span class="pre">/usr/local/bin</span></code> at first. If the shell finds a command, it runs the command. If not, then it searches <code class="docutils literal notranslate"><span class="pre">/usr/bin</span></code>. If it finds the command, it runs the command. If not, then it searches <code class="docutils literal notranslate"><span class="pre">/bin</span></code>. This flow repeats until it finds and runs the command. So only the command found at first is run. If the shell could not find the command in all the directories in PATH, the shell returns <code class="docutils literal notranslate"><span class="pre">zsh:</span> <span class="pre">command</span> <span class="pre">not</span> <span class="pre">found:</span> <span class="pre">xxx</span></code>.</p>
-<p>Command <code class="docutils literal notranslate"><span class="pre">which</span></code> shows the directories where (for example) the <code class="docutils literal notranslate"><span class="pre">ls</span></code> is.</p>
-<div class="highlight-zsh notranslate"><div class="highlight"><pre><span></span>which ls
-<span class="c1"># /bin/ls</span>
-</pre></div>
-</div>
-<section id="add-command-search-path">
-<h2><span class="section-number">1.6.1. </span>Add command search path<a class="headerlink" href="#add-command-search-path" title="Permalink to this headline">#</a></h2>
-<p>Add the following code in one of ~/.zshrc, ~/.bashrc, ~/.bash_profile.</p>
-<div class="highlight-zsh notranslate"><div class="highlight"><pre><span></span><span class="nb">export</span> <span class="nv">PATH</span><span class="o">=</span><span class="nv">$PATH</span>:&lt;<span class="nb">command</span> search path&gt;
-<span class="o">(</span>or <span class="nb">export</span> <span class="nv">PATH</span><span class="o">=</span>&lt;<span class="nb">command</span> search path&gt;:<span class="nv">$PATH</span><span class="o">)</span>
-</pre></div>
-</div>
-<p>and save ths changes.</p>
-<div class="highlight-zsh notranslate"><div class="highlight"><pre><span></span><span class="nb">source</span> ~/.zshrc
-<span class="nb">source</span> ~/.bashrc
-<span class="nb">source</span> ~/.bash_profile
-</pre></div>
-</div>
+  <section class="tex2jax_ignore mathjax_ignore" id="naming-conventions">
+<h1><span class="section-number">3.1. </span>Naming Conventions<a class="headerlink" href="#naming-conventions" title="Permalink to this headline">#</a></h1>
+<section id="naming-conventions-in-python">
+<h2><span class="section-number">3.1.1. </span>Naming Conventions in Python<a class="headerlink" href="#naming-conventions-in-python" title="Permalink to this headline">#</a></h2>
+<p><a class="reference external" href="https://peps.python.org/pep-0008/">PEP 8 – Style Guide for Python Code | peps.python.org</a></p>
+<section id="package-names">
+<h3><span class="section-number">3.1.1.1. </span>Package Names<a class="headerlink" href="#package-names" title="Permalink to this headline">#</a></h3>
+<ul class="simple">
+<li><p>Python packages should also have short, all-lowercase names, although the use of underscores is discouraged. Examples: <code class="docutils literal notranslate"><span class="pre">mypackage</span></code></p></li>
+</ul>
 </section>
-<section id="environmental-variables">
-<h2><span class="section-number">1.6.2. </span>Environmental variables<a class="headerlink" href="#environmental-variables" title="Permalink to this headline">#</a></h2>
-<div class="highlight-zsh notranslate"><div class="highlight"><pre><span></span><span class="nb">export</span> -p
-...
-<span class="nb">export</span> <span class="nv">LC_CTYPE</span><span class="o">=</span>UTF-8
-<span class="nb">export</span> -T PATH <span class="nv">path</span><span class="o">=(</span> /usr/local/bin /usr/bin /bin /usr/sbin /sbin <span class="o">)</span>
-<span class="nb">export</span> <span class="nv">TERM_PROGRAM</span><span class="o">=</span>Apple_Terminal
-...
-</pre></div>
-</div>
-<section id="make-a-new-environmental-variable">
-<h3><span class="section-number">1.6.2.1. </span>make a new environmental variable<a class="headerlink" href="#make-a-new-environmental-variable" title="Permalink to this headline">#</a></h3>
-<div class="highlight-zsh notranslate"><div class="highlight"><pre><span></span><span class="nb">export</span> <span class="nv">US</span><span class="o">=</span>/usr/sbin
-<span class="nb">echo</span> <span class="nv">$US</span>
-<span class="c1"># /usr/sbin</span>
-</pre></div>
-</div>
-<p>each command below shows the same results</p>
-<div class="highlight-zsh notranslate"><div class="highlight"><pre><span></span>ls /usr/sbin
-ls <span class="nv">$US</span>
-</pre></div>
-</div>
+<section id="module-names">
+<h3><span class="section-number">3.1.1.2. </span>Module Names<a class="headerlink" href="#module-names" title="Permalink to this headline">#</a></h3>
+<ul class="simple">
+<li><p>Modules should have short, all-lowercase names. Underscores can be used in the module name if it improves readability. Example: <code class="docutils literal notranslate"><span class="pre">module_name</span></code></p></li>
+</ul>
 </section>
-<section id="remove-a-environmental-variable">
-<h3><span class="section-number">1.6.2.2. </span>Remove a environmental variable<a class="headerlink" href="#remove-a-environmental-variable" title="Permalink to this headline">#</a></h3>
-<div class="highlight-zsh notranslate"><div class="highlight"><pre><span></span><span class="nb">unset</span> US
-</pre></div>
-</div>
+<section id="constants">
+<h3><span class="section-number">3.1.1.3. </span>Constants<a class="headerlink" href="#constants" title="Permalink to this headline">#</a></h3>
+<ul class="simple">
+<li><p>Constants are usually defined on a module level and written in all capital letters with underscores separating words. Examples: <code class="docutils literal notranslate"><span class="pre">MAX_OVERFLOW</span></code>, <code class="docutils literal notranslate"><span class="pre">TOTAL</span></code>.</p></li>
+</ul>
 </section>
+<section id="variable-names">
+<h3><span class="section-number">3.1.1.4. </span>Variable Names<a class="headerlink" href="#variable-names" title="Permalink to this headline">#</a></h3>
+<ul class="simple">
+<li><p>Variable names should be lowercase, with underscores for readability.</p></li>
+<li><p>Variable names should be short but descriptive. Single-character variable names and meaningless variable names should be avoided. Examples: <code class="docutils literal notranslate"><span class="pre">player_name</span></code>, <code class="docutils literal notranslate"><span class="pre">score</span></code>, etc.</p></li>
+<li><p>Boolean variable names are typically in the form of <code class="docutils literal notranslate"><span class="pre">is</span> <span class="pre">+</span> <span class="pre">adjective</span></code>, <code class="docutils literal notranslate"><span class="pre">has</span> <span class="pre">+</span> <span class="pre">noun</span></code>, <code class="docutils literal notranslate"><span class="pre">can</span> <span class="pre">+</span> <span class="pre">verb</span></code>, <code class="docutils literal notranslate"><span class="pre">with</span> <span class="pre">+</span> <span class="pre">noun</span></code>, etc. However, the first word can be omitted if it is obvious from the context. Example: <code class="docutils literal notranslate"><span class="pre">is_active</span></code>, <code class="docutils literal notranslate"><span class="pre">has_children</span></code>, <code class="docutils literal notranslate"><span class="pre">can_swim</span></code>, <code class="docutils literal notranslate"><span class="pre">with_fins</span></code>, etc.</p></li>
+</ul>
+</section>
+<section id="function-names">
+<h3><span class="section-number">3.1.1.5. </span>Function Names<a class="headerlink" href="#function-names" title="Permalink to this headline">#</a></h3>
+<ul class="simple">
+<li><p>Function names should be lowercase, with underscores for readability. They should be in the form of <code class="docutils literal notranslate"><span class="pre">verb</span> <span class="pre">+</span> <span class="pre">noun</span></code>, but either can be omitted if it is obvious from the context. Examples: <code class="docutils literal notranslate"><span class="pre">get_score</span></code>, <code class="docutils literal notranslate"><span class="pre">print_message</span></code></p></li>
+</ul>
+</section>
+<section id="class-names">
+<h3><span class="section-number">3.1.1.6. </span>Class Names<a class="headerlink" href="#class-names" title="Permalink to this headline">#</a></h3>
+<ul class="simple">
+<li><p>Class names should normally use the CapWords convention. Examples: <code class="docutils literal notranslate"><span class="pre">MyClass</span></code></p></li>
+</ul>
+</section>
+<section id="method-names-and-instance-variables">
+<h3><span class="section-number">3.1.1.7. </span>Method Names and Instance Variables<a class="headerlink" href="#method-names-and-instance-variables" title="Permalink to this headline">#</a></h3>
+<ul class="simple">
+<li><p>Use the function and variable naming rules</p></li>
+<li><p>Use one leading underscore only for non-public methods and instance variables.</p></li>
+</ul>
+</section>
+</section>
+<section id="naming-conventions-in-other-programming-languages">
+<h2><span class="section-number">3.1.2. </span>Naming conventions in Other programming languages<a class="headerlink" href="#naming-conventions-in-other-programming-languages" title="Permalink to this headline">#</a></h2>
+<p>Unlike Python, <code class="docutils literal notranslate"><span class="pre">camelCase</span></code> is used for naming variables and functions in other programming languages. Examples: <code class="docutils literal notranslate"><span class="pre">playerName</span></code>, <code class="docutils literal notranslate"><span class="pre">getScore</span></code>, <code class="docutils literal notranslate"><span class="pre">printMessage</span></code></p>
+</section>
+<section id="abbreviations">
+<h2><span class="section-number">3.1.3. </span>Abbreviations<a class="headerlink" href="#abbreviations" title="Permalink to this headline">#</a></h2>
+<p>🚫 Don’t abbreviate names unless the abbreviation is widely used and understood. Recommended abbreviations are given <a class="reference external" href="https://github.com/abbrcode/abbreviations-in-code">here</a>.</p>
 </section>
 </section>
 
@@ -678,7 +732,7 @@ ls <span class="nv">$US</span>
         },
         kernelOptions: {
             kernelName: "python3",
-            path: "./basic"
+            path: "./coding-rules"
         },
         predefinedOutput: true
     }
@@ -692,17 +746,17 @@ ls <span class="nv">$US</span>
                 
     <!-- Previous / next buttons -->
 <div class='prev-next-area'>
-    <a class='left-prev' id="prev-link" href="github/commitMessage.html" title="previous page">
+    <a class='left-prev' id="prev-link" href="coding-rules.html" title="previous page">
         <i class="fas fa-angle-left"></i>
         <div class="prev-next-info">
             <p class="prev-next-subtitle">previous</p>
-            <p class="prev-next-title"><span class="section-number">1.5. </span>Commit Masssages with emoji</p>
+            <p class="prev-next-title"><span class="section-number">3. </span>Coding rules</p>
         </div>
     </a>
-    <a class='right-next' id="next-link" href="markdown.html" title="next page">
+    <a class='right-next' id="next-link" href="../latex/latex.html" title="next page">
     <div class="prev-next-info">
         <p class="prev-next-subtitle">next</p>
-        <p class="prev-next-title"><span class="section-number">1.7. </span>Markdown</p>
+        <p class="prev-next-title"><span class="section-number">4. </span>Latex</p>
     </div>
     <i class="fas fa-angle-right"></i>
     </a>

@@ -6,4 +6,4 @@ Under construction
 - [Python](python/python0.md)
 - [Latex](latex/latex.md)
 - [Jupyer book](jb/jb.md)
-- [Others](tools/tools.md)
+- [Tools](tools/tools.md)
