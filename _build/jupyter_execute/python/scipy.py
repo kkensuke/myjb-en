@@ -7,7 +7,7 @@
 # 
 # In this page, you see examples of scipy functions (differentiation, integration, optimization) to solve problems.
 
-# In[17]:
+# In[1]:
 
 
 import numpy as np
@@ -30,7 +30,7 @@ from scipy import integrate, diff, optimize
 # 
 # $$ \frac{dx}{dt} = ax - bxy ,\quad \frac{dy}{dt} = -cx + dxy  $$
 
-# In[32]:
+# In[2]:
 
 
 from scipy.integrate import solve_ivp
@@ -65,7 +65,7 @@ plt.show()
 # - y(float): The integral of func from a to b.
 # - abserr(float): An estimate of the absolute error in the result.
 
-# In[20]:
+# In[3]:
 
 
 x2 = lambda x: x**2
@@ -88,7 +88,7 @@ print(4**3 / 3.)  # analytical result
 # 
 # $$f(x) = x^2 - x -1 $$
 
-# In[25]:
+# In[4]:
 
 
 from scipy import optimize
@@ -110,7 +110,7 @@ print((1+np.sqrt(5))/2) # analytical result
 # >                    callback=None, options=None)
 # >```
 
-# In[26]:
+# In[5]:
 
 
 def fun(x):
@@ -140,7 +140,7 @@ print(sol.x)
 # 
 # $$ f(x,y) = (1-x)^2 + 5(y-x^2)^2 $$
 
-# In[31]:
+# In[6]:
 
 
 from scipy.optimize import minimize
@@ -160,7 +160,7 @@ res.x # solution
 # >    tr_options={}, jac_sparsity=None, max_nfev=None, verbose=0, args=(), kwargs={})
 # >```
 
-# In[30]:
+# In[7]:
 
 
 # Solve a nonlinear least-squares problem with bounds on the variables.
