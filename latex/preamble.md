@@ -2,7 +2,7 @@
 
 In a `preamble.tex`, we can load packages, define commands, and set some options for the document.
 
-Sometimes, you can't use some packages due to the conflicts between packages and document class. So, you need change settings in the preamble according to the document class.
+Sometimes, you can't use some packages due to the conflicts between the packages and document class. So, you need change settings in the preamble according to the document class.
 
 You also have to care about the conflicts between packages themselves because you can't use some packages together, or you need to load them in a specific order.
 

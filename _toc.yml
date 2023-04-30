@@ -26,6 +26,9 @@ parts:
       - file: python/python
       - file: python/scipy
       - file: python/sympy
+    - file: coding-rules/coding-rules
+      sections:
+      - file: coding-rules/naming
     - file: latex/latex
       sections:
       - file: latex/settings
