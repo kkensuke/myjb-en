@@ -6,7 +6,6 @@
 - [Code Spell Checker](https://marketplace.visualstudio.com/items?itemName=streetsidesoftware.code-spell-checker)
 - [Rainbow CSV](https://marketplace.visualstudio.com/items?itemName=mechatroner.rainbow-csv)
 - [Error Lens](https://marketplace.visualstudio.com/items?itemName=usernamehw.errorlens)
-- [GitLens](https://marketplace.visualstudio.com/items?itemName=eamodio.gitlens)
 - [Grammerly](https://marketplace.visualstudio.com/items?itemName=znck.grammarly)
 - [indent-rainbow](https://marketplace.visualstudio.com/items?itemName=oderwat.indent-rainbow)
 - [Jupyter & Jupyter Keymap](https://marketplace.visualstudio.com/items?itemName=ms-toolsai.jupyter)
