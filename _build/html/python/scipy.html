@@ -6,7 +6,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
 
-    <title>2.2. SciPY &#8212; My note</title>
+    <title>2.3. SciPY &#8212; My note</title>
     
   <!-- Loaded before other Sphinx assets -->
   <link href="../_static/styles/theme.css?digest=1999514e3f237ded88cf" rel="stylesheet">
@@ -89,8 +89,8 @@ const thebe_selector_output = ".output, .cell_output"
     <script defer="defer" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
     <link rel="index" title="Index" href="../genindex.html" />
     <link rel="search" title="Search" href="../search.html" />
-    <link rel="next" title="2.3. SymPY" href="sympy.html" />
-    <link rel="prev" title="2.1. Python and Jupyterlab" href="python.html" />
+    <link rel="next" title="2.4. SymPY" href="sympy.html" />
+    <link rel="prev" title="2.2. Numpy" href="numpy.html" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="docsearch:language" content="en">
     
@@ -213,14 +213,19 @@ const thebe_selector_output = ".output, .cell_output"
      2.1. Python and Jupyterlab
     </a>
    </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="numpy.html">
+     2.2. Numpy
+    </a>
+   </li>
    <li class="toctree-l2 current active">
     <a class="current reference internal" href="#">
-     2.2. SciPY
+     2.3. SciPY
     </a>
    </li>
    <li class="toctree-l2">
     <a class="reference internal" href="sympy.html">
-     2.3. SymPY
+     2.4. SymPY
     </a>
    </li>
   </ul>
@@ -594,51 +599,51 @@ title="Print to PDF"
         <ul class="visible nav section-nav flex-column">
  <li class="toc-h2 nav-item toc-entry">
   <a class="reference internal nav-link" href="#differentiation">
-   2.2.1. Differentiation
+   2.3.1. Differentiation
   </a>
   <ul class="nav section-nav flex-column">
    <li class="toc-h3 nav-item toc-entry">
     <a class="reference internal nav-link" href="#scipy-integrate-solve-ivp">
-     2.2.1.1. scipy.integrate.solve_ivp
+     2.3.1.1. scipy.integrate.solve_ivp
     </a>
    </li>
   </ul>
  </li>
  <li class="toc-h2 nav-item toc-entry">
   <a class="reference internal nav-link" href="#integration">
-   2.2.2. Integration
+   2.3.2. Integration
   </a>
   <ul class="nav section-nav flex-column">
    <li class="toc-h3 nav-item toc-entry">
     <a class="reference internal nav-link" href="#scipy-integrate-quad">
-     2.2.2.1. scipy.integrate.quad
+     2.3.2.1. scipy.integrate.quad
     </a>
    </li>
   </ul>
  </li>
  <li class="toc-h2 nav-item toc-entry">
   <a class="reference internal nav-link" href="#root-finding">
-   2.2.3. Root finding
+   2.3.3. Root finding
   </a>
   <ul class="nav section-nav flex-column">
    <li class="toc-h3 nav-item toc-entry">
     <a class="reference internal nav-link" href="#scipy-optimize-root-scalar">
-     2.2.3.1. scipy.optimize.root_scalar
+     2.3.3.1. scipy.optimize.root_scalar
     </a>
    </li>
    <li class="toc-h3 nav-item toc-entry">
     <a class="reference internal nav-link" href="#scipy-optimize-root">
-     2.2.3.2. scipy.optimize.root
+     2.3.3.2. scipy.optimize.root
     </a>
    </li>
    <li class="toc-h3 nav-item toc-entry">
     <a class="reference internal nav-link" href="#scipy-optimize-minimize">
-     2.2.3.3. scipy.optimize.minimize
+     2.3.3.3. scipy.optimize.minimize
     </a>
    </li>
    <li class="toc-h3 nav-item toc-entry">
     <a class="reference internal nav-link" href="#scipy-optimize-least-squares">
-     2.2.3.4. scipy.optimize.least_squares
+     2.3.3.4. scipy.optimize.least_squares
     </a>
    </li>
   </ul>
@@ -664,51 +669,51 @@ title="Print to PDF"
                             <ul class="visible nav section-nav flex-column">
  <li class="toc-h2 nav-item toc-entry">
   <a class="reference internal nav-link" href="#differentiation">
-   2.2.1. Differentiation
+   2.3.1. Differentiation
   </a>
   <ul class="nav section-nav flex-column">
    <li class="toc-h3 nav-item toc-entry">
     <a class="reference internal nav-link" href="#scipy-integrate-solve-ivp">
-     2.2.1.1. scipy.integrate.solve_ivp
+     2.3.1.1. scipy.integrate.solve_ivp
     </a>
    </li>
   </ul>
  </li>
  <li class="toc-h2 nav-item toc-entry">
   <a class="reference internal nav-link" href="#integration">
-   2.2.2. Integration
+   2.3.2. Integration
   </a>
   <ul class="nav section-nav flex-column">
    <li class="toc-h3 nav-item toc-entry">
     <a class="reference internal nav-link" href="#scipy-integrate-quad">
-     2.2.2.1. scipy.integrate.quad
+     2.3.2.1. scipy.integrate.quad
     </a>
    </li>
   </ul>
  </li>
  <li class="toc-h2 nav-item toc-entry">
   <a class="reference internal nav-link" href="#root-finding">
-   2.2.3. Root finding
+   2.3.3. Root finding
   </a>
   <ul class="nav section-nav flex-column">
    <li class="toc-h3 nav-item toc-entry">
     <a class="reference internal nav-link" href="#scipy-optimize-root-scalar">
-     2.2.3.1. scipy.optimize.root_scalar
+     2.3.3.1. scipy.optimize.root_scalar
     </a>
    </li>
    <li class="toc-h3 nav-item toc-entry">
     <a class="reference internal nav-link" href="#scipy-optimize-root">
-     2.2.3.2. scipy.optimize.root
+     2.3.3.2. scipy.optimize.root
     </a>
    </li>
    <li class="toc-h3 nav-item toc-entry">
     <a class="reference internal nav-link" href="#scipy-optimize-minimize">
-     2.2.3.3. scipy.optimize.minimize
+     2.3.3.3. scipy.optimize.minimize
     </a>
    </li>
    <li class="toc-h3 nav-item toc-entry">
     <a class="reference internal nav-link" href="#scipy-optimize-least-squares">
-     2.2.3.4. scipy.optimize.least_squares
+     2.3.3.4. scipy.optimize.least_squares
     </a>
    </li>
   </ul>
@@ -724,7 +729,7 @@ title="Print to PDF"
               <div>
                 
   <section class="tex2jax_ignore mathjax_ignore" id="scipy">
-<h1><span class="section-number">2.2. </span><a class="reference external" href="https://docs.scipy.org/doc/scipy/index.html">SciPY</a><a class="headerlink" href="#scipy" title="Permalink to this headline">#</a></h1>
+<h1><span class="section-number">2.3. </span><a class="reference external" href="https://docs.scipy.org/doc/scipy/index.html">SciPY</a><a class="headerlink" href="#scipy" title="Permalink to this headline">#</a></h1>
 <blockquote>
 <div><p>SciPy is a collection of <strong>mathematical algorithms and convenience functions</strong> built on the NumPy extension of Python. - scippy doc</p>
 </div></blockquote>
@@ -739,9 +744,9 @@ title="Print to PDF"
 </div>
 </div>
 <section id="differentiation">
-<h2><span class="section-number">2.2.1. </span>Differentiation<a class="headerlink" href="#differentiation" title="Permalink to this headline">#</a></h2>
+<h2><span class="section-number">2.3.1. </span>Differentiation<a class="headerlink" href="#differentiation" title="Permalink to this headline">#</a></h2>
 <section id="scipy-integrate-solve-ivp">
-<h3><span class="section-number">2.2.1.1. </span>scipy.integrate.solve_ivp<a class="headerlink" href="#scipy-integrate-solve-ivp" title="Permalink to this headline">#</a></h3>
+<h3><span class="section-number">2.3.1.1. </span>scipy.integrate.solve_ivp<a class="headerlink" href="#scipy-integrate-solve-ivp" title="Permalink to this headline">#</a></h3>
 <p>Solve an <strong>initial value problem</strong> for a system of ODEs.</p>
 <div class="math notranslate nohighlight">
 \[ \frac{dy}{dt} = f(t, y), \quad y(t_0) = y_0 \]</div>
@@ -783,9 +788,9 @@ title="Print to PDF"
 </section>
 <hr class="docutils" />
 <section id="integration">
-<h2><span class="section-number">2.2.2. </span>Integration<a class="headerlink" href="#integration" title="Permalink to this headline">#</a></h2>
+<h2><span class="section-number">2.3.2. </span>Integration<a class="headerlink" href="#integration" title="Permalink to this headline">#</a></h2>
 <section id="scipy-integrate-quad">
-<h3><span class="section-number">2.2.2.1. </span>scipy.integrate.quad<a class="headerlink" href="#scipy-integrate-quad" title="Permalink to this headline">#</a></h3>
+<h3><span class="section-number">2.3.2.1. </span>scipy.integrate.quad<a class="headerlink" href="#scipy-integrate-quad" title="Permalink to this headline">#</a></h3>
 <p>Compute a definite integral.</p>
 <blockquote>
 <div><div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">scipy</span><span class="o">.</span><span class="n">integrate</span><span class="o">.</span><span class="n">quad</span><span class="p">(</span><span class="n">func</span><span class="p">,</span> <span class="n">a</span><span class="p">,</span> <span class="n">b</span><span class="p">,</span> <span class="n">args</span><span class="o">=</span><span class="p">(),</span> <span class="n">full_output</span><span class="o">=</span><span class="mi">0</span><span class="p">,</span> <span class="n">epsabs</span><span class="o">=</span><span class="mf">1.49e-08</span><span class="p">,</span> <span class="n">epsrel</span><span class="o">=</span><span class="mf">1.49e-08</span><span class="p">,</span>\
@@ -819,9 +824,9 @@ title="Print to PDF"
 </section>
 <hr class="docutils" />
 <section id="root-finding">
-<h2><span class="section-number">2.2.3. </span>Root finding<a class="headerlink" href="#root-finding" title="Permalink to this headline">#</a></h2>
+<h2><span class="section-number">2.3.3. </span>Root finding<a class="headerlink" href="#root-finding" title="Permalink to this headline">#</a></h2>
 <section id="scipy-optimize-root-scalar">
-<h3><span class="section-number">2.2.3.1. </span>scipy.optimize.root_scalar<a class="headerlink" href="#scipy-optimize-root-scalar" title="Permalink to this headline">#</a></h3>
+<h3><span class="section-number">2.3.3.1. </span>scipy.optimize.root_scalar<a class="headerlink" href="#scipy-optimize-root-scalar" title="Permalink to this headline">#</a></h3>
 <p>Find a root of a scalar function.</p>
 <blockquote>
 <div><div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">scipy</span><span class="o">.</span><span class="n">optimize</span><span class="o">.</span><span class="n">root_scalar</span><span class="p">(</span><span class="n">f</span><span class="p">,</span> <span class="n">args</span><span class="o">=</span><span class="p">(),</span> <span class="n">method</span><span class="o">=</span><span class="kc">None</span><span class="p">,</span> <span class="n">bracket</span><span class="o">=</span><span class="kc">None</span><span class="p">,</span> <span class="n">fprime</span><span class="o">=</span><span class="kc">None</span><span class="p">,</span> <span class="n">fprime2</span><span class="o">=</span><span class="kc">None</span><span class="p">,</span>\
@@ -855,7 +860,7 @@ title="Print to PDF"
 </section>
 <hr class="docutils" />
 <section id="scipy-optimize-root">
-<h3><span class="section-number">2.2.3.2. </span>scipy.optimize.root<a class="headerlink" href="#scipy-optimize-root" title="Permalink to this headline">#</a></h3>
+<h3><span class="section-number">2.3.3.2. </span>scipy.optimize.root<a class="headerlink" href="#scipy-optimize-root" title="Permalink to this headline">#</a></h3>
 <p>Find a root of a vector function.</p>
 <blockquote>
 <div><div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">scipy</span><span class="o">.</span><span class="n">optimize</span><span class="o">.</span><span class="n">root</span><span class="p">(</span><span class="n">func</span><span class="p">,</span> <span class="n">x0</span><span class="p">,</span> <span class="n">args</span><span class="o">=</span><span class="p">(),</span> <span class="n">method</span><span class="o">=</span><span class="s1">&#39;hybr&#39;</span><span class="p">,</span> <span class="n">jac</span><span class="o">=</span><span class="kc">None</span><span class="p">,</span> <span class="n">tol</span><span class="o">=</span><span class="kc">None</span><span class="p">,</span>
@@ -889,7 +894,7 @@ title="Print to PDF"
 </section>
 <hr class="docutils" />
 <section id="scipy-optimize-minimize">
-<h3><span class="section-number">2.2.3.3. </span>scipy.optimize.minimize<a class="headerlink" href="#scipy-optimize-minimize" title="Permalink to this headline">#</a></h3>
+<h3><span class="section-number">2.3.3.3. </span>scipy.optimize.minimize<a class="headerlink" href="#scipy-optimize-minimize" title="Permalink to this headline">#</a></h3>
 <p>Local (multivariate) optimization</p>
 <blockquote>
 <div><div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">scipy</span><span class="o">.</span><span class="n">optimize</span><span class="o">.</span><span class="n">minimize</span><span class="p">(</span><span class="n">fun</span><span class="p">,</span> <span class="n">x0</span><span class="p">,</span> <span class="n">args</span><span class="o">=</span><span class="p">(),</span> <span class="n">method</span><span class="o">=</span><span class="kc">None</span><span class="p">,</span> <span class="n">jac</span><span class="o">=</span><span class="kc">None</span><span class="p">,</span> <span class="n">hess</span><span class="o">=</span><span class="kc">None</span><span class="p">,</span>\
@@ -927,7 +932,7 @@ title="Print to PDF"
 </section>
 <hr class="docutils" />
 <section id="scipy-optimize-least-squares">
-<h3><span class="section-number">2.2.3.4. </span>scipy.optimize.least_squares<a class="headerlink" href="#scipy-optimize-least-squares" title="Permalink to this headline">#</a></h3>
+<h3><span class="section-number">2.3.3.4. </span>scipy.optimize.least_squares<a class="headerlink" href="#scipy-optimize-least-squares" title="Permalink to this headline">#</a></h3>
 <p>Least-squares</p>
 <blockquote>
 <div><div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">scipy</span><span class="o">.</span><span class="n">optimize</span><span class="o">.</span><span class="n">least_squares</span><span class="p">(</span><span class="n">fun</span><span class="p">,</span> <span class="n">x0</span><span class="p">,</span> <span class="n">jac</span><span class="o">=</span><span class="s1">&#39;2-point&#39;</span><span class="p">,</span> <span class="n">bounds</span><span class="o">=</span><span class="p">(</span><span class="o">-</span> <span class="n">inf</span><span class="p">,</span> <span class="n">inf</span><span class="p">),</span> <span class="n">method</span><span class="o">=</span><span class="s1">&#39;trf&#39;</span><span class="p">,</span> <span class="n">ftol</span><span class="o">=</span><span class="mf">1e-08</span><span class="p">,</span>\
@@ -998,17 +1003,17 @@ title="Print to PDF"
                 
     <!-- Previous / next buttons -->
 <div class='prev-next-area'>
-    <a class='left-prev' id="prev-link" href="python.html" title="previous page">
+    <a class='left-prev' id="prev-link" href="numpy.html" title="previous page">
         <i class="fas fa-angle-left"></i>
         <div class="prev-next-info">
             <p class="prev-next-subtitle">previous</p>
-            <p class="prev-next-title"><span class="section-number">2.1. </span>Python and Jupyterlab</p>
+            <p class="prev-next-title"><span class="section-number">2.2. </span>Numpy</p>
         </div>
     </a>
     <a class='right-next' id="next-link" href="sympy.html" title="next page">
     <div class="prev-next-info">
         <p class="prev-next-subtitle">next</p>
-        <p class="prev-next-title"><span class="section-number">2.3. </span>SymPY</p>
+        <p class="prev-next-title"><span class="section-number">2.4. </span>SymPY</p>
     </div>
     <i class="fas fa-angle-right"></i>
     </a>

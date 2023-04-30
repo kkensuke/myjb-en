@@ -1,8 +1,8 @@
 # Basics
 
-## What is a quantum computer?
+## Quantum computer
 
-A quantum computer is a computer that uses quantum mechanics to perform computations. Quantum computers are different from classical computers in that they use quantum bits, or qubits, instead of (classical) bits. A qubit is a two-state quantum mechanical system, which can be in a superposition of states. A classical bit, on the other hand, can only be in one of two states, 0 or 1. Moreover, quantum systems can have entanglement, which means that the state of one qubit can be correlated with the state of another qubit in a way that is not possible for classical systems. These properties of quantum systems might allow quantum computers to perform certain computations much faster than classical computers.
+A quantum computer is a computer that uses quantum mechanics to perform computations. Quantum computers are different from classical computers in that they use quantum bits, or qubits, instead of (classical) bits. A qubit is a two-level quantum mechanical system, which can be in a superposition of states. A classical bit, on the other hand, can only be in one of two states, 0 or 1. Moreover, quantum systems can have entanglement, which means that the state of one qubit can be correlated with the state of another qubit in a way that is not possible for classical systems. These properties of quantum systems might allow quantum computers to perform certain computations much faster than classical computers.
 
 
 ## What applications can quantum computers be used for?
@@ -32,7 +32,7 @@ where $\alpha$ and $\beta$ are complex numbers.
 
 ## What is a quantum gate?
 
-Quantum gates are unitary transformations that act on a qubit. They are quantum analogues of classical logic gates and change the states of qubtits. Quantum gates can be represented by matrices. The state of a qubit after a quantum gate is the product of the vector of the qubit and the matrix of the quantum gate. For example, the Hadamard gate is represented by the following matrix:
+Quantum gates are unitary transformations that act on a qubit. They are quantum analogues of classical logic gates and change the states of qubits. Quantum gates can be represented by matrices. The state of a qubit after a quantum gate is the product of the vector of the qubit and the matrix of the quantum gate. For example, the Hadamard gate is represented by the following matrix:
 
 $$ H = \frac{1}{\sqrt{2}}\begin{bmatrix} 1 & 1 \\ 1 & -1 \end{bmatrix} $$
 

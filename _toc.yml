@@ -24,6 +24,7 @@ parts:
     - file: python/python0
       sections:
       - file: python/python
+      - file: python/numpy
       - file: python/scipy
       - file: python/sympy
     - file: coding-rules/coding-rules

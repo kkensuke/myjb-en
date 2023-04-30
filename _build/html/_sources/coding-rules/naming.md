@@ -41,4 +41,4 @@ Unlike Python, `camelCase` is used for naming variables and functions in other p
 
 ## Abbreviations
 
-🚫 Don’t abbreviate names unless they are widely used. Recommended abbreviations are given [here](https://github.com/abbrcode/abbreviations-in-code).
+🚫 Don’t use abbreviations unless they are widely used. Recommended abbreviations are given [here](https://github.com/abbrcode/abbreviations-in-code).
