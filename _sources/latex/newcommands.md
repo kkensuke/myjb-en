@@ -111,6 +111,5 @@ The following is a list of my favorite `\newcommands`. You can use them regardle
 \newcommand{\fa}{{}^\forall}
 \newcommand{\ex}{{}^\exists}
 \newcommand{\pd}{\partial}
-\newcommand{\then}{\;\Longrightarrow\;}
 % ---------------------------------------------------------------------------- %
 ```

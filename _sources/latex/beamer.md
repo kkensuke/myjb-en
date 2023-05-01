@@ -2,13 +2,19 @@
 
 ## `preamble.tex`
 ```latex
-\usepackage{bm,mathtools,mathrsfs}
-\usepackage{algorithm,algorithmic}
+% mathtools: math tools, mathrsfs: RSFS fonts
+\usepackage{mathtools,mathrsfs}
+% physics
 \usepackage{physics}
+% algorithm
+\usepackage{algorithm,algorithmic}
+% vector graphics
 \usepackage{tikz}
-\usetikzlibrary{calc}
+% comment
 \usepackage{comment}
+% image position
 \usepackage{here}
+% figure caption
 \usepackage{caption}
 \captionsetup[figure]{labelformat=empty}
 
