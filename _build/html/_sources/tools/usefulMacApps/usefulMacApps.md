@@ -2,35 +2,13 @@
 
 Recommended Apps here is basically free.
 
-- [AppCleaner](#appcleaner)
-- [Bitwarden](#bitwarden)
-- [CheatSheet](#cheatsheet)
-- [CustomShortCut](#customshortcut)
-- [Clipy](#clipy)
-- [CotEditor](#coteditor)
-- [coconutBattery](#coconutbattery)
-- [draw.io](#drawio)
-- [Firefox](#firefox)
-- [Grammerly Desktop](#grammerly-desktop)
-- [Hand Mirror](#hand-mirror)
-- [ImageOptim](#imageoptim)
-- [Mathpix Snipping Tool](#mathpix-snipping-tool)
-- [Notion](#notion)
-- [QuickShade](#quickshade)
-- [Rectangle](#rectangle)
-- [Shotcut](#shotcut)
-- [Shottr](#shottr)
-- [VS Code](#vs-code)
-- [VLC](#vlc)
-- [Zotero](#zotero)
-
 ---
 
 ## [AppCleaner](https://freemacsoft.net/appcleaner/)
 When removing an app from your computer, `AppCleaner` helps you to find all files related to the app so that you can remove all of them at once.
 
 ## [Bitwarden](https://bitwarden.com/)
-`Bitwarden` is useful and secure open source password manager. It is compatible with Mac, Windows, Linux, Android, and iOS. You can also use it as browser extension.
+`Bitwarden` is free, useful, and secure open source password manager. It is compatible with Mac, Windows, Linux, Android, and iOS. You can also use it as a browser extension.
 
 
 ## [CheatSheet](https://www.mediaatelier.com/CheatSheet/)
