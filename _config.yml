@@ -57,7 +57,7 @@ parse:
   myst_dmath_double_inline  : true          # Allow display math ($$) within an inline context
   myst_substitutions        :
     key0                    : global-value
-  myst_number_code_blocks   : python
+  myst_number_code_blocks   : bash,zsh,python,latex
 
 #######################################################################################
 # HTML-specific settings

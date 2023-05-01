@@ -326,7 +326,7 @@ ls | grep '\\.txt$)'
 
 ### Brace Expansion
 You can generate arbitrary strings using brace expansion.
-```
+```bash
 echo a{d,c,b}e
 ade ace abe
 
