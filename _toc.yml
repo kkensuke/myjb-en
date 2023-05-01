@@ -52,7 +52,6 @@ parts:
       - file: tools/usefulFirefoxExtensions/usefulFirefoxExtensions
       - file: tools/usefulVScodeExtensions/usefulVScodeExtensions
       - file: tools/usefulWebApps/usefulWebApps
-#      - file: tools/Latex
 
 
 
