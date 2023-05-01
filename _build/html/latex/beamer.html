@@ -603,13 +603,19 @@ title="Print to PDF"
 <h1><span class="section-number">4.6. </span>beamer<a class="headerlink" href="#beamer" title="Permalink to this headline">#</a></h1>
 <section id="preamble-tex">
 <h2><span class="section-number">4.6.1. </span><code class="docutils literal notranslate"><span class="pre">preamble.tex</span></code><a class="headerlink" href="#preamble-tex" title="Permalink to this headline">#</a></h2>
-<div class="highlight-latex notranslate"><div class="highlight"><pre><span></span><span class="k">\usepackage</span><span class="nb">{</span>bm,mathtools,mathrsfs<span class="nb">}</span>
-<span class="k">\usepackage</span><span class="nb">{</span>algorithm,algorithmic<span class="nb">}</span>
+<div class="highlight-latex notranslate"><div class="highlight"><pre><span></span><span class="c">% mathtools: math tools, mathrsfs: RSFS fonts</span>
+<span class="k">\usepackage</span><span class="nb">{</span>mathtools,mathrsfs<span class="nb">}</span>
+<span class="c">% physics</span>
 <span class="k">\usepackage</span><span class="nb">{</span>physics<span class="nb">}</span>
+<span class="c">% algorithm</span>
+<span class="k">\usepackage</span><span class="nb">{</span>algorithm,algorithmic<span class="nb">}</span>
+<span class="c">% vector graphics</span>
 <span class="k">\usepackage</span><span class="nb">{</span>tikz<span class="nb">}</span>
-<span class="k">\usetikzlibrary</span><span class="nb">{</span>calc<span class="nb">}</span>
+<span class="c">% comment</span>
 <span class="k">\usepackage</span><span class="nb">{</span>comment<span class="nb">}</span>
+<span class="c">% image position</span>
 <span class="k">\usepackage</span><span class="nb">{</span>here<span class="nb">}</span>
+<span class="c">% figure caption</span>
 <span class="k">\usepackage</span><span class="nb">{</span>caption<span class="nb">}</span>
 <span class="k">\captionsetup</span><span class="na">[figure]</span><span class="nb">{</span>labelformat=empty<span class="nb">}</span>
 
