@@ -13,13 +13,13 @@ parts:
     - file: basic/basic # chapters need at least one file before sections.
 #     title:
       sections:
-      - file: basic/packageManager
       - file: basic/linux
       - file: basic/alias
-      - file: basic/github/github
-      - file: basic/github/commitMessage
       - file: basic/path
       - file: basic/markdown
+      - file: basic/github/github
+      - file: basic/github/commitMessage
+      - file: basic/packageManager
     - file: python/python0
       sections:
       - file: python/python
