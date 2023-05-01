@@ -1049,11 +1049,11 @@ ls <span class="p">|</span> grep <span class="s1">&#39;\\.txt$)&#39;</span>
 <section id="brace-expansion">
 <h3><span class="section-number">1.2.1.4. </span>Brace Expansion<a class="headerlink" href="#brace-expansion" title="Permalink to this headline">#</a></h3>
 <p>You can generate arbitrary strings using brace expansion.</p>
-<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">echo</span> <span class="n">a</span><span class="p">{</span><span class="n">d</span><span class="p">,</span><span class="n">c</span><span class="p">,</span><span class="n">b</span><span class="p">}</span><span class="n">e</span>
-<span class="n">ade</span> <span class="n">ace</span> <span class="n">abe</span>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span><span class="nb">echo</span> a<span class="o">{</span>d,c,b<span class="o">}</span>e
+ade ace abe
 
-<span class="n">echo</span> <span class="p">{</span><span class="mi">1</span><span class="p">,</span><span class="mi">2</span><span class="p">}{</span><span class="mi">3</span><span class="p">,</span><span class="mi">4</span><span class="p">}</span>
-<span class="mi">13</span> <span class="mi">14</span> <span class="mi">23</span> <span class="mi">24</span>
+<span class="nb">echo</span> <span class="o">{</span><span class="m">1</span>,2<span class="o">}{</span><span class="m">3</span>,4<span class="o">}</span>
+<span class="m">13</span> <span class="m">14</span> <span class="m">23</span> <span class="m">24</span>
 </pre></div>
 </div>
 <p>Some examples:</p>

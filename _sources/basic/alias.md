@@ -8,19 +8,19 @@ If you find some useful aliases below, write them in `~/.zshrc`.
 ## Basic
 
 ### Customize and colorize PROMPT
-```
+```bash
 PS1="%F{082}%n%f %F{051}%~%f %# "
 RPROMPT='%t'
 ```
 
 ### Put a blank line before every prompt except the first one.
-```
+```bash
 precmd() { precmd() { echo } }
 ```
 
 ### Frequently used commands
 
-```
+```bash
 # change directory
 cs() { cd $@ && la }
 alias cd='cs'
@@ -77,33 +77,33 @@ zipen(){
 
 ## Mac OS settings
 ### Show/hide hidden files in Finder
-```
+```bash
 alias show="defaults write com.apple.finder AppleShowAllFiles -bool true && killall Finder"
 alias hide="defaults write com.apple.finder AppleShowAllFiles -bool false && killall Finder"
 ```
 
 ### Hide/show all desktop icons
-```
+```bash
 alias dhide="defaults write com.apple.finder CreateDesktop -bool false && killall Finder"
 alias dshow="defaults write com.apple.finder CreateDesktop -bool true && killall Finder"
 ```
 
 ### Screenshot settings
-```
+```bash
 alias dwl='defaults write com.apple.screencapture location'
 alias ddl='defaults delete com.apple.screencapture location'
 alias drl='defaults read com.apple.screencapture location'
 ```
 
 ### sleep setting
-```
+```bash
 alias sleepon='sudo pmset -a disablesleep 0'
 alias sleepoff='sudo pmset -a disablesleep 1'
 ```
 
 
 ## GitHub
-```
+```bash
 alias g='git'
 alias ga='git add'
 alias gb='git branch'
@@ -121,12 +121,12 @@ alias gst='git status'
 ```
 
 ### Define an alias of several commands
-```
+```bash
 gacpm() { git add -A && git commit -m "$1" && git push origin main }
 ```
 
 For example, you can define an alias to make a new repository with just one command.
-```
+```bash
 ginit() {
 	git init
 	git add .
@@ -139,12 +139,12 @@ You need to install [GitHub CLI](https://cli.github.com/) to use `gh` command.
 
 ### gitignore.io
 gitignore.io enable us to make .gitignore file easily
-```
+```bash
 function gi() { curl -sLw n https://www.toptal.com/developers/gitignore/api/$@ ;}
 ```
 
 ## Python
-```
+```bash
 alias python='python3'
 alias wpy='which python'
 
@@ -157,7 +157,7 @@ alias pfr='pip list --format=freeze > requirements.txt'
 ```
 
 ### Make, activate, deactivate venv
-```
+```bash
 alias mkv='python3 -m venv venv; acv; pip install --upgrade pip'
 alias acv='source venv/bin/activate'
 alias deac='deactivate'
@@ -165,7 +165,7 @@ alias deac='deactivate'
 
 ## Latex
 ### Copy latex-template directory to somewhere;
-```
+```bash
 mklt(){
 	cp -r ~/.latex-template ./"$1"
 }
