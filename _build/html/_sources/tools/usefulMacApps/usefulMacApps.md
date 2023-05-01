@@ -84,7 +84,7 @@ $ open -a ImageOptim .
 `Mathpix Snipping Tool` is a free app for converting images to LaTeX. You can convert images to LaTeX by taking a screenshot: `cmd + ctrl + M`.
 You can also make a latex equation image from a menu bar.
 ```{image} img/mathpix-make-img.jpg
-:name: cheat
+:name: mathpix-make-img
 :width: 400px
 :align: center
 ```
