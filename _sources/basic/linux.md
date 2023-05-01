@@ -2,7 +2,7 @@
 
 Here, we learn the command line. Command line is a text interface to computers. You input text commands to your computer to do some operations, for example making or removing files, and changing files permissions, etc.
 
-In Mac, you can use the command line with `terminal.app`
+In Mac, you can use the command line in `terminal.app`
 
 ## Basic
 
