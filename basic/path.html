@@ -541,12 +541,12 @@ title="Print to PDF"
   <ul class="nav section-nav flex-column">
    <li class="toc-h3 nav-item toc-entry">
     <a class="reference internal nav-link" href="#make-a-new-environmental-variable">
-     1.6.2.1. make a new environmental variable
+     make a new environmental variable
     </a>
    </li>
    <li class="toc-h3 nav-item toc-entry">
     <a class="reference internal nav-link" href="#remove-a-environmental-variable">
-     1.6.2.2. Remove a environmental variable
+     Remove a environmental variable
     </a>
    </li>
   </ul>
@@ -582,12 +582,12 @@ title="Print to PDF"
   <ul class="nav section-nav flex-column">
    <li class="toc-h3 nav-item toc-entry">
     <a class="reference internal nav-link" href="#make-a-new-environmental-variable">
-     1.6.2.1. make a new environmental variable
+     make a new environmental variable
     </a>
    </li>
    <li class="toc-h3 nav-item toc-entry">
     <a class="reference internal nav-link" href="#remove-a-environmental-variable">
-     1.6.2.2. Remove a environmental variable
+     Remove a environmental variable
     </a>
    </li>
   </ul>
@@ -608,7 +608,7 @@ title="Print to PDF"
 PATH is one of the environmental variables and is little different from the path explained above.</p>
 <p>When you input a command in the shell, the shell has to find and run the command. PATH specifies the places the shell should search for a command you input.</p>
 <p>To see the PATH, run <code class="docutils literal notranslate"><span class="pre">echo</span> <span class="pre">$PATH</span></code>:</p>
-<div class="highlight-zsh notranslate"><div class="highlight"><pre><span></span><span class="nb">echo</span> <span class="nv">$PATH</span>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span><span class="nb">echo</span> <span class="nv">$PATH</span>
 <span class="c1"># /usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin</span>
 </pre></div>
 </div>
@@ -619,19 +619,19 @@ PATH is one of the environmental variables and is little different from the path
 </div>
 <p>When you input a command, the shell searches <code class="docutils literal notranslate"><span class="pre">/usr/local/bin</span></code> at first. If the shell finds a command, it runs the command. If not, then it searches <code class="docutils literal notranslate"><span class="pre">/usr/bin</span></code>. If it finds the command, it runs the command. If not, then it searches <code class="docutils literal notranslate"><span class="pre">/bin</span></code>. This flow repeats until it finds and runs the command. So only the command found at first is run. If the shell could not find the command in all the directories in PATH, the shell returns <code class="docutils literal notranslate"><span class="pre">zsh:</span> <span class="pre">command</span> <span class="pre">not</span> <span class="pre">found:</span> <span class="pre">xxx</span></code>.</p>
 <p>Command <code class="docutils literal notranslate"><span class="pre">which</span></code> shows the directories where (for example) the <code class="docutils literal notranslate"><span class="pre">ls</span></code> is.</p>
-<div class="highlight-zsh notranslate"><div class="highlight"><pre><span></span>which ls
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>which ls
 <span class="c1"># /bin/ls</span>
 </pre></div>
 </div>
 <section id="add-command-search-path">
 <h2><span class="section-number">1.6.1. </span>Add command search path<a class="headerlink" href="#add-command-search-path" title="Permalink to this headline">#</a></h2>
 <p>Add the following code in one of ~/.zshrc, ~/.bashrc, ~/.bash_profile.</p>
-<div class="highlight-zsh notranslate"><div class="highlight"><pre><span></span><span class="nb">export</span> <span class="nv">PATH</span><span class="o">=</span><span class="nv">$PATH</span>:&lt;<span class="nb">command</span> search path&gt;
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span><span class="nb">export</span> <span class="nv">PATH</span><span class="o">=</span><span class="nv">$PATH</span>:&lt;<span class="nb">command</span> search path&gt;
 <span class="o">(</span>or <span class="nb">export</span> <span class="nv">PATH</span><span class="o">=</span>&lt;<span class="nb">command</span> search path&gt;:<span class="nv">$PATH</span><span class="o">)</span>
 </pre></div>
 </div>
 <p>and save ths changes.</p>
-<div class="highlight-zsh notranslate"><div class="highlight"><pre><span></span><span class="nb">source</span> ~/.zshrc
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span><span class="nb">source</span> ~/.zshrc
 <span class="nb">source</span> ~/.bashrc
 <span class="nb">source</span> ~/.bash_profile
 </pre></div>
@@ -639,7 +639,7 @@ PATH is one of the environmental variables and is little different from the path
 </section>
 <section id="environmental-variables">
 <h2><span class="section-number">1.6.2. </span>Environmental variables<a class="headerlink" href="#environmental-variables" title="Permalink to this headline">#</a></h2>
-<div class="highlight-zsh notranslate"><div class="highlight"><pre><span></span><span class="nb">export</span> -p
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span><span class="nb">export</span> -p
 ...
 <span class="nb">export</span> <span class="nv">LC_CTYPE</span><span class="o">=</span>UTF-8
 <span class="nb">export</span> -T PATH <span class="nv">path</span><span class="o">=(</span> /usr/local/bin /usr/bin /bin /usr/sbin /sbin <span class="o">)</span>
@@ -648,21 +648,21 @@ PATH is one of the environmental variables and is little different from the path
 </pre></div>
 </div>
 <section id="make-a-new-environmental-variable">
-<h3><span class="section-number">1.6.2.1. </span>make a new environmental variable<a class="headerlink" href="#make-a-new-environmental-variable" title="Permalink to this headline">#</a></h3>
-<div class="highlight-zsh notranslate"><div class="highlight"><pre><span></span><span class="nb">export</span> <span class="nv">US</span><span class="o">=</span>/usr/sbin
+<h3>make a new environmental variable<a class="headerlink" href="#make-a-new-environmental-variable" title="Permalink to this headline">#</a></h3>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span><span class="nb">export</span> <span class="nv">US</span><span class="o">=</span>/usr/sbin
 <span class="nb">echo</span> <span class="nv">$US</span>
 <span class="c1"># /usr/sbin</span>
 </pre></div>
 </div>
 <p>each command below shows the same results</p>
-<div class="highlight-zsh notranslate"><div class="highlight"><pre><span></span>ls /usr/sbin
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>ls /usr/sbin
 ls <span class="nv">$US</span>
 </pre></div>
 </div>
 </section>
 <section id="remove-a-environmental-variable">
-<h3><span class="section-number">1.6.2.2. </span>Remove a environmental variable<a class="headerlink" href="#remove-a-environmental-variable" title="Permalink to this headline">#</a></h3>
-<div class="highlight-zsh notranslate"><div class="highlight"><pre><span></span><span class="nb">unset</span> US
+<h3>Remove a environmental variable<a class="headerlink" href="#remove-a-environmental-variable" title="Permalink to this headline">#</a></h3>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span><span class="nb">unset</span> US
 </pre></div>
 </div>
 </section>
