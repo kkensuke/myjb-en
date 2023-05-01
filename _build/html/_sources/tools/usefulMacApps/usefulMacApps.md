@@ -1,6 +1,6 @@
 # Useful Apps
 
-Recommended Apps here is basically free.
+Recommended Apps here are basically free.
 
 ---
 
