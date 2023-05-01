@@ -6,7 +6,7 @@ PATH is one of the environmental variables and is little different from the path
 When you input a command in the shell, the shell has to find and run the command. PATH specifies the places the shell should search for a command you input.
 
 To see the PATH, run `echo $PATH`:
-```zsh
+```bash
 echo $PATH
 # /usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin
 ```
@@ -20,7 +20,7 @@ When you input a command, the shell searches `/usr/local/bin` at first. If the s
 
 
 Command `which` shows the directories where (for example) the `ls` is.
-```zsh
+```bash
 which ls
 # /bin/ls
 ```
@@ -28,13 +28,13 @@ which ls
 ## Add command search path
 
 Add the following code in one of ~/.zshrc, ~/.bashrc, ~/.bash_profile.
-```zsh
+```bash
 export PATH=$PATH:<command search path>
 (or export PATH=<command search path>:$PATH)
 ```
 
 and save ths changes.
-```zsh
+```bash
 source ~/.zshrc
 source ~/.bashrc
 source ~/.bash_profile
@@ -42,7 +42,7 @@ source ~/.bash_profile
 
 ## Environmental variables
 
-```zsh
+```bash
 export -p
 ...
 export LC_CTYPE=UTF-8
@@ -52,20 +52,20 @@ export TERM_PROGRAM=Apple_Terminal
 ```
 
 ### make a new environmental variable
-```zsh
+```bash
 export US=/usr/sbin
 echo $US
 # /usr/sbin
 ```
 
 each command below shows the same results
-```zsh
+```bash
 ls /usr/sbin
 ls $US
 ```
 
 ### Remove a environmental variable
-```zsh
+```bash
 unset US
 ```
 

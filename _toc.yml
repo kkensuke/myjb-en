@@ -8,12 +8,11 @@ defaults:  # The defaults key will be applied to all chapters and sub-sections
 #  numbered: 3
 
 parts:
-  - numbered: 4
+  - numbered: 3
     chapters:
     - file: basic/basic # chapters need at least one file before sections.
 #     title:
       sections:
-#      - glob: basic/* # cannot decide the order of files
       - file: basic/packageManager
       - file: basic/linux
       - file: basic/alias
@@ -73,13 +72,3 @@ parts:
 #     - file: path/to/part2/chapter2
 #       sections:
 #       - file: path/to/part2/chapter2/section1
-
-# ex2
-# format: jb-book
-# root: index
-# chapters:
-# - file: path/to/chapter1
-# - url: https://example.com # When a title: entry is provided its text is used instead of the full URL.
-#   title: Example website
-# - glob: subfolder/*
-

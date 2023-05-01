@@ -4,7 +4,7 @@ When you commit files in github, you add some commit-messages. In the code of co
 
 
 Put code below in `.zshrc`.
-```
+```zsh
 ## Using EMOJI-LOG (https://github.com/ahmadawais/Emoji-Log) ##
 # Git Commit, Add all and Push — in one step.
 gacp() { git add . && git commit -m "$*" && git push origin main }
