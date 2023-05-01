@@ -13,7 +13,7 @@ import numpy as np
 
 # ## Create numpy arrays
 
-# A basic way to create a `np.array` is to use the array function. It takes a list as an argument and returns a numpy array.
+# A basic way to create an array is to use the function `np.array()`. It takes a list as an argument and returns a numpy array.
 
 # In[2]:
 
@@ -22,7 +22,7 @@ a = np.array([1, 2, 3])
 print(a)
 
 
-# In numpy, there are many methods to create arrays. For example, `np.arange` creates an array of integers, `np.zeros` creates an array of zeros, and `np.ones` creates an array of ones.
+# In numpy, there are many methods to create arrays. For example, `np.arange()` creates an array of integers, `np.zeros()` creates an array of zeros, and `np.ones()` creates an array of ones.
 
 # In[3]:
 
@@ -60,7 +60,7 @@ np.ones(10)
 np.ones((3, 5))
 
 
-# `np.linspace` creates an array of evenly spaced numbers over a specified interval.
+# `np.linspace()` creates an array of evenly spaced numbers over a specified interval.
 
 # In[9]:
 
@@ -68,7 +68,7 @@ np.ones((3, 5))
 np.linspace(0, 1, 6)
 
 
-# `np.eye` creates an matrix with ones on the diagonal and zeros elsewhere. You can also make non-square identity matrices by specifying the number of rows and columns.
+# `np.eye()` creates an matrix with ones on the diagonal and zeros elsewhere. You can also make non-square identity matrices by specifying the number of rows and columns.
 
 # In[10]:
 
@@ -88,7 +88,7 @@ np.eye(5) # This is the same as np.identity(5)
 np.identity(5)
 
 
-# `np.emtpy` creates an array of uninitialized (arbitrary) data of the given shape and dtype. It is used when you want to create an array and then fill it with data later. It is faster than creating an array of zeros or ones using `np.zeros` or `np.ones`.
+# `np.emtpy()` creates an array of uninitialized (arbitrary) data of the given shape and dtype. It is used when you want to create an array and then fill it with data later. It is faster than creating an array of zeros or ones using `np.zeros()` or `np.ones()`.
 
 # In[13]:
 
@@ -96,7 +96,7 @@ np.identity(5)
 np.empty(10)
 
 
-# `np.zeros_like`, `np.ones_like`, `np.empty_like` create arrays of zeros, ones, or uninitialized data with the same shape and dtype as the given array.
+# `np.zeros_like(()`, `np.ones_like()`, `np.empty_like()` create arrays of zeros, ones, or uninitialized data with the same shape and dtype as the given array.
 
 # In[14]:
 

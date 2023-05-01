@@ -676,7 +676,7 @@ title="Print to PDF"
 </div>
 <section id="create-numpy-arrays">
 <h2><span class="section-number">2.2.1. </span>Create numpy arrays<a class="headerlink" href="#create-numpy-arrays" title="Permalink to this headline">#</a></h2>
-<p>A basic way to create a <code class="docutils literal notranslate"><span class="pre">np.array</span></code> is to use the array function. It takes a list as an argument and returns a numpy array.</p>
+<p>A basic way to create an array is to use the function <code class="docutils literal notranslate"><span class="pre">np.array()</span></code>. It takes a list as an argument and returns a numpy array.</p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">a</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">array</span><span class="p">([</span><span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">3</span><span class="p">])</span>
@@ -690,7 +690,7 @@ title="Print to PDF"
 </div>
 </div>
 </div>
-<p>In numpy, there are many methods to create arrays. For example, <code class="docutils literal notranslate"><span class="pre">np.arange</span></code> creates an array of integers, <code class="docutils literal notranslate"><span class="pre">np.zeros</span></code> creates an array of zeros, and <code class="docutils literal notranslate"><span class="pre">np.ones</span></code> creates an array of ones.</p>
+<p>In numpy, there are many methods to create arrays. For example, <code class="docutils literal notranslate"><span class="pre">np.arange()</span></code> creates an array of integers, <code class="docutils literal notranslate"><span class="pre">np.zeros()</span></code> creates an array of zeros, and <code class="docutils literal notranslate"><span class="pre">np.ones()</span></code> creates an array of ones.</p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">np</span><span class="o">.</span><span class="n">arange</span><span class="p">(</span><span class="mi">10</span><span class="p">)</span>
@@ -767,7 +767,7 @@ title="Print to PDF"
 </div>
 </div>
 </div>
-<p><code class="docutils literal notranslate"><span class="pre">np.linspace</span></code> creates an array of evenly spaced numbers over a specified interval.</p>
+<p><code class="docutils literal notranslate"><span class="pre">np.linspace()</span></code> creates an array of evenly spaced numbers over a specified interval.</p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">np</span><span class="o">.</span><span class="n">linspace</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="mi">1</span><span class="p">,</span> <span class="mi">6</span><span class="p">)</span>
@@ -780,7 +780,7 @@ title="Print to PDF"
 </div>
 </div>
 </div>
-<p><code class="docutils literal notranslate"><span class="pre">np.eye</span></code> creates an matrix with ones on the diagonal and zeros elsewhere. You can also make non-square identity matrices by specifying the number of rows and columns.</p>
+<p><code class="docutils literal notranslate"><span class="pre">np.eye()</span></code> creates an matrix with ones on the diagonal and zeros elsewhere. You can also make non-square identity matrices by specifying the number of rows and columns.</p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">np</span><span class="o">.</span><span class="n">eye</span><span class="p">(</span><span class="mi">3</span><span class="p">,</span> <span class="mi">5</span><span class="p">)</span>
@@ -827,7 +827,7 @@ title="Print to PDF"
 </div>
 </div>
 </div>
-<p><code class="docutils literal notranslate"><span class="pre">np.emtpy</span></code> creates an array of uninitialized (arbitrary) data of the given shape and dtype. It is used when you want to create an array and then fill it with data later. It is faster than creating an array of zeros or ones using <code class="docutils literal notranslate"><span class="pre">np.zeros</span></code> or <code class="docutils literal notranslate"><span class="pre">np.ones</span></code>.</p>
+<p><code class="docutils literal notranslate"><span class="pre">np.emtpy()</span></code> creates an array of uninitialized (arbitrary) data of the given shape and dtype. It is used when you want to create an array and then fill it with data later. It is faster than creating an array of zeros or ones using <code class="docutils literal notranslate"><span class="pre">np.zeros()</span></code> or <code class="docutils literal notranslate"><span class="pre">np.ones()</span></code>.</p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">np</span><span class="o">.</span><span class="n">empty</span><span class="p">(</span><span class="mi">10</span><span class="p">)</span>
@@ -840,7 +840,7 @@ title="Print to PDF"
 </div>
 </div>
 </div>
-<p><code class="docutils literal notranslate"><span class="pre">np.zeros_like</span></code>, <code class="docutils literal notranslate"><span class="pre">np.ones_like</span></code>, <code class="docutils literal notranslate"><span class="pre">np.empty_like</span></code> create arrays of zeros, ones, or uninitialized data with the same shape and dtype as the given array.</p>
+<p><code class="docutils literal notranslate"><span class="pre">np.zeros_like(()</span></code>, <code class="docutils literal notranslate"><span class="pre">np.ones_like()</span></code>, <code class="docutils literal notranslate"><span class="pre">np.empty_like()</span></code> create arrays of zeros, ones, or uninitialized data with the same shape and dtype as the given array.</p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">a</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">array</span><span class="p">([[</span><span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">3</span><span class="p">],</span>
