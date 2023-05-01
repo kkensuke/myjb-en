@@ -4,7 +4,8 @@ Recommended Apps here is basically free.
 
 - [AppCleaner](#appcleaner)
 - [Bitwarden](#bitwarden)
-- [CheatSheet and CustomShortCut](#cheatsheet-and-customshortcut)
+- [CheatSheet](#cheatsheet)
+- [CustomShortCut](#customshortcut)
 - [Clipy](#clipy)
 - [CotEditor](#coteditor)
 - [coconutBattery](#coconutbattery)
