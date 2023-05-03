@@ -6,9 +6,17 @@ Recommended Apps here are basically free.
 
 ## [AppCleaner](https://freemacsoft.net/appcleaner/)
 When removing an app from your computer, `AppCleaner` helps you to find all files related to the app so that you can remove all of them at once.
+```{image} img/appcleaner.png
+:width: 400px
+:align: center
+```
 
 ## [Bitwarden](https://bitwarden.com/)
 `Bitwarden` is free, useful, and secure open source password manager. It is compatible with Mac, Windows, Linux, Android, and iOS. You can also use it as a browser extension.
+```{image} img/bitwarden.png
+:width: 700px
+:align: center
+```
 
 
 ## [CheatSheet](https://www.mediaatelier.com/CheatSheet/)
@@ -74,6 +82,10 @@ Notion is a markdown-based note app with many useful features. You can make mark
 
 ## [QuickShade](https://apps.apple.com/jp/app/quickshade/id1454801691?mt=12)
 `QuickShade` is a free app for adjusting the brightness of your Mac screen and **external monitors**. You don't need to use the monitor's buttons anymore! You can adjust the brightness with a shortcut key: `cmd + option + up/down`.
+```{image} img/quickshade.png
+:height: 400px
+:align: center
+```
 
 
 ## [Rectangle](https://rectangleapp.com/)
@@ -110,6 +122,10 @@ an active window: `cmd + shift + 8`, or a whole page by scrolling: `cmd + shift 
 
 ## [VS Code](https://code.visualstudio.com/)
 `VS Code` is a free and open source code editor. It is famous for its many useful extensions. Useful extensions are listed in [here](../usefulVScodeExtensions/usefulVScodeExtensions.md).
+```{image} img/vscode.png
+:width: 700px
+:align: center
+```
 
 
 ## [VLC](https://www.videolan.org/vlc/index.html)

@@ -78,7 +78,7 @@
 
 ````{tab-item} shortcut setting 2
 ```{image} img/simple-tab-groups-shortcuts-2.png
-:width: 400px
+:width: 700px
 :align: center
 ```
 ````
