@@ -24,6 +24,10 @@
 ## Productivity
 ### [Bitwarden](https://addons.mozilla.org/en-US/firefox/addon/bitwarden-password-manager/)
 `Bitwarden` is free, useful, and secure open source password manager.
+```{image} img/bitwarden-extension.png
+:width: 400px
+:align: center
+```
 
 ### [Dark Reader](https://addons.mozilla.org/en-US/firefox/addon/darkreader/)
 `Dark Reader` inverts the colors of websites making them easier to read for a long time.

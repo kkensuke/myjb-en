@@ -47,10 +47,10 @@ parts:
       - file: jb/myst
     - file: tools/tools
       sections:
+      - file: tools/usefulWebApps/usefulWebApps
       - file: tools/usefulMacApps/usefulMacApps
       - file: tools/usefulFirefoxExtensions/usefulFirefoxExtensions
       - file: tools/usefulVScodeExtensions/usefulVScodeExtensions
-      - file: tools/usefulWebApps/usefulWebApps
 
 
 
