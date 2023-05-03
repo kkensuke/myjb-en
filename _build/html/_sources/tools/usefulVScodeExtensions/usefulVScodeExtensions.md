@@ -7,7 +7,7 @@ GitHub Copilot is an AI pair programmer that helps you write code faster and wit
 Better Comments helps you create more human-friendly comments in your code.
 
 ## [Code Runner](https://marketplace.visualstudio.com/items?itemName=formulahendry.code-runner)
-Run code snippet or code file for multiple languages: C, C++, Java, JavaScript, PHP, Python, Perl, Perl 6, Ruby, Go, Lua, Groovy, PowerShell, BAT/CMD, BASH/SH, F# Script, F# (.NET Core), C# Script, C# (.NET Core), VBScript, TypeScript, CoffeeScript, Scala, Swift, Julia, Crystal, OCaml Script, R, AppleScript, Elixir, Visual Basic .NET, Clojure, Haxe, Objective-C, Rust, Racket, Scheme, AutoHotkey, AutoIt, Kotlin, Dart, Free Pascal, Haskell, Nim, D, Lisp, Kit, V, SCSS, Sass, CUDA, Less, Fortran, Ring, Standard ML, Zig, and custom command
+Run code snippet or code file for multiple languages.
 
 ## [Code Spell Checker](https://marketplace.visualstudio.com/items?itemName=streetsidesoftware.code-spell-checker)
 A basic spell checker that works well with code and documents.
