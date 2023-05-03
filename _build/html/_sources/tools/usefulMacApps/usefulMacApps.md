@@ -153,7 +153,7 @@ an active window: `cmd + shift + 8`, or a whole page by scrolling: `cmd + shift 
 ```
 ````
 
-````{tab-item} rec
+````{tab-item} rectangle
 ```{image} img/shottr-rec.png
 :width: 600px
 :align: center
@@ -176,3 +176,7 @@ an active window: `cmd + shift + 8`, or a whole page by scrolling: `cmd + shift 
 
 ## [Zotero](https://www.zotero.org/)
 Zotero is a free and open source useful app for managing research papers. You can manage your papers with tags and folders. You can import papers from browser with a single click using a browser extension: [Zotero Connector](https://www.zotero.org/download/connectors).
+```{image} img/zotero.png
+:width: 700px
+:align: center
+```
