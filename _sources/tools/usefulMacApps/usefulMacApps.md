@@ -118,6 +118,49 @@ Notion is a markdown-based note app with many useful features. You can make mark
 ## [Shottr](https://shottr.cc/)
 `Shottr` is a free app for taking screenshots. You can take a screenshot of a whole screen: `cmd + shift + 1`, or a selected area: `cmd + shift + 2`,
 an active window: `cmd + shift + 8`, or a whole page by scrolling: `cmd + shift + 9`. Moreover, you can use multi-language OCR to convert the screenshot to text: `cmd + option + ctrl + O` (not zero).
+`````{tab-set}
+````{tab-item} blur
+```{image} img/shottr-blur.png
+:height: 600px
+:align: center
+```
+````
+
+````{tab-item} erase
+```{image} img/shottr-erase.png
+:width: 600px
+:align: center
+```
+````
+
+````{tab-item} arrow
+```{image} img/shottr-arrow.png
+:width: 600px
+:align: center
+```
+````
+
+````{tab-item} marker
+```{image} img/shottr-marker.png
+:width: 600px
+:align: center
+```
+````
+
+````{tab-item} text
+```{image} img/shottr-text.png
+:width: 600px
+:align: center
+```
+````
+
+````{tab-item} rec
+```{image} img/shottr-rec.png
+:width: 600px
+:align: center
+```
+````
+`````
 
 
 ## [VS Code](https://code.visualstudio.com/)
@@ -133,4 +176,4 @@ an active window: `cmd + shift + 8`, or a whole page by scrolling: `cmd + shift 
 
 
 ## [Zotero](https://www.zotero.org/)
-Zotero is a free and open source useful app for managing research papers. You can manage your papers with tags and folders. You can also use it as a browser extension. You can import papers from browser with a single click.
+Zotero is a free and open source useful app for managing research papers. You can manage your papers with tags and folders. You can import papers from browser with a single click using a browser extension: [Zotero Connector](https://www.zotero.org/download/connectors).
