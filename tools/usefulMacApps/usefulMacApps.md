@@ -141,7 +141,7 @@ an active window: `cmd + shift + 8`, or a whole page by scrolling: `cmd + shift 
 ````
 
 ````{tab-item} marker
-```{image} img/shottr-marker.png
+```{image} img/shottr-number.png
 :width: 600px
 :align: center
 ```
