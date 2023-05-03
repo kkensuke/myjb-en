@@ -51,6 +51,9 @@ parts:
       - file: tools/usefulMacApps/usefulMacApps
       - file: tools/usefulFirefoxExtensions/usefulFirefoxExtensions
       - file: tools/usefulVScodeExtensions/usefulVScodeExtensions
+    - file: others/others
+      sections:
+      - file: others/firefox/firefox-security-settings
 
 
 
