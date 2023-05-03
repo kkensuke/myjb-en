@@ -103,7 +103,6 @@ Notion is a markdown-based note app with many useful features. You can make mark
 ````{tab-item} dragging a window
 ```{image} img/rectangle.gif
 :name: rec-mv
-:height: 400px
 :width: 600px
 :align: center
 ```
@@ -121,7 +120,7 @@ an active window: `cmd + shift + 8`, or a whole page by scrolling: `cmd + shift 
 `````{tab-set}
 ````{tab-item} blur
 ```{image} img/shottr-blur.png
-:height: 600px
+:width: 600px
 :align: center
 ```
 ````
