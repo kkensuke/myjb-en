@@ -11,7 +11,7 @@ Some common coding rules include:
 - Avoid using global variables.
 - Avoid deep nesting.
 - Avoid duplicating code. Instead, use functions or classes to encapsulate reusable logic.
-- Write small, modular functions that perform a single task.
+- Write small functions that perform a single task.
 - Don’t reinvent the wheel.
 - Remove unused or commented-out code.
 - Use comments to explain complex logic and describe the purpose of each function.
