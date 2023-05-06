@@ -2,15 +2,14 @@
 
 ## Security Add-ons
 - [AdBlocker Ultimate](https://addons.mozilla.org/en-US/firefox/addon/adblocker-ultimate/)
-- [ClearURLs](https://addons.mozilla.org/en-US/firefox/addon/clearurls/).
-- [Decentraleyes](https://addons.mozilla.org/en-US/firefox/addon/decentraleyes/).
-- [CanvasBlocker](https://addons.mozilla.org/en-US/firefox/addon/canvasblocker/).
-- [Firefox Relay](https://relay.firefox.com/).
-- [Privacy Badger](https://addons.mozilla.org/en-US/firefox/addon/privacy-badger17/).
-- [uBlock Origin](https://addons.mozilla.org/en-US/firefox/addon/ublock-origin/).
+- [ClearURLs](https://addons.mozilla.org/en-US/firefox/addon/clearurls/)
+- [Decentraleyes](https://addons.mozilla.org/en-US/firefox/addon/decentraleyes/)
+- [CanvasBlocker](https://addons.mozilla.org/en-US/firefox/addon/canvasblocker/)
+- [Firefox Relay](https://relay.firefox.com/)
+- [Privacy Badger](https://addons.mozilla.org/en-US/firefox/addon/privacy-badger17/)
+- [uBlock Origin](https://addons.mozilla.org/en-US/firefox/addon/ublock-origin/)
 - [WebRTC Leak Shield](https://addons.mozilla.org/en-US/firefox/addon/webrtc-leak-shield/)
-
-[More security add-ons](https://addons.mozilla.org/en-US/firefox/extensions/category/privacy-security/).
+- [More](https://addons.mozilla.org/en-US/firefox/extensions/category/privacy-security/)
 
 ## Secure Internet Connection
 - Use VPN
@@ -18,7 +17,7 @@
 - Enable ECH
 - Disable WebRTC
 
-### Hoxx VPN
+### VPN
 Virtual private network (VPN) can provide several benefits, such as hiding your IP address, encrypting your internet traffic, and allowing you to access content that may be restricted in your region.
 
 Here, I use [Hoxx VPN Proxy](https://hoxx.com/) desktop app. It is free and easy to use. (I don’t know why, but Hoxx VPN Proxy extension can't pass [Cloudflare Browser Check](https://www.cloudflare.com/ssl/encrypted-sni/#results).)
