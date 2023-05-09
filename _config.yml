@@ -22,7 +22,7 @@ logo                        : mylogo.png         # A path to the book logo
 abstract                    : note
 
 # Patterns to skip when building the book. Can be glob-style (e.g. "*skip.ipynb")
-#exclude_patterns            : [_build, Thumbs.db, .DS_Store, "**.ipynb_checkpoints", .gitignore]
+# exclude_patterns            : [_build, Thumbs.db, .DS_Store, "**.ipynb_checkpoints", .gitignore, develop]
 #Auto-exclude files not in the toc
 only_build_toc_files        : true
 
@@ -78,6 +78,7 @@ html:
     hypothesis              : false
     utterances              :
       repo                  : "kkensuke/myjb"
+    announcement            : ""    # A banner announcement at the top of the site.
 
 #######################################################################################
 # LaTeX-specific settings

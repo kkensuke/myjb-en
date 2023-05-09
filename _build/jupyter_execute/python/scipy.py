@@ -171,7 +171,7 @@ fitFunc = lambda p,t: p[0]*np.exp(-p[1]*t)*np.cos(p[2]*t)
 errFunc = lambda p,t,u: fitFunc(p,t) - u
 
 x = np.linspace(0,5,100)
-y = fitFunc([3,0.5,3],x) + np.random.randn(len(x))/3
+y = fitFunc([3,0.5,3], x) + np.random.randn(len(x))/3
 
 p0 = [1,1,1]# Initial values
 (p,success) = opt.leastsq(errFunc, p0, args=(x,y))
