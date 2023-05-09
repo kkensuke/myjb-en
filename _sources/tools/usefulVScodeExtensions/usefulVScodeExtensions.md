@@ -22,7 +22,7 @@ Improve highlighting of errors, warnings and other language diagnostics.
 Grammarly for VS Code. Grammarly adapts to your needs and writing style, giving you the confidence of mistake-free communication every time you write.
 
 ## [indent-rainbow](https://marketplace.visualstudio.com/items?itemName=oderwat.indent-rainbow)
-Makes indentation easier to read.
+Makes indentation more readable.
 
 ## [Jupyter & Jupyter Keymap](https://marketplace.visualstudio.com/items?itemName=ms-toolsai.jupyter)
 Jupyter notebook support, interactive programming and computing that supports Intellisense, debugging and more.
@@ -32,9 +32,6 @@ Boost LaTeX typesetting efficiency with preview, compile, autocomplete, colorize
 
 ## [Material Icon Theme](https://marketplace.visualstudio.com/items?itemName=PKief.material-icon-theme)
 Material Design Icons for Visual Studio Code.
-
-## [Pylance](https://marketplace.visualstudio.com/items?itemName=ms-python.vscode-pylance)
-Pylance is an extension that works alongside Python in Visual Studio Code to provide performant language support.
 
 ## [Python](https://marketplace.visualstudio.com/items?itemName=ms-python.python)
 IntelliSense (Pylance), Linting, Debugging (multi-threaded, remote), Jupyter Notebooks, code formatting, refactoring, unit tests, and more.

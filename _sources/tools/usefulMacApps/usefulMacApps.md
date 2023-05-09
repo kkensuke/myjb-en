@@ -1,4 +1,4 @@
-# Useful Apps
+# Useful Mac Apps
 
 Recommended Apps here are basically free.
 
