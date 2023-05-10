@@ -80,12 +80,8 @@ You can also make a latex equation image from a menu bar.
 Notion is a markdown-based note app with many useful features. You can make markdown pages like directory structure. You can use it for individual notes or team documents (easy to share). Moreover, you can publish your documents on website at ease.
 
 
-## [QuickShade](https://apps.apple.com/jp/app/quickshade/id1454801691?mt=12)
-`QuickShade` is a free app for adjusting the brightness of your Mac screen and **external monitors**. You don't need to use the monitor's buttons anymore! You can adjust the brightness with a shortcut key: `cmd + option + up/down`.
-```{image} img/quickshade.png
-:height: 400px
-:align: center
-```
+## [MonitorControl](https://github.com/MonitorControl/MonitorControl)
+`MonitorControl` is a free and open-source app for adjusting the brightness of your Mac screen and **external monitors**. You don't need to use the monitor's buttons anymore! You can adjust the brightness with shortcut keys.
 
 
 ## [Rectangle](https://rectangleapp.com/)
