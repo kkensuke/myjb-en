@@ -699,9 +699,9 @@ sphinx:
 
 https://sphinx-proof.readthedocs.io/en/latest/syntax.html
 
+
+
 # Build and publish outputs
-## Store code outputs and insert into content
-https://jupyterbook.org/content/executable/output-insert.html
 
 ## Generate a badge for your book
 [![Jupyter Book Badge](https://jupyterbook.org/badge.svg)](<https://github.com/kk564/jb-test.git>)
@@ -777,7 +777,5 @@ You can also define TeX macros for a specific file by introducing them at the be
 ````
 
 
-## API reference from docstrings
-
-## Reference to the Jupyter Book
+## Reference
 [Jupyter Book](https://jupyterbook.org/en/stable/start/your-first-book.html)

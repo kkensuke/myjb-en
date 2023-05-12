@@ -1,20 +1,21 @@
 # Let's make a Jupyter book
 
-We are going to make a structure below.
+We are going to make a Jupyter book from scratch.
 ```zsh
 ~/jupyter-book
 	└── test-book
-	    ├── .venv
+	    ├── venv
 	    └── test-book
 ```
 
 ## Make a jupyter book
 
 ### Make directories
-At first, we make the structure and activate a venv(virtual environment).
+At first, we make the structure and activate the venv(virtual environment).
 ```zsh
 $ mkdir -p ~/jupyter-book/test-book
 $ cd ~/jupyter-book/test-book
+
 $ python3 -m venv venv
 $ source venv/bin/activate
 ```
@@ -25,13 +26,13 @@ $ which python
 ```
 You can see that you are using python in the venv.
 
-
-### Update pip:
+Sometimes, you need to update pip. In that case, you can use the command below. (Replace `<Username>` with your username.)
+Update pip:
 ```zsh
 $ /Users/<Username>/jupyter-book/test-book/venv/bin/python3 -m pip install --upgrade pip
 ```
 
-Install jupyter-book package
+### Install jupyter-book package
 ```zsh
 (venv)$ pip install -U jupyter-book
 ```
@@ -44,6 +45,7 @@ $ jb build .
 $ open /Applications/Safari.app _build/html/index.html
 ```
 (jb short for jupyter-book)
+
 
 ## Publish
 First, we make a repository named `test-book` on GitHub website without initializing.
@@ -63,12 +65,12 @@ $ pip install ghp-import
 $ ghp-import -n -p -f _build/html
 ```
 
-You can see the published website!
-https://<Username>.github.io/test-book
+You can see the published website at `https://\<Username\>.github.io/test-book/intro.html` .
 
 
 ## Update
-Update source code
+After you modified the source code, you can update the website by the commands below.
+
 ```zsh
 $ cd test-book
 $ jb build --all .
