@@ -777,5 +777,5 @@ You can also define TeX macros for a specific file by introducing them at the be
 ````
 
 
-## Reference
+# Reference
 [Jupyter Book](https://jupyterbook.org/en/stable/start/your-first-book.html)
