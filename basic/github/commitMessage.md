@@ -56,9 +56,9 @@ $GREEN gsec$NORMAL — 👮 SECURITY"
 ## Reference
 
 - [jupyterbook Development Conventions](https://github.com/executablebooks/.github/blob/master/CONTRIBUTING.md#commit-messages)
-- [How to Write a Git Commit Message](https://chris.beams.io/posts/git-commit/)\
-- [Emoji-Log](https://github.com/ahmadawais/Emoji-Log\)
-- [gitmoji-cli](https://github.com/carloscuesta/gitmoji-cli\)
+- [How to Write a Git Commit Message](https://chris.beams.io/posts/git-commit/)
+- [Emoji-Log](https://github.com/ahmadawais/Emoji-Log)
+- [gitmoji-cli](https://github.com/carloscuesta/gitmoji-cli)
 - [emoji-cheat-sheet](https://github.com/ikatyang/emoji-cheat-sheet/blob/master/README.md)
 - [Complete list of github markdown emoji markup ](https://gist.github.com/rxaviers/7360908)
 - [Commit message examples](https://gist.github.com/mono0926/e6ffd032c384ee4c1cef5a2aa4f778d7)
