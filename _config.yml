@@ -96,11 +96,11 @@ bibtex_bibfiles:
 
 launch_buttons:
   notebook_interface        : jupyterlab            # The interface interactive links will activate ["classic", "jupyterlab"]
-  binderhub_url             : https://mybinder.org  # The URL of the BinderHub (e.g., https://mybinder.org)
+  # binderhub_url             : https://mybinder.org  # The URL of the BinderHub (e.g., https://mybinder.org)
                                                     # If your Jupyter Book is hosted online on GitHub,
                                                     # you can automatically insert buttons that link to the Jupyter Notebook running in a BinderHub.
   jupyterhub_url            : ""                    # The URL of the JupyterHub (e.g., https://datahub.berkeley.edu)
-  thebe                     : true                  # This provides you with a Live Code button that, when clicked, will convert each code cell into an interactive cell that can be edited
+  thebe                     : false                  # This provides you with a Live Code button that, when clicked, will convert each code cell into an interactive cell that can be edited
   colab_url                 : "https://colab.research.google.com" # The URL of Google Colab (https://colab.research.google.com)
 
 repository:                           # Information about where the book exists on the web
