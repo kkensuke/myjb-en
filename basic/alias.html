@@ -619,12 +619,12 @@ zipen<span class="o">(){</span>
 </pre></div>
 </div>
 <p>For example, you can define an alias to make a new repository with just one command.</p>
-<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>ginit() {
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>ginit<span class="o">()</span> <span class="o">{</span>
 	git init
 	git add .
-	git commit -m &quot;Initial commit&quot;
-	gh repo create --private --source=. --push&#39;
-}
+	git commit -m <span class="s2">&quot;Initial commit&quot;</span>
+	gh repo create --private --source<span class="o">=</span>. --push
+<span class="o">}</span>
 </pre></div>
 </div>
 <p>You need to install <a class="reference external" href="https://cli.github.com/">GitHub CLI</a> to use <code class="docutils literal notranslate"><span class="pre">gh</span></code> command.</p>

@@ -238,7 +238,7 @@ $ brew install gh
 ```bash
 $ git init; git add .
 $ git commit -m "Initial commit"
-$ gh repo create --private --source=. --push'
+$ gh repo create --private --source=. --push
 ```
 
 You can define an alias like this:
