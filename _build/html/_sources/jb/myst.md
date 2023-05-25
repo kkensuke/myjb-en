@@ -1,15 +1,16 @@
 ---
-substitutions:
-  key1: "I'm a **substitution**"
-  key2: |
-    ```{note}
-    {{ key1 }}
-    ```
-  image: |
-    ```{image} ../basic/github/img/GitHub-flow.png
-    :alt: image
-    :width: 200px
-    ```
+myst:
+  substitutions:
+    key1: "I'm a **substitution**"
+    key2: |
+      ```{note}
+      {{ key1 }}
+      ```
+    image: |
+      ```{image} ../basic/github/img/GitHub-flow.png
+      :alt: image
+      :width: 200px
+      ```
 ---
 #  MyST
 

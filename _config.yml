@@ -70,7 +70,7 @@ html:
   use_issues_button         : true  # Whether to add an "open an issue" button
   use_multitoc_numbering    : true  # Continuous numbering across parts/chapters
   extra_navbar              : Powered by <a href="https://jupyterbook.org">Jupyter Book</a>  # Will be displayed underneath the left navbar.
-  extra_footer              : Powered by <a href="https://jupyterbook.org">Jupyter Book</a>  # Will be displayed underneath the footer.
+  # extra_footer              : Powered by <a href="https://jupyterbook.org">Jupyter Book</a>  # Will be displayed underneath the footer.
   google_analytics_id       : "G-CEP1WDLLCF" # A GA id that can be used to track book views.
   home_page_in_navbar       : false # Whether to include your home page in the left Navigation Bar
   baseurl                   : ""    # The base URL where your book will be hosted. Used for creating image previews and social links. e.g.: https://mypage.com/mybook/
@@ -115,6 +115,9 @@ sphinx:
   local_extensions          :             # A list of local extensions to load by sphinx specified by "name: path" items
   config                    :             # key-value pairs to directly over-ride the Sphinx configuration
     language                : en          # en for English, ja for Japanese https://www.sphinx-doc.org/en/master/usage/configuration.html#confval-language
+    myst_heading_anchors    : 3 # The heading level at which to generate anchors. Without this, internal links will not work.
+    nb_merge_streams        : true        # Code contained in code cells may print outputs through both the stdout and stderr stream.
+                                          # These outputs may appear in a mixed order and you may want them to be grouped and sorted to display the correct logical ordering.
     bibtex_reference_style  : author_year # and label, super
     mathjax_path            : https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js
                                           # By default MathJax version 2 is currently used.
@@ -126,5 +129,3 @@ sphinx:
           "ket"  : ["|#1\\rangle",1]
           "bra"  : ["\\langle#1|",1]
     latex_toplevel_sectioning: 'chapter'  # 'part'
-    nb_merge_streams        : true        # Code contained in code cells may print outputs through both the stdout and stderr stream.
-                                          # These outputs may appear in a mixed order and you may want them to be grouped and sorted to display the correct logical ordering.
