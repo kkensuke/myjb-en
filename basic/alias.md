@@ -131,7 +131,7 @@ ginit() {
 	git init
 	git add .
 	git commit -m "Initial commit"
-	gh repo create --private --source=. --push'
+	gh repo create --private --source=. --push
 }
 ```
 You need to install [GitHub CLI](https://cli.github.com/) to use `gh` command.
