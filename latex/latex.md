@@ -2,7 +2,7 @@
 
 ## [Settings](./settings.md)
 
-$\LaTeX$ settings for VSCode.
+$\LaTeX$ settings for VS Code.
 
 ## Preamble
 
