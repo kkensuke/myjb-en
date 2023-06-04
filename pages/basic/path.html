@@ -9,7 +9,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
 
-    <title>1.3. $PATH &#8212; My note</title>
+    <title>1.2. $PATH &#8212; My note</title>
   
   
   
@@ -104,8 +104,8 @@ const thebe_selector_output = ".output, .cell_output"
     <script>DOCUMENTATION_OPTIONS.pagename = 'pages/basic/path';</script>
     <link rel="index" title="Index" href="../../genindex.html" />
     <link rel="search" title="Search" href="../../search.html" />
-    <link rel="next" title="1.4. Markdown" href="markdown.html" />
-    <link rel="prev" title="1.2. Alias" href="alias.html" />
+    <link rel="next" title="1.3. Alias" href="alias.html" />
+    <link rel="prev" title="1.1. Command line" href="linux.html" />
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
   <meta name="docsearch:language" content="en"/>
   </head>
@@ -191,13 +191,16 @@ const thebe_selector_output = ".output, .cell_output"
         <ul class="current nav bd-sidenav">
 <li class="toctree-l1 current active has-children"><a class="reference internal" href="basic.html">1. Programming basics</a><input checked="" class="toctree-checkbox" id="toctree-checkbox-1" name="toctree-checkbox-1" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-1"><i class="fa-solid fa-chevron-down"></i></label><ul class="current">
 <li class="toctree-l2"><a class="reference internal" href="linux.html">1.1. Command line</a></li>
-<li class="toctree-l2"><a class="reference internal" href="alias.html">1.2. Alias</a></li>
-<li class="toctree-l2 current active"><a class="current reference internal" href="#">1.3. $PATH</a></li>
-<li class="toctree-l2"><a class="reference internal" href="markdown.html">1.4. Markdown</a></li>
+<li class="toctree-l2 current active"><a class="current reference internal" href="#">1.2. $PATH</a></li>
+<li class="toctree-l2"><a class="reference internal" href="alias.html">1.3. Alias</a></li>
+<li class="toctree-l2"><a class="reference internal" href="zsh.html">1.4. Zsh</a></li>
 
-<li class="toctree-l2"><a class="reference internal" href="github/github.html">1.6. GitHub</a></li>
-<li class="toctree-l2"><a class="reference internal" href="github/commitMessage.html">1.7. Commit Masssages with emoji</a></li>
-<li class="toctree-l2"><a class="reference internal" href="packageManager.html">1.8. Homebrew and venv</a></li>
+
+<li class="toctree-l2"><a class="reference internal" href="markdown.html">1.7. Markdown</a></li>
+
+<li class="toctree-l2"><a class="reference internal" href="github/github.html">1.9. GitHub</a></li>
+<li class="toctree-l2"><a class="reference internal" href="github/commitMessage.html">1.10. Commit Masssages with emoji</a></li>
+<li class="toctree-l2"><a class="reference internal" href="packageManager.html">1.11. Homebrew and venv</a></li>
 </ul>
 </li>
 <li class="toctree-l1 has-children"><a class="reference internal" href="../python/python0.html">2. Python</a><input class="toctree-checkbox" id="toctree-checkbox-2" name="toctree-checkbox-2" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-2"><i class="fa-solid fa-chevron-down"></i></label><ul>
@@ -448,8 +451,8 @@ document.write(`
             </div>
             <nav aria-label="Page">
                 <ul class="visible nav section-nav flex-column">
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#add-command-search-path">1.3.1. Add command search path</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#environmental-variables">1.3.2. Environmental variables</a><ul class="nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#add-command-search-path">1.2.1. Add command search path</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#environmental-variables">1.2.2. Environmental variables</a><ul class="nav section-nav flex-column">
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#make-a-new-environmental-variable">make a new environmental variable</a></li>
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#remove-a-environmental-variable">Remove a environmental variable</a></li>
 </ul>
@@ -466,7 +469,7 @@ document.write(`
                 <article class="bd-article" role="main">
                   
   <section class="tex2jax_ignore mathjax_ignore" id="path">
-<h1><span class="section-number">1.3. </span>$PATH<a class="headerlink" href="#path" title="Permalink to this headline">#</a></h1>
+<h1><span class="section-number">1.2. </span>$PATH<a class="headerlink" href="#path" title="Permalink to this headline">#</a></h1>
 <p>A path usually indicates a string to identify a location of a file/directory in a directory tree.
 PATH is one of the environmental variables and is little different from the path explained above.</p>
 <p>When you input a command in the shell, the shell has to find and run the command. PATH specifies the places the shell should search for a command you input.</p>
@@ -487,7 +490,7 @@ PATH is one of the environmental variables and is little different from the path
 </pre></div>
 </div>
 <section id="add-command-search-path">
-<h2><span class="section-number">1.3.1. </span>Add command search path<a class="headerlink" href="#add-command-search-path" title="Permalink to this headline">#</a></h2>
+<h2><span class="section-number">1.2.1. </span>Add command search path<a class="headerlink" href="#add-command-search-path" title="Permalink to this headline">#</a></h2>
 <p>Add the following code in one of ~/.zshrc, ~/.bashrc, ~/.bash_profile.</p>
 <div class="highlight-bash notranslate"><div class="highlight"><pre><span></span><span class="nb">export</span> <span class="nv">PATH</span><span class="o">=</span><span class="nv">$PATH</span>:&lt;<span class="nb">command</span> search path&gt;
 <span class="o">(</span>or <span class="nb">export</span> <span class="nv">PATH</span><span class="o">=</span>&lt;<span class="nb">command</span> search path&gt;:<span class="nv">$PATH</span><span class="o">)</span>
@@ -501,7 +504,7 @@ PATH is one of the environmental variables and is little different from the path
 </div>
 </section>
 <section id="environmental-variables">
-<h2><span class="section-number">1.3.2. </span>Environmental variables<a class="headerlink" href="#environmental-variables" title="Permalink to this headline">#</a></h2>
+<h2><span class="section-number">1.2.2. </span>Environmental variables<a class="headerlink" href="#environmental-variables" title="Permalink to this headline">#</a></h2>
 <div class="highlight-bash notranslate"><div class="highlight"><pre><span></span><span class="nb">export</span> -p
 ...
 <span class="nb">export</span> <span class="nv">LC_CTYPE</span><span class="o">=</span>UTF-8
@@ -564,20 +567,20 @@ ls <span class="nv">$US</span>
     <div class="footer-article-item"><!-- Previous / next buttons -->
 <div class="prev-next-area">
     <a class="left-prev"
-       href="alias.html"
+       href="linux.html"
        title="previous page">
       <i class="fa-solid fa-angle-left"></i>
       <div class="prev-next-info">
         <p class="prev-next-subtitle">previous</p>
-        <p class="prev-next-title"><span class="section-number">1.2. </span>Alias</p>
+        <p class="prev-next-title"><span class="section-number">1.1. </span>Command line</p>
       </div>
     </a>
     <a class="right-next"
-       href="markdown.html"
+       href="alias.html"
        title="next page">
       <div class="prev-next-info">
         <p class="prev-next-subtitle">next</p>
-        <p class="prev-next-title"><span class="section-number">1.4. </span>Markdown</p>
+        <p class="prev-next-title"><span class="section-number">1.3. </span>Alias</p>
       </div>
       <i class="fa-solid fa-angle-right"></i>
     </a>
@@ -599,8 +602,8 @@ ls <span class="nv">$US</span>
   </div>
   <nav class="bd-toc-nav page-toc">
     <ul class="visible nav section-nav flex-column">
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#add-command-search-path">1.3.1. Add command search path</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#environmental-variables">1.3.2. Environmental variables</a><ul class="nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#add-command-search-path">1.2.1. Add command search path</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#environmental-variables">1.2.2. Environmental variables</a><ul class="nav section-nav flex-column">
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#make-a-new-environmental-variable">make a new environmental variable</a></li>
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#remove-a-environmental-variable">Remove a environmental variable</a></li>
 </ul>

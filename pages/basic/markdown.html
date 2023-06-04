@@ -9,7 +9,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
 
-    <title>1.4. Markdown &#8212; My note</title>
+    <title>1.7. Markdown &#8212; My note</title>
   
   
   
@@ -106,8 +106,8 @@ const thebe_selector_output = ".output, .cell_output"
     <script>DOCUMENTATION_OPTIONS.pagename = 'pages/basic/markdown';</script>
     <link rel="index" title="Index" href="../../genindex.html" />
     <link rel="search" title="Search" href="../../search.html" />
-    <link rel="next" title="1.6. GitHub" href="github/github.html" />
-    <link rel="prev" title="1.3. $PATH" href="path.html" />
+    <link rel="next" title="1.9. GitHub" href="github/github.html" />
+    <link rel="prev" title="1.4. Zsh" href="zsh.html" />
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
   <meta name="docsearch:language" content="en"/>
   </head>
@@ -193,13 +193,16 @@ const thebe_selector_output = ".output, .cell_output"
         <ul class="current nav bd-sidenav">
 <li class="toctree-l1 current active has-children"><a class="reference internal" href="basic.html">1. Programming basics</a><input checked="" class="toctree-checkbox" id="toctree-checkbox-1" name="toctree-checkbox-1" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-1"><i class="fa-solid fa-chevron-down"></i></label><ul class="current">
 <li class="toctree-l2"><a class="reference internal" href="linux.html">1.1. Command line</a></li>
-<li class="toctree-l2"><a class="reference internal" href="alias.html">1.2. Alias</a></li>
-<li class="toctree-l2"><a class="reference internal" href="path.html">1.3. $PATH</a></li>
-<li class="toctree-l2 current active"><a class="current reference internal" href="#">1.4. Markdown</a></li>
+<li class="toctree-l2"><a class="reference internal" href="path.html">1.2. $PATH</a></li>
+<li class="toctree-l2"><a class="reference internal" href="alias.html">1.3. Alias</a></li>
+<li class="toctree-l2"><a class="reference internal" href="zsh.html">1.4. Zsh</a></li>
 
-<li class="toctree-l2"><a class="reference internal" href="github/github.html">1.6. GitHub</a></li>
-<li class="toctree-l2"><a class="reference internal" href="github/commitMessage.html">1.7. Commit Masssages with emoji</a></li>
-<li class="toctree-l2"><a class="reference internal" href="packageManager.html">1.8. Homebrew and venv</a></li>
+
+<li class="toctree-l2 current active"><a class="current reference internal" href="#">1.7. Markdown</a></li>
+
+<li class="toctree-l2"><a class="reference internal" href="github/github.html">1.9. GitHub</a></li>
+<li class="toctree-l2"><a class="reference internal" href="github/commitMessage.html">1.10. Commit Masssages with emoji</a></li>
+<li class="toctree-l2"><a class="reference internal" href="packageManager.html">1.11. Homebrew and venv</a></li>
 </ul>
 </li>
 <li class="toctree-l1 has-children"><a class="reference internal" href="../python/python0.html">2. Python</a><input class="toctree-checkbox" id="toctree-checkbox-2" name="toctree-checkbox-2" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-2"><i class="fa-solid fa-chevron-down"></i></label><ul>
@@ -450,24 +453,24 @@ document.write(`
             </div>
             <nav aria-label="Page">
                 <ul class="visible nav section-nav flex-column">
-<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#">1.4. Markdown</a></li>
-<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#heading-1">1.5. Heading 1</a><ul class="visible nav section-nav flex-column">
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#heading-2">1.5.1. Heading 2</a><ul class="nav section-nav flex-column">
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#">1.7. Markdown</a></li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#heading-1">1.8. Heading 1</a><ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#heading-2">1.8.1. Heading 2</a><ul class="nav section-nav flex-column">
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#heading-3">Heading 3</a></li>
 </ul>
 </li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#horizontal-rule">1.5.2. horizontal rule</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#list">1.5.3. list</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#color">1.5.4. Color</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#code">1.5.5. Code</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#links">1.5.6. Links</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#checkbox">1.5.7. Checkbox</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#raw-text-code-bold-italic-strikethrough">1.5.8. raw text, code, bold, italic, strikethrough</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#latex">1.5.9. Latex</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#quote">1.5.10. Quote</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#table">1.5.11. Table</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#in-page-link">1.5.12. In-page link</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#reference">1.5.13. Reference</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#horizontal-rule">1.8.2. horizontal rule</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#list">1.8.3. list</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#color">1.8.4. Color</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#code">1.8.5. Code</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#links">1.8.6. Links</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#checkbox">1.8.7. Checkbox</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#raw-text-code-bold-italic-strikethrough">1.8.8. raw text, code, bold, italic, strikethrough</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#latex">1.8.9. Latex</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#quote">1.8.10. Quote</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#table">1.8.11. Table</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#in-page-link">1.8.12. In-page link</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#reference">1.8.13. Reference</a></li>
 </ul>
 </li>
 </ul>
@@ -483,7 +486,7 @@ document.write(`
                 <article class="bd-article" role="main">
                   
   <section class="tex2jax_ignore mathjax_ignore" id="markdown">
-<h1><span class="section-number">1.4. </span>Markdown<a class="headerlink" href="#markdown" title="Permalink to this headline">#</a></h1>
+<h1><span class="section-number">1.7. </span>Markdown<a class="headerlink" href="#markdown" title="Permalink to this headline">#</a></h1>
 <p>Here, you can learn the basic usage of Markdown. Markdown is <strong>a simple, lightweight markup language for creating formatted, structured text</strong>.
 This whole Jupyter Book source code are also written in Markdown (especiallly MyST). You can use Markdown to make websites, documents, notes, book, presentations, email messages. MyST is one of markedown derivatives which have features for <strong>scientific and technical documentation</strong>.</p>
 <p>In the following, you see how to write Markdown and how it looks like.</p>
@@ -497,22 +500,22 @@ This whole Jupyter Book source code are also written in Markdown (especiallly My
 </section>
 <hr class="docutils" />
 <section class="tex2jax_ignore mathjax_ignore" id="heading-1">
-<h1><span class="section-number">1.5. </span>Heading 1<a class="headerlink" href="#heading-1" title="Permalink to this headline">#</a></h1>
+<h1><span class="section-number">1.8. </span>Heading 1<a class="headerlink" href="#heading-1" title="Permalink to this headline">#</a></h1>
 <section id="heading-2">
-<h2><span class="section-number">1.5.1. </span>Heading 2<a class="headerlink" href="#heading-2" title="Permalink to this headline">#</a></h2>
+<h2><span class="section-number">1.8.1. </span>Heading 2<a class="headerlink" href="#heading-2" title="Permalink to this headline">#</a></h2>
 <section id="heading-3">
 <h3>Heading 3<a class="headerlink" href="#heading-3" title="Permalink to this headline">#</a></h3>
 </section>
 </section>
 <section id="horizontal-rule">
-<h2><span class="section-number">1.5.2. </span>horizontal rule<a class="headerlink" href="#horizontal-rule" title="Permalink to this headline">#</a></h2>
+<h2><span class="section-number">1.8.2. </span>horizontal rule<a class="headerlink" href="#horizontal-rule" title="Permalink to this headline">#</a></h2>
 <div class="highlight-md notranslate"><div class="highlight"><pre><span></span>---
 </pre></div>
 </div>
 </section>
 <hr class="docutils" />
 <section id="list">
-<h2><span class="section-number">1.5.3. </span>list<a class="headerlink" href="#list" title="Permalink to this headline">#</a></h2>
+<h2><span class="section-number">1.8.3. </span>list<a class="headerlink" href="#list" title="Permalink to this headline">#</a></h2>
 <blockquote>
 <div><div class="highlight-md notranslate"><div class="highlight"><pre><span></span><span class="k">-</span> list item 1
 <span class="k">-</span> list item 2
@@ -566,7 +569,7 @@ This whole Jupyter Book source code are also written in Markdown (especiallly My
 </section>
 <hr class="docutils" />
 <section id="color">
-<h2><span class="section-number">1.5.4. </span>Color<a class="headerlink" href="#color" title="Permalink to this headline">#</a></h2>
+<h2><span class="section-number">1.8.4. </span>Color<a class="headerlink" href="#color" title="Permalink to this headline">#</a></h2>
 <p>You can use HTML in Markdown.</p>
 <blockquote>
 <div><div class="highlight-md notranslate"><div class="highlight"><pre><span></span>&lt;font color=&quot;red&quot;&gt;Red string&lt;/font&gt;
@@ -579,7 +582,7 @@ This whole Jupyter Book source code are also written in Markdown (especiallly My
 </section>
 <hr class="docutils" />
 <section id="code">
-<h2><span class="section-number">1.5.5. </span>Code<a class="headerlink" href="#code" title="Permalink to this headline">#</a></h2>
+<h2><span class="section-number">1.8.5. </span>Code<a class="headerlink" href="#code" title="Permalink to this headline">#</a></h2>
 <blockquote>
 <div><div class="highlight-md notranslate"><div class="highlight"><pre><span></span><span class="sb">```python</span>
 <span class="kn">import</span> <span class="nn">streamlit</span> <span class="k">as</span> <span class="nn">st</span>
@@ -599,7 +602,7 @@ This whole Jupyter Book source code are also written in Markdown (especiallly My
 </section>
 <hr class="docutils" />
 <section id="links">
-<h2><span class="section-number">1.5.6. </span>Links<a class="headerlink" href="#links" title="Permalink to this headline">#</a></h2>
+<h2><span class="section-number">1.8.6. </span>Links<a class="headerlink" href="#links" title="Permalink to this headline">#</a></h2>
 <blockquote>
 <div><div class="highlight-md notranslate"><div class="highlight"><pre><span></span>[<span class="nt">Wikipedia</span>](<span class="na">https://en.wikipedia.org/wiki/Viola%E2%80%93Jones_object_detection_framework</span>)
 </pre></div>
@@ -612,7 +615,7 @@ This whole Jupyter Book source code are also written in Markdown (especiallly My
 </section>
 <hr class="docutils" />
 <section id="checkbox">
-<h2><span class="section-number">1.5.7. </span>Checkbox<a class="headerlink" href="#checkbox" title="Permalink to this headline">#</a></h2>
+<h2><span class="section-number">1.8.7. </span>Checkbox<a class="headerlink" href="#checkbox" title="Permalink to this headline">#</a></h2>
 <blockquote>
 <div><div class="highlight-md notranslate"><div class="highlight"><pre><span></span><span class="k">- [ ]</span> タスク1
 <span class="k">- [x]</span> タスク2
@@ -628,7 +631,7 @@ This whole Jupyter Book source code are also written in Markdown (especiallly My
 </section>
 <hr class="docutils" />
 <section id="raw-text-code-bold-italic-strikethrough">
-<h2><span class="section-number">1.5.8. </span>raw text, code, bold, italic, strikethrough<a class="headerlink" href="#raw-text-code-bold-italic-strikethrough" title="Permalink to this headline">#</a></h2>
+<h2><span class="section-number">1.8.8. </span>raw text, code, bold, italic, strikethrough<a class="headerlink" href="#raw-text-code-bold-italic-strikethrough" title="Permalink to this headline">#</a></h2>
 <blockquote>
 <div><div class="highlight-md notranslate"><div class="highlight"><pre><span></span><span class="sb">```</span>
 <span class="sb">asdf</span>
@@ -666,7 +669,7 @@ ___adsf___
 </section>
 <hr class="docutils" />
 <section id="latex">
-<h2><span class="section-number">1.5.9. </span>Latex<a class="headerlink" href="#latex" title="Permalink to this headline">#</a></h2>
+<h2><span class="section-number">1.8.9. </span>Latex<a class="headerlink" href="#latex" title="Permalink to this headline">#</a></h2>
 <blockquote>
 <div><div class="highlight-md notranslate"><div class="highlight"><pre><span></span>&gt;$\LaTeX$
 $$
@@ -686,7 +689,7 @@ $$
 </div></blockquote>
 </section>
 <section id="quote">
-<h2><span class="section-number">1.5.10. </span>Quote<a class="headerlink" href="#quote" title="Permalink to this headline">#</a></h2>
+<h2><span class="section-number">1.8.10. </span>Quote<a class="headerlink" href="#quote" title="Permalink to this headline">#</a></h2>
 <blockquote>
 <div><div class="highlight-md notranslate"><div class="highlight"><pre><span></span><span class="k">&gt; </span><span class="ge">This is a quote.</span>
 </pre></div>
@@ -698,7 +701,7 @@ $$
 </section>
 <hr class="docutils" />
 <section id="table">
-<h2><span class="section-number">1.5.11. </span>Table<a class="headerlink" href="#table" title="Permalink to this headline">#</a></h2>
+<h2><span class="section-number">1.8.11. </span>Table<a class="headerlink" href="#table" title="Permalink to this headline">#</a></h2>
 <blockquote>
 <div><div class="highlight-md notranslate"><div class="highlight"><pre><span></span>| Header 1 | Header 2 | Header 3 |
 | :-------- | :--------: | --------: |
@@ -740,7 +743,7 @@ $$
 </section>
 <hr class="docutils" />
 <section id="in-page-link">
-<h2><span class="section-number">1.5.12. </span>In-page link<a class="headerlink" href="#in-page-link" title="Permalink to this headline">#</a></h2>
+<h2><span class="section-number">1.8.12. </span>In-page link<a class="headerlink" href="#in-page-link" title="Permalink to this headline">#</a></h2>
 <blockquote>
 <div><div class="highlight-md notranslate"><div class="highlight"><pre><span></span>[<span class="nt">link to list</span>](<span class="na">#list</span>)
 </pre></div>
@@ -751,7 +754,7 @@ $$
 </div></blockquote>
 </section>
 <section id="reference">
-<h2><span class="section-number">1.5.13. </span>Reference<a class="headerlink" href="#reference" title="Permalink to this headline">#</a></h2>
+<h2><span class="section-number">1.8.13. </span>Reference<a class="headerlink" href="#reference" title="Permalink to this headline">#</a></h2>
 <p><a class="reference external" href="https://www.google.com/url?sa=t&amp;rct=j&amp;q=&amp;esrc=s&amp;source=web&amp;cd=&amp;cad=rja&amp;uact=8&amp;ved=2ahUKEwiW8bKRiv33AhXFC94KHb5XAYgQFnoECAwQAQ&amp;url=https%3A%2F%2Fwww.markdownguide.org%2F&amp;usg=AOvVaw1fohdJEEbL6kohiJ-Pimbe">Markdown Guide</a></p>
 </section>
 </section>
@@ -788,12 +791,12 @@ $$
     <div class="footer-article-item"><!-- Previous / next buttons -->
 <div class="prev-next-area">
     <a class="left-prev"
-       href="path.html"
+       href="zsh.html"
        title="previous page">
       <i class="fa-solid fa-angle-left"></i>
       <div class="prev-next-info">
         <p class="prev-next-subtitle">previous</p>
-        <p class="prev-next-title"><span class="section-number">1.3. </span>$PATH</p>
+        <p class="prev-next-title"><span class="section-number">1.4. </span>Zsh</p>
       </div>
     </a>
     <a class="right-next"
@@ -801,7 +804,7 @@ $$
        title="next page">
       <div class="prev-next-info">
         <p class="prev-next-subtitle">next</p>
-        <p class="prev-next-title"><span class="section-number">1.6. </span>GitHub</p>
+        <p class="prev-next-title"><span class="section-number">1.9. </span>GitHub</p>
       </div>
       <i class="fa-solid fa-angle-right"></i>
     </a>
@@ -823,24 +826,24 @@ $$
   </div>
   <nav class="bd-toc-nav page-toc">
     <ul class="visible nav section-nav flex-column">
-<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#">1.4. Markdown</a></li>
-<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#heading-1">1.5. Heading 1</a><ul class="visible nav section-nav flex-column">
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#heading-2">1.5.1. Heading 2</a><ul class="nav section-nav flex-column">
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#">1.7. Markdown</a></li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#heading-1">1.8. Heading 1</a><ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#heading-2">1.8.1. Heading 2</a><ul class="nav section-nav flex-column">
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#heading-3">Heading 3</a></li>
 </ul>
 </li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#horizontal-rule">1.5.2. horizontal rule</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#list">1.5.3. list</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#color">1.5.4. Color</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#code">1.5.5. Code</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#links">1.5.6. Links</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#checkbox">1.5.7. Checkbox</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#raw-text-code-bold-italic-strikethrough">1.5.8. raw text, code, bold, italic, strikethrough</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#latex">1.5.9. Latex</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#quote">1.5.10. Quote</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#table">1.5.11. Table</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#in-page-link">1.5.12. In-page link</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#reference">1.5.13. Reference</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#horizontal-rule">1.8.2. horizontal rule</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#list">1.8.3. list</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#color">1.8.4. Color</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#code">1.8.5. Code</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#links">1.8.6. Links</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#checkbox">1.8.7. Checkbox</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#raw-text-code-bold-italic-strikethrough">1.8.8. raw text, code, bold, italic, strikethrough</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#latex">1.8.9. Latex</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#quote">1.8.10. Quote</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#table">1.8.11. Table</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#in-page-link">1.8.12. In-page link</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#reference">1.8.13. Reference</a></li>
 </ul>
 </li>
 </ul>
