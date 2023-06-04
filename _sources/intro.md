@@ -1,9 +1,9 @@
 # Welcome to my Jupyter Book
 
-- [Programming basics](basic/basic.md)
-- [Python](python/python.md)
-- [Coding rules](coding-rules/coding-rules.md)
-- [Latex](latex/latex.md)
-- [Jupyer book](jb/jb.md)
-- [Tools](tools/tools.md)
-- [Others](others/others.md)
+- [Programming basics](pages/basic/basic.md)
+- [Python](pages/python/python.md)
+- [Coding rules](pages/coding-rules/coding-rules.md)
+- [Latex](pages/latex/latex.md)
+- [Jupyer book](pages/jb/jb.md)
+- [Tools](pages/tools/tools.md)
+- [Others](pages/others/others.md)
