@@ -207,24 +207,13 @@ When you specify the mode with octal number;\
 If you permit all operations(4+2+1) to everyone, you can use `777` for example.
 If you permit all operations(4+2+1) to owner and read and execute(4+1) to group and others, you can use `755` for example.
 
-|target| meaning|
-|----|----|
-|u|	User|
-|g| Group|
-|o| Others|
-|a|	All|
 
-|operation| meaning|
-|----|----|
-|=|	set the modes|
-|+|	add the mode|
-|-|	remove the mode|
-
-|mode| meaning|
-|----|----|
-|r|	read|
-|w|	write|
-|x|	execute|
+|target|meaning|operation|meaning|mode|meaning|
+|:-:|:---:|:-:|:------------:|:-:|:----:|
+|u|	User  |=| set the modes  |r| read   |
+|g| Group |+| add the mode   |w| write  |
+|o| Others|-| remove the mode|x| execute|
+|a|	All   | |                | |        |
 
 
 For example,
