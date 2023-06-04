@@ -4,29 +4,27 @@
 Z shell (Zsh) is one of the Unix command shells. It can be used as an interactive login command shell and as a powerful shell script command interpreter. Zsh can also be viewed as an extended version of Bourne Shell with many improvements. Not only that, but some useful features of bash, ksh, and tcsh are also incorporated. [- wikipedia](https://en.wikipedia.org/wiki/Z_Shell)
 ```
 
-# Put `.zsh*` files in a directory
-Let's organize `.zsh*` files in the home directory so that I can manage them on GitHub.
-
-By setting `$ZDOTDIR`, most files can be moved from the home directory. In the following, `.zsh*` is managed in a directory named `zsh/`.
+## Manage `.zsh*` files in `zsh/` directory
+`.zsh*` files are easy to get messy in the home directory. By setting `$ZDOTDIR`, most files can be moved from the home directory. In the following, `.zsh*` is managed in a directory named `zsh/`.
 
 ```bash
 - zsh/
-	|-- aliases/
-			|-- git.sh
-			|-- ...
-			|-- python.sh
-	|-- settings/
-			|-- prompt.sh
-			|-- zsh-extensions.sh
-	|-- .zprofile
-	|-- .zshrc
-	|-- .zshenv
+  |-- aliases/
+	|-- git.sh
 	|-- ...
-	|-- .git
-	|-- .gitignore
+	|-- python.sh
+  |-- settings/
+	|-- prompt.sh
+	|-- zsh-extensions.sh
+  |-- .zprofile
+  |-- .zshrc
+  |-- .zshenv
+  |-- ...
+  |-- .git
+  |-- .gitignore
 ```
 
-Set `zsh/` to `ZDOTDIR` so that `.zsh*` in it is read.
+Set `zsh/` as `ZDOTDIR` so that `.zsh*` in it is read.
 
 ```bash
 # In .zshenv
@@ -40,7 +38,7 @@ export ZDOTDIR="$HOME/path/to/zsh"
 .zshenv -> '/Users/$HOME/path/to/zsh/.zshenv'
 ```
 
-# `.zshrc`
+## `.zshrc`
 
 `.zshrc` files are also easy to get messy, so divide them into files for each content and read them from other files. Here, we have prepared directories called `aliases` and `settings` in the same hierarchy as `.zshrc`, and put the files to be read in them.
 
