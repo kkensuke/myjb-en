@@ -451,7 +451,13 @@ document.write(`
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#basic">1.2.1. Basic</a><ul class="nav section-nav flex-column">
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#customize-and-colorize-prompt">Customize and colorize PROMPT</a></li>
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#put-a-blank-line-before-every-prompt-except-the-first-one">Put a blank line before every prompt except the first one.</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#frequently-used-commands">Frequently used commands</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#change-directory">change directory</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#show-files">show files</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#edit-files">edit files</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#search">search</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#open-apps">open apps</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#others">others</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#zip-encryption">zip encryption</a></li>
 </ul>
 </li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#mac-os-settings">1.2.2. Mac OS settings</a><ul class="nav section-nav flex-column">
@@ -462,7 +468,7 @@ document.write(`
 </ul>
 </li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#github">1.2.3. GitHub</a><ul class="nav section-nav flex-column">
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#define-an-alias-of-several-commands">Define an alias of several commands</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#define-an-alias-of-several-commands-with-arguments-function">Define an alias of several commands with arguments (function)</a></li>
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#gitignore-io">gitignore.io</a></li>
 </ul>
 </li>
@@ -487,17 +493,19 @@ document.write(`
                   
   <section class="tex2jax_ignore mathjax_ignore" id="alias">
 <h1><span class="section-number">1.2. </span>Alias<a class="headerlink" href="#alias" title="Permalink to this headline">#</a></h1>
-<p>If you are using command line, there must be commands you repeatedly use.
-Some commands are long and you would think that copying them every time is a waste of time. In such case, you can use <code class="docutils literal notranslate"><span class="pre">alias</span></code> for a command. If you want to use <code class="docutils literal notranslate"><span class="pre">h</span></code> as an alias for <code class="docutils literal notranslate"><span class="pre">cd</span> <span class="pre">~</span></code>, you define <code class="docutils literal notranslate"><span class="pre">alias</span> <span class="pre">h='cd</span> <span class="pre">~'</span></code> in <code class="docutils literal notranslate"><span class="pre">~/.zshrc</span></code> (or <code class="docutils literal notranslate"><span class="pre">~/.bashrc</span></code>). If you can’t find such files in your home directory, you need to make it with <code class="docutils literal notranslate"><span class="pre">touch</span> <span class="pre">~/.zshrc</span></code>.</p>
+<p>If you are using command line, there must be commands you use frequently.
+Some commands are long and you might think that copying them every time is a waste of time. In such case, you can use <code class="docutils literal notranslate"><span class="pre">alias</span></code> for a command. If you want to use <code class="docutils literal notranslate"><span class="pre">h</span></code> as an alias for <code class="docutils literal notranslate"><span class="pre">cd</span> <span class="pre">~</span></code>, you define <code class="docutils literal notranslate"><span class="pre">alias</span> <span class="pre">h='cd</span> <span class="pre">~'</span></code> in <code class="docutils literal notranslate"><span class="pre">~/.zshrc</span></code> (or <code class="docutils literal notranslate"><span class="pre">~/.bashrc</span></code>). If you can’t find such files in your home directory, you need to make it with <code class="docutils literal notranslate"><span class="pre">touch</span> <span class="pre">~/.zshrc</span></code>.</p>
 <p>If you find some useful aliases below, write them in <code class="docutils literal notranslate"><span class="pre">~/.zshrc</span></code>.</p>
 <section id="basic">
 <h2><span class="section-number">1.2.1. </span>Basic<a class="headerlink" href="#basic" title="Permalink to this headline">#</a></h2>
 <section id="customize-and-colorize-prompt">
 <h3>Customize and colorize PROMPT<a class="headerlink" href="#customize-and-colorize-prompt" title="Permalink to this headline">#</a></h3>
 <div class="highlight-bash notranslate"><div class="highlight"><pre><span></span><span class="nv">PS1</span><span class="o">=</span><span class="s2">&quot;%F{082}%n%f %F{051}%~%f %# &quot;</span>
-<span class="nv">RPROMPT</span><span class="o">=</span><span class="s1">&#39;%t&#39;</span>
+<span class="nv">RPROMPT</span><span class="o">=</span><span class="s1">&#39;%T&#39;</span>
 </pre></div>
 </div>
+<p><code class="docutils literal notranslate"><span class="pre">%n</span></code> means username, <code class="docutils literal notranslate"><span class="pre">%~</span></code> means current directory, <code class="docutils literal notranslate"><span class="pre">%#</span></code> shows <code class="docutils literal notranslate"><span class="pre">#</span></code> if you are root, <code class="docutils literal notranslate"><span class="pre">%</span></code> if not. <code class="docutils literal notranslate"><span class="pre">RPROMPT</span></code> is the right prompt. <code class="docutils literal notranslate"><span class="pre">%T</span></code> shows the current time in 24-hour format (<code class="docutils literal notranslate"><span class="pre">%t</span></code> for 12-hour format). Read more about Prompt Expansion in this <a class="reference external" href="https://zsh.sourceforge.io/Doc/Release/Prompt-Expansion.html">link</a>.</p>
+<p>By using <code class="docutils literal notranslate"><span class="pre">%F{color</span> <span class="pre">number}</span></code> and <code class="docutils literal notranslate"><span class="pre">%f</span></code>, you can colorize the prompt. You can find color numbers <a class="reference external" href="https://en.wikipedia.org/wiki/ANSI_escape_code#8-bit">here</a>.</p>
 </section>
 <section id="put-a-blank-line-before-every-prompt-except-the-first-one">
 <h3>Put a blank line before every prompt except the first one.<a class="headerlink" href="#put-a-blank-line-before-every-prompt-except-the-first-one" title="Permalink to this headline">#</a></h3>
@@ -505,10 +513,9 @@ Some commands are long and you would think that copying them every time is a was
 </pre></div>
 </div>
 </section>
-<section id="frequently-used-commands">
-<h3>Frequently used commands<a class="headerlink" href="#frequently-used-commands" title="Permalink to this headline">#</a></h3>
-<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span><span class="c1"># change directory</span>
-cs<span class="o">()</span> <span class="o">{</span> <span class="nb">cd</span> <span class="nv">$@</span> <span class="o">&amp;&amp;</span> la <span class="o">}</span>
+<section id="change-directory">
+<h3>change directory<a class="headerlink" href="#change-directory" title="Permalink to this headline">#</a></h3>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>cs<span class="o">()</span> <span class="o">{</span> <span class="nb">cd</span> <span class="nv">$@</span> <span class="o">&amp;&amp;</span> la <span class="o">}</span>
 <span class="nb">alias</span> <span class="nv">cd</span><span class="o">=</span><span class="s1">&#39;cs&#39;</span>
 <span class="nb">alias</span> ..<span class="o">=</span><span class="s1">&#39;cd ..&#39;</span>
 <span class="nb">alias</span> ...<span class="o">=</span><span class="s1">&#39;cd ../..&#39;</span>
@@ -519,46 +526,100 @@ cs<span class="o">()</span> <span class="o">{</span> <span class="nb">cd</span> 
 <span class="nb">alias</span> <span class="nv">h</span><span class="o">=</span><span class="s1">&#39;cd ~&#39;</span>
 <span class="nb">alias</span> /<span class="o">=</span><span class="s1">&#39;cd /&#39;</span>
 
-
-<span class="c1"># show files</span>
-<span class="c1">#alias ls=&#39;ls -F&#39;</span>
-<span class="nb">alias</span> <span class="nv">ls</span><span class="o">=</span><span class="s1">&#39;gls --color -F&#39;</span>
+<span class="c1"># Change working directory to the top-most Finder window location.</span>
+cdf<span class="o">()</span> <span class="o">{</span> <span class="nb">cd</span> <span class="s2">&quot;</span><span class="k">$(</span>osascript -e <span class="s1">&#39;tell app &quot;Finder&quot; to POSIX path of (insertion location as alias)&#39;</span><span class="k">)</span><span class="s2">&quot;</span> <span class="o">}</span>
+</pre></div>
+</div>
+</section>
+<section id="show-files">
+<h3>show files<a class="headerlink" href="#show-files" title="Permalink to this headline">#</a></h3>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span><span class="c1">#alias ls=&#39;ls -F&#39;</span>
+<span class="nb">alias</span> <span class="nv">ls</span><span class="o">=</span><span class="s1">&#39;gls --color --group-directories-first -F&#39;</span>
 <span class="nb">alias</span> <span class="nv">l</span><span class="o">=</span><span class="s1">&#39;ls&#39;</span>
 <span class="nb">alias</span> <span class="nv">la</span><span class="o">=</span><span class="s1">&#39;ls -A&#39;</span>
 <span class="nb">alias</span> <span class="nv">ll</span><span class="o">=</span><span class="s1">&#39;ls -AhlS&#39;</span>
+<span class="nb">alias</span> <span class="nv">ds</span><span class="o">=</span><span class="s1">&#39;du -d 1 -h 2&gt;/dev/null | sort -h&#39;</span>
 <span class="nb">alias</span> <span class="nv">pwd</span><span class="o">=</span><span class="s1">&#39;sed &quot;s/ /\\\ /g&quot; &lt;&lt;&lt; ${PWD/#$HOME/&quot;~&quot;}&#39;</span>
 <span class="nb">alias</span> <span class="nv">p</span><span class="o">=</span><span class="s1">&#39;pwd&#39;</span>
 <span class="nb">alias</span> <span class="nv">path</span><span class="o">=</span><span class="s1">&#39;echo -e ${PATH//:/\\n}&#39;</span>
-
-
-<span class="c1"># edit files</span>
-<span class="nb">alias</span> <span class="nv">v</span><span class="o">=</span><span class="s1">&#39;vi&#39;</span>
+</pre></div>
+</div>
+<ul class="simple">
+<li><p>To use <code class="docutils literal notranslate"><span class="pre">gls</span></code>, you need to install <code class="docutils literal notranslate"><span class="pre">coreutils</span></code> with <code class="docutils literal notranslate"><span class="pre">brew</span> <span class="pre">install</span> <span class="pre">coreutils</span></code>. You can use the same colorization as <code class="docutils literal notranslate"><span class="pre">tree</span></code> command with <code class="docutils literal notranslate"><span class="pre">gls</span></code>. <code class="docutils literal notranslate"><span class="pre">--color</span></code> option colorize the output of <code class="docutils literal notranslate"><span class="pre">gls</span></code> command. <code class="docutils literal notranslate"><span class="pre">--group-directories-first</span></code> option puts directories first. <code class="docutils literal notranslate"><span class="pre">-F</span></code> option adds a trailing <code class="docutils literal notranslate"><span class="pre">/</span></code> to directory names, <code class="docutils literal notranslate"><span class="pre">&#64;</span></code> to symbolic links, and so on.</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">ls</span></code> is defined as <code class="docutils literal notranslate"><span class="pre">gls</span> <span class="pre">--color</span> <span class="pre">--group-directories-first</span> <span class="pre">-F</span></code> before <code class="docutils literal notranslate"><span class="pre">la='ls</span> <span class="pre">-A'</span></code> and <code class="docutils literal notranslate"><span class="pre">ll='ls</span> <span class="pre">-AhlS'</span></code>. This means <code class="docutils literal notranslate"><span class="pre">la='gls</span> <span class="pre">--color</span> <span class="pre">--group-directories-first</span> <span class="pre">-F</span> <span class="pre">-A'</span></code> and <code class="docutils literal notranslate"><span class="pre">ll='gls</span> <span class="pre">--color</span> <span class="pre">--group-directories-first</span> <span class="pre">-F</span> <span class="pre">-AhlS'</span></code>. <code class="docutils literal notranslate"><span class="pre">-A</span></code> option shows all files and directories except <code class="docutils literal notranslate"><span class="pre">.</span></code> and <code class="docutils literal notranslate"><span class="pre">..</span></code>. <code class="docutils literal notranslate"><span class="pre">-h</span></code> option shows the size in human readable format. <code class="docutils literal notranslate"><span class="pre">-l</span></code> option shows the file size, owner, group, and permissions. <code class="docutils literal notranslate"><span class="pre">-S</span></code> option sorts by file size.</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">du</span> <span class="pre">-d</span> <span class="pre">1</span></code> shows the size of files and directories in the current directory. <code class="docutils literal notranslate"><span class="pre">-h</span></code> option shows the size in human readable format and <code class="docutils literal notranslate"><span class="pre">2&gt;/dev/null</span></code> hides error messages. Finally, <code class="docutils literal notranslate"><span class="pre">sort</span> <span class="pre">-h</span></code> sorts by file size using <a class="reference internal" href="linux.html#pipeline-and-redirect"><span class="std std-doc">pipe</span></a>.</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">sed</span> <span class="pre">&quot;s/</span> <span class="pre">/\\\</span> <span class="pre">/g&quot;</span></code> puts <code class="docutils literal notranslate"><span class="pre">\</span></code> before every space. <code class="docutils literal notranslate"><span class="pre">&lt;&lt;&lt;</span></code> is a “here string”. <code class="docutils literal notranslate"><span class="pre">${PWD/#$HOME/&quot;~&quot;}</span></code> replaces <code class="docutils literal notranslate"><span class="pre">$HOME</span></code> with <code class="docutils literal notranslate"><span class="pre">~</span></code> in the current directory path.</p></li>
+</ul>
+<div class="admonition hint">
+<p class="admonition-title">Hint</p>
+<p>When you specify options, you can use <code class="docutils literal notranslate"><span class="pre">ls</span> <span class="pre">-AhlS</span></code> instead of <code class="docutils literal notranslate"><span class="pre">ls</span> <span class="pre">-A</span> <span class="pre">-h</span> <span class="pre">-l</span> <span class="pre">-S</span></code>.</p>
+</div>
+</section>
+<section id="edit-files">
+<h3>edit files<a class="headerlink" href="#edit-files" title="Permalink to this headline">#</a></h3>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span><span class="nb">alias</span> <span class="nv">v</span><span class="o">=</span><span class="s1">&#39;vi&#39;</span>
 <span class="nb">alias</span> <span class="nv">cp</span><span class="o">=</span><span class="s1">&#39;cp -iv&#39;</span>
 <span class="nb">alias</span> <span class="nv">mv</span><span class="o">=</span><span class="s1">&#39;mv -iv&#39;</span>
 <span class="nb">alias</span> <span class="nv">rm</span><span class="o">=</span><span class="s1">&#39;rm -iv&#39;</span>
 <span class="nb">alias</span> <span class="nv">rf</span><span class="o">=</span><span class="s1">&#39;rm -rf&#39;</span>
-
-
-<span class="c1"># others</span>
-<span class="nb">alias</span> <span class="nv">his</span><span class="o">=</span><span class="s1">&#39;history&#39;</span>
+</pre></div>
+</div>
+<ul class="simple">
+<li><p><code class="docutils literal notranslate"><span class="pre">-i</span></code> option asks you before overwriting a file.</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">-v</span></code> option shows the name of the file being copied, moved, or removed.</p></li>
+</ul>
+</section>
+<section id="search">
+<h3>search<a class="headerlink" href="#search" title="Permalink to this headline">#</a></h3>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>fb<span class="o">()</span> <span class="o">{</span> find . -size +<span class="nv">$2</span>M -type f -name <span class="nv">$1</span> -exec ls -lhS <span class="s2">&quot;{}&quot;</span> <span class="se">\;</span> <span class="p">|</span> awk <span class="s1">&#39;{print $5,$9}&#39;</span> <span class="o">}</span>
+fd<span class="o">()</span> <span class="o">{</span> find . -name <span class="s2">&quot;*.</span><span class="nv">$1</span><span class="s2">&quot;</span> -type f -delete <span class="o">}</span>
+rn<span class="o">()</span> <span class="o">{</span> <span class="k">for</span> filename <span class="k">in</span> *.<span class="nv">$1</span><span class="p">;</span> <span class="k">do</span> mv -f <span class="s2">&quot;</span><span class="nv">$filename</span><span class="s2">&quot;</span> <span class="k">$(</span><span class="nb">echo</span> <span class="s2">&quot;</span><span class="nv">$filename</span><span class="s2">&quot;</span> <span class="p">|</span> sed -e <span class="s2">&quot;s/</span><span class="nv">$2</span><span class="s2">//g&quot;</span><span class="k">)</span><span class="p">;</span> <span class="k">done</span> <span class="o">}</span>
+dif<span class="o">(){</span> diff --color -u <span class="nv">$1</span> <span class="nv">$2</span> <span class="o">}</span>
+<span class="nb">alias</span> <span class="nv">imgopt</span><span class="o">=</span><span class="s1">&#39;open -a ImageOptim .&#39;</span>
 <span class="nb">alias</span> <span class="nv">grep</span><span class="o">=</span><span class="s1">&#39;grep --color&#39;</span>
-<span class="nb">alias</span> <span class="nv">lns</span><span class="o">=</span><span class="s1">&#39;ln -s&#39;</span>
-<span class="nb">alias</span> <span class="nv">rl</span><span class="o">=</span><span class="s1">&#39;exec ${SHELL} -l&#39;</span> <span class="c1">#reload</span>
-
-
-<span class="c1"># open apps</span>
-<span class="nb">alias</span> <span class="nv">here</span><span class="o">=</span><span class="s1">&#39;open .&#39;</span>
+</pre></div>
+</div>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>You can make an alias with arguments, which is called a function. Functions are defined as <code class="docutils literal notranslate"><span class="pre">function_name()</span> <span class="pre">{</span> <span class="pre">commands</span> <span class="pre">}</span></code>. For example, <code class="docutils literal notranslate"><span class="pre">fb</span></code> takes two arguments, <code class="docutils literal notranslate"><span class="pre">$1</span></code> and <code class="docutils literal notranslate"><span class="pre">$2</span></code>. <code class="docutils literal notranslate"><span class="pre">$1</span></code> is the first argument and <code class="docutils literal notranslate"><span class="pre">$2</span></code> is the second argument. Use like <code class="docutils literal notranslate"><span class="pre">fb</span> <span class="pre">pdf</span> <span class="pre">10</span></code> to find files with the name <code class="docutils literal notranslate"><span class="pre">pdf</span></code> larger than 10 MB.</p>
+<p>In addition to <code class="docutils literal notranslate"><span class="pre">$1</span></code> and <code class="docutils literal notranslate"><span class="pre">$2</span></code>, there are other special variables: <code class="docutils literal notranslate"><span class="pre">$0</span></code> is the function name. <code class="docutils literal notranslate"><span class="pre">$&#64;</span></code> is all arguments. <code class="docutils literal notranslate"><span class="pre">$#</span></code> is the number of arguments. <code class="docutils literal notranslate"><span class="pre">$?</span></code> is the exit status of the last command. <code class="docutils literal notranslate"><span class="pre">$$</span></code> is the process ID of the current shell. <code class="docutils literal notranslate"><span class="pre">$!</span></code> is the process ID of the last command run in the background.</p>
+</div>
+<ul class="simple">
+<li><p><code class="docutils literal notranslate"><span class="pre">fb</span></code> finds files larger than <code class="docutils literal notranslate"><span class="pre">$2</span></code> MB with the name <code class="docutils literal notranslate"><span class="pre">$1</span></code> in the current directory. <code class="docutils literal notranslate"><span class="pre">-size</span> <span class="pre">+$2M</span></code> option finds files larger than <code class="docutils literal notranslate"><span class="pre">$2</span></code> MB. <code class="docutils literal notranslate"><span class="pre">-type</span> <span class="pre">f</span></code> option finds only files (<code class="docutils literal notranslate"><span class="pre">-type</span> <span class="pre">d</span></code> finds only directories). <code class="docutils literal notranslate"><span class="pre">-name</span> <span class="pre">$1</span></code> option finds files with the name <code class="docutils literal notranslate"><span class="pre">$1</span></code>. <code class="docutils literal notranslate"><span class="pre">-exec</span> <span class="pre">ls</span> <span class="pre">-lhS</span> <span class="pre">&quot;{}&quot;</span> <span class="pre">\;</span></code> option executes <code class="docutils literal notranslate"><span class="pre">ls</span> <span class="pre">-lhS</span></code> command for each file found. <code class="docutils literal notranslate"><span class="pre">awk</span> <span class="pre">'{print</span> <span class="pre">$5,$9}'</span></code> option prints the size and name of the file. <code class="docutils literal notranslate"><span class="pre">$5</span></code> means the 5th column and <code class="docutils literal notranslate"><span class="pre">$9</span></code> means the 9th column of the output of <code class="docutils literal notranslate"><span class="pre">ls</span> <span class="pre">-lhS</span></code> command.</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">find</span> <span class="pre">.</span> <span class="pre">-name</span> <span class="pre">&quot;*.$1&quot;</span> <span class="pre">-type</span> <span class="pre">f</span> <span class="pre">-delete</span></code> finds files with the extension <code class="docutils literal notranslate"><span class="pre">$1</span></code> and deletes them.</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">rn</span></code> renames files with the extension <code class="docutils literal notranslate"><span class="pre">$1</span></code> by removing <code class="docutils literal notranslate"><span class="pre">$2</span></code> from the file name. For example, <code class="docutils literal notranslate"><span class="pre">rn</span> <span class="pre">txt</span> <span class="pre">asdf</span></code> renames <code class="docutils literal notranslate"><span class="pre">aaasdfff.txt</span></code> to <code class="docutils literal notranslate"><span class="pre">aaff.txt</span></code>.</p></li>
+</ul>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p><code class="docutils literal notranslate"><span class="pre">-exec</span> <span class="pre">&lt;command&gt;</span> <span class="pre">{}</span> <span class="pre">\;</span></code> is a common syntax. <code class="docutils literal notranslate"><span class="pre">{}</span></code> is replaced by the file name found. <code class="docutils literal notranslate"><span class="pre">\;</span></code> means the end of the command.</p>
+</div>
+</section>
+<section id="open-apps">
+<h3>open apps<a class="headerlink" href="#open-apps" title="Permalink to this headline">#</a></h3>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span><span class="nb">alias</span> <span class="nv">hr</span><span class="o">=</span><span class="s1">&#39;open .&#39;</span>
 <span class="nb">alias</span> <span class="nv">c</span><span class="o">=</span><span class="s1">&#39;open /Applications/CotEditor.app&#39;</span>
 <span class="nb">alias</span> <span class="nv">vs</span><span class="o">=</span><span class="s1">&#39;code&#39;</span>
 <span class="nb">alias</span> <span class="nv">firefox</span><span class="o">=</span><span class="s1">&#39;open /Applications/Firefox.app&#39;</span>
 <span class="nb">alias</span> <span class="nv">chrome</span><span class="o">=</span><span class="s1">&#39;open /Applications/Google\ Chrome.app&#39;</span>
 <span class="nb">alias</span> <span class="nv">safari</span><span class="o">=</span><span class="s1">&#39;open /Applications/Safari.app&#39;</span>
-
-
-<span class="c1"># zip encrypttion</span>
-zipen<span class="o">(){</span>
-	zip -er enc.zip <span class="s2">&quot;</span><span class="nv">$@</span><span class="s2">&quot;</span>
-<span class="o">}</span>
+</pre></div>
+</div>
+</section>
+<section id="others">
+<h3>others<a class="headerlink" href="#others" title="Permalink to this headline">#</a></h3>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span><span class="nb">alias</span> <span class="nv">his</span><span class="o">=</span><span class="s1">&#39;history&#39;</span>
+<span class="nb">alias</span> <span class="nv">rl</span><span class="o">=</span><span class="s1">&#39;exec ${SHELL} -l&#39;</span> <span class="c1">#reload</span>
+<span class="nb">alias</span> <span class="nv">ne</span><span class="o">=</span><span class="s1">&#39;2&gt;|/dev/null&#39;</span>
+<span class="nb">alias</span> <span class="nv">no</span><span class="o">=</span><span class="s1">&#39;&amp;&gt;|/dev/null&#39;</span>
+<span class="nb">alias</span> <span class="nv">eo</span><span class="o">=</span><span class="s1">&#39;&gt;|/dev/null&#39;</span>
+</pre></div>
+</div>
+</section>
+<section id="zip-encryption">
+<h3>zip encryption<a class="headerlink" href="#zip-encryption" title="Permalink to this headline">#</a></h3>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">zipen</span><span class="p">(){</span>
+	<span class="nb">zip</span> <span class="o">-</span><span class="n">er</span> <span class="n">enc</span><span class="o">.</span><span class="n">zip</span> <span class="s2">&quot;$@&quot;</span>
+<span class="p">}</span>
 </pre></div>
 </div>
 </section>
@@ -570,6 +631,10 @@ zipen<span class="o">(){</span>
 <div class="highlight-bash notranslate"><div class="highlight"><pre><span></span><span class="nb">alias</span> <span class="nv">show</span><span class="o">=</span><span class="s2">&quot;defaults write com.apple.finder AppleShowAllFiles -bool true &amp;&amp; killall Finder&quot;</span>
 <span class="nb">alias</span> <span class="nv">hide</span><span class="o">=</span><span class="s2">&quot;defaults write com.apple.finder AppleShowAllFiles -bool false &amp;&amp; killall Finder&quot;</span>
 </pre></div>
+</div>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>You can use <code class="docutils literal notranslate"><span class="pre">Command</span> <span class="pre">+</span> <span class="pre">Shift</span> <span class="pre">+</span> <span class="pre">.</span></code> to show/hide hidden files in Finder.</p>
 </div>
 </section>
 <section id="hide-show-all-desktop-icons">
@@ -586,6 +651,7 @@ zipen<span class="o">(){</span>
 <span class="nb">alias</span> <span class="nv">drl</span><span class="o">=</span><span class="s1">&#39;defaults read com.apple.screencapture location&#39;</span>
 </pre></div>
 </div>
+<p>You can change the location of screenshots by <code class="docutils literal notranslate"><span class="pre">dwl</span> <span class="pre">~/path/to/dir</span></code>.</p>
 </section>
 <section id="sleep-setting">
 <h3>sleep setting<a class="headerlink" href="#sleep-setting" title="Permalink to this headline">#</a></h3>
@@ -610,20 +676,21 @@ zipen<span class="o">(){</span>
 <span class="nb">alias</span> <span class="nv">gps</span><span class="o">=</span><span class="s1">&#39;git push&#39;</span>
 <span class="nb">alias</span> <span class="nv">gpl</span><span class="o">=</span><span class="s1">&#39;git pull&#39;</span>
 <span class="nb">alias</span> <span class="nv">gpom</span><span class="o">=</span><span class="s1">&#39;git push origin main&#39;</span>
-<span class="nb">alias</span> <span class="nv">gst</span><span class="o">=</span><span class="s1">&#39;git status&#39;</span>
+<span class="nb">alias</span> <span class="nv">gs</span><span class="o">=</span><span class="s1">&#39;git status&#39;</span>
 </pre></div>
 </div>
-<section id="define-an-alias-of-several-commands">
-<h3>Define an alias of several commands<a class="headerlink" href="#define-an-alias-of-several-commands" title="Permalink to this headline">#</a></h3>
+<section id="define-an-alias-of-several-commands-with-arguments-function">
+<h3>Define an alias of several commands with arguments (function)<a class="headerlink" href="#define-an-alias-of-several-commands-with-arguments-function" title="Permalink to this headline">#</a></h3>
 <div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>gacpm<span class="o">()</span> <span class="o">{</span> git add -A <span class="o">&amp;&amp;</span> git commit -m <span class="s2">&quot;</span><span class="nv">$1</span><span class="s2">&quot;</span> <span class="o">&amp;&amp;</span> git push origin main <span class="o">}</span>
 </pre></div>
 </div>
 <p>For example, you can define an alias to make a new repository with just one command.</p>
-<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>ginit<span class="o">()</span> <span class="o">{</span>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span><span class="c1"># $1 = private or public</span>
+ginit<span class="o">()</span> <span class="o">{</span>
 	git init
 	git add .
-	git commit -m <span class="s2">&quot;Initial commit&quot;</span>
-	gh repo create --private --source<span class="o">=</span>. --push
+	git commit -m <span class="s2">&quot;🎉  Initial commit&quot;</span>
+	gh repo create --<span class="s2">&quot;</span><span class="nv">$1</span><span class="s2">&quot;</span> --source<span class="o">=</span>. --push
 <span class="o">}</span>
 </pre></div>
 </div>
@@ -644,6 +711,7 @@ zipen<span class="o">(){</span>
 
 <span class="nb">alias</span> <span class="nv">pip</span><span class="o">=</span><span class="s1">&#39;pip3&#39;</span>
 <span class="nb">alias</span> <span class="nv">pin</span><span class="o">=</span><span class="s1">&#39;pip install&#39;</span>
+<span class="nb">alias</span> <span class="nv">puin</span><span class="o">=</span><span class="s1">&#39;pip uninstall&#39;</span>
 <span class="nb">alias</span> <span class="nv">pup</span><span class="o">=</span><span class="s1">&#39;pip install --upgrade pip&#39;</span>
 <span class="nb">alias</span> <span class="nv">pinreq</span><span class="o">=</span><span class="s1">&#39;pip install -r requirements.txt&#39;</span>
 <span class="nb">alias</span> <span class="nv">pf</span><span class="o">=</span><span class="s1">&#39;pip list --format=freeze&#39;</span>
@@ -663,12 +731,13 @@ zipen<span class="o">(){</span>
 <h2><span class="section-number">1.2.5. </span>Latex<a class="headerlink" href="#latex" title="Permalink to this headline">#</a></h2>
 <section id="copy-latex-template-directory-to-somewhere">
 <h3>Copy latex-template directory to somewhere;<a class="headerlink" href="#copy-latex-template-directory-to-somewhere" title="Permalink to this headline">#</a></h3>
+<p>If you write a lot of latex documents, you should make a template directory. You can copy the template directory to somewhere with this function.</p>
 <div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>mklt<span class="o">(){</span>
-	cp -r ~/.latex-template ./<span class="s2">&quot;</span><span class="nv">$1</span><span class="s2">&quot;</span>
+	cp -r ~/latex-template ./<span class="s2">&quot;</span><span class="nv">$1</span><span class="s2">&quot;</span>
 <span class="o">}</span>
 
 mkbt<span class="o">(){</span>
-	cp -r ~/.beamer-template ./<span class="s2">&quot;</span><span class="nv">$1</span><span class="s2">&quot;</span>
+	cp -r ~/beamer-template ./<span class="s2">&quot;</span><span class="nv">$1</span><span class="s2">&quot;</span>
 <span class="o">}</span>
 </pre></div>
 </div>
@@ -746,7 +815,13 @@ mkbt<span class="o">(){</span>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#basic">1.2.1. Basic</a><ul class="nav section-nav flex-column">
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#customize-and-colorize-prompt">Customize and colorize PROMPT</a></li>
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#put-a-blank-line-before-every-prompt-except-the-first-one">Put a blank line before every prompt except the first one.</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#frequently-used-commands">Frequently used commands</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#change-directory">change directory</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#show-files">show files</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#edit-files">edit files</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#search">search</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#open-apps">open apps</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#others">others</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#zip-encryption">zip encryption</a></li>
 </ul>
 </li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#mac-os-settings">1.2.2. Mac OS settings</a><ul class="nav section-nav flex-column">
@@ -757,7 +832,7 @@ mkbt<span class="o">(){</span>
 </ul>
 </li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#github">1.2.3. GitHub</a><ul class="nav section-nav flex-column">
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#define-an-alias-of-several-commands">Define an alias of several commands</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#define-an-alias-of-several-commands-with-arguments-function">Define an alias of several commands with arguments (function)</a></li>
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#gitignore-io">gitignore.io</a></li>
 </ul>
 </li>
