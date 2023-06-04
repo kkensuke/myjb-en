@@ -10,50 +10,50 @@ defaults:  # The defaults key will be applied to all chapters and sub-sections
 parts:
   - numbered: 3
     chapters:
-    - file: basic/basic # chapters need at least one file before sections.
+    - file: pages/basic/basic # chapters need at least one file before sections.
 #     title:
       sections:
-      - file: basic/linux
-      - file: basic/alias
-      - file: basic/path
-      - file: basic/markdown
-      - file: basic/github/github
-      - file: basic/github/commitMessage
-      - file: basic/packageManager
-    - file: python/python0
+      - file: pages/basic/linux
+      - file: pages/basic/alias
+      - file: pages/basic/path
+      - file: pages/basic/markdown
+      - file: pages/basic/github/github
+      - file: pages/basic/github/commitMessage
+      - file: pages/basic/packageManager
+    - file: pages/python/python0
       sections:
-      - file: python/python
-      - file: python/numpy
-      - file: python/scipy
-      - file: python/sympy
-    - file: coding-rules/coding-rules
+      - file: pages/python/python
+      - file: pages/python/numpy
+      - file: pages/python/scipy
+      - file: pages/python/sympy
+    - file: pages/coding-rules/coding-rules
       sections:
-      - file: coding-rules/naming
-    - file: latex/latex
+      - file: pages/coding-rules/naming
+    - file: pages/latex/latex
       sections:
-      - file: latex/settings
-      - file: latex/article
-      - file: latex/revtex4-2
-      - file: latex/beamer
-      - file: latex/newcommands
-    # - file: qc/qc
+      - file: pages/latex/settings
+      - file: pages/latex/article
+      - file: pages/latex/revtex4-2
+      - file: pages/latex/beamer
+      - file: pages/latex/newcommands
+    # - file: pages/qc/qc
     #   sections:
-    #   - file: qc/basics
-    #   - file: qc/qiskit
-    #   - file: qc/pennylane
-    - file: jb/jb
+    #   - file: pages/qc/basics
+    #   - file: pages/qc/qiskit
+    #   - file: pages/qc/pennylane
+    - file: pages/jb/jb
       sections:
-      - file: jb/mkjb
-      - file: jb/myst
-    - file: tools/tools
+      - file: pages/jb/mkjb
+      - file: pages/jb/myst
+    - file: pages/tools/tools
       sections:
-      - file: tools/usefulWebApps/usefulWebApps
-      - file: tools/usefulMacApps/usefulMacApps
-      - file: tools/usefulFirefoxExtensions/usefulFirefoxExtensions
-      - file: tools/usefulVScodeExtensions/usefulVScodeExtensions
-    - file: others/others
+      - file: pages/tools/usefulWebApps/usefulWebApps
+      - file: pages/tools/usefulMacApps/usefulMacApps
+      - file: pages/tools/usefulFirefoxExtensions/usefulFirefoxExtensions
+      - file: pages/tools/usefulVScodeExtensions/usefulVScodeExtensions
+    - file: pages/others/others
       sections:
-      - file: others/firefox/firefox-security-settings
+      - file: pages/others/firefox/firefox-security-settings
 
 
 
