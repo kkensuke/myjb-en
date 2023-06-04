@@ -51,7 +51,7 @@ export ZDOTDIR="$HOME/path/to/zsh"
 ```
 
 ```{hint}
-👉 Other dot files in the home directory can also be collected in the same directory and symbolic links can be created from there to the home directory for easy management.
+👉 Other dotfiles in the home directory can also be collected in the same directory and symbolic links can be created from there to the home directory for easy management.
 ```
 
 [zsh/](https://github.com/kkensuke/setting/tree/main/zsh)
