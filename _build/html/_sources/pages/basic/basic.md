@@ -1,8 +1,9 @@
 # Programming basics
 
 - [Command line](./linux.md)
-- [Alias](./alias.md)
 - [$PATH](./path.md)
+- [Alias](./alias.md)
+- [Zsh](./zsh.md)
 - [Markdown](./markdown.md)
 - [GitHub](./github/github.md)
 - [Commit Masssages with emoji](./github/commitMessage.md)

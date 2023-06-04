@@ -14,8 +14,9 @@ parts:
 #     title:
       sections:
       - file: pages/basic/linux
-      - file: pages/basic/alias
       - file: pages/basic/path
+      - file: pages/basic/alias
+      - file: pages/basic/zsh
       - file: pages/basic/markdown
       - file: pages/basic/github/github
       - file: pages/basic/github/commitMessage
