@@ -5,6 +5,11 @@ Z shell (Zsh) is one of the Unix command shells. It can be used as an interactiv
 ```
 
 ## Manage `.zsh*` files in `zsh/` directory
+```{image} img/zsh.png
+:width: 600px
+:align: center
+```
+
 `.zsh*` files are easy to get messy in the home directory. By setting `$ZDOTDIR`, most files can be moved from the home directory. In the following, `.zsh*` is managed in a directory named `zsh/`.
 
 ```bash
