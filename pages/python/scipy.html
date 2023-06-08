@@ -749,6 +749,7 @@ numerical result:  [0.9999993  0.99999854]
 <span class="n">fitFunc</span> <span class="o">=</span> <span class="k">lambda</span> <span class="n">p</span><span class="p">,</span> <span class="n">t</span><span class="p">:</span> <span class="n">p</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span> <span class="o">*</span> <span class="n">np</span><span class="o">.</span><span class="n">exp</span><span class="p">(</span><span class="o">-</span><span class="n">p</span><span class="p">[</span><span class="mi">1</span><span class="p">]</span> <span class="o">*</span> <span class="n">t</span><span class="p">)</span> <span class="o">*</span> <span class="n">np</span><span class="o">.</span><span class="n">cos</span><span class="p">(</span><span class="n">p</span><span class="p">[</span><span class="mi">2</span><span class="p">]</span> <span class="o">*</span> <span class="n">t</span><span class="p">)</span>
 <span class="n">errFunc</span> <span class="o">=</span> <span class="k">lambda</span> <span class="n">p</span><span class="p">,</span> <span class="n">t</span><span class="p">,</span> <span class="n">y</span><span class="p">:</span> <span class="n">fitFunc</span><span class="p">(</span><span class="n">p</span><span class="p">,</span> <span class="n">t</span><span class="p">)</span> <span class="o">-</span> <span class="n">y</span>
 
+<span class="n">np</span><span class="o">.</span><span class="n">random</span><span class="o">.</span><span class="n">seed</span><span class="p">(</span><span class="mi">0</span><span class="p">)</span>
 <span class="n">x</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">linspace</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="mi">5</span><span class="p">,</span> <span class="mi">100</span><span class="p">)</span>
 <span class="n">y</span> <span class="o">=</span> <span class="n">fitFunc</span><span class="p">([</span><span class="mi">3</span><span class="p">,</span> <span class="mf">0.5</span><span class="p">,</span> <span class="mi">3</span><span class="p">],</span> <span class="n">x</span><span class="p">)</span> <span class="o">+</span> <span class="n">np</span><span class="o">.</span><span class="n">random</span><span class="o">.</span><span class="n">randn</span><span class="p">(</span><span class="nb">len</span><span class="p">(</span><span class="n">x</span><span class="p">))</span> <span class="o">/</span> <span class="mi">3</span>
 
@@ -766,11 +767,11 @@ numerical result:  [0.9999993  0.99999854]
 </div>
 </div>
 <div class="cell_output docutils container">
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>numerical result:  [2.82437869 0.49475124 3.00198094]
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>numerical result:  [3.296355   0.55072818 2.98677005]
 true value:  [3, 0.5, 3]
 </pre></div>
 </div>
-<img alt="../../_images/98d70d530d23267d3d3f4e56a3a44c8c05fb2b4b2b361ce4ec37bf82b10bc183.png" src="../../_images/98d70d530d23267d3d3f4e56a3a44c8c05fb2b4b2b361ce4ec37bf82b10bc183.png" />
+<img alt="../../_images/e9ea5ebcfb7e9e2788a0af7b0c034476c3304230b6ed02311293588c84d05ed1.png" src="../../_images/e9ea5ebcfb7e9e2788a0af7b0c034476c3304230b6ed02311293588c84d05ed1.png" />
 </div>
 </div>
 </section>
@@ -895,6 +896,9 @@ By kkensuke
   
   <div class="footer-item">
     
+<div class="extra_footer">
+  Powered by <a href="https://jupyterbook.org">Jupyter Book</a> <script data-name="BMC-Widget" data-cfasync="false" src="https://cdnjs.buymeacoffee.com/1.0.0/widget.prod.min.js" data-id="kkensuke" data-description="Support me on Buy me a coffee!" data-message="" data-color="#40DCA5" data-position="Right" data-x_margin="18" data-y_margin="18"></script>
+</div>
   </div>
   
 </div>
