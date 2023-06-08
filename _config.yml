@@ -75,10 +75,10 @@ html:
   home_page_in_navbar       : false # Whether to include your home page in the left Navigation Bar
   baseurl                   : ""    # The base URL where your book will be hosted. Used for creating image previews and social links. e.g.: https://mypage.com/mybook/
   comments:
-    hypothesis              : false
+    announcement            : ""    # A banner announcement at the top of the site.
+    hypothesis              : true
     utterances              :
       repo                  : "kkensuke/myjb"
-    announcement            : ""    # A banner announcement at the top of the site.
 
 #######################################################################################
 # LaTeX-specific settings
