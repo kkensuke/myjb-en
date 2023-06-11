@@ -56,7 +56,7 @@ Contents in`.zshrc` are also easy to get messy, so divide them into files and im
 ```
 
 ```{hint}
-👉 Other dotfiles in the home directory can also be collected in the same directory and symbolic links can be created from there to the home directory for easy management.
+👉 Other dotfiles in the home directory can also be managed in the same way.
 ```
 
 [zsh/](https://github.com/kkensuke/setting/tree/main/zsh)
