@@ -45,7 +45,7 @@ export ZDOTDIR="$HOME/path/to/zsh"
 
 ## `.zshrc`
 
-`.zshrc` files are also easy to get messy, so divide them into files for each content and read them from other files. Here, we have prepared directories called `aliases` and `settings` in the same hierarchy as `.zshrc`, and put the files to be read in them.
+Contents in`.zshrc` are also easy to get messy, so divide them into files and import them in `.zshrc`. Here, we have prepared directories called `aliases` and `settings` in the same hierarchy as `.zshrc`, and put the files to be read in them.
 
 ```bash
 [[ -f $ZDOTDIR/settings/prompt.sh ]]  && . $ZDOTDIR/settings/prompt.sh
