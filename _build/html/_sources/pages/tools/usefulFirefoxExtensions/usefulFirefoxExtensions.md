@@ -4,6 +4,9 @@
 ### [AdBlocker Ultimate](https://addons.mozilla.org/en-US/firefox/addon/adblocker-ultimate/)
 `AdBlocker Ultimate` removes all ads and trackings from the web pages.
 
+### [Cookie AutoDelete](https://addons.mozilla.org/en-US/firefox/addon/cookie-autodelete/)
+`Cookie AutoDelete` automatically deletes cookies when they are no longer used by open browser tabs.
+
 ### [Decentraleyes](https://addons.mozilla.org/en-US/firefox/addon/decentraleyes/)
 `Decentraleyes` protects you against tracking through "free", centralized, content delivery. It prevents a lot of requests from reaching networks like Google Hosted Libraries, and serves local files to keep sites from breaking. Complements regular content blockers.
 
@@ -17,8 +20,18 @@
 :align: center
 ```
 
+### [Privacy Badger](https://addons.mozilla.org/en-US/firefox/addon/privacy-badger17/)
+`Privacy Badger` automatically learns to block invisible trackers.
+
 ### [uBlock Origin](https://addons.mozilla.org/en-US/firefox/addon/ublock-origin/)
 `uBlock Origin` is an ad blocker with low memory usage and high performance.
+
+### [WebRTC Leak Shield](https://addons.mozilla.org/en-US/firefox/addon/webrtc-leak-shield/)
+`WebRTC Leak Shield` prevents WebRTC leaks.
+
+```{admonition} WebRTC
+👉 WebRTC stands for Web Real-Time Communication. It is a technology that allows audio and video communication over the internet directly between browsers, without the need for plugins or external software. While it can be useful for video conferencing and other real-time communication, it can also potentially leak your IP address, which is a privacy concern. Disabling WebRTC in your browser can help prevent IP leaks.
+```
 
 
 ## Productivity
@@ -32,32 +45,23 @@
 ### [Dark Reader](https://addons.mozilla.org/en-US/firefox/addon/darkreader/)
 `Dark Reader` inverts the colors of websites making them easier to read for a long time.
 
-### [doqment PDF Reader](https://addons.mozilla.org/en-US/firefox/addon/doqment/)
-`doqment PDF Reader` changes the colors of the PDF background to make it easier to read for a long time.
-`````{tab-set}
-````{tab-item} light mode
-```{image} img/doqment-light.png
-:width: 700px
-:align: center
-```
-````
-
-````{tab-item} dark mode
-```{image} img/doqment-dark.png
-:width: 700px
-:align: center
-```
-````
-`````
+### [Duplicate Tabs Shortcut](https://addons.mozilla.org/en-US/firefox/addon/duplicate-tabs-shortcut/)
+`Duplicate Tabs Shortcut` lets you duplicate tabs with a keyboard shortcut `Alt+Shift+D` on Windows/Linux, `Option+Shift+D` on Mac.
 
 ### [G App Launcher](https://addons.mozilla.org/en-US/firefox/addon/google-shortcuts-all-google-se/)
 `G App Launcher` is a shortcut to all Google services, such as Gmail, Google Drive, Google Calendar, Google Maps, Google Translate, and more.
+
+### [Grammar and Spell Checker - LanguageTool](https://addons.mozilla.org/en-US/firefox/addon/languagetool/)
+`Grammar and Spell Checker - LanguageTool` check your texts for spelling and grammar problems everywhere on the web.
 
 ### [Keepa.com - Amazon Price Tracker](https://addons.mozilla.org/en-US/firefox/addon/keepa/)
 `Keepa.com - Amazon Price Tracker` shows price history charts for Amazon products.
 
 ### [Multi-Account Containers](https://addons.mozilla.org/en-US/firefox/addon/multi-account-containers/)
 `Multi-Account Containers` enables you to use multiple accounts on the same website simultaneously.
+
+### [Print Edit WE](https://addons.mozilla.org/en-US/firefox/addon/print-edit-we/)
+`Print Edit WE` allows editing of the web page content while in Print Preview mode.
 
 ### [Side View](https://addons.mozilla.org/en-US/firefox/addon/side-view/)
 `Side View` lets you view two different websites side-by-side in the same tab. However, it disables the background streaming of videos and music.
@@ -87,6 +91,12 @@
 ```
 ````
 `````
+
+### [Simple Translate](https://addons.mozilla.org/en-US/firefox/addon/simple-translate/)
+`Simple Translate` is a simple and lightweight translator. It translates selected text into a popup window.
+
+### [SingleFile](https://addons.mozilla.org/en-US/firefox/addon/single-file/)
+`SingleFile` helps you to save a complete page (with CSS, images, fonts, frames, etc.) as a single HTML file.
 
 ### [Swift Selection Search](https://addons.mozilla.org/en-US/firefox/addon/swift-selection-search/)
 `Swift Selection Search` lets you search for text on search engines by selecting it.

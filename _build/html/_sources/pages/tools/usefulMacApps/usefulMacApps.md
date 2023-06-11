@@ -18,7 +18,6 @@ When removing an app from your computer, `AppCleaner` helps you to find all file
 :align: center
 ```
 
-
 ## [CheatSheet](https://www.mediaatelier.com/CheatSheet/)
 You can check shortcuts key of the currently using app with `cmd`.
 ```{image} img/cheat.png
@@ -26,7 +25,6 @@ You can check shortcuts key of the currently using app with `cmd`.
 :width: 700px
 :align: center
 ```
-
 
 ## [CustomShortCut](https://www.houdah.com/customShortcuts/?ref=mediaatelier)
 CustomShortCut is compatible with CheatSheet. You can redefine shortcut keys easily.
@@ -158,12 +156,20 @@ an active window: `cmd + shift + 8`, or a whole page by scrolling: `cmd + shift 
 `````
 
 
+## [Syntax Highlight](https://github.com/sbarex/SourceCodeSyntaxHighlight#installation)
+`Syntax Highlight` is a free and open source app for highlighting the syntax of source code in Quick Look.
+
+
 ## [VS Code](https://code.visualstudio.com/)
 `VS Code` is a free and open source code editor. It is famous for its many useful extensions. Useful extensions are listed in [here](../usefulVScodeExtensions/usefulVScodeExtensions.md).
 ```{image} img/vscode.png
 :width: 700px
 :align: center
 ```
+
+
+## [Unsplash Wallpapers](https://apps.apple.com/us/app/unsplash-wallpapers/id1284863847?mt=12)
+`Unsplash Wallpapers` is a free app for setting beautiful wallpapers. You can set a new wallpaper from a menu bar icon.
 
 
 ## [VLC](https://www.videolan.org/vlc/index.html)
