@@ -45,7 +45,7 @@
 ### [Dark Reader](https://addons.mozilla.org/en-US/firefox/addon/darkreader/)
 `Dark Reader` inverts the colors of websites making them easier to read for a long time.
 
-### [Duplicate Tabs Shortcut](https://addons.mozilla.org/en-US/firefox/addon/duplicate-tabs-shortcut/)
+### [Duplicate Tabs Shortcut](https://addons.mozilla.org/en-US/firefox/addon/duplicate-tab-shortcut/)
 `Duplicate Tabs Shortcut` lets you duplicate tabs with a keyboard shortcut `Alt+Shift+D` on Windows/Linux, `Option+Shift+D` on Mac.
 
 ### [G App Launcher](https://addons.mozilla.org/en-US/firefox/addon/google-shortcuts-all-google-se/)
