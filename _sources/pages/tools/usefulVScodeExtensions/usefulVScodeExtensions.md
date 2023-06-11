@@ -30,6 +30,9 @@ Jupyter notebook support, interactive programming and computing that supports In
 ## [Latex workshop](https://marketplace.visualstudio.com/items?itemName=James-Yu.latex-workshop)
 Boost LaTeX typesetting efficiency with preview, compile, autocomplete, colorize, and more.
 
+## [Live Share](https://marketplace.visualstudio.com/items?itemName=MS-vsliveshare.vsliveshare)
+Real-time collaborative development from the comfort of your favorite tools.
+
 ## [Material Icon Theme](https://marketplace.visualstudio.com/items?itemName=PKief.material-icon-theme)
 Material Design Icons for Visual Studio Code.
 
