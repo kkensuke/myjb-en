@@ -28,10 +28,13 @@ To begin with, we check shortcuts.
 
 There are 4 special symbols and each of them represents a location.
 
-`/`	root dir\
-`.`	current dir\
-`..` parent dir\
-`~`	home dir
+|Symbol|Meaning|
+|:----:|:-----:|
+|`/`|root dir|
+|`.`|current dir|
+|`..`|parent dir|
+|`~`|home dir|
+
 
 ### basics commands
 
@@ -91,6 +94,8 @@ ls
 
 cf.
 ```bash
+mkdir -p dir/subdir/ssubdir
+
 rmdir -p dir/subdir/ssubdir
 ```
 
@@ -112,7 +117,6 @@ echo [Strings] >> [filename]
 
 `cat`: print file contents
 ```bash
-touch file1
 echo hello > file1
 cat file1
 # hello
@@ -142,29 +146,31 @@ ls dir2
 ```
 
 ```{note}
-When doing `cp file1 file2` and the file2 already exists,
-you will be asked whether to overwrite the contents of file2.
+When doing `cp file1 file2` and the `file2` already exists,
+you will be asked whether to overwrite the contents of `file2`.
 
-If the file2 does not exist, the contents of file1 will be copied to file2.
+If the `file2` does not exist, the contents of `file1` will be copied to `file2`.
 
-When doing `cp -r dir1 dir2` and the dir2 already exists, new dir1 will be created in dir2.
+When doing `cp -r dir1 dir2` and the `dir2` already exists, new `dir1` will be created in `dir2`.
 
-If the directory2 does not exist, the contents of dir1 will be copied to dir2. So the contents of these directories are the same.
+If the `dir2` does not exist, the contents of `dir1` will be copied to `dir2`. So the contents of these directories are the same.
 ```
 
-`mv`: move file(s) or directory(ies)
-If file5 does not exist, the following operation is rename
+`mv`: move file(s) or directory(ies). If `file5` does not exist, the following operation is rename
 ```bash
 mv file1 file5
+```
+
+`file5` will be moved to `dir3`.
+```bash
 mkdir dir3
 mv file5 dir3
 ```
 
-If dir4 does not exist, the following operation is rename. Otherwise dir1 will be moved to dir4.
+If `dir4` does not exist, the following operation is rename. Otherwise `dir1` will be moved to `dir4`.
 ```bash
 mv dir1 dir4
 ```
-
 
 
 `tree`: print contents of the current directory in a tree-like format. You can use `tree -d` to print directory contents. You can use `tree -L` to print directory contents up to a certain level.
@@ -196,7 +202,7 @@ tree -L 2
 chmod 755 file
 ```
 
-You can specify the mode with octal number or with symbol like `u+x` for user, `g+x` for group, `o+x` for others.
+**You can specify the mode with octal numbers.**
 
 When you specify the mode with octal number;\
 4 stands for "read"\
@@ -207,6 +213,7 @@ When you specify the mode with octal number;\
 If you permit all operations(4+2+1) to everyone, you can use `777` for example.
 If you permit all operations(4+2+1) to owner and read and execute(4+1) to group and others, you can use `755` for example.
 
+**You can specify the mode with symbol like `u+x` for user, `g+x` for group, `o+x` for others.**
 
 |target|meaning|operation|meaning|mode|meaning|
 |:-:|:---:|:-:|:------------:|:-:|:----:|
@@ -293,7 +300,6 @@ grep [-Options] 'word' filename
 
 grep 'word' file1 file2 file3
 grep 'string1 string2'  filename
-ls | grep '\\.txt$)'
 ```
 
 | Options |	Description |
@@ -376,12 +382,6 @@ cat test.txt
 # fdsa
 ```
 
-In order to pipe and redirect at the same time, you use  `| tee` .
-
-```bash
-ls / | tee file | head
-ls /Desktop | tee -a[--append] file
-```
 
 To remove stderr, add `2>/dev/null` .
 
@@ -428,14 +428,6 @@ dirname $(which cat)
 ls $(dirname $(which cat))
 ```
 
-**xargs**
-
-`command1 | xargs command2`
-
-```bash
-ls ~ | xargs echo
-ls ~ | xargs -L 1 echo
-```
 
 ---
 ### Symbolic links
