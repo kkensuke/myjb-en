@@ -46,7 +46,7 @@ $ code ~/Library/Application\ Support/Code/User/settings.json
 ```
 
 Add the following lines to `settings.json`.
-You have two recipes, `ptex2pdf*3` and `ptex2pdf -> pbibtex -> ptex2pdf*2`. The former is to compile `.tex` files without `.bib`, and the latter is for `.tex` files with `.bib`. (This setting also works for English.)
+You have two recipes, `ptex2pdf*3` and `ptex2pdf -> pbibtex -> ptex2pdf*2`. The former is to compile `.tex` files without `.bib`, and the latter is for `.tex` files with `.bib`(This setting also works for English.). Please refer to [this page](https://github.com/James-Yu/LaTeX-Workshop/wiki/Compile#building-the-document) for more details.
 ```json
 {
     // latex

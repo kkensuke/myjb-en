@@ -488,6 +488,70 @@ document.write(`
 <span class="k">\usepackage</span><span class="nb">{</span>helvet<span class="nb">}</span>
 <span class="k">\renewcommand</span><span class="nb">{</span><span class="k">\kanjifamilydefault</span><span class="nb">}{</span><span class="k">\gtdefault</span><span class="nb">}</span> <span class="c">% for japanese</span>
 
+
+<span class="c">% theme</span>
+<span class="k">\usetheme</span><span class="nb">{</span>Madrid<span class="nb">}</span>
+<span class="k">\usefonttheme</span><span class="nb">{</span>professionalfonts<span class="nb">}</span>
+<span class="k">\useoutertheme</span><span class="na">[height=0cm,width=1.5cm,left]</span><span class="nb">{</span>sidebar<span class="nb">}</span>
+
+
+<span class="c">% frame number</span>
+<span class="k">\setbeamertemplate</span><span class="nb">{</span>frametitle<span class="nb">}{</span>
+    <span class="k">\nointerlineskip</span>
+    <span class="k">\begin</span><span class="nb">{</span>beamercolorbox<span class="nb">}</span>[wd=<span class="k">\paperwidth</span>,ht=2.25ex,dp=0.75ex]<span class="nb">{</span>frametitle<span class="nb">}</span> <span class="c">% set ht</span>
+        <span class="k">\hspace*</span><span class="nb">{</span>1ex<span class="nb">}</span><span class="k">\insertframetitle</span>
+        <span class="k">\hfill\insertframenumber</span>/<span class="k">\inserttotalframenumber\hspace*</span><span class="nb">{</span>8ex<span class="nb">}</span>
+        <span class="c">% \hfill\insertframenumber/{totalframenumber}\hspace*{8ex}</span>
+    <span class="k">\end</span><span class="nb">{</span>beamercolorbox<span class="nb">}</span>
+<span class="nb">}</span>
+
+
+<span class="c">% hides nvigation buttons at bottom</span>
+<span class="k">\setbeamertemplate</span><span class="nb">{</span>navigation symbols<span class="nb">}{}</span>
+
+
+<span class="c">% Remove title and name from sidebar</span>
+<span class="k">\makeatletter</span>
+<span class="k">\setbeamertemplate</span><span class="nb">{</span>sidebar <span class="k">\beamer</span>@sidebarside<span class="nb">}</span><span class="c">%{sidebar theme}</span>
+<span class="nb">{</span>
+    <span class="k">\beamer</span>@tempdim=<span class="k">\beamer</span>@sidebarwidth<span class="c">%</span>
+    <span class="k">\advance\beamer</span>@tempdim by 10pt<span class="c">%</span>
+    <span class="k">\insertverticalnavigation</span><span class="nb">{</span><span class="k">\beamer</span>@sidebarwidth<span class="nb">}</span><span class="c">%</span>
+    <span class="k">\vfill</span>
+    <span class="k">\ifx\beamer</span>@sidebarside<span class="k">\beamer</span>@lefttext<span class="c">%</span>
+    <span class="k">\else</span><span class="c">%</span>
+    <span class="k">\usebeamercolor</span><span class="nb">{</span>normal text<span class="nb">}</span><span class="c">%</span>
+    <span class="k">\llap</span><span class="nb">{</span><span class="k">\usebeamertemplate***</span><span class="nb">{</span>navigation symbols<span class="nb">}</span><span class="k">\hskip</span>0.1cm<span class="nb">}</span><span class="c">%</span>
+    <span class="k">\vskip</span>5pt<span class="c">%</span>
+    <span class="k">\fi</span><span class="c">%</span>
+<span class="nb">}</span><span class="c">%</span>
+<span class="k">\makeatother</span>
+
+
+<span class="c">%% show toc at the beginning of each section</span>
+<span class="c">% \AtBeginSection[]</span>
+<span class="c">% {</span>
+<span class="c">%     \begin{frame}</span>
+<span class="c">%         \frametitle{Table of Contents}</span>
+<span class="c">%         \tableofcontents[currentsection]</span>
+<span class="c">%     \end{frame}</span>
+<span class="c">% }</span>
+
+
+<span class="c">% displayed transparently</span>
+<span class="k">\setbeamercovered</span><span class="nb">{</span>transparent<span class="nb">}</span>
+
+
+<span class="c">% table style</span>
+<span class="c">% This sets the thickness of the borders of the table.</span>
+<span class="k">\setlength</span><span class="nb">{</span><span class="k">\arrayrulewidth</span><span class="nb">}{</span>0.5mm<span class="nb">}</span>
+<span class="c">% The space between the text and the left/right border of its containing cell</span>
+<span class="k">\setlength</span><span class="nb">{</span><span class="k">\tabcolsep</span><span class="nb">}{</span>18pt<span class="nb">}</span>
+<span class="c">% The height of each row is set to 1.5 relative to its default height.</span>
+<span class="k">\renewcommand</span><span class="nb">{</span><span class="k">\arraystretch</span><span class="nb">}{</span>2.5<span class="nb">}</span>
+
+
+
 <span class="c">% define colors</span>
 <span class="c">% ---------------------------------------------------------------------------- %</span>
 <span class="k">\definecolor</span><span class="nb">{</span>red<span class="nb">}{</span>rgb<span class="nb">}{</span>0.9,0.30,0.30<span class="nb">}</span>
@@ -508,6 +572,7 @@ document.write(`
 <span class="k">\definecolor</span><span class="nb">{</span>grey<span class="nb">}{</span>rgb<span class="nb">}{</span>0.55,0.55,0.55<span class="nb">}</span>
 <span class="k">\definecolor</span><span class="nb">{</span>darkgrey<span class="nb">}{</span>rgb<span class="nb">}{</span>0.35,0.35,0.35<span class="nb">}</span>
 <span class="c">% ---------------------------------------------------------------------------- %</span>
+
 
 <span class="c">% set colors</span>
 <span class="c">% ---------------------------------------------------------------------------- %</span>

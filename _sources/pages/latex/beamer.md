@@ -22,6 +22,70 @@
 \usepackage{helvet}
 \renewcommand{\kanjifamilydefault}{\gtdefault} % for japanese
 
+
+% theme
+\usetheme{Madrid}
+\usefonttheme{professionalfonts}
+\useoutertheme[height=0cm,width=1.5cm,left]{sidebar}
+
+
+% frame number
+\setbeamertemplate{frametitle}{
+    \nointerlineskip
+    \begin{beamercolorbox}[wd=\paperwidth,ht=2.25ex,dp=0.75ex]{frametitle} % set ht
+        \hspace*{1ex}\insertframetitle
+        \hfill\insertframenumber/\inserttotalframenumber\hspace*{8ex}
+        % \hfill\insertframenumber/{totalframenumber}\hspace*{8ex}
+    \end{beamercolorbox}
+}
+
+
+% hides nvigation buttons at bottom
+\setbeamertemplate{navigation symbols}{}
+
+
+% Remove title and name from sidebar
+\makeatletter
+\setbeamertemplate{sidebar \beamer@sidebarside}%{sidebar theme}
+{
+    \beamer@tempdim=\beamer@sidebarwidth%
+    \advance\beamer@tempdim by 10pt%
+    \insertverticalnavigation{\beamer@sidebarwidth}%
+    \vfill
+    \ifx\beamer@sidebarside\beamer@lefttext%
+    \else%
+    \usebeamercolor{normal text}%
+    \llap{\usebeamertemplate***{navigation symbols}\hskip0.1cm}%
+    \vskip5pt%
+    \fi%
+}%
+\makeatother
+
+
+%% show toc at the beginning of each section
+% \AtBeginSection[]
+% {
+%     \begin{frame}
+%         \frametitle{Table of Contents}
+%         \tableofcontents[currentsection]
+%     \end{frame}
+% }
+
+
+% displayed transparently
+\setbeamercovered{transparent}
+
+
+% table style
+% This sets the thickness of the borders of the table.
+\setlength{\arrayrulewidth}{0.5mm}
+% The space between the text and the left/right border of its containing cell
+\setlength{\tabcolsep}{18pt}
+% The height of each row is set to 1.5 relative to its default height.
+\renewcommand{\arraystretch}{2.5}
+
+
+
 % define colors
 % ---------------------------------------------------------------------------- %
 \definecolor{red}{rgb}{0.9,0.30,0.30}
@@ -42,6 +106,7 @@
 \definecolor{grey}{rgb}{0.55,0.55,0.55}
 \definecolor{darkgrey}{rgb}{0.35,0.35,0.35}
 % ---------------------------------------------------------------------------- %
+
 
 % set colors
 % ---------------------------------------------------------------------------- %
