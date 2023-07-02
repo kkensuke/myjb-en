@@ -52,13 +52,23 @@ alias pwd='sed "s/ /\\\ /g" <<< ${PWD/#$HOME/"~"}'
 alias p='pwd'
 alias path='echo -e ${PATH//:/\\n}'
 ```
-- To use `gls`, you need to install `coreutils` with `brew install coreutils`. You can use the same colorization as `tree` command with `gls`. `--color` option colorize the output of `gls` command. `--group-directories-first` option puts directories first. `-F` option adds a trailing `/` to directory names, `@` to symbolic links, and so on. 
+- `ls`: To use `gls`, you need to install `coreutils` with `brew install coreutils`. You can use the same colorization as `tree` command.
+	- `--color` option colorize the output of `gls` command.
+	- `--group-directories-first` option puts directories first.
+	- `-F` option adds a trailing `/` to directory names, `@` to symbolic links, and so on. 
 
-- `ls` is defined as `gls --color --group-directories-first -F` before `la='ls -A'` and `ll='ls -AhlS'`. This means `la='gls --color --group-directories-first -F -A'` and `ll='gls --color --group-directories-first -F -AhlS'`. `-A` option shows all files and directories except `.` and `..`. `-h` option shows the size in human readable format. `-l` option shows the file size, owner, group, and permissions. `-S` option sorts by file size.
+- `la`, `ll`: `ls` is defined as `gls --color --group-directories-first -F` before `la='ls -A'`. This means `la='gls --color --group-directories-first -F -A'` and the same for `ll`.
+	- `-A` option shows all files and directories except `.` and `..`.
+	- `-h` option shows the size in human readable format.
+	- `-l` option shows the file size, owner, group, and permissions.
+	- `-S` option sorts by file size.
 
-- `du -d 1` shows the size of files and directories in the current directory. `-h` option shows the size in human readable format and `2>/dev/null` hides error messages. Finally, `sort -h` sorts by file size using [pipe](./linux.md#pipeline-and-redirect).
+- `ds`: `du -d 1` shows the size of files and directories in the current directory.
+	- `-h` option shows the size in human readable format.
+	- `2>/dev/null` hides error messages.
+	- `sort -h` sorts by file size using [pipe](./linux.md#pipeline-and-redirect).
 
-- `sed "s/ /\\\ /g"` puts `\` before every space. `<<<` is a "here string". `${PWD/#$HOME/"~"}` replaces `$HOME` with `~` in the current directory path.
+- `pwd` :`sed "s/ /\\\ /g"` puts `\` before every space. `<<<` is a "here string". `${PWD/#$HOME/"~"}` replaces `$HOME` with `~` in the current directory path.
 
 ```{hint}
 When you specify options, you can use `ls -AhlS` instead of `ls -A -h -l -S`.
@@ -92,7 +102,12 @@ You can make an alias with arguments, which is called a function. Functions are 
 In addition to `$1` and `$2`, there are other special variables: `$0` is the function name. `$@` is all arguments. `$#` is the number of arguments. `$?` is the exit status of the last command. `$$` is the process ID of the current shell. `$!` is the process ID of the last command run in the background.
 ```
 
-- `fb` finds files larger than `$2` MB with the name `$1` in the current directory. `-size +$2M` option finds files larger than `$2` MB. `-type f` option finds only files (`-type d` finds only directories). `-name $1` option finds files with the name `$1`. `-exec ls -lhS "{}" \;` option executes `ls -lhS` command for each file found. `awk '{print $5,$9}'` option prints the size and name of the file. `$5` means the 5th column and `$9` means the 9th column of the output of `ls -lhS` command.
+- `fb` finds files larger than `$2` MB with the name `$1` in the current directory.
+	- `-size +$2M` option finds files larger than `$2` MB.
+	- `-type f` option finds only files (`-type d` finds only directories).
+	- `-name $1` option finds files with the name `$1`.
+	- `-exec ls -lhS "{}" \;` option executes `ls -lhS` command for each file found.
+	- `awk '{print $5,$9}'` option prints the size and name of the file. `$5` means the 5th column and `$9` means the 9th column of the output of `ls -lhS` command.
 - `find . -name "*.$1" -type f -delete` finds files with the extension `$1` and deletes them.
 - `rn` renames files with the extension `$1` by removing `$2` from the file name. For example, `rn txt asdf` renames `aaasdfff.txt` to `aaff.txt`.
 
