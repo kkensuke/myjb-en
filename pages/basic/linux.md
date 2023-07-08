@@ -1,6 +1,6 @@
 # Command line
 
-Here, we learn the command line. Command line is a text interface to computers. You input text commands to your computer to do some operations, for example making or removing files, and changing files permissions, etc.
+Here, we learn command line. The command line is a text interface to computers. You input text commands to your computer to do some operations, for example making or removing files, and changing files permissions, etc.
 
 In Mac, you can use the command line in `terminal.app`
 
@@ -30,10 +30,10 @@ There are 4 special symbols and each of them represents a location.
 
 |Symbol|Meaning|
 |:----:|:-----:|
-|`/`|root dir|
-|`.`|current dir|
-|`..`|parent dir|
-|`~`|home dir|
+|`/`|root directory|
+|`.`|current directory|
+|`..`|parent directory|
+|`~`|home directory|
 
 
 ### basics commands
