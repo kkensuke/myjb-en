@@ -129,9 +129,6 @@ alias safari='open /Applications/Safari.app'
 ```bash
 alias his='history'
 alias rl='exec ${SHELL} -l' #reload
-alias ne='2>|/dev/null'
-alias no='&>|/dev/null'
-alias eo='>|/dev/null'
 ```
 
 
@@ -218,7 +215,6 @@ function gi() { curl -sLw n https://www.toptal.com/developers/gitignore/api/$@ ;
 
 ## Python
 ```bash
-alias python='python3'
 alias wpy='which python'
 
 alias pip='pip3'
