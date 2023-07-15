@@ -501,7 +501,7 @@ document.write(`
     <span class="k">\begin</span><span class="nb">{</span>beamercolorbox<span class="nb">}</span>[wd=<span class="k">\paperwidth</span>,ht=2.25ex,dp=0.75ex]<span class="nb">{</span>frametitle<span class="nb">}</span> <span class="c">% set ht</span>
         <span class="k">\hspace*</span><span class="nb">{</span>1ex<span class="nb">}</span><span class="k">\insertframetitle</span>
         <span class="k">\hfill\insertframenumber</span>/<span class="k">\inserttotalframenumber\hspace*</span><span class="nb">{</span>8ex<span class="nb">}</span>
-        <span class="c">% \hfill\insertframenumber/{totalframenumber}\hspace*{8ex}</span>
+        <span class="c">% \hfill\insertframenumber/{set total framenumber manually}\hspace*{8ex}</span>
     <span class="k">\end</span><span class="nb">{</span>beamercolorbox<span class="nb">}</span>
 <span class="nb">}</span>
 
@@ -528,17 +528,17 @@ document.write(`
 <span class="k">\makeatother</span>
 
 
-<span class="c">%% show toc at the beginning of each section</span>
-<span class="c">% \AtBeginSection[]</span>
-<span class="c">% {</span>
-<span class="c">%     \begin{frame}</span>
-<span class="c">%         \frametitle{Table of Contents}</span>
-<span class="c">%         \tableofcontents[currentsection]</span>
-<span class="c">%     \end{frame}</span>
-<span class="c">% }</span>
+<span class="c">% show toc at the beginning of each section</span>
+<span class="k">\AtBeginSection</span><span class="na">[]</span>
+<span class="nb">{</span>
+    <span class="k">\begin</span><span class="nb">{</span>frame<span class="nb">}</span>
+        <span class="k">\frametitle</span><span class="nb">{</span>Table of Contents<span class="nb">}</span>
+        <span class="k">\tableofcontents</span><span class="na">[currentsection]</span>
+    <span class="k">\end</span><span class="nb">{</span>frame<span class="nb">}</span>
+<span class="nb">}</span>
 
 
-<span class="c">% displayed transparently</span>
+<span class="c">% display transparently</span>
 <span class="k">\setbeamercovered</span><span class="nb">{</span>transparent<span class="nb">}</span>
 
 

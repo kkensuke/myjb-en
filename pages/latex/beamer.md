@@ -35,7 +35,7 @@
     \begin{beamercolorbox}[wd=\paperwidth,ht=2.25ex,dp=0.75ex]{frametitle} % set ht
         \hspace*{1ex}\insertframetitle
         \hfill\insertframenumber/\inserttotalframenumber\hspace*{8ex}
-        % \hfill\insertframenumber/{totalframenumber}\hspace*{8ex}
+        % \hfill\insertframenumber/{set total framenumber manually}\hspace*{8ex}
     \end{beamercolorbox}
 }
 
@@ -62,17 +62,17 @@
 \makeatother
 
 
-%% show toc at the beginning of each section
-% \AtBeginSection[]
-% {
-%     \begin{frame}
-%         \frametitle{Table of Contents}
-%         \tableofcontents[currentsection]
-%     \end{frame}
-% }
+% show toc at the beginning of each section
+\AtBeginSection[]
+{
+    \begin{frame}
+        \frametitle{Table of Contents}
+        \tableofcontents[currentsection]
+    \end{frame}
+}
 
 
-% displayed transparently
+% display transparently
 \setbeamercovered{transparent}
 
 
