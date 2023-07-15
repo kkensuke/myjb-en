@@ -25,8 +25,9 @@ parts:
       sections:
       - file: pages/python/python
       - file: pages/python/numpy
-      - file: pages/python/scipy
+      - file: pages/python/matplotlib
       - file: pages/python/sympy
+      - file: pages/python/scipy
     - file: pages/coding-rules/coding-rules
       sections:
       - file: pages/coding-rules/naming
