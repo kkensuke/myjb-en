@@ -12,9 +12,15 @@ If you find some useful aliases below, write them in `~/.zshrc`.
 PS1="%F{082}%n%f %F{051}%~%f %# "
 RPROMPT='%T'
 ```
-`%n` means username, `%~` means current directory, `%#` shows `#` if you are root, `%` if not. `RPROMPT` is the right prompt. `%T` shows the current time in 24-hour format (`%t` for 12-hour format). Read more about Prompt Expansion in this [link](https://zsh.sourceforge.io/Doc/Release/Prompt-Expansion.html).
 
-By using `%F{color number}` and `%f`, you can colorize the prompt. You can find color numbers [here](https://en.wikipedia.org/wiki/ANSI_escape_code#8-bit).
+- `PS1` is the main (left) prompt and `RPROMPT` is the right prompt.
+- `%n` means username
+- `%~` means current directory
+- `%#` shows `#` if you are root, `%` if not.
+- `%T` shows the current time in 24-hour format (`%t` for 12-hour format).
+- you can colorize your prompt by using `%F{color number}` ~ `%f`. You can find color numbers [here](https://en.wikipedia.org/wiki/ANSI_escape_code#8-bit).
+
+Read more about Prompt Expansion in this [link](https://zsh.sourceforge.io/Doc/Release/Prompt-Expansion.html).
 
 
 ### Put a blank line before every prompt except the first one.
@@ -63,7 +69,7 @@ alias path='echo -e ${PATH//:/\\n}'
 	- `-l` option shows the file size, owner, group, and permissions.
 	- `-S` option sorts by file size.
 
-- `ds`: `du -d 1` shows the size of files and directories in the current directory.
+- `ds`: `du -d 1` shows the size of directories in the current directory.
 	- `-h` option shows the size in human readable format.
 	- `2>/dev/null` hides error messages.
 	- `sort -h` sorts by file size using [pipe](./linux.md#pipeline-and-redirect).

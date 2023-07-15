@@ -507,8 +507,15 @@ Some commands are long and you might think that copying them every time is a was
 <span class="nv">RPROMPT</span><span class="o">=</span><span class="s1">&#39;%T&#39;</span>
 </pre></div>
 </div>
-<p><code class="docutils literal notranslate"><span class="pre">%n</span></code> means username, <code class="docutils literal notranslate"><span class="pre">%~</span></code> means current directory, <code class="docutils literal notranslate"><span class="pre">%#</span></code> shows <code class="docutils literal notranslate"><span class="pre">#</span></code> if you are root, <code class="docutils literal notranslate"><span class="pre">%</span></code> if not. <code class="docutils literal notranslate"><span class="pre">RPROMPT</span></code> is the right prompt. <code class="docutils literal notranslate"><span class="pre">%T</span></code> shows the current time in 24-hour format (<code class="docutils literal notranslate"><span class="pre">%t</span></code> for 12-hour format). Read more about Prompt Expansion in this <a class="reference external" href="https://zsh.sourceforge.io/Doc/Release/Prompt-Expansion.html">link</a>.</p>
-<p>By using <code class="docutils literal notranslate"><span class="pre">%F{color</span> <span class="pre">number}</span></code> and <code class="docutils literal notranslate"><span class="pre">%f</span></code>, you can colorize the prompt. You can find color numbers <a class="reference external" href="https://en.wikipedia.org/wiki/ANSI_escape_code#8-bit">here</a>.</p>
+<ul class="simple">
+<li><p><code class="docutils literal notranslate"><span class="pre">PS1</span></code> is the main (left) prompt and <code class="docutils literal notranslate"><span class="pre">RPROMPT</span></code> is the right prompt.</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">%n</span></code> means username</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">%~</span></code> means current directory</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">%#</span></code> shows <code class="docutils literal notranslate"><span class="pre">#</span></code> if you are root, <code class="docutils literal notranslate"><span class="pre">%</span></code> if not.</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">%T</span></code> shows the current time in 24-hour format (<code class="docutils literal notranslate"><span class="pre">%t</span></code> for 12-hour format).</p></li>
+<li><p>you can colorize your prompt by using <code class="docutils literal notranslate"><span class="pre">%F{color</span> <span class="pre">number}</span></code> ~ <code class="docutils literal notranslate"><span class="pre">%f</span></code>. You can find color numbers <a class="reference external" href="https://en.wikipedia.org/wiki/ANSI_escape_code#8-bit">here</a>.</p></li>
+</ul>
+<p>Read more about Prompt Expansion in this <a class="reference external" href="https://zsh.sourceforge.io/Doc/Release/Prompt-Expansion.html">link</a>.</p>
 </section>
 <section id="put-a-blank-line-before-every-prompt-except-the-first-one">
 <h3>Put a blank line before every prompt except the first one.<a class="headerlink" href="#put-a-blank-line-before-every-prompt-except-the-first-one" title="Permalink to this headline">#</a></h3>
@@ -563,7 +570,7 @@ cdf<span class="o">()</span> <span class="o">{</span> <span class="nb">cd</span>
 <li><p><code class="docutils literal notranslate"><span class="pre">-S</span></code> option sorts by file size.</p></li>
 </ul>
 </li>
-<li><p><code class="docutils literal notranslate"><span class="pre">ds</span></code>: <code class="docutils literal notranslate"><span class="pre">du</span> <span class="pre">-d</span> <span class="pre">1</span></code> shows the size of files and directories in the current directory.</p>
+<li><p><code class="docutils literal notranslate"><span class="pre">ds</span></code>: <code class="docutils literal notranslate"><span class="pre">du</span> <span class="pre">-d</span> <span class="pre">1</span></code> shows the size of directories in the current directory.</p>
 <ul>
 <li><p><code class="docutils literal notranslate"><span class="pre">-h</span></code> option shows the size in human readable format.</p></li>
 <li><p><code class="docutils literal notranslate"><span class="pre">2&gt;/dev/null</span></code> hides error messages.</p></li>

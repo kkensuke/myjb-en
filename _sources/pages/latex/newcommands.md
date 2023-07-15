@@ -43,7 +43,35 @@ The following is a list of my favorite `\newcommands`. You can use them regardle
 \newcommand{\bbY}{\mathbb{Y}}
 \newcommand{\bbZ}{\mathbb{Z}}
 
-% \mathcal
+% \mathrm capital letters
+\newcommand{\rmA}{\mathrm{A}}
+\newcommand{\rmB}{\mathrm{B}}
+\newcommand{\rmC}{\mathrm{C}}
+\newcommand{\rmD}{\mathrm{D}}
+\newcommand{\rmE}{\mathrm{E}}
+\newcommand{\rmF}{\mathrm{F}}
+\newcommand{\rmG}{\mathrm{G}}
+\newcommand{\rmH}{\mathrm{H}}
+\newcommand{\rmI}{\mathrm{I}}
+\newcommand{\rmJ}{\mathrm{J}}
+\newcommand{\rmK}{\mathrm{K}}
+\newcommand{\rmL}{\mathrm{L}}
+\newcommand{\rmM}{\mathrm{M}}
+\newcommand{\rmN}{\mathrm{N}}
+\newcommand{\rmO}{\mathrm{O}}
+\newcommand{\rmP}{\mathrm{P}}
+\newcommand{\rmQ}{\mathrm{Q}}
+\newcommand{\rmR}{\mathrm{R}}
+\newcommand{\rmS}{\mathrm{S}}
+\newcommand{\rmT}{\mathrm{T}}
+\newcommand{\rmU}{\mathrm{U}}
+\newcommand{\rmV}{\mathrm{V}}
+\newcommand{\rmW}{\mathrm{W}}
+\newcommand{\rmX}{\mathrm{X}}
+\newcommand{\rmY}{\mathrm{Y}}
+\newcommand{\rmZ}{\mathrm{Z}}
+
+% \mathcal capital letters
 \newcommand{\calA}{\mathcal{A}}
 \newcommand{\calB}{\mathcal{B}}
 \newcommand{\calC}{\mathcal{C}}
@@ -87,7 +115,15 @@ The following is a list of my favorite `\newcommands`. You can use them regardle
 \newcommand{\Qpo}{\Q_{>0}}
 \newcommand{\Rpo}{\R_{>0}}
 
+% mathrm
+\newcommand{\const}{\mathrm{const}}
+\newcommand{\hc}{\mathrm{h.c.}}
+\newcommand{\lhs}{\mathrm{(LHS)}}
+\newcommand{\rhs}{\mathrm{(RHS)}}
+
 % MathOperator
+\DeclareMathOperator*{\argmin}{arg~min}
+\DeclareMathOperator*{\argmax}{arg~max}
 \DeclareMathOperator{\sgn}{sgn}
 \DeclareMathOperator{\sign}{sign}
 \DeclareMathOperator{\Supp}{Supp}
@@ -95,19 +131,14 @@ The following is a list of my favorite `\newcommands`. You can use them regardle
 \DeclareMathOperator{\E}{E}
 \DeclareMathOperator{\Var}{Var}
 \DeclareMathOperator{\Cov}{Cov}
-\DeclareMathOperator{\poly}{poly}
-\DeclareMathOperator{\SWAP}{SWAP}
 \DeclareMathOperator{\Hom}{Hom}
 \DeclareMathOperator{\Aut}{Aut}
 \DeclareMathOperator{\End}{End}
-% limit type
-\DeclareMathOperator*{\argmin}{arg~min}
-\DeclareMathOperator*{\argmax}{arg~max}
 
 % others
-\renewcommand{\bar}[1]{\overline{#1}}
 \newcommand{\combi}[2]{{}_{#1}\text{C}_{#2}}
 \newcommand{\dg}{^\dagger}
+\newcommand{\T}{^\mathsf{T}}
 \newcommand{\fa}{{}^\forall}
 \newcommand{\ex}{{}^\exists}
 \newcommand{\pd}{\partial}
