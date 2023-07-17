@@ -20,7 +20,7 @@ tags:
 ## Git (version control system, VSC)
 Git is a popular version control system used by developers to manage source code changes and collaborate on software development projects. It allows multiple people to work on the same codebase simultaneously and track changes made over time.
 
-A local repository in Git is a copy of the codebase that is stored on a developer's computer. When changes are made to the codebase, they are tracked locally using Git, and the developer can commit those changes to their local repository. This allows developers to experiment with new code changes and make revisions without affecting the codebase that other developers are working on.
+A local repository in Git is a copy of the codebase that is stored on a developer's computer. When changes are made to the codebase, they are tracked locally, and the developer can commit those changes to their local repository. This allows developers to experiment with new code changes and make revisions without affecting the codebase that other developers are working on.
 
 A remote repository, on the other hand, is a copy of the codebase that is stored on a remote server. Developers can push their local changes to the remote repository to share them with others on the team. This allows everyone on the team to see the latest changes made to the codebase and collaborate more effectively.
 
@@ -28,11 +28,11 @@ The key difference between local and remote repositories is that local repositor
 
 Here are some key terms and concepts related to Git:
 
-- Repository: A repository is a collection of files and folders that are tracked by Git. It is usually located on a server and can be accessed by multiple developers.
+- Repository: A repository is a collection of files and folders in a project that are tracked by Git. It is located on a local computer and remote server (i.e., GitHub).
 - Clone: To clone a repository means to create a local copy of the repository on your own computer.
 - Add: When you add a file to a Git repository, you are telling Git to start tracking changes to that file.
 - Commit: A commit is a snapshot of the changes you have made to the files in your repository. When you commit changes, you are creating a permanent record of those changes.
-- Push: Pushing changes means sending your committed changes to the remote repository (i.e., the server where the repository is stored). This makes your changes visible to other team members who are also working on the same repository.
+- Push: Pushing changes means sending your committed changes to the remote repository. This makes your changes visible to other team members who are also working on the same repository.
 - Pull: Pulling changes means retrieving changes from the remote repository and updating your local repository with those changes. This is typically done before making changes to ensure that your local repository is up-to-date with the latest changes made by other team members.
 - Branch: A branch is a separate line of development that allows you to work on changes independently of the main codebase. This can be useful when you want to experiment with new features without affecting the main codebase.
 - Merge: Merging is the process of combining changes from one branch into another. This is typically done when a feature is complete and ready to be integrated into the main codebase.
