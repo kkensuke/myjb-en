@@ -27,8 +27,6 @@ gdoc() { gacp "📚 DOC: $@" }
 grls() { gacp "🚀 RELEASE: $@" }
 gsec() { gacp "👮 SECURITY: $@" }
 
-# See more in .gitmessage
-
 # Show commit type
 gtyp() {
 NORMAL='\033[0;39m'
