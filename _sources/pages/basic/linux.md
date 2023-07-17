@@ -443,7 +443,6 @@ Aliases are similar to symlinks, but they are valid after you move the original 
 
 ## Reference
 
-[The Unix Shell](https://swcarpentry.github.io/shell-novice/)
-
-[The Missing Semester of Your CS Education](https://missing.csail.mit.edu/)
+- [The Unix Shell](https://swcarpentry.github.io/shell-novice/)
+- [The Missing Semester of Your CS Education](https://missing.csail.mit.edu/)
 
