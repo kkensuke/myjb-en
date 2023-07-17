@@ -80,7 +80,9 @@ git branch -M main
 git push -u origin main
 ```
 
-You can make a repository more easily with GitHub CLI: [make new repository](mk-new-repo)
+```{tip}
+You can make a repository more easily with GitHub CLI: [make new repository with GitHub CLI](github-cli)
+```
 
 ### Clone
 In an arbitrary directory,
@@ -176,40 +178,34 @@ All you have to do is write down filenames in `.gitignore` in the same directory
 However, making `.gitignore` and writing filenames in each directory in the control of Git is troublesome. You can make `.gitignore` easily with [gitignore.io website](https://www.toptal.com/developers/gitignore) or [gitignore.io CLI](https://docs.gitignore.io)
 
 As to some files, you will append their filenames in every `.gitignore`.
-To avoid it, making `~/.gitignore_global` is a solution. `~/` represents the home directory.
+To avoid it, making `~/.gitignore_global` is a solution.
 
-```{note}
-First, make `~/.gitignore_global` if you haven't made it yet
-```
-install .gitignore.io from https://docs.gitignore.io/install/command-line
+Firstly, install .gitignore.io from [here](https://docs.gitignore.io/install/command-line).
 
-for macOS :
-
-- one time
-```bash
-$ git config --global core.excludesfile ~/.gitignore_global
-$ echo "function gi() { curl -sLw "\n" https://www.toptal.com/developers/gitignore/api/\$@ ;}" >> \
-~/.rc && source ~/.rc
-```
-
-- make `.gitignore`
-```bash
-$ gi macos,python,visualstudiocode >> ~/.gitignore_global
-```
-Refer to https://docs.github.com/en/get-started/getting-started-with-git/ignoring-files for details.
+for macOS & zsh :
+- execute the following commands only once
+	```bash
+	$ git config --global core.excludesfile ~/.gitignore_global;
+	echo "function gi() { curl -sLw \"\\\n\" https://www.toptal.com/developers/gitignore/api/\$@ ;}" >> ~/.zshrc && source ~/.zshrc
+	```
+- make `~/.gitignore_global`
+	```bash
+	$ gi macos,python,visualstudiocode > ~/.gitignore_global
+	```
+Refer to [Ignoring files](https://docs.github.com/en/get-started/getting-started-with-git/ignoring-files) for more details.
 
 
 ### When you want to rename a repository
 First, rename it on GitHub website.
-Second, open the corresponding [.git->config], and [url = https://~.<rename_here>.git]
+Second, open the corresponding [.git/ -> config], and [url = https://~.<rename_here>.git]
 
 
-### quit Git administration
+### Quit Git administration
 
 All you have to do is remove the `.git` directory.
 
 
-### remove files
+### Remove files
 1, remove files from the repository and local directory
 
 2, remove files from the repository
@@ -226,22 +222,21 @@ $ git commit -m "delete"; git push origin main
 
 
 
-
+(github-cli)=
 ## GitHub CLI
-### install
+### Install
 ```bash
 $ brew install gh
 ```
 
-(mk-new-repo)=
-### make a new repository based on the current directory
+### Make a new repository based on the current directory
 ```bash
 $ git init; git add .
 $ git commit -m "Initial commit"
 $ gh repo create --private --source=. --push
 ```
 
-You can define an alias like this:
+You can define an alias in `~/.zshrc` as follows:
 ```bash
 # make a new repository based on the current directory
 # $1 = private or public
@@ -253,21 +248,20 @@ ginit() {
 }
 ```
 
-### make an alias to delete remote repository
-#### register
-```bash
-$ gh alias set repo-delete 'api -X DELETE repos/$1'
-$ gh auth refresh -h github.com -s delete_repo
-```
-#### usage (WARNING: no confirmation!)
-```bash
-$ gh repo-delete user/myrepo
-```
-
-#### comfirm
-```bash
-$ gh alias list
-```
+### Make an alias to delete remote repository
+- Register
+	```bash
+	$ gh alias set repo-delete 'api -X DELETE repos/$1'
+	$ gh auth refresh -h github.com -s delete_repo
+	```
+- Usage (WARNING: no confirmation!)
+	```bash
+	$ gh repo-delete user/myrepo
+	```
+- Comfirm
+	```bash
+	$ gh alias list
+	```
 
 
 ## Reference
