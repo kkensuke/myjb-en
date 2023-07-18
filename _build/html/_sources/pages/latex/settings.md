@@ -36,80 +36,76 @@ Add a symbolic link to `/usr/local/bin`
 $ sudo /usr/local/texlive/????/bin/*/tlmgr path add
 ```
 
-## Setting for Japanese in VScode
+## Setting in VScode
 
 1. Install [`LaTeX Workshop`](https://marketplace.visualstudio.com/items?itemName=James-Yu.latex-workshop) extension.
 
 2. Open `settings.json` in VScode.
-```zsh
-$ code ~/Library/Application\ Support/Code/User/settings.json
-```
-
-Add the following lines to `settings.json`.
-You have two recipes, `ptex2pdf*3` and `ptex2pdf -> pbibtex -> ptex2pdf*2`. The former is to compile `.tex` files without `.bib`, and the latter is for `.tex` files with `.bib`(This setting also works for English.). Please refer to [this page](https://github.com/James-Yu/LaTeX-Workshop/wiki/Compile#building-the-document) for more details.
-```json
-{
-    // latex
-    "latex-workshop.latex.tools": [
-        {
-            "name":"ptex2pdf",
-            "command": "ptex2pdf",
-            "args": [
-                "-l",
-                "-ot",
-                "-interaction=nonstopmode",
-                "-kanji=utf8 -synctex=1",
-                "%DOC%"
-            ]
-        },
-        {
-            "name": "pbibtex",
-            "command": "pbibtex",
-            "args": [
-                "-kanji=utf8",
-                "%DOCFILE%"
-            ]
-        }
-    ],
-    "latex-workshop.latex.recipes": [
-        {
-            "name": "ptex2pdf*3",
-            "tools":[
-                "ptex2pdf",
-                "ptex2pdf",
-                "ptex2pdf",
-            ]
-        },
-        {
-            "name": "ptex2pdf -> pbibtex -> ptex2pdf*3",
-            "tools":[
-                "ptex2pdf",
-                "pbibtex",
-                "ptex2pdf",
-                "ptex2pdf",
-            ]
-        },
-    ],
-    "latex-workshop.latex.clean.fileTypes":
-    [
-        "*.bbl", "*.blg", "*.idx", "*.ind", "*.lof", "*.lot", "*.out", "*.toc", "*.acn", "*.acr", "*.alg",
-        "*.glg", "*.glo", "*.gls", "*.ist", "*.fls", "*.log", "*.fdb_latexmk", "*.synctex.gz",
-        "_minted*", "*.nav", "*.snm", "*.vrb",
-    ],
-    "latex-workshop.latex.autoClean.run": "onBuilt",
-    "latex-workshop.latex.autoBuild.run": "onFileChange",
-    "latex-workshop.synctex.afterBuild.enabled": true,
-    "latex-workshop.view.pdf.viewer": "tab",
-}
-```
+3. Add the following code to `settings.json`. You have two recipes, `ptex2pdf*3` and `ptex2pdf -> pbibtex -> ptex2pdf*2`. The former is to compile `.tex` files without `.bib`, and the latter is for `.tex` files with `.bib`. Please refer to [this page](https://github.com/James-Yu/LaTeX-Workshop/wiki/Compile#building-the-document) for more details.
+    ```json
+    {
+        // latex
+        "latex-workshop.latex.tools": [
+            {
+                "name":"ptex2pdf",
+                "command": "ptex2pdf",
+                "args": [
+                    "-l",
+                    "-ot",
+                    "-interaction=nonstopmode",
+                    // kanji for Japanese
+                    "-kanji=utf8 -synctex=1",
+                    "%DOC%"
+                ]
+            },
+            {
+                "name": "pbibtex",
+                "command": "pbibtex",
+                "args": [
+                    "-kanji=utf8",
+                    "%DOCFILE%"
+                ]
+            }
+        ],
+        "latex-workshop.latex.recipes": [
+            {
+                "name": "ptex2pdf*3",
+                "tools":[
+                    "ptex2pdf",
+                    "ptex2pdf",
+                    "ptex2pdf",
+                ]
+            },
+            {
+                "name": "ptex2pdf -> pbibtex -> ptex2pdf*3",
+                "tools":[
+                    "ptex2pdf",
+                    "pbibtex",
+                    "ptex2pdf",
+                    "ptex2pdf",
+                ]
+            },
+        ],
+        "latex-workshop.latex.clean.fileTypes":
+        [
+            "*.bbl", "*.blg", "*.idx", "*.ind", "*.lof", "*.lot", "*.out", "*.toc", "*.acn", "*.acr", "*.alg",
+            "*.glg", "*.glo", "*.gls", "*.ist", "*.fls", "*.log", "*.fdb_latexmk", "*.synctex.gz",
+            "_minted*", "*.nav", "*.snm", "*.vrb",
+        ],
+        "latex-workshop.latex.autoClean.run": "onBuilt",
+        "latex-workshop.latex.autoBuild.run": "onFileChange",
+        "latex-workshop.synctex.afterBuild.enabled": true,
+        "latex-workshop.view.pdf.viewer": "tab",
+    }
+    ```
 
 
 ## Let's compile your $\LaTeX$ file!
-Let's make a test latex directory. Please download `.latex-report-template` from [here](https://github.com/kkensuke/latex-template/tree/main/latex-template)(remove the dot in the name when saving). Then, open the directory in VScode. You can edit `main.tex` and compile it by typing `cmd + S` (Mac). Finally, you will get modified `main.pdf` in the same directory.
+Let's make a test latex directory. Please download `.article-template` from [here](https://github.com/kkensuke/latex-template). Then, open the directory in VScode. You can edit `main.tex` and compile it by typing `cmd + S` (Mac). Finally, you will get the modified `main.pdf` in the same directory.
 
 The directory structure is as follows:
 ```
-latex-report-template
+article-template
 |-- img/
 |-- preamble.tex
 |-- main.tex

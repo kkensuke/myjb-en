@@ -119,7 +119,7 @@ jupyter-lab
 ```
 Your default browser will show up and open jupyter-lab.
 
-To deactivate juypter-lab (not venv) in the Terminal; Control + c and you will be asked whether to quit, then enter y [yes].
+To deactivate juypter-lab (not venv) in the Terminal; Control + c and you will be asked whether to quit, then enter y[yes].
 For more details, see [Jupyter Book](../jb/jb.md) page.
 
 You can also use jupyter notebook.
