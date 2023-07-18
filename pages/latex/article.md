@@ -61,6 +61,9 @@
 
 
 ## `main.tex`
+
+If you want to use `report` class, change `article` to `report` in the first line.
+
 ```latex
 \documentclass[12pt]{article}
 \input{preamble}
