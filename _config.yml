@@ -115,7 +115,7 @@ sphinx:
   local_extensions          :             # A list of local extensions to load by sphinx specified by "name: path" items
   config                    :             # key-value pairs to directly over-ride the Sphinx configuration
     language                : en          # en for English, ja for Japanese https://www.sphinx-doc.org/en/master/usage/configuration.html#confval-language
-    html_baseurl: 'https://kkensuke.github.io/myjb/intro.html'
+    html_baseurl            : 'https://kkensuke.github.io/myjb/intro.html'
     myst_heading_anchors    : 3           # The heading level at which to generate anchors. Without this, internal links will not work.
     nb_merge_streams        : true        # Code contained in code cells may print outputs through both the stdout and stderr stream.
                                           # These outputs may appear in a mixed order and you may want them to be grouped and sorted to display the correct logical ordering.
