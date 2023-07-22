@@ -118,7 +118,7 @@ In addition to `$1` and `$2`, there are other special variables: `$0` is the fun
 - `rn` renames files with the extension `$1` by removing `$2` from the file name. For example, `rn txt asdf` renames `aaasdfff.txt` to `aaff.txt`.
 
 ```{note}
-`-exec <command> {} \;` is a common syntax. `{}` is replaced by the file name found. `\;` means the end of the command.
+`-exec <command> {} \;` is a common syntax to execute `<command>` for each file found. `{}` is a placeholder for the file name. `\;` is a delimiter to tell the end of the command.
 ```
 
 ### open apps
