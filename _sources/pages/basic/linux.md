@@ -50,7 +50,7 @@ mkdir ~/tmp
 cd ~/tmp
 ```
 
-`touch`: make file or directory
+`touch`: make files
 ```bash
 touch file
 ```
@@ -68,7 +68,7 @@ ls
 # file dir
 ```
 
-`rm`: remove file(s)\
+`rm`: remove files\
 `rm -r`: remove directories and their contents
 ```bash
 rm file
@@ -82,7 +82,7 @@ rm -i file # comfirm whether to rmove
 rm -f file # force remove
 ```
 
-`rmdir`:		remove empty directory
+`rmdir`: remove empty directory
 ```bash
 mkdir dir
 ls
@@ -101,7 +101,7 @@ rmdir -p dir/subdir/ssubdir
 
 
 `echo`:
-- print environment variables
+- print strings
 ```bash
 echo $PATH
 ```
