@@ -125,7 +125,7 @@ sphinx:
                                           # By default MathJax version 2 is currently used.
                                           # If you are using a lot of math, you may want to try using version 3
                                           # , which claims to improve load speeds by 60 - 80%:
-    mathjax_config:
+    mathjax3_config:
       tex:
         macros:
           "ket"  : ["|#1\\rangle",1]
