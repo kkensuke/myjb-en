@@ -130,4 +130,5 @@ sphinx:
         Macros:
           "ket"  : ["|#1\\rangle",1]
           "bra"  : ["\\langle#1|",1]
+          "bk"  : ["\\langle#1|#2\\rangle",2]
     latex_toplevel_sectioning: 'chapter'  # 'part'

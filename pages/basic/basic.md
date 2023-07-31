@@ -9,3 +9,6 @@
 - [Commit Masssages with emoji](./github/commitMessage.md)
 - [Homebrew and venv](./packageManager.md)
 
+
+$\ket{a}$
+$\bk{a}{b}$
