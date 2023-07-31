@@ -130,5 +130,6 @@ sphinx:
         macros:
           "ket"  : ["|#1\\rangle",1]
           "bra"  : ["\\langle#1|",1]
-          "bk"  : ["\\langle#1|#2\\rangle",2]
+          "bk"   : ["\\langle#1|#2\\rangle",2]
+        packages : { '[+]': ['physics'] }
     latex_toplevel_sectioning: 'chapter'  # 'part'
