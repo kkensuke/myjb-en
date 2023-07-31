@@ -102,7 +102,7 @@ const thebe_selector_input = "pre"
 const thebe_selector_output = ".output, .cell_output"
 </script>
     <script async="async" src="../../_static/sphinx-thebe.js"></script>
-    <script>window.MathJax = {"TeX": {"Macros": {"ket": ["|#1\\rangle", 1], "bra": ["\\langle#1|", 1], "bk": ["\\langle#1|#2\\rangle", 2]}}, "options": {"processHtmlClass": "tex2jax_process|mathjax_process|math|output_area"}}</script>
+    <script>window.MathJax = {"tex": {"macros": {"ket": ["|#1\\rangle", 1], "bra": ["\\langle#1|", 1], "bk": ["\\langle#1|#2\\rangle", 2]}}, "options": {"processHtmlClass": "tex2jax_process|mathjax_process|math|output_area"}}</script>
     <script defer="defer" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
     <script>DOCUMENTATION_OPTIONS.pagename = 'pages/python/sympy';</script>
     <link rel="canonical" href="https://kkensuke.github.io/myjb/intro.html/pages/python/sympy.html" />
@@ -639,7 +639,7 @@ document.write(`
 </div>
 <div class="cell_output docutils container">
 <div class="output text_latex math notranslate nohighlight">
-\[\begin{split}\displaystyle \begin{cases} 0 &amp; \text{for}\: a = 0 \wedge b = 0 \\\frac{x e^{- i b x} \sin{\left(b x \right)}}{2} - \frac{i x e^{- i b x} \cos{\left(b x \right)}}{2} + \frac{i e^{- i b x} \sin{\left(b x \right)}}{2 b} &amp; \text{for}\: a = - i b \\\frac{x e^{i b x} \sin{\left(b x \right)}}{2} + \frac{i x e^{i b x} \cos{\left(b x \right)}}{2} - \frac{i e^{i b x} \sin{\left(b x \right)}}{2 b} &amp; \text{for}\: a = i b \\\frac{a e^{a x} \sin{\left(b x \right)}}{a^{2} + b^{2}} - \frac{b e^{a x} \cos{\left(b x \right)}}{a^{2} + b^{2}} &amp; \text{otherwise} \end{cases}\end{split}\]</div>
+\[\begin{split}\displaystyle \begin{cases} 0 &amp; \text{for}\: a = 0 \wedge b = 0 \\\frac{x e^{- i b x} \sin{\left(b x \right)}}{2} - \frac{i x e^{- i b x} \cos{\left(b x \right)}}{2} - \frac{e^{- i b x} \cos{\left(b x \right)}}{2 b} &amp; \text{for}\: a = - i b \\\frac{x e^{i b x} \sin{\left(b x \right)}}{2} + \frac{i x e^{i b x} \cos{\left(b x \right)}}{2} - \frac{e^{i b x} \cos{\left(b x \right)}}{2 b} &amp; \text{for}\: a = i b \\\frac{a e^{a x} \sin{\left(b x \right)}}{a^{2} + b^{2}} - \frac{b e^{a x} \cos{\left(b x \right)}}{a^{2} + b^{2}} &amp; \text{otherwise} \end{cases}\end{split}\]</div>
 </div>
 </div>
 <div class="cell docutils container">
