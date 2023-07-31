@@ -126,10 +126,12 @@ sphinx:
                                           # If you are using a lot of math, you may want to try using version 3
                                           # , which claims to improve load speeds by 60 - 80%:
     mathjax3_config:
+      loader:
+        load: ['[tex]/physics']
       tex:
+        packages : { '[+]': ['physics'] }
         macros:
           "ket"  : ["|#1\\rangle",1]
           "bra"  : ["\\langle#1|",1]
           "bk"   : ["\\langle#1|#2\\rangle",2]
-        packages : { '[+]': ['physics'] }
     latex_toplevel_sectioning: 'chapter'  # 'part'
