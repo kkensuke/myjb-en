@@ -20,15 +20,14 @@ The equation $E=mc^2$ is the most famous equation in physics.
 You can write display equations by using `$$` or `\[ \]`.
 
 ````{admonition} Example
-```latex
-Schrodinger equation is
-$$
-    i\hbar\frac{\partial}{\partial t}|\psi(t)\rangle
-    = H |\psi(t)\rangle
-$$
-```
-Schrodinger equation is
-$$\begin{align}
+
+>```latex
+>Schrodinger equation is
+> $$ i\hbar\frac{\partial}{\partial t}|\psi(t)\rangle = H |\psi(t)\rangle $$
+>```
+>Schrodinger equation is
+>
+>$$\begin{align}
     i\hbar\frac{\partial}{\partial t}|\psi(t)\rangle = H |\psi(t)\rangle
 \end{align}$$
 ````
