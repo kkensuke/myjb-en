@@ -482,8 +482,10 @@ document.write(`
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#norm"><code class="docutils literal notranslate"><span class="pre">\norm</span></code></a></li>
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#commutator-or-comm"><code class="docutils literal notranslate"><span class="pre">\commutator</span></code> [or <code class="docutils literal notranslate"><span class="pre">comm</span></code>]</a></li>
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#anticommutator-or-acomm"><code class="docutils literal notranslate"><span class="pre">\anticommutator</span></code> [or <code class="docutils literal notranslate"><span class="pre">acomm</span></code>]</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#vector-notation">Vector notation</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id1">Operators</a></li>
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#dirac-bra-ket-notation">Dirac bra-ket notation</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id1">Matrices</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id2">Matrices</a></li>
 </ul>
 </li>
 </ul>
@@ -1140,6 +1142,72 @@ $<span class="math notranslate nohighlight">\(\begin{align} i\hbar\frac{\partial
 \end{align}\end{split}\]</div>
 </div></blockquote>
 </section>
+<section id="vector-notation">
+<h3>Vector notation<a class="headerlink" href="#vector-notation" title="Permalink to this headline">#</a></h3>
+<table class="colwidths-auto table">
+<thead>
+<tr class="row-odd"><th class="text-center head"><p>Command</p></th>
+<th class="text-center head"><p>Output</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td class="text-center"><p><code class="docutils literal notranslate"><span class="pre">\va{a}</span></code></p></td>
+<td class="text-center"><p><span class="math notranslate nohighlight">\(\va{a}\)</span></p></td>
+</tr>
+<tr class="row-odd"><td class="text-center"><p><code class="docutils literal notranslate"><span class="pre">\vb{a}</span></code></p></td>
+<td class="text-center"><p><span class="math notranslate nohighlight">\(\vb{a}\)</span></p></td>
+</tr>
+<tr class="row-even"><td class="text-center"><p><code class="docutils literal notranslate"><span class="pre">\grad{a}</span></code></p></td>
+<td class="text-center"><p><span class="math notranslate nohighlight">\(\grad{a}\)</span></p></td>
+</tr>
+<tr class="row-odd"><td class="text-center"><p><code class="docutils literal notranslate"><span class="pre">\curl{a}</span></code></p></td>
+<td class="text-center"><p><span class="math notranslate nohighlight">\(\curl{a}\)</span></p></td>
+</tr>
+<tr class="row-even"><td class="text-center"><p><code class="docutils literal notranslate"><span class="pre">\div{a}</span></code></p></td>
+<td class="text-center"><p><span class="math notranslate nohighlight">\(\div{a}\)</span></p></td>
+</tr>
+<tr class="row-odd"><td class="text-center"><p><code class="docutils literal notranslate"><span class="pre">\laplacian{a}</span></code></p></td>
+<td class="text-center"><p><span class="math notranslate nohighlight">\(\laplacian{a}\)</span></p></td>
+</tr>
+</tbody>
+</table>
+</section>
+<section id="id1">
+<h3>Operators<a class="headerlink" href="#id1" title="Permalink to this headline">#</a></h3>
+<table class="colwidths-auto table">
+<thead>
+<tr class="row-odd"><th class="text-center head"><p>Command</p></th>
+<th class="text-center head"><p>Output</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td class="text-center"><p><code class="docutils literal notranslate"><span class="pre">\trace[A]</span></code></p></td>
+<td class="text-center"><p><span class="math notranslate nohighlight">\(\trace[A]\)</span></p></td>
+</tr>
+<tr class="row-odd"><td class="text-center"><p><code class="docutils literal notranslate"><span class="pre">\Tr[A]</span></code></p></td>
+<td class="text-center"><p><span class="math notranslate nohighlight">\(\Tr[A]\)</span></p></td>
+</tr>
+<tr class="row-even"><td class="text-center"><p><code class="docutils literal notranslate"><span class="pre">\rank</span> <span class="pre">M</span></code></p></td>
+<td class="text-center"><p><span class="math notranslate nohighlight">\(\rank M\)</span></p></td>
+</tr>
+<tr class="row-odd"><td class="text-center"><p><code class="docutils literal notranslate"><span class="pre">\erf</span></code></p></td>
+<td class="text-center"><p><span class="math notranslate nohighlight">\(\erf\)</span></p></td>
+</tr>
+<tr class="row-even"><td class="text-center"><p><code class="docutils literal notranslate"><span class="pre">\Res</span></code></p></td>
+<td class="text-center"><p><span class="math notranslate nohighlight">\(\Res\)</span></p></td>
+</tr>
+<tr class="row-odd"><td class="text-center"><p><code class="docutils literal notranslate"><span class="pre">\pv{\int</span> <span class="pre">f(z)</span> <span class="pre">\dd{z}}</span></code></p></td>
+<td class="text-center"><p><span class="math notranslate nohighlight">\(\pv{\int f(z) \dd{z}}\)</span></p></td>
+</tr>
+<tr class="row-even"><td class="text-center"><p><code class="docutils literal notranslate"><span class="pre">\Re</span></code></p></td>
+<td class="text-center"><p><span class="math notranslate nohighlight">\(\Re\)</span></p></td>
+</tr>
+<tr class="row-odd"><td class="text-center"><p><code class="docutils literal notranslate"><span class="pre">\Im</span></code></p></td>
+<td class="text-center"><p><span class="math notranslate nohighlight">\(\Im\)</span></p></td>
+</tr>
+</tbody>
+</table>
+</section>
 <section id="dirac-bra-ket-notation">
 <h3>Dirac bra-ket notation<a class="headerlink" href="#dirac-bra-ket-notation" title="Permalink to this headline">#</a></h3>
 <table class="colwidths-auto table">
@@ -1185,8 +1253,8 @@ $<span class="math notranslate nohighlight">\(\begin{align} i\hbar\frac{\partial
 </tbody>
 </table>
 </section>
-<section id="id1">
-<h3>Matrices<a class="headerlink" href="#id1" title="Permalink to this headline">#</a></h3>
+<section id="id2">
+<h3>Matrices<a class="headerlink" href="#id2" title="Permalink to this headline">#</a></h3>
 <table class="colwidths-auto table">
 <thead>
 <tr class="row-odd"><th class="text-center head"><p>Command</p></th>
@@ -1323,8 +1391,10 @@ $<span class="math notranslate nohighlight">\(\begin{align} i\hbar\frac{\partial
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#norm"><code class="docutils literal notranslate"><span class="pre">\norm</span></code></a></li>
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#commutator-or-comm"><code class="docutils literal notranslate"><span class="pre">\commutator</span></code> [or <code class="docutils literal notranslate"><span class="pre">comm</span></code>]</a></li>
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#anticommutator-or-acomm"><code class="docutils literal notranslate"><span class="pre">\anticommutator</span></code> [or <code class="docutils literal notranslate"><span class="pre">acomm</span></code>]</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#vector-notation">Vector notation</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id1">Operators</a></li>
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#dirac-bra-ket-notation">Dirac bra-ket notation</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id1">Matrices</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id2">Matrices</a></li>
 </ul>
 </li>
 </ul>

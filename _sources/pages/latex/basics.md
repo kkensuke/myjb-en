@@ -368,6 +368,31 @@ You can use `\anticommutator` command to write anticommutator.
 \end{align}$$
 
 
+### Vector notation
+
+| Command | Output |
+|:-------:|:------:|
+| `\va{a}` | $\va{a}$ |
+| `\vb{a}` | $\vb{a}$ |
+| `\grad{a}` | $\grad{a}$ |
+| `\curl{a}` | $\curl{a}$ |
+| `\div{a}` | $\div{a}$ |
+| `\laplacian{a}` | $\laplacian{a}$ |
+
+
+### Operators
+
+| Command | Output |
+|:-------:|:------:|
+| `\trace[A]` | $\trace[A]$ |
+| `\Tr[A]` | $\Tr[A]$ |
+| `\rank M` | $\rank M$ |
+| `\erf` | $\erf$ |
+| `\Res` | $\Res$ |
+| `\pv{\int f(z) \dd{z}}` | $\pv{\int f(z) \dd{z}}$ |
+| `\Re` | $\Re$ |
+| `\Im` | $\Im$ |
+
 ### Dirac bra-ket notation
 
 | Command | Output |
