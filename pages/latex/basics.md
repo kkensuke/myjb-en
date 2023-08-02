@@ -7,29 +7,33 @@ Latex Basics
 
 You can write inline equations by using `$`.
 
->```latex
->The equation $E=mc^2$ is the most famous equation in physics.
->```
->
->The equation $E=mc^2$ is the most famous equation in physics.
+````{admonition} Example
+```latex
+The equation $E=mc^2$ is the most famous equation in physics.
+```
+
+The equation $E=mc^2$ is the most famous equation in physics.
+````
 
 ## Display equations
 
 You can write display equations by using `$$` or `\[ \]`.
 
->```latex
->Schrodinger equation is
->$$
->    i\hbar\frac{\partial}{\partial t}|\psi(t)\rangle
->    =
->    H |\psi(t)\rangle
->$$
->```
->Schrodinger equation is
-> $$\begin{align} i\hbar\frac{\partial}{\partial t}|\psi(t)\rangle = H |\psi(t)\rangle \end{align}$$
+````{admonition} Example
+```latex
+Schrodinger equation is
+$$
+    i\hbar\frac{\partial}{\partial t}|\psi(t)\rangle
+    =
+    H |\psi(t)\rangle
+$$
+```
+Schrodinger equation is
+$$\begin{align} i\hbar\frac{\partial}{\partial t}|\psi(t)\rangle = H |\psi(t)\rangle \end{align}$$
+````
 
 
-```{tip}
+````{tip}
 You can use shorter commands with `physics` package.
 
 >```latex
@@ -40,7 +44,7 @@ You can use shorter commands with `physics` package.
 >$$\begin{align}
     \pdv{t} \ket{\psi(t)} = H \ket{\psi(t)}
 \end{align}$$
-```
+````
 
 ## Basic Symbols
 
