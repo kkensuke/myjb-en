@@ -21,15 +21,17 @@ You can write display equations by using `$$` or `\[ \]`.
 
 ````{admonition} Example
 
->```latex
->Schrodinger equation is
-> $$ i\hbar\frac{\partial}{\partial t}|\psi(t)\rangle = H |\psi(t)\rangle $$
->```
->Schrodinger equation is
->
->$$\begin{align}
+```latex
+Schrodinger equation is
+$$
     i\hbar\frac{\partial}{\partial t}|\psi(t)\rangle = H |\psi(t)\rangle
-\end{align}$$
+$$
+```
+Schrodinger equation is
+
+$$
+    i\hbar\frac{\partial}{\partial t}|\psi(t)\rangle = H |\psi(t)\rangle
+$$
 ````
 
 
@@ -49,129 +51,129 @@ You can use shorter commands with `physics` package.
 ## Basic Symbols
 
 ### Greek letters
-| Symbol | Command |
-| --- | --- |
-| $\alpha$ | `\alpha` |
-| $\beta$ | `\beta` |
-| $\gamma$ | `\gamma` |
-| $\delta$ | `\delta` |
-| $\epsilon$ | `\epsilon` |
-| $\zeta$ | `\zeta` |
-| $\eta$ | `\eta` |
-| $\theta$ | `\theta` |
-| $\iota$ | `\iota` |
-| $\kappa$ | `\kappa` |
-| $\lambda$ | `\lambda` |
-| $\mu$ | `\mu` |
-| $\nu$ | `\nu` |
-| $\xi$ | `\xi` |
-| $\pi$ | `\pi` |
-| $\rho$ | `\rho` |
-| $\sigma$ | `\sigma` |
-| $\tau$ | `\tau` |
-| $\upsilon$ | `\upsilon` |
-| $\phi$ | `\phi` |
-| $\chi$ | `\chi` |
-| $\psi$ | `\psi` |
-| $\omega$ | `\omega` |
-| $\Gamma$ | `\Gamma` |
-| $\Delta$ | `\Delta` |
-| $\Theta$ | `\Theta` |
-| $\Lambda$ | `\Lambda` |
-| $\Xi$ | `\Xi` |
-| $\Pi$ | `\Pi` |
-| $\Sigma$ | `\Sigma` |
-| $\Upsilon$ | `\Upsilon` |
-| $\Phi$ | `\Phi` |
-| $\Psi$ | `\Psi` |
-| $\Omega$ | `\Omega` |
+||| Symbol | Command |
+|-|-| --- | --- |
+||| $\alpha$ | `\alpha` |
+||| $\beta$ | `\beta` |
+||| $\gamma$ | `\gamma` |
+||| $\delta$ | `\delta` |
+||| $\epsilon$ | `\epsilon` |
+||| $\zeta$ | `\zeta` |
+||| $\eta$ | `\eta` |
+||| $\theta$ | `\theta` |
+||| $\iota$ | `\iota` |
+||| $\kappa$ | `\kappa` |
+||| $\lambda$ | `\lambda` |
+||| $\mu$ | `\mu` |
+||| $\nu$ | `\nu` |
+||| $\xi$ | `\xi` |
+||| $\pi$ | `\pi` |
+||| $\rho$ | `\rho` |
+||| $\sigma$ | `\sigma` |
+||| $\tau$ | `\tau` |
+||| $\upsilon$ | `\upsilon` |
+||| $\phi$ | `\phi` |
+||| $\chi$ | `\chi` |
+||| $\psi$ | `\psi` |
+||| $\omega$ | `\omega` |
+||| $\Gamma$ | `\Gamma` |
+||| $\Delta$ | `\Delta` |
+||| $\Theta$ | `\Theta` |
+||| $\Lambda$ | `\Lambda` |
+||| $\Xi$ | `\Xi` |
+||| $\Pi$ | `\Pi` |
+||| $\Sigma$ | `\Sigma` |
+||| $\Upsilon$ | `\Upsilon` |
+||| $\Phi$ | `\Phi` |
+||| $\Psi$ | `\Psi` |
+||| $\Omega$ | `\Omega` |
 
 ### Operators
 
-| Symbol | Command |
-| --- | --- |
-| $+$ | `+` |
-| $-$ | `-` |
-| $=$ | `=` |
-| $\times$ | `\times` |
-| $\pm$ | `\pm` |
-| $\div$ | `\div` |
-| $\cdot$ | `\cdot` |
-| $\cdots$ | `\cdots` |
-| $\ldots$ | `\ldots` |
-| $\vdots$ | `\vdots` |
-| $\ddots$ | `\ddots` |
-| $\forall$ | `\forall` |
-| $\exists$ | `\exists` |
-| $\infty$ | `\infty` |
-| $\nabla$ | `\nabla` |
-| $\partial$ | `\partial` |
-| $\int$ | `\int` |
-| $\oint$ | `\oint` |
-| $\sum$ | `\sum` |
-| $\prod$ | `\prod` |
-| $\lim$ | `\lim` |
-| $\log$ | `\log` |
-| $\ln$ | `\ln` |
-| $\exp$ | `\exp` |
-| $\sin$ | `\sin` |
-| $\cos$ | `\cos` |
-| $\tan$ | `\tan` |
-| $\arcsin$ | `\arcsin` |
-| $\arccos$ | `\arccos` |
-| $\arctan$ | `\arctan` |
-| $\sinh$ | `\sinh` |
-| $\cosh$ | `\cosh` |
-| $\sqrt{x}$ | `\sqrt{x}` |
-| $\frac{a}{b}$ | `\frac{a}{b}` |
-| $\binom{n}{k}$ | `\binom{n}{k}` |
+||| Symbol | Command |
+|-|-| --- | --- |
+||| $+$ | `+` |
+||| $-$ | `-` |
+||| $=$ | `=` |
+||| $\times$ | `\times` |
+||| $\pm$ | `\pm` |
+||| $\div$ | `\div` |
+||| $\cdot$ | `\cdot` |
+||| $\cdots$ | `\cdots` |
+||| $\ldots$ | `\ldots` |
+||| $\vdots$ | `\vdots` |
+||| $\ddots$ | `\ddots` |
+||| $\forall$ | `\forall` |
+||| $\exists$ | `\exists` |
+||| $\infty$ | `\infty` |
+||| $\nabla$ | `\nabla` |
+||| $\partial$ | `\partial` |
+||| $\int$ | `\int` |
+||| $\oint$ | `\oint` |
+||| $\sum$ | `\sum` |
+||| $\prod$ | `\prod` |
+||| $\lim$ | `\lim` |
+||| $\log$ | `\log` |
+||| $\ln$ | `\ln` |
+||| $\exp$ | `\exp` |
+||| $\sin$ | `\sin` |
+||| $\cos$ | `\cos` |
+||| $\tan$ | `\tan` |
+||| $\arcsin$ | `\arcsin` |
+||| $\arccos$ | `\arccos` |
+||| $\arctan$ | `\arctan` |
+||| $\sinh$ | `\sinh` |
+||| $\cosh$ | `\cosh` |
+||| $\sqrt{x}$ | `\sqrt{x}` |
+||| $\frac{a}{b}$ | `\frac{a}{b}` |
+||| $\binom{n}{k}$ | `\binom{n}{k}` |
 
 
 ### Relations
-| Symbol | Command |
-|:-------:|:-------:|
-| $a = b$ | `a = b` |
-| $a \neq b$ | `a \neq b` |
-| $a \approx b$ | `a \approx b` |
-| $a \equiv b$ | `a \equiv b` |
-| $a \leq b$ | `a \leq b` |
-| $a \geq b$ | `a \geq b` |
-| $a \ll b$ | `a \ll b` |
-| $a \gg b$ | `a \gg b` |
-| $a \sim b$ | `a \sim b` |
-| $a \propto b$ | `a \propto b` |
-| $a \parallel b$ | `a \parallel b` |
-| $a \perp b$ | `a \perp b` |
-| $a \subset b$ | `a \subset b` |
-| $a \supset b$ | `a \supset b` |
-| $a \subseteq b$ | `a \subseteq b` |
-| $a \supseteq b$ | `a \supseteq b` |
-| $a \in b$ | `a \in b` |
-| $a \ni b$ | `a \ni b` |
-| $a \notin b$ | `a \notin b` |
-| $a \mapsto b$ | `a \mapsto b` |
-| $a \to b$ | `a \to b` |
-| $a \gets b$ | `a \gets b` |
-| $a \leftrightarrow b$ | `a \leftrightarrow b` |
-| $a \Leftrightarrow b$ | `a \Leftrightarrow b` |
-| $a \implies b$ | `a \implies b` |
-| $a \impliedby b$ | `a \impliedby b` |
-| $a \iff b$ | `a \iff b` |
-| $a \to b$ | `a \to b` |
-| $a \gets b$ | `a \gets b` |
-| $a \uparrow b$ | `a \uparrow b` |
-| $a \downarrow b$ | `a \downarrow b` |
-| $a \updownarrow b$ | `a \updownarrow b` |
-| $a \Uparrow b$ | `a \Uparrow b` |
-| $a \Downarrow b$ | `a \Downarrow b` |
-| $a \Updownarrow b$ | `a \Updownarrow b` |
-| $a \mid b$ | `a \mid b` |
-| $a \parallel b$ | `a \parallel b` |
-| $a \perp b$ | `a \perp b` |
-| $a \smile b$ | `a \smile b` |
-| $a \frown b$ | `a \frown b` |
-| $a \vdash b$ | `a \vdash b` |
-| $a \dashv b$ | `a \dashv b` |
+||| Symbol | Command |
+|-|-| ----- | ----- |
+||| $a = b$ | `a = b` |
+||| $a \neq b$ | `a \neq b` |
+||| $a \approx b$ | `a \approx b` |
+||| $a \equiv b$ | `a \equiv b` |
+||| $a \leq b$ | `a \leq b` |
+||| $a \geq b$ | `a \geq b` |
+||| $a \ll b$ | `a \ll b` |
+||| $a \gg b$ | `a \gg b` |
+||| $a \sim b$ | `a \sim b` |
+||| $a \propto b$ | `a \propto b` |
+||| $a \parallel b$ | `a \parallel b` |
+||| $a \perp b$ | `a \perp b` |
+||| $a \subset b$ | `a \subset b` |
+||| $a \supset b$ | `a \supset b` |
+||| $a \subseteq b$ | `a \subseteq b` |
+||| $a \supseteq b$ | `a \supseteq b` |
+||| $a \in b$ | `a \in b` |
+||| $a \ni b$ | `a \ni b` |
+||| $a \notin b$ | `a \notin b` |
+||| $a \mapsto b$ | `a \mapsto b` |
+||| $a \to b$ | `a \to b` |
+||| $a \gets b$ | `a \gets b` |
+||| $a \leftrightarrow b$ | `a \leftrightarrow b` |
+||| $a \Leftrightarrow b$ | `a \Leftrightarrow b` |
+||| $a \implies b$ | `a \implies b` |
+||| $a \impliedby b$ | `a \impliedby b` |
+||| $a \iff b$ | `a \iff b` |
+||| $a \to b$ | `a \to b` |
+||| $a \gets b$ | `a \gets b` |
+||| $a \uparrow b$ | `a \uparrow b` |
+||| $a \downarrow b$ | `a \downarrow b` |
+||| $a \updownarrow b$ | `a \updownarrow b` |
+||| $a \Uparrow b$ | `a \Uparrow b` |
+||| $a \Downarrow b$ | `a \Downarrow b` |
+||| $a \Updownarrow b$ | `a \Updownarrow b` |
+||| $a \mid b$ | `a \mid b` |
+||| $a \parallel b$ | `a \parallel b` |
+||| $a \perp b$ | `a \perp b` |
+||| $a \smile b$ | `a \smile b` |
+||| $a \frown b$ | `a \frown b` |
+||| $a \vdash b$ | `a \vdash b` |
+||| $a \dashv b$ | `a \dashv b` |
 
 
 
@@ -238,15 +240,19 @@ You can use `\qty` command to write adaptive parentheses instead of `\left` and 
 
 >```latex
 >\begin{align}
->    \qty( \frac{1}{2} ) \\
->    \qty[ \frac{1}{2} ] \\
->    \qty{ \frac{1}{2} } \\
+>    \qty( \frac{1}{2} )
+>    \quad
+>    \qty[ \frac{1}{2} ]
+>    \quad
+>    \qty{ \frac{1}{2} }
 >\end{align}
 >```
 >$$\begin{align}
-    \qty( \frac{1}{2} ) \\
-    \qty[ \frac{1}{2} ] \\
-    \qty{ \frac{1}{2} } \\
+    \qty( \frac{1}{2} )
+    \quad
+    \qty[ \frac{1}{2} ]
+    \quad
+    \qty{ \frac{1}{2} }
 \end{align}$$
 
 
@@ -270,11 +276,11 @@ You can use `pdv` command to write partial derivatives.
 
 >```latex
 >\begin{align}
->    \pdv{x} f(x, y), \pdv{f}{x}, \pdv{f}{x}{y}, \pdv[2]{f}{x}
+>    \pdv{x} f(x, y) \quad \pdv{f}{x} \quad \pdv{f}{x}{y} \quad \pdv[2]{f}{x}
 >\end{align}
 >```
 >$$\begin{align}
-    \pdv{x} f(x, y), \pdv{f}{x}, \pdv{f}{x}{y}, \pdv[2]{f}{x}
+    \pdv{x} f(x, y), \quad \pdv{f}{x}, \quad \pdv{f}{x}{y}, \quad \pdv[2]{f}{x}
 \end{align}$$
 
 
@@ -284,13 +290,11 @@ You can use `\eval` command to write evaluation.
 
 >```latex
 >\begin{align}
->    \eval{x^2}_{x=1} \\
->    \eval{x^{-2}}_{1}^{\infty} \\
+>    \eval{x^2}_{x=1}, \quad \eval{x^{-2}}_{1}^{\infty}
 >\end{align}
 >```
 >$$\begin{align}
-    \eval{x^2}_{x=1} \\
-    \eval{x^{-2}}_{1}^{\infty} \\
+    \eval{x^2}_{x=1}, \quad \eval{x^{-2}}_{1}^{\infty}
 \end{align}$$
 
 
@@ -300,7 +304,7 @@ You can use `\order` command to write order.
 
 >```latex
 >\begin{align}
->    \order{x^2}, \order{\frac{1}{x^2}}
+>    \order{x^2}, \quad \order{\frac{1}{x^2}}
 >\end{align}
 >```
 >$$\begin{align}
@@ -314,7 +318,7 @@ You can use `\abs` command to write absolute value.
 
 >```latex
 >\begin{align}
->    \abs{x}, \abs{\frac{1}{x}}
+>    \abs{x}, \quad \abs{\frac{1}{x}}
 >\end{align}
 >```
 >$$\begin{align}
@@ -328,7 +332,7 @@ You can use `\norm` command to write norm.
 
 >```latex
 >\begin{align}
->    \norm{x}, \norm{\frac{1}{x}}
+>    \norm{x}, \quad \norm{\frac{1}{x}}
 >\end{align}
 >```
 >$$\begin{align}
@@ -342,13 +346,11 @@ You can use `\commutator` command to write commutator.
 
 >```latex
 >\begin{align}
->    \commutator{A}{B}\\
->    \comm{A}{B}
+>    \commutator{A}{B}, \quad \comm{A}{B}
 >\end{align}
 >```
 >$$\begin{align}
-    \commutator{A}{B}\\
-    \comm{A}{B}
+    \commutator{A}{B}, \comm{A}{B}
 \end{align}$$
 
 
@@ -358,13 +360,11 @@ You can use `\anticommutator` command to write anticommutator.
 
 >```latex
 >\begin{align}
->    \anticommutator{A}{B}\\
->    \acomm{A}{B}
+>    \anticommutator{A}{B}, \quad \acomm{A}{B}
 >\end{align}
 >```
 >$$\begin{align}
-    \anticommutator{A}{B}\\
-    \acomm{A}{B}
+    \anticommutator{A}{B}, \acomm{A}{B}
 \end{align}$$
 
 
@@ -397,8 +397,8 @@ You can use `\anticommutator` command to write anticommutator.
 
 | Command | Output |
 |:-------:|:------:|
-| `\bra{a}` | $\bra{a}$ |
 | `\ket{a}` | $\ket{a}$ |
+| `\bra{a}` | $\bra{a}$ |
 | `\braket{a}` | $\braket{a}$ |
 | `\braket{a}{b}` | $\braket{a}{b}$ |
 | `dyad{a}` | $\dyad{a}$ |
@@ -416,7 +416,7 @@ You can use `\anticommutator` command to write anticommutator.
 | `\mqty(a & b \\ c & d)` | $\mqty(a & b \\ c & d)$ |
 | `\mqty[ a & b \\ c & d ]` | $\mqty[ a & b \\ c & d ]$ |
 | `\vmqty{a & b \\ c & d}` | $\vmqty{a & b \\ c & d}$ |
-| `\mqty[\imat{n}]` | $\mqty[\imat{n}]$ |
+| `\mqty[\imat{4}]` | $\mqty[\imat{4}]$ |
 | `\mqty[\pmat{0}]` | $\mqty[\pmat{0}]$ |
 | `\mqty[\pmat{1}]` | $\mqty[\pmat{1}]$ |
 | `\mqty[\pmat{2}]` | $\mqty[\pmat{2}]$ |
