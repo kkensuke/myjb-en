@@ -308,7 +308,7 @@ You can use `\order` command to write order.
 >\end{align}
 >```
 >$$\begin{align}
-    \order{x^2}, \order{\frac{1}{x^2}}
+    \order{x^2}, \quad \order{\frac{1}{x^2}}
 \end{align}$$
 
 
@@ -322,7 +322,7 @@ You can use `\abs` command to write absolute value.
 >\end{align}
 >```
 >$$\begin{align}
-    \abs{x}, \abs{\frac{1}{x}}
+    \abs{x}, \quad \abs{\frac{1}{x}}
 \end{align}$$
 
 
@@ -336,7 +336,7 @@ You can use `\norm` command to write norm.
 >\end{align}
 >```
 >$$\begin{align}
-    \norm{x}, \norm{\frac{1}{x}}
+    \norm{x}, \quad \norm{\frac{1}{x}}
 \end{align}$$
 
 
@@ -350,7 +350,7 @@ You can use `\commutator` command to write commutator.
 >\end{align}
 >```
 >$$\begin{align}
-    \commutator{A}{B}, \comm{A}{B}
+    \commutator{A}{B}, \quad \comm{A}{B}
 \end{align}$$
 
 
@@ -364,7 +364,7 @@ You can use `\anticommutator` command to write anticommutator.
 >\end{align}
 >```
 >$$\begin{align}
-    \anticommutator{A}{B}, \acomm{A}{B}
+    \anticommutator{A}{B}, \quad \acomm{A}{B}
 \end{align}$$
 
 
