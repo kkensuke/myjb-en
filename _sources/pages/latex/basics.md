@@ -26,7 +26,7 @@ You can write display equations by using `$$` or `\[ \]`.
 >$$
 >```
 >Schrodinger equation is
-> \[ i\hbar\frac{\partial}{\partial t}|\psi(t)\rangle = H |\psi(t)\rangle \end{align} \]
+> $$\begin{align} i\hbar\frac{\partial}{\partial t}|\psi(t)\rangle = H |\psi(t)\rangle \end{align}$$
 
 
 ```{tip}
@@ -86,21 +86,17 @@ You can use shorter commands with `physics` package.
 
 | Symbol | Command |
 | --- | --- |
-| $\pm$ | `\pm` |
+| $+$ | `+` |
+| $-$ | `-` |
+| $=$ | `=` |
 | $\times$ | `\times` |
+| $\pm$ | `\pm` |
 | $\div$ | `\div` |
 | $\cdot$ | `\cdot` |
-| $\neq$ | `\neq` |
-| $\approx$ | `\approx` |
-| $\equiv$ | `\equiv` |
-| $\leq$ | `\leq` |
-| $\geq$ | `\geq` |
-| $\in$ | `\in` |
-| $\notin$ | `\notin` |
-| $\subset$ | `\subset` |
-| $\supset$ | `\supset` |
-| $\subseteq$ | `\subseteq` |
-| $\supseteq$ | `\supseteq` |
+| $\cdots$ | `\cdots` |
+| $\ldots$ | `\ldots` |
+| $\vdots$ | `\vdots` |
+| $\ddots$ | `\ddots` |
 | $\forall$ | `\forall` |
 | $\exists$ | `\exists` |
 | $\infty$ | `\infty` |
@@ -125,6 +121,54 @@ You can use shorter commands with `physics` package.
 | $\sqrt{x}$ | `\sqrt{x}` |
 | $\frac{a}{b}$ | `\frac{a}{b}` |
 | $\binom{n}{k}$ | `\binom{n}{k}` |
+
+
+### Relations
+| Symbol | Command |
+|:-------:|:-------:|
+| $a = b$ | `a = b` |
+| $a \neq b$ | `a \neq b` |
+| $a \approx b$ | `a \approx b` |
+| $a \equiv b$ | `a \equiv b` |
+| $a \leq b$ | `a \leq b` |
+| $a \geq b$ | `a \geq b` |
+| $a \ll b$ | `a \ll b` |
+| $a \gg b$ | `a \gg b` |
+| $a \sim b$ | `a \sim b` |
+| $a \propto b$ | `a \propto b` |
+| $a \parallel b$ | `a \parallel b` |
+| $a \perp b$ | `a \perp b` |
+| $a \subset b$ | `a \subset b` |
+| $a \supset b$ | `a \supset b` |
+| $a \subseteq b$ | `a \subseteq b` |
+| $a \supseteq b$ | `a \supseteq b` |
+| $a \in b$ | `a \in b` |
+| $a \ni b$ | `a \ni b` |
+| $a \notin b$ | `a \notin b` |
+| $a \mapsto b$ | `a \mapsto b` |
+| $a \to b$ | `a \to b` |
+| $a \gets b$ | `a \gets b` |
+| $a \leftrightarrow b$ | `a \leftrightarrow b` |
+| $a \Leftrightarrow b$ | `a \Leftrightarrow b` |
+| $a \implies b$ | `a \implies b` |
+| $a \impliedby b$ | `a \impliedby b` |
+| $a \iff b$ | `a \iff b` |
+| $a \to b$ | `a \to b` |
+| $a \gets b$ | `a \gets b` |
+| $a \uparrow b$ | `a \uparrow b` |
+| $a \downarrow b$ | `a \downarrow b` |
+| $a \updownarrow b$ | `a \updownarrow b` |
+| $a \Uparrow b$ | `a \Uparrow b` |
+| $a \Downarrow b$ | `a \Downarrow b` |
+| $a \Updownarrow b$ | `a \Updownarrow b` |
+| $a \mid b$ | `a \mid b` |
+| $a \parallel b$ | `a \parallel b` |
+| $a \perp b$ | `a \perp b` |
+| $a \smile b$ | `a \smile b` |
+| $a \frown b$ | `a \frown b` |
+| $a \vdash b$ | `a \vdash b` |
+| $a \dashv b$ | `a \dashv b` |
+
 
 
 ### Matrices
