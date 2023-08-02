@@ -26,7 +26,8 @@ You can write display equations by using `$$` or `\[ \]`.
 >$$
 >```
 >Schrodinger equation is
-> $$\begin{align}i\hbar\frac{\partial}{\partial t}|\psi(t)\rangle = H |\psi(t)\rangle \end{align}$$
+> \[ i\hbar\frac{\partial}{\partial t}|\psi(t)\rangle = H |\psi(t)\rangle \end{align} \]
+
 
 ```{tip}
 You can use shorter commands with `physics` package.
