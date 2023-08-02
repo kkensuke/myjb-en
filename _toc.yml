@@ -34,6 +34,7 @@ parts:
     - file: pages/latex/latex
       sections:
       - file: pages/latex/settings
+      - file: pages/latex/basics
       - file: pages/latex/article
       - file: pages/latex/revtex4-2
       - file: pages/latex/beamer
