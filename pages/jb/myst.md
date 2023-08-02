@@ -692,7 +692,7 @@ pip install sphinx-proof
 
 It needs to be enabled through the _config.yml after installation.
 
-```
+```yml
 sphinx:
   extra_extensions:
     - sphinx_proof
@@ -723,7 +723,7 @@ jb build mybookname/ --builder pdflatex [--individualpages]
 
 ````{note}
 If you would just like to generate the latex file you may use:
-```
+```bash
 jb build mybookname/ --builder latex
 ```
 ````
@@ -745,7 +745,7 @@ It will print the status of each link in your book so that you may resolve any i
 Declaring the primary language used in your book assists screen reader and browser translation tools.
 
 Language can be configured by providing the appropriate language code to the language option, under sphinx configuration in your _config.yml file:
-```
+```yml
 sphinx:
   config:
     language: en
@@ -755,21 +755,30 @@ sphinx:
 ## Defining TeX macros
 
 You can add LaTeX macros for the whole book by defining them under the Macros option of the TeX block. For example, the following two macros have been pre-defined in the Sphinx configuration
-```
+```yml
 sphinx:
-  config:
-    mathjax_config:
-      TeX:
-        Macros:
+  config                    :             # key-value pairs to directly over-ride the Sphinx configuration
+    mathjax_path            : https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js
+                                          # By default MathJax version 2 is currently used.
+                                          # If you are using a lot of math, you may want to try using version 3
+                                          # , which claims to improve load speeds by 60 - 80%:
+    mathjax3_config:
+      loader:                             # If you want to use physics package, you need to load it and add it to the packages list below.
+        load                : ['[tex]/physics']
+      tex:
+        packages            : { '[+]': ['physics'] }
+        macros:
           "N": "\\mathbb{N}"
           "floor": ["\\lfloor#1\\rfloor", 1]
           "bmat" : ["\\left[\\begin{array}"]
           "emat" : ["\\end{array}\\right]"]
 ```
+
+
 You can also define TeX macros for a specific file by introducing them at the beginning of the file under a math directive. For example
 
 ````
-```{math}
+```latex
 \newcommand\N{\mathbb{N}}
 \newcommand\floor[1]{\lfloor#1\rfloor}
 \newcommand{\bmat}{\left[\begin{array}}

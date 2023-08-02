@@ -1360,9 +1360,9 @@ Here&#39;s a note that will take the full width
 </pre></div>
 </div>
 <p>It needs to be enabled through the _config.yml after installation.</p>
-<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">sphinx</span><span class="p">:</span>
-  <span class="n">extra_extensions</span><span class="p">:</span>
-    <span class="o">-</span> <span class="n">sphinx_proof</span>
+<div class="highlight-yml notranslate"><div class="highlight"><pre><span></span>sphinx:
+  extra_extensions:
+    - sphinx_proof
 </pre></div>
 </div>
 <p><a class="reference external" href="https://sphinx-proof.readthedocs.io/en/latest/syntax.html">https://sphinx-proof.readthedocs.io/en/latest/syntax.html</a></p>
@@ -1389,7 +1389,7 @@ Additionally, you can generate a badge directly from <a class="reference externa
 <div class="admonition note">
 <p class="admonition-title">Note</p>
 <p>If you would just like to generate the latex file you may use:</p>
-<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">jb</span> <span class="n">build</span> <span class="n">mybookname</span><span class="o">/</span> <span class="o">--</span><span class="n">builder</span> <span class="n">latex</span>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>jb build mybookname/ --builder latex
 </pre></div>
 </div>
 </div>
@@ -1409,28 +1409,35 @@ To run the link checker, use the following command:</p>
 <h2><span class="section-number">5.4.4. </span>Configuring to Improve Accessibility<a class="headerlink" href="#configuring-to-improve-accessibility" title="Permalink to this headline">#</a></h2>
 <p>Declaring the primary language used in your book assists screen reader and browser translation tools.</p>
 <p>Language can be configured by providing the appropriate language code to the language option, under sphinx configuration in your _config.yml file:</p>
-<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">sphinx</span><span class="p">:</span>
-  <span class="n">config</span><span class="p">:</span>
-    <span class="n">language</span><span class="p">:</span> <span class="n">en</span>
+<div class="highlight-yml notranslate"><div class="highlight"><pre><span></span>sphinx:
+  config:
+    language: en
 </pre></div>
 </div>
 </section>
 <section id="defining-tex-macros">
 <h2><span class="section-number">5.4.5. </span>Defining TeX macros<a class="headerlink" href="#defining-tex-macros" title="Permalink to this headline">#</a></h2>
 <p>You can add LaTeX macros for the whole book by defining them under the Macros option of the TeX block. For example, the following two macros have been pre-defined in the Sphinx configuration</p>
-<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">sphinx</span><span class="p">:</span>
-  <span class="n">config</span><span class="p">:</span>
-    <span class="n">mathjax_config</span><span class="p">:</span>
-      <span class="n">TeX</span><span class="p">:</span>
-        <span class="n">Macros</span><span class="p">:</span>
-          <span class="s2">&quot;N&quot;</span><span class="p">:</span> <span class="s2">&quot;</span><span class="se">\\</span><span class="s2">mathbb</span><span class="si">{N}</span><span class="s2">&quot;</span>
-          <span class="s2">&quot;floor&quot;</span><span class="p">:</span> <span class="p">[</span><span class="s2">&quot;</span><span class="se">\\</span><span class="s2">lfloor#1</span><span class="se">\\</span><span class="s2">rfloor&quot;</span><span class="p">,</span> <span class="mi">1</span><span class="p">]</span>
-          <span class="s2">&quot;bmat&quot;</span> <span class="p">:</span> <span class="p">[</span><span class="s2">&quot;</span><span class="se">\\</span><span class="s2">left[</span><span class="se">\\</span><span class="s2">begin</span><span class="si">{array}</span><span class="s2">&quot;</span><span class="p">]</span>
-          <span class="s2">&quot;emat&quot;</span> <span class="p">:</span> <span class="p">[</span><span class="s2">&quot;</span><span class="se">\\</span><span class="s2">end</span><span class="si">{array}</span><span class="se">\\</span><span class="s2">right]&quot;</span><span class="p">]</span>
+<div class="highlight-yml notranslate"><div class="highlight"><pre><span></span>sphinx:
+  config                    :             # key-value pairs to directly over-ride the Sphinx configuration
+    mathjax_path            : https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js
+                                          # By default MathJax version 2 is currently used.
+                                          # If you are using a lot of math, you may want to try using version 3
+                                          # , which claims to improve load speeds by 60 - 80%:
+    mathjax3_config:
+      loader:                             # If you want to use physics package, you need to load it and add it to the packages list below.
+        load                : [&#39;[tex]/physics&#39;]
+      tex:
+        packages            : { &#39;[+]&#39;: [&#39;physics&#39;] }
+        macros:
+          &quot;N&quot;: &quot;\\mathbb{N}&quot;
+          &quot;floor&quot;: [&quot;\\lfloor#1\\rfloor&quot;, 1]
+          &quot;bmat&quot; : [&quot;\\left[\\begin{array}&quot;]
+          &quot;emat&quot; : [&quot;\\end{array}\\right]&quot;]
 </pre></div>
 </div>
 <p>You can also define TeX macros for a specific file by introducing them at the beginning of the file under a math directive. For example</p>
-<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>```{math}
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>```latex
 \newcommand\N{\mathbb{N}}
 \newcommand\floor[1]{\lfloor#1\rfloor}
 \newcommand{\bmat}{\left[\begin{array}}

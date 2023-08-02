@@ -102,7 +102,7 @@ launch_buttons:
                                                     # you can automatically insert buttons that link to the Jupyter Notebook running in a BinderHub.
   jupyterhub_url            : ""                    # The URL of the JupyterHub (e.g., https://datahub.berkeley.edu)
   thebe                     : false                  # This provides you with a Live Code button that, when clicked, will convert each code cell into an interactive cell that can be edited
-  colab_url                 : "https://colab.research.google.com" # The URL of Google Colab (https://colab.research.google.com)
+  colab_url                 : https://colab.research.google.com" # The URL of Google Colab (https://colab.research.google.com)
 
 repository:                           # Information about where the book exists on the web
   url                       : https://github.com/kkensuke/myjb  # The URL to your book's repository
@@ -116,7 +116,7 @@ sphinx:
   local_extensions          :             # A list of local extensions to load by sphinx specified by "name: path" items
   config                    :             # key-value pairs to directly over-ride the Sphinx configuration
     language                : en          # en for English, ja for Japanese https://www.sphinx-doc.org/en/master/usage/configuration.html#confval-language
-    html_baseurl            : 'https://kkensuke.github.io/myjb/intro.html'
+    html_baseurl            : https://kkensuke.github.io/myjb/intro.html
     myst_heading_anchors    : 3           # The heading level at which to generate anchors. Without this, internal links will not work.
     nb_merge_streams        : true        # Code contained in code cells may print outputs through both the stdout and stderr stream.
                                           # These outputs may appear in a mixed order and you may want them to be grouped and sorted to display the correct logical ordering.
@@ -126,11 +126,11 @@ sphinx:
                                           # If you are using a lot of math, you may want to try using version 3
                                           # , which claims to improve load speeds by 60 - 80%:
     mathjax3_config:
-      loader:
-        load: ['[tex]/physics']
+      loader:                             # If you want to use physics package, you need to load it and add it to the packages list below.
+        load                : ['[tex]/physics']
       tex:
-        packages : { '[+]': ['physics'] }
+        packages            : { '[+]': ['physics'] }
         macros:
-          "ket"  : ["|#1\\rangle",1]      # just an example
-          "bra"  : ["\\langle#1|",1]      # just an example
+          "ket"             : ["|#1\\rangle",1]      # just an example
+          "bra"             : ["\\langle#1|",1]      # just an example
     latex_toplevel_sectioning: 'chapter'  # 'part'
