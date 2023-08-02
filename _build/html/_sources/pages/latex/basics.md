@@ -146,19 +146,19 @@ You can use `amsmath` package to use more commands, such as `cases` and `align`.
 You can use `cases` environment to write piecewise functions.
 
 >```latex
->\begin{equation}
+>\begin{align}
 >    f(x) = \begin{cases}
 >        0 & (x < 0) \\
 >        1 & (x \geq 0)
 >    \end{cases}
->\end{equation}
+>\end{align}
 >```
->$$\begin{equation}
+>$$\begin{align}
     f(x) = \begin{cases}
         0 & (x < 0) \\
         1 & (x \geq 0)
     \end{cases}
-\end{equation}$$
+\end{align}$$
 
 ### `align`
 
@@ -188,17 +188,17 @@ You can use `physics` package to use more commands, such as `\qty`, `\dv`, `pdv`
 You can use `\qty` command to write adaptive parentheses instead of `\left` and `\right`.
 
 >```latex
->\begin{equation}
+>\begin{align}
 >    \qty( \frac{1}{2} ) \\
 >    \qty[ \frac{1}{2} ] \\
 >    \qty{ \frac{1}{2} } \\
->\end{equation}
+>\end{align}
 >```
->$$\begin{equation}
+>$$\begin{align}
     \qty( \frac{1}{2} ) \\
     \qty[ \frac{1}{2} ] \\
     \qty{ \frac{1}{2} } \\
-\end{equation}$$
+\end{align}$$
 
 
 ### `dv`
@@ -206,13 +206,13 @@ You can use `\qty` command to write adaptive parentheses instead of `\left` and 
 You can use `dv` command to write derivatives.
 
 >```latex
->\begin{equation}
+>\begin{align}
 >    \dv{x} \sin{x} = \cos{x}
->\end{equation}
+>\end{align}
 >```
->$$\begin{equation}
+>$$\begin{align}
     \dv{x} \sin{x} = \cos{x}
-\end{equation}$$
+\end{align}$$
 
 
 ### `pdv`
@@ -220,13 +220,13 @@ You can use `dv` command to write derivatives.
 You can use `pdv` command to write partial derivatives.
 
 >```latex
->\begin{equation}
+>\begin{align}
 >    \pdv{x} f(x, y), \pdv{f}{x}, \pdv{f}{x}{y}, \pdv[2]{f}{x}
->\end{equation}
+>\end{align}
 >```
->$$\begin{equation}
+>$$\begin{align}
     \pdv{x} f(x, y), \pdv{f}{x}, \pdv{f}{x}{y}, \pdv[2]{f}{x}
-\end{equation}$$
+\end{align}$$
 
 
 ### `\eval`
@@ -234,15 +234,15 @@ You can use `pdv` command to write partial derivatives.
 You can use `\eval` command to write evaluation.
 
 >```latex
->\begin{equation}
+>\begin{align}
 >    \eval{x^2}_{x=1} \\
 >    \eval{x^{-2}}_{1}^{\infty} \\
->\end{equation}
+>\end{align}
 >```
->$$\begin{equation}
+>$$\begin{align}
     \eval{x^2}_{x=1} \\
     \eval{x^{-2}}_{1}^{\infty} \\
-\end{equation}$$
+\end{align}$$
 
 
 ### `\order`
@@ -250,13 +250,13 @@ You can use `\eval` command to write evaluation.
 You can use `\order` command to write order.
 
 >```latex
->\begin{equation}
+>\begin{align}
 >    \order{x^2}, \order{\frac{1}{x^2}}
->\end{equation}
+>\end{align}
 >```
->$$\begin{equation}
+>$$\begin{align}
     \order{x^2}, \order{\frac{1}{x^2}}
-\end{equation}$$
+\end{align}$$
 
 
 ### `\abs`
@@ -264,13 +264,13 @@ You can use `\order` command to write order.
 You can use `\abs` command to write absolute value.
 
 >```latex
->\begin{equation}
+>\begin{align}
 >    \abs{x}, \abs{\frac{1}{x}}
->\end{equation}
+>\end{align}
 >```
->$$\begin{equation}
+>$$\begin{align}
     \abs{x}, \abs{\frac{1}{x}}
-\end{equation}$$
+\end{align}$$
 
 
 ### `\norm`
@@ -278,13 +278,13 @@ You can use `\abs` command to write absolute value.
 You can use `\norm` command to write norm.
 
 >```latex
->\begin{equation}
+>\begin{align}
 >    \norm{x}, \norm{\frac{1}{x}}
->\end{equation}
+>\end{align}
 >```
->$$\begin{equation}
+>$$\begin{align}
     \norm{x}, \norm{\frac{1}{x}}
-\end{equation}$$
+\end{align}$$
 
 
 ### `\commutator` [or `comm`]
@@ -292,15 +292,15 @@ You can use `\norm` command to write norm.
 You can use `\commutator` command to write commutator.
 
 >```latex
->\begin{equation}
+>\begin{align}
 >    \commutator{A}{B}\\
 >    \comm{A}{B}
->\end{equation}
+>\end{align}
 >```
->$$\begin{equation}
+>$$\begin{align}
     \commutator{A}{B}\\
     \comm{A}{B}
-\end{equation}$$
+\end{align}$$
 
 
 ### `\anticommutator` [or `acomm`]
@@ -308,15 +308,15 @@ You can use `\commutator` command to write commutator.
 You can use `\anticommutator` command to write anticommutator.
 
 >```latex
->\begin{equation}
+>\begin{align}
 >    \anticommutator{A}{B}\\
 >    \acomm{A}{B}
->\end{equation}
+>\end{align}
 >```
->$$\begin{equation}
+>$$\begin{align}
     \anticommutator{A}{B}\\
     \acomm{A}{B}
-\end{equation}$$
+\end{align}$$
 
 
 ### Dirac bra-ket notation
@@ -341,12 +341,12 @@ You can use `\anticommutator` command to write anticommutator.
 |:-------:|:------:|
 | `\mqty(a & b \\ c & d)` | $\mqty(a & b \\ c & d)$ |
 | `\mqty[ a & b \\ c & d ]` | $\mqty[ a & b \\ c & d ]$ |
-| `\mqty| a & b \\ c & d |` | $\mqty| a & b \\ c & d |$ |
-| `\imat{n}` | $\imat{n}$ |
-| `\pmat{0}` | $\pmat{0}$ |
-| `\pmat{1}` | $\pmat{1}$ |
-| `\pmat{2}` | $\pmat{2}$ |
-| `\pmat{3}` | $\pmat{3}$ |
+| `\vmqty{a & b \\ c & d}` | $\vmqty{a & b \\ c & d}$ |
+| `\mqty[\imat{n}]` | $\mqty[\imat{n}]$ |
+| `\mqty[\pmat{0}]` | $\mqty[\pmat{0}]$ |
+| `\mqty[\pmat{1}]` | $\mqty[\pmat{1}]$ |
+| `\mqty[\pmat{2}]` | $\mqty[\pmat{2}]$ |
+| `\mqty[\pmat{3}]` | $\mqty[\pmat{3}]$ |
 | `\mqty(\dmat{1,2,3})` | $\mqty(\dmat{1,2,3})$ |
 | `\mqty(\admat{1,2,3})` | $\mqty(\admat{1,2,3})$ |
 

@@ -825,21 +825,21 @@ $<span class="math notranslate nohighlight">\( i\hbar\frac{\partial}{\partial t}
 <h3><code class="docutils literal notranslate"><span class="pre">cases</span></code><a class="headerlink" href="#cases" title="Permalink to this headline">#</a></h3>
 <p>You can use <code class="docutils literal notranslate"><span class="pre">cases</span></code> environment to write piecewise functions.</p>
 <blockquote>
-<div><div class="highlight-latex notranslate"><div class="highlight"><pre><span></span><span class="k">\begin</span><span class="nb">{</span>equation<span class="nb">}</span>
+<div><div class="highlight-latex notranslate"><div class="highlight"><pre><span></span><span class="k">\begin</span><span class="nb">{</span>align<span class="nb">}</span>
    f(x) = <span class="k">\begin</span><span class="nb">{</span>cases<span class="nb">}</span>
        0 <span class="nb">&amp;</span> (x &lt; 0) <span class="k">\\</span>
        1 <span class="nb">&amp;</span> (x <span class="k">\geq</span> 0)
    <span class="k">\end</span><span class="nb">{</span>cases<span class="nb">}</span>
-<span class="k">\end</span><span class="nb">{</span>equation<span class="nb">}</span>
+<span class="k">\end</span><span class="nb">{</span>align<span class="nb">}</span>
 </pre></div>
 </div>
 <div class="math notranslate nohighlight">
-\[\begin{split}\begin{equation}
+\[\begin{split}\begin{align}
     f(x) = \begin{cases}
         0 &amp; (x &lt; 0) \\
         1 &amp; (x \geq 0)
     \end{cases}
-\end{equation}\end{split}\]</div>
+\end{align}\end{split}\]</div>
 </div></blockquote>
 </section>
 <section id="align">
@@ -870,145 +870,145 @@ $<span class="math notranslate nohighlight">\( i\hbar\frac{\partial}{\partial t}
 <h3><code class="docutils literal notranslate"><span class="pre">\qty</span></code><a class="headerlink" href="#qty" title="Permalink to this headline">#</a></h3>
 <p>You can use <code class="docutils literal notranslate"><span class="pre">\qty</span></code> command to write adaptive parentheses instead of <code class="docutils literal notranslate"><span class="pre">\left</span></code> and <code class="docutils literal notranslate"><span class="pre">\right</span></code>.</p>
 <blockquote>
-<div><div class="highlight-latex notranslate"><div class="highlight"><pre><span></span><span class="k">\begin</span><span class="nb">{</span>equation<span class="nb">}</span>
+<div><div class="highlight-latex notranslate"><div class="highlight"><pre><span></span><span class="k">\begin</span><span class="nb">{</span>align<span class="nb">}</span>
    <span class="k">\qty</span>( <span class="k">\frac</span><span class="nb">{</span>1<span class="nb">}{</span>2<span class="nb">}</span> ) <span class="k">\\</span>
    <span class="k">\qty</span><span class="na">[ \frac{1}{2} ]</span> <span class="k">\\</span>
    <span class="k">\qty</span><span class="nb">{</span> <span class="k">\frac</span><span class="nb">{</span>1<span class="nb">}{</span>2<span class="nb">}</span> <span class="nb">}</span> <span class="k">\\</span>
-<span class="k">\end</span><span class="nb">{</span>equation<span class="nb">}</span>
+<span class="k">\end</span><span class="nb">{</span>align<span class="nb">}</span>
 </pre></div>
 </div>
 <div class="math notranslate nohighlight">
-\[\begin{split}\begin{equation}
+\[\begin{split}\begin{align}
     \qty( \frac{1}{2} ) \\
     \qty[ \frac{1}{2} ] \\
     \qty{ \frac{1}{2} } \\
-\end{equation}\end{split}\]</div>
+\end{align}\end{split}\]</div>
 </div></blockquote>
 </section>
 <section id="dv">
 <h3><code class="docutils literal notranslate"><span class="pre">dv</span></code><a class="headerlink" href="#dv" title="Permalink to this headline">#</a></h3>
 <p>You can use <code class="docutils literal notranslate"><span class="pre">dv</span></code> command to write derivatives.</p>
 <blockquote>
-<div><div class="highlight-latex notranslate"><div class="highlight"><pre><span></span><span class="k">\begin</span><span class="nb">{</span>equation<span class="nb">}</span>
+<div><div class="highlight-latex notranslate"><div class="highlight"><pre><span></span><span class="k">\begin</span><span class="nb">{</span>align<span class="nb">}</span>
    <span class="k">\dv</span><span class="nb">{</span>x<span class="nb">}</span> <span class="k">\sin</span><span class="nb">{</span>x<span class="nb">}</span> = <span class="k">\cos</span><span class="nb">{</span>x<span class="nb">}</span>
-<span class="k">\end</span><span class="nb">{</span>equation<span class="nb">}</span>
+<span class="k">\end</span><span class="nb">{</span>align<span class="nb">}</span>
 </pre></div>
 </div>
 <div class="math notranslate nohighlight">
-\[\begin{equation}
+\[\begin{align}
     \dv{x} \sin{x} = \cos{x}
-\end{equation}\]</div>
+\end{align}\]</div>
 </div></blockquote>
 </section>
 <section id="pdv">
 <h3><code class="docutils literal notranslate"><span class="pre">pdv</span></code><a class="headerlink" href="#pdv" title="Permalink to this headline">#</a></h3>
 <p>You can use <code class="docutils literal notranslate"><span class="pre">pdv</span></code> command to write partial derivatives.</p>
 <blockquote>
-<div><div class="highlight-latex notranslate"><div class="highlight"><pre><span></span><span class="k">\begin</span><span class="nb">{</span>equation<span class="nb">}</span>
+<div><div class="highlight-latex notranslate"><div class="highlight"><pre><span></span><span class="k">\begin</span><span class="nb">{</span>align<span class="nb">}</span>
    <span class="k">\pdv</span><span class="nb">{</span>x<span class="nb">}</span> f(x, y), <span class="k">\pdv</span><span class="nb">{</span>f<span class="nb">}{</span>x<span class="nb">}</span>, <span class="k">\pdv</span><span class="nb">{</span>f<span class="nb">}{</span>x<span class="nb">}{</span>y<span class="nb">}</span>, <span class="k">\pdv</span><span class="na">[2]</span><span class="nb">{</span>f<span class="nb">}{</span>x<span class="nb">}</span>
-<span class="k">\end</span><span class="nb">{</span>equation<span class="nb">}</span>
+<span class="k">\end</span><span class="nb">{</span>align<span class="nb">}</span>
 </pre></div>
 </div>
 <div class="math notranslate nohighlight">
-\[\begin{equation}
+\[\begin{align}
     \pdv{x} f(x, y), \pdv{f}{x}, \pdv{f}{x}{y}, \pdv[2]{f}{x}
-\end{equation}\]</div>
+\end{align}\]</div>
 </div></blockquote>
 </section>
 <section id="eval">
 <h3><code class="docutils literal notranslate"><span class="pre">\eval</span></code><a class="headerlink" href="#eval" title="Permalink to this headline">#</a></h3>
 <p>You can use <code class="docutils literal notranslate"><span class="pre">\eval</span></code> command to write evaluation.</p>
 <blockquote>
-<div><div class="highlight-latex notranslate"><div class="highlight"><pre><span></span><span class="k">\begin</span><span class="nb">{</span>equation<span class="nb">}</span>
+<div><div class="highlight-latex notranslate"><div class="highlight"><pre><span></span><span class="k">\begin</span><span class="nb">{</span>align<span class="nb">}</span>
    <span class="k">\eval</span><span class="nb">{</span>x<span class="nb">^</span>2<span class="nb">}_{</span>x=1<span class="nb">}</span> <span class="k">\\</span>
    <span class="k">\eval</span><span class="nb">{</span>x<span class="nb">^{</span>-2<span class="nb">}}_{</span>1<span class="nb">}^{</span><span class="k">\infty</span><span class="nb">}</span> <span class="k">\\</span>
-<span class="k">\end</span><span class="nb">{</span>equation<span class="nb">}</span>
+<span class="k">\end</span><span class="nb">{</span>align<span class="nb">}</span>
 </pre></div>
 </div>
 <div class="math notranslate nohighlight">
-\[\begin{split}\begin{equation}
+\[\begin{split}\begin{align}
     \eval{x^2}_{x=1} \\
     \eval{x^{-2}}_{1}^{\infty} \\
-\end{equation}\end{split}\]</div>
+\end{align}\end{split}\]</div>
 </div></blockquote>
 </section>
 <section id="order">
 <h3><code class="docutils literal notranslate"><span class="pre">\order</span></code><a class="headerlink" href="#order" title="Permalink to this headline">#</a></h3>
 <p>You can use <code class="docutils literal notranslate"><span class="pre">\order</span></code> command to write order.</p>
 <blockquote>
-<div><div class="highlight-latex notranslate"><div class="highlight"><pre><span></span><span class="k">\begin</span><span class="nb">{</span>equation<span class="nb">}</span>
+<div><div class="highlight-latex notranslate"><div class="highlight"><pre><span></span><span class="k">\begin</span><span class="nb">{</span>align<span class="nb">}</span>
    <span class="k">\order</span><span class="nb">{</span>x<span class="nb">^</span>2<span class="nb">}</span>, <span class="k">\order</span><span class="nb">{</span><span class="k">\frac</span><span class="nb">{</span>1<span class="nb">}{</span>x<span class="nb">^</span>2<span class="nb">}}</span>
-<span class="k">\end</span><span class="nb">{</span>equation<span class="nb">}</span>
+<span class="k">\end</span><span class="nb">{</span>align<span class="nb">}</span>
 </pre></div>
 </div>
 <div class="math notranslate nohighlight">
-\[\begin{equation}
+\[\begin{align}
     \order{x^2}, \order{\frac{1}{x^2}}
-\end{equation}\]</div>
+\end{align}\]</div>
 </div></blockquote>
 </section>
 <section id="abs">
 <h3><code class="docutils literal notranslate"><span class="pre">\abs</span></code><a class="headerlink" href="#abs" title="Permalink to this headline">#</a></h3>
 <p>You can use <code class="docutils literal notranslate"><span class="pre">\abs</span></code> command to write absolute value.</p>
 <blockquote>
-<div><div class="highlight-latex notranslate"><div class="highlight"><pre><span></span><span class="k">\begin</span><span class="nb">{</span>equation<span class="nb">}</span>
+<div><div class="highlight-latex notranslate"><div class="highlight"><pre><span></span><span class="k">\begin</span><span class="nb">{</span>align<span class="nb">}</span>
    <span class="k">\abs</span><span class="nb">{</span>x<span class="nb">}</span>, <span class="k">\abs</span><span class="nb">{</span><span class="k">\frac</span><span class="nb">{</span>1<span class="nb">}{</span>x<span class="nb">}}</span>
-<span class="k">\end</span><span class="nb">{</span>equation<span class="nb">}</span>
+<span class="k">\end</span><span class="nb">{</span>align<span class="nb">}</span>
 </pre></div>
 </div>
 <div class="math notranslate nohighlight">
-\[\begin{equation}
+\[\begin{align}
     \abs{x}, \abs{\frac{1}{x}}
-\end{equation}\]</div>
+\end{align}\]</div>
 </div></blockquote>
 </section>
 <section id="norm">
 <h3><code class="docutils literal notranslate"><span class="pre">\norm</span></code><a class="headerlink" href="#norm" title="Permalink to this headline">#</a></h3>
 <p>You can use <code class="docutils literal notranslate"><span class="pre">\norm</span></code> command to write norm.</p>
 <blockquote>
-<div><div class="highlight-latex notranslate"><div class="highlight"><pre><span></span><span class="k">\begin</span><span class="nb">{</span>equation<span class="nb">}</span>
+<div><div class="highlight-latex notranslate"><div class="highlight"><pre><span></span><span class="k">\begin</span><span class="nb">{</span>align<span class="nb">}</span>
    <span class="k">\norm</span><span class="nb">{</span>x<span class="nb">}</span>, <span class="k">\norm</span><span class="nb">{</span><span class="k">\frac</span><span class="nb">{</span>1<span class="nb">}{</span>x<span class="nb">}}</span>
-<span class="k">\end</span><span class="nb">{</span>equation<span class="nb">}</span>
+<span class="k">\end</span><span class="nb">{</span>align<span class="nb">}</span>
 </pre></div>
 </div>
 <div class="math notranslate nohighlight">
-\[\begin{equation}
+\[\begin{align}
     \norm{x}, \norm{\frac{1}{x}}
-\end{equation}\]</div>
+\end{align}\]</div>
 </div></blockquote>
 </section>
 <section id="commutator-or-comm">
 <h3><code class="docutils literal notranslate"><span class="pre">\commutator</span></code> [or <code class="docutils literal notranslate"><span class="pre">comm</span></code>]<a class="headerlink" href="#commutator-or-comm" title="Permalink to this headline">#</a></h3>
 <p>You can use <code class="docutils literal notranslate"><span class="pre">\commutator</span></code> command to write commutator.</p>
 <blockquote>
-<div><div class="highlight-latex notranslate"><div class="highlight"><pre><span></span><span class="k">\begin</span><span class="nb">{</span>equation<span class="nb">}</span>
+<div><div class="highlight-latex notranslate"><div class="highlight"><pre><span></span><span class="k">\begin</span><span class="nb">{</span>align<span class="nb">}</span>
    <span class="k">\commutator</span><span class="nb">{</span>A<span class="nb">}{</span>B<span class="nb">}</span><span class="k">\\</span>
    <span class="k">\comm</span><span class="nb">{</span>A<span class="nb">}{</span>B<span class="nb">}</span>
-<span class="k">\end</span><span class="nb">{</span>equation<span class="nb">}</span>
+<span class="k">\end</span><span class="nb">{</span>align<span class="nb">}</span>
 </pre></div>
 </div>
 <div class="math notranslate nohighlight">
-\[\begin{split}\begin{equation}
+\[\begin{split}\begin{align}
     \commutator{A}{B}\\
     \comm{A}{B}
-\end{equation}\end{split}\]</div>
+\end{align}\end{split}\]</div>
 </div></blockquote>
 </section>
 <section id="anticommutator-or-acomm">
 <h3><code class="docutils literal notranslate"><span class="pre">\anticommutator</span></code> [or <code class="docutils literal notranslate"><span class="pre">acomm</span></code>]<a class="headerlink" href="#anticommutator-or-acomm" title="Permalink to this headline">#</a></h3>
 <p>You can use <code class="docutils literal notranslate"><span class="pre">\anticommutator</span></code> command to write anticommutator.</p>
 <blockquote>
-<div><div class="highlight-latex notranslate"><div class="highlight"><pre><span></span><span class="k">\begin</span><span class="nb">{</span>equation<span class="nb">}</span>
+<div><div class="highlight-latex notranslate"><div class="highlight"><pre><span></span><span class="k">\begin</span><span class="nb">{</span>align<span class="nb">}</span>
    <span class="k">\anticommutator</span><span class="nb">{</span>A<span class="nb">}{</span>B<span class="nb">}</span><span class="k">\\</span>
    <span class="k">\acomm</span><span class="nb">{</span>A<span class="nb">}{</span>B<span class="nb">}</span>
-<span class="k">\end</span><span class="nb">{</span>equation<span class="nb">}</span>
+<span class="k">\end</span><span class="nb">{</span>align<span class="nb">}</span>
 </pre></div>
 </div>
 <div class="math notranslate nohighlight">
-\[\begin{split}\begin{equation}
+\[\begin{split}\begin{align}
     \anticommutator{A}{B}\\
     \acomm{A}{B}
-\end{equation}\end{split}\]</div>
+\end{align}\end{split}\]</div>
 </div></blockquote>
 </section>
 <section id="dirac-bra-ket-notation">
@@ -1071,23 +1071,23 @@ $<span class="math notranslate nohighlight">\( i\hbar\frac{\partial}{\partial t}
 <tr class="row-odd"><td class="text-center"><p><code class="docutils literal notranslate"><span class="pre">\mqty[</span> <span class="pre">a</span> <span class="pre">&amp;</span> <span class="pre">b</span> <span class="pre">\\</span> <span class="pre">c</span> <span class="pre">&amp;</span> <span class="pre">d</span> <span class="pre">]</span></code></p></td>
 <td class="text-center"><p><span class="math notranslate nohighlight">\(\mqty[ a &amp; b \\ c &amp; d ]\)</span></p></td>
 </tr>
-<tr class="row-even"><td class="text-center"><p>`\mqty</p></td>
-<td class="text-center"><p>a &amp; b \ c &amp; d</p></td>
+<tr class="row-even"><td class="text-center"><p><code class="docutils literal notranslate"><span class="pre">\vmqty{a</span> <span class="pre">&amp;</span> <span class="pre">b</span> <span class="pre">\\</span> <span class="pre">c</span> <span class="pre">&amp;</span> <span class="pre">d}</span></code></p></td>
+<td class="text-center"><p><span class="math notranslate nohighlight">\(\vmqty{a &amp; b \\ c &amp; d}\)</span></p></td>
 </tr>
-<tr class="row-odd"><td class="text-center"><p><code class="docutils literal notranslate"><span class="pre">\imat{n}</span></code></p></td>
-<td class="text-center"><p><span class="math notranslate nohighlight">\(\imat{n}\)</span></p></td>
+<tr class="row-odd"><td class="text-center"><p><code class="docutils literal notranslate"><span class="pre">\mqty[\imat{n}]</span></code></p></td>
+<td class="text-center"><p><span class="math notranslate nohighlight">\(\mqty[\imat{n}]\)</span></p></td>
 </tr>
-<tr class="row-even"><td class="text-center"><p><code class="docutils literal notranslate"><span class="pre">\pmat{0}</span></code></p></td>
-<td class="text-center"><p><span class="math notranslate nohighlight">\(\pmat{0}\)</span></p></td>
+<tr class="row-even"><td class="text-center"><p><code class="docutils literal notranslate"><span class="pre">\mqty[\pmat{0}]</span></code></p></td>
+<td class="text-center"><p><span class="math notranslate nohighlight">\(\mqty[\pmat{0}]\)</span></p></td>
 </tr>
-<tr class="row-odd"><td class="text-center"><p><code class="docutils literal notranslate"><span class="pre">\pmat{1}</span></code></p></td>
-<td class="text-center"><p><span class="math notranslate nohighlight">\(\pmat{1}\)</span></p></td>
+<tr class="row-odd"><td class="text-center"><p><code class="docutils literal notranslate"><span class="pre">\mqty[\pmat{1}]</span></code></p></td>
+<td class="text-center"><p><span class="math notranslate nohighlight">\(\mqty[\pmat{1}]\)</span></p></td>
 </tr>
-<tr class="row-even"><td class="text-center"><p><code class="docutils literal notranslate"><span class="pre">\pmat{2}</span></code></p></td>
-<td class="text-center"><p><span class="math notranslate nohighlight">\(\pmat{2}\)</span></p></td>
+<tr class="row-even"><td class="text-center"><p><code class="docutils literal notranslate"><span class="pre">\mqty[\pmat{2}]</span></code></p></td>
+<td class="text-center"><p><span class="math notranslate nohighlight">\(\mqty[\pmat{2}]\)</span></p></td>
 </tr>
-<tr class="row-odd"><td class="text-center"><p><code class="docutils literal notranslate"><span class="pre">\pmat{3}</span></code></p></td>
-<td class="text-center"><p><span class="math notranslate nohighlight">\(\pmat{3}\)</span></p></td>
+<tr class="row-odd"><td class="text-center"><p><code class="docutils literal notranslate"><span class="pre">\mqty[\pmat{3}]</span></code></p></td>
+<td class="text-center"><p><span class="math notranslate nohighlight">\(\mqty[\pmat{3}]\)</span></p></td>
 </tr>
 <tr class="row-even"><td class="text-center"><p><code class="docutils literal notranslate"><span class="pre">\mqty(\dmat{1,2,3})</span></code></p></td>
 <td class="text-center"><p><span class="math notranslate nohighlight">\(\mqty(\dmat{1,2,3})\)</span></p></td>
