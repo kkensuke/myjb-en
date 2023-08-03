@@ -95,39 +95,92 @@ You can use shorter commands with `physics` package.
 ||| $+$ | `+` |
 ||| $-$ | `-` |
 ||| $=$ | `=` |
+||| $\div$ | `\div` |
+||| $\frac{a}{b}$ | `\frac{a}{b}` |
 ||| $\times$ | `\times` |
 ||| $\pm$ | `\pm` |
-||| $\div$ | `\div` |
+
+
+### Big Operators
+||| Symbol | Command |
+|-|-| ----- | ----- |
+||| $\lim x$ | `\lim x` |
+||| $\lim_{x \to \infty} x$ | `\lim_{x \to \infty} x` |
+||| $\lim\limits_{x \to \infty} x$ | `\lim\limits_{x \to \infty} x` |
+||| $\sum x$ | `\sum x` |
+||| $\sum_{i=1}^n x$ | `\sum_{i=1}^n x` |
+||| $\sum\limits_{i=1}^n x$ | `\sum\limits_{i=1}^n x` |
+||| $\prod_{i=1}^n x$ | `\prod_{i=1}^n x` | |
+||| $\coprod_{i=1}^n x$ | `\coprod_{i=1}^n x` |
+||| $\bigcup_{i=1}^n x$ | `\bigcup_{i=1}^n x` |
+||| $\bigcap_{i=1}^n x$ | `\bigcap_{i=1}^n x` |
+||| $\bigvee_{i=1}^n x$ | `\bigvee_{i=1}^n x` |
+||| $\bigwedge_{i=1}^n x$ | `\bigwedge_{i=1}^n x` |
+||| $\bigsqcup_{i=1}^n x$ | `\bigsqcup_{i=1}^n x` |
+||| $\bigodot_{i=1}^n x$ | `\bigodot_{i=1}^n x` |
+||| $\bigotimes_{i=1}^n x$ | `\bigotimes_{i=1}^n x` |
+||| $\int_a^b x$ | `\int_a^b x` |
+||| $\oint_a^b x$ | `\oint_a^b x` |
+||| $\iint_a^b x$ | `\iint_a^b x` |
+||| $\iiint_a^b x$ | `\iiint_a^b x` |
+
+
+
+### Miscellaneous
+||| Symbol | Command |
+|-|-| --- | --- |
+||| $\forall$ | `\forall` |
+||| $\exists$ | `\exists` |
+||| $\partial$ | `\partial` |
+||| $\nabla$ | `\nabla` |
+||| $\infty$ | `\infty` |
 ||| $\cdot$ | `\cdot` |
 ||| $\cdots$ | `\cdots` |
 ||| $\ldots$ | `\ldots` |
 ||| $\vdots$ | `\vdots` |
 ||| $\ddots$ | `\ddots` |
-||| $\forall$ | `\forall` |
-||| $\exists$ | `\exists` |
-||| $\infty$ | `\infty` |
-||| $\nabla$ | `\nabla` |
-||| $\partial$ | `\partial` |
-||| $\int$ | `\int` |
-||| $\oint$ | `\oint` |
-||| $\sum$ | `\sum` |
-||| $\prod$ | `\prod` |
-||| $\lim$ | `\lim` |
-||| $\log$ | `\log` |
-||| $\ln$ | `\ln` |
-||| $\exp$ | `\exp` |
-||| $\sin$ | `\sin` |
-||| $\cos$ | `\cos` |
-||| $\tan$ | `\tan` |
-||| $\arcsin$ | `\arcsin` |
-||| $\arccos$ | `\arccos` |
-||| $\arctan$ | `\arctan` |
-||| $\sinh$ | `\sinh` |
-||| $\cosh$ | `\cosh` |
+||| $\therefore$ | `\therefore` |
+||| $\because$ | `\because` |
+||| $\clubsuit$ | `\clubsuit` |
+||| $\diamondsuit$ | `\diamondsuit` |
+||| $\heartsuit$ | `\heartsuit` |
+||| $\spadesuit$ | `\spadesuit` |
+||| $\prime$ | `\prime` |
+||| $f^\prime$ | `f^\prime` |
+||| $\angle$ | `\angle` |
+
+
+
+
+### Functions
+||| Symbol | Command |
+|-|-| ----- | ----- |
 ||| $\sqrt{x}$ | `\sqrt{x}` |
-||| $\frac{a}{b}$ | `\frac{a}{b}` |
+||| $\sqrt[n]{x}$ | `\sqrt[n]{x}` |
+||| $\sin x$ | `\sin x` |
+||| $\cos x$ | `\cos x` |
+||| $\tan x$ | `\tan x` |
+||| $\cot x$ | `\cot x` |
+||| $\sec x$ | `\sec x` |
+||| $\csc x$ | `\csc x` |
+||| $\arcsin x$ | `\arcsin x` |
+||| $\arccos x$ | `\arccos x` |
+||| $\arctan x$ | `\arctan x` |
+||| $\sinh x$ | `\sinh x` |
+||| $\cosh x$ | `\cosh x` |
+||| $\tanh x$ | `\tanh x` |
+||| $\coth x$ | `\coth x` |
+||| $\log x$ | `\log x` |
+||| $\ln x$ | `\ln x` |
+||| $\exp x$ | `\exp x` |
 ||| $\binom{n}{k}$ | `\binom{n}{k}` |
 
+
+````{tip}
+You can wirte `\sum\limits_{i=1}^n x` instead of `\sum_{i=1}^n x` to make the limits appear above and below the symbol.
+
+> You can wirte $\sum\limits_{i=1}^n x$ instead of $\sum_{i=1}^n x$ to make the limits appear above and below the symbol.
+````
 
 ### Relations
 ||| Symbol | Command |
@@ -174,6 +227,66 @@ You can use shorter commands with `physics` package.
 ||| $a \frown b$ | `a \frown b` |
 ||| $a \vdash b$ | `a \vdash b` |
 ||| $a \dashv b$ | `a \dashv b` |
+
+
+### Spaces
+
+||| Symbol | Command |
+|-|-| ----- | ----- |
+||| $a \! b$ | `a \! b` |
+||| $a \, b$ | `a \, b` |
+||| $a \: b$ | `a \: b` |
+||| $a \; b$ | `a \; b` |
+||| $a \hspace{1pt} b$ | `a \hspace{1pt} b` |
+||| $a \hspace{1mm} b$ | `a \hspace{1mm} b` |
+||| $a \hspace{1ex} b$ | `a \hspace{1ex} b` |
+||| $a \hspace{1em} b$ | `a \hspace{1em} b` |
+||| $a \quad b$ | `a \quad b` |
+||| $a \qquad b$ | `a \qquad b` |
+||| $a \hspace{1cm} b$ | `a \hspace{1cm} b` |
+||| $a \hspace{1in} b$ | `a \hspace{1in} b` |
+
+
+### Delimiters
+||| Symbol | Command |
+|-|-| ----- | ----- |
+||| $(A)$ | `(A)` |
+||| $[A]$ | `[A]` |
+||| $\{A\}$ | `\{A\}` |
+||| $\langle A \rangle$ | `\langle A \rangle` |
+||| $\vert A \vert$ | `\vert A \vert` |
+||| $\Vert A \Vert$ | `\Vert A \Vert` |
+||| $\lfloor A \rfloor$ | `\lfloor A \rfloor` |
+||| $\lceil A \rceil$ | `\lceil A \rceil` |
+
+
+
+### Accents
+||| Symbol | Command |
+|-|-| ----- | ----- |
+||| $\hat{a}$ | `\hat{a}` |
+||| $\check{a}$ | `\check{a}` |
+||| $\tilde{a}$ | `\tilde{a}` |
+||| $\acute{a}$ | `\acute{a}` |
+||| $\grave{a}$ | `\grave{a}` |
+||| $\dot{a}$ | `\dot{a}` |
+||| $\ddot{a}$ | `\ddot{a}` |
+||| $\breve{a}$ | `\breve{a}` |
+||| $\bar{a}$ | `\bar{a}` |
+||| $\vec{a}$ | `\vec{a}` |
+
+
+
+### Styles
+||| Style | Command | Example |
+|-|-| ----- | ----- | ----- |
+||| $\mathit{A}$ | `\mathit{A}` | $\mathit{A\,B\,C\,D\,E\,F\,G\,H\,I\,J\,K\,L\,M\,N\,O\,P\,Q\,R\,S\,T\,U\,V\,W\,X\,Y\,Z}$ |
+||| $\mathrm{A}$ | `\mathrm{A}` | $\mathrm{A\,B\,C\,D\,E\,F\,G\,H\,I\,J\,K\,L\,M\,N\,O\,P\,Q\,R\,S\,T\,U\,V\,W\,X\,Y\,Z}$ |
+||| $\mathsf{A}$ | `\mathsf{A}` | $\mathsf{A\,B\,C\,D\,E\,F\,G\,H\,I\,J\,K\,L\,M\,N\,O\,P\,Q\,R\,S\,T\,U\,V\,W\,X\,Y\,Z}$ |
+||| $\mathbf{A}$ | `\mathbf{A}` | $\mathbf{A\,B\,C\,D\,E\,F\,G\,H\,I\,J\,K\,L\,M\,N\,O\,P\,Q\,R\,S\,T\,U\,V\,W\,X\,Y\,Z}$ |
+||| $\mathcal{A}$ | `\mathcal{A}` | $\mathcal{A\,B\,C\,D\,E\,F\,G\,H\,I\,J\,K\,L\,M\,N\,O\,P\,Q\,R\,S\,T\,U\,V\,W\,X\,Y\,Z}$ |
+||| $\mathfrak{A}$ | `\mathfrak{A}` | $\mathfrak{A\,B\,C\,D\,E\,F\,G\,H\,I\,J\,K\,L\,M\,N\,O\,P\,Q\,R\,S\,T\,U\,V\,W\,X\,Y\,Z}$ |
+||| $\mathbb{A}$ | `\mathbb{A}` | $\mathbb{A\,B\,C\,D\,E\,F\,G\,H\,I\,J\,K\,L\,M\,N\,O\,P\,Q\,R\,S\,T\,U\,V\,W\,X\,Y\,Z}$ |
 
 
 
