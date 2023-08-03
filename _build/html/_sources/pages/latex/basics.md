@@ -95,10 +95,15 @@ You can use shorter commands with `physics` package.
 ||| $+$ | `+` |
 ||| $-$ | `-` |
 ||| $=$ | `=` |
-||| $\div$ | `\div` |
+||| ÷ | `\div` |
 ||| $\frac{a}{b}$ | `\frac{a}{b}` |
 ||| $\times$ | `\times` |
 ||| $\pm$ | `\pm` |
+
+
+```{note}
+In `physics` package, `\div` is replaced by $\nabla\cdot$
+```
 
 
 ### Big Operators
@@ -134,9 +139,9 @@ You can use shorter commands with `physics` package.
 ||| $\partial$ | `\partial` |
 ||| $\nabla$ | `\nabla` |
 ||| $\infty$ | `\infty` |
+||| $\dots$ | `\dots` |
 ||| $\cdot$ | `\cdot` |
 ||| $\cdots$ | `\cdots` |
-||| $\ldots$ | `\ldots` |
 ||| $\vdots$ | `\vdots` |
 ||| $\ddots$ | `\ddots` |
 ||| $\therefore$ | `\therefore` |
@@ -150,6 +155,15 @@ You can use shorter commands with `physics` package.
 ||| $\angle$ | `\angle` |
 
 
+```{admonition} Dots
+$$
+    \sum_{i=1}^n x_i = x_1 + x_2 + \cdots + x_n
+$$
+
+$$
+    A = \mqty[a_{11} & \cdots & a_{1n} \\ \vdots & \ddots & \vdots \\ a_{n1} & \cdots & a_{nn}]
+$$
+```
 
 
 ### Functions
@@ -529,7 +543,7 @@ You can use `\anticommutator` command to write anticommutator.
 | `\mqty(a & b \\ c & d)` | $\mqty(a & b \\ c & d)$ |
 | `\mqty[ a & b \\ c & d ]` | $\mqty[ a & b \\ c & d ]$ |
 | `\vmqty{a & b \\ c & d}` | $\vmqty{a & b \\ c & d}$ |
-| `\mqty[\imat{4}]` | $\mqty[\imat{4}]$ |
+| `\mqty[\imat{2}]` | $\mqty[\imat{2}]$ |
 | `\mqty[\pmat{0}]` | $\mqty[\pmat{0}]$ |
 | `\mqty[\pmat{1}]` | $\mqty[\pmat{1}]$ |
 | `\mqty[\pmat{2}]` | $\mqty[\pmat{2}]$ |

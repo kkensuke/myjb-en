@@ -772,7 +772,7 @@ document.write(`
 </tr>
 <tr class="row-odd"><td><p></p></td>
 <td><p></p></td>
-<td><p><span class="math notranslate nohighlight">\(\div\)</span></p></td>
+<td><p>÷</p></td>
 <td><p><code class="docutils literal notranslate"><span class="pre">\div</span></code></p></td>
 </tr>
 <tr class="row-even"><td><p></p></td>
@@ -792,6 +792,10 @@ document.write(`
 </tr>
 </tbody>
 </table>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>In <code class="docutils literal notranslate"><span class="pre">physics</span></code> package, <code class="docutils literal notranslate"><span class="pre">\div</span></code> is replaced by <span class="math notranslate nohighlight">\(\nabla\cdot\)</span></p>
+</div>
 </section>
 <section id="big-operators">
 <h3>Big Operators<a class="headerlink" href="#big-operators" title="Permalink to this headline">#</a></h3>
@@ -940,18 +944,18 @@ document.write(`
 </tr>
 <tr class="row-odd"><td><p></p></td>
 <td><p></p></td>
-<td><p><span class="math notranslate nohighlight">\(\cdot\)</span></p></td>
-<td><p><code class="docutils literal notranslate"><span class="pre">\cdot</span></code></p></td>
+<td><p><span class="math notranslate nohighlight">\(\dots\)</span></p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">\dots</span></code></p></td>
 </tr>
 <tr class="row-even"><td><p></p></td>
 <td><p></p></td>
-<td><p><span class="math notranslate nohighlight">\(\cdots\)</span></p></td>
-<td><p><code class="docutils literal notranslate"><span class="pre">\cdots</span></code></p></td>
+<td><p><span class="math notranslate nohighlight">\(\cdot\)</span></p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">\cdot</span></code></p></td>
 </tr>
 <tr class="row-odd"><td><p></p></td>
 <td><p></p></td>
-<td><p><span class="math notranslate nohighlight">\(\ldots\)</span></p></td>
-<td><p><code class="docutils literal notranslate"><span class="pre">\ldots</span></code></p></td>
+<td><p><span class="math notranslate nohighlight">\(\cdots\)</span></p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">\cdots</span></code></p></td>
 </tr>
 <tr class="row-even"><td><p></p></td>
 <td><p></p></td>
@@ -1010,6 +1014,17 @@ document.write(`
 </tr>
 </tbody>
 </table>
+<div class="admonition-dots admonition">
+<p class="admonition-title">Dots</p>
+<div class="math notranslate nohighlight">
+\[
+    \sum_{i=1}^n x_i = x_1 + x_2 + \cdots + x_n
+\]</div>
+<div class="math notranslate nohighlight">
+\[\begin{split}
+    A = \mqty[a_{11} &amp; \cdots &amp; a_{1n} \\ \vdots &amp; \ddots &amp; \vdots \\ a_{n1} &amp; \cdots &amp; a_{nn}]
+\end{split}\]</div>
+</div>
 </section>
 <section id="functions">
 <h3>Functions<a class="headerlink" href="#functions" title="Permalink to this headline">#</a></h3>
@@ -1948,8 +1963,8 @@ document.write(`
 <tr class="row-even"><td class="text-center"><p><code class="docutils literal notranslate"><span class="pre">\vmqty{a</span> <span class="pre">&amp;</span> <span class="pre">b</span> <span class="pre">\\</span> <span class="pre">c</span> <span class="pre">&amp;</span> <span class="pre">d}</span></code></p></td>
 <td class="text-center"><p><span class="math notranslate nohighlight">\(\vmqty{a &amp; b \\ c &amp; d}\)</span></p></td>
 </tr>
-<tr class="row-odd"><td class="text-center"><p><code class="docutils literal notranslate"><span class="pre">\mqty[\imat{4}]</span></code></p></td>
-<td class="text-center"><p><span class="math notranslate nohighlight">\(\mqty[\imat{4}]\)</span></p></td>
+<tr class="row-odd"><td class="text-center"><p><code class="docutils literal notranslate"><span class="pre">\mqty[\imat{2}]</span></code></p></td>
+<td class="text-center"><p><span class="math notranslate nohighlight">\(\mqty[\imat{2}]\)</span></p></td>
 </tr>
 <tr class="row-even"><td class="text-center"><p><code class="docutils literal notranslate"><span class="pre">\mqty[\pmat{0}]</span></code></p></td>
 <td class="text-center"><p><span class="math notranslate nohighlight">\(\mqty[\pmat{0}]\)</span></p></td>
