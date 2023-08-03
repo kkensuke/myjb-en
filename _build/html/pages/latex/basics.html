@@ -108,7 +108,7 @@ const thebe_selector_output = ".output, .cell_output"
     <link rel="canonical" href="https://kkensuke.github.io/myjb/intro.html/pages/latex/basics.html" />
     <link rel="index" title="Index" href="../../genindex.html" />
     <link rel="search" title="Search" href="../../search.html" />
-    <link rel="next" title="4.7. article" href="article.html" />
+    <link rel="next" title="4.6. article" href="article.html" />
     <link rel="prev" title="4.4. Latex settings in VScode" href="settings.html" />
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
   <meta name="docsearch:language" content="en"/>
@@ -220,11 +220,10 @@ const thebe_selector_output = ".output, .cell_output"
 <li class="toctree-l1 current active has-children"><a class="reference internal" href="latex.html">4. Latex</a><input checked="" class="toctree-checkbox" id="toctree-checkbox-4" name="toctree-checkbox-4" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-4"><i class="fa-solid fa-chevron-down"></i></label><ul class="current">
 <li class="toctree-l2"><a class="reference internal" href="settings.html">4.4. Latex settings in VScode</a></li>
 <li class="toctree-l2 current active"><a class="current reference internal" href="#">4.5. Latex Basics</a></li>
-
-<li class="toctree-l2"><a class="reference internal" href="article.html">4.7. article</a></li>
-<li class="toctree-l2"><a class="reference internal" href="revtex4-2.html">4.8. revtex4-2</a></li>
-<li class="toctree-l2"><a class="reference internal" href="beamer.html">4.9. beamer</a></li>
-<li class="toctree-l2"><a class="reference internal" href="newcommands.html">4.10. newcommands</a></li>
+<li class="toctree-l2"><a class="reference internal" href="article.html">4.6. article</a></li>
+<li class="toctree-l2"><a class="reference internal" href="revtex4-2.html">4.7. revtex4-2</a></li>
+<li class="toctree-l2"><a class="reference internal" href="beamer.html">4.8. beamer</a></li>
+<li class="toctree-l2"><a class="reference internal" href="newcommands.html">4.9. newcommands</a></li>
 </ul>
 </li>
 <li class="toctree-l1 has-children"><a class="reference internal" href="../jb/jb.html">5. Jupyter Book</a><input class="toctree-checkbox" id="toctree-checkbox-5" name="toctree-checkbox-5" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-5"><i class="fa-solid fa-chevron-down"></i></label><ul>
@@ -456,11 +455,9 @@ document.write(`
             </div>
             <nav aria-label="Page">
                 <ul class="visible nav section-nav flex-column">
-<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#">4.5. Latex Basics</a></li>
-<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#how-to-write-equations">4.6. How to write equations</a><ul class="visible nav section-nav flex-column">
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#inline-equations">4.6.1. Inline equations</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#display-equations">4.6.2. Display equations</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#basic-symbols">4.6.3. Basic Symbols</a><ul class="nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#inline-equations">4.5.1. Inline equations</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#display-equations">4.5.2. Display equations</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#basic-symbols">4.5.3. Basic Symbols</a><ul class="nav section-nav flex-column">
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#greek-letters">Greek letters</a></li>
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#operators">Operators</a></li>
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#big-operators">Big Operators</a></li>
@@ -474,12 +471,12 @@ document.write(`
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#matrices">Matrices</a></li>
 </ul>
 </li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#amsmath-package">4.6.4. <code class="docutils literal notranslate"><span class="pre">amsmath</span></code> package</a><ul class="nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#amsmath-package">4.5.4. <code class="docutils literal notranslate"><span class="pre">amsmath</span></code> package</a><ul class="nav section-nav flex-column">
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#cases"><code class="docutils literal notranslate"><span class="pre">cases</span></code></a></li>
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#align"><code class="docutils literal notranslate"><span class="pre">align</span></code></a></li>
 </ul>
 </li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#physics-package">4.6.5. <code class="docutils literal notranslate"><span class="pre">physics</span></code> package</a><ul class="nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#physics-package">4.5.5. <code class="docutils literal notranslate"><span class="pre">physics</span></code> package</a><ul class="nav section-nav flex-column">
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#qty"><code class="docutils literal notranslate"><span class="pre">\qty</span></code></a></li>
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#dv"><code class="docutils literal notranslate"><span class="pre">dv</span></code></a></li>
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#pdv"><code class="docutils literal notranslate"><span class="pre">pdv</span></code></a></li>
@@ -496,9 +493,6 @@ document.write(`
 </ul>
 </li>
 </ul>
-</li>
-</ul>
-
             </nav>
         </div>
     </div>
@@ -511,11 +505,8 @@ document.write(`
                   
   <section class="tex2jax_ignore mathjax_ignore" id="latex-basics">
 <h1><span class="section-number">4.5. </span>Latex Basics<a class="headerlink" href="#latex-basics" title="Permalink to this headline">#</a></h1>
-</section>
-<section class="tex2jax_ignore mathjax_ignore" id="how-to-write-equations">
-<h1><span class="section-number">4.6. </span>How to write equations<a class="headerlink" href="#how-to-write-equations" title="Permalink to this headline">#</a></h1>
 <section id="inline-equations">
-<h2><span class="section-number">4.6.1. </span>Inline equations<a class="headerlink" href="#inline-equations" title="Permalink to this headline">#</a></h2>
+<h2><span class="section-number">4.5.1. </span>Inline equations<a class="headerlink" href="#inline-equations" title="Permalink to this headline">#</a></h2>
 <p>You can write inline equations by using <code class="docutils literal notranslate"><span class="pre">$</span></code>.</p>
 <div class="admonition-example admonition">
 <p class="admonition-title">Example</p>
@@ -526,7 +517,7 @@ document.write(`
 </div>
 </section>
 <section id="display-equations">
-<h2><span class="section-number">4.6.2. </span>Display equations<a class="headerlink" href="#display-equations" title="Permalink to this headline">#</a></h2>
+<h2><span class="section-number">4.5.2. </span>Display equations<a class="headerlink" href="#display-equations" title="Permalink to this headline">#</a></h2>
 <p>You can write display equations by using <code class="docutils literal notranslate"><span class="pre">$$</span></code> or <code class="docutils literal notranslate"><span class="pre">\[</span> <span class="pre">\]</span></code>.</p>
 <div class="admonition-example admonition">
 <p class="admonition-title">Example</p>
@@ -559,7 +550,7 @@ document.write(`
 </div>
 </section>
 <section id="basic-symbols">
-<h2><span class="section-number">4.6.3. </span>Basic Symbols<a class="headerlink" href="#basic-symbols" title="Permalink to this headline">#</a></h2>
+<h2><span class="section-number">4.5.3. </span>Basic Symbols<a class="headerlink" href="#basic-symbols" title="Permalink to this headline">#</a></h2>
 <section id="greek-letters">
 <h3>Greek letters<a class="headerlink" href="#greek-letters" title="Permalink to this headline">#</a></h3>
 <table class="colwidths-auto table">
@@ -1256,7 +1247,7 @@ document.write(`
 </section>
 </section>
 <section id="amsmath-package">
-<h2><span class="section-number">4.6.4. </span><code class="docutils literal notranslate"><span class="pre">amsmath</span></code> package<a class="headerlink" href="#amsmath-package" title="Permalink to this headline">#</a></h2>
+<h2><span class="section-number">4.5.4. </span><code class="docutils literal notranslate"><span class="pre">amsmath</span></code> package<a class="headerlink" href="#amsmath-package" title="Permalink to this headline">#</a></h2>
 <p>You can use <code class="docutils literal notranslate"><span class="pre">amsmath</span></code> package to use more commands, such as <code class="docutils literal notranslate"><span class="pre">cases</span></code> and <code class="docutils literal notranslate"><span class="pre">align</span></code>.</p>
 <section id="cases">
 <h3><code class="docutils literal notranslate"><span class="pre">cases</span></code><a class="headerlink" href="#cases" title="Permalink to this headline">#</a></h3>
@@ -1301,7 +1292,7 @@ document.write(`
 </section>
 </section>
 <section id="physics-package">
-<h2><span class="section-number">4.6.5. </span><code class="docutils literal notranslate"><span class="pre">physics</span></code> package<a class="headerlink" href="#physics-package" title="Permalink to this headline">#</a></h2>
+<h2><span class="section-number">4.5.5. </span><code class="docutils literal notranslate"><span class="pre">physics</span></code> package<a class="headerlink" href="#physics-package" title="Permalink to this headline">#</a></h2>
 <p>You can use <code class="docutils literal notranslate"><span class="pre">physics</span></code> package to use more commands, such as <code class="docutils literal notranslate"><span class="pre">\qty</span></code>, <code class="docutils literal notranslate"><span class="pre">\dv</span></code>, <code class="docutils literal notranslate"><span class="pre">pdv</span></code>, <code class="docutils literal notranslate"><span class="pre">\eval</span></code>, <code class="docutils literal notranslate"><span class="pre">\order</span></code>, <code class="docutils literal notranslate"><span class="pre">\abs</span></code>, <code class="docutils literal notranslate"><span class="pre">\norm</span></code>, <code class="docutils literal notranslate"><span class="pre">\commutator</span></code> [or <code class="docutils literal notranslate"><span class="pre">\comm</span></code>], <code class="docutils literal notranslate"><span class="pre">\anticommutator</span></code> [or <code class="docutils literal notranslate"><span class="pre">\acomm</span></code>]</p>
 <section id="qty">
 <h3><code class="docutils literal notranslate"><span class="pre">\qty</span></code><a class="headerlink" href="#qty" title="Permalink to this headline">#</a></h3>
@@ -1647,7 +1638,7 @@ document.write(`
        title="next page">
       <div class="prev-next-info">
         <p class="prev-next-subtitle">next</p>
-        <p class="prev-next-title"><span class="section-number">4.7. </span>article</p>
+        <p class="prev-next-title"><span class="section-number">4.6. </span>article</p>
       </div>
       <i class="fa-solid fa-angle-right"></i>
     </a>
@@ -1669,11 +1660,9 @@ document.write(`
   </div>
   <nav class="bd-toc-nav page-toc">
     <ul class="visible nav section-nav flex-column">
-<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#">4.5. Latex Basics</a></li>
-<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#how-to-write-equations">4.6. How to write equations</a><ul class="visible nav section-nav flex-column">
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#inline-equations">4.6.1. Inline equations</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#display-equations">4.6.2. Display equations</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#basic-symbols">4.6.3. Basic Symbols</a><ul class="nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#inline-equations">4.5.1. Inline equations</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#display-equations">4.5.2. Display equations</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#basic-symbols">4.5.3. Basic Symbols</a><ul class="nav section-nav flex-column">
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#greek-letters">Greek letters</a></li>
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#operators">Operators</a></li>
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#big-operators">Big Operators</a></li>
@@ -1687,12 +1676,12 @@ document.write(`
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#matrices">Matrices</a></li>
 </ul>
 </li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#amsmath-package">4.6.4. <code class="docutils literal notranslate"><span class="pre">amsmath</span></code> package</a><ul class="nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#amsmath-package">4.5.4. <code class="docutils literal notranslate"><span class="pre">amsmath</span></code> package</a><ul class="nav section-nav flex-column">
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#cases"><code class="docutils literal notranslate"><span class="pre">cases</span></code></a></li>
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#align"><code class="docutils literal notranslate"><span class="pre">align</span></code></a></li>
 </ul>
 </li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#physics-package">4.6.5. <code class="docutils literal notranslate"><span class="pre">physics</span></code> package</a><ul class="nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#physics-package">4.5.5. <code class="docutils literal notranslate"><span class="pre">physics</span></code> package</a><ul class="nav section-nav flex-column">
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#qty"><code class="docutils literal notranslate"><span class="pre">\qty</span></code></a></li>
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#dv"><code class="docutils literal notranslate"><span class="pre">dv</span></code></a></li>
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#pdv"><code class="docutils literal notranslate"><span class="pre">pdv</span></code></a></li>
@@ -1709,9 +1698,6 @@ document.write(`
 </ul>
 </li>
 </ul>
-</li>
-</ul>
-
   </nav></div>
 
 </div></div>

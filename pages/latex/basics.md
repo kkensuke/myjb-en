@@ -1,8 +1,6 @@
 Latex Basics
 ===
 
-# How to write equations
-
 ## Inline equations
 
 You can write inline equations by using `$`.

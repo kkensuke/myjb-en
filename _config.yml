@@ -5,10 +5,9 @@
 # Book settings
 title                       : My note  # The title of the book. Will be placed in the left navbar.
 author                      : kkensuke           # The author of the book
-email                       :
 #authors                     :
+email                       :
 copyright                   : "2023"           # Copyright year to be placed in the footer
-#project_copyright           : an alias of copyright
 logo                        : mylogo.png         # A path to the book logo
 #organization                :
 #address                     :
