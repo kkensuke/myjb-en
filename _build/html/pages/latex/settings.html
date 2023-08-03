@@ -9,7 +9,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
 
-    <title>4.3. Latex settings in VScode &#8212; My note</title>
+    <title>4.4. Latex settings in VScode &#8212; My note</title>
   
   
   
@@ -108,7 +108,7 @@ const thebe_selector_output = ".output, .cell_output"
     <link rel="canonical" href="https://kkensuke.github.io/myjb/intro.html/pages/latex/settings.html" />
     <link rel="index" title="Index" href="../../genindex.html" />
     <link rel="search" title="Search" href="../../search.html" />
-    <link rel="next" title="4.4. Latex Basics" href="basics.html" />
+    <link rel="next" title="4.5. Latex Basics" href="basics.html" />
     <link rel="prev" title="4. Latex" href="latex.html" />
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
   <meta name="docsearch:language" content="en"/>
@@ -218,13 +218,13 @@ const thebe_selector_output = ".output, .cell_output"
 </ul>
 </li>
 <li class="toctree-l1 current active has-children"><a class="reference internal" href="latex.html">4. Latex</a><input checked="" class="toctree-checkbox" id="toctree-checkbox-4" name="toctree-checkbox-4" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-4"><i class="fa-solid fa-chevron-down"></i></label><ul class="current">
-<li class="toctree-l2 current active"><a class="current reference internal" href="#">4.3. Latex settings in VScode</a></li>
-<li class="toctree-l2"><a class="reference internal" href="basics.html">4.4. Latex Basics</a></li>
+<li class="toctree-l2 current active"><a class="current reference internal" href="#">4.4. Latex settings in VScode</a></li>
+<li class="toctree-l2"><a class="reference internal" href="basics.html">4.5. Latex Basics</a></li>
 
-<li class="toctree-l2"><a class="reference internal" href="article.html">4.6. article</a></li>
-<li class="toctree-l2"><a class="reference internal" href="revtex4-2.html">4.7. revtex4-2</a></li>
-<li class="toctree-l2"><a class="reference internal" href="beamer.html">4.8. beamer</a></li>
-<li class="toctree-l2"><a class="reference internal" href="newcommands.html">4.9. newcommands</a></li>
+<li class="toctree-l2"><a class="reference internal" href="article.html">4.7. article</a></li>
+<li class="toctree-l2"><a class="reference internal" href="revtex4-2.html">4.8. revtex4-2</a></li>
+<li class="toctree-l2"><a class="reference internal" href="beamer.html">4.9. beamer</a></li>
+<li class="toctree-l2"><a class="reference internal" href="newcommands.html">4.10. newcommands</a></li>
 </ul>
 </li>
 <li class="toctree-l1 has-children"><a class="reference internal" href="../jb/jb.html">5. Jupyter Book</a><input class="toctree-checkbox" id="toctree-checkbox-5" name="toctree-checkbox-5" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-5"><i class="fa-solid fa-chevron-down"></i></label><ul>
@@ -456,9 +456,9 @@ document.write(`
             </div>
             <nav aria-label="Page">
                 <ul class="visible nav section-nav flex-column">
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#install-texlive">4.3.1. Install TexLive</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#setting-in-vscode">4.3.2. Setting in VScode</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#lets-compile-your-latex-file">4.3.3. Let’s compile your <span class="math notranslate nohighlight">\(\LaTeX\)</span> file!</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#install-texlive">4.4.1. Install TexLive</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#setting-in-vscode">4.4.2. Setting in VScode</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#lets-compile-your-latex-file">4.4.3. Let’s compile your <span class="math notranslate nohighlight">\(\LaTeX\)</span> file!</a></li>
 </ul>
             </nav>
         </div>
@@ -471,9 +471,9 @@ document.write(`
                 <article class="bd-article" role="main">
                   
   <section class="tex2jax_ignore mathjax_ignore" id="latex-settings-in-vscode">
-<h1><span class="section-number">4.3. </span>Latex settings in VScode<a class="headerlink" href="#latex-settings-in-vscode" title="Permalink to this headline">#</a></h1>
+<h1><span class="section-number">4.4. </span>Latex settings in VScode<a class="headerlink" href="#latex-settings-in-vscode" title="Permalink to this headline">#</a></h1>
 <section id="install-texlive">
-<h2><span class="section-number">4.3.1. </span>Install TexLive<a class="headerlink" href="#install-texlive" title="Permalink to this headline">#</a></h2>
+<h2><span class="section-number">4.4.1. </span>Install TexLive<a class="headerlink" href="#install-texlive" title="Permalink to this headline">#</a></h2>
 <p>Download <code class="docutils literal notranslate"><span class="pre">install-tl-unx.tar.gz</span></code></p>
 <div class="highlight-zsh notranslate"><div class="highlight"><pre><span></span>$ curl -OL http://mirror.ctan.org/systems/texlive/tlnet/install-tl-unx.tar.gz
 </pre></div>
@@ -504,7 +504,7 @@ Enter command: I
 </div>
 </section>
 <section id="setting-in-vscode">
-<h2><span class="section-number">4.3.2. </span>Setting in VScode<a class="headerlink" href="#setting-in-vscode" title="Permalink to this headline">#</a></h2>
+<h2><span class="section-number">4.4.2. </span>Setting in VScode<a class="headerlink" href="#setting-in-vscode" title="Permalink to this headline">#</a></h2>
 <ol class="arabic">
 <li><p>Install <a class="reference external" href="https://marketplace.visualstudio.com/items?itemName=James-Yu.latex-workshop"><code class="docutils literal notranslate"><span class="pre">LaTeX</span> <span class="pre">Workshop</span></code></a> extension.</p></li>
 <li><p>Open <code class="docutils literal notranslate"><span class="pre">settings.json</span></code> in VScode.</p></li>
@@ -569,7 +569,7 @@ Enter command: I
 </ol>
 </section>
 <section id="lets-compile-your-latex-file">
-<h2><span class="section-number">4.3.3. </span>Let’s compile your <span class="math notranslate nohighlight">\(\LaTeX\)</span> file!<a class="headerlink" href="#lets-compile-your-latex-file" title="Permalink to this headline">#</a></h2>
+<h2><span class="section-number">4.4.3. </span>Let’s compile your <span class="math notranslate nohighlight">\(\LaTeX\)</span> file!<a class="headerlink" href="#lets-compile-your-latex-file" title="Permalink to this headline">#</a></h2>
 <p>Let’s make a test latex directory. Please download <code class="docutils literal notranslate"><span class="pre">article-template</span></code> from <a class="reference external" href="https://github.com/kkensuke/latex-template">here</a>. Then, open the directory in VScode. You can edit <code class="docutils literal notranslate"><span class="pre">main.tex</span></code> and compile it by <code class="docutils literal notranslate"><span class="pre">cmd</span> <span class="pre">+</span> <span class="pre">S</span></code> (Mac). Finally, you will get the modified <code class="docutils literal notranslate"><span class="pre">main.pdf</span></code> in the same directory.</p>
 <p>The directory structure is as follows:</p>
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span>article-template
@@ -650,7 +650,7 @@ Enter command: I
        title="next page">
       <div class="prev-next-info">
         <p class="prev-next-subtitle">next</p>
-        <p class="prev-next-title"><span class="section-number">4.4. </span>Latex Basics</p>
+        <p class="prev-next-title"><span class="section-number">4.5. </span>Latex Basics</p>
       </div>
       <i class="fa-solid fa-angle-right"></i>
     </a>
@@ -672,9 +672,9 @@ Enter command: I
   </div>
   <nav class="bd-toc-nav page-toc">
     <ul class="visible nav section-nav flex-column">
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#install-texlive">4.3.1. Install TexLive</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#setting-in-vscode">4.3.2. Setting in VScode</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#lets-compile-your-latex-file">4.3.3. Let’s compile your <span class="math notranslate nohighlight">\(\LaTeX\)</span> file!</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#install-texlive">4.4.1. Install TexLive</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#setting-in-vscode">4.4.2. Setting in VScode</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#lets-compile-your-latex-file">4.4.3. Let’s compile your <span class="math notranslate nohighlight">\(\LaTeX\)</span> file!</a></li>
 </ul>
   </nav></div>
 

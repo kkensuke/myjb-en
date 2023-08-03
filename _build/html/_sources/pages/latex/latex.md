@@ -1,8 +1,8 @@
 # Latex
 
-## [Settings](./settings.md)
+## [$\LaTeX$ settings in VS Code](./settings.md)
 
-$\LaTeX$ settings for VS Code.
+## [LaTeX Basics](./basics.md)
 
 ## Preamble
 

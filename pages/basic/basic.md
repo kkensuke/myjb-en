@@ -8,7 +8,3 @@
 - [GitHub](./github/github.md)
 - [Commit Masssages with emoji](./github/commitMessage.md)
 - [Homebrew and venv](./packageManager.md)
-
-
-$\ket{a}$
-$\dyad{a}{b}$
