@@ -41,6 +41,10 @@ $ sudo /usr/local/texlive/????/bin/*/tlmgr path add
 1. Install [`LaTeX Workshop`](https://marketplace.visualstudio.com/items?itemName=James-Yu.latex-workshop) extension.
 
 2. Open `settings.json` in VScode.
+    In macOS, you can open it by typing the following command in the terminal.
+    ```bash
+    code ~/Library/Application\ Support/Code/User/settings.json
+    ```
 3. Add the following code to `settings.json`. You have two recipes, `ptex2pdf*3` and `ptex2pdf -> pbibtex -> ptex2pdf*2`. The former is to compile `.tex` files without `.bib`, and the latter is for `.tex` files with `.bib`. Please refer to [this page](https://github.com/James-Yu/LaTeX-Workshop/wiki/Compile#building-the-document) for more details.
     ```json
     {

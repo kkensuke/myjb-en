@@ -138,5 +138,8 @@
 :align: center
 ```
 
+### [Video Speed Controller](https://addons.mozilla.org/en-US/firefox/addon/videospeed/)
+`Video Speed Controller` lets you control the video playback speed with keyboard shortcuts `S` and `D` and advance and rewind the video with keyboard shortcuts `X` and `Z` in any HTML5 video player.
+
 ### [Youtube Audio](https://addons.mozilla.org/en-US/firefox/addon/youtube-audio/)
 `Youtube Audio` lets you play only the audio of a YouTube video.

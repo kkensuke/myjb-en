@@ -506,7 +506,12 @@ Enter command: I
 <h2><span class="section-number">4.4.2. </span>Setting in VScode<a class="headerlink" href="#setting-in-vscode" title="Permalink to this headline">#</a></h2>
 <ol class="arabic">
 <li><p>Install <a class="reference external" href="https://marketplace.visualstudio.com/items?itemName=James-Yu.latex-workshop"><code class="docutils literal notranslate"><span class="pre">LaTeX</span> <span class="pre">Workshop</span></code></a> extension.</p></li>
-<li><p>Open <code class="docutils literal notranslate"><span class="pre">settings.json</span></code> in VScode.</p></li>
+<li><p>Open <code class="docutils literal notranslate"><span class="pre">settings.json</span></code> in VScode.
+In macOS, you can open it by typing the following command in the terminal.</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>code ~/Library/Application<span class="se">\ </span>Support/Code/User/settings.json
+</pre></div>
+</div>
+</li>
 <li><p>Add the following code to <code class="docutils literal notranslate"><span class="pre">settings.json</span></code>. You have two recipes, <code class="docutils literal notranslate"><span class="pre">ptex2pdf*3</span></code> and <code class="docutils literal notranslate"><span class="pre">ptex2pdf</span> <span class="pre">-&gt;</span> <span class="pre">pbibtex</span> <span class="pre">-&gt;</span> <span class="pre">ptex2pdf*2</span></code>. The former is to compile <code class="docutils literal notranslate"><span class="pre">.tex</span></code> files without <code class="docutils literal notranslate"><span class="pre">.bib</span></code>, and the latter is for <code class="docutils literal notranslate"><span class="pre">.tex</span></code> files with <code class="docutils literal notranslate"><span class="pre">.bib</span></code>. Please refer to <a class="reference external" href="https://github.com/James-Yu/LaTeX-Workshop/wiki/Compile#building-the-document">this page</a> for more details.</p>
 <div class="highlight-json notranslate"><div class="highlight"><pre><span></span><span class="p">{</span><span class="w"></span>
 <span class="w">    </span><span class="c1">// latex</span><span class="w"></span>
