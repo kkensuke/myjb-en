@@ -24,6 +24,9 @@ Grammarly for VS Code. Grammarly adapts to your needs and writing style, giving 
 ## [indent-rainbow](https://marketplace.visualstudio.com/items?itemName=oderwat.indent-rainbow)
 Makes indentation more readable.
 
+## [isort](https://marketplace.visualstudio.com/items?itemName=ms-python.isort)
+Sort Python imports.
+
 ## [Jupyter & Jupyter Keymap](https://marketplace.visualstudio.com/items?itemName=ms-toolsai.jupyter)
 Jupyter notebook support, interactive programming and computing that supports Intellisense, debugging and more.
 

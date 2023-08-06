@@ -31,7 +31,7 @@ CustomShortCut is compatible with CheatSheet. You can redefine shortcut keys eas
 
 
 ## [Clipy](https://clipy-app.com/)
-`Clipy` is a free and open source clipboard extension app. You can use it from a menu bar icon or with a shortcut key `cmd + shift + v`.
+`Clipy` is a free and open source clipboard extension app. You can use it from a menu bar icon or with a shortcut key `cmd + shift + v`. You can also use it as a snippet manager.
 
 
 ## [CotEditor](https://coteditor.com/)
@@ -43,8 +43,8 @@ You can check the device battery information of Mac, iPad, and iPhone with `coco
 
 
 ## [draw.io](https://app.diagrams.net/)
-`draw.io` is a free and open source diagram software for making flowchart, network diagrams, and so on. The UI is very simple and easy to use. You can use it from a browser or desktop app.
-
+`draw.io` is a free and open source diagram software for making flowchart, network diagrams, and so on. The UI is very simple and easy to use. You can use it from a browser or desktop app. You can put mathematical equations in the diagram with $LaTeX$.
+![haar-int](img/haar-int.png)
 
 ## [Firefox](https://www.mozilla.org/en-US/firefox/new/)
 `Firefox` is a free and open source web browser. It is famous for its privacy protection and many useful utilities and  extensions.
@@ -157,8 +157,7 @@ an active window: `cmd + shift + 8`, or a whole page by scrolling: `cmd + shift 
 
 
 ## [Syntax Highlight](https://github.com/sbarex/SourceCodeSyntaxHighlight#installation)
-`Syntax Highlight` is a free and open source app for highlighting the syntax of source code in Quick Look.
-
+`Syntax Highlight` is a free and open source app for highlighting the syntax of source code in Quick Look (press space key on a file).
 
 ## [VS Code](https://code.visualstudio.com/)
 `VS Code` is a free and open source code editor. It is famous for its many useful extensions. Useful extensions are listed in [here](../usefulVScodeExtensions/usefulVScodeExtensions.md).
