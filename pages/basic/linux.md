@@ -102,18 +102,18 @@ rmdir -p dir/subdir/ssubdir
 
 `echo`:
 - print strings
-```bash
-echo $PATH
-```
+    ```bash
+    echo $PATH
+    ```
 - make files with contents
     - Make new file or overwrite a existing file : `>`
+        ```bash
+        echo [Strings] > [filename]
+        ```
     - Append : `>>`
-```bash
-echo [Strings] > [filename]
-```
-```bash
-echo [Strings] >> [filename]
-```
+        ```bash
+        echo [Strings] >> [filename]
+        ```
 
 `cat`: print file contents
 ```bash
@@ -174,6 +174,7 @@ mv dir1 dir4
 
 
 `tree`: print contents of the current directory in a tree-like format. You can use `tree -d` to print directory contents. You can use `tree -L` to print directory contents up to a certain level.
+
 You have to install `tree` command in bash first.
 ```bash
 brew install tree
@@ -290,7 +291,7 @@ find . -size +30k -size -1M -name '*.py'
 find target condtion1 -and condition2
 
 # search the current directory recursively for .txt files and remove them all.
-find . -name '*.txt' -exec rm {} \;
+find . -name '*.txt' -exec rm {} +
 ```
 
 `grep`: search files for patterns
@@ -383,38 +384,33 @@ cat test.txt
 ```
 
 
-To remove stderr, add `2>/dev/null` .
+To remove stderr, add `2>/dev/null` to the end of the command.
 
 ---
 ### Combine commands
 
 %`;` `&` `&&` `||` `$()` `xargs`
 
-- `command2` after `commmand1`
-
-`command2` is executed even when `command1` puts stderr
-
-```bash
-command1 ; command2
-```
+- `command2` after `commmand1`\
+    `command2` is executed even when `command1` puts stderr
+    ```bash
+    command1 ; command2
+    ```
 
 - `command2` and `commmand1` at the same time
-
-```bash
-command1 & command2
-```
+    ```bash
+    command1 & command2
+    ```
 
 - `command2` after `commmand1` succeeded
-
-```bash
-command1 && command2
-```
+    ```bash
+    command1 && command2
+    ```
 
 - `command2` after `commmand1` failed
-
-```bash
-command1 || command2
-```
+    ```bash
+    command1 || command2
+    ```
 
 **command using the other stdout** `$()`
 
@@ -431,14 +427,24 @@ ls $(dirname $(which cat))
 
 ---
 ### Symbolic links
-`ln -s`: make symbolic links<br>
+`ln -s`: make symbolic links  
 Symbolic links is the file that refers to another file.
 ```bash
-ln -s original-dir/file where/to/put/SymboliLink
+ln -s original_file link_file
+ls -l
+# lrwxr-xr-x  1 user  group  12 Aug  4 15:18 link_file -> original_file
 ```
+
 ```{note}
 Aliases are similar to symlinks, but they are valid after you move the original files unlike symlinks. Although it seems aliases are more useful, aliases are not compatible with unix system. You cannot use like `cd alias` but `cd syslink`.
 ```
+
+```{note}
+`ln` options:\
+-s, --symbolic    make symbolic links instead of hard links\
+-f, --force       make links even if the file exists
+```
+
 
 
 ## Reference

@@ -19,11 +19,11 @@ For application level,
 - Python: pip, conda
 - R: conda, CRAN
 
-In this page, we (install homebrew and) make a venv to manage python packages.
+In this page, we install homebrew and make a venv to manage python packages.
 
 ## [Homebrew](https://docs.brew.sh/Installation)
-Homebrew is the Missing Package Manager for macOS (or Linux).
-To install it, input next code in the Terminal (you should check the newest code);
+Homebrew is　a missing package manager for macOS (or Linux).
+To install it, input next code in the Terminal (you should check the newest code [here](https://brew.sh/));
 ```bash
 /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
 ```
@@ -49,7 +49,7 @@ Let's check whether you succeeded!
 ```zsh
 brew --version
 ```
-if you get: `Your system is ready to brew.`, you succeeded.
+if you get: `Homebrew x.x.x`, you succeeded.
 
 (venv)=
 ## [Venv](https://docs.python.org/3/library/venv.html)
@@ -69,15 +69,15 @@ or
 . test/bin/activate
 ```
 
-Now your venv is activated. You can see the name of venv on the left side of your user name in the terminal.
+Now your venv is activated. You can see the name of venv on the left side of your user name in the terminal like `(test) Username@MacBook-Pro ~ %`.
 Let's check the version of python:
 ```zsh
 python -V
 ```
 and you get `Python 3.x.x`.
 
-Now you made a new venv and activated it, but actually there is no package in it.
-pip freeze shows the packages in your venv and there is no output for now.
+Now you made a new venv and activated it, but actually there is almost nothing in the venv.
+`pip list --format=freeze` shows the packages in your venv and there is no output for now.
 Before installing something, you might have to upgrade `pip`, which is a python package manager(change Username below):
 ```zsh
 /Users/Username/test/bin/python3 -m pip install --upgrade pip
@@ -88,7 +88,7 @@ pip install numpy
 ```
 and let's check:
 ```zsh
-pip list
+pip list --format=freeze
 ```
 and you get `numpy==x.xx.x`.
 
@@ -119,18 +119,13 @@ jupyter-lab
 ```
 Your default browser will show up and open jupyter-lab.
 
-To deactivate juypter-lab (not venv) in the Terminal; Control + c and you will be asked whether to quit, then enter y[yes].
+To deactivate juypter-lab (not venv) in the Terminal; `Control + C` and you will be asked whether to quit, then enter y[yes].
 For more details, see [Jupyter Book](../jb/jb.md) page.
-
-You can also use jupyter notebook.
-```zsh
-jupyter notebook
-```
 
 ```{note}
 - Renaming venv
 - Renaming the parent directories of venv
-- Changing the location of venv<br>
+- Changing the location of venv  
 are not recommended.
 ```
 
