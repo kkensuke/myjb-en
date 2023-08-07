@@ -33,7 +33,7 @@ Set `zsh/` as `ZDOTDIR` so that `.zsh*` in it is read.
 
 ```bash
 # In .zshenv
-# Set zsh/ to ZDOTDIR
+# Set zsh/ as ZDOTDIR
 export ...
 export ZDOTDIR="$HOME/path/to/zsh"
 ```

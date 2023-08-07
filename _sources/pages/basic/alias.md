@@ -95,7 +95,7 @@ alias rf='rm -rf'
 
 ### search
 ```bash
-fb() { find . -size +$2M -type f -name $1 -exec ls -lhS "{}" \; | awk '{print $5,$9}' }
+fb() { find . -size +$2M -type f -name $1 -exec ls -lhS "{}" +}
 fd() { find . -name "*.$1" -type f -delete }
 rn() { for filename in *.$1; do mv -f "$filename" $(echo "$filename" | sed -e "s/$2//g"); done }
 dif(){ diff --color -u $1 $2 }
@@ -103,7 +103,7 @@ alias imgopt='open -a ImageOptim .'
 alias grep='grep --color'
 ```
 ```{note}
-You can make an alias with arguments, which is called a function. Functions are defined as `function_name() { commands }`. For example, `fb` takes two arguments, `$1` and `$2`. `$1` is the first argument and `$2` is the second argument. Use like `fb pdf 10` to find files with the name `pdf` larger than 10 MB.
+You can make an alias with arguments, which is called a function. Functions are defined as `function_name() { commands }`. For example, `fb` takes two arguments, `$1` and `$2`. `$1` is the first argument and `$2` is the second argument. Use like `fb "*.pdf" 10` to find files with the name `pdf` larger than 10 MB.
 
 In addition to `$1` and `$2`, there are other special variables: `$0` is the function name. `$@` is all arguments. `$#` is the number of arguments. `$?` is the exit status of the last command. `$$` is the process ID of the current shell. `$!` is the process ID of the last command run in the background.
 ```
@@ -112,13 +112,12 @@ In addition to `$1` and `$2`, there are other special variables: `$0` is the fun
 	- `-size +$2M` option finds files larger than `$2` MB.
 	- `-type f` option finds only files (`-type d` finds only directories).
 	- `-name $1` option finds files with the name `$1`.
-	- `-exec ls -lhS "{}" \;` option executes `ls -lhS` command for each file found.
-	- `awk '{print $5,$9}'` option prints the size and name of the file. `$5` means the 5th column and `$9` means the 9th column of the output of `ls -lhS` command.
+	- `-exec ls -lhS "{}" +` option executes `ls -lhS` command for each file found.
 - `find . -name "*.$1" -type f -delete` finds files with the extension `$1` and deletes them.
 - `rn` renames files with the extension `$1` by removing `$2` from the file name. For example, `rn txt asdf` renames `aaasdfff.txt` to `aaff.txt`.
 
 ```{note}
-`-exec <command> {} \;` is a common syntax to execute `<command>` for each file found. `{}` is a placeholder for the file name. `\;` is a delimiter to tell the end of the command.
+`-exec <command> {} +` is a common syntax to execute `<command>` for each file found. `{}` is a placeholder for the file name. `+` is a delimiter to tell the end of the command.
 ```
 
 ### open apps
@@ -152,7 +151,7 @@ alias show="defaults write com.apple.finder AppleShowAllFiles -bool true && kill
 alias hide="defaults write com.apple.finder AppleShowAllFiles -bool false && killall Finder"
 ```
 ```{note}
-You can use `Command + Shift + .` to show/hide hidden files in Finder.
+You can also use `Command + Shift + .` to show/hide hidden files in Finder.
 ```
 
 ### Hide/show all desktop icons
@@ -195,12 +194,12 @@ alias gpom='git push origin main'
 alias gs='git status'
 ```
 
-### Define an alias of several commands with arguments (function)
+### Function
 ```bash
 gacpm() { git add -A && git commit -m "$1" && git push origin main }
 ```
 
-For example, you can define an alias to make a new repository with just one command.
+For example, you can define a function to make a new repository with just one command.
 ```bash
 # $1 = private or public
 ginit() {

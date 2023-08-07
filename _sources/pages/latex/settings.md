@@ -1,6 +1,6 @@
 # Latex settings in VScode
 
-## Install TexLive
+## Install TexLive on macOS
 
 Download `install-tl-unx.tar.gz`
 ```zsh
@@ -105,7 +105,7 @@ $ sudo /usr/local/texlive/????/bin/*/tlmgr path add
 
 
 ## Let's compile your $\LaTeX$ file!
-Let's make a test latex directory. Please download `article-template` from [here](https://github.com/kkensuke/latex-template). Then, open the directory in VScode. You can edit `main.tex` and compile it by `cmd + S` (Mac). Finally, you will get the modified `main.pdf` in the same directory.
+Let's make a test latex directory. Please download `article-template` from [here](https://github.com/kkensuke/latex-template). Then, open the directory in VScode. You can edit `intro.tex` and compile it by `cmd + S` (Mac). Finally, you will get the modified `main.pdf` in the same directory.
 
 The directory structure is as follows:
 ```

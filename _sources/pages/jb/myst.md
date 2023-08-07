@@ -134,8 +134,7 @@ see [target](target)
 >so content can start here.
 >```
 >````
->```{note}
->Notes require **no** arguments,
+>```{note} Notes require **no** arguments,
 >so content can start here.
 >```
 
@@ -275,15 +274,15 @@ The following options are supported:
 >>equation ref: {eq}`mylabel`
 
 
-
+<!-- 
 ## Executable code
 
-<!--
 ```{code-cell} ipython3
 note = "Python syntax highlighting"
 print(note)
 ```
 -->
+
 
 ## Reference documents
 
@@ -641,7 +640,6 @@ global value: {{key0}}
 ### Formatting substitutions
 The original key1: {{ key1 }}
 {{ key1 | replace("a substitution", "the best substitution")}}
-
 ```
 substitutions:
   repo_url: [my repo url](https://github.com/executablebooks/jupyter-book)
@@ -654,6 +652,8 @@ substitutions:
 >```
 >>This is a footnote[^mylabel].
 >>[^mylabel]: My footnote text.
+
+
 ## Custom \<div> blocks
 >````
 >```{div} my-class
@@ -663,10 +663,11 @@ substitutions:
 >>```{div} my-class
 >>**Some content.**
 >>```
-## Check for missing references
 
+
+## Check for missing references
 You can check for missing references when building a Jupyter Book. To do so, use the following options:
-```
+```shell
 jupyter-book build -W -n --keep-going docs/
 ```
 

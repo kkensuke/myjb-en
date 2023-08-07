@@ -489,11 +489,11 @@ document.write(`
 <li><p>Python: pip, conda</p></li>
 <li><p>R: conda, CRAN</p></li>
 </ul>
-<p>In this page, we (install homebrew and) make a venv to manage python packages.</p>
+<p>In this page, we install homebrew and make a venv to manage python packages.</p>
 <section id="homebrew">
 <h2><span class="section-number">1.9.1. </span><a class="reference external" href="https://docs.brew.sh/Installation">Homebrew</a><a class="headerlink" href="#homebrew" title="Permalink to this headline">#</a></h2>
-<p>Homebrew is the Missing Package Manager for macOS (or Linux).
-To install it, input next code in the Terminal (you should check the newest code);</p>
+<p>Homebrew is　a missing package manager for macOS (or Linux).
+To install it, input next code in the Terminal (you should check the newest code <a class="reference external" href="https://brew.sh/">here</a>);</p>
 <div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>/bin/bash -c <span class="s2">&quot;</span><span class="k">$(</span>curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh<span class="k">)</span><span class="s2">&quot;</span>
 </pre></div>
 </div>
@@ -516,7 +516,7 @@ To install it, input next code in the Terminal (you should check the newest code
 <div class="highlight-zsh notranslate"><div class="highlight"><pre><span></span>brew --version
 </pre></div>
 </div>
-<p>if you get: <code class="docutils literal notranslate"><span class="pre">Your</span> <span class="pre">system</span> <span class="pre">is</span> <span class="pre">ready</span> <span class="pre">to</span> <span class="pre">brew.</span></code>, you succeeded.</p>
+<p>if you get: <code class="docutils literal notranslate"><span class="pre">Homebrew</span> <span class="pre">x.x.x</span></code>, you succeeded.</p>
 </section>
 <section id="venv">
 <span id="id1"></span><h2><span class="section-number">1.9.2. </span><a class="reference external" href="https://docs.python.org/3/library/venv.html">Venv</a><a class="headerlink" href="#venv" title="Permalink to this headline">#</a></h2>
@@ -534,14 +534,14 @@ Making and deleting a venv are really easy. Let’s make a test venv in your hom
 <div class="highlight-zsh notranslate"><div class="highlight"><pre><span></span>. test/bin/activate
 </pre></div>
 </div>
-<p>Now your venv is activated. You can see the name of venv on the left side of your user name in the terminal.
+<p>Now your venv is activated. You can see the name of venv on the left side of your user name in the terminal like <code class="docutils literal notranslate"><span class="pre">(test)</span> <span class="pre">Username&#64;MacBook-Pro</span> <span class="pre">~</span> <span class="pre">%</span></code>.
 Let’s check the version of python:</p>
 <div class="highlight-zsh notranslate"><div class="highlight"><pre><span></span>python -V
 </pre></div>
 </div>
 <p>and you get <code class="docutils literal notranslate"><span class="pre">Python</span> <span class="pre">3.x.x</span></code>.</p>
-<p>Now you made a new venv and activated it, but actually there is no package in it.
-pip freeze shows the packages in your venv and there is no output for now.
+<p>Now you made a new venv and activated it, but actually there is almost nothing in the venv.
+<code class="docutils literal notranslate"><span class="pre">pip</span> <span class="pre">list</span> <span class="pre">--format=freeze</span></code> shows the packages in your venv and there is no output for now.
 Before installing something, you might have to upgrade <code class="docutils literal notranslate"><span class="pre">pip</span></code>, which is a python package manager(change Username below):</p>
 <div class="highlight-zsh notranslate"><div class="highlight"><pre><span></span>/Users/Username/test/bin/python3 -m pip install --upgrade pip
 </pre></div>
@@ -551,7 +551,7 @@ Before installing something, you might have to upgrade <code class="docutils lit
 </pre></div>
 </div>
 <p>and let’s check:</p>
-<div class="highlight-zsh notranslate"><div class="highlight"><pre><span></span>pip list
+<div class="highlight-zsh notranslate"><div class="highlight"><pre><span></span>pip list --format<span class="o">=</span>freeze
 </pre></div>
 </div>
 <p>and you get <code class="docutils literal notranslate"><span class="pre">numpy==x.xx.x</span></code>.</p>
@@ -580,18 +580,14 @@ To deactivate the venv, just input: <code class="docutils literal notranslate"><
 </pre></div>
 </div>
 <p>Your default browser will show up and open jupyter-lab.</p>
-<p>To deactivate juypter-lab (not venv) in the Terminal; Control + c and you will be asked whether to quit, then enter y[yes].
+<p>To deactivate juypter-lab (not venv) in the Terminal; <code class="docutils literal notranslate"><span class="pre">Control</span> <span class="pre">+</span> <span class="pre">C</span></code> and you will be asked whether to quit, then enter y[yes].
 For more details, see <a class="reference internal" href="../jb/jb.html"><span class="doc std std-doc">Jupyter Book</span></a> page.</p>
-<p>You can also use jupyter notebook.</p>
-<div class="highlight-zsh notranslate"><div class="highlight"><pre><span></span>jupyter notebook
-</pre></div>
-</div>
 <div class="admonition note">
 <p class="admonition-title">Note</p>
 <ul class="simple">
 <li><p>Renaming venv</p></li>
 <li><p>Renaming the parent directories of venv</p></li>
-<li><p>Changing the location of venv<br>
+<li><p>Changing the location of venv<br />
 are not recommended.</p></li>
 </ul>
 </div>

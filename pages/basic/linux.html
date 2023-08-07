@@ -607,26 +607,27 @@ rmdir -p dir/subdir/ssubdir
 </pre></div>
 </div>
 <p><code class="docutils literal notranslate"><span class="pre">echo</span></code>:</p>
-<ul class="simple">
-<li><p>print strings</p></li>
-</ul>
+<ul>
+<li><p>print strings</p>
 <div class="highlight-bash notranslate"><div class="highlight"><pre><span></span><span class="nb">echo</span> <span class="nv">$PATH</span>
 </pre></div>
 </div>
-<ul class="simple">
+</li>
 <li><p>make files with contents</p>
 <ul>
-<li><p>Make new file or overwrite a existing file : <code class="docutils literal notranslate"><span class="pre">&gt;</span></code></p></li>
-<li><p>Append : <code class="docutils literal notranslate"><span class="pre">&gt;&gt;</span></code></p></li>
-</ul>
-</li>
-</ul>
+<li><p>Make new file or overwrite a existing file : <code class="docutils literal notranslate"><span class="pre">&gt;</span></code></p>
 <div class="highlight-bash notranslate"><div class="highlight"><pre><span></span><span class="nb">echo</span> <span class="o">[</span>Strings<span class="o">]</span> &gt; <span class="o">[</span>filename<span class="o">]</span>
 </pre></div>
 </div>
+</li>
+<li><p>Append : <code class="docutils literal notranslate"><span class="pre">&gt;&gt;</span></code></p>
 <div class="highlight-bash notranslate"><div class="highlight"><pre><span></span><span class="nb">echo</span> <span class="o">[</span>Strings<span class="o">]</span> &gt;&gt; <span class="o">[</span>filename<span class="o">]</span>
 </pre></div>
 </div>
+</li>
+</ul>
+</li>
+</ul>
 <p><code class="docutils literal notranslate"><span class="pre">cat</span></code>: print file contents</p>
 <div class="highlight-bash notranslate"><div class="highlight"><pre><span></span><span class="nb">echo</span> hello &gt; file1
 cat file1
@@ -674,8 +675,8 @@ mv file5 dir3
 <div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>mv dir1 dir4
 </pre></div>
 </div>
-<p><code class="docutils literal notranslate"><span class="pre">tree</span></code>: print contents of the current directory in a tree-like format. You can use <code class="docutils literal notranslate"><span class="pre">tree</span> <span class="pre">-d</span></code> to print directory contents. You can use <code class="docutils literal notranslate"><span class="pre">tree</span> <span class="pre">-L</span></code> to print directory contents up to a certain level.
-You have to install <code class="docutils literal notranslate"><span class="pre">tree</span></code> command in bash first.</p>
+<p><code class="docutils literal notranslate"><span class="pre">tree</span></code>: print contents of the current directory in a tree-like format. You can use <code class="docutils literal notranslate"><span class="pre">tree</span> <span class="pre">-d</span></code> to print directory contents. You can use <code class="docutils literal notranslate"><span class="pre">tree</span> <span class="pre">-L</span></code> to print directory contents up to a certain level.</p>
+<p>You have to install <code class="docutils literal notranslate"><span class="pre">tree</span></code> command in bash first.</p>
 <div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>brew install tree
 </pre></div>
 </div>
@@ -810,7 +811,7 @@ find . -size +30k -size -1M -name <span class="s1">&#39;*.py&#39;</span>
 find target condtion1 -and condition2
 
 <span class="c1"># search the current directory recursively for .txt files and remove them all.</span>
-find . -name <span class="s1">&#39;*.txt&#39;</span> -exec rm <span class="o">{}</span> <span class="se">\;</span>
+find . -name <span class="s1">&#39;*.txt&#39;</span> -exec rm <span class="o">{}</span> +
 </pre></div>
 </div>
 <p><code class="docutils literal notranslate"><span class="pre">grep</span></code>: search files for patterns</p>
@@ -927,36 +928,34 @@ cat test.txt
 <span class="c1"># fdsa</span>
 </pre></div>
 </div>
-<p>To remove stderr, add <code class="docutils literal notranslate"><span class="pre">2&gt;/dev/null</span></code> .</p>
+<p>To remove stderr, add <code class="docutils literal notranslate"><span class="pre">2&gt;/dev/null</span></code> to the end of the command.</p>
 </section>
 <hr class="docutils" />
 <section id="combine-commands">
 <h3>Combine commands<a class="headerlink" href="#combine-commands" title="Permalink to this headline">#</a></h3>
-<ul class="simple">
-<li><p><code class="docutils literal notranslate"><span class="pre">command2</span></code> after <code class="docutils literal notranslate"><span class="pre">commmand1</span></code></p></li>
-</ul>
-<p><code class="docutils literal notranslate"><span class="pre">command2</span></code> is executed even when <code class="docutils literal notranslate"><span class="pre">command1</span></code> puts stderr</p>
+<ul>
+<li><p><code class="docutils literal notranslate"><span class="pre">command2</span></code> after <code class="docutils literal notranslate"><span class="pre">commmand1</span></code><br />
+<code class="docutils literal notranslate"><span class="pre">command2</span></code> is executed even when <code class="docutils literal notranslate"><span class="pre">command1</span></code> puts stderr</p>
 <div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>command1 <span class="p">;</span> command2
 </pre></div>
 </div>
-<ul class="simple">
-<li><p><code class="docutils literal notranslate"><span class="pre">command2</span></code> and <code class="docutils literal notranslate"><span class="pre">commmand1</span></code> at the same time</p></li>
-</ul>
+</li>
+<li><p><code class="docutils literal notranslate"><span class="pre">command2</span></code> and <code class="docutils literal notranslate"><span class="pre">commmand1</span></code> at the same time</p>
 <div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>command1 <span class="p">&amp;</span> command2
 </pre></div>
 </div>
-<ul class="simple">
-<li><p><code class="docutils literal notranslate"><span class="pre">command2</span></code> after <code class="docutils literal notranslate"><span class="pre">commmand1</span></code> succeeded</p></li>
-</ul>
+</li>
+<li><p><code class="docutils literal notranslate"><span class="pre">command2</span></code> after <code class="docutils literal notranslate"><span class="pre">commmand1</span></code> succeeded</p>
 <div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>command1 <span class="o">&amp;&amp;</span> command2
 </pre></div>
 </div>
-<ul class="simple">
-<li><p><code class="docutils literal notranslate"><span class="pre">command2</span></code> after <code class="docutils literal notranslate"><span class="pre">commmand1</span></code> failed</p></li>
-</ul>
+</li>
+<li><p><code class="docutils literal notranslate"><span class="pre">command2</span></code> after <code class="docutils literal notranslate"><span class="pre">commmand1</span></code> failed</p>
 <div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>command1 <span class="o">||</span> command2
 </pre></div>
 </div>
+</li>
+</ul>
 <p><strong>command using the other stdout</strong> <code class="docutils literal notranslate"><span class="pre">$()</span></code></p>
 <div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>date +%Y%D
 touch file_<span class="sb">`</span>date +%Y%D<span class="sb">`</span>
@@ -971,14 +970,22 @@ ls <span class="k">$(</span>dirname <span class="k">$(</span>which cat<span clas
 <hr class="docutils" />
 <section id="symbolic-links">
 <h3>Symbolic links<a class="headerlink" href="#symbolic-links" title="Permalink to this headline">#</a></h3>
-<p><code class="docutils literal notranslate"><span class="pre">ln</span> <span class="pre">-s</span></code>: make symbolic links<br>
+<p><code class="docutils literal notranslate"><span class="pre">ln</span> <span class="pre">-s</span></code>: make symbolic links<br />
 Symbolic links is the file that refers to another file.</p>
-<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>ln -s original-dir/file where/to/put/SymboliLink
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>ln -s original_file link_file
+ls -l
+<span class="c1"># lrwxr-xr-x  1 user  group  12 Aug  4 15:18 link_file -&gt; original_file</span>
 </pre></div>
 </div>
 <div class="admonition note">
 <p class="admonition-title">Note</p>
 <p>Aliases are similar to symlinks, but they are valid after you move the original files unlike symlinks. Although it seems aliases are more useful, aliases are not compatible with unix system. You cannot use like <code class="docutils literal notranslate"><span class="pre">cd</span> <span class="pre">alias</span></code> but <code class="docutils literal notranslate"><span class="pre">cd</span> <span class="pre">syslink</span></code>.</p>
+</div>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p><code class="docutils literal notranslate"><span class="pre">ln</span></code> options:<br />
+-s, –symbolic    make symbolic links instead of hard links<br />
+-f, –force       make links even if the file exists</p>
 </div>
 </section>
 </section>

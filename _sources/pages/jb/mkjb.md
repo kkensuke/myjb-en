@@ -26,7 +26,7 @@ $ which python
 ```
 You can see that you are using python in the venv.
 
-Sometimes, you need to update pip. In that case, you can use the command below. (Replace `<Username>` with your username.)
+Sometimes, you need to update pip. In that case, you can use the command below. (Replace `<Username>` with your username.)\
 Update pip:
 ```zsh
 $ /Users/<Username>/jupyter-book/test-book/venv/bin/python3 -m pip install --upgrade pip
@@ -65,7 +65,7 @@ $ pip install ghp-import
 $ ghp-import -n -p -f _build/html
 ```
 
-You can see the published website at `https://\<Username\>.github.io/test-book/intro.html` .
+You can see the published website at `https://\<Username\>.github.io/test-book/intro.html`. It may take a few minutes to be published.
 
 
 ## Update
