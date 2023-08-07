@@ -693,7 +693,7 @@ pip install sphinx-proof
 
 It needs to be enabled through the _config.yml after installation.
 
-```yml
+```yaml
 sphinx:
   extra_extensions:
     - sphinx_proof
@@ -746,7 +746,7 @@ It will print the status of each link in your book so that you may resolve any i
 Declaring the primary language used in your book assists screen reader and browser translation tools.
 
 Language can be configured by providing the appropriate language code to the language option, under sphinx configuration in your _config.yml file:
-```yml
+```yaml
 sphinx:
   config:
     language: en
@@ -756,7 +756,7 @@ sphinx:
 ## Defining TeX macros
 
 You can add LaTeX macros for the whole book by defining them under the Macros option of the TeX block. For example, the following two macros have been pre-defined in the Sphinx configuration
-```yml
+```yaml
 sphinx:
   config                    :             # key-value pairs to directly over-ride the Sphinx configuration
     mathjax_path            : https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js
