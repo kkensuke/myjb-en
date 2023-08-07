@@ -63,9 +63,6 @@
 ### [Print Edit WE](https://addons.mozilla.org/en-US/firefox/addon/print-edit-we/)
 `Print Edit WE` allows editing of the web page content while in Print Preview mode.
 
-### [Side View](https://addons.mozilla.org/en-US/firefox/addon/side-view/)
-`Side View` lets you view two different websites side-by-side in the same tab. However, it disables the background streaming of videos and music.
-
 ### [Simple Tab Groups](https://addons.mozilla.org/en-US/firefox/addon/simple-tab-groups/)
 `Simple Tab Groups` lets you organize your tabs into groups. You can quickly switch between groups and you won't get lost in dozens of open tabs anymore. I recommend you to set the shortcuts
 

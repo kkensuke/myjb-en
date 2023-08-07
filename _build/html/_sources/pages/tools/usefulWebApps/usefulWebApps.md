@@ -1,7 +1,7 @@
 # Useful Web Apps
 
 ## [10 minutes mail](https://10minemail.com/en/)
-You can get a temporary email address for 10 minutes. You can use it to sign up for a service not worth using your real email address. There are many similar services.
+You can get a temporary email address for 10 minutes. You can use it to sign up for a service not worth using your real email address. You can extend the time. There are many similar services.
 ```{image} img/10-minute-mail.png
 :width: 700px
 :align: center

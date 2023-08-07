@@ -67,13 +67,13 @@ git remote add origin https://github.com/<Username>/<repository>.git
 git push -u origin main
 ```
 
-`git init` makes repository, or `.git`, in the current directory.
-
+```{note}
+`git init` makes repository, or `.git`, in the current directory.\
 `git init project_name` makes a directory named project_name and `.git` in it.
-
+```
 
 ### push an existing repository from the command line
-If you have already made (or initialized) a local repository, you just need to use the following commands to link to the remote repository. If not, see the next section: Clone.
+If you have already made (or initialized) a local repository, you just need to use the following commands to link to the remote repository.
 ```bash
 git remote add origin https://github.com/<Username>/<repository>.git
 git branch -M main
@@ -89,16 +89,6 @@ In an arbitrary directory,
 ```bash
 $ git clone [branch, or you can omit here for main] https://github.com/<Username>/<repository>.git
 $ cd <repository>
-```
-
-After you add or modify files:
-```bash
-$ git add <file>
-($ git add .  # add current directory)
-($ git status)
-$ git commit -m "<comment>"
-$ git push origin main
-($ git status)
 ```
 
 
@@ -127,7 +117,7 @@ $ git branch
 
 You can see all branches including the remote branches by
 ```bash
-$ git checkout -a
+$ git branch -a
 ```
 
 1, Making new branch at local (branch not in remote)
@@ -218,8 +208,11 @@ $ git commit -m "delete"; git push origin main
 
 
 ### Invite people to my Private repository
-
-
+- Go to the repository on GitHub
+- Click `Settings`
+- Click `Collaborators`
+- Click `Add people`
+- Type the username of the person you want to invite
 
 
 (github-cli)=

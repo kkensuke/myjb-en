@@ -20,7 +20,7 @@
 
 - Variable names should be lowercase, with underscores for readability.
 - Variable names should be short but descriptive. Single-character variable names and meaningless variable names should be avoided. Examples: `player_name`, `score`, etc.
-- Boolean variable names are typically in the form of `is + adjective`, `has + noun`, `can + verb`, `with + noun`, etc. However, the first word can be omitted if it is obvious from the context. Example: `is_active`, `has_children`, `can_swim`, `with_fins`, etc.
+- Boolean variable names are typically in the form of `is + adjective`, `has + noun`, `can + verb`, `with + noun`, etc. Example: `is_active`, `has_children`, `can_swim`, `with_fins`, etc. However, the first word can be omitted if it is obvious from the context.
 
 ### Function
 

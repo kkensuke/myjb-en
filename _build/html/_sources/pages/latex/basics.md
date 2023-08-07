@@ -210,7 +210,7 @@ You can wirte `\sum\limits_{i=1}^n x` instead of `\sum_{i=1}^n x` to make the li
 | `a \sim b` | $a \sim b$ |
 | `a \propto b` | $a \propto b$ |
 | `a \subset b` | $a \subset b$ |
-| `a \supset b` | $a \supset b$ 
+| `a \supset b` | $a \supset b$ |
 | `a \subseteq b` | $a \subseteq b$ |
 | `a \supseteq b` | $a \supseteq b$ |
 | `a \in b` | $a \in b$ |
@@ -259,7 +259,7 @@ You can wirte `\sum\limits_{i=1}^n x` instead of `\sum_{i=1}^n x` to make the li
 | `a \hspace{1in} b` | $a \hspace{1in} b$ |
 
 
-### Delimiters
+### Brackets and Parentheses
 | Command | Symbol |
 | ----- | ----- |
 | `$(A)$` | $(A)$ |
@@ -381,7 +381,7 @@ You can use `\qty` command to write adaptive parentheses instead of `\left` and 
 
 ### `dv`
 
-You can use `dv` command to write derivatives.
+You can use `dv` command to write derivatives easily.
 
 >```latex
 >\begin{align}
@@ -395,7 +395,7 @@ You can use `dv` command to write derivatives.
 
 ### `pdv`
 
-You can use `pdv` command to write partial derivatives.
+You can use `pdv` command to write partial derivatives easily.
 
 >```latex
 >\begin{align}
@@ -409,7 +409,7 @@ You can use `pdv` command to write partial derivatives.
 
 ### `\eval`
 
-You can use `\eval` command to write evaluation.
+You can use `\eval` command to write evaluation easily.
 
 >```latex
 >\begin{align}
@@ -423,7 +423,7 @@ You can use `\eval` command to write evaluation.
 
 ### `\order`
 
-You can use `\order` command to write order.
+You can use `\order` command to write order easily.
 
 >```latex
 >\begin{align}
@@ -437,7 +437,7 @@ You can use `\order` command to write order.
 
 ### `\abs`
 
-You can use `\abs` command to write absolute value.
+You can use `\abs` command to write absolute value easily.
 
 >```latex
 >\begin{align}
@@ -451,7 +451,7 @@ You can use `\abs` command to write absolute value.
 
 ### `\norm`
 
-You can use `\norm` command to write norm.
+You can use `\norm` command to write norm easily.
 
 >```latex
 >\begin{align}
@@ -465,7 +465,7 @@ You can use `\norm` command to write norm.
 
 ### `\commutator` [or `\comm`]
 
-You can use `\commutator` command to write commutator.
+You can use `\commutator` command to write commutator easily.
 
 >```latex
 >\begin{align}
@@ -479,7 +479,7 @@ You can use `\commutator` command to write commutator.
 
 ### `\anticommutator` [or `\acomm`]
 
-You can use `\anticommutator` command to write anticommutator.
+You can use `\anticommutator` command to write anticommutator easily.
 
 >```latex
 >\begin{align}

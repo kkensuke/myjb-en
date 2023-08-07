@@ -20,8 +20,6 @@
 ### VPN
 Virtual private network (VPN) can provide several benefits, such as hiding your IP address, encrypting your internet traffic, and allowing you to access content that may be restricted in your region.
 
-Here, I use [Hoxx VPN Proxy](https://hoxx.com/) desktop app. It is free and easy to use. (I don’t know why, but Hoxx VPN Proxy extension can't pass [Cloudflare Browser Check](https://www.cloudflare.com/ssl/encrypted-sni/#results).)
-
 
 ### Enable DoH (DNS-over-HTTPS) with Cloudflare
 1. Open Firefox and go to `about:preferences#general`.
