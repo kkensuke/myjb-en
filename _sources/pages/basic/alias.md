@@ -113,7 +113,7 @@ In addition to `$1` and `$2`, there are other special variables: `$0` is the fun
 	- `-type f` option finds only files (`-type d` finds only directories).
 	- `-name $1` option finds files with the name `$1`.
 	- `-exec ls -lhS "{}" +` option executes `ls -lhS` command for each file found.
-- `find . -name "*.$1" -type f -delete` finds files with the extension `$1` and deletes them.
+- `fd`: `find . -name "*.$1" -type f -delete` finds files with the extension `$1` and deletes them.
 - `rn` renames files with the extension `$1` by removing `$2` from the file name. For example, `rn txt asdf` renames `aaasdfff.txt` to `aaff.txt`.
 
 ```{note}
@@ -125,10 +125,17 @@ In addition to `$1` and `$2`, there are other special variables: `$0` is the fun
 alias hr='open .'
 alias c='open /Applications/CotEditor.app'
 alias vs='code'
-alias firefox='open /Applications/Firefox.app'
+alias fire='open /Applications/Firefox.app'
 alias chrome='open /Applications/Google\ Chrome.app'
 alias safari='open /Applications/Safari.app'
 ```
+
+- `hr` opens the current directory.
+- `c` opens CotEditor.
+- `vs` opens Visual Studio Code.
+- `fire` opens Firefox.
+- `chrome` opens Google Chrome.
+- `safari` opens Safari.
 
 ### others
 ```bash
@@ -142,6 +149,12 @@ alias rl='exec ${SHELL} -l' #reload
 zipen(){
 	zip -er enc.zip "$@"
 }
+```
+
+- `zipen` zips files and encrypts them with a password as `enc.zip`. Use like `zipen file1 file2 dir1`.
+
+```{note}
+`"$@"` is a special variable that expands to all arguments. For example, `"$@"` is expanded to `file1 file2 dir1` in the above example.
 ```
 
 ## Mac OS settings
@@ -198,6 +211,9 @@ alias gs='git status'
 ```bash
 gacpm() { git add -A && git commit -m "$1" && git push origin main }
 ```
+
+- `gacpm` adds all files, commits with the message `$1`, and pushes to the main branch of the origin remote repository. Use like `gacpm "update README.md"`.
+
 
 For example, you can define a function to make a new repository with just one command.
 ```bash
