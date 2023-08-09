@@ -132,7 +132,7 @@ In `physics` package, `\div` is replaced by $\nabla\cdot$
 
 ### Miscellaneous
 | Command        | Symbol        |
-| :------------- | :-----------: |
+| :------------: | :------------:|
 | `\forall`      | $\forall$     |
 | `\exists`      | $\exists$     |
 | `\partial`     | $\partial$    |
