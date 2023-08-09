@@ -50,7 +50,7 @@ You can use shorter commands with `physics` package.
 
 ### Greek letters
 | Command  | Symbol  |
-| -------- | ------- |
+| :-----:  | :-----: |
 | `\alpha` | $\alpha$ |
 | `\beta`  | $\beta$ |
 | `\gamma` | $\gamma$ |
@@ -89,7 +89,7 @@ You can use shorter commands with `physics` package.
 
 ### Operators
 | Command | Symbol |
-| ------- | ------ |
+| :-----: | :-----: |
 | `+`     | $+$    |
 | `-`     | $-$    |
 | `=`     | $=$    |
@@ -106,7 +106,7 @@ In `physics` package, `\div` is replaced by $\nabla\cdot$
 
 ### Big Operators
 | Command | Symbol          |
-| ------- | --------------- |
+| :-----: | :-------------: |
 | `\lim x` | $\lim x$        |
 | `\lim_{x \to \infty} x` | $\lim_{x \to \infty} x$ |
 | `\lim\limits_{x \to \infty} x` | $\lim\limits_{x \to \infty} x$ |
@@ -132,7 +132,7 @@ In `physics` package, `\div` is replaced by $\nabla\cdot$
 
 ### Miscellaneous
 | Command        | Symbol        |
-| -------------- | ------------- |
+| :------------- | :-----------: |
 | `\forall`      | $\forall$     |
 | `\exists`      | $\exists$     |
 | `\partial`     | $\partial$    |
@@ -168,7 +168,7 @@ $$
 
 ### Functions
 | Command | Symbol |
-| ----- | ----- |
+| :-----: | :-----: |
 | `\sqrt{x}` | $\sqrt{x}$ |
 | `\sqrt[n]{x}` | $\sqrt[n]{x}$ |
 | `\sin x` | $\sin x$ |
@@ -198,7 +198,7 @@ You can wirte `\sum\limits_{i=1}^n x` instead of `\sum_{i=1}^n x` to make the li
 
 ### Relations
 | Command | Symbol |
-| ----- | ----- |
+| :-----: | :-----: |
 | `a = b` | $a = b$ |
 | `a \neq b` | $a \neq b$ |
 | `a \approx b` | $a \approx b$ |
@@ -244,7 +244,7 @@ You can wirte `\sum\limits_{i=1}^n x` instead of `\sum_{i=1}^n x` to make the li
 
 ### Spaces
 | Command | Symbol |
-| ----- | ----- |
+| :-----: | :-----: |
 | `a \! b` | $a \! b$ |
 | `a \, b` | $a \, b$ |
 | `a \: b` | $a \: b$ |
@@ -261,7 +261,7 @@ You can wirte `\sum\limits_{i=1}^n x` instead of `\sum_{i=1}^n x` to make the li
 
 ### Brackets and Parentheses
 | Command | Symbol |
-| ----- | ----- |
+| :-----: | :-----: |
 | `$(A)$` | $(A)$ |
 | `$[A]$` | $[A]$ |
 | `$\{A\}$` | $\{A\}$ |
@@ -274,7 +274,7 @@ You can wirte `\sum\limits_{i=1}^n x` instead of `\sum_{i=1}^n x` to make the li
 
 ### Accents
 | Command | Symbol |
-| ----- | ----- |
+| :-----: | :-----: |
 | `\hat{a}` | $\hat{a}$ |
 | `\check{a}` | $\check{a}$ |
 | `\tilde{a}` | $\tilde{a}$ |
@@ -289,7 +289,7 @@ You can wirte `\sum\limits_{i=1}^n x` instead of `\sum_{i=1}^n x` to make the li
 
 ### Styles
 | Command | Example |
-| ----- | ----- |
+| :-----: | :-----: |
 | `\mathit{A}` | $\mathit{A\,B\,C\,D\,E\,F\,G\,H\,I\,J\,K\,L\,M\,N\,O\,P\,Q\,R\,S\,T\,U\,V\,W\,X\,Y\,Z}$ |
 | `\mathrm{A}` | $\mathrm{A\,B\,C\,D\,E\,F\,G\,H\,I\,J\,K\,L\,M\,N\,O\,P\,Q\,R\,S\,T\,U\,V\,W\,X\,Y\,Z}$ |
 | `\mathsf{A}` | $\mathsf{A\,B\,C\,D\,E\,F\,G\,H\,I\,J\,K\,L\,M\,N\,O\,P\,Q\,R\,S\,T\,U\,V\,W\,X\,Y\,Z}$ |
@@ -505,7 +505,7 @@ You can use `\anticommutator` command to write anticommutator easily.
 ### Operators
 | Command | Output |
 |:-------:|:------:|
-| `\trace[A]` | $\trace[A]$ |
+| `\tr[A]` | $\tr[A]$ |
 | `\Tr[A]` | $\Tr[A]$ |
 | `\rank M` | $\rank M$ |
 | `\erf` | $\erf$ |
