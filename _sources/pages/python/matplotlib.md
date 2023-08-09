@@ -99,7 +99,7 @@ plt.xlabel('x')
 plt.ylabel('y')
 
 # Add a title
-plt.title('Square and cube functions')
+plt.title('Square function and cube function')
 
 plt.show()
 ```
@@ -123,7 +123,7 @@ plt.xlabel('x')
 plt.ylabel('y')
 
 # Add a title
-plt.title('Square and cube functions')
+plt.title('Square function and cube function')
 
 plt.show()
 ```
