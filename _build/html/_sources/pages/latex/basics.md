@@ -20,12 +20,12 @@ You can write display equations by using `$$` or `\[ \]`.
 ````{admonition} Example
 
 ```latex
-Schrodinger equation is
+Schrodinger equation:
 $$
     i\hbar\frac{\partial}{\partial t}|\psi(t)\rangle = H |\psi(t)\rangle
 $$
 ```
-Schrodinger equation is
+Schrodinger equation:
 
 $$
     i\hbar\frac{\partial}{\partial t}|\psi(t)\rangle = H |\psi(t)\rangle
