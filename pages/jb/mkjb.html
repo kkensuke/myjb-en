@@ -479,84 +479,101 @@ document.write(`
                   
   <section class="tex2jax_ignore mathjax_ignore" id="lets-make-a-jupyter-book">
 <h1><span class="section-number">5.1. </span>Let’s make a Jupyter book<a class="headerlink" href="#lets-make-a-jupyter-book" title="Permalink to this headline">#</a></h1>
+<blockquote>
+<div><p>Jupyter Book is a tool for building publication-quality books and documents from computational materials. Jupyter Book extends the capabilities of Sphinx (a tool for building documentation) and MyST Markdown (a flavor of Markdown designed for technical content). It can generate different (HTML, PDF, eBook, etc.) versions of your content, and is used widely across the Jupyter ecosystem for publishing documentation, research, and educational material.</p>
+</div></blockquote>
 <p>We are going to make a Jupyter book from scratch.</p>
-<div class="highlight-zsh notranslate"><div class="highlight"><pre><span></span>~/jupyter-book
-	└── test-book
-	    ├── venv
-	    └── test-book
-</pre></div>
-</div>
 <section id="make-a-jupyter-book">
 <h2><span class="section-number">5.1.1. </span>Make a jupyter book<a class="headerlink" href="#make-a-jupyter-book" title="Permalink to this headline">#</a></h2>
 <section id="make-directories">
 <h3>Make directories<a class="headerlink" href="#make-directories" title="Permalink to this headline">#</a></h3>
 <p>At first, we make the structure and activate the venv(virtual environment).</p>
-<div class="highlight-zsh notranslate"><div class="highlight"><pre><span></span>$ mkdir -p ~/jupyter-book/test-book
-$ <span class="nb">cd</span> ~/jupyter-book/test-book
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>./jupyter-book
+	└── test-book
+	    ├── venv
+</pre></div>
+</div>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>$ mkdir -p ./jupyter-book/test-book
+$ <span class="nb">cd</span> ./jupyter-book/test-book
 
 $ python3 -m venv venv
 $ <span class="nb">source</span> venv/bin/activate
 </pre></div>
 </div>
 <p>see which python is working:</p>
-<div class="highlight-zsh notranslate"><div class="highlight"><pre><span></span>$ which python
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span><span class="o">(</span>venv<span class="o">)</span>$ which python
 </pre></div>
 </div>
 <p>You can see that you are using python in the venv.</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
 <p>Sometimes, you need to update pip. In that case, you can use the command below. (Replace <code class="docutils literal notranslate"><span class="pre">&lt;Username&gt;</span></code> with your username.)<br />
 Update pip:</p>
-<div class="highlight-zsh notranslate"><div class="highlight"><pre><span></span>$ /Users/&lt;Username&gt;/jupyter-book/test-book/venv/bin/python3 -m pip install --upgrade pip
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span><span class="o">(</span>venv<span class="o">)</span>$ /Users/&lt;Username&gt;/jupyter-book/test-book/venv/bin/python3 -m pip install --upgrade pip
 </pre></div>
+</div>
 </div>
 </section>
 <section id="install-jupyter-book-package">
 <h3>Install jupyter-book package<a class="headerlink" href="#install-jupyter-book-package" title="Permalink to this headline">#</a></h3>
-<div class="highlight-zsh notranslate"><div class="highlight"><pre><span></span><span class="o">(</span>venv<span class="o">)</span>$ pip install -U jupyter-book
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span><span class="o">(</span>venv<span class="o">)</span>$ pip install -U jupyter-book
 </pre></div>
 </div>
 </section>
 <section id="create-a-new-jupyter-book">
 <h3>Create a new jupyter-book.<a class="headerlink" href="#create-a-new-jupyter-book" title="Permalink to this headline">#</a></h3>
-<div class="highlight-zsh notranslate"><div class="highlight"><pre><span></span>$ jb create test-book
-$ <span class="nb">cd</span> test-book
-$ jb build .
-$ open /Applications/Safari.app _build/html/index.html
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>./jupyter-book
+	└── test-book
+	    ├── venv
+	    └── test-book
+                ├── _condig.yml
+                ├── _toc.yml
+                ├── ...
 </pre></div>
 </div>
-<p>(jb short for jupyter-book)</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span><span class="o">(</span>venv<span class="o">)</span>$ jb create test-book
+<span class="o">(</span>venv<span class="o">)</span>$ <span class="nb">cd</span> test-book
+<span class="o">(</span>venv<span class="o">)</span>$ jb build .
+<span class="o">(</span>venv<span class="o">)</span>$ open /Applications/Safari.app _build/html/index.html
+</pre></div>
+</div>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>jb short for jupyter-book</p>
+</div>
+<p>When the build is completed, you will see the following HTML file URL: <code class="docutils literal notranslate"><span class="pre">file:///Users/&lt;Username&gt;/path/to/jupyterbook/test-book/test-book/_build/html/index.html</span></code> in the terminal. Paste it into your browser to check it out.</p>
 </section>
 </section>
 <section id="publish">
 <h2><span class="section-number">5.1.2. </span>Publish<a class="headerlink" href="#publish" title="Permalink to this headline">#</a></h2>
 <p>First, we make a repository named <code class="docutils literal notranslate"><span class="pre">test-book</span></code> on GitHub website without initializing.
 Second, we execute the commands below in the test-book directory on your local computer.</p>
-<div class="highlight-zsh notranslate"><div class="highlight"><pre><span></span><span class="nb">echo</span> <span class="s2">&quot;# test-book&quot;</span> &gt;&gt; README.md
-git init
-git add .
-git commit -m <span class="s2">&quot;first commit&quot;</span>
-git branch -M main
-git remote add origin https://github.com/&lt;Username&gt;/test-book.git
-git push -u origin main
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span><span class="o">(</span>venv<span class="o">)</span>$ <span class="nb">echo</span> <span class="s2">&quot;# test-book&quot;</span> &gt;&gt; README.md
+<span class="o">(</span>venv<span class="o">)</span>$ git init
+<span class="o">(</span>venv<span class="o">)</span>$ git add .
+<span class="o">(</span>venv<span class="o">)</span>$ git commit -m <span class="s2">&quot;first commit&quot;</span>
+<span class="o">(</span>venv<span class="o">)</span>$ git branch -M main
+<span class="o">(</span>venv<span class="o">)</span>$ git remote add origin https://github.com/&lt;Username&gt;/test-book.git
+<span class="o">(</span>venv<span class="o">)</span>$ git push -u origin main
 </pre></div>
 </div>
-<div class="highlight-zsh notranslate"><div class="highlight"><pre><span></span>$ pip install ghp-import
-$ ghp-import -n -p -f _build/html
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span><span class="o">(</span>venv<span class="o">)</span>$ pip install ghp-import
+<span class="o">(</span>venv<span class="o">)</span>$ ghp-import -n -p -f _build/html
 </pre></div>
 </div>
-<p>You can see the published website at <code class="docutils literal notranslate"><span class="pre">https://\&lt;Username\&gt;.github.io/test-book/intro.html</span></code>. It may take a few minutes to be published.</p>
+<p>You can see the published website at <code class="docutils literal notranslate"><span class="pre">https://&lt;Username&gt;.github.io/test-book/intro.html</span></code>. It may take a few minutes to be published.</p>
 </section>
 <section id="update">
 <h2><span class="section-number">5.1.3. </span>Update<a class="headerlink" href="#update" title="Permalink to this headline">#</a></h2>
 <p>After you modified the source code, you can update the website by the commands below.</p>
-<div class="highlight-zsh notranslate"><div class="highlight"><pre><span></span>$ <span class="nb">cd</span> test-book
-$ jb build --all .
-$ git add .
-$ git commit -m <span class="s2">&quot;comment&quot;</span>
-$ git push origin main
-</pre></div>
-</div>
-<p>Update GitHub Pages</p>
-<div class="highlight-zsh notranslate"><div class="highlight"><pre><span></span>$ ghp-import -n -p -f _build/html
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span><span class="o">(</span>venv<span class="o">)</span>$ <span class="nb">cd</span> test-book
+<span class="o">(</span>venv<span class="o">)</span>$ jb build --all .
+
+<span class="o">(</span>venv<span class="o">)</span>$ git add .
+<span class="o">(</span>venv<span class="o">)</span>$ git commit -m <span class="s2">&quot;comment&quot;</span>
+<span class="o">(</span>venv<span class="o">)</span>$ git push origin main
+
+<span class="o">(</span>venv<span class="o">)</span>$ ghp-import -n -p -f _build/html
 </pre></div>
 </div>
 </section>
