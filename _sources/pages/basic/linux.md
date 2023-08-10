@@ -9,7 +9,7 @@ In Mac, you can use the command line in `terminal.app`
 To begin with, we check shortcuts.
 
 | Command | Description |
-| --- | --- |
+| :-----: | :---------: |
 |Ctrl + C| Interrupt the current process|
 |Ctrl + Z| Suspend the current process|
 |Ctrl + S| Stop command output to the screen|
@@ -304,7 +304,7 @@ grep 'string1 string2'  filename
 ```
 
 | Options |	Description |
-|---------|-------------|
+|:-------:|:-----------:|
 |-i | Ignore case distinctions|
 |-w | The expression is searched for as a word|
 |-v | Select non-matching lines|
