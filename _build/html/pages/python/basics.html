@@ -531,12 +531,6 @@ document.write(`
                   
   <section class="tex2jax_ignore mathjax_ignore" id="python-and-jupyterlab">
 <h1><span class="section-number">2.1. </span>Python and Jupyterlab<a class="headerlink" href="#python-and-jupyterlab" title="Permalink to this headline">#</a></h1>
-<blockquote>
-<div><p>Python is a clear and powerful object-oriented programming language. - python doc</p>
-</div></blockquote>
-<blockquote>
-<div><p>JupyterLab is a flexible, extensible interface for interactive computing. - jupyter doc</p>
-</div></blockquote>
 <p><a class="reference external" href="https://www.python.org/">Python</a> is a simple and most popular programming language and used in many fields like AI and machine learning, Data analytics, Data visualization, Web, Game, and so on.</p>
 <p><a class="reference external" href="https://jupyterlab.readthedocs.io/en/stable/">JupyterLab</a> is a next-generation web-based user interface for python programming.</p>
 <p>Here, you can learn basics of python and usage of JupyterLab. If you have not installed jupyter-lab, refer to <a class="reference internal" href="../basic/packageManager.html#venv"><span class="std std-ref">venv</span></a>.</p>
@@ -545,9 +539,9 @@ document.write(`
 <h2><span class="section-number">2.1.1. </span>print() function<a class="headerlink" href="#print-function" title="Permalink to this headline">#</a></h2>
 <p><code class="docutils literal notranslate"><span class="pre">print()</span></code> function is the most basic function in python. It is used to print the value of any variable or expression.
 Here, we will see how to use <code class="docutils literal notranslate"><span class="pre">print()</span></code> function with the usage of jupyter lab(notebook).</p>
-<p>To begin with, let us print string “Hello World” using <code class="docutils literal notranslate"><span class="pre">print()</span></code> function.
+<p>To begin with, let us print the string “Hello World” using <code class="docutils literal notranslate"><span class="pre">print()</span></code> function.
 In jupyter lab(notebook), a code block is called a <code class="docutils literal notranslate"><span class="pre">cell</span></code>. A cell can contain multiple lines of code.
-To execute the code, click on the cell(colored in blue(jupyter notebook:green)) and press <code class="docutils literal notranslate"><span class="pre">Shift+Enter</span></code> key.</p>
+To execute the code, click on the cell(colored in blue(jupyter notebook:green)) and press <code class="docutils literal notranslate"><span class="pre">Shift+Enter</span></code>.</p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Hello, world!&quot;</span><span class="p">)</span>
@@ -563,7 +557,7 @@ To execute the code, click on the cell(colored in blue(jupyter notebook:green)) 
 <section id="comment">
 <h3>comment<a class="headerlink" href="#comment" title="Permalink to this headline">#</a></h3>
 <p>When programming, we often put some comments to explain the code. In python, we can use <code class="docutils literal notranslate"><span class="pre">#</span></code> to write  comments.</p>
-<p>If you want to comment out multiple lines, you can use <code class="docutils literal notranslate"><span class="pre">&quot;&quot;&quot;</span> <span class="pre">&quot;&quot;&quot;</span></code> to write comments (actually, this is called docstrings).</p>
+<p>If you want to comment out multiple lines, you can use <code class="docutils literal notranslate"><span class="pre">&quot;&quot;&quot;</span> <span class="pre">comment</span> <span class="pre">&quot;&quot;&quot;</span></code> to write comments (actually, this is called docstrings).</p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># This is a comment. No output.</span>
@@ -600,7 +594,7 @@ To execute the code, click on the cell(colored in blue(jupyter notebook:green)) 
 </div>
 </div>
 <p>In programming, every object has a data type. For example, the number <code class="docutils literal notranslate"><span class="pre">1</span></code> has the data type <code class="docutils literal notranslate"><span class="pre">int</span></code>.
-The “Hello World” string has the data type <code class="docutils literal notranslate"><span class="pre">str</span></code>. If the data types are different, the operations will be performed differently.</p>
+The “Hello World” string has the data type <code class="docutils literal notranslate"><span class="pre">str</span></code>. The operations will be performed differently depending on the data types of targets.</p>
 <p>For example, <code class="docutils literal notranslate"><span class="pre">+</span></code> operator is used to add two numbers, and <code class="docutils literal notranslate"><span class="pre">+</span></code> operator is used to concatenate two strings.</p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
@@ -732,8 +726,8 @@ asdf
 <h3>jupyter lab usage<a class="headerlink" href="#jupyter-lab-usage" title="Permalink to this headline">#</a></h3>
 <p>Basically, code cells are used to write code. However, we can also use code cells to write comments in markdown format.
 If you want to write in markdown format, right click around the cell and press <code class="docutils literal notranslate"><span class="pre">m</span></code>, then <code class="docutils literal notranslate"><span class="pre">Shift+Enter</span></code>. You go back to code format by pressing <code class="docutils literal notranslate"><span class="pre">y</span></code>.
-Moreover, you can add a new cell by pressing <code class="docutils literal notranslate"><span class="pre">a</span></code> or <code class="docutils literal notranslate"><span class="pre">b</span></code>(<code class="docutils literal notranslate"><span class="pre">a</span></code> is for above, <code class="docutils literal notranslate"><span class="pre">b</span></code> is for below).
-Others; <code class="docutils literal notranslate"><span class="pre">x</span></code>; cut a cell. <code class="docutils literal notranslate"><span class="pre">c</span></code> (Shift + <code class="docutils literal notranslate"><span class="pre">c</span></code> to copy multi cells); copy a cell. <code class="docutils literal notranslate"><span class="pre">v</span></code>; paste a cell. <code class="docutils literal notranslate"><span class="pre">z</span></code>; undo.</p>
+Moreover, you can add a new cell by pressing <code class="docutils literal notranslate"><span class="pre">a</span></code> or <code class="docutils literal notranslate"><span class="pre">b</span></code>(<code class="docutils literal notranslate"><span class="pre">a</span></code> is for above, <code class="docutils literal notranslate"><span class="pre">b</span></code> is for below).</p>
+<p>Others; <code class="docutils literal notranslate"><span class="pre">x</span></code>; cut a cell. <code class="docutils literal notranslate"><span class="pre">c</span></code> ; copy a cell. <code class="docutils literal notranslate"><span class="pre">v</span></code>; paste a cell (Shift + <code class="docutils literal notranslate"><span class="pre">c</span></code> to copy multi cells). <code class="docutils literal notranslate"><span class="pre">z</span></code>; undo.</p>
 <p><a class="reference internal" href="../basic/markdown.html"><span class="doc std std-doc">Markdown usage</span></a></p>
 </section>
 </section>

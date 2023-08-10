@@ -13,10 +13,6 @@ kernelspec:
 
 # Python and Jupyterlab
 
-> Python is a clear and powerful object-oriented programming language. - python doc
-
-> JupyterLab is a flexible, extensible interface for interactive computing. - jupyter doc
-
 [Python](https://www.python.org/) is a simple and most popular programming language and used in many fields like AI and machine learning, Data analytics, Data visualization, Web, Game, and so on.
 
 [JupyterLab](https://jupyterlab.readthedocs.io/en/stable/) is a next-generation web-based user interface for python programming.
@@ -33,9 +29,9 @@ Here, we will see how to use `print()` function with the usage of jupyter lab(no
 
 +++
 
-To begin with, let us print string "Hello World" using `print()` function. 
+To begin with, let us print the string "Hello World" using `print()` function. 
 In jupyter lab(notebook), a code block is called a `cell`. A cell can contain multiple lines of code.
-To execute the code, click on the cell(colored in blue(jupyter notebook:green)) and press `Shift+Enter` key.
+To execute the code, click on the cell(colored in blue(jupyter notebook:green)) and press `Shift+Enter`.
 
 ```{code-cell} ipython3
 print("Hello, world!")
@@ -47,7 +43,7 @@ print("Hello, world!")
 
 When programming, we often put some comments to explain the code. In python, we can use `#` to write  comments.
 
-If you want to comment out multiple lines, you can use `""" """` to write comments (actually, this is called docstrings).
+If you want to comment out multiple lines, you can use `""" comment """` to write comments (actually, this is called docstrings).
 
 ```{code-cell} ipython3
 # This is a comment. No output.
@@ -68,7 +64,7 @@ print(1+1)
 ```
 
 In programming, every object has a data type. For example, the number `1` has the data type `int`.
-The "Hello World" string has the data type `str`. If the data types are different, the operations will be performed differently.
+The "Hello World" string has the data type `str`. The operations will be performed differently depending on the data types of targets.
 
 For example, `+` operator is used to add two numbers, and `+` operator is used to concatenate two strings.
 
@@ -124,7 +120,8 @@ print('adsf'); print('asdf')
 Basically, code cells are used to write code. However, we can also use code cells to write comments in markdown format.
 If you want to write in markdown format, right click around the cell and press `m`, then `Shift+Enter`. You go back to code format by pressing `y`.
 Moreover, you can add a new cell by pressing `a` or `b`(`a` is for above, `b` is for below). 
-Others; `x`; cut a cell. `c` (Shift + `c` to copy multi cells); copy a cell. `v`; paste a cell. `z`; undo. 
+
+Others; `x`; cut a cell. `c` ; copy a cell. `v`; paste a cell (Shift + `c` to copy multi cells). `z`; undo. 
 
 [Markdown usage](../basic/markdown.md)
 
