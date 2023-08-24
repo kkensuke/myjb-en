@@ -7,7 +7,7 @@
 
   <head>
     <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.18.1: http://docutils.sourceforge.net/" />
 
     <title>1.8. Commit Masssages with emoji &#8212; My note</title>
   
@@ -44,6 +44,7 @@
     <script data-url_root="../../../" id="documentation_options" src="../../../_static/documentation_options.js"></script>
     <script src="../../../_static/jquery.js"></script>
     <script src="../../../_static/underscore.js"></script>
+    <script src="../../../_static/_sphinx_javascript_frameworks_compat.js"></script>
     <script src="../../../_static/doctools.js"></script>
     <script src="../../../_static/clipboard.min.js"></script>
     <script src="../../../_static/copybutton.js"></script>
@@ -314,7 +315,7 @@ const thebe_selector_output = ".output, .cell_output"
       
       
       
-      <li><a href="https://github.com/kkensuke/myjb/edit/main//pages/basic/github/commitMessage.md" target="_blank"
+      <li><a href="https://github.com/kkensuke/myjb/edit/main/pages/basic/github/commitMessage.md" target="_blank"
    class="btn btn-sm btn-source-edit-button dropdown-item"
    title="Suggest edit"
    data-bs-placement="left" data-bs-toggle="tooltip"
@@ -466,36 +467,36 @@ document.write(`
                 <article class="bd-article" role="main">
                   
   <section class="tex2jax_ignore mathjax_ignore" id="commit-masssages-with-emoji">
-<h1><span class="section-number">1.8. </span>Commit Masssages with emoji<a class="headerlink" href="#commit-masssages-with-emoji" title="Permalink to this headline">#</a></h1>
+<h1><span class="section-number">1.8. </span>Commit Masssages with emoji<a class="headerlink" href="#commit-masssages-with-emoji" title="Permalink to this heading">#</a></h1>
 <p>When you commit files in github, you add some commit-messages. In the code of comduct of some project, it is recommended to use <code class="docutils literal notranslate"><span class="pre">emoji</span></code> to easily represent what the commit is all about. Here, we introduce a setting for that with aliases.</p>
 <p>Put code below in <code class="docutils literal notranslate"><span class="pre">.zshrc</span></code>.</p>
 <div class="highlight-zsh notranslate"><div class="highlight"><pre><span></span><span class="c1">## Using EMOJI-LOG (https://github.com/ahmadawais/Emoji-Log) ##</span>
 <span class="c1"># Git Commit, Add all and Push — in one step.</span>
-gacp<span class="o">()</span> <span class="o">{</span> git add . <span class="o">&amp;&amp;</span> git commit -m <span class="s2">&quot;</span><span class="nv">$*</span><span class="s2">&quot;</span> <span class="o">&amp;&amp;</span> git push origin main <span class="o">}</span>
+gacp<span class="o">()</span><span class="w"> </span><span class="o">{</span><span class="w"> </span>git<span class="w"> </span>add<span class="w"> </span>.<span class="w"> </span><span class="o">&amp;&amp;</span><span class="w"> </span>git<span class="w"> </span>commit<span class="w"> </span>-m<span class="w"> </span><span class="s2">&quot;</span><span class="nv">$*</span><span class="s2">&quot;</span><span class="w"> </span><span class="o">&amp;&amp;</span><span class="w"> </span>git<span class="w"> </span>push<span class="w"> </span>origin<span class="w"> </span>main<span class="w"> </span><span class="o">}</span>
 
-gini<span class="o">()</span> <span class="o">{</span> gacp <span class="s2">&quot;🎉 Initial commit&quot;</span><span class="o">}</span>
-gnew<span class="o">()</span> <span class="o">{</span> gacp <span class="s2">&quot;✨ NEW: </span><span class="nv">$@</span><span class="s2">&quot;</span> <span class="o">}</span>
-gimp<span class="o">()</span> <span class="o">{</span> gacp <span class="s2">&quot;👌 IMPROVE: </span><span class="nv">$@</span><span class="s2">&quot;</span> <span class="o">}</span>
-gprg<span class="o">()</span> <span class="o">{</span> gacp <span class="s2">&quot;🚧 PROGRESS: </span><span class="nv">$@</span><span class="s2">&quot;</span> <span class="o">}</span>
+gini<span class="o">()</span><span class="w"> </span><span class="o">{</span><span class="w"> </span>gacp<span class="w"> </span><span class="s2">&quot;🎉 Initial commit&quot;</span><span class="o">}</span>
+gnew<span class="o">()</span><span class="w"> </span><span class="o">{</span><span class="w"> </span>gacp<span class="w"> </span><span class="s2">&quot;✨ NEW: </span><span class="nv">$@</span><span class="s2">&quot;</span><span class="w"> </span><span class="o">}</span>
+gimp<span class="o">()</span><span class="w"> </span><span class="o">{</span><span class="w"> </span>gacp<span class="w"> </span><span class="s2">&quot;👌 IMPROVE: </span><span class="nv">$@</span><span class="s2">&quot;</span><span class="w"> </span><span class="o">}</span>
+gprg<span class="o">()</span><span class="w"> </span><span class="o">{</span><span class="w"> </span>gacp<span class="w"> </span><span class="s2">&quot;🚧 PROGRESS: </span><span class="nv">$@</span><span class="s2">&quot;</span><span class="w"> </span><span class="o">}</span>
 
-gmtn<span class="o">()</span> <span class="o">{</span> gacp <span class="s2">&quot;🔧 MAINTAIN: </span><span class="nv">$@</span><span class="s2">&quot;</span> <span class="o">}</span>
-gfix<span class="o">()</span> <span class="o">{</span> gacp <span class="s2">&quot;🐛 FIX: </span><span class="nv">$@</span><span class="s2">&quot;</span> <span class="o">}</span>
-ghot<span class="o">()</span> <span class="o">{</span> gacp <span class="s2">&quot;🚑 HOTFIX: </span><span class="nv">$@</span><span class="s2">&quot;</span> <span class="o">}</span>
-gbrk<span class="o">()</span> <span class="o">{</span> gacp <span class="s2">&quot;‼️ BREAKING: </span><span class="nv">$@</span><span class="s2">&quot;</span> <span class="o">}</span>
-grem<span class="o">()</span> <span class="o">{</span> gacp <span class="s2">&quot;🗑️ REMOVE: </span><span class="nv">$@</span><span class="s2">&quot;</span> <span class="o">}</span>
+gmtn<span class="o">()</span><span class="w"> </span><span class="o">{</span><span class="w"> </span>gacp<span class="w"> </span><span class="s2">&quot;🔧 MAINTAIN: </span><span class="nv">$@</span><span class="s2">&quot;</span><span class="w"> </span><span class="o">}</span>
+gfix<span class="o">()</span><span class="w"> </span><span class="o">{</span><span class="w"> </span>gacp<span class="w"> </span><span class="s2">&quot;🐛 FIX: </span><span class="nv">$@</span><span class="s2">&quot;</span><span class="w"> </span><span class="o">}</span>
+ghot<span class="o">()</span><span class="w"> </span><span class="o">{</span><span class="w"> </span>gacp<span class="w"> </span><span class="s2">&quot;🚑 HOTFIX: </span><span class="nv">$@</span><span class="s2">&quot;</span><span class="w"> </span><span class="o">}</span>
+gbrk<span class="o">()</span><span class="w"> </span><span class="o">{</span><span class="w"> </span>gacp<span class="w"> </span><span class="s2">&quot;‼️ BREAKING: </span><span class="nv">$@</span><span class="s2">&quot;</span><span class="w"> </span><span class="o">}</span>
+grem<span class="o">()</span><span class="w"> </span><span class="o">{</span><span class="w"> </span>gacp<span class="w"> </span><span class="s2">&quot;🗑️ REMOVE: </span><span class="nv">$@</span><span class="s2">&quot;</span><span class="w"> </span><span class="o">}</span>
 
-gmrg<span class="o">()</span> <span class="o">{</span> gacp <span class="s2">&quot;🔀 MERGE: </span><span class="nv">$@</span><span class="s2">&quot;</span> <span class="o">}</span>
-gref<span class="o">()</span> <span class="o">{</span> gacp <span class="s2">&quot;♻️ REFACTOR: </span><span class="nv">$@</span><span class="s2">&quot;</span> <span class="o">}</span>
-gtst<span class="o">()</span> <span class="o">{</span> gacp <span class="s2">&quot;🧪 TEST: </span><span class="nv">$@</span><span class="s2">&quot;</span> <span class="o">}</span>
-gdoc<span class="o">()</span> <span class="o">{</span> gacp <span class="s2">&quot;📚 DOC: </span><span class="nv">$@</span><span class="s2">&quot;</span> <span class="o">}</span>
-grls<span class="o">()</span> <span class="o">{</span> gacp <span class="s2">&quot;🚀 RELEASE: </span><span class="nv">$@</span><span class="s2">&quot;</span> <span class="o">}</span>
-gsec<span class="o">()</span> <span class="o">{</span> gacp <span class="s2">&quot;👮 SECURITY: </span><span class="nv">$@</span><span class="s2">&quot;</span> <span class="o">}</span>
+gmrg<span class="o">()</span><span class="w"> </span><span class="o">{</span><span class="w"> </span>gacp<span class="w"> </span><span class="s2">&quot;🔀 MERGE: </span><span class="nv">$@</span><span class="s2">&quot;</span><span class="w"> </span><span class="o">}</span>
+gref<span class="o">()</span><span class="w"> </span><span class="o">{</span><span class="w"> </span>gacp<span class="w"> </span><span class="s2">&quot;♻️ REFACTOR: </span><span class="nv">$@</span><span class="s2">&quot;</span><span class="w"> </span><span class="o">}</span>
+gtst<span class="o">()</span><span class="w"> </span><span class="o">{</span><span class="w"> </span>gacp<span class="w"> </span><span class="s2">&quot;🧪 TEST: </span><span class="nv">$@</span><span class="s2">&quot;</span><span class="w"> </span><span class="o">}</span>
+gdoc<span class="o">()</span><span class="w"> </span><span class="o">{</span><span class="w"> </span>gacp<span class="w"> </span><span class="s2">&quot;📚 DOC: </span><span class="nv">$@</span><span class="s2">&quot;</span><span class="w"> </span><span class="o">}</span>
+grls<span class="o">()</span><span class="w"> </span><span class="o">{</span><span class="w"> </span>gacp<span class="w"> </span><span class="s2">&quot;🚀 RELEASE: </span><span class="nv">$@</span><span class="s2">&quot;</span><span class="w"> </span><span class="o">}</span>
+gsec<span class="o">()</span><span class="w"> </span><span class="o">{</span><span class="w"> </span>gacp<span class="w"> </span><span class="s2">&quot;👮 SECURITY: </span><span class="nv">$@</span><span class="s2">&quot;</span><span class="w"> </span><span class="o">}</span>
 
 <span class="c1"># Show commit type</span>
-gtyp<span class="o">()</span> <span class="o">{</span>
+gtyp<span class="o">()</span><span class="w"> </span><span class="o">{</span>
 <span class="nv">NORMAL</span><span class="o">=</span><span class="s1">&#39;\033[0;39m&#39;</span>
 <span class="nv">GREEN</span><span class="o">=</span><span class="s1">&#39;\033[0;32m&#39;</span>
-<span class="nb">echo</span> <span class="s2">&quot;</span><span class="nv">$GREEN</span><span class="s2"> gini</span><span class="nv">$NORMAL</span><span class="s2"> — 🎉 Initial commit</span>
+<span class="nb">echo</span><span class="w"> </span><span class="s2">&quot;</span><span class="nv">$GREEN</span><span class="s2"> gini</span><span class="nv">$NORMAL</span><span class="s2"> — 🎉 Initial commit</span>
 <span class="nv">$GREEN</span><span class="s2"> gnew</span><span class="nv">$NORMAL</span><span class="s2"> — ✨ NEW</span>
 <span class="nv">$GREEN</span><span class="s2"> gimp</span><span class="nv">$NORMAL</span><span class="s2"> — 👌 IMPROVE</span>
 <span class="nv">$GREEN</span><span class="s2"> gprg</span><span class="nv">$NORMAL</span><span class="s2"> — 🚧 PROGRESS</span>
@@ -514,7 +515,7 @@ gtyp<span class="o">()</span> <span class="o">{</span>
 </pre></div>
 </div>
 <section id="reference">
-<h2><span class="section-number">1.8.1. </span>Reference<a class="headerlink" href="#reference" title="Permalink to this headline">#</a></h2>
+<h2><span class="section-number">1.8.1. </span>Reference<a class="headerlink" href="#reference" title="Permalink to this heading">#</a></h2>
 <ul class="simple">
 <li><p><a class="reference external" href="https://github.com/executablebooks/.github/blob/master/CONTRIBUTING.md#commit-messages">jupyterbook Development Conventions</a></p></li>
 <li><p><a class="reference external" href="https://chris.beams.io/posts/git-commit/">How to Write a Git Commit Message</a></p></li>

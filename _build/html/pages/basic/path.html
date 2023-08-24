@@ -7,7 +7,7 @@
 
   <head>
     <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.18.1: http://docutils.sourceforge.net/" />
 
     <title>1.2. $PATH &#8212; My note</title>
   
@@ -44,6 +44,7 @@
     <script data-url_root="../../" id="documentation_options" src="../../_static/documentation_options.js"></script>
     <script src="../../_static/jquery.js"></script>
     <script src="../../_static/underscore.js"></script>
+    <script src="../../_static/_sphinx_javascript_frameworks_compat.js"></script>
     <script src="../../_static/doctools.js"></script>
     <script src="../../_static/clipboard.min.js"></script>
     <script src="../../_static/copybutton.js"></script>
@@ -314,7 +315,7 @@ const thebe_selector_output = ".output, .cell_output"
       
       
       
-      <li><a href="https://github.com/kkensuke/myjb/edit/main//pages/basic/path.md" target="_blank"
+      <li><a href="https://github.com/kkensuke/myjb/edit/main/pages/basic/path.md" target="_blank"
    class="btn btn-sm btn-source-edit-button dropdown-item"
    title="Suggest edit"
    data-bs-placement="left" data-bs-toggle="tooltip"
@@ -471,12 +472,12 @@ document.write(`
                 <article class="bd-article" role="main">
                   
   <section class="tex2jax_ignore mathjax_ignore" id="path">
-<h1><span class="section-number">1.2. </span>$PATH<a class="headerlink" href="#path" title="Permalink to this headline">#</a></h1>
+<h1><span class="section-number">1.2. </span>$PATH<a class="headerlink" href="#path" title="Permalink to this heading">#</a></h1>
 <p>A path usually indicates a string to identify a location of a file/directory in a directory tree.
 PATH is one of the environmental variables and is a little different from the path explained above.</p>
 <p>When you input a command in the shell, the shell has to find and run the command. PATH specifies the places the shell should search for a command you input.</p>
 <p>To see the PATH, run <code class="docutils literal notranslate"><span class="pre">echo</span> <span class="pre">$PATH</span></code>:</p>
-<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span><span class="nb">echo</span> <span class="nv">$PATH</span>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span><span class="nb">echo</span><span class="w"> </span><span class="nv">$PATH</span>
 <span class="c1"># /usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin</span>
 </pre></div>
 </div>
@@ -487,27 +488,27 @@ PATH is one of the environmental variables and is a little different from the pa
 </div>
 <p>When you input a command, the shell searches <code class="docutils literal notranslate"><span class="pre">/usr/local/bin</span></code> at first. If the shell finds a command, it runs the command. If not, then it searches <code class="docutils literal notranslate"><span class="pre">/usr/bin</span></code>. If it finds the command, it runs the command. If not, then it searches <code class="docutils literal notranslate"><span class="pre">/bin</span></code>. This flow repeats until it finds and runs the command. So only the command found at first is run. If the shell could not find the command in all the directories in PATH, the shell returns <code class="docutils literal notranslate"><span class="pre">zsh:</span> <span class="pre">command</span> <span class="pre">not</span> <span class="pre">found:</span> <span class="pre">xxx</span></code>.</p>
 <p>Command <code class="docutils literal notranslate"><span class="pre">which</span></code> shows the directories where (for example) the <code class="docutils literal notranslate"><span class="pre">ls</span></code> is.</p>
-<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>which ls
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>which<span class="w"> </span>ls
 <span class="c1"># /bin/ls</span>
 </pre></div>
 </div>
 <section id="add-command-search-path">
-<h2><span class="section-number">1.2.1. </span>Add command search path<a class="headerlink" href="#add-command-search-path" title="Permalink to this headline">#</a></h2>
+<h2><span class="section-number">1.2.1. </span>Add command search path<a class="headerlink" href="#add-command-search-path" title="Permalink to this heading">#</a></h2>
 <p>Add the following code in ~/.zshrc or ~/.bashrc to add a directory to PATH.</p>
-<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span><span class="nb">export</span> <span class="nv">PATH</span><span class="o">=</span><span class="nv">$PATH</span>:&lt;<span class="nb">command</span> search path&gt;
-<span class="o">(</span>or <span class="nb">export</span> <span class="nv">PATH</span><span class="o">=</span>&lt;<span class="nb">command</span> search path&gt;:<span class="nv">$PATH</span><span class="o">)</span>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span><span class="nb">export</span><span class="w"> </span><span class="nv">PATH</span><span class="o">=</span><span class="nv">$PATH</span>:&lt;<span class="nb">command</span><span class="w"> </span>search<span class="w"> </span>path&gt;
+<span class="o">(</span>or<span class="w"> </span><span class="nb">export</span><span class="w"> </span><span class="nv">PATH</span><span class="o">=</span>&lt;<span class="nb">command</span><span class="w"> </span>search<span class="w"> </span>path&gt;:<span class="nv">$PATH</span><span class="o">)</span>
 </pre></div>
 </div>
 <p>and save ths changes.</p>
-<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span><span class="nb">source</span> ~/.zshrc
-<span class="nb">source</span> ~/.bashrc
-<span class="nb">source</span> ~/.bash_profile
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span><span class="nb">source</span><span class="w"> </span>~/.zshrc
+<span class="nb">source</span><span class="w"> </span>~/.bashrc
+<span class="nb">source</span><span class="w"> </span>~/.bash_profile
 </pre></div>
 </div>
 </section>
 <section id="environmental-variables">
-<h2><span class="section-number">1.2.2. </span>Environmental variables<a class="headerlink" href="#environmental-variables" title="Permalink to this headline">#</a></h2>
-<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>% printenv
+<h2><span class="section-number">1.2.2. </span>Environmental variables<a class="headerlink" href="#environmental-variables" title="Permalink to this heading">#</a></h2>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>%<span class="w"> </span>printenv
 ...
 <span class="nv">SHELL</span><span class="o">=</span>/bin/zsh
 <span class="nv">HOME</span><span class="o">=</span>/Users/asdf
@@ -518,21 +519,21 @@ PATH is one of the environmental variables and is a little different from the pa
 </pre></div>
 </div>
 <section id="make-a-new-environmental-variable">
-<h3>make a new environmental variable<a class="headerlink" href="#make-a-new-environmental-variable" title="Permalink to this headline">#</a></h3>
-<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span><span class="nb">export</span> <span class="nv">US</span><span class="o">=</span>/usr/sbin
-<span class="nb">echo</span> <span class="nv">$US</span>
+<h3>make a new environmental variable<a class="headerlink" href="#make-a-new-environmental-variable" title="Permalink to this heading">#</a></h3>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span><span class="nb">export</span><span class="w"> </span><span class="nv">US</span><span class="o">=</span>/usr/sbin
+<span class="nb">echo</span><span class="w"> </span><span class="nv">$US</span>
 <span class="c1"># /usr/sbin</span>
 </pre></div>
 </div>
 <p>each command below shows the same results</p>
-<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>ls /usr/sbin
-ls <span class="nv">$US</span>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>ls<span class="w"> </span>/usr/sbin
+ls<span class="w"> </span><span class="nv">$US</span>
 </pre></div>
 </div>
 </section>
 <section id="remove-a-environmental-variable">
-<h3>Remove a environmental variable<a class="headerlink" href="#remove-a-environmental-variable" title="Permalink to this headline">#</a></h3>
-<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span><span class="nb">unset</span> US
+<h3>Remove a environmental variable<a class="headerlink" href="#remove-a-environmental-variable" title="Permalink to this heading">#</a></h3>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span><span class="nb">unset</span><span class="w"> </span>US
 </pre></div>
 </div>
 </section>
