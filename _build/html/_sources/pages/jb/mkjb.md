@@ -1,6 +1,7 @@
 # Let's make a Jupyter book
+> last modified: {sub-ref}`today`
 
-> Jupyter Book is a tool for building publication-quality books and documents from computational materials. Jupyter Book extends the capabilities of Sphinx (a tool for building documentation) and MyST Markdown (a flavor of Markdown designed for technical content). It can generate different (HTML, PDF, eBook, etc.) versions of your content, and is used widely across the Jupyter ecosystem for publishing documentation, research, and educational material.
+> [Jupyter Book](https://jupyterbook.org/en/stable/intro.html) is a tool for building publication-quality books and documents from computational materials. Jupyter Book extends the capabilities of Sphinx (a tool for building documentation) and MyST Markdown (a flavor of Markdown designed for technical content). It can generate different (HTML, PDF, eBook, etc.) versions of your content, and is used widely across the Jupyter ecosystem for publishing documentation, research, and educational material.
 
 We are going to make a Jupyter book from scratch.
 

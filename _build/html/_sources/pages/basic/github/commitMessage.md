@@ -1,4 +1,5 @@
 # Commit Masssages with emoji
+> last modified: {sub-ref}`today`
 
 When you commit files in github, you add some commit-messages. In the code of comduct of some project, it is recommended to use `emoji` to easily represent what the commit is all about. Here, we introduce a setting for that with aliases.
 

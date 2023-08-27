@@ -1,4 +1,5 @@
 # newcommands
+> last modified: {sub-ref}`today`
 
 The following is a list of my favorite `\newcommands`. You can use them regardless of the document class (maybe?). Add them to your preamble if you find them useful.
 

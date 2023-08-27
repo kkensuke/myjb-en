@@ -4,12 +4,9 @@ summary:
 description: Usage of GitHub
 author: kkensuke
 date: 2022-07-06
-some_url:
-tags:
-  -
-  -
 ---
 # GitHub
+> last modified: {sub-ref}`today`
 
 ```{image} ./img/GitHub-flow.png
 :name: flow

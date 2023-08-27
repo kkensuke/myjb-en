@@ -1,4 +1,5 @@
 # Command line
+> last modified: {sub-ref}`today`
 
 Here, we learn command line. The command line is a text interface to computers. You input text commands to your computer to do some operations, for example making or removing files, and changing files permissions, etc.
 

@@ -1,4 +1,5 @@
 # Firefox Security Settings
+> last modified: {sub-ref}`today`
 
 ## Security Add-ons
 - [AdBlocker Ultimate](https://addons.mozilla.org/en-US/firefox/addon/adblocker-ultimate/)

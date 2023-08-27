@@ -1,5 +1,6 @@
 Latex Basics
 ===
+> last modified: {sub-ref}`today`
 
 ## Inline equations
 

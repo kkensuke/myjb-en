@@ -1,4 +1,5 @@
 # Tools
+> last modified: {sub-ref}`today`
 
 - [Useful Web Apps](usefulWebApps/usefulWebApps.md)
 - [Useful Mac Apps](usefulMacApps/usefulMacApps.md)

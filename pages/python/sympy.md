@@ -12,6 +12,8 @@ kernelspec:
 ---
 
 # [SymPY](https://www.tutorialspoint.com/sympy/index.htm)
+> last modified: {sub-ref}`today`
+
 > SymPy is a Python library for symbolic mathematics. - sympy doc
 
 In this page, you see examples of sympy usage.
