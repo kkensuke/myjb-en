@@ -7,7 +7,7 @@
 
   <head>
     <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.18.1: http://docutils.sourceforge.net/" />
 
     <title>5.1. Let’s make a Jupyter book &#8212; My note</title>
   
@@ -44,6 +44,7 @@
     <script data-url_root="../../" id="documentation_options" src="../../_static/documentation_options.js"></script>
     <script src="../../_static/jquery.js"></script>
     <script src="../../_static/underscore.js"></script>
+    <script src="../../_static/_sphinx_javascript_frameworks_compat.js"></script>
     <script src="../../_static/doctools.js"></script>
     <script src="../../_static/clipboard.min.js"></script>
     <script src="../../_static/copybutton.js"></script>
@@ -314,7 +315,7 @@ const thebe_selector_output = ".output, .cell_output"
       
       
       
-      <li><a href="https://github.com/kkensuke/myjb/edit/main//pages/jb/mkjb.md" target="_blank"
+      <li><a href="https://github.com/kkensuke/myjb/edit/main/pages/jb/mkjb.md" target="_blank"
    class="btn btn-sm btn-source-edit-button dropdown-item"
    title="Suggest edit"
    data-bs-placement="left" data-bs-toggle="tooltip"
@@ -478,30 +479,33 @@ document.write(`
                 <article class="bd-article" role="main">
                   
   <section class="tex2jax_ignore mathjax_ignore" id="lets-make-a-jupyter-book">
-<h1><span class="section-number">5.1. </span>Let’s make a Jupyter book<a class="headerlink" href="#lets-make-a-jupyter-book" title="Permalink to this headline">#</a></h1>
+<h1><span class="section-number">5.1. </span>Let’s make a Jupyter book<a class="headerlink" href="#lets-make-a-jupyter-book" title="Permalink to this heading">#</a></h1>
 <blockquote>
-<div><p>Jupyter Book is a tool for building publication-quality books and documents from computational materials. Jupyter Book extends the capabilities of Sphinx (a tool for building documentation) and MyST Markdown (a flavor of Markdown designed for technical content). It can generate different (HTML, PDF, eBook, etc.) versions of your content, and is used widely across the Jupyter ecosystem for publishing documentation, research, and educational material.</p>
+<div><p>last modified: Aug 27, 2023</p>
+</div></blockquote>
+<blockquote>
+<div><p><a class="reference external" href="https://jupyterbook.org/en/stable/intro.html">Jupyter Book</a> is a tool for building publication-quality books and documents from computational materials. Jupyter Book extends the capabilities of Sphinx (a tool for building documentation) and MyST Markdown (a flavor of Markdown designed for technical content). It can generate different (HTML, PDF, eBook, etc.) versions of your content, and is used widely across the Jupyter ecosystem for publishing documentation, research, and educational material.</p>
 </div></blockquote>
 <p>We are going to make a Jupyter book from scratch.</p>
 <section id="make-a-jupyter-book">
-<h2><span class="section-number">5.1.1. </span>Make a jupyter book<a class="headerlink" href="#make-a-jupyter-book" title="Permalink to this headline">#</a></h2>
+<h2><span class="section-number">5.1.1. </span>Make a jupyter book<a class="headerlink" href="#make-a-jupyter-book" title="Permalink to this heading">#</a></h2>
 <section id="make-directories">
-<h3>Make directories<a class="headerlink" href="#make-directories" title="Permalink to this headline">#</a></h3>
+<h3>Make directories<a class="headerlink" href="#make-directories" title="Permalink to this heading">#</a></h3>
 <p>At first, we make the structure and activate the venv(virtual environment).</p>
 <div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>./jupyter-book
-	└── test-book
-	    ├── venv
+<span class="w">	</span>└──<span class="w"> </span>test-book
+<span class="w">	    </span>├──<span class="w"> </span>venv
 </pre></div>
 </div>
-<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>$ mkdir -p ./jupyter-book/test-book
-$ <span class="nb">cd</span> ./jupyter-book/test-book
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>$<span class="w"> </span>mkdir<span class="w"> </span>-p<span class="w"> </span>./jupyter-book/test-book
+$<span class="w"> </span><span class="nb">cd</span><span class="w"> </span>./jupyter-book/test-book
 
-$ python3 -m venv venv
-$ <span class="nb">source</span> venv/bin/activate
+$<span class="w"> </span>python3<span class="w"> </span>-m<span class="w"> </span>venv<span class="w"> </span>venv
+$<span class="w"> </span><span class="nb">source</span><span class="w"> </span>venv/bin/activate
 </pre></div>
 </div>
 <p>see which python is working:</p>
-<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span><span class="o">(</span>venv<span class="o">)</span>$ which python
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span><span class="o">(</span>venv<span class="o">)</span>$<span class="w"> </span>which<span class="w"> </span>python
 </pre></div>
 </div>
 <p>You can see that you are using python in the venv.</p>
@@ -509,32 +513,32 @@ $ <span class="nb">source</span> venv/bin/activate
 <p class="admonition-title">Note</p>
 <p>Sometimes, you need to update pip. In that case, you can use the command below. (Replace <code class="docutils literal notranslate"><span class="pre">&lt;Username&gt;</span></code> with your username.)<br />
 Update pip:</p>
-<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span><span class="o">(</span>venv<span class="o">)</span>$ /Users/&lt;Username&gt;/jupyter-book/test-book/venv/bin/python3 -m pip install --upgrade pip
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span><span class="o">(</span>venv<span class="o">)</span>$<span class="w"> </span>/Users/&lt;Username&gt;/jupyter-book/test-book/venv/bin/python3<span class="w"> </span>-m<span class="w"> </span>pip<span class="w"> </span>install<span class="w"> </span>--upgrade<span class="w"> </span>pip
 </pre></div>
 </div>
 </div>
 </section>
 <section id="install-jupyter-book-package">
-<h3>Install jupyter-book package<a class="headerlink" href="#install-jupyter-book-package" title="Permalink to this headline">#</a></h3>
-<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span><span class="o">(</span>venv<span class="o">)</span>$ pip install -U jupyter-book
+<h3>Install jupyter-book package<a class="headerlink" href="#install-jupyter-book-package" title="Permalink to this heading">#</a></h3>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span><span class="o">(</span>venv<span class="o">)</span>$<span class="w"> </span>pip<span class="w"> </span>install<span class="w"> </span>-U<span class="w"> </span>jupyter-book
 </pre></div>
 </div>
 </section>
 <section id="create-a-new-jupyter-book">
-<h3>Create a new jupyter-book.<a class="headerlink" href="#create-a-new-jupyter-book" title="Permalink to this headline">#</a></h3>
+<h3>Create a new jupyter-book.<a class="headerlink" href="#create-a-new-jupyter-book" title="Permalink to this heading">#</a></h3>
 <div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>./jupyter-book
-	└── test-book
-	    ├── venv
-	    └── test-book
-                ├── _condig.yml
-                ├── _toc.yml
-                ├── ...
+<span class="w">	</span>└──<span class="w"> </span>test-book
+<span class="w">	    </span>├──<span class="w"> </span>venv
+<span class="w">	    </span>└──<span class="w"> </span>test-book
+<span class="w">                </span>├──<span class="w"> </span>_condig.yml
+<span class="w">                </span>├──<span class="w"> </span>_toc.yml
+<span class="w">                </span>├──<span class="w"> </span>...
 </pre></div>
 </div>
-<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span><span class="o">(</span>venv<span class="o">)</span>$ jb create test-book
-<span class="o">(</span>venv<span class="o">)</span>$ <span class="nb">cd</span> test-book
-<span class="o">(</span>venv<span class="o">)</span>$ jb build .
-<span class="o">(</span>venv<span class="o">)</span>$ open /Applications/Safari.app _build/html/index.html
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span><span class="o">(</span>venv<span class="o">)</span>$<span class="w"> </span>jb<span class="w"> </span>create<span class="w"> </span>test-book
+<span class="o">(</span>venv<span class="o">)</span>$<span class="w"> </span><span class="nb">cd</span><span class="w"> </span>test-book
+<span class="o">(</span>venv<span class="o">)</span>$<span class="w"> </span>jb<span class="w"> </span>build<span class="w"> </span>.
+<span class="o">(</span>venv<span class="o">)</span>$<span class="w"> </span>open<span class="w"> </span>/Applications/Safari.app<span class="w"> </span>_build/html/index.html
 </pre></div>
 </div>
 <div class="admonition note">
@@ -545,42 +549,42 @@ Update pip:</p>
 </section>
 </section>
 <section id="publish">
-<h2><span class="section-number">5.1.2. </span>Publish<a class="headerlink" href="#publish" title="Permalink to this headline">#</a></h2>
+<h2><span class="section-number">5.1.2. </span>Publish<a class="headerlink" href="#publish" title="Permalink to this heading">#</a></h2>
 <p>First, we make a repository named <code class="docutils literal notranslate"><span class="pre">test-book</span></code> on GitHub website without initializing.
 Second, we execute the commands below in the test-book directory on your local computer.</p>
-<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span><span class="o">(</span>venv<span class="o">)</span>$ <span class="nb">echo</span> <span class="s2">&quot;# test-book&quot;</span> &gt;&gt; README.md
-<span class="o">(</span>venv<span class="o">)</span>$ git init
-<span class="o">(</span>venv<span class="o">)</span>$ git add .
-<span class="o">(</span>venv<span class="o">)</span>$ git commit -m <span class="s2">&quot;first commit&quot;</span>
-<span class="o">(</span>venv<span class="o">)</span>$ git branch -M main
-<span class="o">(</span>venv<span class="o">)</span>$ git remote add origin https://github.com/&lt;Username&gt;/test-book.git
-<span class="o">(</span>venv<span class="o">)</span>$ git push -u origin main
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span><span class="o">(</span>venv<span class="o">)</span>$<span class="w"> </span><span class="nb">echo</span><span class="w"> </span><span class="s2">&quot;# test-book&quot;</span><span class="w"> </span>&gt;&gt;<span class="w"> </span>README.md
+<span class="o">(</span>venv<span class="o">)</span>$<span class="w"> </span>git<span class="w"> </span>init
+<span class="o">(</span>venv<span class="o">)</span>$<span class="w"> </span>git<span class="w"> </span>add<span class="w"> </span>.
+<span class="o">(</span>venv<span class="o">)</span>$<span class="w"> </span>git<span class="w"> </span>commit<span class="w"> </span>-m<span class="w"> </span><span class="s2">&quot;first commit&quot;</span>
+<span class="o">(</span>venv<span class="o">)</span>$<span class="w"> </span>git<span class="w"> </span>branch<span class="w"> </span>-M<span class="w"> </span>main
+<span class="o">(</span>venv<span class="o">)</span>$<span class="w"> </span>git<span class="w"> </span>remote<span class="w"> </span>add<span class="w"> </span>origin<span class="w"> </span>https://github.com/&lt;Username&gt;/test-book.git
+<span class="o">(</span>venv<span class="o">)</span>$<span class="w"> </span>git<span class="w"> </span>push<span class="w"> </span>-u<span class="w"> </span>origin<span class="w"> </span>main
 </pre></div>
 </div>
-<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span><span class="o">(</span>venv<span class="o">)</span>$ pip install ghp-import
-<span class="o">(</span>venv<span class="o">)</span>$ ghp-import -n -p -f _build/html
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span><span class="o">(</span>venv<span class="o">)</span>$<span class="w"> </span>pip<span class="w"> </span>install<span class="w"> </span>ghp-import
+<span class="o">(</span>venv<span class="o">)</span>$<span class="w"> </span>ghp-import<span class="w"> </span>-n<span class="w"> </span>-p<span class="w"> </span>-f<span class="w"> </span>_build/html
 </pre></div>
 </div>
 <p>You can see the published website at <code class="docutils literal notranslate"><span class="pre">https://&lt;Username&gt;.github.io/test-book/intro.html</span></code>. It may take a few minutes to be published.</p>
 </section>
 <section id="update">
-<h2><span class="section-number">5.1.3. </span>Update<a class="headerlink" href="#update" title="Permalink to this headline">#</a></h2>
+<h2><span class="section-number">5.1.3. </span>Update<a class="headerlink" href="#update" title="Permalink to this heading">#</a></h2>
 <p>After you modified the source code, you can update the website by the commands below.</p>
-<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span><span class="o">(</span>venv<span class="o">)</span>$ <span class="nb">cd</span> test-book
-<span class="o">(</span>venv<span class="o">)</span>$ jb build --all .
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span><span class="o">(</span>venv<span class="o">)</span>$<span class="w"> </span><span class="nb">cd</span><span class="w"> </span>test-book
+<span class="o">(</span>venv<span class="o">)</span>$<span class="w"> </span>jb<span class="w"> </span>build<span class="w"> </span>--all<span class="w"> </span>.
 
-<span class="o">(</span>venv<span class="o">)</span>$ git add .
-<span class="o">(</span>venv<span class="o">)</span>$ git commit -m <span class="s2">&quot;comment&quot;</span>
-<span class="o">(</span>venv<span class="o">)</span>$ git push origin main
+<span class="o">(</span>venv<span class="o">)</span>$<span class="w"> </span>git<span class="w"> </span>add<span class="w"> </span>.
+<span class="o">(</span>venv<span class="o">)</span>$<span class="w"> </span>git<span class="w"> </span>commit<span class="w"> </span>-m<span class="w"> </span><span class="s2">&quot;comment&quot;</span>
+<span class="o">(</span>venv<span class="o">)</span>$<span class="w"> </span>git<span class="w"> </span>push<span class="w"> </span>origin<span class="w"> </span>main
 
-<span class="o">(</span>venv<span class="o">)</span>$ ghp-import -n -p -f _build/html
+<span class="o">(</span>venv<span class="o">)</span>$<span class="w"> </span>ghp-import<span class="w"> </span>-n<span class="w"> </span>-p<span class="w"> </span>-f<span class="w"> </span>_build/html
 </pre></div>
 </div>
 </section>
 <section id="other-ways-to-create-jb">
-<h2><span class="section-number">5.1.4. </span>Other ways to create jb<a class="headerlink" href="#other-ways-to-create-jb" title="Permalink to this headline">#</a></h2>
+<h2><span class="section-number">5.1.4. </span>Other ways to create jb<a class="headerlink" href="#other-ways-to-create-jb" title="Permalink to this heading">#</a></h2>
 <section id="create-a-more-complete-book-from-interactive-prompts">
-<h3>Create a more complete book from interactive prompts.<a class="headerlink" href="#create-a-more-complete-book-from-interactive-prompts" title="Permalink to this headline">#</a></h3>
+<h3>Create a more complete book from interactive prompts.<a class="headerlink" href="#create-a-more-complete-book-from-interactive-prompts" title="Permalink to this heading">#</a></h3>
 <p>Jupyter Book also provides a Jupyter Book cookiecutter that can be used to interactively create a book directory structure.</p>
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">jupyter</span><span class="o">-</span><span class="n">book</span> <span class="n">create</span> <span class="n">mynewbook</span><span class="o">/</span> <span class="o">--</span><span class="n">cookiecutter</span>
 </pre></div>
@@ -588,7 +592,7 @@ Second, we execute the commands below in the test-book directory on your local c
 <p><a class="github reference external" href="https://github.com/executablebooks/cookiecutter-jupyter-book">executablebooks/cookiecutter-jupyter-book</a></p>
 </section>
 <section id="create-book-files-from-a-table-of-contents">
-<h3>Create book files from a Table of Contents<a class="headerlink" href="#create-book-files-from-a-table-of-contents" title="Permalink to this headline">#</a></h3>
+<h3>Create book files from a Table of Contents<a class="headerlink" href="#create-book-files-from-a-table-of-contents" title="Permalink to this heading">#</a></h3>
 <p>It is possible to use a _toc.yml file in order to create the skeleton of a book automatically. This is useful if you wish to quickly generate empty files from a single structure, and then populate them with content yourselves.</p>
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">jupyter</span><span class="o">-</span><span class="n">book</span> <span class="n">toc</span> <span class="n">to</span><span class="o">-</span><span class="n">project</span> <span class="n">path</span><span class="o">/</span><span class="n">to</span><span class="o">/</span><span class="n">_toc</span><span class="o">.</span><span class="n">yml</span>
 </pre></div>

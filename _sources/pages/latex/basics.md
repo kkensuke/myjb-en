@@ -1,5 +1,6 @@
 Latex Basics
 ===
+> last modified: {sub-ref}`today`
 
 ## Inline equations
 
@@ -38,11 +39,11 @@ You can use shorter commands with `physics` package.
 
 >```latex
 >\begin{align}
->    \pdv{t} \ket{\psi(t)} = H \ket{\psi(t)}
+>    i\hbar\pdv{t} \ket{\psi(t)} = H \ket{\psi(t)}
 >\end{align}
 >```
 >$$\begin{align}
-    \pdv{t} \ket{\psi(t)} = H \ket{\psi(t)}
+    i\hbar\pdv{t} \ket{\psi(t)} = H \ket{\psi(t)}
 \end{align}$$
 ````
 

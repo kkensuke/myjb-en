@@ -7,7 +7,7 @@
 
   <head>
     <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.18.1: http://docutils.sourceforge.net/" />
 
     <title>1.4. Zsh &#8212; My note</title>
   
@@ -44,6 +44,7 @@
     <script data-url_root="../../" id="documentation_options" src="../../_static/documentation_options.js"></script>
     <script src="../../_static/jquery.js"></script>
     <script src="../../_static/underscore.js"></script>
+    <script src="../../_static/_sphinx_javascript_frameworks_compat.js"></script>
     <script src="../../_static/doctools.js"></script>
     <script src="../../_static/clipboard.min.js"></script>
     <script src="../../_static/copybutton.js"></script>
@@ -314,7 +315,7 @@ const thebe_selector_output = ".output, .cell_output"
       
       
       
-      <li><a href="https://github.com/kkensuke/myjb/edit/main//pages/basic/zsh.md" target="_blank"
+      <li><a href="https://github.com/kkensuke/myjb/edit/main/pages/basic/zsh.md" target="_blank"
    class="btn btn-sm btn-source-edit-button dropdown-item"
    title="Suggest edit"
    data-bs-placement="left" data-bs-toggle="tooltip"
@@ -467,50 +468,53 @@ document.write(`
                 <article class="bd-article" role="main">
                   
   <section class="tex2jax_ignore mathjax_ignore" id="zsh">
-<h1><span class="section-number">1.4. </span>Zsh<a class="headerlink" href="#zsh" title="Permalink to this headline">#</a></h1>
+<h1><span class="section-number">1.4. </span>Zsh<a class="headerlink" href="#zsh" title="Permalink to this heading">#</a></h1>
+<blockquote>
+<div><p>last modified: Aug 27, 2023</p>
+</div></blockquote>
 <div class="admonition-zsh admonition">
 <p class="admonition-title">Zsh</p>
 <p>Z shell (Zsh) is one of the Unix command shells. It can be used as an interactive login command shell and as a powerful shell script command interpreter. Zsh can also be viewed as an extended version of Bourne Shell with many improvements. Not only that, but some useful features of bash, ksh, and tcsh are also incorporated. <a class="reference external" href="https://en.wikipedia.org/wiki/Z_Shell">- wikipedia</a></p>
 </div>
 <section id="manage-zsh-files-in-zsh-directory">
-<h2><span class="section-number">1.4.1. </span>Manage <code class="docutils literal notranslate"><span class="pre">.zsh*</span></code> files in <code class="docutils literal notranslate"><span class="pre">zsh/</span></code> directory<a class="headerlink" href="#manage-zsh-files-in-zsh-directory" title="Permalink to this headline">#</a></h2>
+<h2><span class="section-number">1.4.1. </span>Manage <code class="docutils literal notranslate"><span class="pre">.zsh*</span></code> files in <code class="docutils literal notranslate"><span class="pre">zsh/</span></code> directory<a class="headerlink" href="#manage-zsh-files-in-zsh-directory" title="Permalink to this heading">#</a></h2>
 <a class="reference internal image-reference" href="../../_images/zsh.png"><img alt="../../_images/zsh.png" class="align-center" src="../../_images/zsh.png" style="width: 600px;" /></a>
 <p><code class="docutils literal notranslate"><span class="pre">.zsh*</span></code> files are easy to get messy in the home directory. By setting <code class="docutils literal notranslate"><span class="pre">$ZDOTDIR</span></code>, most files can be moved from the home directory. In the following, <code class="docutils literal notranslate"><span class="pre">.zsh*</span></code> is managed in a directory named <code class="docutils literal notranslate"><span class="pre">zsh/</span></code>.</p>
-<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>- zsh/
-  <span class="p">|</span>-- aliases/
-	<span class="p">|</span>-- git.sh
-	<span class="p">|</span>-- ...
-	<span class="p">|</span>-- python.sh
-  <span class="p">|</span>-- settings/
-	<span class="p">|</span>-- prompt.sh
-	<span class="p">|</span>-- zsh-extensions.sh
-  <span class="p">|</span>-- .zprofile
-  <span class="p">|</span>-- .zshrc
-  <span class="p">|</span>-- .zshenv
-  <span class="p">|</span>-- ...
-  <span class="p">|</span>-- .git
-  <span class="p">|</span>-- .gitignore
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>-<span class="w"> </span>zsh/
+<span class="w">  </span><span class="p">|</span>--<span class="w"> </span>aliases/
+<span class="w">	</span><span class="p">|</span>--<span class="w"> </span>git.sh
+<span class="w">	</span><span class="p">|</span>--<span class="w"> </span>...
+<span class="w">	</span><span class="p">|</span>--<span class="w"> </span>python.sh
+<span class="w">  </span><span class="p">|</span>--<span class="w"> </span>settings/
+<span class="w">	</span><span class="p">|</span>--<span class="w"> </span>prompt.sh
+<span class="w">	</span><span class="p">|</span>--<span class="w"> </span>zsh-extensions.sh
+<span class="w">  </span><span class="p">|</span>--<span class="w"> </span>.zprofile
+<span class="w">  </span><span class="p">|</span>--<span class="w"> </span>.zshrc
+<span class="w">  </span><span class="p">|</span>--<span class="w"> </span>.zshenv
+<span class="w">  </span><span class="p">|</span>--<span class="w"> </span>...
+<span class="w">  </span><span class="p">|</span>--<span class="w"> </span>.git
+<span class="w">  </span><span class="p">|</span>--<span class="w"> </span>.gitignore
 </pre></div>
 </div>
 <p>Set <code class="docutils literal notranslate"><span class="pre">zsh/</span></code> as <code class="docutils literal notranslate"><span class="pre">ZDOTDIR</span></code> so that <code class="docutils literal notranslate"><span class="pre">.zsh*</span></code> in it is read.</p>
 <div class="highlight-bash notranslate"><div class="highlight"><pre><span></span><span class="c1"># In .zshenv</span>
 <span class="c1"># Set zsh/ as ZDOTDIR</span>
-<span class="nb">export</span> ...
-<span class="nb">export</span> <span class="nv">ZDOTDIR</span><span class="o">=</span><span class="s2">&quot;</span><span class="nv">$HOME</span><span class="s2">/path/to/zsh&quot;</span>
+<span class="nb">export</span><span class="w"> </span>...
+<span class="nb">export</span><span class="w"> </span><span class="nv">ZDOTDIR</span><span class="o">=</span><span class="s2">&quot;</span><span class="nv">$HOME</span><span class="s2">/path/to/zsh&quot;</span>
 </pre></div>
 </div>
 <div class="highlight-bash notranslate"><div class="highlight"><pre><span></span><span class="c1"># Put the alias of .zshenv in the home directory</span>
-.zshenv -&gt; <span class="s1">&#39;/Users/$HOME/path/to/zsh/.zshenv&#39;</span>
+.zshenv<span class="w"> </span>-&gt;<span class="w"> </span><span class="s1">&#39;/Users/$HOME/path/to/zsh/.zshenv&#39;</span>
 </pre></div>
 </div>
 </section>
 <section id="zshrc">
-<h2><span class="section-number">1.4.2. </span><code class="docutils literal notranslate"><span class="pre">.zshrc</span></code><a class="headerlink" href="#zshrc" title="Permalink to this headline">#</a></h2>
+<h2><span class="section-number">1.4.2. </span><code class="docutils literal notranslate"><span class="pre">.zshrc</span></code><a class="headerlink" href="#zshrc" title="Permalink to this heading">#</a></h2>
 <p>Contents in<code class="docutils literal notranslate"><span class="pre">.zshrc</span></code> are also easy to get messy, so divide them into files and import them in <code class="docutils literal notranslate"><span class="pre">.zshrc</span></code>. Here, we have prepared directories called <code class="docutils literal notranslate"><span class="pre">aliases</span></code> and <code class="docutils literal notranslate"><span class="pre">settings</span></code> in the same hierarchy as <code class="docutils literal notranslate"><span class="pre">.zshrc</span></code>, and put the files to be read in them.</p>
-<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span><span class="o">[[</span> -f <span class="nv">$ZDOTDIR</span>/settings/prompt.sh <span class="o">]]</span>  <span class="o">&amp;&amp;</span> . <span class="nv">$ZDOTDIR</span>/settings/prompt.sh
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span><span class="o">[[</span><span class="w"> </span>-f<span class="w"> </span><span class="nv">$ZDOTDIR</span>/settings/prompt.sh<span class="w"> </span><span class="o">]]</span><span class="w">  </span><span class="o">&amp;&amp;</span><span class="w"> </span>.<span class="w"> </span><span class="nv">$ZDOTDIR</span>/settings/prompt.sh
 ...
-<span class="o">[[</span> -f <span class="nv">$ZDOTDIR</span>/aliases/git.sh <span class="o">]]</span>      <span class="o">&amp;&amp;</span> . <span class="nv">$ZDOTDIR</span>/aliases/git.sh
-<span class="o">[[</span> -f <span class="nv">$ZDOTDIR</span>/aliases/python.sh <span class="o">]]</span>   <span class="o">&amp;&amp;</span> . <span class="nv">$ZDOTDIR</span>/aliases/python.sh
+<span class="o">[[</span><span class="w"> </span>-f<span class="w"> </span><span class="nv">$ZDOTDIR</span>/aliases/git.sh<span class="w"> </span><span class="o">]]</span><span class="w">      </span><span class="o">&amp;&amp;</span><span class="w"> </span>.<span class="w"> </span><span class="nv">$ZDOTDIR</span>/aliases/git.sh
+<span class="o">[[</span><span class="w"> </span>-f<span class="w"> </span><span class="nv">$ZDOTDIR</span>/aliases/python.sh<span class="w"> </span><span class="o">]]</span><span class="w">   </span><span class="o">&amp;&amp;</span><span class="w"> </span>.<span class="w"> </span><span class="nv">$ZDOTDIR</span>/aliases/python.sh
 ...
 </pre></div>
 </div>

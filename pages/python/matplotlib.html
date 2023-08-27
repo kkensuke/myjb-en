@@ -7,7 +7,7 @@
 
   <head>
     <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.18.1: http://docutils.sourceforge.net/" />
 
     <title>2.3. Matplotlib &#8212; My note</title>
   
@@ -44,6 +44,7 @@
     <script data-url_root="../../" id="documentation_options" src="../../_static/documentation_options.js"></script>
     <script src="../../_static/jquery.js"></script>
     <script src="../../_static/underscore.js"></script>
+    <script src="../../_static/_sphinx_javascript_frameworks_compat.js"></script>
     <script src="../../_static/doctools.js"></script>
     <script src="../../_static/clipboard.min.js"></script>
     <script src="../../_static/copybutton.js"></script>
@@ -314,7 +315,7 @@ const thebe_selector_output = ".output, .cell_output"
       
       
       
-      <li><a href="https://github.com/kkensuke/myjb/edit/main//pages/python/matplotlib.md" target="_blank"
+      <li><a href="https://github.com/kkensuke/myjb/edit/main/pages/python/matplotlib.md" target="_blank"
    class="btn btn-sm btn-source-edit-button dropdown-item"
    title="Suggest edit"
    data-bs-placement="left" data-bs-toggle="tooltip"
@@ -478,7 +479,10 @@ document.write(`
                 <article class="bd-article" role="main">
                   
   <section class="tex2jax_ignore mathjax_ignore" id="matplotlib">
-<h1><span class="section-number">2.3. </span>Matplotlib<a class="headerlink" href="#matplotlib" title="Permalink to this headline">#</a></h1>
+<h1><span class="section-number">2.3. </span>Matplotlib<a class="headerlink" href="#matplotlib" title="Permalink to this heading">#</a></h1>
+<blockquote>
+<div><p>last modified: Aug 27, 2023</p>
+</div></blockquote>
 <p>Matplotlib is a comprehensive library for creating static, animated, and interactive visualizations in Python. - <a class="reference external" href="https://matplotlib.org/">Matplotlib</a></p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
@@ -489,7 +493,7 @@ document.write(`
 </div>
 </div>
 <section id="plot-a-line">
-<h2><span class="section-number">2.3.1. </span>1. Plot a line<a class="headerlink" href="#plot-a-line" title="Permalink to this headline">#</a></h2>
+<h2><span class="section-number">2.3.1. </span>1. Plot a line<a class="headerlink" href="#plot-a-line" title="Permalink to this heading">#</a></h2>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># make a square function</span>
@@ -538,7 +542,7 @@ document.write(`
 </div>
 </div>
 <section id="change-color-marker-style-and-line-style">
-<h3>Change color, marker style and line style<a class="headerlink" href="#change-color-marker-style-and-line-style" title="Permalink to this headline">#</a></h3>
+<h3>Change color, marker style and line style<a class="headerlink" href="#change-color-marker-style-and-line-style" title="Permalink to this heading">#</a></h3>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">x</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">linspace</span><span class="p">(</span><span class="o">-</span><span class="mi">5</span><span class="p">,</span> <span class="mi">5</span><span class="p">,</span> <span class="mi">10</span><span class="p">)</span>
@@ -604,7 +608,7 @@ document.write(`
 </div>
 </section>
 <section id="plt-semilogy-plots-the-y-axis-in-log-scale">
-<h3><code class="docutils literal notranslate"><span class="pre">plt.semilogy</span></code> plots the y-axis in log scale.<a class="headerlink" href="#plt-semilogy-plots-the-y-axis-in-log-scale" title="Permalink to this headline">#</a></h3>
+<h3><code class="docutils literal notranslate"><span class="pre">plt.semilogy</span></code> plots the y-axis in log scale.<a class="headerlink" href="#plt-semilogy-plots-the-y-axis-in-log-scale" title="Permalink to this heading">#</a></h3>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">x</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">linspace</span><span class="p">(</span><span class="mf">0.1</span><span class="p">,</span> <span class="mi">10</span><span class="p">,</span> <span class="mi">10</span><span class="p">)</span>
@@ -662,7 +666,7 @@ document.write(`
 </section>
 </section>
 <section id="scatter-plot">
-<h2><span class="section-number">2.3.2. </span>2. Scatter plot<a class="headerlink" href="#scatter-plot" title="Permalink to this headline">#</a></h2>
+<h2><span class="section-number">2.3.2. </span>2. Scatter plot<a class="headerlink" href="#scatter-plot" title="Permalink to this heading">#</a></h2>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># Scatter plot</span>
@@ -697,7 +701,7 @@ document.write(`
 </div>
 </section>
 <section id="histogram">
-<h2><span class="section-number">2.3.3. </span>3. Histogram<a class="headerlink" href="#histogram" title="Permalink to this headline">#</a></h2>
+<h2><span class="section-number">2.3.3. </span>3. Histogram<a class="headerlink" href="#histogram" title="Permalink to this heading">#</a></h2>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">np</span><span class="o">.</span><span class="n">random</span><span class="o">.</span><span class="n">seed</span><span class="p">(</span><span class="mi">0</span><span class="p">)</span>
@@ -717,7 +721,7 @@ document.write(`
 </div>
 </div>
 <section id="add-another-histogram">
-<h3>Add another histogram<a class="headerlink" href="#add-another-histogram" title="Permalink to this headline">#</a></h3>
+<h3>Add another histogram<a class="headerlink" href="#add-another-histogram" title="Permalink to this heading">#</a></h3>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">np</span><span class="o">.</span><span class="n">random</span><span class="o">.</span><span class="n">seed</span><span class="p">(</span><span class="mi">0</span><span class="p">)</span>
@@ -791,7 +795,7 @@ document.write(`
 </section>
 </section>
 <section id="d-plots">
-<h2><span class="section-number">2.3.4. </span>5. 2D plots<a class="headerlink" href="#d-plots" title="Permalink to this headline">#</a></h2>
+<h2><span class="section-number">2.3.4. </span>5. 2D plots<a class="headerlink" href="#d-plots" title="Permalink to this heading">#</a></h2>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">matplotlib.pyplot</span> <span class="k">as</span> <span class="nn">plt</span>
@@ -816,7 +820,7 @@ document.write(`
 </div>
 </section>
 <section id="d-line-plots">
-<h2><span class="section-number">2.3.5. </span>6. 3D line plots<a class="headerlink" href="#d-line-plots" title="Permalink to this headline">#</a></h2>
+<h2><span class="section-number">2.3.5. </span>6. 3D line plots<a class="headerlink" href="#d-line-plots" title="Permalink to this heading">#</a></h2>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="k">def</span> <span class="nf">pos</span><span class="p">(</span><span class="n">t</span><span class="p">):</span>
@@ -851,7 +855,7 @@ document.write(`
 </div>
 </section>
 <section id="d-surface-plot">
-<h2><span class="section-number">2.3.6. </span>7. 3D surface plot<a class="headerlink" href="#d-surface-plot" title="Permalink to this headline">#</a></h2>
+<h2><span class="section-number">2.3.6. </span>7. 3D surface plot<a class="headerlink" href="#d-surface-plot" title="Permalink to this heading">#</a></h2>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">matplotlib.pyplot</span> <span class="k">as</span> <span class="nn">plt</span>

@@ -12,6 +12,7 @@ kernelspec:
 ---
 
 # [SciPY](https://docs.scipy.org/doc/scipy/index.html)
+> last modified: {sub-ref}`today`
 
 > SciPy is a collection of **mathematical algorithms and convenience functions** built on the NumPy extension of Python. - scippy doc
 

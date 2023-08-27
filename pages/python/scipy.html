@@ -7,7 +7,7 @@
 
   <head>
     <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.18.1: http://docutils.sourceforge.net/" />
 
     <title>2.5. SciPY &#8212; My note</title>
   
@@ -44,6 +44,7 @@
     <script data-url_root="../../" id="documentation_options" src="../../_static/documentation_options.js"></script>
     <script src="../../_static/jquery.js"></script>
     <script src="../../_static/underscore.js"></script>
+    <script src="../../_static/_sphinx_javascript_frameworks_compat.js"></script>
     <script src="../../_static/doctools.js"></script>
     <script src="../../_static/clipboard.min.js"></script>
     <script src="../../_static/copybutton.js"></script>
@@ -316,7 +317,7 @@ const thebe_selector_output = ".output, .cell_output"
       
       
       
-      <li><a href="https://github.com/kkensuke/myjb/edit/main//pages/python/scipy.md" target="_blank"
+      <li><a href="https://github.com/kkensuke/myjb/edit/main/pages/python/scipy.md" target="_blank"
    class="btn btn-sm btn-source-edit-button dropdown-item"
    title="Suggest edit"
    data-bs-placement="left" data-bs-toggle="tooltip"
@@ -482,7 +483,10 @@ document.write(`
                 <article class="bd-article" role="main">
                   
   <section class="tex2jax_ignore mathjax_ignore" id="scipy">
-<h1><span class="section-number">2.5. </span><a class="reference external" href="https://docs.scipy.org/doc/scipy/index.html">SciPY</a><a class="headerlink" href="#scipy" title="Permalink to this headline">#</a></h1>
+<h1><span class="section-number">2.5. </span><a class="reference external" href="https://docs.scipy.org/doc/scipy/index.html">SciPY</a><a class="headerlink" href="#scipy" title="Permalink to this heading">#</a></h1>
+<blockquote>
+<div><p>last modified: Aug 27, 2023</p>
+</div></blockquote>
 <blockquote>
 <div><p>SciPy is a collection of <strong>mathematical algorithms and convenience functions</strong> built on the NumPy extension of Python. - scippy doc</p>
 </div></blockquote>
@@ -499,9 +503,9 @@ document.write(`
 </div>
 </div>
 <section id="differentiation">
-<h2><span class="section-number">2.5.1. </span>Differentiation<a class="headerlink" href="#differentiation" title="Permalink to this headline">#</a></h2>
+<h2><span class="section-number">2.5.1. </span>Differentiation<a class="headerlink" href="#differentiation" title="Permalink to this heading">#</a></h2>
 <section id="scipy-integrate-solve-ivp">
-<h3>scipy.integrate.solve_ivp<a class="headerlink" href="#scipy-integrate-solve-ivp" title="Permalink to this headline">#</a></h3>
+<h3>scipy.integrate.solve_ivp<a class="headerlink" href="#scipy-integrate-solve-ivp" title="Permalink to this heading">#</a></h3>
 <p>Solve an <strong>initial value problem</strong> for a system of ODEs.</p>
 <div class="math notranslate nohighlight">
 \[ \frac{dy}{dt} = f(t, y), \quad y(t_0) = y_0 \]</div>
@@ -545,9 +549,9 @@ document.write(`
 </section>
 <hr class="docutils" />
 <section id="integration">
-<h2><span class="section-number">2.5.2. </span>Integration<a class="headerlink" href="#integration" title="Permalink to this headline">#</a></h2>
+<h2><span class="section-number">2.5.2. </span>Integration<a class="headerlink" href="#integration" title="Permalink to this heading">#</a></h2>
 <section id="scipy-integrate-quad">
-<h3>scipy.integrate.quad<a class="headerlink" href="#scipy-integrate-quad" title="Permalink to this headline">#</a></h3>
+<h3>scipy.integrate.quad<a class="headerlink" href="#scipy-integrate-quad" title="Permalink to this heading">#</a></h3>
 <p>Compute a definite integral.</p>
 <blockquote>
 <div><div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">scipy</span><span class="o">.</span><span class="n">integrate</span><span class="o">.</span><span class="n">quad</span><span class="p">(</span><span class="n">func</span><span class="p">,</span> <span class="n">a</span><span class="p">,</span> <span class="n">b</span><span class="p">,</span> <span class="n">args</span><span class="o">=</span><span class="p">(),</span> <span class="n">full_output</span><span class="o">=</span><span class="mi">0</span><span class="p">,</span> <span class="n">epsabs</span><span class="o">=</span><span class="mf">1.49e-08</span><span class="p">,</span> <span class="n">epsrel</span><span class="o">=</span><span class="mf">1.49e-08</span><span class="p">,</span>\
@@ -584,9 +588,9 @@ document.write(`
 </section>
 <hr class="docutils" />
 <section id="root-finding">
-<h2><span class="section-number">2.5.3. </span>Root finding<a class="headerlink" href="#root-finding" title="Permalink to this headline">#</a></h2>
+<h2><span class="section-number">2.5.3. </span>Root finding<a class="headerlink" href="#root-finding" title="Permalink to this heading">#</a></h2>
 <section id="scipy-optimize-root-scalar">
-<h3>scipy.optimize.root_scalar<a class="headerlink" href="#scipy-optimize-root-scalar" title="Permalink to this headline">#</a></h3>
+<h3>scipy.optimize.root_scalar<a class="headerlink" href="#scipy-optimize-root-scalar" title="Permalink to this heading">#</a></h3>
 <p>Find a root of a scalar function.</p>
 <blockquote>
 <div><div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">scipy</span><span class="o">.</span><span class="n">optimize</span><span class="o">.</span><span class="n">root_scalar</span><span class="p">(</span><span class="n">f</span><span class="p">,</span> <span class="n">args</span><span class="o">=</span><span class="p">(),</span> <span class="n">method</span><span class="o">=</span><span class="kc">None</span><span class="p">,</span> <span class="n">bracket</span><span class="o">=</span><span class="kc">None</span><span class="p">,</span> <span class="n">fprime</span><span class="o">=</span><span class="kc">None</span><span class="p">,</span> <span class="n">fprime2</span><span class="o">=</span><span class="kc">None</span><span class="p">,</span>\
@@ -628,7 +632,7 @@ analytical result:
 </section>
 <hr class="docutils" />
 <section id="scipy-optimize-root">
-<h3>scipy.optimize.root<a class="headerlink" href="#scipy-optimize-root" title="Permalink to this headline">#</a></h3>
+<h3>scipy.optimize.root<a class="headerlink" href="#scipy-optimize-root" title="Permalink to this heading">#</a></h3>
 <p>Find a root of a vector function.</p>
 <blockquote>
 <div><div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">scipy</span><span class="o">.</span><span class="n">optimize</span><span class="o">.</span><span class="n">root</span><span class="p">(</span><span class="n">func</span><span class="p">,</span> <span class="n">x0</span><span class="p">,</span> <span class="n">args</span><span class="o">=</span><span class="p">(),</span> <span class="n">method</span><span class="o">=</span><span class="s1">&#39;hybr&#39;</span><span class="p">,</span> <span class="n">jac</span><span class="o">=</span><span class="kc">None</span><span class="p">,</span> <span class="n">tol</span><span class="o">=</span><span class="kc">None</span><span class="p">,</span>
@@ -665,7 +669,7 @@ analytical result:
 </section>
 <hr class="docutils" />
 <section id="scipy-optimize-minimize">
-<h3>scipy.optimize.minimize<a class="headerlink" href="#scipy-optimize-minimize" title="Permalink to this headline">#</a></h3>
+<h3>scipy.optimize.minimize<a class="headerlink" href="#scipy-optimize-minimize" title="Permalink to this heading">#</a></h3>
 <p>Local (multivariate) optimization</p>
 <blockquote>
 <div><div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">scipy</span><span class="o">.</span><span class="n">optimize</span><span class="o">.</span><span class="n">minimize</span><span class="p">(</span><span class="n">fun</span><span class="p">,</span> <span class="n">x0</span><span class="p">,</span> <span class="n">args</span><span class="o">=</span><span class="p">(),</span> <span class="n">method</span><span class="o">=</span><span class="kc">None</span><span class="p">,</span> <span class="n">jac</span><span class="o">=</span><span class="kc">None</span><span class="p">,</span> <span class="n">hess</span><span class="o">=</span><span class="kc">None</span><span class="p">,</span>\
@@ -702,7 +706,7 @@ numerical result:  [0.9999993  0.99999854]
 </section>
 <hr class="docutils" />
 <section id="scipy-optimize-least-squares">
-<h3>scipy.optimize.least_squares<a class="headerlink" href="#scipy-optimize-least-squares" title="Permalink to this headline">#</a></h3>
+<h3>scipy.optimize.least_squares<a class="headerlink" href="#scipy-optimize-least-squares" title="Permalink to this heading">#</a></h3>
 <p>Least-squares</p>
 <blockquote>
 <div><div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">scipy</span><span class="o">.</span><span class="n">optimize</span><span class="o">.</span><span class="n">least_squares</span><span class="p">(</span><span class="n">fun</span><span class="p">,</span> <span class="n">x0</span><span class="p">,</span> <span class="n">jac</span><span class="o">=</span><span class="s1">&#39;2-point&#39;</span><span class="p">,</span> <span class="n">bounds</span><span class="o">=</span><span class="p">(</span><span class="o">-</span> <span class="n">inf</span><span class="p">,</span> <span class="n">inf</span><span class="p">),</span> <span class="n">method</span><span class="o">=</span><span class="s1">&#39;trf&#39;</span><span class="p">,</span> <span class="n">ftol</span><span class="o">=</span><span class="mf">1e-08</span><span class="p">,</span>\

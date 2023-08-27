@@ -7,7 +7,7 @@
 
   <head>
     <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.18.1: http://docutils.sourceforge.net/" />
 
     <title>3.1. Naming Conventions &#8212; My note</title>
   
@@ -44,6 +44,7 @@
     <script data-url_root="../../" id="documentation_options" src="../../_static/documentation_options.js"></script>
     <script src="../../_static/jquery.js"></script>
     <script src="../../_static/underscore.js"></script>
+    <script src="../../_static/_sphinx_javascript_frameworks_compat.js"></script>
     <script src="../../_static/doctools.js"></script>
     <script src="../../_static/clipboard.min.js"></script>
     <script src="../../_static/copybutton.js"></script>
@@ -314,7 +315,7 @@ const thebe_selector_output = ".output, .cell_output"
       
       
       
-      <li><a href="https://github.com/kkensuke/myjb/edit/main//pages/coding-rules/naming.md" target="_blank"
+      <li><a href="https://github.com/kkensuke/myjb/edit/main/pages/coding-rules/naming.md" target="_blank"
    class="btn btn-sm btn-source-edit-button dropdown-item"
    title="Suggest edit"
    data-bs-placement="left" data-bs-toggle="tooltip"
@@ -477,30 +478,33 @@ document.write(`
                 <article class="bd-article" role="main">
                   
   <section class="tex2jax_ignore mathjax_ignore" id="naming-conventions">
-<h1><span class="section-number">3.1. </span>Naming Conventions<a class="headerlink" href="#naming-conventions" title="Permalink to this headline">#</a></h1>
+<h1><span class="section-number">3.1. </span>Naming Conventions<a class="headerlink" href="#naming-conventions" title="Permalink to this heading">#</a></h1>
+<blockquote>
+<div><p>last modified: Aug 27, 2023</p>
+</div></blockquote>
 <section id="naming-conventions-in-python">
-<h2><span class="section-number">3.1.1. </span>Naming Conventions in Python<a class="headerlink" href="#naming-conventions-in-python" title="Permalink to this headline">#</a></h2>
+<h2><span class="section-number">3.1.1. </span>Naming Conventions in Python<a class="headerlink" href="#naming-conventions-in-python" title="Permalink to this heading">#</a></h2>
 <p><a class="reference external" href="https://peps.python.org/pep-0008/">PEP 8 – Style Guide for Python Code | peps.python.org</a></p>
 <section id="package">
-<h3>Package<a class="headerlink" href="#package" title="Permalink to this headline">#</a></h3>
+<h3>Package<a class="headerlink" href="#package" title="Permalink to this heading">#</a></h3>
 <ul class="simple">
 <li><p>Python packages should have short, all-lowercase names, and the use of underscores is discouraged. Examples: <code class="docutils literal notranslate"><span class="pre">mypackage</span></code></p></li>
 </ul>
 </section>
 <section id="module">
-<h3>Module<a class="headerlink" href="#module" title="Permalink to this headline">#</a></h3>
+<h3>Module<a class="headerlink" href="#module" title="Permalink to this heading">#</a></h3>
 <ul class="simple">
 <li><p>Modules should have short, all-lowercase names. Underscores can be used in the module name if it improves readability. Example: <code class="docutils literal notranslate"><span class="pre">module_name</span></code></p></li>
 </ul>
 </section>
 <section id="constant">
-<h3>Constant<a class="headerlink" href="#constant" title="Permalink to this headline">#</a></h3>
+<h3>Constant<a class="headerlink" href="#constant" title="Permalink to this heading">#</a></h3>
 <ul class="simple">
 <li><p>Constants are usually defined on a module level and written in all capital letters with underscores separating words. Examples: <code class="docutils literal notranslate"><span class="pre">MAX_OVERFLOW</span></code></p></li>
 </ul>
 </section>
 <section id="variable">
-<h3>Variable<a class="headerlink" href="#variable" title="Permalink to this headline">#</a></h3>
+<h3>Variable<a class="headerlink" href="#variable" title="Permalink to this heading">#</a></h3>
 <ul class="simple">
 <li><p>Variable names should be lowercase, with underscores for readability.</p></li>
 <li><p>Variable names should be short but descriptive. Single-character variable names and meaningless variable names should be avoided. Examples: <code class="docutils literal notranslate"><span class="pre">player_name</span></code>, <code class="docutils literal notranslate"><span class="pre">score</span></code>, etc.</p></li>
@@ -508,19 +512,19 @@ document.write(`
 </ul>
 </section>
 <section id="function">
-<h3>Function<a class="headerlink" href="#function" title="Permalink to this headline">#</a></h3>
+<h3>Function<a class="headerlink" href="#function" title="Permalink to this heading">#</a></h3>
 <ul class="simple">
 <li><p>Function names should be lowercase, with underscores for readability. They should be in the form of <code class="docutils literal notranslate"><span class="pre">verb</span> <span class="pre">+</span> <span class="pre">noun</span></code>, but either can be omitted if it is obvious from the context. Examples: <code class="docutils literal notranslate"><span class="pre">get_score</span></code>, <code class="docutils literal notranslate"><span class="pre">print_message</span></code></p></li>
 </ul>
 </section>
 <section id="class">
-<h3>Class<a class="headerlink" href="#class" title="Permalink to this headline">#</a></h3>
+<h3>Class<a class="headerlink" href="#class" title="Permalink to this heading">#</a></h3>
 <ul class="simple">
 <li><p>Class names should normally use the CapWords convention. Examples: <code class="docutils literal notranslate"><span class="pre">MyClass</span></code></p></li>
 </ul>
 </section>
 <section id="method-and-variable">
-<h3>Method and Variable<a class="headerlink" href="#method-and-variable" title="Permalink to this headline">#</a></h3>
+<h3>Method and Variable<a class="headerlink" href="#method-and-variable" title="Permalink to this heading">#</a></h3>
 <ul class="simple">
 <li><p>Use the function and variable naming rules</p></li>
 <li><p>Use one leading underscore only for non-public methods and instance variables.</p></li>
@@ -528,11 +532,11 @@ document.write(`
 </section>
 </section>
 <section id="naming-conventions-in-other-programming-languages">
-<h2><span class="section-number">3.1.2. </span>Naming conventions in other programming languages<a class="headerlink" href="#naming-conventions-in-other-programming-languages" title="Permalink to this headline">#</a></h2>
+<h2><span class="section-number">3.1.2. </span>Naming conventions in other programming languages<a class="headerlink" href="#naming-conventions-in-other-programming-languages" title="Permalink to this heading">#</a></h2>
 <p>Unlike Python, <code class="docutils literal notranslate"><span class="pre">camelCase</span></code> is used for naming variables and functions in other programming languages. Examples: <code class="docutils literal notranslate"><span class="pre">playerName</span></code>, <code class="docutils literal notranslate"><span class="pre">getScore</span></code>, <code class="docutils literal notranslate"><span class="pre">printMessage</span></code></p>
 </section>
 <section id="abbreviations">
-<h2><span class="section-number">3.1.3. </span>Abbreviations<a class="headerlink" href="#abbreviations" title="Permalink to this headline">#</a></h2>
+<h2><span class="section-number">3.1.3. </span>Abbreviations<a class="headerlink" href="#abbreviations" title="Permalink to this heading">#</a></h2>
 <p>🚫 Don’t use abbreviations unless they are widely used. Recommended abbreviations are given <a class="reference external" href="https://github.com/abbrcode/abbreviations-in-code">here</a>.</p>
 </section>
 </section>

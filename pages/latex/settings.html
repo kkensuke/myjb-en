@@ -7,7 +7,7 @@
 
   <head>
     <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.18.1: http://docutils.sourceforge.net/" />
 
     <title>4.4. Latex settings in VScode &#8212; My note</title>
   
@@ -44,6 +44,7 @@
     <script data-url_root="../../" id="documentation_options" src="../../_static/documentation_options.js"></script>
     <script src="../../_static/jquery.js"></script>
     <script src="../../_static/underscore.js"></script>
+    <script src="../../_static/_sphinx_javascript_frameworks_compat.js"></script>
     <script src="../../_static/doctools.js"></script>
     <script src="../../_static/clipboard.min.js"></script>
     <script src="../../_static/copybutton.js"></script>
@@ -316,7 +317,7 @@ const thebe_selector_output = ".output, .cell_output"
       
       
       
-      <li><a href="https://github.com/kkensuke/myjb/edit/main//pages/latex/settings.md" target="_blank"
+      <li><a href="https://github.com/kkensuke/myjb/edit/main/pages/latex/settings.md" target="_blank"
    class="btn btn-sm btn-source-edit-button dropdown-item"
    title="Suggest edit"
    data-bs-placement="left" data-bs-toggle="tooltip"
@@ -470,110 +471,113 @@ document.write(`
                 <article class="bd-article" role="main">
                   
   <section class="tex2jax_ignore mathjax_ignore" id="latex-settings-in-vscode">
-<h1><span class="section-number">4.4. </span>Latex settings in VScode<a class="headerlink" href="#latex-settings-in-vscode" title="Permalink to this headline">#</a></h1>
+<h1><span class="section-number">4.4. </span>Latex settings in VScode<a class="headerlink" href="#latex-settings-in-vscode" title="Permalink to this heading">#</a></h1>
+<blockquote>
+<div><p>last modified: Aug 27, 2023</p>
+</div></blockquote>
 <section id="install-texlive-on-macos">
-<h2><span class="section-number">4.4.1. </span>Install TexLive on macOS<a class="headerlink" href="#install-texlive-on-macos" title="Permalink to this headline">#</a></h2>
+<h2><span class="section-number">4.4.1. </span>Install TexLive on macOS<a class="headerlink" href="#install-texlive-on-macos" title="Permalink to this heading">#</a></h2>
 <p>Download <code class="docutils literal notranslate"><span class="pre">install-tl-unx.tar.gz</span></code></p>
-<div class="highlight-zsh notranslate"><div class="highlight"><pre><span></span>$ curl -OL http://mirror.ctan.org/systems/texlive/tlnet/install-tl-unx.tar.gz
+<div class="highlight-zsh notranslate"><div class="highlight"><pre><span></span>$<span class="w"> </span>curl<span class="w"> </span>-OL<span class="w"> </span>http://mirror.ctan.org/systems/texlive/tlnet/install-tl-unx.tar.gz
 </pre></div>
 </div>
 <p>Open <code class="docutils literal notranslate"><span class="pre">install-tl-unx.tar.gz</span></code></p>
-<div class="highlight-zsh notranslate"><div class="highlight"><pre><span></span>$ tar xvf install-tl-unx.tar.gz
+<div class="highlight-zsh notranslate"><div class="highlight"><pre><span></span>$<span class="w"> </span>tar<span class="w"> </span>xvf<span class="w"> </span>install-tl-unx.tar.gz
 </pre></div>
 </div>
 <p>Change directory to the installer:</p>
-<div class="highlight-zsh notranslate"><div class="highlight"><pre><span></span>$ <span class="nb">cd</span> install-tl-2*
+<div class="highlight-zsh notranslate"><div class="highlight"><pre><span></span>$<span class="w"> </span><span class="nb">cd</span><span class="w"> </span>install-tl-2*
 </pre></div>
 </div>
 <p>Install TexLive</p>
-<div class="highlight-zsh notranslate"><div class="highlight"><pre><span></span>$ sudo ./install-tl -no-gui -repository http://mirror.ctan.org/systems/texlive/tlnet/
+<div class="highlight-zsh notranslate"><div class="highlight"><pre><span></span>$<span class="w"> </span>sudo<span class="w"> </span>./install-tl<span class="w"> </span>-no-gui<span class="w"> </span>-repository<span class="w"> </span>http://mirror.ctan.org/systems/texlive/tlnet/
 </pre></div>
 </div>
 <p>To start installation, type <code class="docutils literal notranslate"><span class="pre">I</span></code> and enter.</p>
 <div class="highlight-zsh notranslate"><div class="highlight"><pre><span></span>Actions:
- &lt;I&gt; start installation to hard disk
- &lt;H&gt; <span class="nb">help</span>
- &lt;Q&gt; quit
-Enter command: I
+<span class="w"> </span>&lt;I&gt;<span class="w"> </span>start<span class="w"> </span>installation<span class="w"> </span>to<span class="w"> </span>hard<span class="w"> </span>disk
+<span class="w"> </span>&lt;H&gt;<span class="w"> </span><span class="nb">help</span>
+<span class="w"> </span>&lt;Q&gt;<span class="w"> </span>quit
+Enter<span class="w"> </span>command:<span class="w"> </span>I
 </pre></div>
 </div>
 <p>Add a symbolic link to <code class="docutils literal notranslate"><span class="pre">/usr/local/bin</span></code></p>
-<div class="highlight-zsh notranslate"><div class="highlight"><pre><span></span>$ sudo /usr/local/texlive/????/bin/*/tlmgr path add
+<div class="highlight-zsh notranslate"><div class="highlight"><pre><span></span>$<span class="w"> </span>sudo<span class="w"> </span>/usr/local/texlive/????/bin/*/tlmgr<span class="w"> </span>path<span class="w"> </span>add
 </pre></div>
 </div>
 </section>
 <section id="setting-in-vscode">
-<h2><span class="section-number">4.4.2. </span>Setting in VScode<a class="headerlink" href="#setting-in-vscode" title="Permalink to this headline">#</a></h2>
+<h2><span class="section-number">4.4.2. </span>Setting in VScode<a class="headerlink" href="#setting-in-vscode" title="Permalink to this heading">#</a></h2>
 <ol class="arabic">
 <li><p>Install <a class="reference external" href="https://marketplace.visualstudio.com/items?itemName=James-Yu.latex-workshop"><code class="docutils literal notranslate"><span class="pre">LaTeX</span> <span class="pre">Workshop</span></code></a> extension.</p></li>
 <li><p>Open <code class="docutils literal notranslate"><span class="pre">settings.json</span></code> in VScode.
 In macOS, you can open it by typing the following command in the terminal.</p>
-<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>code ~/Library/Application<span class="se">\ </span>Support/Code/User/settings.json
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>code<span class="w"> </span>~/Library/Application<span class="se">\ </span>Support/Code/User/settings.json
 </pre></div>
 </div>
 </li>
 <li><p>Add the following code to <code class="docutils literal notranslate"><span class="pre">settings.json</span></code>. You have two recipes, <code class="docutils literal notranslate"><span class="pre">ptex2pdf*3</span></code> and <code class="docutils literal notranslate"><span class="pre">ptex2pdf</span> <span class="pre">-&gt;</span> <span class="pre">pbibtex</span> <span class="pre">-&gt;</span> <span class="pre">ptex2pdf*2</span></code>. The former is to compile <code class="docutils literal notranslate"><span class="pre">.tex</span></code> files without <code class="docutils literal notranslate"><span class="pre">.bib</span></code>, and the latter is for <code class="docutils literal notranslate"><span class="pre">.tex</span></code> files with <code class="docutils literal notranslate"><span class="pre">.bib</span></code>. Please refer to <a class="reference external" href="https://github.com/James-Yu/LaTeX-Workshop/wiki/Compile#building-the-document">this page</a> for more details.</p>
-<div class="highlight-json notranslate"><div class="highlight"><pre><span></span><span class="p">{</span><span class="w"></span>
-<span class="w">    </span><span class="c1">// latex</span><span class="w"></span>
-<span class="w">    </span><span class="nt">&quot;latex-workshop.latex.tools&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="w"></span>
-<span class="w">        </span><span class="p">{</span><span class="w"></span>
-<span class="w">            </span><span class="nt">&quot;name&quot;</span><span class="p">:</span><span class="s2">&quot;ptex2pdf&quot;</span><span class="p">,</span><span class="w"></span>
-<span class="w">            </span><span class="nt">&quot;command&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;ptex2pdf&quot;</span><span class="p">,</span><span class="w"></span>
-<span class="w">            </span><span class="nt">&quot;args&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="w"></span>
-<span class="w">                </span><span class="s2">&quot;-l&quot;</span><span class="p">,</span><span class="w"></span>
-<span class="w">                </span><span class="s2">&quot;-ot&quot;</span><span class="p">,</span><span class="w"></span>
-<span class="w">                </span><span class="s2">&quot;-interaction=nonstopmode&quot;</span><span class="p">,</span><span class="w"></span>
-<span class="w">                </span><span class="c1">// kanji for Japanese</span><span class="w"></span>
-<span class="w">                </span><span class="s2">&quot;-kanji=utf8 -synctex=1&quot;</span><span class="p">,</span><span class="w"></span>
-<span class="w">                </span><span class="s2">&quot;%DOC%&quot;</span><span class="w"></span>
-<span class="w">            </span><span class="p">]</span><span class="w"></span>
-<span class="w">        </span><span class="p">},</span><span class="w"></span>
-<span class="w">        </span><span class="p">{</span><span class="w"></span>
-<span class="w">            </span><span class="nt">&quot;name&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;pbibtex&quot;</span><span class="p">,</span><span class="w"></span>
-<span class="w">            </span><span class="nt">&quot;command&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;pbibtex&quot;</span><span class="p">,</span><span class="w"></span>
-<span class="w">            </span><span class="nt">&quot;args&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="w"></span>
-<span class="w">                </span><span class="s2">&quot;-kanji=utf8&quot;</span><span class="p">,</span><span class="w"></span>
-<span class="w">                </span><span class="s2">&quot;%DOCFILE%&quot;</span><span class="w"></span>
-<span class="w">            </span><span class="p">]</span><span class="w"></span>
-<span class="w">        </span><span class="p">}</span><span class="w"></span>
-<span class="w">    </span><span class="p">],</span><span class="w"></span>
-<span class="w">    </span><span class="nt">&quot;latex-workshop.latex.recipes&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="w"></span>
-<span class="w">        </span><span class="p">{</span><span class="w"></span>
-<span class="w">            </span><span class="nt">&quot;name&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;ptex2pdf*3&quot;</span><span class="p">,</span><span class="w"></span>
-<span class="w">            </span><span class="nt">&quot;tools&quot;</span><span class="p">:[</span><span class="w"></span>
-<span class="w">                </span><span class="s2">&quot;ptex2pdf&quot;</span><span class="p">,</span><span class="w"></span>
-<span class="w">                </span><span class="s2">&quot;ptex2pdf&quot;</span><span class="p">,</span><span class="w"></span>
-<span class="w">                </span><span class="s2">&quot;ptex2pdf&quot;</span><span class="p">,</span><span class="w"></span>
-<span class="w">            </span><span class="p">]</span><span class="w"></span>
-<span class="w">        </span><span class="p">},</span><span class="w"></span>
-<span class="w">        </span><span class="p">{</span><span class="w"></span>
-<span class="w">            </span><span class="nt">&quot;name&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;ptex2pdf -&gt; pbibtex -&gt; ptex2pdf*3&quot;</span><span class="p">,</span><span class="w"></span>
-<span class="w">            </span><span class="nt">&quot;tools&quot;</span><span class="p">:[</span><span class="w"></span>
-<span class="w">                </span><span class="s2">&quot;ptex2pdf&quot;</span><span class="p">,</span><span class="w"></span>
-<span class="w">                </span><span class="s2">&quot;pbibtex&quot;</span><span class="p">,</span><span class="w"></span>
-<span class="w">                </span><span class="s2">&quot;ptex2pdf&quot;</span><span class="p">,</span><span class="w"></span>
-<span class="w">                </span><span class="s2">&quot;ptex2pdf&quot;</span><span class="p">,</span><span class="w"></span>
-<span class="w">            </span><span class="p">]</span><span class="w"></span>
-<span class="w">        </span><span class="p">},</span><span class="w"></span>
-<span class="w">    </span><span class="p">],</span><span class="w"></span>
-<span class="w">    </span><span class="nt">&quot;latex-workshop.latex.clean.fileTypes&quot;</span><span class="p">:</span><span class="w"></span>
-<span class="w">    </span><span class="p">[</span><span class="w"></span>
-<span class="w">        </span><span class="s2">&quot;*.bbl&quot;</span><span class="p">,</span><span class="w"> </span><span class="s2">&quot;*.blg&quot;</span><span class="p">,</span><span class="w"> </span><span class="s2">&quot;*.idx&quot;</span><span class="p">,</span><span class="w"> </span><span class="s2">&quot;*.ind&quot;</span><span class="p">,</span><span class="w"> </span><span class="s2">&quot;*.lof&quot;</span><span class="p">,</span><span class="w"> </span><span class="s2">&quot;*.lot&quot;</span><span class="p">,</span><span class="w"> </span><span class="s2">&quot;*.out&quot;</span><span class="p">,</span><span class="w"> </span><span class="s2">&quot;*.toc&quot;</span><span class="p">,</span><span class="w"> </span><span class="s2">&quot;*.acn&quot;</span><span class="p">,</span><span class="w"> </span><span class="s2">&quot;*.acr&quot;</span><span class="p">,</span><span class="w"> </span><span class="s2">&quot;*.alg&quot;</span><span class="p">,</span><span class="w"></span>
-<span class="w">        </span><span class="s2">&quot;*.glg&quot;</span><span class="p">,</span><span class="w"> </span><span class="s2">&quot;*.glo&quot;</span><span class="p">,</span><span class="w"> </span><span class="s2">&quot;*.gls&quot;</span><span class="p">,</span><span class="w"> </span><span class="s2">&quot;*.ist&quot;</span><span class="p">,</span><span class="w"> </span><span class="s2">&quot;*.fls&quot;</span><span class="p">,</span><span class="w"> </span><span class="s2">&quot;*.log&quot;</span><span class="p">,</span><span class="w"> </span><span class="s2">&quot;*.fdb_latexmk&quot;</span><span class="p">,</span><span class="w"> </span><span class="s2">&quot;*.synctex.gz&quot;</span><span class="p">,</span><span class="w"></span>
-<span class="w">        </span><span class="s2">&quot;_minted*&quot;</span><span class="p">,</span><span class="w"> </span><span class="s2">&quot;*.nav&quot;</span><span class="p">,</span><span class="w"> </span><span class="s2">&quot;*.snm&quot;</span><span class="p">,</span><span class="w"> </span><span class="s2">&quot;*.vrb&quot;</span><span class="p">,</span><span class="w"></span>
-<span class="w">    </span><span class="p">],</span><span class="w"></span>
-<span class="w">    </span><span class="nt">&quot;latex-workshop.latex.autoClean.run&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;onBuilt&quot;</span><span class="p">,</span><span class="w"></span>
-<span class="w">    </span><span class="nt">&quot;latex-workshop.latex.autoBuild.run&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;onFileChange&quot;</span><span class="p">,</span><span class="w"></span>
-<span class="w">    </span><span class="nt">&quot;latex-workshop.synctex.afterBuild.enabled&quot;</span><span class="p">:</span><span class="w"> </span><span class="kc">true</span><span class="p">,</span><span class="w"></span>
-<span class="w">    </span><span class="nt">&quot;latex-workshop.view.pdf.viewer&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;tab&quot;</span><span class="p">,</span><span class="w"></span>
-<span class="p">}</span><span class="w"></span>
+<div class="highlight-json notranslate"><div class="highlight"><pre><span></span><span class="p">{</span>
+<span class="w">    </span><span class="c1">// latex</span>
+<span class="w">    </span><span class="nt">&quot;latex-workshop.latex.tools&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">[</span>
+<span class="w">        </span><span class="p">{</span>
+<span class="w">            </span><span class="nt">&quot;name&quot;</span><span class="p">:</span><span class="s2">&quot;ptex2pdf&quot;</span><span class="p">,</span>
+<span class="w">            </span><span class="nt">&quot;command&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;ptex2pdf&quot;</span><span class="p">,</span>
+<span class="w">            </span><span class="nt">&quot;args&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">[</span>
+<span class="w">                </span><span class="s2">&quot;-l&quot;</span><span class="p">,</span>
+<span class="w">                </span><span class="s2">&quot;-ot&quot;</span><span class="p">,</span>
+<span class="w">                </span><span class="s2">&quot;-interaction=nonstopmode&quot;</span><span class="p">,</span>
+<span class="w">                </span><span class="c1">// kanji for Japanese</span>
+<span class="w">                </span><span class="s2">&quot;-kanji=utf8 -synctex=1&quot;</span><span class="p">,</span>
+<span class="w">                </span><span class="s2">&quot;%DOC%&quot;</span>
+<span class="w">            </span><span class="p">]</span>
+<span class="w">        </span><span class="p">},</span>
+<span class="w">        </span><span class="p">{</span>
+<span class="w">            </span><span class="nt">&quot;name&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;pbibtex&quot;</span><span class="p">,</span>
+<span class="w">            </span><span class="nt">&quot;command&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;pbibtex&quot;</span><span class="p">,</span>
+<span class="w">            </span><span class="nt">&quot;args&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">[</span>
+<span class="w">                </span><span class="s2">&quot;-kanji=utf8&quot;</span><span class="p">,</span>
+<span class="w">                </span><span class="s2">&quot;%DOCFILE%&quot;</span>
+<span class="w">            </span><span class="p">]</span>
+<span class="w">        </span><span class="p">}</span>
+<span class="w">    </span><span class="p">],</span>
+<span class="w">    </span><span class="nt">&quot;latex-workshop.latex.recipes&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">[</span>
+<span class="w">        </span><span class="p">{</span>
+<span class="w">            </span><span class="nt">&quot;name&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;ptex2pdf*3&quot;</span><span class="p">,</span>
+<span class="w">            </span><span class="nt">&quot;tools&quot;</span><span class="p">:[</span>
+<span class="w">                </span><span class="s2">&quot;ptex2pdf&quot;</span><span class="p">,</span>
+<span class="w">                </span><span class="s2">&quot;ptex2pdf&quot;</span><span class="p">,</span>
+<span class="w">                </span><span class="s2">&quot;ptex2pdf&quot;</span><span class="p">,</span>
+<span class="w">            </span><span class="p">]</span>
+<span class="w">        </span><span class="p">},</span>
+<span class="w">        </span><span class="p">{</span>
+<span class="w">            </span><span class="nt">&quot;name&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;ptex2pdf -&gt; pbibtex -&gt; ptex2pdf*3&quot;</span><span class="p">,</span>
+<span class="w">            </span><span class="nt">&quot;tools&quot;</span><span class="p">:[</span>
+<span class="w">                </span><span class="s2">&quot;ptex2pdf&quot;</span><span class="p">,</span>
+<span class="w">                </span><span class="s2">&quot;pbibtex&quot;</span><span class="p">,</span>
+<span class="w">                </span><span class="s2">&quot;ptex2pdf&quot;</span><span class="p">,</span>
+<span class="w">                </span><span class="s2">&quot;ptex2pdf&quot;</span><span class="p">,</span>
+<span class="w">            </span><span class="p">]</span>
+<span class="w">        </span><span class="p">},</span>
+<span class="w">    </span><span class="p">],</span>
+<span class="w">    </span><span class="nt">&quot;latex-workshop.latex.clean.fileTypes&quot;</span><span class="p">:</span>
+<span class="w">    </span><span class="p">[</span>
+<span class="w">        </span><span class="s2">&quot;*.bbl&quot;</span><span class="p">,</span><span class="w"> </span><span class="s2">&quot;*.blg&quot;</span><span class="p">,</span><span class="w"> </span><span class="s2">&quot;*.idx&quot;</span><span class="p">,</span><span class="w"> </span><span class="s2">&quot;*.ind&quot;</span><span class="p">,</span><span class="w"> </span><span class="s2">&quot;*.lof&quot;</span><span class="p">,</span><span class="w"> </span><span class="s2">&quot;*.lot&quot;</span><span class="p">,</span><span class="w"> </span><span class="s2">&quot;*.out&quot;</span><span class="p">,</span><span class="w"> </span><span class="s2">&quot;*.toc&quot;</span><span class="p">,</span><span class="w"> </span><span class="s2">&quot;*.acn&quot;</span><span class="p">,</span><span class="w"> </span><span class="s2">&quot;*.acr&quot;</span><span class="p">,</span><span class="w"> </span><span class="s2">&quot;*.alg&quot;</span><span class="p">,</span>
+<span class="w">        </span><span class="s2">&quot;*.glg&quot;</span><span class="p">,</span><span class="w"> </span><span class="s2">&quot;*.glo&quot;</span><span class="p">,</span><span class="w"> </span><span class="s2">&quot;*.gls&quot;</span><span class="p">,</span><span class="w"> </span><span class="s2">&quot;*.ist&quot;</span><span class="p">,</span><span class="w"> </span><span class="s2">&quot;*.fls&quot;</span><span class="p">,</span><span class="w"> </span><span class="s2">&quot;*.log&quot;</span><span class="p">,</span><span class="w"> </span><span class="s2">&quot;*.fdb_latexmk&quot;</span><span class="p">,</span><span class="w"> </span><span class="s2">&quot;*.synctex.gz&quot;</span><span class="p">,</span>
+<span class="w">        </span><span class="s2">&quot;_minted*&quot;</span><span class="p">,</span><span class="w"> </span><span class="s2">&quot;*.nav&quot;</span><span class="p">,</span><span class="w"> </span><span class="s2">&quot;*.snm&quot;</span><span class="p">,</span><span class="w"> </span><span class="s2">&quot;*.vrb&quot;</span><span class="p">,</span>
+<span class="w">    </span><span class="p">],</span>
+<span class="w">    </span><span class="nt">&quot;latex-workshop.latex.autoClean.run&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;onBuilt&quot;</span><span class="p">,</span>
+<span class="w">    </span><span class="nt">&quot;latex-workshop.latex.autoBuild.run&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;onFileChange&quot;</span><span class="p">,</span>
+<span class="w">    </span><span class="nt">&quot;latex-workshop.synctex.afterBuild.enabled&quot;</span><span class="p">:</span><span class="w"> </span><span class="kc">true</span><span class="p">,</span>
+<span class="w">    </span><span class="nt">&quot;latex-workshop.view.pdf.viewer&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;tab&quot;</span><span class="p">,</span>
+<span class="p">}</span>
 </pre></div>
 </div>
 </li>
 </ol>
 </section>
 <section id="lets-compile-your-latex-file">
-<h2><span class="section-number">4.4.3. </span>Let’s compile your <span class="math notranslate nohighlight">\(\LaTeX\)</span> file!<a class="headerlink" href="#lets-compile-your-latex-file" title="Permalink to this headline">#</a></h2>
+<h2><span class="section-number">4.4.3. </span>Let’s compile your <span class="math notranslate nohighlight">\(\LaTeX\)</span> file!<a class="headerlink" href="#lets-compile-your-latex-file" title="Permalink to this heading">#</a></h2>
 <p>Let’s make a test latex directory. Please download <code class="docutils literal notranslate"><span class="pre">article-template</span></code> from <a class="reference external" href="https://github.com/kkensuke/latex-template">here</a>. Then, open the directory in VScode. You can edit <code class="docutils literal notranslate"><span class="pre">intro.tex</span></code> and compile it by <code class="docutils literal notranslate"><span class="pre">cmd</span> <span class="pre">+</span> <span class="pre">S</span></code> (Mac). Finally, you will get the modified <code class="docutils literal notranslate"><span class="pre">main.pdf</span></code> in the same directory.</p>
 <p>The directory structure is as follows:</p>
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span>article-template

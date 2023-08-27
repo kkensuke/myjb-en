@@ -7,7 +7,7 @@
 
   <head>
     <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.18.1: http://docutils.sourceforge.net/" />
 
     <title>1.3. Alias &#8212; My note</title>
   
@@ -44,6 +44,7 @@
     <script data-url_root="../../" id="documentation_options" src="../../_static/documentation_options.js"></script>
     <script src="../../_static/jquery.js"></script>
     <script src="../../_static/underscore.js"></script>
+    <script src="../../_static/_sphinx_javascript_frameworks_compat.js"></script>
     <script src="../../_static/doctools.js"></script>
     <script src="../../_static/clipboard.min.js"></script>
     <script src="../../_static/copybutton.js"></script>
@@ -314,7 +315,7 @@ const thebe_selector_output = ".output, .cell_output"
       
       
       
-      <li><a href="https://github.com/kkensuke/myjb/edit/main//pages/basic/alias.md" target="_blank"
+      <li><a href="https://github.com/kkensuke/myjb/edit/main/pages/basic/alias.md" target="_blank"
    class="btn btn-sm btn-source-edit-button dropdown-item"
    title="Suggest edit"
    data-bs-placement="left" data-bs-toggle="tooltip"
@@ -497,14 +498,17 @@ document.write(`
                 <article class="bd-article" role="main">
                   
   <section class="tex2jax_ignore mathjax_ignore" id="alias">
-<h1><span class="section-number">1.3. </span>Alias<a class="headerlink" href="#alias" title="Permalink to this headline">#</a></h1>
+<h1><span class="section-number">1.3. </span>Alias<a class="headerlink" href="#alias" title="Permalink to this heading">#</a></h1>
+<blockquote>
+<div><p>last modified: Aug 27, 2023</p>
+</div></blockquote>
 <p>If you are using command line, there must be commands you use frequently.
 Some commands are long and you might think that copying them every time is a waste of time. In such case, you can use <code class="docutils literal notranslate"><span class="pre">alias</span></code> for a command. If you want to use <code class="docutils literal notranslate"><span class="pre">h</span></code> as an alias for <code class="docutils literal notranslate"><span class="pre">cd</span> <span class="pre">~</span></code>, you define <code class="docutils literal notranslate"><span class="pre">alias</span> <span class="pre">h='cd</span> <span class="pre">~'</span></code> in <code class="docutils literal notranslate"><span class="pre">~/.zshrc</span></code> (or <code class="docutils literal notranslate"><span class="pre">~/.bashrc</span></code>). If you can’t find such files in your home directory, you need to make it with <code class="docutils literal notranslate"><span class="pre">touch</span> <span class="pre">~/.zshrc</span></code>.</p>
 <p>If you find some useful aliases below, write them in <code class="docutils literal notranslate"><span class="pre">~/.zshrc</span></code>.</p>
 <section id="basic">
-<h2><span class="section-number">1.3.1. </span>Basic<a class="headerlink" href="#basic" title="Permalink to this headline">#</a></h2>
+<h2><span class="section-number">1.3.1. </span>Basic<a class="headerlink" href="#basic" title="Permalink to this heading">#</a></h2>
 <section id="customize-and-colorize-prompt">
-<h3>Customize and colorize PROMPT<a class="headerlink" href="#customize-and-colorize-prompt" title="Permalink to this headline">#</a></h3>
+<h3>Customize and colorize PROMPT<a class="headerlink" href="#customize-and-colorize-prompt" title="Permalink to this heading">#</a></h3>
 <div class="highlight-bash notranslate"><div class="highlight"><pre><span></span><span class="nv">PS1</span><span class="o">=</span><span class="s2">&quot;%F{082}%n%f %F{051}%~%f %# &quot;</span>
 <span class="nv">RPROMPT</span><span class="o">=</span><span class="s1">&#39;%T&#39;</span>
 </pre></div>
@@ -520,40 +524,40 @@ Some commands are long and you might think that copying them every time is a was
 <p>Read more about Prompt Expansion in this <a class="reference external" href="https://zsh.sourceforge.io/Doc/Release/Prompt-Expansion.html">link</a>.</p>
 </section>
 <section id="put-a-blank-line-before-every-prompt-except-the-first-one">
-<h3>Put a blank line before every prompt except the first one.<a class="headerlink" href="#put-a-blank-line-before-every-prompt-except-the-first-one" title="Permalink to this headline">#</a></h3>
-<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>precmd<span class="o">()</span> <span class="o">{</span> precmd<span class="o">()</span> <span class="o">{</span> <span class="nb">echo</span> <span class="o">}</span> <span class="o">}</span>
+<h3>Put a blank line before every prompt except the first one.<a class="headerlink" href="#put-a-blank-line-before-every-prompt-except-the-first-one" title="Permalink to this heading">#</a></h3>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>precmd<span class="o">()</span><span class="w"> </span><span class="o">{</span><span class="w"> </span>precmd<span class="o">()</span><span class="w"> </span><span class="o">{</span><span class="w"> </span><span class="nb">echo</span><span class="w"> </span><span class="o">}</span><span class="w"> </span><span class="o">}</span>
 </pre></div>
 </div>
 </section>
 <section id="change-directory">
-<h3>change directory<a class="headerlink" href="#change-directory" title="Permalink to this headline">#</a></h3>
-<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>cs<span class="o">()</span> <span class="o">{</span> <span class="nb">cd</span> <span class="nv">$@</span> <span class="o">&amp;&amp;</span> la <span class="o">}</span>
-<span class="nb">alias</span> <span class="nv">cd</span><span class="o">=</span><span class="s1">&#39;cs&#39;</span>
-<span class="nb">alias</span> ..<span class="o">=</span><span class="s1">&#39;cd ..&#39;</span>
-<span class="nb">alias</span> ...<span class="o">=</span><span class="s1">&#39;cd ../..&#39;</span>
-<span class="nb">alias</span> ....<span class="o">=</span><span class="s1">&#39;cd ../../..&#39;</span>
-<span class="nb">alias</span> <span class="nv">cb</span><span class="o">=</span><span class="s1">&#39;cd -&#39;</span>
-<span class="nb">alias</span> <span class="nv">d</span><span class="o">=</span><span class="s1">&#39;cd ~/Desktop&#39;</span>
-<span class="nb">alias</span> <span class="nv">dl</span><span class="o">=</span><span class="s2">&quot;cd ~/Downloads&quot;</span>
-<span class="nb">alias</span> <span class="nv">h</span><span class="o">=</span><span class="s1">&#39;cd ~&#39;</span>
-<span class="nb">alias</span> /<span class="o">=</span><span class="s1">&#39;cd /&#39;</span>
+<h3>change directory<a class="headerlink" href="#change-directory" title="Permalink to this heading">#</a></h3>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>cs<span class="o">()</span><span class="w"> </span><span class="o">{</span><span class="w"> </span><span class="nb">cd</span><span class="w"> </span><span class="nv">$@</span><span class="w"> </span><span class="o">&amp;&amp;</span><span class="w"> </span>la<span class="w"> </span><span class="o">}</span>
+<span class="nb">alias</span><span class="w"> </span><span class="nv">cd</span><span class="o">=</span><span class="s1">&#39;cs&#39;</span>
+<span class="nb">alias</span><span class="w"> </span>..<span class="o">=</span><span class="s1">&#39;cd ..&#39;</span>
+<span class="nb">alias</span><span class="w"> </span>...<span class="o">=</span><span class="s1">&#39;cd ../..&#39;</span>
+<span class="nb">alias</span><span class="w"> </span>....<span class="o">=</span><span class="s1">&#39;cd ../../..&#39;</span>
+<span class="nb">alias</span><span class="w"> </span><span class="nv">cb</span><span class="o">=</span><span class="s1">&#39;cd -&#39;</span>
+<span class="nb">alias</span><span class="w"> </span><span class="nv">d</span><span class="o">=</span><span class="s1">&#39;cd ~/Desktop&#39;</span>
+<span class="nb">alias</span><span class="w"> </span><span class="nv">dl</span><span class="o">=</span><span class="s2">&quot;cd ~/Downloads&quot;</span>
+<span class="nb">alias</span><span class="w"> </span><span class="nv">h</span><span class="o">=</span><span class="s1">&#39;cd ~&#39;</span>
+<span class="nb">alias</span><span class="w"> </span>/<span class="o">=</span><span class="s1">&#39;cd /&#39;</span>
 
 <span class="c1"># Change working directory to the top-most Finder window location.</span>
-cdf<span class="o">()</span> <span class="o">{</span> <span class="nb">cd</span> <span class="s2">&quot;</span><span class="k">$(</span>osascript -e <span class="s1">&#39;tell app &quot;Finder&quot; to POSIX path of (insertion location as alias)&#39;</span><span class="k">)</span><span class="s2">&quot;</span> <span class="o">}</span>
+cdf<span class="o">()</span><span class="w"> </span><span class="o">{</span><span class="w"> </span><span class="nb">cd</span><span class="w"> </span><span class="s2">&quot;</span><span class="k">$(</span>osascript<span class="w"> </span>-e<span class="w"> </span><span class="s1">&#39;tell app &quot;Finder&quot; to POSIX path of (insertion location as alias)&#39;</span><span class="k">)</span><span class="s2">&quot;</span><span class="w"> </span><span class="o">}</span>
 </pre></div>
 </div>
 </section>
 <section id="show-files">
-<h3>show files<a class="headerlink" href="#show-files" title="Permalink to this headline">#</a></h3>
+<h3>show files<a class="headerlink" href="#show-files" title="Permalink to this heading">#</a></h3>
 <div class="highlight-bash notranslate"><div class="highlight"><pre><span></span><span class="c1">#alias ls=&#39;ls -F&#39;</span>
-<span class="nb">alias</span> <span class="nv">ls</span><span class="o">=</span><span class="s1">&#39;gls --color --group-directories-first -F&#39;</span>
-<span class="nb">alias</span> <span class="nv">l</span><span class="o">=</span><span class="s1">&#39;ls&#39;</span>
-<span class="nb">alias</span> <span class="nv">la</span><span class="o">=</span><span class="s1">&#39;ls -A&#39;</span>
-<span class="nb">alias</span> <span class="nv">ll</span><span class="o">=</span><span class="s1">&#39;ls -AhlS&#39;</span>
-<span class="nb">alias</span> <span class="nv">ds</span><span class="o">=</span><span class="s1">&#39;du -d 1 -h 2&gt;/dev/null | sort -h&#39;</span>
-<span class="nb">alias</span> <span class="nv">pwd</span><span class="o">=</span><span class="s1">&#39;sed &quot;s/ /\\\ /g&quot; &lt;&lt;&lt; ${PWD/#$HOME/&quot;~&quot;}&#39;</span>
-<span class="nb">alias</span> <span class="nv">p</span><span class="o">=</span><span class="s1">&#39;pwd&#39;</span>
-<span class="nb">alias</span> <span class="nv">path</span><span class="o">=</span><span class="s1">&#39;echo -e ${PATH//:/\\n}&#39;</span>
+<span class="nb">alias</span><span class="w"> </span><span class="nv">ls</span><span class="o">=</span><span class="s1">&#39;gls --color --group-directories-first -F&#39;</span>
+<span class="nb">alias</span><span class="w"> </span><span class="nv">l</span><span class="o">=</span><span class="s1">&#39;ls&#39;</span>
+<span class="nb">alias</span><span class="w"> </span><span class="nv">la</span><span class="o">=</span><span class="s1">&#39;ls -A&#39;</span>
+<span class="nb">alias</span><span class="w"> </span><span class="nv">ll</span><span class="o">=</span><span class="s1">&#39;ls -AhlS&#39;</span>
+<span class="nb">alias</span><span class="w"> </span><span class="nv">ds</span><span class="o">=</span><span class="s1">&#39;du -d 1 -h 2&gt;/dev/null | sort -h&#39;</span>
+<span class="nb">alias</span><span class="w"> </span><span class="nv">pwd</span><span class="o">=</span><span class="s1">&#39;sed &quot;s/ /\\\ /g&quot; &lt;&lt;&lt; ${PWD/#$HOME/&quot;~&quot;}&#39;</span>
+<span class="nb">alias</span><span class="w"> </span><span class="nv">p</span><span class="o">=</span><span class="s1">&#39;pwd&#39;</span>
+<span class="nb">alias</span><span class="w"> </span><span class="nv">path</span><span class="o">=</span><span class="s1">&#39;echo -e ${PATH//:/\\n}&#39;</span>
 </pre></div>
 </div>
 <ul class="simple">
@@ -587,12 +591,12 @@ cdf<span class="o">()</span> <span class="o">{</span> <span class="nb">cd</span>
 </div>
 </section>
 <section id="edit-files">
-<h3>edit files<a class="headerlink" href="#edit-files" title="Permalink to this headline">#</a></h3>
-<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span><span class="nb">alias</span> <span class="nv">v</span><span class="o">=</span><span class="s1">&#39;vi&#39;</span>
-<span class="nb">alias</span> <span class="nv">cp</span><span class="o">=</span><span class="s1">&#39;cp -iv&#39;</span>
-<span class="nb">alias</span> <span class="nv">mv</span><span class="o">=</span><span class="s1">&#39;mv -iv&#39;</span>
-<span class="nb">alias</span> <span class="nv">rm</span><span class="o">=</span><span class="s1">&#39;rm -iv&#39;</span>
-<span class="nb">alias</span> <span class="nv">rf</span><span class="o">=</span><span class="s1">&#39;rm -rf&#39;</span>
+<h3>edit files<a class="headerlink" href="#edit-files" title="Permalink to this heading">#</a></h3>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span><span class="nb">alias</span><span class="w"> </span><span class="nv">v</span><span class="o">=</span><span class="s1">&#39;vi&#39;</span>
+<span class="nb">alias</span><span class="w"> </span><span class="nv">cp</span><span class="o">=</span><span class="s1">&#39;cp -iv&#39;</span>
+<span class="nb">alias</span><span class="w"> </span><span class="nv">mv</span><span class="o">=</span><span class="s1">&#39;mv -iv&#39;</span>
+<span class="nb">alias</span><span class="w"> </span><span class="nv">rm</span><span class="o">=</span><span class="s1">&#39;rm -iv&#39;</span>
+<span class="nb">alias</span><span class="w"> </span><span class="nv">rf</span><span class="o">=</span><span class="s1">&#39;rm -rf&#39;</span>
 </pre></div>
 </div>
 <ul class="simple">
@@ -601,13 +605,13 @@ cdf<span class="o">()</span> <span class="o">{</span> <span class="nb">cd</span>
 </ul>
 </section>
 <section id="search">
-<h3>search<a class="headerlink" href="#search" title="Permalink to this headline">#</a></h3>
-<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>fb<span class="o">()</span> <span class="o">{</span> find . -size +<span class="nv">$2</span>M -type f -name <span class="nv">$1</span> -exec ls -lhS <span class="s2">&quot;{}&quot;</span> +<span class="o">}</span>
-fd<span class="o">()</span> <span class="o">{</span> find . -name <span class="s2">&quot;*.</span><span class="nv">$1</span><span class="s2">&quot;</span> -type f -delete <span class="o">}</span>
-rn<span class="o">()</span> <span class="o">{</span> <span class="k">for</span> filename <span class="k">in</span> *.<span class="nv">$1</span><span class="p">;</span> <span class="k">do</span> mv -f <span class="s2">&quot;</span><span class="nv">$filename</span><span class="s2">&quot;</span> <span class="k">$(</span><span class="nb">echo</span> <span class="s2">&quot;</span><span class="nv">$filename</span><span class="s2">&quot;</span> <span class="p">|</span> sed -e <span class="s2">&quot;s/</span><span class="nv">$2</span><span class="s2">//g&quot;</span><span class="k">)</span><span class="p">;</span> <span class="k">done</span> <span class="o">}</span>
-dif<span class="o">(){</span> diff --color -u <span class="nv">$1</span> <span class="nv">$2</span> <span class="o">}</span>
-<span class="nb">alias</span> <span class="nv">imgopt</span><span class="o">=</span><span class="s1">&#39;open -a ImageOptim .&#39;</span>
-<span class="nb">alias</span> <span class="nv">grep</span><span class="o">=</span><span class="s1">&#39;grep --color&#39;</span>
+<h3>search<a class="headerlink" href="#search" title="Permalink to this heading">#</a></h3>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>fb<span class="o">()</span><span class="w"> </span><span class="o">{</span><span class="w"> </span>find<span class="w"> </span>.<span class="w"> </span>-size<span class="w"> </span>+<span class="nv">$2</span>M<span class="w"> </span>-type<span class="w"> </span>f<span class="w"> </span>-name<span class="w"> </span><span class="nv">$1</span><span class="w"> </span>-exec<span class="w"> </span>ls<span class="w"> </span>-lhS<span class="w"> </span><span class="s2">&quot;{}&quot;</span><span class="w"> </span>+<span class="o">}</span>
+fd<span class="o">()</span><span class="w"> </span><span class="o">{</span><span class="w"> </span>find<span class="w"> </span>.<span class="w"> </span>-name<span class="w"> </span><span class="s2">&quot;*.</span><span class="nv">$1</span><span class="s2">&quot;</span><span class="w"> </span>-type<span class="w"> </span>f<span class="w"> </span>-delete<span class="w"> </span><span class="o">}</span>
+rn<span class="o">()</span><span class="w"> </span><span class="o">{</span><span class="w"> </span><span class="k">for</span><span class="w"> </span>filename<span class="w"> </span><span class="k">in</span><span class="w"> </span>*.<span class="nv">$1</span><span class="p">;</span><span class="w"> </span><span class="k">do</span><span class="w"> </span>mv<span class="w"> </span>-f<span class="w"> </span><span class="s2">&quot;</span><span class="nv">$filename</span><span class="s2">&quot;</span><span class="w"> </span><span class="k">$(</span><span class="nb">echo</span><span class="w"> </span><span class="s2">&quot;</span><span class="nv">$filename</span><span class="s2">&quot;</span><span class="w"> </span><span class="p">|</span><span class="w"> </span>sed<span class="w"> </span>-e<span class="w"> </span><span class="s2">&quot;s/</span><span class="nv">$2</span><span class="s2">//g&quot;</span><span class="k">)</span><span class="p">;</span><span class="w"> </span><span class="k">done</span><span class="w"> </span><span class="o">}</span>
+dif<span class="o">(){</span><span class="w"> </span>diff<span class="w"> </span>--color<span class="w"> </span>-u<span class="w"> </span><span class="nv">$1</span><span class="w"> </span><span class="nv">$2</span><span class="w"> </span><span class="o">}</span>
+<span class="nb">alias</span><span class="w"> </span><span class="nv">imgopt</span><span class="o">=</span><span class="s1">&#39;open -a ImageOptim .&#39;</span>
+<span class="nb">alias</span><span class="w"> </span><span class="nv">grep</span><span class="o">=</span><span class="s1">&#39;grep --color&#39;</span>
 </pre></div>
 </div>
 <div class="admonition note">
@@ -633,13 +637,13 @@ dif<span class="o">(){</span> diff --color -u <span class="nv">$1</span> <span c
 </div>
 </section>
 <section id="open-apps">
-<h3>open apps<a class="headerlink" href="#open-apps" title="Permalink to this headline">#</a></h3>
-<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span><span class="nb">alias</span> <span class="nv">hr</span><span class="o">=</span><span class="s1">&#39;open .&#39;</span>
-<span class="nb">alias</span> <span class="nv">c</span><span class="o">=</span><span class="s1">&#39;open /Applications/CotEditor.app&#39;</span>
-<span class="nb">alias</span> <span class="nv">vs</span><span class="o">=</span><span class="s1">&#39;code&#39;</span>
-<span class="nb">alias</span> <span class="nv">fire</span><span class="o">=</span><span class="s1">&#39;open /Applications/Firefox.app&#39;</span>
-<span class="nb">alias</span> <span class="nv">chrome</span><span class="o">=</span><span class="s1">&#39;open /Applications/Google\ Chrome.app&#39;</span>
-<span class="nb">alias</span> <span class="nv">safari</span><span class="o">=</span><span class="s1">&#39;open /Applications/Safari.app&#39;</span>
+<h3>open apps<a class="headerlink" href="#open-apps" title="Permalink to this heading">#</a></h3>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span><span class="nb">alias</span><span class="w"> </span><span class="nv">hr</span><span class="o">=</span><span class="s1">&#39;open .&#39;</span>
+<span class="nb">alias</span><span class="w"> </span><span class="nv">c</span><span class="o">=</span><span class="s1">&#39;open /Applications/CotEditor.app&#39;</span>
+<span class="nb">alias</span><span class="w"> </span><span class="nv">vs</span><span class="o">=</span><span class="s1">&#39;code&#39;</span>
+<span class="nb">alias</span><span class="w"> </span><span class="nv">fire</span><span class="o">=</span><span class="s1">&#39;open /Applications/Firefox.app&#39;</span>
+<span class="nb">alias</span><span class="w"> </span><span class="nv">chrome</span><span class="o">=</span><span class="s1">&#39;open /Applications/Google\ Chrome.app&#39;</span>
+<span class="nb">alias</span><span class="w"> </span><span class="nv">safari</span><span class="o">=</span><span class="s1">&#39;open /Applications/Safari.app&#39;</span>
 </pre></div>
 </div>
 <ul class="simple">
@@ -652,14 +656,14 @@ dif<span class="o">(){</span> diff --color -u <span class="nv">$1</span> <span c
 </ul>
 </section>
 <section id="others">
-<h3>others<a class="headerlink" href="#others" title="Permalink to this headline">#</a></h3>
-<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span><span class="nb">alias</span> <span class="nv">his</span><span class="o">=</span><span class="s1">&#39;history&#39;</span>
-<span class="nb">alias</span> <span class="nv">rl</span><span class="o">=</span><span class="s1">&#39;exec ${SHELL} -l&#39;</span> <span class="c1">#reload</span>
+<h3>others<a class="headerlink" href="#others" title="Permalink to this heading">#</a></h3>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span><span class="nb">alias</span><span class="w"> </span><span class="nv">his</span><span class="o">=</span><span class="s1">&#39;history&#39;</span>
+<span class="nb">alias</span><span class="w"> </span><span class="nv">rl</span><span class="o">=</span><span class="s1">&#39;exec ${SHELL} -l&#39;</span><span class="w"> </span><span class="c1">#reload</span>
 </pre></div>
 </div>
 </section>
 <section id="zip-encryption">
-<h3>zip encryption<a class="headerlink" href="#zip-encryption" title="Permalink to this headline">#</a></h3>
+<h3>zip encryption<a class="headerlink" href="#zip-encryption" title="Permalink to this heading">#</a></h3>
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">zipen</span><span class="p">(){</span>
 	<span class="nb">zip</span> <span class="o">-</span><span class="n">er</span> <span class="n">enc</span><span class="o">.</span><span class="n">zip</span> <span class="s2">&quot;$@&quot;</span>
 <span class="p">}</span>
@@ -675,11 +679,11 @@ dif<span class="o">(){</span> diff --color -u <span class="nv">$1</span> <span c
 </section>
 </section>
 <section id="mac-os-settings">
-<h2><span class="section-number">1.3.2. </span>Mac OS settings<a class="headerlink" href="#mac-os-settings" title="Permalink to this headline">#</a></h2>
+<h2><span class="section-number">1.3.2. </span>Mac OS settings<a class="headerlink" href="#mac-os-settings" title="Permalink to this heading">#</a></h2>
 <section id="show-hide-hidden-files-in-finder">
-<h3>Show/hide hidden files in Finder<a class="headerlink" href="#show-hide-hidden-files-in-finder" title="Permalink to this headline">#</a></h3>
-<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span><span class="nb">alias</span> <span class="nv">show</span><span class="o">=</span><span class="s2">&quot;defaults write com.apple.finder AppleShowAllFiles -bool true &amp;&amp; killall Finder&quot;</span>
-<span class="nb">alias</span> <span class="nv">hide</span><span class="o">=</span><span class="s2">&quot;defaults write com.apple.finder AppleShowAllFiles -bool false &amp;&amp; killall Finder&quot;</span>
+<h3>Show/hide hidden files in Finder<a class="headerlink" href="#show-hide-hidden-files-in-finder" title="Permalink to this heading">#</a></h3>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span><span class="nb">alias</span><span class="w"> </span><span class="nv">show</span><span class="o">=</span><span class="s2">&quot;defaults write com.apple.finder AppleShowAllFiles -bool true &amp;&amp; killall Finder&quot;</span>
+<span class="nb">alias</span><span class="w"> </span><span class="nv">hide</span><span class="o">=</span><span class="s2">&quot;defaults write com.apple.finder AppleShowAllFiles -bool false &amp;&amp; killall Finder&quot;</span>
 </pre></div>
 </div>
 <div class="admonition note">
@@ -688,50 +692,50 @@ dif<span class="o">(){</span> diff --color -u <span class="nv">$1</span> <span c
 </div>
 </section>
 <section id="hide-show-all-desktop-icons">
-<h3>Hide/show all desktop icons<a class="headerlink" href="#hide-show-all-desktop-icons" title="Permalink to this headline">#</a></h3>
-<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span><span class="nb">alias</span> <span class="nv">dhide</span><span class="o">=</span><span class="s2">&quot;defaults write com.apple.finder CreateDesktop -bool false &amp;&amp; killall Finder&quot;</span>
-<span class="nb">alias</span> <span class="nv">dshow</span><span class="o">=</span><span class="s2">&quot;defaults write com.apple.finder CreateDesktop -bool true &amp;&amp; killall Finder&quot;</span>
+<h3>Hide/show all desktop icons<a class="headerlink" href="#hide-show-all-desktop-icons" title="Permalink to this heading">#</a></h3>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span><span class="nb">alias</span><span class="w"> </span><span class="nv">dhide</span><span class="o">=</span><span class="s2">&quot;defaults write com.apple.finder CreateDesktop -bool false &amp;&amp; killall Finder&quot;</span>
+<span class="nb">alias</span><span class="w"> </span><span class="nv">dshow</span><span class="o">=</span><span class="s2">&quot;defaults write com.apple.finder CreateDesktop -bool true &amp;&amp; killall Finder&quot;</span>
 </pre></div>
 </div>
 </section>
 <section id="screenshot-settings">
-<h3>Screenshot settings<a class="headerlink" href="#screenshot-settings" title="Permalink to this headline">#</a></h3>
-<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span><span class="nb">alias</span> <span class="nv">dwl</span><span class="o">=</span><span class="s1">&#39;defaults write com.apple.screencapture location&#39;</span>
-<span class="nb">alias</span> <span class="nv">ddl</span><span class="o">=</span><span class="s1">&#39;defaults delete com.apple.screencapture location&#39;</span>
-<span class="nb">alias</span> <span class="nv">drl</span><span class="o">=</span><span class="s1">&#39;defaults read com.apple.screencapture location&#39;</span>
+<h3>Screenshot settings<a class="headerlink" href="#screenshot-settings" title="Permalink to this heading">#</a></h3>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span><span class="nb">alias</span><span class="w"> </span><span class="nv">dwl</span><span class="o">=</span><span class="s1">&#39;defaults write com.apple.screencapture location&#39;</span>
+<span class="nb">alias</span><span class="w"> </span><span class="nv">ddl</span><span class="o">=</span><span class="s1">&#39;defaults delete com.apple.screencapture location&#39;</span>
+<span class="nb">alias</span><span class="w"> </span><span class="nv">drl</span><span class="o">=</span><span class="s1">&#39;defaults read com.apple.screencapture location&#39;</span>
 </pre></div>
 </div>
 <p>You can change the location of screenshots by <code class="docutils literal notranslate"><span class="pre">dwl</span> <span class="pre">~/path/to/dir</span></code>.</p>
 </section>
 <section id="sleep-setting">
-<h3>sleep setting<a class="headerlink" href="#sleep-setting" title="Permalink to this headline">#</a></h3>
-<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span><span class="nb">alias</span> <span class="nv">sleepon</span><span class="o">=</span><span class="s1">&#39;sudo pmset -a disablesleep 0&#39;</span>
-<span class="nb">alias</span> <span class="nv">sleepoff</span><span class="o">=</span><span class="s1">&#39;sudo pmset -a disablesleep 1&#39;</span>
+<h3>sleep setting<a class="headerlink" href="#sleep-setting" title="Permalink to this heading">#</a></h3>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span><span class="nb">alias</span><span class="w"> </span><span class="nv">sleepon</span><span class="o">=</span><span class="s1">&#39;sudo pmset -a disablesleep 0&#39;</span>
+<span class="nb">alias</span><span class="w"> </span><span class="nv">sleepoff</span><span class="o">=</span><span class="s1">&#39;sudo pmset -a disablesleep 1&#39;</span>
 </pre></div>
 </div>
 </section>
 </section>
 <section id="github">
-<h2><span class="section-number">1.3.3. </span>GitHub<a class="headerlink" href="#github" title="Permalink to this headline">#</a></h2>
-<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span><span class="nb">alias</span> <span class="nv">g</span><span class="o">=</span><span class="s1">&#39;git&#39;</span>
-<span class="nb">alias</span> <span class="nv">ga</span><span class="o">=</span><span class="s1">&#39;git add&#39;</span>
-<span class="nb">alias</span> <span class="nv">gb</span><span class="o">=</span><span class="s1">&#39;git branch&#39;</span>
-<span class="nb">alias</span> <span class="nv">gc</span><span class="o">=</span><span class="s1">&#39;git commit&#39;</span>
-<span class="nb">alias</span> <span class="nv">gch</span><span class="o">=</span><span class="s1">&#39;git checkout&#39;</span>
-<span class="nb">alias</span> <span class="nv">gcl</span><span class="o">=</span><span class="s1">&#39;git clone&#39;</span>
-<span class="nb">alias</span> <span class="nv">gd</span><span class="o">=</span><span class="s1">&#39;git diff&#39;</span>
-<span class="nb">alias</span> <span class="nv">gf</span><span class="o">=</span><span class="s1">&#39;git fetch&#39;</span>
-<span class="nb">alias</span> <span class="nv">gi</span><span class="o">=</span><span class="s1">&#39;git init&#39;</span>
-<span class="nb">alias</span> <span class="nv">gm</span><span class="o">=</span><span class="s1">&#39;git merge&#39;</span>
-<span class="nb">alias</span> <span class="nv">gps</span><span class="o">=</span><span class="s1">&#39;git push&#39;</span>
-<span class="nb">alias</span> <span class="nv">gpl</span><span class="o">=</span><span class="s1">&#39;git pull&#39;</span>
-<span class="nb">alias</span> <span class="nv">gpom</span><span class="o">=</span><span class="s1">&#39;git push origin main&#39;</span>
-<span class="nb">alias</span> <span class="nv">gs</span><span class="o">=</span><span class="s1">&#39;git status&#39;</span>
+<h2><span class="section-number">1.3.3. </span>GitHub<a class="headerlink" href="#github" title="Permalink to this heading">#</a></h2>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span><span class="nb">alias</span><span class="w"> </span><span class="nv">g</span><span class="o">=</span><span class="s1">&#39;git&#39;</span>
+<span class="nb">alias</span><span class="w"> </span><span class="nv">ga</span><span class="o">=</span><span class="s1">&#39;git add&#39;</span>
+<span class="nb">alias</span><span class="w"> </span><span class="nv">gb</span><span class="o">=</span><span class="s1">&#39;git branch&#39;</span>
+<span class="nb">alias</span><span class="w"> </span><span class="nv">gc</span><span class="o">=</span><span class="s1">&#39;git commit&#39;</span>
+<span class="nb">alias</span><span class="w"> </span><span class="nv">gch</span><span class="o">=</span><span class="s1">&#39;git checkout&#39;</span>
+<span class="nb">alias</span><span class="w"> </span><span class="nv">gcl</span><span class="o">=</span><span class="s1">&#39;git clone&#39;</span>
+<span class="nb">alias</span><span class="w"> </span><span class="nv">gd</span><span class="o">=</span><span class="s1">&#39;git diff&#39;</span>
+<span class="nb">alias</span><span class="w"> </span><span class="nv">gf</span><span class="o">=</span><span class="s1">&#39;git fetch&#39;</span>
+<span class="nb">alias</span><span class="w"> </span><span class="nv">gi</span><span class="o">=</span><span class="s1">&#39;git init&#39;</span>
+<span class="nb">alias</span><span class="w"> </span><span class="nv">gm</span><span class="o">=</span><span class="s1">&#39;git merge&#39;</span>
+<span class="nb">alias</span><span class="w"> </span><span class="nv">gps</span><span class="o">=</span><span class="s1">&#39;git push&#39;</span>
+<span class="nb">alias</span><span class="w"> </span><span class="nv">gpl</span><span class="o">=</span><span class="s1">&#39;git pull&#39;</span>
+<span class="nb">alias</span><span class="w"> </span><span class="nv">gpom</span><span class="o">=</span><span class="s1">&#39;git push origin main&#39;</span>
+<span class="nb">alias</span><span class="w"> </span><span class="nv">gs</span><span class="o">=</span><span class="s1">&#39;git status&#39;</span>
 </pre></div>
 </div>
 <section id="function">
-<h3>Function<a class="headerlink" href="#function" title="Permalink to this headline">#</a></h3>
-<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>gacpm<span class="o">()</span> <span class="o">{</span> git add -A <span class="o">&amp;&amp;</span> git commit -m <span class="s2">&quot;</span><span class="nv">$1</span><span class="s2">&quot;</span> <span class="o">&amp;&amp;</span> git push origin main <span class="o">}</span>
+<h3>Function<a class="headerlink" href="#function" title="Permalink to this heading">#</a></h3>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>gacpm<span class="o">()</span><span class="w"> </span><span class="o">{</span><span class="w"> </span>git<span class="w"> </span>add<span class="w"> </span>-A<span class="w"> </span><span class="o">&amp;&amp;</span><span class="w"> </span>git<span class="w"> </span>commit<span class="w"> </span>-m<span class="w"> </span><span class="s2">&quot;</span><span class="nv">$1</span><span class="s2">&quot;</span><span class="w"> </span><span class="o">&amp;&amp;</span><span class="w"> </span>git<span class="w"> </span>push<span class="w"> </span>origin<span class="w"> </span>main<span class="w"> </span><span class="o">}</span>
 </pre></div>
 </div>
 <ul class="simple">
@@ -739,57 +743,57 @@ dif<span class="o">(){</span> diff --color -u <span class="nv">$1</span> <span c
 </ul>
 <p>For example, you can define a function to make a new repository with just one command.</p>
 <div class="highlight-bash notranslate"><div class="highlight"><pre><span></span><span class="c1"># $1 = private or public</span>
-ginit<span class="o">()</span> <span class="o">{</span>
-	git init
-	git add .
-	git commit -m <span class="s2">&quot;🎉  Initial commit&quot;</span>
-	gh repo create --<span class="s2">&quot;</span><span class="nv">$1</span><span class="s2">&quot;</span> --source<span class="o">=</span>. --push
+ginit<span class="o">()</span><span class="w"> </span><span class="o">{</span>
+<span class="w">	</span>git<span class="w"> </span>init
+<span class="w">	</span>git<span class="w"> </span>add<span class="w"> </span>.
+<span class="w">	</span>git<span class="w"> </span>commit<span class="w"> </span>-m<span class="w"> </span><span class="s2">&quot;🎉  Initial commit&quot;</span>
+<span class="w">	</span>gh<span class="w"> </span>repo<span class="w"> </span>create<span class="w"> </span>--<span class="s2">&quot;</span><span class="nv">$1</span><span class="s2">&quot;</span><span class="w"> </span>--source<span class="o">=</span>.<span class="w"> </span>--push
 <span class="o">}</span>
 </pre></div>
 </div>
 <p>You need to install <a class="reference external" href="https://cli.github.com/">GitHub CLI</a> to use <code class="docutils literal notranslate"><span class="pre">gh</span></code> command.</p>
 </section>
 <section id="gitignore-io">
-<h3><a class="reference external" href="http://gitignore.io">gitignore.io</a><a class="headerlink" href="#gitignore-io" title="Permalink to this headline">#</a></h3>
+<h3><a class="reference external" href="http://gitignore.io">gitignore.io</a><a class="headerlink" href="#gitignore-io" title="Permalink to this heading">#</a></h3>
 <p><a class="reference external" href="http://gitignore.io">gitignore.io</a> enable us to make .gitignore file easily</p>
-<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span><span class="k">function</span> gi<span class="o">()</span> <span class="o">{</span> curl -sLw n https://www.toptal.com/developers/gitignore/api/<span class="nv">$@</span> <span class="p">;</span><span class="o">}</span>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span><span class="k">function</span><span class="w"> </span>gi<span class="o">()</span><span class="w"> </span><span class="o">{</span><span class="w"> </span>curl<span class="w"> </span>-sLw<span class="w"> </span>n<span class="w"> </span>https://www.toptal.com/developers/gitignore/api/<span class="nv">$@</span><span class="w"> </span><span class="p">;</span><span class="o">}</span>
 </pre></div>
 </div>
 </section>
 </section>
 <section id="python">
-<h2><span class="section-number">1.3.4. </span>Python<a class="headerlink" href="#python" title="Permalink to this headline">#</a></h2>
-<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span><span class="nb">alias</span> <span class="nv">wpy</span><span class="o">=</span><span class="s1">&#39;which python&#39;</span>
+<h2><span class="section-number">1.3.4. </span>Python<a class="headerlink" href="#python" title="Permalink to this heading">#</a></h2>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span><span class="nb">alias</span><span class="w"> </span><span class="nv">wpy</span><span class="o">=</span><span class="s1">&#39;which python&#39;</span>
 
-<span class="nb">alias</span> <span class="nv">pip</span><span class="o">=</span><span class="s1">&#39;pip3&#39;</span>
-<span class="nb">alias</span> <span class="nv">pin</span><span class="o">=</span><span class="s1">&#39;pip install&#39;</span>
-<span class="nb">alias</span> <span class="nv">puin</span><span class="o">=</span><span class="s1">&#39;pip uninstall&#39;</span>
-<span class="nb">alias</span> <span class="nv">pup</span><span class="o">=</span><span class="s1">&#39;pip install --upgrade pip&#39;</span>
-<span class="nb">alias</span> <span class="nv">pinreq</span><span class="o">=</span><span class="s1">&#39;pip install -r requirements.txt&#39;</span>
-<span class="nb">alias</span> <span class="nv">pf</span><span class="o">=</span><span class="s1">&#39;pip list --format=freeze&#39;</span>
-<span class="nb">alias</span> <span class="nv">pfr</span><span class="o">=</span><span class="s1">&#39;pip list --format=freeze &gt; requirements.txt&#39;</span>
+<span class="nb">alias</span><span class="w"> </span><span class="nv">pip</span><span class="o">=</span><span class="s1">&#39;pip3&#39;</span>
+<span class="nb">alias</span><span class="w"> </span><span class="nv">pin</span><span class="o">=</span><span class="s1">&#39;pip install&#39;</span>
+<span class="nb">alias</span><span class="w"> </span><span class="nv">puin</span><span class="o">=</span><span class="s1">&#39;pip uninstall&#39;</span>
+<span class="nb">alias</span><span class="w"> </span><span class="nv">pup</span><span class="o">=</span><span class="s1">&#39;pip install --upgrade pip&#39;</span>
+<span class="nb">alias</span><span class="w"> </span><span class="nv">pinreq</span><span class="o">=</span><span class="s1">&#39;pip install -r requirements.txt&#39;</span>
+<span class="nb">alias</span><span class="w"> </span><span class="nv">pf</span><span class="o">=</span><span class="s1">&#39;pip list --format=freeze&#39;</span>
+<span class="nb">alias</span><span class="w"> </span><span class="nv">pfr</span><span class="o">=</span><span class="s1">&#39;pip list --format=freeze &gt; requirements.txt&#39;</span>
 </pre></div>
 </div>
 <section id="make-activate-deactivate-venv">
-<h3>Make, activate, deactivate venv<a class="headerlink" href="#make-activate-deactivate-venv" title="Permalink to this headline">#</a></h3>
-<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span><span class="nb">alias</span> <span class="nv">mkv</span><span class="o">=</span><span class="s1">&#39;python3 -m venv venv; acv; pip install --upgrade pip&#39;</span>
-<span class="nb">alias</span> <span class="nv">acv</span><span class="o">=</span><span class="s1">&#39;source venv/bin/activate&#39;</span>
-<span class="nb">alias</span> <span class="nv">deac</span><span class="o">=</span><span class="s1">&#39;deactivate&#39;</span>
+<h3>Make, activate, deactivate venv<a class="headerlink" href="#make-activate-deactivate-venv" title="Permalink to this heading">#</a></h3>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span><span class="nb">alias</span><span class="w"> </span><span class="nv">mkv</span><span class="o">=</span><span class="s1">&#39;python3 -m venv venv; acv; pip install --upgrade pip&#39;</span>
+<span class="nb">alias</span><span class="w"> </span><span class="nv">acv</span><span class="o">=</span><span class="s1">&#39;source venv/bin/activate&#39;</span>
+<span class="nb">alias</span><span class="w"> </span><span class="nv">deac</span><span class="o">=</span><span class="s1">&#39;deactivate&#39;</span>
 </pre></div>
 </div>
 </section>
 </section>
 <section id="latex">
-<h2><span class="section-number">1.3.5. </span>Latex<a class="headerlink" href="#latex" title="Permalink to this headline">#</a></h2>
+<h2><span class="section-number">1.3.5. </span>Latex<a class="headerlink" href="#latex" title="Permalink to this heading">#</a></h2>
 <section id="copy-latex-template-directory-to-somewhere">
-<h3>Copy latex-template directory to somewhere;<a class="headerlink" href="#copy-latex-template-directory-to-somewhere" title="Permalink to this headline">#</a></h3>
+<h3>Copy latex-template directory to somewhere;<a class="headerlink" href="#copy-latex-template-directory-to-somewhere" title="Permalink to this heading">#</a></h3>
 <p>If you write a lot of latex documents, you should make a template directory. You can copy the template directory to somewhere with this function.</p>
 <div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>mklt<span class="o">(){</span>
-	cp -r ~/latex-template ./<span class="s2">&quot;</span><span class="nv">$1</span><span class="s2">&quot;</span>
+<span class="w">	</span>cp<span class="w"> </span>-r<span class="w"> </span>~/latex-template<span class="w"> </span>./<span class="s2">&quot;</span><span class="nv">$1</span><span class="s2">&quot;</span>
 <span class="o">}</span>
 
 mkbt<span class="o">(){</span>
-	cp -r ~/beamer-template ./<span class="s2">&quot;</span><span class="nv">$1</span><span class="s2">&quot;</span>
+<span class="w">	</span>cp<span class="w"> </span>-r<span class="w"> </span>~/beamer-template<span class="w"> </span>./<span class="s2">&quot;</span><span class="nv">$1</span><span class="s2">&quot;</span>
 <span class="o">}</span>
 </pre></div>
 </div>

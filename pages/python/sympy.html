@@ -7,7 +7,7 @@
 
   <head>
     <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.18.1: http://docutils.sourceforge.net/" />
 
     <title>2.4. SymPY &#8212; My note</title>
   
@@ -44,6 +44,7 @@
     <script data-url_root="../../" id="documentation_options" src="../../_static/documentation_options.js"></script>
     <script src="../../_static/jquery.js"></script>
     <script src="../../_static/underscore.js"></script>
+    <script src="../../_static/_sphinx_javascript_frameworks_compat.js"></script>
     <script src="../../_static/doctools.js"></script>
     <script src="../../_static/clipboard.min.js"></script>
     <script src="../../_static/copybutton.js"></script>
@@ -316,7 +317,7 @@ const thebe_selector_output = ".output, .cell_output"
       
       
       
-      <li><a href="https://github.com/kkensuke/myjb/edit/main//pages/python/sympy.md" target="_blank"
+      <li><a href="https://github.com/kkensuke/myjb/edit/main/pages/python/sympy.md" target="_blank"
    class="btn btn-sm btn-source-edit-button dropdown-item"
    title="Suggest edit"
    data-bs-placement="left" data-bs-toggle="tooltip"
@@ -477,7 +478,10 @@ document.write(`
                 <article class="bd-article" role="main">
                   
   <section class="tex2jax_ignore mathjax_ignore" id="sympy">
-<h1><span class="section-number">2.4. </span><a class="reference external" href="https://www.tutorialspoint.com/sympy/index.htm">SymPY</a><a class="headerlink" href="#sympy" title="Permalink to this headline">#</a></h1>
+<h1><span class="section-number">2.4. </span><a class="reference external" href="https://www.tutorialspoint.com/sympy/index.htm">SymPY</a><a class="headerlink" href="#sympy" title="Permalink to this heading">#</a></h1>
+<blockquote>
+<div><p>last modified: Aug 27, 2023</p>
+</div></blockquote>
 <blockquote>
 <div><p>SymPy is a Python library for symbolic mathematics. - sympy doc</p>
 </div></blockquote>
@@ -490,7 +494,7 @@ document.write(`
 </div>
 </div>
 <section id="declare-symbols">
-<h2><span class="section-number">2.4.1. </span>Declare symbols<a class="headerlink" href="#declare-symbols" title="Permalink to this headline">#</a></h2>
+<h2><span class="section-number">2.4.1. </span>Declare symbols<a class="headerlink" href="#declare-symbols" title="Permalink to this heading">#</a></h2>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">x</span> <span class="o">=</span> <span class="n">Symbol</span><span class="p">(</span><span class="s2">&quot;x&quot;</span><span class="p">)</span>
@@ -512,7 +516,7 @@ document.write(`
 </div>
 </section>
 <section id="expansion">
-<h2><span class="section-number">2.4.2. </span>Expansion<a class="headerlink" href="#expansion" title="Permalink to this headline">#</a></h2>
+<h2><span class="section-number">2.4.2. </span>Expansion<a class="headerlink" href="#expansion" title="Permalink to this heading">#</a></h2>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">f</span> <span class="o">=</span> <span class="n">expand</span><span class="p">((</span><span class="n">x</span> <span class="o">+</span> <span class="n">y</span><span class="p">)</span> <span class="o">**</span> <span class="mi">2</span><span class="p">)</span>
@@ -527,7 +531,7 @@ document.write(`
 </div>
 </section>
 <section id="substitution">
-<h2><span class="section-number">2.4.3. </span>Substitution<a class="headerlink" href="#substitution" title="Permalink to this headline">#</a></h2>
+<h2><span class="section-number">2.4.3. </span>Substitution<a class="headerlink" href="#substitution" title="Permalink to this heading">#</a></h2>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">f</span><span class="o">.</span><span class="n">subs</span><span class="p">({</span><span class="n">x</span><span class="p">:</span> <span class="mi">1</span><span class="p">,</span> <span class="n">y</span><span class="p">:</span> <span class="mi">2</span><span class="p">})</span>
@@ -541,7 +545,7 @@ document.write(`
 </div>
 </section>
 <section id="factorization">
-<h2><span class="section-number">2.4.4. </span>Factorization<a class="headerlink" href="#factorization" title="Permalink to this headline">#</a></h2>
+<h2><span class="section-number">2.4.4. </span>Factorization<a class="headerlink" href="#factorization" title="Permalink to this heading">#</a></h2>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">factor</span><span class="p">(</span><span class="n">x</span><span class="o">**</span><span class="mi">2</span> <span class="o">-</span> <span class="mi">4</span> <span class="o">*</span> <span class="n">x</span> <span class="o">+</span> <span class="mi">3</span><span class="p">)</span>
@@ -555,7 +559,7 @@ document.write(`
 </div>
 </section>
 <section id="solve-equations">
-<h2><span class="section-number">2.4.5. </span>Solve equations<a class="headerlink" href="#solve-equations" title="Permalink to this headline">#</a></h2>
+<h2><span class="section-number">2.4.5. </span>Solve equations<a class="headerlink" href="#solve-equations" title="Permalink to this heading">#</a></h2>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">solve</span><span class="p">(</span><span class="n">x</span><span class="o">**</span><span class="mi">2</span> <span class="o">-</span> <span class="n">x</span> <span class="o">-</span> <span class="mi">1</span><span class="p">)</span>
@@ -570,7 +574,7 @@ document.write(`
 </div>
 </section>
 <section id="partial-fraction-decomposition">
-<h2><span class="section-number">2.4.6. </span>Partial fraction decomposition<a class="headerlink" href="#partial-fraction-decomposition" title="Permalink to this headline">#</a></h2>
+<h2><span class="section-number">2.4.6. </span>Partial fraction decomposition<a class="headerlink" href="#partial-fraction-decomposition" title="Permalink to this heading">#</a></h2>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">apart</span><span class="p">(</span><span class="mi">1</span> <span class="o">/</span> <span class="p">(</span><span class="n">x</span><span class="o">**</span><span class="mi">5</span> <span class="o">-</span> <span class="mi">1</span><span class="p">))</span>
@@ -584,7 +588,7 @@ document.write(`
 </div>
 </section>
 <section id="integrals-and-derivatives">
-<h2><span class="section-number">2.4.7. </span>Integrals and derivatives<a class="headerlink" href="#integrals-and-derivatives" title="Permalink to this headline">#</a></h2>
+<h2><span class="section-number">2.4.7. </span>Integrals and derivatives<a class="headerlink" href="#integrals-and-derivatives" title="Permalink to this heading">#</a></h2>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">a</span> <span class="o">=</span> <span class="n">Symbol</span><span class="p">(</span><span class="s2">&quot;a&quot;</span><span class="p">)</span>  <span class="c1"># Without real=True, a is treated as a complex number.</span>
@@ -626,7 +630,7 @@ document.write(`
 </div>
 </section>
 <section id="summation">
-<h2><span class="section-number">2.4.8. </span>Summation<a class="headerlink" href="#summation" title="Permalink to this headline">#</a></h2>
+<h2><span class="section-number">2.4.8. </span>Summation<a class="headerlink" href="#summation" title="Permalink to this heading">#</a></h2>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">k</span><span class="p">,</span> <span class="n">N</span> <span class="o">=</span> <span class="n">symbols</span><span class="p">(</span><span class="s2">&quot;k, N&quot;</span><span class="p">,</span> <span class="n">integer</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
@@ -641,7 +645,7 @@ document.write(`
 </div>
 </section>
 <section id="limits">
-<h2><span class="section-number">2.4.9. </span>Limits<a class="headerlink" href="#limits" title="Permalink to this headline">#</a></h2>
+<h2><span class="section-number">2.4.9. </span>Limits<a class="headerlink" href="#limits" title="Permalink to this heading">#</a></h2>
 <div class="math notranslate nohighlight">
 \[ \lim_{x \to 0} \frac{\sin x}{x} = 1 \]</div>
 <div class="cell docutils container">
@@ -657,7 +661,7 @@ document.write(`
 </div>
 </section>
 <section id="other-examples">
-<h2><span class="section-number">2.4.10. </span>Other Examples<a class="headerlink" href="#other-examples" title="Permalink to this headline">#</a></h2>
+<h2><span class="section-number">2.4.10. </span>Other Examples<a class="headerlink" href="#other-examples" title="Permalink to this heading">#</a></h2>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">s</span> <span class="o">=</span> <span class="n">Symbol</span><span class="p">(</span><span class="s2">&quot;s&quot;</span><span class="p">)</span>

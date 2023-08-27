@@ -1,4 +1,5 @@
 # Latex
+> last modified: {sub-ref}`today`
 
 ## [$\LaTeX$ settings in VS Code](./settings.md)
 

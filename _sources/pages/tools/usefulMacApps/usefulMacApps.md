@@ -1,4 +1,5 @@
 # Useful Mac Apps
+> last modified: {sub-ref}`today`
 
 Recommended Apps here are basically free.
 
