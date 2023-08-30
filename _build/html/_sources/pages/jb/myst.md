@@ -68,6 +68,7 @@ see [target](target)
 >% This is a line comment.
 >```
 >>% This is a line comment.
+
 ## Block break
 >```
 >This is an example of
@@ -121,14 +122,6 @@ see [target](target)
 
 
 ## admonition
->````
->```{admonition} This is a title
->An example of an admonition with a title.
->```
->````
->```{admonition} This is a title
->An example of an admonition with a title.
->```
 
 >````
 >```{note} Notes require **no** arguments,
@@ -221,15 +214,18 @@ see [target](target)
 >see also
 >```
 
+>````
+>```{admonition} This is a title
+>:class: tip
+>
+>An example of an admonition with a title.
 >```
->{fa}`check, text-success mr-1` This is an example of Roles (check mark & success color).
+>````
+>```{admonition} This is a title
+>:class: tip
+>
+>An example of an admonition with a title.
 >```
->>{fa}`check, text-success mr-1` This is an example of Roles (check mark & success color).
-
->```
->{fa}`check, text-info mr-1` This is an example of Roles (check mark & info color).
->```
->>{fa}`check, text-info mr-1` This is an example of Roles (check mark & info color).
 
 
 ### Figure parameters

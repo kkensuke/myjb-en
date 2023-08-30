@@ -701,17 +701,6 @@ see <a class="reference internal" href="#target"><span class="std std-ref">targe
 <section id="admonition">
 <h2><span class="section-number">5.3.10. </span>admonition<a class="headerlink" href="#admonition" title="Permalink to this heading">#</a></h2>
 <blockquote>
-<div><div class="highlight-default notranslate"><div class="highlight"><pre><span></span>```{admonition} This is a title
-An example of an admonition with a title.
-```
-</pre></div>
-</div>
-<div class="admonition-this-is-a-title admonition">
-<p class="admonition-title">This is a title</p>
-<p>An example of an admonition with a title.</p>
-</div>
-</div></blockquote>
-<blockquote>
 <div><div class="highlight-default notranslate"><div class="highlight"><pre><span></span>```{note} Notes require **no** arguments,
 so content can start here.
 ```
@@ -823,20 +812,17 @@ see also
 </div>
 </div></blockquote>
 <blockquote>
-<div><div class="highlight-default notranslate"><div class="highlight"><pre><span></span>{fa}`check, text-success mr-1` This is an example of Roles (check mark &amp; success color).
+<div><div class="highlight-default notranslate"><div class="highlight"><pre><span></span>```{admonition} This is a title
+:class: tip
+
+An example of an admonition with a title.
+```
 </pre></div>
 </div>
-<blockquote>
-<div><p><span class="fa fa-check, text-success mr-1"></span> This is an example of Roles (check mark &amp; success color).</p>
-</div></blockquote>
-</div></blockquote>
-<blockquote>
-<div><div class="highlight-default notranslate"><div class="highlight"><pre><span></span>{fa}`check, text-info mr-1` This is an example of Roles (check mark &amp; info color).
-</pre></div>
+<div class="tip admonition">
+<p class="admonition-title">This is a title</p>
+<p>An example of an admonition with a title.</p>
 </div>
-<blockquote>
-<div><p><span class="fa fa-check, text-info mr-1"></span> This is an example of Roles (check mark &amp; info color).</p>
-</div></blockquote>
 </div></blockquote>
 <section id="figure-parameters">
 <h3>Figure parameters<a class="headerlink" href="#figure-parameters" title="Permalink to this heading">#</a></h3>
