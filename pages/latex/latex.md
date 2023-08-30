@@ -1,13 +1,23 @@
-# Latex
+# $\LaTeX$
 > last modified: {sub-ref}`today`
 
-## [$\LaTeX$ settings in VS Code](./settings.md)
+:::{admonition} $\LaTeX$
+:class: important
 
-## [LaTeX Basics](./basics.md)
+$\LaTeX$ is a typesetting system that is widely used in academia. It is especially useful for writing mathematical equations.
+:::
 
-## Preamble
+We are going to see some basic settings and usage for LaTeX in VS Code.
 
-In a `preamble.tex`, we can load packages, define commands, and set some options for the document.
+- [$\LaTeX$ settings in VS Code](./settings.md)
+- [LaTeX Basics](./basics.md)
+
+---
+:::{admonition} Preamble
+:class: note
+
+Preamble is the part in which you can set the document class, load packages, define commands, and set some options for the document. It is placed between `\documentclass` and `\begin{document}`. You can also put it in a separate file and load it with `\input{preamble.tex}`.
+:::
 
 Sometimes, you can't use some packages due to the conflicts between packages and document classes. So, you need to change the settings in the preamble according to the document class.
 

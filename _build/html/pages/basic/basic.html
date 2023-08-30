@@ -216,13 +216,13 @@ const thebe_selector_output = ".output, .cell_output"
 <li class="toctree-l2"><a class="reference internal" href="../coding-rules/naming.html">3.1. Naming Conventions</a></li>
 </ul>
 </li>
-<li class="toctree-l1 has-children"><a class="reference internal" href="../latex/latex.html">4. Latex</a><input class="toctree-checkbox" id="toctree-checkbox-4" name="toctree-checkbox-4" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-4"><i class="fa-solid fa-chevron-down"></i></label><ul>
-<li class="toctree-l2"><a class="reference internal" href="../latex/settings.html">4.4. Latex settings in VScode</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../latex/basics.html">4.5. Latex Basics</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../latex/article.html">4.6. article</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../latex/revtex4-2.html">4.7. revtex4-2</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../latex/beamer.html">4.8. beamer</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../latex/newcommands.html">4.9. newcommands</a></li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../latex/latex.html">4. <span class="math notranslate nohighlight">\(\LaTeX\)</span></a><input class="toctree-checkbox" id="toctree-checkbox-4" name="toctree-checkbox-4" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-4"><i class="fa-solid fa-chevron-down"></i></label><ul>
+<li class="toctree-l2"><a class="reference internal" href="../latex/settings.html">4.1. Latex settings in VScode</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../latex/basics.html">4.2. Latex Basics</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../latex/article.html">4.3. article</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../latex/revtex4-2.html">4.4. revtex4-2</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../latex/beamer.html">4.5. beamer</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../latex/newcommands.html">4.6. newcommands</a></li>
 </ul>
 </li>
 <li class="toctree-l1 has-children"><a class="reference internal" href="../jb/jb.html">5. Jupyter Book</a><input class="toctree-checkbox" id="toctree-checkbox-5" name="toctree-checkbox-5" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-5"><i class="fa-solid fa-chevron-down"></i></label><ul>
@@ -459,19 +459,127 @@ document.write(`
   <section class="tex2jax_ignore mathjax_ignore" id="programming-basics">
 <h1><span class="section-number">1. </span>Programming basics<a class="headerlink" href="#programming-basics" title="Permalink to this heading">#</a></h1>
 <blockquote>
-<div><p>last modified: Aug 27, 2023</p>
+<div><p>last modified: Aug 31, 2023</p>
 </div></blockquote>
-<ul class="simple">
-<li><p><a class="reference internal" href="linux.html"><span class="doc std std-doc">Command line</span></a></p></li>
-<li><p><a class="reference internal" href="path.html"><span class="doc std std-doc">$PATH</span></a></p></li>
-<li><p><a class="reference internal" href="alias.html"><span class="doc std std-doc">Alias</span></a></p></li>
-<li><p><a class="reference internal" href="zsh.html"><span class="doc std std-doc">Zsh</span></a></p></li>
-<li><p><a class="reference internal" href="markdown.html"><span class="doc std std-doc">Markdown</span></a></p></li>
-<li><p><a class="reference internal" href="github/github.html"><span class="doc std std-doc">GitHub</span></a></p></li>
-<li><p><a class="reference internal" href="github/commitMessage.html"><span class="doc std std-doc">Commit Masssages with emoji</span></a></p></li>
-<li><p><a class="reference internal" href="packageManager.html"><span class="doc std std-doc">Homebrew and venv</span></a></p></li>
-</ul>
 <div class="toctree-wrapper compound">
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="linux.html">1.1. Command line</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="linux.html#basic">1.1.1. Basic</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="linux.html#special-symbols">Special symbols</a></li>
+<li class="toctree-l3"><a class="reference internal" href="linux.html#basics-commands">basics commands</a></li>
+<li class="toctree-l3"><a class="reference internal" href="linux.html#shell-globbing">Shell globbing</a></li>
+<li class="toctree-l3"><a class="reference internal" href="linux.html#brace-expansion">Brace Expansion</a></li>
+<li class="toctree-l3"><a class="reference internal" href="linux.html#pipeline-and-redirect">Pipeline and redirect</a></li>
+<li class="toctree-l3"><a class="reference internal" href="linux.html#combine-commands">Combine commands</a></li>
+<li class="toctree-l3"><a class="reference internal" href="linux.html#symbolic-links">Symbolic links</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="linux.html#reference">1.1.2. Reference</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="path.html">1.2. $PATH</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="path.html#add-command-search-path">1.2.1. Add command search path</a></li>
+<li class="toctree-l2"><a class="reference internal" href="path.html#environmental-variables">1.2.2. Environmental variables</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="path.html#make-a-new-environmental-variable">make a new environmental variable</a></li>
+<li class="toctree-l3"><a class="reference internal" href="path.html#remove-a-environmental-variable">Remove a environmental variable</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="alias.html">1.3. Alias</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="alias.html#basic">1.3.1. Basic</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="alias.html#customize-and-colorize-prompt">Customize and colorize PROMPT</a></li>
+<li class="toctree-l3"><a class="reference internal" href="alias.html#put-a-blank-line-before-every-prompt-except-the-first-one">Put a blank line before every prompt except the first one.</a></li>
+<li class="toctree-l3"><a class="reference internal" href="alias.html#change-directory">change directory</a></li>
+<li class="toctree-l3"><a class="reference internal" href="alias.html#show-files">show files</a></li>
+<li class="toctree-l3"><a class="reference internal" href="alias.html#edit-files">edit files</a></li>
+<li class="toctree-l3"><a class="reference internal" href="alias.html#search">search</a></li>
+<li class="toctree-l3"><a class="reference internal" href="alias.html#open-apps">open apps</a></li>
+<li class="toctree-l3"><a class="reference internal" href="alias.html#others">others</a></li>
+<li class="toctree-l3"><a class="reference internal" href="alias.html#zip-encryption">zip encryption</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="alias.html#mac-os-settings">1.3.2. Mac OS settings</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="alias.html#show-hide-hidden-files-in-finder">Show/hide hidden files in Finder</a></li>
+<li class="toctree-l3"><a class="reference internal" href="alias.html#hide-show-all-desktop-icons">Hide/show all desktop icons</a></li>
+<li class="toctree-l3"><a class="reference internal" href="alias.html#screenshot-settings">Screenshot settings</a></li>
+<li class="toctree-l3"><a class="reference internal" href="alias.html#sleep-setting">sleep setting</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="alias.html#github">1.3.3. GitHub</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="alias.html#function">Function</a></li>
+<li class="toctree-l3"><a class="reference internal" href="alias.html#gitignore-io">gitignore.io</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="alias.html#python">1.3.4. Python</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="alias.html#make-activate-deactivate-venv">Make, activate, deactivate venv</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="alias.html#latex">1.3.5. Latex</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="alias.html#copy-latex-template-directory-to-somewhere">Copy latex-template directory to somewhere;</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="zsh.html">1.4. Zsh</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="zsh.html#manage-zsh-files-in-zsh-directory">1.4.1. Manage <code class="docutils literal notranslate"><span class="pre">.zsh*</span></code> files in <code class="docutils literal notranslate"><span class="pre">zsh/</span></code> directory</a></li>
+<li class="toctree-l2"><a class="reference internal" href="zsh.html#zshrc">1.4.2. <code class="docutils literal notranslate"><span class="pre">.zshrc</span></code></a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="markdown.html">1.5. Markdown</a></li>
+<li class="toctree-l1"><a class="reference internal" href="markdown.html#heading-1">1.6. Heading 1</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="markdown.html#heading-2">1.6.1. Heading 2</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="markdown.html#heading-3">Heading 3</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="markdown.html#list">1.6.2. list</a></li>
+<li class="toctree-l2"><a class="reference internal" href="markdown.html#color">1.6.3. Color</a></li>
+<li class="toctree-l2"><a class="reference internal" href="markdown.html#code">1.6.4. Code</a></li>
+<li class="toctree-l2"><a class="reference internal" href="markdown.html#links">1.6.5. Links</a></li>
+<li class="toctree-l2"><a class="reference internal" href="markdown.html#checkbox">1.6.6. Checkbox</a></li>
+<li class="toctree-l2"><a class="reference internal" href="markdown.html#raw-text-code-bold-italic-strikethrough">1.6.7. raw text, code, bold, italic, strikethrough</a></li>
+<li class="toctree-l2"><a class="reference internal" href="markdown.html#latex">1.6.8. Latex</a></li>
+<li class="toctree-l2"><a class="reference internal" href="markdown.html#quote">1.6.9. Quote</a></li>
+<li class="toctree-l2"><a class="reference internal" href="markdown.html#table">1.6.10. Table</a></li>
+<li class="toctree-l2"><a class="reference internal" href="markdown.html#in-page-link">1.6.11. In-page link</a></li>
+<li class="toctree-l2"><a class="reference internal" href="markdown.html#reference">1.6.12. Reference</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="github/github.html">1.7. GitHub</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="github/github.html#git-version-control-system-vsc">1.7.1. Git (version control system, VSC)</a></li>
+<li class="toctree-l2"><a class="reference internal" href="github/github.html#basic-commands">1.7.2. Basic commands</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="github/github.html#create-a-new-repository">Create a new repository</a></li>
+<li class="toctree-l3"><a class="reference internal" href="github/github.html#push-an-existing-repository-from-the-command-line">push an existing repository from the command line</a></li>
+<li class="toctree-l3"><a class="reference internal" href="github/github.html#clone">Clone</a></li>
+<li class="toctree-l3"><a class="reference internal" href="github/github.html#take-new-changes-of-the-remote-repository-into-the-local-repository">take new changes of the remote repository into the local repository</a></li>
+<li class="toctree-l3"><a class="reference internal" href="github/github.html#make-a-branch-and-change-branches-at-local">make a branch and change branches at local</a></li>
+<li class="toctree-l3"><a class="reference internal" href="github/github.html#gitignore">.gitignore</a></li>
+<li class="toctree-l3"><a class="reference internal" href="github/github.html#when-you-want-to-rename-a-repository">When you want to rename a repository</a></li>
+<li class="toctree-l3"><a class="reference internal" href="github/github.html#quit-git-administration">Quit Git administration</a></li>
+<li class="toctree-l3"><a class="reference internal" href="github/github.html#remove-files">Remove files</a></li>
+<li class="toctree-l3"><a class="reference internal" href="github/github.html#invite-people-to-my-private-repository">Invite people to my Private repository</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="github/github.html#github-cli">1.7.3. GitHub CLI</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="github/github.html#install">Install</a></li>
+<li class="toctree-l3"><a class="reference internal" href="github/github.html#make-a-new-repository-based-on-the-current-directory">Make a new repository based on the current directory</a></li>
+<li class="toctree-l3"><a class="reference internal" href="github/github.html#make-an-alias-to-delete-remote-repository">Make an alias to delete remote repository</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="github/github.html#reference">1.7.4. Reference</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="github/commitMessage.html">1.8. Commit Masssages with emoji</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="github/commitMessage.html#reference">1.8.1. Reference</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="packageManager.html">1.9. Homebrew and venv</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="packageManager.html#homebrew">1.9.1. Homebrew</a></li>
+<li class="toctree-l2"><a class="reference internal" href="packageManager.html#venv">1.9.2. Venv</a></li>
+<li class="toctree-l2"><a class="reference internal" href="packageManager.html#lets-use-jupyter-lab">1.9.3. Let’s use jupyter-lab!</a></li>
+</ul>
+</li>
+</ul>
 </div>
 </section>
 
