@@ -1,9 +1,6 @@
 # Coding rules
 > last modified: {sub-ref}`today`
 
-:::{tableofcontents}
-:::
-
 Coding rules are guidelines that help developers write clean, readable, and maintainable code. They can be enforced manually or through the use of automated tools.
 
 Some common coding rules include:
