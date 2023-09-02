@@ -1,11 +1,11 @@
 # Programming basics
 > last modified: {sub-ref}`today`
 
-- [コマンドライン](./linux.md)
+- [Command Line](./linux.md)
 - [$PATH](./path.md)
-- [エイリアス](./alias.md)
+- [Alias](./alias.md)
 - [Zsh](./zsh.md)
-- [マークダウン](./markdown.md)
+- [Markdown](./markdown.md)
 - [GitHub](./github/github.md)
-- [絵文字を使ったコミットメッセージ](./github/commitMessage.md)
-- [Homebrew と venv](./packageManager.md)
+- [Commit Message with Emoji](./github/commitMessage.md)
+- [Homebrew and venv](./packageManager.md)
