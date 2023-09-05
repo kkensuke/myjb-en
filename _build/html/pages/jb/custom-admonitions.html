@@ -501,20 +501,25 @@ document.write(`
 <span class="p">}</span>
 </pre></div>
 </div>
-<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>
-<span class="p">:::{</span><span class="n">note</span><span class="p">}</span>
-<span class="n">note</span>
-<span class="p">:::</span>
+<div class="sd-container-fluid sd-sphinx-override sd-mt-0 sd-mb-2 sd-ml-0 sd-mr-0 sd-p-0 sd-example docutils">
+<div class="sd-row sd-g-0 sd-g-xs-0 sd-g-sm-0 sd-g-md-0 sd-g-lg-0 docutils">
+<div class="sd-col sd-d-flex-column sd-col-12 sd-col-xs-12 sd-col-sm-12 sd-col-md-12 sd-col-lg-12 sd-example-item sd-example-source sd-rounded-top docutils">
+<div class="highlight-markdown notranslate"><div class="highlight"><pre><span></span>:::{note}
+note
+:::
 
-<span class="p">:::{</span><span class="n">attention</span><span class="p">}</span>
-<span class="n">attention</span>
-<span class="p">:::</span>
+:::{attention}
+attention
+:::
 
-<span class="p">:::{</span><span class="n">important</span><span class="p">}</span>
-<span class="n">important</span>
-<span class="p">:::</span>
+:::{important}
+important
+:::
 </pre></div>
 </div>
+</div>
+<div class="sd-col sd-d-flex-column sd-col-12 sd-col-xs-12 sd-col-sm-12 sd-col-md-12 sd-col-lg-12 sd-example-item p-3 sd-example-result sd-rounded-bottom docutils">
+<div class="result-content docutils">
 <div class="admonition note">
 <p class="admonition-title">Note</p>
 <p>note</p>
@@ -526,6 +531,10 @@ document.write(`
 <div class="admonition important">
 <p class="admonition-title">Important</p>
 <p>important</p>
+</div>
+</div>
+</div>
+</div>
 </div>
 </section>
 <section id="no-icon-class">
@@ -546,18 +555,23 @@ document.write(`
 <span class="p">}</span>
 </pre></div>
 </div>
-<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>
-<span class="p">:::{</span><span class="n">note</span><span class="p">}</span>
-<span class="p">:</span><span class="n">class</span><span class="p">:</span> <span class="n">no</span><span class="o">-</span><span class="n">icon</span>
-<span class="n">note</span> <span class="n">without</span> <span class="n">icon</span>
-<span class="p">:::</span>
+<div class="sd-container-fluid sd-sphinx-override sd-mt-0 sd-mb-2 sd-ml-0 sd-mr-0 sd-p-0 sd-example docutils">
+<div class="sd-row sd-g-0 sd-g-xs-0 sd-g-sm-0 sd-g-md-0 sd-g-lg-0 docutils">
+<div class="sd-col sd-d-flex-column sd-col-12 sd-col-xs-12 sd-col-sm-12 sd-col-md-12 sd-col-lg-12 sd-example-item sd-example-source sd-rounded-top docutils">
+<div class="highlight-markdown notranslate"><div class="highlight"><pre><span></span>:::{note}
+:class: no-icon
+note without icon
+:::
 
-<span class="p">:::{</span><span class="n">admonition</span><span class="p">}</span> <span class="n">Title</span>
-<span class="p">:</span><span class="n">class</span><span class="p">:</span> <span class="n">no</span><span class="o">-</span><span class="n">icon</span>
-<span class="n">admonition</span> <span class="n">without</span> <span class="n">icon</span>
-<span class="p">:::</span>
+:::{admonition} Title
+:class: no-icon
+admonition without icon
+:::
 </pre></div>
 </div>
+</div>
+<div class="sd-col sd-d-flex-column sd-col-12 sd-col-xs-12 sd-col-sm-12 sd-col-md-12 sd-col-lg-12 sd-example-item p-3 sd-example-result sd-rounded-bottom docutils">
+<div class="result-content docutils">
 <div class="no-icon admonition note">
 <p class="admonition-title">Note</p>
 <p>note without icon</p>
@@ -565,6 +579,10 @@ document.write(`
 <div class="no-icon admonition">
 <p class="admonition-title">Title</p>
 <p>admonition without icon</p>
+</div>
+</div>
+</div>
+</div>
 </div>
 </section>
 <section id="new-admonitions-1">
@@ -603,39 +621,45 @@ document.write(`
 <span class="p">}</span>
 </pre></div>
 </div>
-<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>```{admonition} asdf
+<div class="sd-container-fluid sd-sphinx-override sd-mt-0 sd-mb-2 sd-ml-0 sd-mr-0 sd-p-0 sd-example docutils">
+<div class="sd-row sd-g-0 sd-g-xs-0 sd-g-sm-0 sd-g-md-0 sd-g-lg-0 docutils">
+<div class="sd-col sd-d-flex-column sd-col-12 sd-col-xs-12 sd-col-sm-12 sd-col-md-12 sd-col-lg-12 sd-example-item sd-example-source sd-rounded-top docutils">
+<div class="highlight-markdown notranslate"><div class="highlight"><pre><span></span>:::{admonition} asdf
 :class: extra-credit
 &quot;extra credit&quot; as class
-```
+:::
 
-```{admonition} asdf
+:::{admonition} asdf
 :class: extra-credit no-icon
 extra credit and no-icon class
-```
+:::
 
-```{admonition} Title
+:::{admonition} Title
 :class: simple
 simple class
-```
+:::
 
-```{admonition} Title
+:::{admonition} Title
 :class: simple no-icon
 simple and no-icon class
-```
+:::
 
-```{admonition} Peter Parker
+:::{admonition} Peter Parker
 :class: quote
-quote class
-```
+With great power comes great responsibility.
+:::
 </pre></div>
 </div>
+</div>
+<div class="sd-col sd-d-flex-column sd-col-12 sd-col-xs-12 sd-col-sm-12 sd-col-md-12 sd-col-lg-12 sd-example-item p-3 sd-example-result sd-rounded-bottom docutils">
+<div class="result-content docutils">
 <div class="extra-credit admonition">
 <p class="admonition-title">asdf</p>
-<p>extra-credit class</p>
+<p>“extra credit” as class</p>
 </div>
 <div class="extra-credit no-icon admonition">
 <p class="admonition-title">asdf</p>
-<p>extra-credit and no-icon class</p>
+<p>extra credit and no-icon class</p>
 </div>
 <div class="simple admonition">
 <p class="admonition-title">Title</p>
@@ -648,6 +672,10 @@ quote class
 <div class="quote admonition">
 <p class="admonition-title">Peter Parker</p>
 <p>With great power comes great responsibility.</p>
+</div>
+</div>
+</div>
+</div>
 </div>
 </section>
 <section id="new-admonitions-2">
@@ -698,31 +726,41 @@ quote class
 <span class="p">}</span>
 </pre></div>
 </div>
-<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>```{admonition} extra credit
+<div class="sd-container-fluid sd-sphinx-override sd-mt-0 sd-mb-2 sd-ml-0 sd-mr-0 sd-p-0 sd-example docutils">
+<div class="sd-row sd-g-0 sd-g-xs-0 sd-g-sm-0 sd-g-md-0 sd-g-lg-0 docutils">
+<div class="sd-col sd-d-flex-column sd-col-12 sd-col-xs-12 sd-col-sm-12 sd-col-md-12 sd-col-lg-12 sd-example-item sd-example-source sd-rounded-top docutils">
+<div class="highlight-markdown notranslate"><div class="highlight"><pre><span></span>:::{admonition} extra credit
 extra-credit class (letter case doesn’t matter)
-```
+:::
 
-```{admonition} Extra credit
+:::{admonition} Extra credit
 extra-credit class (letter case doesn’t matter)
-```
+:::
 
-```{admonition} EXTRA CREDIT
+:::{admonition} EXTRA CREDIT
 extra-credit class (letter case doesn’t matter)
-```
+:::
 
-```{admonition} abstract
+:::{admonition} abstract
 abstract class (letter case doesn’t matter)
-```
+:::
 
-```{admonition} Example
+:::{admonition} Comment
+comment class (letter case doesn’t matter)
+:::
+
+:::{admonition} Example
 example class (letter case doesn’t matter)
-```
+:::
 
-```{admonition} question
+:::{admonition} question
 question class (letter case doesn’t matter)
-```
+:::
 </pre></div>
 </div>
+</div>
+<div class="sd-col sd-d-flex-column sd-col-12 sd-col-xs-12 sd-col-sm-12 sd-col-md-12 sd-col-lg-12 sd-example-item p-3 sd-example-result sd-rounded-bottom docutils">
+<div class="result-content docutils">
 <div class="admonition-extra-credit admonition">
 <p class="admonition-title">extra credit</p>
 <p>extra-credit class (letter case doesn’t matter)</p>
@@ -736,16 +774,24 @@ question class (letter case doesn’t matter)
 <p>extra-credit class (letter case doesn’t matter)</p>
 </div>
 <div class="admonition-abstract admonition">
-<p class="admonition-title">Abstract</p>
+<p class="admonition-title">abstract</p>
 <p>abstract class (letter case doesn’t matter)</p>
+</div>
+<div class="admonition-comment admonition">
+<p class="admonition-title">Comment</p>
+<p>comment class (letter case doesn’t matter)</p>
 </div>
 <div class="admonition-example admonition">
 <p class="admonition-title">Example</p>
 <p>example class (letter case doesn’t matter)</p>
 </div>
 <div class="admonition-question admonition">
-<p class="admonition-title">Question</p>
+<p class="admonition-title">question</p>
 <p>question class (letter case doesn’t matter)</p>
+</div>
+</div>
+</div>
+</div>
 </div>
 </section>
 <section id="remove-icons-from-sphinx-proof">
@@ -837,23 +883,29 @@ question class (letter case doesn’t matter)
 <span class="p">}</span>
 </pre></div>
 </div>
-<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>```{prf:theorem}
+<div class="sd-container-fluid sd-sphinx-override sd-mt-0 sd-mb-2 sd-ml-0 sd-mr-0 sd-p-0 sd-example docutils">
+<div class="sd-row sd-g-0 sd-g-xs-0 sd-g-sm-0 sd-g-md-0 sd-g-lg-0 docutils">
+<div class="sd-col sd-d-flex-column sd-col-12 sd-col-xs-12 sd-col-sm-12 sd-col-md-12 sd-col-lg-12 sd-example-item sd-example-source sd-rounded-top docutils">
+<div class="highlight-markdown notranslate"><div class="highlight"><pre><span></span>:::{prf:theorem}
 asdf
-```
+:::
 
-```{prf:lemma}
+:::{prf:lemma}
 asdf
-```
+:::
 
-```{prf:remark}
+:::{prf:remark}
 asdf
-```
+:::
 
-```{prf:example}
+:::{prf:example}
 asdf
-```
+:::
 </pre></div>
 </div>
+</div>
+<div class="sd-col sd-d-flex-column sd-col-12 sd-col-xs-12 sd-col-sm-12 sd-col-md-12 sd-col-lg-12 sd-example-item p-3 sd-example-result sd-rounded-bottom docutils">
+<div class="result-content docutils">
 <div class="proof theorem admonition" id="theorem-0">
 <p class="admonition-title"><span class="caption-number">Theorem 5.1 </span></p>
 <section class="theorem-content" id="proof-content">
@@ -874,7 +926,11 @@ asdf
 <section class="example-content" id="proof-content">
 <p>asdf</p>
 </section>
-</div></section>
+</div></div>
+</div>
+</div>
+</div>
+</section>
 </section>
 
     <script type="text/x-thebe-config">

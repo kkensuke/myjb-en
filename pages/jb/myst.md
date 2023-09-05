@@ -1,4 +1,14 @@
 ---
+jupytext:
+  text_representation:
+    extension: .md
+    format_name: myst
+    format_version: 0.13
+    jupytext_version: 1.15.0
+kernelspec:
+  display_name: 'Python 3.8.9 (''venv'': venv)'
+  language: python
+  name: python3
 myst:
   substitutions:
     key1: "I'm a **substitution**"
@@ -17,7 +27,7 @@ myst:
 
 % This file provide you the MyST syntax.
 
->## Heading
+## Heading
 >```
 ># Heading level 1
 >## Heading level 2
@@ -33,7 +43,6 @@ myst:
 >>#### Heading level 4
 >>##### Heading level 5
 >>###### Heading level 6
->>
 
 
 ## Target headers
@@ -49,66 +58,44 @@ myst:
 see [target](target)
 
 ## Quote
->```
->> this is a quote
->```
->>this is a quote
+
+:::{example}
+> this is a quote
+:::
 
 
 ## End line
->```
->This is the end of some text.
->---
->```
->>This is the end of some text.
->>---
+:::{example}
+some text
+
+---
+some text.
+:::
 
 ## Line comment
->```
->% This is a line comment.
->```
->>% This is a line comment.
+:::{example}
+% This is a line comment.
+:::
 
 ## Block break
->```
->This is an example of
->+++ {"meta": "data"}
->a block break
->```
->>This is an example of
->>+++ {"meta": "data"}
->>a block break
+:::{example}
+This is an example of
++++ {"meta": "data"}
+a block break
+:::
 
 ## List
->```
->1. First item
->2. Second item
->    * First sub-item
->    * Second sub-item
->      * Third subsub-item
->```
->>1. First item
->>2. Second item
->>    * First sub-item
->>    * Second sub-item
->>      * Third subsub-item
+:::{example}
+1. First item
+2. Second item
+    * First sub-item
+    * Second sub-item
+      * Third subsub-item
+:::
 
 ## Table
->````
->```{list-table} This table title
->:header-rows: 1
->:name: example-table
->
->* - Training
->  - Validation
->* - 0
->  - 5
->* - 13720
->  - 2744
->```
->````
->
-```{list-table} This table title
+::::{example}
+:::{list-table} This table title
 :header-rows: 1
 :name: example-table
 
@@ -118,114 +105,88 @@ see [target](target)
   - 5
 * - 13720
   - 2744
-```
-
+:::
+::::
 
 ## admonition
 
->````
->```{note} Notes require **no** arguments,
->so content can start here.
->```
->````
->```{note} Notes require **no** arguments,
->so content can start here.
->```
-
->````
->```{warning}
->Warnings
->```
->````
->```{warning}
->Warnings
->```
-
->````
->```{tip}
->Tip
->```
->````
->```{tip}
->Tip
->```
-
->````
->```{caution}
->Caution
->```
->````
->```{caution}
->Caution
->```
-
->````
->```{attention}
->Attention
->```
->````
->```{attention}
->Attention
->```
-
->````
->```{danger}
->Danger
->```
->````
->```{danger}
->Danger
->```
-
->````
->```{error}
->Error
->```
->````
->```{error}
->Error
->```
-
->````
->```{hint}
->hint
->```
->````
->```{hint}
->hint
->```
+::::{example}
+:::{note} Notes require **no** arguments,
+so content can start here.
+:::
+::::
 
 
->````
->```{important}
->Important
->```
->````
->```{important}
->Important
->```
+::::{example}
+:::{warning}
+Warning
+:::
+::::
 
->````
->```{seealso}
->see also
->```
->````
->```{seealso}
->see also
->```
 
->````
->```{admonition} This is a title
->:class: tip
->
->An example of an admonition with a title.
->```
->````
->```{admonition} This is a title
->:class: tip
->
->An example of an admonition with a title.
->```
+::::{example}
+:::{tip}
+Tip
+:::
+::::
+
+
+::::{example}
+:::{caution}
+Caution
+:::
+::::
+
+
+::::{example}
+:::{attention}
+Attention
+:::
+::::
+
+
+::::{example}
+:::{danger}
+Danger
+:::
+::::
+
+
+::::{example}
+:::{error}
+Error
+:::
+::::
+
+
+::::{example}
+:::{hint}
+hint
+:::
+::::
+
+
+::::{example}
+:::{important}
+Important
+:::
+::::
+
+
+::::{example}
+:::{seealso}
+see also
+:::
+::::
+
+
+::::{example}
+:::{admonition} This is a title
+:class: tip
+
+An example of an admonition with a title.
+:::
+::::
 
 
 ### Figure parameters
@@ -254,148 +215,101 @@ The following options are supported:
 : Value of the figure’s class attribute which can be used to add custom CSS or JavaScript. Predefined options include:
 
 ## Math
->```
->This is an example of an
->inline equation $z=\sqrt{x^2+y^2}$.
->```
->>This is an example of an
->>inline equation $z=\sqrt{x^2+y^2}$.
 
->```
->$$
->z=\sqrt{x^2+y^2}
->$$ (mylabel)
->equation ref: {eq}`mylabel`
->```
->>$$z=\sqrt{x^2+y^2}$$ (mylabel)
->>equation ref: {eq}`mylabel`
+:::{example}
+This is an example of an inline equation $z=\sqrt{x^2+y^2}$.
+:::
 
 
-<!-- 
+:::{example}
+$$z=\sqrt{x^2+y^2}$$ (mylabel)
+equation ref: {eq}`mylabel`
+:::
+
+
 ## Executable code
+
+::::md
+```{code-cell} ipython3
+note = "Python syntax highlighting"
+print(note)
+```
+::::
 
 ```{code-cell} ipython3
 note = "Python syntax highlighting"
 print(note)
 ```
--->
-
 
 ## Reference documents
-
->```
->See {doc}`../basic/alias` for more information.
->```
->>See {doc}`../basic/alias` for more information.
+:::{example}
+See {doc}`../basic/alias` for more information.
+:::
 
 ## Toggle
->`````
->````{toggle}
->```python
->print('hello')
->```
->````
->`````
->>````{toggle}
->>```python
->>print('hello')
->>```
->>````
+:::::{example}
+::::{toggle}
+```python
+print('hello')
+```
+::::
+:::::
 
 ## Margin
->````
->```{margin} **My margin title**
->Here is my margin content, it is pretty cool!
->```
->````
->>```{margin} **My margin title**
->>Here is my margin content, it is pretty cool!
->>```
+::::{example}
+:::{margin} **My margin title**
+Here is my margin content, it is pretty cool!
+:::
+::::
 ---
 
->```
->:::{tip}
->:class: margin toggle
->This note will be in the margin!
->:::
->```
->>:::{tip}
->>:class: margin toggle
->>This note will be in the margin!
->>:::
+::::{example}
+:::{tip}
+:class: margin toggle
+This note will be in the margin!
+:::
+::::
 ---
 
 % :class: toggle = :class: dropdown?
 
->````
->``{figure} ./gitHub/img/GitHub-flow.png
->---
->figclass: margin
->alt: My figure text
->name: myfig4
->---
->And here is my figure caption
->```
->````
->>```{figure} ../basic/github/img/GitHub-flow.png
->>---
->>figclass: margin
->>alt: My figure text
->>name: myfig4
->>---
->>And here is my figure caption
->>```
-
-<!--
-```{typescript}
-asdf
-asdf
-asdf
+::::{example}
+```{figure} ../basic/github/img/GitHub-flow.png
+---
+figclass: margin
+alt: My figure text
+name: myfig4
+---
+And here is my figure caption
 ```
--->
+::::
 
 
 ## Panel
 https://sphinx-design.readthedocs.io/en/latest/cards.html
 
->`````
->````{card}
->Panel header 1
->^^^
->Panel body 1
->+++
->Panel footer 1
->````
->`````
->>````{card}
->>Panel header 1
->>^^^
->>Panel body 1
->>+++
->>Panel footer 1
->>````
+::::{example}
+```{card}
+Panel header 1
+^^^
+Panel body 1
++++
+Panel footer 1
+```
+::::
 
 ## Badge
->```
->{bdg}`plain badge`
->{bdg-primary}`primary` {bdg-primary-line}`primary-line`
->{bdg-secondary}`secondary` {bdg-secondary-line}`secondary-line`
->{bdg-success}`success` {bdg-success-line}`success-line`
->{bdg-info}`info` {bdg-info-line}`info-line`
->{bdg-warning}`warning` {bdg-warning-line}`warning-line`
->{bdg-danger}`danger` {bdg-danger-line}`danger-line`
->{bdg-light}`light` {bdg-light-line}`light-line`
->{bdg-dark}`dark` {bdg-dark-line}`dark-line`
->```
->>{bdg}`plain badge`
->>{bdg-primary}`primary` {bdg-primary-line}`primary-line`
->>{bdg-secondary}`secondary` {bdg-secondary-line}`secondary-line`
->>{bdg-success}`success` {bdg-success-line}`success-line`
->>{bdg-info}`info` {bdg-info-line}`info-line`
->>{bdg-warning}`warning` {bdg-warning-line}`warning-line`
->>{bdg-danger}`danger` {bdg-danger-line}`danger-line`
->>{bdg-light}`light` {bdg-light-line}`light-line`
->>{bdg-dark}`dark` {bdg-dark-line}`dark-line`
+:::{example}
+{bdg}`plain badge`
+{bdg-primary}`primary` {bdg-primary-line}`primary-line`
+{bdg-secondary}`secondary` {bdg-secondary-line}`secondary-line`
+{bdg-success}`success` {bdg-success-line}`success-line`
+{bdg-info}`info` {bdg-info-line}`info-line`
+{bdg-warning}`warning` {bdg-warning-line}`warning-line`
+{bdg-danger}`danger` {bdg-danger-line}`danger-line`
+{bdg-light}`light` {bdg-light-line}`light-line`
+{bdg-dark}`dark` {bdg-dark-line}`dark-line`
+:::
 
 
 %{link-badge}`https://example.com,cls=badge-primary text-white,tooltip=a tooltip`
@@ -403,206 +317,123 @@ https://sphinx-design.readthedocs.io/en/latest/cards.html
 %{link-badge}`panels/usage,my reference,ref,badge-success text-white,hallo`
 
 ### dropdown
->`````
->````{dropdown}
->:animate: fade-in-slide-down
->```
->git add .
->git commit -m "update"
->git push origin main
->```
->````
->`````
->>````{dropdown}
->>:animate: fade-in-slide-down
->>```
->>git add .
->>git commit -m "update"
->>git push origin main
->>```
->>````
+:::::{example}
+````{dropdown}
+:animate: fade-in-slide-down
 
-% fade-in, fade-in-slide-down : fade in for the first time
->````
->```{admonition} Click the button to reveal!
->:class: dropdown
->Some hidden toggle content!
->```
->````
->
->>```{admonition} Click the button to reveal!
->>:class: dropdown
->>Some hidden toggle content!
->>```
+```
+git add .
+git commit -m "update"
+git push origin main
+```
+````
+:::::
+
+
+::::{example}
+:::{admonition} Click the button to reveal!
+:class: dropdown
+
+Some hidden toggle content!
+:::
+::::
+
 ## Definition lists
->```
->Term 1
->: Definition
->
->Term 2
->: Definition
->```
->>Term 1
->>: Definition
->>
->>Term 2
->>: Definition
+:::{example}
+Term 1
+: Definition
 
->````
->```{glossary}
->Term one
->  An indented explanation of term 1
->
->A second term
->  An indented explanation of term2
->```
->````
->>```{glossary}
->>Term one
->>  An indented explanation of term 1
->>
->>A second term
->>  An indented explanation of term2
->>```
+Term 2
+: Definition
+:::
 
->````
->```{epigraph}
->Here is a cool quotation.
->
->-- Jo the Jovyan
->```
->````
->>```{epigraph}
->>Here is a cool quotation.
->>
->>-- Jo the Jovyan
->>```
+
+::::{example}
+```{glossary}
+Term one
+  An indented explanation of term 1
+
+A second term
+  An indented explanation of term2
+```
+::::
+
+
+::::{example}
+```{epigraph}
+Here is a cool quotation.
+
+-- Jo the Jovyan
+```
+::::
 
 ### tabs
 
 ex1
->`````
->````{tab-set}
->```{tab-item} Tab 1 title
->My first tab
->```
->
->```{tab-item} Tab 2 title
->My second tab with `some code`!
->```
->````
->`````
->>````{tab-set}
->>```{tab-item} Tab 1 title
->>My first tab
->>```
->>
->>```{tab-item} Tab 2 title
->>My second tab with `some code`!
->>```
->>````
+:::::{example}
+````{tab-set}
+```{tab-item} Tab 1 title
+My first tab
+```
+
+```{tab-item} Tab 2 title
+My second tab with `some code`!
+```
+````
+:::::
 
 ex2
->``````
->`````{tab-set}
->````{tab-item} c++
->
->```{code-block} c++
->
->int main(const int argc, const char **argv) {
->  return 0;
->}
->```
->````
->
->````{tab-item} python
->
->```{code-block} python
->
->def main():
->    return
->```
->````
->
->````{tab-item} java
->
->```{code-block} java
->
->class Main {
->    public static void main(String[] args) {
->    }
->}
->```
->````
->
->````{tab-item} julia
->
->```{code-block} julia
->
->function main()
->end
->```
->````
->
->````{tab-item} fortran
->
->```{code-block} fortran
->
->PROGRAM main
->END PROGRAM main
->```
->````
->`````
->``````
->>`````{tab-set}
->>````{tab-item} c++
->>
->>```{code-block} c++
->>
->>int main(const int argc, const char **argv) {
->>  return 0;
->>}
->>```
->>````
->>
->>````{tab-item} python
->>
->>```{code-block} python
->>
->>def main():
->>    return
->>```
->>````
->>
->>````{tab-item} java
->>
->>```{code-block} java
->>
->>class Main {
->>    public static void main(String[] args) {
->>    }
->>}
->>```
->>````
->>
->>````{tab-item} julia
->>
->>```{code-block} julia
->>
->>function main()
->>end
->>```
->>````
->>
->>````{tab-item} fortran
->>
->>```{code-block} fortran
->>
->>PROGRAM main
->>END PROGRAM main
->>```
->>````
->>`````
+::::::{example}
+`````{tab-set}
+````{tab-item} c++
+
+```{code-block} c++
+
+int main(const int argc, const char **argv) {
+  return 0;
+}
+```
+````
+
+````{tab-item} python
+
+```{code-block} python
+
+def main():
+    return
+```
+````
+
+````{tab-item} java
+
+```{code-block} java
+
+class Main {
+    public static void main(String[] args) {
+    }
+}
+```
+````
+
+````{tab-item} julia
+
+```{code-block} julia
+
+function main()
+end
+```
+````
+
+````{tab-item} fortran
+
+```{code-block} fortran
+
+PROGRAM main
+END PROGRAM main
+```
+````
+`````
+::::::
 
 ## key
 
@@ -643,23 +474,18 @@ substitutions:
 ```
 
 ## Footnotes
->```
->This is a footnote[^mylabel].
->[^mylabel]: My footnote text.
->```
->>This is a footnote[^mylabel].
->>[^mylabel]: My footnote text.
+:::{example}
+This is a footnote[^mylabel].
+[^mylabel]: My footnote text.
+:::
 
 
 ## Custom \<div> blocks
->````
->```{div} my-class
->**Some content.**
->```
->````
->>```{div} my-class
->>**Some content.**
->>```
+::::{example}
+:::{div} my-class
+**Some content.**
+:::
+::::
 
 
 ## Check for missing references
@@ -670,16 +496,14 @@ jupyter-book build -W -n --keep-going docs/
 
 ## Layout
 full-width
->````
->```{note}
->:class: full-width
->Here's a note that will take the full width
->```
->````
->>```{note}
->>:class: full-width
->>Here's a note that will take the full width
->>```
+
+::::{example}
+:::{note}
+:class: full-width
+Here's a note that will take the full width
+:::
+::::
+
 
 ## Proofs, Theorems, and Algorithms
 
@@ -699,48 +523,30 @@ sphinx:
 https://sphinx-proof.readthedocs.io/en/latest/syntax.html
 
 ### Example
+::::{example}
+:::{prf:theorem} My theorem
+:nonumber:
 
->````
->```{prf:theorem} My theorem
->:nonumber:
->
->This is my theorem.
->```
->````
->
->>```{prf:theorem} My theorem
->>:nonumber:
->>
->>This is my theorem.
->>```
+This is my theorem.
+:::
+::::
 
 
->````
->```{prf:proof} My proof
->
->This is my proof.
->```
->````
->
->>```{prf:proof} My proof
->>
->>This is my proof.
->>```
+::::{example}
+:::{prf:proof} My proof
+
+This is my proof.
+:::
+::::
 
 
->````
->```{prf:remark} My remark
->:nonumber:
->
->This is my remark.
->```
->````
->
->>```{prf:remark} My remark
->>:nonumber:
->>
->>This is my remark.
->>```
+::::{example}
+:::{prf:remark} My remark
+:nonumber:
+
+This is my remark.
+:::
+::::
 
 
 # Build and publish outputs
@@ -795,7 +601,7 @@ sphinx:
 
 ## Defining TeX macros
 
-You can add LaTeX macros for the whole book by defining them under the Macros option of the TeX block. For example, the following two macros have been pre-defined in the Sphinx configuration
+You can add LaTeX macros for the whole book by defining them under the Macros option of the TeX block. For example, the following macros have been pre-defined in the Sphinx configuration
 ```yaml
 sphinx:
   config                    :             # key-value pairs to directly over-ride the Sphinx configuration
