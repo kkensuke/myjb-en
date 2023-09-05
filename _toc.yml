@@ -58,7 +58,6 @@ parts:
     - file: pages/others/others
       sections:
       - file: pages/others/firefox/firefox-security-settings
-      - file: pages/others/asdf
 
 
 
