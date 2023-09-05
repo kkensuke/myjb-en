@@ -86,12 +86,12 @@ div.admonition-abstract .admonition-title:after {
     content: "\f135";
 }
 /* comment class for admonitions */
-div.admonition-comment {
-/*     border-left-color:  rgba(235, 193, 7, 1); */
+/* div.admonition-comment {
+    border-left-color:  rgba(235, 193, 7, 1);
 }
 div.admonition-comment .admonition-title {
-/*     background-color:  rgba(255, 193, 7, .2); */
-}
+    background-color:  rgba(255, 193, 7, .2);
+} */
 div.admonition-comment .admonition-title:after {
     content: "\f075";
 /*     color:  rgba(235, 193, 7, 1); */

@@ -95,13 +95,15 @@ div.extra-credit .admonition-title:after {
 }
 /* quote class for admonitions */
 div.quote {
-    border-left-color:  rgba(var(--pst-color-success), 1);
+    font-style: italic;
+    border-left-color: rgba(146, 146, 146, 1);
 }
 div.quote .admonition-title {
-    background-color:  rgba(var(--pst-color-success), .1);
+    font-style: italic;
+    background-color:  rgba(146, 146, 146, .1);
 }
 div.quote .admonition-title:after {
-    color: rgba(var(--pst-color-success), 1);
+    color: rgba(146, 146, 146, 1);
     content: "\f10e";
 }
 :::
@@ -158,6 +160,10 @@ div.admonition-abstract .admonition-title {
 div.admonition-abstract .admonition-title:after {
     color: rgba(200, 0, 16, 1);
     content: "\f135";
+}
+/* comment class for admonitions */
+div.admonition-comment .admonition-title:after {
+    content: "\f075";
 }
 /* example class for admonitions */
 div.admonition-example {
