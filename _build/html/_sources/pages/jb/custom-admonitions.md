@@ -177,7 +177,7 @@ simple and no-icon class
 
 ```{admonition} Peter Parker
 :class: quote
-quote class
+With great power comes great responsibility.
 ```
 
 
@@ -369,6 +369,24 @@ div.algorithm p.admonition-title {
     padding-left: .6rem;
 }
 :::
+
+::::
+```{prf:theorem}
+asdf
+```
+
+```{prf:lemma}
+asdf
+```
+
+```{prf:remark}
+asdf
+```
+
+```{prf:example}
+asdf
+```
+::::
 
 ```{prf:theorem}
 asdf
