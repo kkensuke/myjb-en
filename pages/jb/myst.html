@@ -484,16 +484,16 @@ document.write(`
 </li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#quote">5.3.3. Quote</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#end-line">5.3.4. End line</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#this-is-the-end-of-some-text">5.3.5. This is the end of some text.</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#line-comment">5.3.6. Line comment</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#block-break">5.3.7. Block break</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#list">5.3.8. List</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#table">5.3.9. Table</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#admonition">5.3.10. admonition</a><ul class="nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#line-comment">5.3.5. Line comment</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#block-break">5.3.6. Block break</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#list">5.3.7. List</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#table">5.3.8. Table</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#admonition">5.3.9. admonition</a><ul class="nav section-nav flex-column">
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#figure-parameters">Figure parameters</a></li>
 </ul>
 </li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#math">5.3.11. Math</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#math">5.3.10. Math</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#executable-code">5.3.11. Executable code</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#reference-documents">5.3.12. Reference documents</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#toggle">5.3.13. Toggle</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#margin">5.3.14. Margin</a></li>
@@ -552,7 +552,8 @@ document.write(`
 </div></blockquote>
 <section id="heading">
 <h2><span class="section-number">5.2.1. </span>Heading<a class="headerlink" href="#heading" title="Permalink to this heading">#</a></h2>
-<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="c1"># Heading level 1</span>
+<blockquote>
+<div><div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="c1"># Heading level 1</span>
 <span class="c1">## Heading level 2</span>
 <span class="c1">### Heading level 3</span>
 <span class="c1">#### Heading level 4</span>
@@ -560,8 +561,7 @@ document.write(`
 <span class="c1">###### Heading level 6</span>
 </pre></div>
 </div>
-<blockquote>
-<div></div></blockquote>
+</div></blockquote>
 </section>
 </section>
 <section class="tex2jax_ignore mathjax_ignore" id="heading-level-1">
@@ -599,63 +599,97 @@ see <a class="reference internal" href="#target"><span class="std std-ref">targe
 </section>
 <section id="quote">
 <h2><span class="section-number">5.3.3. </span>Quote<a class="headerlink" href="#quote" title="Permalink to this heading">#</a></h2>
-<blockquote>
-<div><div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="o">&gt;</span> <span class="n">this</span> <span class="ow">is</span> <span class="n">a</span> <span class="n">quote</span>
+<div class="sd-container-fluid sd-sphinx-override sd-mt-0 sd-mb-2 sd-ml-0 sd-mr-0 sd-p-0 sd-example docutils">
+<div class="sd-row sd-g-0 sd-g-xs-0 sd-g-sm-0 sd-g-md-0 sd-g-lg-0 docutils">
+<div class="sd-col sd-d-flex-column sd-col-12 sd-col-xs-12 sd-col-sm-12 sd-col-md-12 sd-col-lg-12 sd-example-item sd-example-source sd-rounded-top docutils">
+<div class="highlight-markdown notranslate"><div class="highlight"><pre><span></span><span class="k">&gt; </span><span class="ge">this is a quote</span>
 </pre></div>
 </div>
+</div>
+<div class="sd-col sd-d-flex-column sd-col-12 sd-col-xs-12 sd-col-sm-12 sd-col-md-12 sd-col-lg-12 sd-example-item p-3 sd-example-result sd-rounded-bottom docutils">
+<div class="result-content docutils">
 <blockquote>
 <div><p>this is a quote</p>
 </div></blockquote>
-</div></blockquote>
+</div>
+</div>
+</div>
+</div>
 </section>
 <section id="end-line">
 <h2><span class="section-number">5.3.4. </span>End line<a class="headerlink" href="#end-line" title="Permalink to this heading">#</a></h2>
-<blockquote>
-<div><div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">This</span> <span class="ow">is</span> <span class="n">the</span> <span class="n">end</span> <span class="n">of</span> <span class="n">some</span> <span class="n">text</span><span class="o">.</span>
-<span class="o">---</span>
+<div class="sd-container-fluid sd-sphinx-override sd-mt-0 sd-mb-2 sd-ml-0 sd-mr-0 sd-p-0 sd-example docutils">
+<div class="sd-row sd-g-0 sd-g-xs-0 sd-g-sm-0 sd-g-md-0 sd-g-lg-0 docutils">
+<div class="sd-col sd-d-flex-column sd-col-12 sd-col-xs-12 sd-col-sm-12 sd-col-md-12 sd-col-lg-12 sd-example-item sd-example-source sd-rounded-top docutils">
+<div class="highlight-markdown notranslate"><div class="highlight"><pre><span></span>some text
+
+---
+some text.
 </pre></div>
 </div>
-</div></blockquote>
-</section>
-<section id="this-is-the-end-of-some-text">
-<h2><span class="section-number">5.3.5. </span>This is the end of some text.<a class="headerlink" href="#this-is-the-end-of-some-text" title="Permalink to this heading">#</a></h2>
+</div>
+<div class="sd-col sd-d-flex-column sd-col-12 sd-col-xs-12 sd-col-sm-12 sd-col-md-12 sd-col-lg-12 sd-example-item p-3 sd-example-result sd-rounded-bottom docutils">
+<div class="result-content docutils">
+<p>some text</p>
+<hr class="docutils" />
+<p>some text.</p>
+</div>
+</div>
+</div>
+</div>
 </section>
 <section id="line-comment">
-<h2><span class="section-number">5.3.6. </span>Line comment<a class="headerlink" href="#line-comment" title="Permalink to this heading">#</a></h2>
-<blockquote>
-<div><div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="o">%</span> <span class="n">This</span> <span class="ow">is</span> <span class="n">a</span> <span class="n">line</span> <span class="n">comment</span><span class="o">.</span>
+<h2><span class="section-number">5.3.5. </span>Line comment<a class="headerlink" href="#line-comment" title="Permalink to this heading">#</a></h2>
+<div class="sd-container-fluid sd-sphinx-override sd-mt-0 sd-mb-2 sd-ml-0 sd-mr-0 sd-p-0 sd-example docutils">
+<div class="sd-row sd-g-0 sd-g-xs-0 sd-g-sm-0 sd-g-md-0 sd-g-lg-0 docutils">
+<div class="sd-col sd-d-flex-column sd-col-12 sd-col-xs-12 sd-col-sm-12 sd-col-md-12 sd-col-lg-12 sd-example-item sd-example-source sd-rounded-top docutils">
+<div class="highlight-markdown notranslate"><div class="highlight"><pre><span></span>% This is a line comment.
 </pre></div>
 </div>
-<blockquote>
-<div></div></blockquote>
-</div></blockquote>
+</div>
+<div class="sd-col sd-d-flex-column sd-col-12 sd-col-xs-12 sd-col-sm-12 sd-col-md-12 sd-col-lg-12 sd-example-item p-3 sd-example-result sd-rounded-bottom docutils">
+<div class="result-content docutils">
+</div>
+</div>
+</div>
+</div>
 </section>
 <section id="block-break">
-<h2><span class="section-number">5.3.7. </span>Block break<a class="headerlink" href="#block-break" title="Permalink to this heading">#</a></h2>
-<blockquote>
-<div><div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">This</span> <span class="ow">is</span> <span class="n">an</span> <span class="n">example</span> <span class="n">of</span>
-<span class="o">+++</span> <span class="p">{</span><span class="s2">&quot;meta&quot;</span><span class="p">:</span> <span class="s2">&quot;data&quot;</span><span class="p">}</span>
-<span class="n">a</span> <span class="n">block</span> <span class="k">break</span>
+<h2><span class="section-number">5.3.6. </span>Block break<a class="headerlink" href="#block-break" title="Permalink to this heading">#</a></h2>
+<div class="sd-container-fluid sd-sphinx-override sd-mt-0 sd-mb-2 sd-ml-0 sd-mr-0 sd-p-0 sd-example docutils">
+<div class="sd-row sd-g-0 sd-g-xs-0 sd-g-sm-0 sd-g-md-0 sd-g-lg-0 docutils">
+<div class="sd-col sd-d-flex-column sd-col-12 sd-col-xs-12 sd-col-sm-12 sd-col-md-12 sd-col-lg-12 sd-example-item sd-example-source sd-rounded-top docutils">
+<div class="highlight-markdown notranslate"><div class="highlight"><pre><span></span>This is an example of
++++ {&quot;meta&quot;: &quot;data&quot;}
+a block break
 </pre></div>
 </div>
-<blockquote>
-<div><p>This is an example of</p>
+</div>
+<div class="sd-col sd-d-flex-column sd-col-12 sd-col-xs-12 sd-col-sm-12 sd-col-md-12 sd-col-lg-12 sd-example-item p-3 sd-example-result sd-rounded-bottom docutils">
+<div class="result-content docutils">
+<p>This is an example of</p>
 <p>a block break</p>
-</div></blockquote>
-</div></blockquote>
+</div>
+</div>
+</div>
+</div>
 </section>
 <section id="list">
-<h2><span class="section-number">5.3.8. </span>List<a class="headerlink" href="#list" title="Permalink to this heading">#</a></h2>
-<blockquote>
-<div><div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="mf">1.</span> <span class="n">First</span> <span class="n">item</span>
-<span class="mf">2.</span> <span class="n">Second</span> <span class="n">item</span>
-   <span class="o">*</span> <span class="n">First</span> <span class="n">sub</span><span class="o">-</span><span class="n">item</span>
-   <span class="o">*</span> <span class="n">Second</span> <span class="n">sub</span><span class="o">-</span><span class="n">item</span>
-     <span class="o">*</span> <span class="n">Third</span> <span class="n">subsub</span><span class="o">-</span><span class="n">item</span>
+<h2><span class="section-number">5.3.7. </span>List<a class="headerlink" href="#list" title="Permalink to this heading">#</a></h2>
+<div class="sd-container-fluid sd-sphinx-override sd-mt-0 sd-mb-2 sd-ml-0 sd-mr-0 sd-p-0 sd-example docutils">
+<div class="sd-row sd-g-0 sd-g-xs-0 sd-g-sm-0 sd-g-md-0 sd-g-lg-0 docutils">
+<div class="sd-col sd-d-flex-column sd-col-12 sd-col-xs-12 sd-col-sm-12 sd-col-md-12 sd-col-lg-12 sd-example-item sd-example-source sd-rounded-top docutils">
+<div class="highlight-markdown notranslate"><div class="highlight"><pre><span></span><span class="k">1.</span> First item
+<span class="k">2.</span> Second item
+<span class="w">    </span><span class="k">*</span><span class="w"> </span>First sub-item
+<span class="w">    </span><span class="k">*</span><span class="w"> </span>Second sub-item
+<span class="w">      </span><span class="k">*</span><span class="w"> </span>Third subsub-item
 </pre></div>
 </div>
-<blockquote>
-<div><ol class="arabic simple">
+</div>
+<div class="sd-col sd-d-flex-column sd-col-12 sd-col-xs-12 sd-col-sm-12 sd-col-md-12 sd-col-lg-12 sd-example-item p-3 sd-example-result sd-rounded-bottom docutils">
+<div class="result-content docutils">
+<ol class="arabic simple">
 <li><p>First item</p></li>
 <li><p>Second item</p>
 <ul class="simple">
@@ -668,26 +702,32 @@ see <a class="reference internal" href="#target"><span class="std std-ref">targe
 </ul>
 </li>
 </ol>
-</div></blockquote>
-</div></blockquote>
+</div>
+</div>
+</div>
+</div>
 </section>
 <section id="table">
-<h2><span class="section-number">5.3.9. </span>Table<a class="headerlink" href="#table" title="Permalink to this heading">#</a></h2>
-<blockquote>
-<div><div class="highlight-default notranslate"><div class="highlight"><pre><span></span>```{list-table} This table title
+<h2><span class="section-number">5.3.8. </span>Table<a class="headerlink" href="#table" title="Permalink to this heading">#</a></h2>
+<div class="sd-container-fluid sd-sphinx-override sd-mt-0 sd-mb-2 sd-ml-0 sd-mr-0 sd-p-0 sd-example docutils">
+<div class="sd-row sd-g-0 sd-g-xs-0 sd-g-sm-0 sd-g-md-0 sd-g-lg-0 docutils">
+<div class="sd-col sd-d-flex-column sd-col-12 sd-col-xs-12 sd-col-sm-12 sd-col-md-12 sd-col-lg-12 sd-example-item sd-example-source sd-rounded-top docutils">
+<div class="highlight-markdown notranslate"><div class="highlight"><pre><span></span>:::{list-table} This table title
 :header-rows: 1
 :name: example-table
 
-* - Training
- - Validation
-* - 0
- - 5
-* - 13720
- - 2744
-```
+<span class="k">*</span><span class="w"> </span>- Training
+<span class="w">  </span><span class="k">-</span><span class="w"> </span>Validation
+<span class="k">*</span><span class="w"> </span>- 0
+<span class="w">  </span><span class="k">-</span><span class="w"> </span>5
+<span class="k">*</span><span class="w"> </span>- 13720
+<span class="w">  </span><span class="k">-</span><span class="w"> </span>2744
+:::
 </pre></div>
 </div>
-</div></blockquote>
+</div>
+<div class="sd-col sd-d-flex-column sd-col-12 sd-col-xs-12 sd-col-sm-12 sd-col-md-12 sd-col-lg-12 sd-example-item p-3 sd-example-result sd-rounded-bottom docutils">
+<div class="result-content docutils">
 <table class="table" id="example-table">
 <caption><span class="caption-number">Table 5.1 </span><span class="caption-text">This table title</span><a class="headerlink" href="#example-table" title="Permalink to this table">#</a></caption>
 <thead>
@@ -704,133 +744,225 @@ see <a class="reference internal" href="#target"><span class="std std-ref">targe
 </tr>
 </tbody>
 </table>
+</div>
+</div>
+</div>
+</div>
 </section>
 <section id="admonition">
-<h2><span class="section-number">5.3.10. </span>admonition<a class="headerlink" href="#admonition" title="Permalink to this heading">#</a></h2>
-<blockquote>
-<div><div class="highlight-default notranslate"><div class="highlight"><pre><span></span>```{note} Notes require **no** arguments,
+<h2><span class="section-number">5.3.9. </span>admonition<a class="headerlink" href="#admonition" title="Permalink to this heading">#</a></h2>
+<div class="sd-container-fluid sd-sphinx-override sd-mt-0 sd-mb-2 sd-ml-0 sd-mr-0 sd-p-0 sd-example docutils">
+<div class="sd-row sd-g-0 sd-g-xs-0 sd-g-sm-0 sd-g-md-0 sd-g-lg-0 docutils">
+<div class="sd-col sd-d-flex-column sd-col-12 sd-col-xs-12 sd-col-sm-12 sd-col-md-12 sd-col-lg-12 sd-example-item sd-example-source sd-rounded-top docutils">
+<div class="highlight-markdown notranslate"><div class="highlight"><pre><span></span>:::{note} Notes require <span class="gs">**no**</span> arguments,
 so content can start here.
-```
+:::
 </pre></div>
 </div>
+</div>
+<div class="sd-col sd-d-flex-column sd-col-12 sd-col-xs-12 sd-col-sm-12 sd-col-md-12 sd-col-lg-12 sd-example-item p-3 sd-example-result sd-rounded-bottom docutils">
+<div class="result-content docutils">
 <div class="admonition note">
 <p class="admonition-title">Note</p>
 <p>Notes require <strong>no</strong> arguments,
 so content can start here.</p>
 </div>
-</div></blockquote>
-<blockquote>
-<div><div class="highlight-default notranslate"><div class="highlight"><pre><span></span>```{warning}
-Warnings
-```
+</div>
+</div>
+</div>
+</div>
+<div class="sd-container-fluid sd-sphinx-override sd-mt-0 sd-mb-2 sd-ml-0 sd-mr-0 sd-p-0 sd-example docutils">
+<div class="sd-row sd-g-0 sd-g-xs-0 sd-g-sm-0 sd-g-md-0 sd-g-lg-0 docutils">
+<div class="sd-col sd-d-flex-column sd-col-12 sd-col-xs-12 sd-col-sm-12 sd-col-md-12 sd-col-lg-12 sd-example-item sd-example-source sd-rounded-top docutils">
+<div class="highlight-markdown notranslate"><div class="highlight"><pre><span></span>:::{warning}
+Warning
+:::
 </pre></div>
 </div>
+</div>
+<div class="sd-col sd-d-flex-column sd-col-12 sd-col-xs-12 sd-col-sm-12 sd-col-md-12 sd-col-lg-12 sd-example-item p-3 sd-example-result sd-rounded-bottom docutils">
+<div class="result-content docutils">
 <div class="admonition warning">
 <p class="admonition-title">Warning</p>
-<p>Warnings</p>
+<p>Warning</p>
 </div>
-</div></blockquote>
-<blockquote>
-<div><div class="highlight-default notranslate"><div class="highlight"><pre><span></span>```{tip}
+</div>
+</div>
+</div>
+</div>
+<div class="sd-container-fluid sd-sphinx-override sd-mt-0 sd-mb-2 sd-ml-0 sd-mr-0 sd-p-0 sd-example docutils">
+<div class="sd-row sd-g-0 sd-g-xs-0 sd-g-sm-0 sd-g-md-0 sd-g-lg-0 docutils">
+<div class="sd-col sd-d-flex-column sd-col-12 sd-col-xs-12 sd-col-sm-12 sd-col-md-12 sd-col-lg-12 sd-example-item sd-example-source sd-rounded-top docutils">
+<div class="highlight-markdown notranslate"><div class="highlight"><pre><span></span>:::{tip}
 Tip
-```
+:::
 </pre></div>
 </div>
+</div>
+<div class="sd-col sd-d-flex-column sd-col-12 sd-col-xs-12 sd-col-sm-12 sd-col-md-12 sd-col-lg-12 sd-example-item p-3 sd-example-result sd-rounded-bottom docutils">
+<div class="result-content docutils">
 <div class="admonition tip">
 <p class="admonition-title">Tip</p>
 <p>Tip</p>
 </div>
-</div></blockquote>
-<blockquote>
-<div><div class="highlight-default notranslate"><div class="highlight"><pre><span></span>```{caution}
+</div>
+</div>
+</div>
+</div>
+<div class="sd-container-fluid sd-sphinx-override sd-mt-0 sd-mb-2 sd-ml-0 sd-mr-0 sd-p-0 sd-example docutils">
+<div class="sd-row sd-g-0 sd-g-xs-0 sd-g-sm-0 sd-g-md-0 sd-g-lg-0 docutils">
+<div class="sd-col sd-d-flex-column sd-col-12 sd-col-xs-12 sd-col-sm-12 sd-col-md-12 sd-col-lg-12 sd-example-item sd-example-source sd-rounded-top docutils">
+<div class="highlight-markdown notranslate"><div class="highlight"><pre><span></span>:::{caution}
 Caution
-```
+:::
 </pre></div>
 </div>
+</div>
+<div class="sd-col sd-d-flex-column sd-col-12 sd-col-xs-12 sd-col-sm-12 sd-col-md-12 sd-col-lg-12 sd-example-item p-3 sd-example-result sd-rounded-bottom docutils">
+<div class="result-content docutils">
 <div class="admonition caution">
 <p class="admonition-title">Caution</p>
 <p>Caution</p>
 </div>
-</div></blockquote>
-<blockquote>
-<div><div class="highlight-default notranslate"><div class="highlight"><pre><span></span>```{attention}
+</div>
+</div>
+</div>
+</div>
+<div class="sd-container-fluid sd-sphinx-override sd-mt-0 sd-mb-2 sd-ml-0 sd-mr-0 sd-p-0 sd-example docutils">
+<div class="sd-row sd-g-0 sd-g-xs-0 sd-g-sm-0 sd-g-md-0 sd-g-lg-0 docutils">
+<div class="sd-col sd-d-flex-column sd-col-12 sd-col-xs-12 sd-col-sm-12 sd-col-md-12 sd-col-lg-12 sd-example-item sd-example-source sd-rounded-top docutils">
+<div class="highlight-markdown notranslate"><div class="highlight"><pre><span></span>:::{attention}
 Attention
-```
+:::
 </pre></div>
 </div>
+</div>
+<div class="sd-col sd-d-flex-column sd-col-12 sd-col-xs-12 sd-col-sm-12 sd-col-md-12 sd-col-lg-12 sd-example-item p-3 sd-example-result sd-rounded-bottom docutils">
+<div class="result-content docutils">
 <div class="admonition attention">
 <p class="admonition-title">Attention</p>
 <p>Attention</p>
 </div>
-</div></blockquote>
-<blockquote>
-<div><div class="highlight-default notranslate"><div class="highlight"><pre><span></span>```{danger}
+</div>
+</div>
+</div>
+</div>
+<div class="sd-container-fluid sd-sphinx-override sd-mt-0 sd-mb-2 sd-ml-0 sd-mr-0 sd-p-0 sd-example docutils">
+<div class="sd-row sd-g-0 sd-g-xs-0 sd-g-sm-0 sd-g-md-0 sd-g-lg-0 docutils">
+<div class="sd-col sd-d-flex-column sd-col-12 sd-col-xs-12 sd-col-sm-12 sd-col-md-12 sd-col-lg-12 sd-example-item sd-example-source sd-rounded-top docutils">
+<div class="highlight-markdown notranslate"><div class="highlight"><pre><span></span>:::{danger}
 Danger
-```
+:::
 </pre></div>
 </div>
+</div>
+<div class="sd-col sd-d-flex-column sd-col-12 sd-col-xs-12 sd-col-sm-12 sd-col-md-12 sd-col-lg-12 sd-example-item p-3 sd-example-result sd-rounded-bottom docutils">
+<div class="result-content docutils">
 <div class="admonition danger">
 <p class="admonition-title">Danger</p>
 <p>Danger</p>
 </div>
-</div></blockquote>
-<blockquote>
-<div><div class="highlight-default notranslate"><div class="highlight"><pre><span></span>```{error}
+</div>
+</div>
+</div>
+</div>
+<div class="sd-container-fluid sd-sphinx-override sd-mt-0 sd-mb-2 sd-ml-0 sd-mr-0 sd-p-0 sd-example docutils">
+<div class="sd-row sd-g-0 sd-g-xs-0 sd-g-sm-0 sd-g-md-0 sd-g-lg-0 docutils">
+<div class="sd-col sd-d-flex-column sd-col-12 sd-col-xs-12 sd-col-sm-12 sd-col-md-12 sd-col-lg-12 sd-example-item sd-example-source sd-rounded-top docutils">
+<div class="highlight-markdown notranslate"><div class="highlight"><pre><span></span>:::{error}
 Error
-```
+:::
 </pre></div>
 </div>
+</div>
+<div class="sd-col sd-d-flex-column sd-col-12 sd-col-xs-12 sd-col-sm-12 sd-col-md-12 sd-col-lg-12 sd-example-item p-3 sd-example-result sd-rounded-bottom docutils">
+<div class="result-content docutils">
 <div class="admonition error">
 <p class="admonition-title">Error</p>
 <p>Error</p>
 </div>
-</div></blockquote>
-<blockquote>
-<div><div class="highlight-default notranslate"><div class="highlight"><pre><span></span>```{hint}
+</div>
+</div>
+</div>
+</div>
+<div class="sd-container-fluid sd-sphinx-override sd-mt-0 sd-mb-2 sd-ml-0 sd-mr-0 sd-p-0 sd-example docutils">
+<div class="sd-row sd-g-0 sd-g-xs-0 sd-g-sm-0 sd-g-md-0 sd-g-lg-0 docutils">
+<div class="sd-col sd-d-flex-column sd-col-12 sd-col-xs-12 sd-col-sm-12 sd-col-md-12 sd-col-lg-12 sd-example-item sd-example-source sd-rounded-top docutils">
+<div class="highlight-markdown notranslate"><div class="highlight"><pre><span></span>:::{hint}
 hint
-```
+:::
 </pre></div>
 </div>
+</div>
+<div class="sd-col sd-d-flex-column sd-col-12 sd-col-xs-12 sd-col-sm-12 sd-col-md-12 sd-col-lg-12 sd-example-item p-3 sd-example-result sd-rounded-bottom docutils">
+<div class="result-content docutils">
 <div class="admonition hint">
 <p class="admonition-title">Hint</p>
 <p>hint</p>
 </div>
-</div></blockquote>
-<blockquote>
-<div><div class="highlight-default notranslate"><div class="highlight"><pre><span></span>```{important}
+</div>
+</div>
+</div>
+</div>
+<div class="sd-container-fluid sd-sphinx-override sd-mt-0 sd-mb-2 sd-ml-0 sd-mr-0 sd-p-0 sd-example docutils">
+<div class="sd-row sd-g-0 sd-g-xs-0 sd-g-sm-0 sd-g-md-0 sd-g-lg-0 docutils">
+<div class="sd-col sd-d-flex-column sd-col-12 sd-col-xs-12 sd-col-sm-12 sd-col-md-12 sd-col-lg-12 sd-example-item sd-example-source sd-rounded-top docutils">
+<div class="highlight-markdown notranslate"><div class="highlight"><pre><span></span>:::{important}
 Important
-```
+:::
 </pre></div>
 </div>
+</div>
+<div class="sd-col sd-d-flex-column sd-col-12 sd-col-xs-12 sd-col-sm-12 sd-col-md-12 sd-col-lg-12 sd-example-item p-3 sd-example-result sd-rounded-bottom docutils">
+<div class="result-content docutils">
 <div class="admonition important">
 <p class="admonition-title">Important</p>
 <p>Important</p>
 </div>
-</div></blockquote>
-<blockquote>
-<div><div class="highlight-default notranslate"><div class="highlight"><pre><span></span>```{seealso}
+</div>
+</div>
+</div>
+</div>
+<div class="sd-container-fluid sd-sphinx-override sd-mt-0 sd-mb-2 sd-ml-0 sd-mr-0 sd-p-0 sd-example docutils">
+<div class="sd-row sd-g-0 sd-g-xs-0 sd-g-sm-0 sd-g-md-0 sd-g-lg-0 docutils">
+<div class="sd-col sd-d-flex-column sd-col-12 sd-col-xs-12 sd-col-sm-12 sd-col-md-12 sd-col-lg-12 sd-example-item sd-example-source sd-rounded-top docutils">
+<div class="highlight-markdown notranslate"><div class="highlight"><pre><span></span>:::{seealso}
 see also
-```
+:::
 </pre></div>
 </div>
+</div>
+<div class="sd-col sd-d-flex-column sd-col-12 sd-col-xs-12 sd-col-sm-12 sd-col-md-12 sd-col-lg-12 sd-example-item p-3 sd-example-result sd-rounded-bottom docutils">
+<div class="result-content docutils">
 <div class="admonition seealso">
 <p class="admonition-title">See also</p>
 <p>see also</p>
 </div>
-</div></blockquote>
-<blockquote>
-<div><div class="highlight-default notranslate"><div class="highlight"><pre><span></span>```{admonition} This is a title
+</div>
+</div>
+</div>
+</div>
+<div class="sd-container-fluid sd-sphinx-override sd-mt-0 sd-mb-2 sd-ml-0 sd-mr-0 sd-p-0 sd-example docutils">
+<div class="sd-row sd-g-0 sd-g-xs-0 sd-g-sm-0 sd-g-md-0 sd-g-lg-0 docutils">
+<div class="sd-col sd-d-flex-column sd-col-12 sd-col-xs-12 sd-col-sm-12 sd-col-md-12 sd-col-lg-12 sd-example-item sd-example-source sd-rounded-top docutils">
+<div class="highlight-markdown notranslate"><div class="highlight"><pre><span></span>:::{admonition} This is a title
 :class: tip
 
 An example of an admonition with a title.
-```
+:::
 </pre></div>
 </div>
+</div>
+<div class="sd-col sd-d-flex-column sd-col-12 sd-col-xs-12 sd-col-sm-12 sd-col-md-12 sd-col-lg-12 sd-example-item p-3 sd-example-result sd-rounded-bottom docutils">
+<div class="result-content docutils">
 <div class="tip admonition">
 <p class="admonition-title">This is a title</p>
 <p>An example of an admonition with a title.</p>
 </div>
-</div></blockquote>
+</div>
+</div>
+</div>
+</div>
 <section id="figure-parameters">
 <h3>Figure parameters<a class="headerlink" href="#figure-parameters" title="Permalink to this heading">#</a></h3>
 <p>The following options are supported:</p>
@@ -853,143 +985,192 @@ An example of an admonition with a title.
 </section>
 </section>
 <section id="math">
-<h2><span class="section-number">5.3.11. </span>Math<a class="headerlink" href="#math" title="Permalink to this heading">#</a></h2>
-<blockquote>
-<div><div class="highlight-default notranslate"><div class="highlight"><pre><span></span>This is an example of an
-inline equation $z=\sqrt{x^2+y^2}$.
+<h2><span class="section-number">5.3.10. </span>Math<a class="headerlink" href="#math" title="Permalink to this heading">#</a></h2>
+<div class="sd-container-fluid sd-sphinx-override sd-mt-0 sd-mb-2 sd-ml-0 sd-mr-0 sd-p-0 sd-example docutils">
+<div class="sd-row sd-g-0 sd-g-xs-0 sd-g-sm-0 sd-g-md-0 sd-g-lg-0 docutils">
+<div class="sd-col sd-d-flex-column sd-col-12 sd-col-xs-12 sd-col-sm-12 sd-col-md-12 sd-col-lg-12 sd-example-item sd-example-source sd-rounded-top docutils">
+<div class="highlight-markdown notranslate"><div class="highlight"><pre><span></span>This is an example of an inline equation $z=\sqrt{x^2+y^2}$.
 </pre></div>
 </div>
-<blockquote>
-<div><p>This is an example of an
-inline equation <span class="math notranslate nohighlight">\(z=\sqrt{x^2+y^2}\)</span>.</p>
-</div></blockquote>
-</div></blockquote>
-<blockquote>
-<div><div class="highlight-default notranslate"><div class="highlight"><pre><span></span>$$
-z=\sqrt{x^2+y^2}
-$$ (mylabel)
+</div>
+<div class="sd-col sd-d-flex-column sd-col-12 sd-col-xs-12 sd-col-sm-12 sd-col-md-12 sd-col-lg-12 sd-example-item p-3 sd-example-result sd-rounded-bottom docutils">
+<div class="result-content docutils">
+<p>This is an example of an inline equation <span class="math notranslate nohighlight">\(z=\sqrt{x^2+y^2}\)</span>.</p>
+</div>
+</div>
+</div>
+</div>
+<div class="sd-container-fluid sd-sphinx-override sd-mt-0 sd-mb-2 sd-ml-0 sd-mr-0 sd-p-0 sd-example docutils">
+<div class="sd-row sd-g-0 sd-g-xs-0 sd-g-sm-0 sd-g-md-0 sd-g-lg-0 docutils">
+<div class="sd-col sd-d-flex-column sd-col-12 sd-col-xs-12 sd-col-sm-12 sd-col-md-12 sd-col-lg-12 sd-example-item sd-example-source sd-rounded-top docutils">
+<div class="highlight-markdown notranslate"><div class="highlight"><pre><span></span>$$z=\sqrt{x^2+y^2}$$ (mylabel)
 equation ref: {eq}`mylabel`
 </pre></div>
 </div>
-<blockquote>
-<div><div class="math notranslate nohighlight" id="equation-mylabel">
+</div>
+<div class="sd-col sd-d-flex-column sd-col-12 sd-col-xs-12 sd-col-sm-12 sd-col-md-12 sd-col-lg-12 sd-example-item p-3 sd-example-result sd-rounded-bottom docutils">
+<div class="result-content docutils">
+<div class="math notranslate nohighlight" id="equation-mylabel">
 <span class="eqno">(5.1)<a class="headerlink" href="#equation-mylabel" title="Permalink to this equation">#</a></span>\[z=\sqrt{x^2+y^2}\]</div>
 <p>equation ref: <a class="reference internal" href="#equation-mylabel">(5.1)</a></p>
-</div></blockquote>
-</div></blockquote>
-<!-- 
-## Executable code
-
-```{code-cell} ipython3
-note = "Python syntax highlighting"
+</div>
+</div>
+</div>
+</div>
+</section>
+<section id="executable-code">
+<h2><span class="section-number">5.3.11. </span>Executable code<a class="headerlink" href="#executable-code" title="Permalink to this heading">#</a></h2>
+<div class="highlight-md notranslate"><div class="highlight"><pre><span></span>```{code-cell} ipython3
+note = &quot;Python syntax highlighting&quot;
 print(note)
 ```
--->
+</pre></div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">note</span> <span class="o">=</span> <span class="s2">&quot;Python syntax highlighting&quot;</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">note</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Python syntax highlighting
+</pre></div>
+</div>
+</div>
+</div>
 </section>
 <section id="reference-documents">
 <h2><span class="section-number">5.3.12. </span>Reference documents<a class="headerlink" href="#reference-documents" title="Permalink to this heading">#</a></h2>
-<blockquote>
-<div><div class="highlight-default notranslate"><div class="highlight"><pre><span></span>See {doc}`../basic/alias` for more information.
+<div class="sd-container-fluid sd-sphinx-override sd-mt-0 sd-mb-2 sd-ml-0 sd-mr-0 sd-p-0 sd-example docutils">
+<div class="sd-row sd-g-0 sd-g-xs-0 sd-g-sm-0 sd-g-md-0 sd-g-lg-0 docutils">
+<div class="sd-col sd-d-flex-column sd-col-12 sd-col-xs-12 sd-col-sm-12 sd-col-md-12 sd-col-lg-12 sd-example-item sd-example-source sd-rounded-top docutils">
+<div class="highlight-markdown notranslate"><div class="highlight"><pre><span></span>See {doc}`../basic/alias` for more information.
 </pre></div>
 </div>
-<blockquote>
-<div><p>See <a class="reference internal" href="../basic/alias.html"><span class="doc">Alias</span></a> for more information.</p>
-</div></blockquote>
-</div></blockquote>
+</div>
+<div class="sd-col sd-d-flex-column sd-col-12 sd-col-xs-12 sd-col-sm-12 sd-col-md-12 sd-col-lg-12 sd-example-item p-3 sd-example-result sd-rounded-bottom docutils">
+<div class="result-content docutils">
+<p>See <a class="reference internal" href="../basic/alias.html"><span class="doc">Alias</span></a> for more information.</p>
+</div>
+</div>
+</div>
+</div>
 </section>
 <section id="toggle">
 <h2><span class="section-number">5.3.13. </span>Toggle<a class="headerlink" href="#toggle" title="Permalink to this heading">#</a></h2>
-<blockquote>
-<div><div class="highlight-default notranslate"><div class="highlight"><pre><span></span>````{toggle}
-```python
-print(&#39;hello&#39;)
-```
-````
+<div class="sd-container-fluid sd-sphinx-override sd-mt-0 sd-mb-2 sd-ml-0 sd-mr-0 sd-p-0 sd-example docutils">
+<div class="sd-row sd-g-0 sd-g-xs-0 sd-g-sm-0 sd-g-md-0 sd-g-lg-0 docutils">
+<div class="sd-col sd-d-flex-column sd-col-12 sd-col-xs-12 sd-col-sm-12 sd-col-md-12 sd-col-lg-12 sd-example-item sd-example-source sd-rounded-top docutils">
+<div class="highlight-markdown notranslate"><div class="highlight"><pre><span></span>::::{toggle}
+<span class="sb">```python</span>
+<span class="nb">print</span><span class="p">(</span><span class="s1">&#39;hello&#39;</span><span class="p">)</span>
+<span class="sb">```</span>
+::::
 </pre></div>
 </div>
-<blockquote>
-<div><div class="toggle docutils container">
+</div>
+<div class="sd-col sd-d-flex-column sd-col-12 sd-col-xs-12 sd-col-sm-12 sd-col-md-12 sd-col-lg-12 sd-example-item p-3 sd-example-result sd-rounded-bottom docutils">
+<div class="result-content docutils">
+<div class="toggle docutils container">
 <div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="nb">print</span><span class="p">(</span><span class="s1">&#39;hello&#39;</span><span class="p">)</span>
 </pre></div>
 </div>
 </div>
-</div></blockquote>
-</div></blockquote>
+</div>
+</div>
+</div>
+</div>
 </section>
 <section id="margin">
 <h2><span class="section-number">5.3.14. </span>Margin<a class="headerlink" href="#margin" title="Permalink to this heading">#</a></h2>
-<blockquote>
-<div><div class="highlight-default notranslate"><div class="highlight"><pre><span></span>```{margin} **My margin title**
+<div class="sd-container-fluid sd-sphinx-override sd-mt-0 sd-mb-2 sd-ml-0 sd-mr-0 sd-p-0 sd-example docutils">
+<div class="sd-row sd-g-0 sd-g-xs-0 sd-g-sm-0 sd-g-md-0 sd-g-lg-0 docutils">
+<div class="sd-col sd-d-flex-column sd-col-12 sd-col-xs-12 sd-col-sm-12 sd-col-md-12 sd-col-lg-12 sd-example-item sd-example-source sd-rounded-top docutils">
+<div class="highlight-markdown notranslate"><div class="highlight"><pre><span></span>:::{margin} <span class="gs">**My margin title**</span>
 Here is my margin content, it is pretty cool!
-```
+:::
 </pre></div>
 </div>
-<blockquote>
-<div><aside class="margin sidebar">
+</div>
+<div class="sd-col sd-d-flex-column sd-col-12 sd-col-xs-12 sd-col-sm-12 sd-col-md-12 sd-col-lg-12 sd-example-item p-3 sd-example-result sd-rounded-bottom docutils">
+<div class="result-content docutils">
+<aside class="margin sidebar">
 <p class="sidebar-title"><strong>My margin title</strong></p>
 <p>Here is my margin content, it is pretty cool!</p>
 </aside>
-</div></blockquote>
-</div></blockquote>
+</div>
+</div>
+</div>
+</div>
 <hr class="docutils" />
-<blockquote>
-<div><div class="highlight-default notranslate"><div class="highlight"><pre><span></span>:::{tip}
+<div class="sd-container-fluid sd-sphinx-override sd-mt-0 sd-mb-2 sd-ml-0 sd-mr-0 sd-p-0 sd-example docutils">
+<div class="sd-row sd-g-0 sd-g-xs-0 sd-g-sm-0 sd-g-md-0 sd-g-lg-0 docutils">
+<div class="sd-col sd-d-flex-column sd-col-12 sd-col-xs-12 sd-col-sm-12 sd-col-md-12 sd-col-lg-12 sd-example-item sd-example-source sd-rounded-top docutils">
+<div class="highlight-markdown notranslate"><div class="highlight"><pre><span></span>:::{tip}
 :class: margin toggle
 This note will be in the margin!
 :::
 </pre></div>
 </div>
-<blockquote>
-<div><div class="margin toggle admonition tip">
+</div>
+<div class="sd-col sd-d-flex-column sd-col-12 sd-col-xs-12 sd-col-sm-12 sd-col-md-12 sd-col-lg-12 sd-example-item p-3 sd-example-result sd-rounded-bottom docutils">
+<div class="result-content docutils">
+<div class="margin toggle admonition tip">
 <p class="admonition-title">Tip</p>
 <p>This note will be in the margin!</p>
 </div>
-</div></blockquote>
-</div></blockquote>
+</div>
+</div>
+</div>
+</div>
 <hr class="docutils" />
-<blockquote>
-<div><div class="highlight-default notranslate"><div class="highlight"><pre><span></span>``{figure} ./gitHub/img/GitHub-flow.png
----
+<div class="sd-container-fluid sd-sphinx-override sd-mt-0 sd-mb-2 sd-ml-0 sd-mr-0 sd-p-0 sd-example docutils">
+<div class="sd-row sd-g-0 sd-g-xs-0 sd-g-sm-0 sd-g-md-0 sd-g-lg-0 docutils">
+<div class="sd-col sd-d-flex-column sd-col-12 sd-col-xs-12 sd-col-sm-12 sd-col-md-12 sd-col-lg-12 sd-example-item sd-example-source sd-rounded-top docutils">
+<div class="highlight-markdown notranslate"><div class="highlight"><pre><span></span><span class="gu">```{figure} ../basic/github/img/GitHub-flow.png</span>
+<span class="gu">---</span>
 figclass: margin
 alt: My figure text
-name: myfig4
----
+<span class="gu">name: myfig4</span>
+<span class="gu">---</span>
 And here is my figure caption
 ```
 </pre></div>
 </div>
-<blockquote>
-<div><figure class="margin align-default" id="myfig4">
+</div>
+<div class="sd-col sd-d-flex-column sd-col-12 sd-col-xs-12 sd-col-sm-12 sd-col-md-12 sd-col-lg-12 sd-example-item p-3 sd-example-result sd-rounded-bottom docutils">
+<div class="result-content docutils">
+<figure class="margin align-default" id="myfig4">
 <img alt="My figure text" src="../../_images/GitHub-flow.png" />
 <figcaption>
 <p><span class="caption-number">Fig. 5.1 </span><span class="caption-text">And here is my figure caption</span><a class="headerlink" href="#myfig4" title="Permalink to this image">#</a></p>
 </figcaption>
 </figure>
-</div></blockquote>
-</div></blockquote>
-<!--
-```{typescript}
-asdf
-asdf
-asdf
-```
--->
+</div>
+</div>
+</div>
+</div>
 </section>
 <section id="panel">
 <h2><span class="section-number">5.3.15. </span>Panel<a class="headerlink" href="#panel" title="Permalink to this heading">#</a></h2>
 <p><a class="reference external" href="https://sphinx-design.readthedocs.io/en/latest/cards.html">https://sphinx-design.readthedocs.io/en/latest/cards.html</a></p>
-<blockquote>
-<div><div class="highlight-default notranslate"><div class="highlight"><pre><span></span>````{card}
+<div class="sd-container-fluid sd-sphinx-override sd-mt-0 sd-mb-2 sd-ml-0 sd-mr-0 sd-p-0 sd-example docutils">
+<div class="sd-row sd-g-0 sd-g-xs-0 sd-g-sm-0 sd-g-md-0 sd-g-lg-0 docutils">
+<div class="sd-col sd-d-flex-column sd-col-12 sd-col-xs-12 sd-col-sm-12 sd-col-md-12 sd-col-lg-12 sd-example-item sd-example-source sd-rounded-top docutils">
+<div class="highlight-markdown notranslate"><div class="highlight"><pre><span></span>```{card}
 Panel header 1
 ^^^
 Panel body 1
 +++
 Panel footer 1
-````
+```
 </pre></div>
 </div>
-<blockquote>
-<div><div class="sd-card sd-sphinx-override sd-mb-3 sd-shadow-sm docutils">
+</div>
+<div class="sd-col sd-d-flex-column sd-col-12 sd-col-xs-12 sd-col-sm-12 sd-col-md-12 sd-col-lg-12 sd-example-item p-3 sd-example-result sd-rounded-bottom docutils">
+<div class="result-content docutils">
+<div class="sd-card sd-sphinx-override sd-mb-3 sd-shadow-sm docutils">
 <div class="sd-card-header docutils">
 <p class="sd-card-text">Panel header 1</p>
 </div>
@@ -1000,13 +1181,17 @@ Panel footer 1
 <p class="sd-card-text">Panel footer 1</p>
 </div>
 </div>
-</div></blockquote>
-</div></blockquote>
+</div>
+</div>
+</div>
+</div>
 </section>
 <section id="badge">
 <h2><span class="section-number">5.3.16. </span>Badge<a class="headerlink" href="#badge" title="Permalink to this heading">#</a></h2>
-<blockquote>
-<div><div class="highlight-default notranslate"><div class="highlight"><pre><span></span>{bdg}`plain badge`
+<div class="sd-container-fluid sd-sphinx-override sd-mt-0 sd-mb-2 sd-ml-0 sd-mr-0 sd-p-0 sd-example docutils">
+<div class="sd-row sd-g-0 sd-g-xs-0 sd-g-sm-0 sd-g-md-0 sd-g-lg-0 docutils">
+<div class="sd-col sd-d-flex-column sd-col-12 sd-col-xs-12 sd-col-sm-12 sd-col-md-12 sd-col-lg-12 sd-example-item sd-example-source sd-rounded-top docutils">
+<div class="highlight-markdown notranslate"><div class="highlight"><pre><span></span>{bdg}`plain badge`
 {bdg-primary}`primary` {bdg-primary-line}`primary-line`
 {bdg-secondary}`secondary` {bdg-secondary-line}`secondary-line`
 {bdg-success}`success` {bdg-success-line}`success-line`
@@ -1017,8 +1202,10 @@ Panel footer 1
 {bdg-dark}`dark` {bdg-dark-line}`dark-line`
 </pre></div>
 </div>
-<blockquote>
-<div><p><span class="sd-sphinx-override sd-badge">plain badge</span>
+</div>
+<div class="sd-col sd-d-flex-column sd-col-12 sd-col-xs-12 sd-col-sm-12 sd-col-md-12 sd-col-lg-12 sd-example-item p-3 sd-example-result sd-rounded-bottom docutils">
+<div class="result-content docutils">
+<p><span class="sd-sphinx-override sd-badge">plain badge</span>
 <span class="sd-sphinx-override sd-badge sd-bg-primary sd-bg-text-primary">primary</span> <span class="sd-sphinx-override sd-badge sd-outline-primary sd-text-primary">primary-line</span>
 <span class="sd-sphinx-override sd-badge sd-bg-secondary sd-bg-text-secondary">secondary</span> <span class="sd-sphinx-override sd-badge sd-outline-secondary sd-text-secondary">secondary-line</span>
 <span class="sd-sphinx-override sd-badge sd-bg-success sd-bg-text-success">success</span> <span class="sd-sphinx-override sd-badge sd-outline-success sd-text-success">success-line</span>
@@ -1027,23 +1214,30 @@ Panel footer 1
 <span class="sd-sphinx-override sd-badge sd-bg-danger sd-bg-text-danger">danger</span> <span class="sd-sphinx-override sd-badge sd-outline-danger sd-text-danger">danger-line</span>
 <span class="sd-sphinx-override sd-badge sd-bg-light sd-bg-text-light">light</span> <span class="sd-sphinx-override sd-badge sd-outline-light sd-text-light">light-line</span>
 <span class="sd-sphinx-override sd-badge sd-bg-dark sd-bg-text-dark">dark</span> <span class="sd-sphinx-override sd-badge sd-outline-dark sd-text-dark">dark-line</span></p>
-</div></blockquote>
-</div></blockquote>
+</div>
+</div>
+</div>
+</div>
 <section id="dropdown">
 <h3>dropdown<a class="headerlink" href="#dropdown" title="Permalink to this heading">#</a></h3>
-<blockquote>
-<div><div class="highlight-default notranslate"><div class="highlight"><pre><span></span>````{dropdown}
+<div class="sd-container-fluid sd-sphinx-override sd-mt-0 sd-mb-2 sd-ml-0 sd-mr-0 sd-p-0 sd-example docutils">
+<div class="sd-row sd-g-0 sd-g-xs-0 sd-g-sm-0 sd-g-md-0 sd-g-lg-0 docutils">
+<div class="sd-col sd-d-flex-column sd-col-12 sd-col-xs-12 sd-col-sm-12 sd-col-md-12 sd-col-lg-12 sd-example-item sd-example-source sd-rounded-top docutils">
+<div class="highlight-markdown notranslate"><div class="highlight"><pre><span></span>````{dropdown}
 :animate: fade-in-slide-down
-```
-git add .
-git commit -m &quot;update&quot;
-git push origin main
-```
+
+<span class="sb">```</span>
+<span class="sb">git add .</span>
+<span class="sb">git commit -m &quot;update&quot;</span>
+<span class="sb">git push origin main</span>
+<span class="sb">```</span>
 ````
 </pre></div>
 </div>
-<blockquote>
-<div><details class="sd-sphinx-override sd-dropdown sd-card sd-mb-3 sd-fade-in-slide-down">
+</div>
+<div class="sd-col sd-d-flex-column sd-col-12 sd-col-xs-12 sd-col-sm-12 sd-col-md-12 sd-col-lg-12 sd-example-item p-3 sd-example-result sd-rounded-bottom docutils">
+<div class="result-content docutils">
+<details class="sd-sphinx-override sd-dropdown sd-card sd-mb-3 sd-fade-in-slide-down">
 <summary class="sd-summary-title sd-card-header">
 <svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-kebab-horizontal" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M6 12a2 2 0 11-4 0 2 2 0 014 0zm8 0a2 2 0 11-4 0 2 2 0 014 0zm6 2a2 2 0 100-4 2 2 0 000 4z"></path></svg><div class="sd-summary-down docutils">
 <svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-down" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M5.22 8.72a.75.75 0 000 1.06l6.25 6.25a.75.75 0 001.06 0l6.25-6.25a.75.75 0 00-1.06-1.06L12 14.44 6.28 8.72a.75.75 0 00-1.06 0z"></path></svg></div>
@@ -1056,94 +1250,125 @@ git push origin main
 </pre></div>
 </div>
 </div>
-</details></div></blockquote>
-</div></blockquote>
-<blockquote>
-<div><div class="highlight-default notranslate"><div class="highlight"><pre><span></span>```{admonition} Click the button to reveal!
+</details></div>
+</div>
+</div>
+</div>
+<div class="sd-container-fluid sd-sphinx-override sd-mt-0 sd-mb-2 sd-ml-0 sd-mr-0 sd-p-0 sd-example docutils">
+<div class="sd-row sd-g-0 sd-g-xs-0 sd-g-sm-0 sd-g-md-0 sd-g-lg-0 docutils">
+<div class="sd-col sd-d-flex-column sd-col-12 sd-col-xs-12 sd-col-sm-12 sd-col-md-12 sd-col-lg-12 sd-example-item sd-example-source sd-rounded-top docutils">
+<div class="highlight-markdown notranslate"><div class="highlight"><pre><span></span>:::{admonition} Click the button to reveal!
 :class: dropdown
+
 Some hidden toggle content!
-```
+:::
 </pre></div>
 </div>
-<blockquote>
-<div><div class="dropdown admonition">
+</div>
+<div class="sd-col sd-d-flex-column sd-col-12 sd-col-xs-12 sd-col-sm-12 sd-col-md-12 sd-col-lg-12 sd-example-item p-3 sd-example-result sd-rounded-bottom docutils">
+<div class="result-content docutils">
+<div class="dropdown admonition">
 <p class="admonition-title">Click the button to reveal!</p>
 <p>Some hidden toggle content!</p>
 </div>
-</div></blockquote>
-</div></blockquote>
+</div>
+</div>
+</div>
+</div>
 </section>
 </section>
 <section id="definition-lists">
 <h2><span class="section-number">5.3.17. </span>Definition lists<a class="headerlink" href="#definition-lists" title="Permalink to this heading">#</a></h2>
-<blockquote>
-<div><div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">Term</span> <span class="mi">1</span>
-<span class="p">:</span> <span class="n">Definition</span>
+<div class="sd-container-fluid sd-sphinx-override sd-mt-0 sd-mb-2 sd-ml-0 sd-mr-0 sd-p-0 sd-example docutils">
+<div class="sd-row sd-g-0 sd-g-xs-0 sd-g-sm-0 sd-g-md-0 sd-g-lg-0 docutils">
+<div class="sd-col sd-d-flex-column sd-col-12 sd-col-xs-12 sd-col-sm-12 sd-col-md-12 sd-col-lg-12 sd-example-item sd-example-source sd-rounded-top docutils">
+<div class="highlight-markdown notranslate"><div class="highlight"><pre><span></span>Term 1
+: Definition
 
-<span class="n">Term</span> <span class="mi">2</span>
-<span class="p">:</span> <span class="n">Definition</span>
+Term 2
+: Definition
 </pre></div>
 </div>
-<blockquote>
-<div><dl class="simple myst">
+</div>
+<div class="sd-col sd-d-flex-column sd-col-12 sd-col-xs-12 sd-col-sm-12 sd-col-md-12 sd-col-lg-12 sd-example-item p-3 sd-example-result sd-rounded-bottom docutils">
+<div class="result-content docutils">
+<dl class="simple myst">
 <dt>Term 1</dt><dd><p>Definition</p>
 </dd>
 <dt>Term 2</dt><dd><p>Definition</p>
 </dd>
 </dl>
-</div></blockquote>
-</div></blockquote>
-<blockquote>
-<div><div class="highlight-default notranslate"><div class="highlight"><pre><span></span>```{glossary}
+</div>
+</div>
+</div>
+</div>
+<div class="sd-container-fluid sd-sphinx-override sd-mt-0 sd-mb-2 sd-ml-0 sd-mr-0 sd-p-0 sd-example docutils">
+<div class="sd-row sd-g-0 sd-g-xs-0 sd-g-sm-0 sd-g-md-0 sd-g-lg-0 docutils">
+<div class="sd-col sd-d-flex-column sd-col-12 sd-col-xs-12 sd-col-sm-12 sd-col-md-12 sd-col-lg-12 sd-example-item sd-example-source sd-rounded-top docutils">
+<div class="highlight-markdown notranslate"><div class="highlight"><pre><span></span>```{glossary}
 Term one
- An indented explanation of term 1
+  An indented explanation of term 1
 
 A second term
- An indented explanation of term2
+  An indented explanation of term2
 ```
 </pre></div>
 </div>
-<blockquote>
-<div><dl class="simple glossary">
+</div>
+<div class="sd-col sd-d-flex-column sd-col-12 sd-col-xs-12 sd-col-sm-12 sd-col-md-12 sd-col-lg-12 sd-example-item p-3 sd-example-result sd-rounded-bottom docutils">
+<div class="result-content docutils">
+<dl class="simple glossary">
 <dt id="term-Term-one">Term one<a class="headerlink" href="#term-Term-one" title="Permalink to this term">#</a></dt><dd><p>An indented explanation of term 1</p>
 </dd>
 <dt id="term-A-second-term">A second term<a class="headerlink" href="#term-A-second-term" title="Permalink to this term">#</a></dt><dd><p>An indented explanation of term2</p>
 </dd>
 </dl>
-</div></blockquote>
-</div></blockquote>
-<blockquote>
-<div><div class="highlight-default notranslate"><div class="highlight"><pre><span></span>```{epigraph}
+</div>
+</div>
+</div>
+</div>
+<div class="sd-container-fluid sd-sphinx-override sd-mt-0 sd-mb-2 sd-ml-0 sd-mr-0 sd-p-0 sd-example docutils">
+<div class="sd-row sd-g-0 sd-g-xs-0 sd-g-sm-0 sd-g-md-0 sd-g-lg-0 docutils">
+<div class="sd-col sd-d-flex-column sd-col-12 sd-col-xs-12 sd-col-sm-12 sd-col-md-12 sd-col-lg-12 sd-example-item sd-example-source sd-rounded-top docutils">
+<div class="highlight-markdown notranslate"><div class="highlight"><pre><span></span>```{epigraph}
 Here is a cool quotation.
 
 -- Jo the Jovyan
 ```
 </pre></div>
 </div>
-<blockquote>
-<div><blockquote class="epigraph">
+</div>
+<div class="sd-col sd-d-flex-column sd-col-12 sd-col-xs-12 sd-col-sm-12 sd-col-md-12 sd-col-lg-12 sd-example-item p-3 sd-example-result sd-rounded-bottom docutils">
+<div class="result-content docutils">
+<blockquote class="epigraph">
 <div><p>Here is a cool quotation.</p>
 <p class="attribution">—Jo the Jovyan</p>
 </div></blockquote>
-</div></blockquote>
-</div></blockquote>
+</div>
+</div>
+</div>
+</div>
 <section id="tabs">
 <h3>tabs<a class="headerlink" href="#tabs" title="Permalink to this heading">#</a></h3>
 <p>ex1</p>
-<blockquote>
-<div><div class="highlight-default notranslate"><div class="highlight"><pre><span></span>````{tab-set}
+<div class="sd-container-fluid sd-sphinx-override sd-mt-0 sd-mb-2 sd-ml-0 sd-mr-0 sd-p-0 sd-example docutils">
+<div class="sd-row sd-g-0 sd-g-xs-0 sd-g-sm-0 sd-g-md-0 sd-g-lg-0 docutils">
+<div class="sd-col sd-d-flex-column sd-col-12 sd-col-xs-12 sd-col-sm-12 sd-col-md-12 sd-col-lg-12 sd-example-item sd-example-source sd-rounded-top docutils">
+<div class="highlight-markdown notranslate"><div class="highlight"><pre><span></span>````{tab-set}
 ```{tab-item} Tab 1 title
 My first tab
-```
+<span class="sb">```</span>
 
-```{tab-item} Tab 2 title
-My second tab with `some code`!
-```
+<span class="sb">```{tab-item} Tab 2 title</span>
+<span class="sb">My second tab with `some code`!</span>
+<span class="sb">```</span>
 ````
 </pre></div>
 </div>
-<blockquote>
-<div><div class="sd-tab-set docutils">
+</div>
+<div class="sd-col sd-d-flex-column sd-col-12 sd-col-xs-12 sd-col-sm-12 sd-col-md-12 sd-col-lg-12 sd-example-item p-3 sd-example-result sd-rounded-bottom docutils">
+<div class="result-content docutils">
+<div class="sd-tab-set docutils">
 <input checked="checked" id="sd-tab-item-0" name="sd-tab-set-0" type="radio">
 </input><label class="sd-tab-label" for="sd-tab-item-0">
 Tab 1 title</label><div class="sd-tab-content docutils">
@@ -1155,28 +1380,32 @@ Tab 2 title</label><div class="sd-tab-content docutils">
 <p>My second tab with <code class="docutils literal notranslate"><span class="pre">some</span> <span class="pre">code</span></code>!</p>
 </div>
 </div>
-</div></blockquote>
-</div></blockquote>
+</div>
+</div>
+</div>
+</div>
 <p>ex2</p>
-<blockquote>
-<div><div class="highlight-default notranslate"><div class="highlight"><pre><span></span>`````{tab-set}
+<div class="sd-container-fluid sd-sphinx-override sd-mt-0 sd-mb-2 sd-ml-0 sd-mr-0 sd-p-0 sd-example docutils">
+<div class="sd-row sd-g-0 sd-g-xs-0 sd-g-sm-0 sd-g-md-0 sd-g-lg-0 docutils">
+<div class="sd-col sd-d-flex-column sd-col-12 sd-col-xs-12 sd-col-sm-12 sd-col-md-12 sd-col-lg-12 sd-example-item sd-example-source sd-rounded-top docutils">
+<div class="highlight-markdown notranslate"><div class="highlight"><pre><span></span>`````{tab-set}
 ````{tab-item} c++
 
 ```{code-block} c++
 
 int main(const int argc, const char **argv) {
- return 0;
+  return 0;
 }
-```
-````
+<span class="sb">```</span>
+<span class="sb">````</span>
 
-````{tab-item} python
+<span class="sb">````{tab-item} python</span>
 
-```{code-block} python
+<span class="sb">```{code-block} python</span>
 
-def main():
-   return
-```
+<span class="sb">def main():</span>
+<span class="sb">    return</span>
+<span class="sb">```</span>
 ````
 
 ````{tab-item} java
@@ -1184,19 +1413,19 @@ def main():
 ```{code-block} java
 
 class Main {
-   public static void main(String[] args) {
-   }
+    public static void main(String[] args) {
+    }
 }
-```
-````
+<span class="sb">```</span>
+<span class="sb">````</span>
 
-````{tab-item} julia
+<span class="sb">````{tab-item} julia</span>
 
-```{code-block} julia
+<span class="sb">```{code-block} julia</span>
 
-function main()
-end
-```
+<span class="sb">function main()</span>
+<span class="sb">end</span>
+<span class="sb">```</span>
 ````
 
 ````{tab-item} fortran
@@ -1210,13 +1439,15 @@ END PROGRAM main
 `````
 </pre></div>
 </div>
-<blockquote>
-<div><div class="sd-tab-set docutils">
+</div>
+<div class="sd-col sd-d-flex-column sd-col-12 sd-col-xs-12 sd-col-sm-12 sd-col-md-12 sd-col-lg-12 sd-example-item p-3 sd-example-result sd-rounded-bottom docutils">
+<div class="result-content docutils">
+<div class="sd-tab-set docutils">
 <input checked="checked" id="sd-tab-item-2" name="sd-tab-set-1" type="radio">
 </input><label class="sd-tab-label" for="sd-tab-item-2">
 c++</label><div class="sd-tab-content docutils">
 <div class="highlight-c++ notranslate"><div class="highlight"><pre><span></span><span class="kt">int</span><span class="w"> </span><span class="nf">main</span><span class="p">(</span><span class="k">const</span><span class="w"> </span><span class="kt">int</span><span class="w"> </span><span class="n">argc</span><span class="p">,</span><span class="w"> </span><span class="k">const</span><span class="w"> </span><span class="kt">char</span><span class="w"> </span><span class="o">**</span><span class="n">argv</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
-<span class="w"> </span><span class="k">return</span><span class="w"> </span><span class="mi">0</span><span class="p">;</span>
+<span class="w">  </span><span class="k">return</span><span class="w"> </span><span class="mi">0</span><span class="p">;</span>
 <span class="p">}</span>
 </pre></div>
 </div>
@@ -1225,7 +1456,7 @@ c++</label><div class="sd-tab-content docutils">
 </input><label class="sd-tab-label" for="sd-tab-item-3">
 python</label><div class="sd-tab-content docutils">
 <div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="k">def</span> <span class="nf">main</span><span class="p">():</span>
-   <span class="k">return</span>
+    <span class="k">return</span>
 </pre></div>
 </div>
 </div>
@@ -1233,8 +1464,8 @@ python</label><div class="sd-tab-content docutils">
 </input><label class="sd-tab-label" for="sd-tab-item-4">
 java</label><div class="sd-tab-content docutils">
 <div class="highlight-java notranslate"><div class="highlight"><pre><span></span><span class="kd">class</span> <span class="nc">Main</span><span class="w"> </span><span class="p">{</span>
-<span class="w">   </span><span class="kd">public</span><span class="w"> </span><span class="kd">static</span><span class="w"> </span><span class="kt">void</span><span class="w"> </span><span class="nf">main</span><span class="p">(</span><span class="n">String</span><span class="o">[]</span><span class="w"> </span><span class="n">args</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
-<span class="w">   </span><span class="p">}</span>
+<span class="w">    </span><span class="kd">public</span><span class="w"> </span><span class="kd">static</span><span class="w"> </span><span class="kt">void</span><span class="w"> </span><span class="nf">main</span><span class="p">(</span><span class="n">String</span><span class="o">[]</span><span class="w"> </span><span class="n">args</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
+<span class="w">    </span><span class="p">}</span>
 <span class="p">}</span>
 </pre></div>
 </div>
@@ -1256,8 +1487,10 @@ fortran</label><div class="sd-tab-content docutils">
 </div>
 </div>
 </div>
-</div></blockquote>
-</div></blockquote>
+</div>
+</div>
+</div>
+</div>
 </section>
 </section>
 <section id="key">
@@ -1297,30 +1530,42 @@ I’m a <strong>substitution</strong></p>
 </section>
 <section id="footnotes">
 <h2><span class="section-number">5.3.19. </span>Footnotes<a class="headerlink" href="#footnotes" title="Permalink to this heading">#</a></h2>
-<blockquote>
-<div><div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">This</span> <span class="ow">is</span> <span class="n">a</span> <span class="n">footnote</span><span class="p">[</span><span class="o">^</span><span class="n">mylabel</span><span class="p">]</span><span class="o">.</span>
-<span class="p">[</span><span class="o">^</span><span class="n">mylabel</span><span class="p">]:</span> <span class="n">My</span> <span class="n">footnote</span> <span class="n">text</span><span class="o">.</span>
+<div class="sd-container-fluid sd-sphinx-override sd-mt-0 sd-mb-2 sd-ml-0 sd-mr-0 sd-p-0 sd-example docutils">
+<div class="sd-row sd-g-0 sd-g-xs-0 sd-g-sm-0 sd-g-md-0 sd-g-lg-0 docutils">
+<div class="sd-col sd-d-flex-column sd-col-12 sd-col-xs-12 sd-col-sm-12 sd-col-md-12 sd-col-lg-12 sd-example-item sd-example-source sd-rounded-top docutils">
+<div class="highlight-markdown notranslate"><div class="highlight"><pre><span></span>This is a footnote[^mylabel].
+[<span class="nl">^mylabel</span>]: <span class="na">My footnote text.</span>
 </pre></div>
 </div>
-<blockquote>
-<div><p>This is a footnote<a class="footnote-reference brackets" href="#mylabel" id="id2" role="doc-noteref"><span class="fn-bracket">[</span>1<span class="fn-bracket">]</span></a>.</p>
-</div></blockquote>
-</div></blockquote>
+</div>
+<div class="sd-col sd-d-flex-column sd-col-12 sd-col-xs-12 sd-col-sm-12 sd-col-md-12 sd-col-lg-12 sd-example-item p-3 sd-example-result sd-rounded-bottom docutils">
+<div class="result-content docutils">
+<p>This is a footnote<a class="footnote-reference brackets" href="#mylabel" id="id2" role="doc-noteref"><span class="fn-bracket">[</span>1<span class="fn-bracket">]</span></a>.</p>
+</div>
+</div>
+</div>
+</div>
 </section>
 <section id="custom-div-blocks">
 <h2><span class="section-number">5.3.20. </span>Custom &lt;div&gt; blocks<a class="headerlink" href="#custom-div-blocks" title="Permalink to this heading">#</a></h2>
-<blockquote>
-<div><div class="highlight-default notranslate"><div class="highlight"><pre><span></span>```{div} my-class
-**Some content.**
-```
+<div class="sd-container-fluid sd-sphinx-override sd-mt-0 sd-mb-2 sd-ml-0 sd-mr-0 sd-p-0 sd-example docutils">
+<div class="sd-row sd-g-0 sd-g-xs-0 sd-g-sm-0 sd-g-md-0 sd-g-lg-0 docutils">
+<div class="sd-col sd-d-flex-column sd-col-12 sd-col-xs-12 sd-col-sm-12 sd-col-md-12 sd-col-lg-12 sd-example-item sd-example-source sd-rounded-top docutils">
+<div class="highlight-markdown notranslate"><div class="highlight"><pre><span></span>:::{div} my-class
+<span class="gs">**Some content.**</span>
+:::
 </pre></div>
 </div>
-<blockquote>
-<div><div class="my-class docutils">
+</div>
+<div class="sd-col sd-d-flex-column sd-col-12 sd-col-xs-12 sd-col-sm-12 sd-col-md-12 sd-col-lg-12 sd-example-item p-3 sd-example-result sd-rounded-bottom docutils">
+<div class="result-content docutils">
+<div class="my-class docutils">
 <p><strong>Some content.</strong></p>
 </div>
-</div></blockquote>
-</div></blockquote>
+</div>
+</div>
+</div>
+</div>
 </section>
 <section id="check-for-missing-references">
 <h2><span class="section-number">5.3.21. </span>Check for missing references<a class="headerlink" href="#check-for-missing-references" title="Permalink to this heading">#</a></h2>
@@ -1332,20 +1577,26 @@ I’m a <strong>substitution</strong></p>
 <section id="layout">
 <h2><span class="section-number">5.3.22. </span>Layout<a class="headerlink" href="#layout" title="Permalink to this heading">#</a></h2>
 <p>full-width</p>
-<blockquote>
-<div><div class="highlight-default notranslate"><div class="highlight"><pre><span></span>```{note}
+<div class="sd-container-fluid sd-sphinx-override sd-mt-0 sd-mb-2 sd-ml-0 sd-mr-0 sd-p-0 sd-example docutils">
+<div class="sd-row sd-g-0 sd-g-xs-0 sd-g-sm-0 sd-g-md-0 sd-g-lg-0 docutils">
+<div class="sd-col sd-d-flex-column sd-col-12 sd-col-xs-12 sd-col-sm-12 sd-col-md-12 sd-col-lg-12 sd-example-item sd-example-source sd-rounded-top docutils">
+<div class="highlight-markdown notranslate"><div class="highlight"><pre><span></span>:::{note}
 :class: full-width
 Here&#39;s a note that will take the full width
-```
+:::
 </pre></div>
 </div>
-<blockquote>
-<div><div class="full-width admonition note">
+</div>
+<div class="sd-col sd-d-flex-column sd-col-12 sd-col-xs-12 sd-col-sm-12 sd-col-md-12 sd-col-lg-12 sd-example-item p-3 sd-example-result sd-rounded-bottom docutils">
+<div class="result-content docutils">
+<div class="full-width admonition note">
 <p class="admonition-title">Note</p>
 <p>Here’s a note that will take the full width</p>
 </div>
-</div></blockquote>
-</div></blockquote>
+</div>
+</div>
+</div>
+</div>
 </section>
 <section id="proofs-theorems-and-algorithms">
 <h2><span class="section-number">5.3.23. </span>Proofs, Theorems, and Algorithms<a class="headerlink" href="#proofs-theorems-and-algorithms" title="Permalink to this heading">#</a></h2>
@@ -1362,52 +1613,70 @@ Here&#39;s a note that will take the full width
 <p><a class="reference external" href="https://sphinx-proof.readthedocs.io/en/latest/syntax.html">https://sphinx-proof.readthedocs.io/en/latest/syntax.html</a></p>
 <section id="example">
 <h3>Example<a class="headerlink" href="#example" title="Permalink to this heading">#</a></h3>
-<blockquote>
-<div><div class="highlight-default notranslate"><div class="highlight"><pre><span></span>```{prf:theorem} My theorem
+<div class="sd-container-fluid sd-sphinx-override sd-mt-0 sd-mb-2 sd-ml-0 sd-mr-0 sd-p-0 sd-example docutils">
+<div class="sd-row sd-g-0 sd-g-xs-0 sd-g-sm-0 sd-g-md-0 sd-g-lg-0 docutils">
+<div class="sd-col sd-d-flex-column sd-col-12 sd-col-xs-12 sd-col-sm-12 sd-col-md-12 sd-col-lg-12 sd-example-item sd-example-source sd-rounded-top docutils">
+<div class="highlight-markdown notranslate"><div class="highlight"><pre><span></span>:::{prf:theorem} My theorem
 :nonumber:
 
 This is my theorem.
-```
+:::
 </pre></div>
 </div>
-<blockquote>
-<div><div class="proof theorem admonition" id="theorem-0">
+</div>
+<div class="sd-col sd-d-flex-column sd-col-12 sd-col-xs-12 sd-col-sm-12 sd-col-md-12 sd-col-lg-12 sd-example-item p-3 sd-example-result sd-rounded-bottom docutils">
+<div class="result-content docutils">
+<div class="proof theorem admonition" id="theorem-0">
 <p class="admonition-title"><span>Theorem </span> (My theorem)</p>
 <section class="theorem-content" id="proof-content">
 <p>This is my theorem.</p>
 </section>
-</div></div></blockquote>
-</div></blockquote>
-<blockquote>
-<div><div class="highlight-default notranslate"><div class="highlight"><pre><span></span>```{prf:proof} My proof
+</div></div>
+</div>
+</div>
+</div>
+<div class="sd-container-fluid sd-sphinx-override sd-mt-0 sd-mb-2 sd-ml-0 sd-mr-0 sd-p-0 sd-example docutils">
+<div class="sd-row sd-g-0 sd-g-xs-0 sd-g-sm-0 sd-g-md-0 sd-g-lg-0 docutils">
+<div class="sd-col sd-d-flex-column sd-col-12 sd-col-xs-12 sd-col-sm-12 sd-col-md-12 sd-col-lg-12 sd-example-item sd-example-source sd-rounded-top docutils">
+<div class="highlight-markdown notranslate"><div class="highlight"><pre><span></span>:::{prf:proof} My proof
 
 This is my proof.
-```
+:::
 </pre></div>
 </div>
-<blockquote>
-<div><div class="proof admonition" id="proof">
+</div>
+<div class="sd-col sd-d-flex-column sd-col-12 sd-col-xs-12 sd-col-sm-12 sd-col-md-12 sd-col-lg-12 sd-example-item p-3 sd-example-result sd-rounded-bottom docutils">
+<div class="result-content docutils">
+<div class="proof admonition" id="proof">
 <p>Proof. My proof</p>
 <p>This is my proof.</p>
 </div>
-</div></blockquote>
-</div></blockquote>
-<blockquote>
-<div><div class="highlight-default notranslate"><div class="highlight"><pre><span></span>```{prf:remark} My remark
+</div>
+</div>
+</div>
+</div>
+<div class="sd-container-fluid sd-sphinx-override sd-mt-0 sd-mb-2 sd-ml-0 sd-mr-0 sd-p-0 sd-example docutils">
+<div class="sd-row sd-g-0 sd-g-xs-0 sd-g-sm-0 sd-g-md-0 sd-g-lg-0 docutils">
+<div class="sd-col sd-d-flex-column sd-col-12 sd-col-xs-12 sd-col-sm-12 sd-col-md-12 sd-col-lg-12 sd-example-item sd-example-source sd-rounded-top docutils">
+<div class="highlight-markdown notranslate"><div class="highlight"><pre><span></span>:::{prf:remark} My remark
 :nonumber:
 
 This is my remark.
-```
+:::
 </pre></div>
 </div>
-<blockquote>
-<div><div class="proof remark admonition" id="remark-1">
+</div>
+<div class="sd-col sd-d-flex-column sd-col-12 sd-col-xs-12 sd-col-sm-12 sd-col-md-12 sd-col-lg-12 sd-example-item p-3 sd-example-result sd-rounded-bottom docutils">
+<div class="result-content docutils">
+<div class="proof remark admonition" id="remark-1">
 <p class="admonition-title"><span>Remark </span> (My remark)</p>
 <section class="remark-content" id="proof-content">
 <p>This is my remark.</p>
 </section>
-</div></div></blockquote>
-</div></blockquote>
+</div></div>
+</div>
+</div>
+</div>
 </section>
 </section>
 </section>
@@ -1460,7 +1729,7 @@ To run the link checker, use the following command:</p>
 </section>
 <section id="defining-tex-macros">
 <h2><span class="section-number">5.4.5. </span>Defining TeX macros<a class="headerlink" href="#defining-tex-macros" title="Permalink to this heading">#</a></h2>
-<p>You can add LaTeX macros for the whole book by defining them under the Macros option of the TeX block. For example, the following two macros have been pre-defined in the Sphinx configuration</p>
+<p>You can add LaTeX macros for the whole book by defining them under the Macros option of the TeX block. For example, the following macros have been pre-defined in the Sphinx configuration</p>
 <div class="highlight-yaml notranslate"><div class="highlight"><pre><span></span><span class="nt">sphinx</span><span class="p">:</span>
 <span class="w">  </span><span class="nt">config                    </span><span class="p">:</span><span class="w">             </span><span class="c1"># key-value pairs to directly over-ride the Sphinx configuration</span>
 <span class="w">    </span><span class="nt">mathjax_path            </span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js</span>
@@ -1593,16 +1862,16 @@ To run the link checker, use the following command:</p>
 </li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#quote">5.3.3. Quote</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#end-line">5.3.4. End line</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#this-is-the-end-of-some-text">5.3.5. This is the end of some text.</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#line-comment">5.3.6. Line comment</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#block-break">5.3.7. Block break</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#list">5.3.8. List</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#table">5.3.9. Table</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#admonition">5.3.10. admonition</a><ul class="nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#line-comment">5.3.5. Line comment</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#block-break">5.3.6. Block break</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#list">5.3.7. List</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#table">5.3.8. Table</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#admonition">5.3.9. admonition</a><ul class="nav section-nav flex-column">
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#figure-parameters">Figure parameters</a></li>
 </ul>
 </li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#math">5.3.11. Math</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#math">5.3.10. Math</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#executable-code">5.3.11. Executable code</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#reference-documents">5.3.12. Reference documents</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#toggle">5.3.13. Toggle</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#margin">5.3.14. Margin</a></li>
