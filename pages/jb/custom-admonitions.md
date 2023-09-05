@@ -151,7 +151,7 @@ simple and no-icon class
 
 ```{admonition} Peter Parker
 :class: quote
-simple class
+quote class
 ```
 ::::
 
@@ -246,7 +246,7 @@ extra-credit class (letter case doesn’t matter)
 abstract class (letter case doesn’t matter)
 ```
 
-```{admonition} example
+```{admonition} Example
 example class (letter case doesn’t matter)
 ```
 
