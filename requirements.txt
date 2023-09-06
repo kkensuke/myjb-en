@@ -81,6 +81,7 @@ sphinx-book-theme==1.0.1
 sphinx-comments==0.0.3
 sphinx-copybutton==0.5.2
 sphinx_design==0.3.0
+sphinx-examples==0.0.5
 sphinx_external_toc==0.3.1
 sphinx-jupyterbook-latex==0.5.2
 sphinx-multitoc-numbering==0.1.3
