@@ -1,4 +1,4 @@
-# Useful VScode Extensions
+# VScode Extensions
 > last modified: {sub-ref}`today`
 
 ## [GitHub Copilot](https://marketplace.visualstudio.com/items?itemName=GitHub.copilot)

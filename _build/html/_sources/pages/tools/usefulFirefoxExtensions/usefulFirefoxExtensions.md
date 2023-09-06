@@ -1,4 +1,4 @@
-# Useful Firefox Extensions
+# Firefox Extensions
 > last modified: {sub-ref}`today`
 
 ## Security
