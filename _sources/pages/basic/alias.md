@@ -49,7 +49,6 @@ cdf() { cd "$(osascript -e 'tell app "Finder" to POSIX path of (insertion locati
 
 ### show files
 ```bash
-#alias ls='ls -F'
 alias ls='gls --color --group-directories-first -F'
 alias l='ls'
 alias la='ls -A'
@@ -75,7 +74,7 @@ alias path='echo -e ${PATH//:/\\n}'
 	- `2>/dev/null` hides error messages.
 	- `sort -h` sorts by file size using [pipe](./linux.md#pipeline-and-redirect).
 
-- `pwd` :`sed "s/ /\\\ /g"` puts `\` before every space. `<<<` is a "here string". `${PWD/#$HOME/"~"}` replaces `$HOME` with `~` in the current directory path.
+- `pwd`: `sed "s/ /\\\ /g"` puts `\` before every space. `<<<` is a "here string". `${PWD/#$HOME/"~"}` replaces `$HOME` with `~` in the current directory path.
 
 ```{hint}
 When you specify options, you can use `ls -AhlS` instead of `ls -A -h -l -S`.
@@ -103,7 +102,8 @@ dif(){ diff --color -u $1 $2 }
 alias imgopt='open -a ImageOptim .'
 alias grep='grep --color'
 ```
-```{note}
+```{admonition} Function
+:class: note
 You can make an alias with arguments, which is called a function. Functions are defined as `function_name() { commands }`. For example, `fb` takes two arguments, `$1` and `$2`. `$1` is the first argument and `$2` is the second argument. Use like `fb "*.pdf" 10` to find files with the name `pdf` larger than 10 MB.
 
 In addition to `$1` and `$2`, there are other special variables: `$0` is the function name. `$@` is all arguments. `$#` is the number of arguments. `$?` is the exit status of the last command. `$$` is the process ID of the current shell. `$!` is the process ID of the last command run in the background.
@@ -164,9 +164,10 @@ zipen(){
 alias show="defaults write com.apple.finder AppleShowAllFiles -bool true && killall Finder"
 alias hide="defaults write com.apple.finder AppleShowAllFiles -bool false && killall Finder"
 ```
-```{note}
+
+:::{tip}
 You can also use `Command + Shift + .` to show/hide hidden files in Finder.
-```
+:::
 
 ### Hide/show all desktop icons
 ```bash

@@ -9,8 +9,27 @@ $\LaTeX$ is a typesetting system that is widely used in academia. It is especial
 
 We are going to see some basic settings and usage for LaTeX in VS Code.
 
-- [$\LaTeX$ settings in VS Code](./settings.md)
-- [LaTeX Basics](./basics.md)
+::::{grid}
+:gutter: 2
+
+:::{grid-item-card}
+:class-item: sd-font-weight-light sd-fs-5 sd-text-center
+:columns: 6
+:link: settings
+:link-type: doc
+
+$\LaTeX$ settings in VS Code
+:::
+
+:::{grid-item-card}
+:class-item: sd-font-weight-light sd-fs-5 sd-text-center
+:columns: 6
+:link: basics
+:link-type: doc
+
+LaTeX Basics
+:::
+::::
 
 ---
 :::{admonition} Preamble
@@ -25,9 +44,44 @@ You also have to care about the conflicts between packages themselves because yo
 
 We are going to see some examples of the preamble for some document classes.
 
-- [article](./article.md)
-- [revtex4-2](./revtex4-2.md)
-- [beamer](./beamer.md)
-- [\newcommands](./newcommands.md)
+::::{grid}
+:gutter: 2
+
+:::{grid-item-card}
+:class-item: sd-font-weight-light sd-fs-5 sd-text-center
+:columns: 6
+:link: article
+:link-type: doc
+
+article
+:::
+
+:::{grid-item-card}
+:class-item: sd-font-weight-light sd-fs-5 sd-text-center
+:columns: 6
+:link: revtex4-2
+:link-type: doc
+
+revtex4-2
+:::
+
+:::{grid-item-card}
+:class-item: sd-font-weight-light sd-fs-5 sd-text-center
+:columns: 6
+:link: beamer
+:link-type: doc
+
+beamer
+:::
+
+:::{grid-item-card}
+:class-item: sd-font-weight-light sd-fs-5 sd-text-center
+:columns: 6
+:link: newcommands
+:link-type: doc
+
+\newcommands
+:::
+::::
 
 You can download all the files related to these sections [here](https://github.com/kkensuke/latex-template/tree/main).
