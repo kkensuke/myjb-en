@@ -49,7 +49,7 @@ We are going to see some examples of the preamble for some document classes.
 
 :::{grid-item-card}
 :class-item: sd-font-weight-light sd-fs-5 sd-text-center
-:columns: 6
+:columns: 3
 :link: article
 :link-type: doc
 
@@ -58,7 +58,7 @@ article
 
 :::{grid-item-card}
 :class-item: sd-font-weight-light sd-fs-5 sd-text-center
-:columns: 6
+:columns: 3
 :link: revtex4-2
 :link-type: doc
 
@@ -67,7 +67,7 @@ revtex4-2
 
 :::{grid-item-card}
 :class-item: sd-font-weight-light sd-fs-5 sd-text-center
-:columns: 6
+:columns: 3
 :link: beamer
 :link-type: doc
 
@@ -76,7 +76,7 @@ beamer
 
 :::{grid-item-card}
 :class-item: sd-font-weight-light sd-fs-5 sd-text-center
-:columns: 6
+:columns: 3
 :link: newcommands
 :link-type: doc
 
