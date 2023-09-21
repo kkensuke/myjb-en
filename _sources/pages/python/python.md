@@ -11,7 +11,7 @@
 :link: basics
 :link-type: doc
 
-Python and JupyterLab
+Python & JupyterLab
 :::
 
 :::{grid-item-card}
