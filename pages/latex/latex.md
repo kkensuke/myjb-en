@@ -1,5 +1,6 @@
-# $\LaTeX$
-> last modified: {sub-ref}`today`
+# LaTeX
+
+> last update: {sub-ref}`today`
 
 :::{admonition} $\LaTeX$
 :class: important
@@ -27,7 +28,7 @@ $\LaTeX$ settings in VS Code
 :link: basics
 :link-type: doc
 
-LaTeX Basics
+$\LaTeX$ Basics
 :::
 ::::
 

@@ -6,7 +6,7 @@ author: kkensuke
 date: 2022-07-06
 ---
 # GitHub
-> last modified: {sub-ref}`today`
+> last update: {sub-ref}`today`
 
 ```{image} ./img/GitHub-flow.png
 :name: flow

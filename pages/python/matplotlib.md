@@ -12,7 +12,7 @@ kernelspec:
 ---
 
 # Matplotlib
-> last modified: {sub-ref}`today`
+> last update: {sub-ref}`today`
 
 Matplotlib is a comprehensive library for creating static, animated, and interactive visualizations in Python. - [Matplotlib](https://matplotlib.org/)
 

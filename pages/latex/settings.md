@@ -1,5 +1,5 @@
 # Latex settings in VScode
-> last modified: {sub-ref}`today`
+> last update: {sub-ref}`today`
 
 ## Install TexLive on macOS
 

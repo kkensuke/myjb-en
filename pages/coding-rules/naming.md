@@ -1,5 +1,5 @@
 # Naming Conventions
-> last modified: {sub-ref}`today`
+> last update: {sub-ref}`today`
 
 ## Naming Conventions in Python
 
