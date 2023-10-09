@@ -1,5 +1,5 @@
 # Coding rules
-> last modified: {sub-ref}`today`
+> last update: {sub-ref}`today`
 
 Coding rules are guidelines that help developers write clean, readable, and maintainable code. They can be enforced manually or through the use of automated tools.
 
