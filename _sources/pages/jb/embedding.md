@@ -7,11 +7,11 @@ Embed Images, Videos, HTML, PDF
 ## Embed Images
 
 - Simple way to embed images in Juptyer Book is to use `![]()` syntax.
-- You can use relative path like `![](../_static/figs/fig1.png)`
-- You can also use absolute path like `![](https://.../fig1.png)`
+- You can use relative path like `![](figs/fig1.png)`
+- You can also use URL like `![](https://.../fig1.png)`
 
 ````{example}
-```{figure} test.png
+```{figure} sample/test.png
 ---
 width: 300px
 name: fig1
@@ -25,11 +25,11 @@ Title
 ```{example}
 <div style="position: relative; margin: 0 auto; width: 90%; padding-bottom: 121%;">
 <iframe style="position: absolute; width: 100%; height: 100%;"
-src="test.pdf">
+src="sample/test.pdf">
 </iframe>
     <p>
         Your browser does not support PDF files.
-        <a href="test.pdf">Download the file instead</a>
+        <a href="sample/test.pdf">Download the file instead</a>
     </p>
 </div>
 ```

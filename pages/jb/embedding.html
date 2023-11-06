@@ -484,13 +484,13 @@ document.write(`
 <h2><span class="section-number">5.6.1. </span>Embed Images<a class="headerlink" href="#embed-images" title="Permalink to this heading">#</a></h2>
 <ul class="simple">
 <li><p>Simple way to embed images in Juptyer Book is to use <code class="docutils literal notranslate"><span class="pre">![]()</span></code> syntax.</p></li>
-<li><p>You can use relative path like <code class="docutils literal notranslate"><span class="pre">![](../_static/figs/fig1.png)</span></code></p></li>
-<li><p>You can also use absolute path like <code class="docutils literal notranslate"><span class="pre">![](https://.../fig1.png)</span></code></p></li>
+<li><p>You can use relative path like <code class="docutils literal notranslate"><span class="pre">![](figs/fig1.png)</span></code></p></li>
+<li><p>You can also use URL like <code class="docutils literal notranslate"><span class="pre">![](https://.../fig1.png)</span></code></p></li>
 </ul>
 <div class="sd-container-fluid sd-sphinx-override sd-mt-0 sd-mb-2 sd-ml-0 sd-mr-0 sd-p-0 sd-example docutils">
 <div class="sd-row sd-g-0 sd-g-xs-0 sd-g-sm-0 sd-g-md-0 sd-g-lg-0 docutils">
 <div class="sd-col sd-d-flex-column sd-col-12 sd-col-xs-12 sd-col-sm-12 sd-col-md-12 sd-col-lg-12 sd-example-item sd-example-source sd-rounded-top docutils">
-<div class="highlight-markdown notranslate"><div class="highlight"><pre><span></span><span class="gu">```{figure} test.png</span>
+<div class="highlight-markdown notranslate"><div class="highlight"><pre><span></span><span class="gu">```{figure} sample/test.png</span>
 <span class="gu">---</span>
 width: 300px
 <span class="gu">name: fig1</span>
@@ -503,7 +503,7 @@ Title
 <div class="sd-col sd-d-flex-column sd-col-12 sd-col-xs-12 sd-col-sm-12 sd-col-md-12 sd-col-lg-12 sd-example-item p-3 sd-example-result sd-rounded-bottom docutils">
 <div class="result-content docutils">
 <figure class="align-default" id="fig1">
-<a class="reference internal image-reference" href="pages/jb/test.png"><img alt="pages/jb/test.png" src="pages/jb/test.png" style="width: 300px;" /></a>
+<a class="reference internal image-reference" href="../../_images/test.png"><img alt="../../_images/test.png" src="../../_images/test.png" style="width: 300px;" /></a>
 <figcaption>
 <p><span class="caption-number">Fig. 5.2 </span><span class="caption-text">Title</span><a class="headerlink" href="#fig1" title="Permalink to this image">#</a></p>
 </figcaption>
@@ -520,11 +520,11 @@ Title
 <div class="sd-col sd-d-flex-column sd-col-12 sd-col-xs-12 sd-col-sm-12 sd-col-md-12 sd-col-lg-12 sd-example-item sd-example-source sd-rounded-top docutils">
 <div class="highlight-markdown notranslate"><div class="highlight"><pre><span></span>&lt;div style=&quot;position: relative; margin: 0 auto; width: 90%; padding-bottom: 121%;&quot;&gt;
 &lt;iframe style=&quot;position: absolute; width: 100%; height: 100%;&quot;
-src=&quot;test.pdf&quot;&gt;
+src=&quot;sample/test.pdf&quot;&gt;
 &lt;/iframe&gt;
     &lt;p&gt;
         Your browser does not support PDF files.
-        &lt;a href=&quot;test.pdf&quot;&gt;Download the file instead&lt;/a&gt;
+        &lt;a href=&quot;sample/test.pdf&quot;&gt;Download the file instead&lt;/a&gt;
     &lt;/p&gt;
 &lt;/div&gt;
 </pre></div>
@@ -534,11 +534,11 @@ src=&quot;test.pdf&quot;&gt;
 <div class="result-content docutils">
 <div style="position: relative; margin: 0 auto; width: 90%; padding-bottom: 121%;">
 <iframe style="position: absolute; width: 100%; height: 100%;"
-src="test.pdf">
+src="sample/test.pdf">
 </iframe>
     <p>
         Your browser does not support PDF files.
-        <a href="test.pdf">Download the file instead</a>
+        <a href="sample/test.pdf">Download the file instead</a>
     </p>
 </div>
 </div>
