@@ -13,6 +13,8 @@ kernelspec:
 
 # [SymPY](https://www.tutorialspoint.com/sympy/index.htm)
 > last update: {sub-ref}`today`
+<div style="width: 790px;"></div>
+
 
 > SymPy is a Python library for symbolic mathematics. - sympy doc
 

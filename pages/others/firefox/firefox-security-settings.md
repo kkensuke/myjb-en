@@ -1,5 +1,7 @@
 # Firefox Security Settings
 > last update: {sub-ref}`today`
+<div style="width: 790px;"></div>
+
 
 ## Security Add-ons
 - [AdBlocker Ultimate](https://addons.mozilla.org/en-US/firefox/addon/adblocker-ultimate/)

@@ -1,5 +1,7 @@
 # Web Apps
 > last update: {sub-ref}`today`
+<div style="width: 790px;"></div>
+
 
 ## [10 minutes mail](https://10minemail.com/en/)
 You can get a temporary email address for 10 minutes. You can use it to sign up for a service not worth using your real email address. You can extend the time. There are many similar services.

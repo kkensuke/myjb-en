@@ -1,5 +1,8 @@
-# Alias
+Alias
+===
 > last update: {sub-ref}`today`
+<div style="width: 790px;"></div>
+
 
 If you are using command line, there must be commands you use frequently.
 Some commands are long and you might think that copying them every time is a waste of time. In such case, you can use `alias` for a command. If you want to use `h` as an alias for `cd ~`, you define `alias h='cd ~'` in `~/.zshrc` (or `~/.bashrc`). If you can't find such files in your home directory, you need to make it with `touch ~/.zshrc`.

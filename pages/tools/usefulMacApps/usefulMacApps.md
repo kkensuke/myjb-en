@@ -1,5 +1,7 @@
 # Mac Apps
 > last update: {sub-ref}`today`
+<div style="width: 790px;"></div>
+
 
 Recommended Apps here are basically free.
 

@@ -1,5 +1,7 @@
 # Zsh
 > last update: {sub-ref}`today`
+<div style="width: 790px;"></div>
+
 
 ```{admonition} Zsh
 Z shell (Zsh) is one of the Unix command shells. It can be used as an interactive login command shell and as a powerful shell script command interpreter. Zsh can also be viewed as an extended version of Bourne Shell with many improvements. Not only that, but some useful features of bash, ksh, and tcsh are also incorporated. [- wikipedia](https://en.wikipedia.org/wiki/Z_Shell)

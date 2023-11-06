@@ -1,5 +1,7 @@
 # Coding rules
 > last update: {sub-ref}`today`
+<div style="width: 790px;"></div>
+
 
 Coding rules are guidelines that help developers write clean, readable, and maintainable code. They can be enforced manually or through the use of automated tools.
 

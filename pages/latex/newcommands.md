@@ -1,5 +1,7 @@
 # newcommands
 > last update: {sub-ref}`today`
+<div style="width: 790px;"></div>
+
 
 The following is a list of my favorite `\newcommands`. You can use them regardless of the document class (maybe?). Add them to your preamble if you find them useful.
 

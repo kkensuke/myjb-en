@@ -13,6 +13,8 @@ kernelspec:
 
 # Numpy
 > last update: {sub-ref}`today`
+<div style="width: 790px;"></div>
+
 
 Numpy is a Python library for scientific computing. It provides high-performance multidimensional arrays and matrices, and efficient tools for working with these objects.
 

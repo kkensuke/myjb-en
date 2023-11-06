@@ -1,5 +1,7 @@
 # Latex settings in VScode
 > last update: {sub-ref}`today`
+<div style="width: 790px;"></div>
+
 
 ## Install TexLive on macOS
 

@@ -24,6 +24,8 @@ myst:
 ---
 #  MyST
 > last update: {sub-ref}`today`
+<div style="width: 790px;"></div>
+
 
 % This file provide you the MyST syntax.
 
