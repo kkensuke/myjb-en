@@ -31,7 +31,7 @@ Title
 When you embed PDF, you need to make a PDF symlink in the corresponding folder in `_build/html`.
 
 ```{example}
-<div style="position: relative; margin: 0 auto; width: 100%; padding-bottom: 140%;">
+<div style="position: relative; margin: 0 auto; width: 90%; padding-bottom: 111%;">
 <iframe style="position: absolute; width: 100%; height: 100%;" src="sample/test.pdf"></iframe>
     <p>
         Your browser does not support PDF files.
