@@ -22,7 +22,7 @@ Title
 
 ## Embed HTML and PDF
 
-```html
+```{example}
 <div style="position: relative; margin: 0 auto; width: 90%; padding-bottom: 121%;">
 <iframe style="position: absolute; width: 100%; height: 100%;" src="sample/test.pdf">
 </iframe>
@@ -32,15 +32,6 @@ Title
     </p>
 </div>
 ```
-
-<div style="position: relative; margin: 0 auto; width: 90%; padding-bottom: 121%;">
-<iframe style="position: absolute; width: 100%; height: 100%;" src="sample/test.pdf">
-</iframe>
-    <p>
-        Your browser does not support PDF files.
-        <a href="sample/test.pdf">Download the file instead</a>
-    </p>
-</div>
 
 ## Embed Videos
 
