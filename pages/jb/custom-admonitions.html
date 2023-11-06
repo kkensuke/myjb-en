@@ -9,7 +9,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.18.1: http://docutils.sourceforge.net/" />
 
-    <title>5.6. Custom Admonitions &#8212; My note</title>
+    <title>5.7. Custom Admonitions &#8212; My note</title>
   
   
   
@@ -112,7 +112,7 @@ const thebe_selector_output = ".output, .cell_output"
     <link rel="index" title="Index" href="../../genindex.html" />
     <link rel="search" title="Search" href="../../search.html" />
     <link rel="next" title="6. Tools" href="../tools/tools.html" />
-    <link rel="prev" title="5.2. MyST" href="myst.html" />
+    <link rel="prev" title="5.6. Embed Images, Videos, HTML, PDF" href="embedding.html" />
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
   <meta name="docsearch:language" content="en"/>
   </head>
@@ -235,7 +235,8 @@ const thebe_selector_output = ".output, .cell_output"
 
 
 
-<li class="toctree-l2 current active"><a class="current reference internal" href="#">5.6. Custom Admonitions</a></li>
+<li class="toctree-l2"><a class="reference internal" href="embedding.html">5.6. Embed Images, Videos, HTML, PDF</a></li>
+<li class="toctree-l2 current active"><a class="current reference internal" href="#">5.7. Custom Admonitions</a></li>
 </ul>
 </li>
 <li class="toctree-l1 has-children"><a class="reference internal" href="../tools/tools.html">6. Tools</a><input class="toctree-checkbox" id="toctree-checkbox-6" name="toctree-checkbox-6" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-6"><i class="fa-solid fa-chevron-down"></i></label><ul>
@@ -459,12 +460,12 @@ document.write(`
             </div>
             <nav aria-label="Page">
                 <ul class="visible nav section-nav flex-column">
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#myadmonitions-css">5.6.1. <code class="docutils literal notranslate"><span class="pre">myadmonitions.css</span></code></a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#change-icons-for-pre-defined-admonitions">5.6.2. Change icons for pre-defined admonitions</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#no-icon-class">5.6.3. No icon class</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#new-admonitions-1">5.6.4. New admonitions 1</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#new-admonitions-2">5.6.5. New admonitions 2</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#remove-icons-from-sphinx-proof">5.6.6. Remove icons from <code class="docutils literal notranslate"><span class="pre">sphinx-proof</span></code></a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#myadmonitions-css">5.7.1. <code class="docutils literal notranslate"><span class="pre">myadmonitions.css</span></code></a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#change-icons-for-pre-defined-admonitions">5.7.2. Change icons for pre-defined admonitions</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#no-icon-class">5.7.3. No icon class</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#new-admonitions-1">5.7.4. New admonitions 1</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#new-admonitions-2">5.7.5. New admonitions 2</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#remove-icons-from-sphinx-proof">5.7.6. Remove icons from <code class="docutils literal notranslate"><span class="pre">sphinx-proof</span></code></a></li>
 </ul>
             </nav>
         </div>
@@ -477,16 +478,17 @@ document.write(`
                 <article class="bd-article" role="main">
                   
   <section class="tex2jax_ignore mathjax_ignore" id="custom-admonitions">
-<h1><span class="section-number">5.6. </span>Custom Admonitions<a class="headerlink" href="#custom-admonitions" title="Permalink to this heading">#</a></h1>
+<h1><span class="section-number">5.7. </span>Custom Admonitions<a class="headerlink" href="#custom-admonitions" title="Permalink to this heading">#</a></h1>
 <blockquote>
-<div><p>last update: Oct 10, 2023</p>
+<div><p>last update: Nov 07, 2023</p>
 </div></blockquote>
+<div style="width: 790px;"></div>
 <section id="myadmonitions-css">
-<h2><span class="section-number">5.6.1. </span><code class="docutils literal notranslate"><span class="pre">myadmonitions.css</span></code><a class="headerlink" href="#myadmonitions-css" title="Permalink to this heading">#</a></h2>
+<h2><span class="section-number">5.7.1. </span><code class="docutils literal notranslate"><span class="pre">myadmonitions.css</span></code><a class="headerlink" href="#myadmonitions-css" title="Permalink to this heading">#</a></h2>
 <p>First, Make <code class="docutils literal notranslate"><span class="pre">_static/myadmonitions.css</span></code> in your book.</p>
 </section>
 <section id="change-icons-for-pre-defined-admonitions">
-<h2><span class="section-number">5.6.2. </span>Change icons for pre-defined admonitions<a class="headerlink" href="#change-icons-for-pre-defined-admonitions" title="Permalink to this heading">#</a></h2>
+<h2><span class="section-number">5.7.2. </span>Change icons for pre-defined admonitions<a class="headerlink" href="#change-icons-for-pre-defined-admonitions" title="Permalink to this heading">#</a></h2>
 <p>You can choose icons for admonitions from <a class="reference external" href="https://fontawesome.com/search?o=r&amp;m=free&amp;f=brands%2Cclassic%2Csharp">Fontawsome</a></p>
 <div class="highlight-css notranslate"><div class="highlight"><pre><span></span><span class="c">/* change icon for note */</span>
 <span class="nt">div</span><span class="p">.</span><span class="nc">note</span><span class="w"> </span><span class="p">.</span><span class="nc">admonition-title</span><span class="p">:</span><span class="nd">after</span><span class="w"> </span><span class="p">{</span>
@@ -539,7 +541,7 @@ important
 </div>
 </section>
 <section id="no-icon-class">
-<h2><span class="section-number">5.6.3. </span>No icon class<a class="headerlink" href="#no-icon-class" title="Permalink to this heading">#</a></h2>
+<h2><span class="section-number">5.7.3. </span>No icon class<a class="headerlink" href="#no-icon-class" title="Permalink to this heading">#</a></h2>
 <div class="highlight-css notranslate"><div class="highlight"><pre><span></span><span class="c">/** No icon for admonitions with no-icon class */</span>
 <span class="nt">div</span><span class="p">.</span><span class="nc">admonition</span><span class="p">.</span><span class="nc">no-icon</span><span class="w"> </span><span class="o">&gt;</span><span class="w"> </span><span class="p">.</span><span class="nc">admonition-title</span><span class="p">::</span><span class="nd">after</span><span class="w"> </span><span class="p">{</span>
 <span class="w">    </span><span class="k">content</span><span class="p">:</span><span class="w"> </span><span class="kc">none</span><span class="w"> </span><span class="cp">!important</span><span class="p">;</span>
@@ -587,7 +589,7 @@ admonition without icon
 </div>
 </section>
 <section id="new-admonitions-1">
-<h2><span class="section-number">5.6.4. </span>New admonitions 1<a class="headerlink" href="#new-admonitions-1" title="Permalink to this heading">#</a></h2>
+<h2><span class="section-number">5.7.4. </span>New admonitions 1<a class="headerlink" href="#new-admonitions-1" title="Permalink to this heading">#</a></h2>
 <div class="highlight-css notranslate"><div class="highlight"><pre><span></span><span class="c">/* simple class for admonitions */</span>
 <span class="nt">div</span><span class="p">.</span><span class="nc">simple</span><span class="w"> </span><span class="p">{</span>
 <span class="w">    </span><span class="k">border-left-color</span><span class="p">:</span><span class="w"> </span><span class="nb">rgba</span><span class="p">(</span><span class="nf">var</span><span class="p">(</span><span class="nv">--pst-color-success</span><span class="p">),</span><span class="w"> </span><span class="mf">.1</span><span class="p">);</span>
@@ -673,7 +675,7 @@ Remember, with great power comes great responsibility.
 </div>
 </section>
 <section id="new-admonitions-2">
-<h2><span class="section-number">5.6.5. </span>New admonitions 2<a class="headerlink" href="#new-admonitions-2" title="Permalink to this heading">#</a></h2>
+<h2><span class="section-number">5.7.5. </span>New admonitions 2<a class="headerlink" href="#new-admonitions-2" title="Permalink to this heading">#</a></h2>
 <div class="highlight-css notranslate"><div class="highlight"><pre><span></span><span class="c">/* extra-credit class as title for admonitions */</span>
 <span class="nt">div</span><span class="p">.</span><span class="nc">admonition-extra-credit</span><span class="w"> </span><span class="p">{</span>
 <span class="w">    </span><span class="k">border-left-color</span><span class="p">:</span><span class="w"> </span><span class="nb">rgba</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span><span class="w"> </span><span class="mi">146</span><span class="p">,</span><span class="w"> </span><span class="mi">16</span><span class="p">,</span><span class="w"> </span><span class="mi">1</span><span class="p">);</span>
@@ -793,7 +795,7 @@ question class (letter case doesn’t matter)
 </div>
 </section>
 <section id="remove-icons-from-sphinx-proof">
-<h2><span class="section-number">5.6.6. </span>Remove icons from <code class="docutils literal notranslate"><span class="pre">sphinx-proof</span></code><a class="headerlink" href="#remove-icons-from-sphinx-proof" title="Permalink to this heading">#</a></h2>
+<h2><span class="section-number">5.7.6. </span>Remove icons from <code class="docutils literal notranslate"><span class="pre">sphinx-proof</span></code><a class="headerlink" href="#remove-icons-from-sphinx-proof" title="Permalink to this heading">#</a></h2>
 <div class="highlight-css notranslate"><div class="highlight"><pre><span></span><span class="c">/* remove icons from spinx-proof */</span>
 <span class="nt">div</span><span class="p">.</span><span class="nc">axiom</span><span class="w"> </span><span class="nt">p</span><span class="p">.</span><span class="nc">admonition-title</span><span class="p">::</span><span class="nd">after</span><span class="w"> </span><span class="p">{</span>
 <span class="w">	</span><span class="k">content</span><span class="p">:</span><span class="w"> </span><span class="kc">none</span><span class="p">;</span>
@@ -963,12 +965,12 @@ asdf
     <div class="footer-article-item"><!-- Previous / next buttons -->
 <div class="prev-next-area">
     <a class="left-prev"
-       href="myst.html"
+       href="embedding.html"
        title="previous page">
       <i class="fa-solid fa-angle-left"></i>
       <div class="prev-next-info">
         <p class="prev-next-subtitle">previous</p>
-        <p class="prev-next-title"><span class="section-number">5.2. </span>MyST</p>
+        <p class="prev-next-title"><span class="section-number">5.6. </span>Embed Images, Videos, HTML, PDF</p>
       </div>
     </a>
     <a class="right-next"
@@ -998,12 +1000,12 @@ asdf
   </div>
   <nav class="bd-toc-nav page-toc">
     <ul class="visible nav section-nav flex-column">
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#myadmonitions-css">5.6.1. <code class="docutils literal notranslate"><span class="pre">myadmonitions.css</span></code></a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#change-icons-for-pre-defined-admonitions">5.6.2. Change icons for pre-defined admonitions</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#no-icon-class">5.6.3. No icon class</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#new-admonitions-1">5.6.4. New admonitions 1</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#new-admonitions-2">5.6.5. New admonitions 2</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#remove-icons-from-sphinx-proof">5.6.6. Remove icons from <code class="docutils literal notranslate"><span class="pre">sphinx-proof</span></code></a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#myadmonitions-css">5.7.1. <code class="docutils literal notranslate"><span class="pre">myadmonitions.css</span></code></a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#change-icons-for-pre-defined-admonitions">5.7.2. Change icons for pre-defined admonitions</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#no-icon-class">5.7.3. No icon class</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#new-admonitions-1">5.7.4. New admonitions 1</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#new-admonitions-2">5.7.5. New admonitions 2</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#remove-icons-from-sphinx-proof">5.7.6. Remove icons from <code class="docutils literal notranslate"><span class="pre">sphinx-proof</span></code></a></li>
 </ul>
   </nav></div>
 

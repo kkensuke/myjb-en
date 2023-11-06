@@ -1,5 +1,7 @@
 # VScode Extensions
 > last update: {sub-ref}`today`
+<div style="width: 790px;"></div>
+
 
 ## [GitHub Copilot](https://marketplace.visualstudio.com/items?itemName=GitHub.copilot)
 GitHub Copilot is an AI pair programmer that helps you write code faster and with less work. It uses machine learning trained on billions of lines of public code to suggest new lines of code as you type.

@@ -1,5 +1,7 @@
 # Naming Conventions
 > last update: {sub-ref}`today`
+<div style="width: 790px;"></div>
+
 
 ## Naming Conventions in Python
 

@@ -1,5 +1,7 @@
 # $PATH
 > last update: {sub-ref}`today`
+<div style="width: 790px;"></div>
+
 
 A path usually indicates a string to identify a location of a file/directory in a directory tree.
 PATH is one of the environmental variables and is a little different from the path explained above.

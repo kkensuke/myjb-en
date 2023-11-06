@@ -13,6 +13,8 @@ kernelspec:
 
 # Python and Jupyterlab
 > last update: {sub-ref}`today`
+<div style="width: 790px;"></div>
+
 
 [Python](https://www.python.org/) is a simple and most popular programming language and used in many fields like AI and machine learning, Data analytics, Data visualization, Web, Game, and so on.
 

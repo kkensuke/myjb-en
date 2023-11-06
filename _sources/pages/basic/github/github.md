@@ -7,6 +7,8 @@ date: 2022-07-06
 ---
 # GitHub
 > last update: {sub-ref}`today`
+<div style="width: 790px;"></div>
+
 
 ```{image} ./img/GitHub-flow.png
 :name: flow
