@@ -23,9 +23,16 @@ Title
 ## Embed HTML and PDF
 
 ```{example}
-<div style="position: relative; margin: 0 auto; width: 90%; padding-bottom: 121%;">
-<iframe style="position: absolute; width: 100%; height: 100%;" src="sample/test.pdf">
-</iframe>
+<div style="position: relative; margin: 0 auto; width: 100%; padding-bottom: 60%;">
+<iframe style="position: absolute; width: 100%; height: 100%;" src="https://en.wikipedia.org/wiki/Main_Page"></iframe>
+</div>
+```
+
+When you embed PDF, you need to make a PDF symlink in the corresponding folder in `_build/html`.
+
+```{example}
+<div style="position: relative; margin: 0 auto; width: 100%; padding-bottom: 140%;">
+<iframe style="position: absolute; width: 100%; height: 100%;" src="sample/test.pdf"></iframe>
     <p>
         Your browser does not support PDF files.
         <a href="sample/test.pdf">Download the file instead</a>
@@ -37,8 +44,6 @@ Title
 
 ```{example}
 <div style="position: relative; width: 100%; height: 0; padding-bottom: 56.25%;">
-<iframe style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;"
-src="https://www.youtube.com/embed/DxL2HoqLbyA">
-</iframe>
+<iframe style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;" src="https://www.youtube.com/embed/DxL2HoqLbyA"></iframe>
 </div>
 ```
