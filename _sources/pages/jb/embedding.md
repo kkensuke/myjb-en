@@ -9,6 +9,7 @@ Embed Images, Videos, HTML, PDF
 - Simple way to embed images in Juptyer Book is to use `![]()` syntax.
 - You can use relative path like `![](figs/fig1.png)`
 - You can also use URL like `![](https://.../fig1.png)`
+- More advanced way is to use `figure` directive as below.
 
 ````{example}
 ```{figure} sample/test.png
