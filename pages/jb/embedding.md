@@ -20,7 +20,7 @@ Title
 ```
 ````
 
-## Embed HTML and PDF
+## Embed HTML
 
 ```{example}
 <div style="position: relative; margin: 0 auto; width: 100%; padding-bottom: 60%;">
@@ -28,7 +28,13 @@ Title
 </div>
 ```
 
+## Embed PDF
+
+::::{margin}
+:::{note}
 When you embed PDF, you need to make a PDF symlink in the corresponding folder in `_build/html`.
+:::
+::::
 
 ```{example}
 <div style="position: relative; margin: 0 auto; width: 90%; padding-bottom: 111%;">
