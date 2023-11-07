@@ -61,7 +61,7 @@ html:
     announcement            : ""    # A banner announcement at the top of the site.
     hypothesis              : true
     utterances              :
-      repo                  : "kkensuke/myjb"
+      repo                  : "kkensuke/myjb-en"
 
 #######################################################################################
 # LaTeX-specific settings
