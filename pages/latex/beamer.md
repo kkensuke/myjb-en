@@ -30,7 +30,6 @@
 \captionsetup[figure]{labelformat=empty}
 % font family
 \usepackage{helvet}
-\renewcommand{\kanjifamilydefault}{\gtdefault} % for japanese
 
 
 % theme

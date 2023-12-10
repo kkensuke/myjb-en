@@ -60,8 +60,6 @@ $ sudo /usr/local/texlive/????/bin/*/tlmgr path add
                     "-l",
                     "-ot",
                     "-interaction=nonstopmode",
-                    // kanji for Japanese
-                    "-kanji=utf8 -synctex=1",
                     "%DOC%"
                 ]
             },
@@ -69,7 +67,6 @@ $ sudo /usr/local/texlive/????/bin/*/tlmgr path add
                 "name": "pbibtex",
                 "command": "pbibtex",
                 "args": [
-                    "-kanji=utf8",
                     "%DOCFILE%"
                 ]
             }
