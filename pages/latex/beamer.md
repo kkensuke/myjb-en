@@ -319,7 +319,7 @@
 
 ## Output
 <div style="position: relative; margin: 0 auto; width: 90%; padding-bottom: 111%;">
-<iframe style="position: absolute; width: 100%; height: 100%;" src="sample/beamer.pdf"></iframe>
+<iframe style="position: absolute; width: 100%; height: 100%;" src="pdf/beamer.pdf"></iframe>
     <p>
         Your browser does not support PDF files.
         <a href="pdf/beamer.pdf">Download the file instead</a>
