@@ -45,8 +45,7 @@
 \lhead{\leftmark}
 \rhead{}
 \cfoot{\thepage} % remove page number at the bottom
-\renewcommand{\chaptermark}[1]{\markboth{Chpater \thechapter.\ #1}{}}
-% \renewcommand{\chaptermark}[1]{\markboth{第\ \normalfont\thechapter\ 章~#1}{}} % leftmark for japanese
+\renewcommand{\chaptermark}[1]{\markboth{Chpater \thechapter.\ #1}{}} % leftmark
 % \renewcommand{\sectionmark}[1]{\markright{\thesection #1}{}} % rightmark
 
 
