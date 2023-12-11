@@ -42,7 +42,6 @@
 \linenumbers % comment out to hide line number
 % make header
 \usepackage{fancyhdr}
-\pagestyle{fancy}
 \lhead{\leftmark}
 \rhead{}
 \cfoot{\thepage} % remove page number at the bottom
@@ -99,20 +98,17 @@
 
 \begin{document}
 
-
 \newpage
 \input{chapters/0-title.tex}
 \newpage
 \input{chapters/0-abstract.tex}
-
 \newpage
 \tableofcontents
-
 \newpage
 \input{chapters/0-symbols.tex}
 \newpage
+\pagestyle{fancy}
 \input{chapters/0-intro.tex}
-
 \newpage
 \input{chapters/1-asdf.tex}
 

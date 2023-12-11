@@ -528,7 +528,6 @@ document.write(`
 <span class="k">\linenumbers</span> <span class="c">% comment out to hide line number</span>
 <span class="c">% make header</span>
 <span class="k">\usepackage</span><span class="nb">{</span>fancyhdr<span class="nb">}</span>
-<span class="k">\pagestyle</span><span class="nb">{</span>fancy<span class="nb">}</span>
 <span class="k">\lhead</span><span class="nb">{</span><span class="k">\leftmark</span><span class="nb">}</span>
 <span class="k">\rhead</span><span class="nb">{}</span>
 <span class="k">\cfoot</span><span class="nb">{</span><span class="k">\thepage</span><span class="nb">}</span> <span class="c">% remove page number at the bottom</span>
@@ -585,20 +584,17 @@ document.write(`
 
 <span class="k">\begin</span><span class="nb">{</span>document<span class="nb">}</span>
 
-
 <span class="k">\newpage</span>
 <span class="k">\input</span><span class="nb">{</span>chapters/0-title.tex<span class="nb">}</span>
 <span class="k">\newpage</span>
 <span class="k">\input</span><span class="nb">{</span>chapters/0-abstract.tex<span class="nb">}</span>
-
 <span class="k">\newpage</span>
 <span class="k">\tableofcontents</span>
-
 <span class="k">\newpage</span>
 <span class="k">\input</span><span class="nb">{</span>chapters/0-symbols.tex<span class="nb">}</span>
 <span class="k">\newpage</span>
+<span class="k">\pagestyle</span><span class="nb">{</span>fancy<span class="nb">}</span>
 <span class="k">\input</span><span class="nb">{</span>chapters/0-intro.tex<span class="nb">}</span>
-
 <span class="k">\newpage</span>
 <span class="k">\input</span><span class="nb">{</span>chapters/1-asdf.tex<span class="nb">}</span>
 
