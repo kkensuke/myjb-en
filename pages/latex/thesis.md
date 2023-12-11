@@ -104,7 +104,6 @@
 \input{chapters/0-abstract.tex}
 \newpage
 \tableofcontents
-
 \newpage
 \input{chapters/0-symbols.tex}
 \newpage
