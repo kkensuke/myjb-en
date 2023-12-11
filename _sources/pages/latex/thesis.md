@@ -198,7 +198,7 @@
 ### `chapters/0-intro.tex`
 ```latex
 \chapter{Introduction}
-\lipsum[1]
+\lipsum[1-6]
 ```
 
 ### `chapters/1-asdf.tex`
