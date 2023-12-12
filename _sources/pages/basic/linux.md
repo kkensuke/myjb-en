@@ -366,14 +366,14 @@ history | head
 
 **redirect**
 
-``>`` stdout to file
+`>` stdout to file
 
 ```bash
 history > hist.txt
 cat hist.txt | head
 ```
 
- `>>`  add contents
+`>>`  add contents
 
 ```bash
 echo asdf > test.txt
@@ -418,9 +418,8 @@ To remove stderr, add `2>/dev/null` to the end of the command.
 **command using the other stdout** `$()`
 
 ```bash
-date +%Y%D
-touch file_`date +%Y%D`
-# touch file_$(date +%Y%D)
+date +%Y%m%d
+touch file_$(date +%Y%m%d)
 
 # nested command
 dirname $(which cat)
@@ -430,8 +429,10 @@ ls $(dirname $(which cat))
 
 ---
 ### Symbolic links
-`ln -s`: make symbolic links  
-Symbolic links is the file that refers to another file.
+`ln -s`: make a symbolic link.
+
+Symbolic links is the file that refers to another file. By creating symbolic links, you don't have to copy the same file to multiple locations. Also, if you change the contents of the file, the changes will be reflected in all locations accessed through the symbolic link. However, if the original file is deleted, the symbolic link will be broken.
+
 ```bash
 ln -s original_file link_file
 ls -l
@@ -439,7 +440,7 @@ ls -l
 ```
 
 ```{note}
-Aliases are similar to symlinks, but they are valid after you move the original files unlike symlinks. Although it seems aliases are more useful, aliases are not compatible with unix system. You cannot use like `cd alias` but `cd syslink`.
+Aliases are similar to symlinks, but they are valid after you move the original files unlike symlinks. Although it seems aliases are more useful, aliases are not compatible with unix system. You cannot use like `cd alias` but `cd symlink`.
 ```
 
 ```{note}
@@ -447,8 +448,6 @@ Aliases are similar to symlinks, but they are valid after you move the original 
 -s, --symbolic    make symbolic links instead of hard links\
 -f, --force       make links even if the file exists
 ```
-
-
 
 ## Reference
 

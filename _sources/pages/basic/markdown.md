@@ -21,158 +21,100 @@ In the following, you see how to write Markdown and how it looks like.
 
 
 ## list
->```md
->- list item 1
->- list item 2
->- list item 3
->    - list item 3-1
->    - list item 3-2
->        - list item 3-2-1
->        * list item 3-2-2
->        + list item 3-2-3
->
->1. list item 1
->2. list item 2
->3. list item 3
->    1. list item 3-1
->    2. list item 3-2
->```
->
->>- list item 1
->>- list item 2
->>- list item 3
->>    - list item 3-1
->>    - list item 3-2
->>        - list item 3-2-1
->>        * list item 3-2-2
->>        + list item 3-2-3
->>
->>
->>1. list item 1
->>2. list item 2
->>3. list item 3
->>    1. list item 3-1
->>    2. list item 3-2
----
+:::{example}
+- list item 1
+- list item 2
+- list item 3
+    - list item 3-1
+    - list item 3-2
+        - list item 3-2-1
+        * list item 3-2-2
+        + list item 3-2-3
+
+1. list item 1
+2. list item 2
+3. list item 3
+    1. list item 3-1
+    2. list item 3-2
+:::
+
 
 ## Color
 You can use HTML in Markdown.
->```md
-><font color="red">Red string</font>
->```
->><font color="red">Red string </font>
----
+:::{example}
+<font color="red">赤い文字</font>
+:::
 
 ## Code
->````md
->```python
->import streamlit as st
->import numpy as np
->import pandas as pd
->```
->````
->>```python
->>import streamlit as st
->>import numpy as np
->>import pandas as pd
->>```
----
+::::{example}
+```python
+import streamlit as st
+import numpy as np
+import pandas as pd
+```
+::::
 
-## Links
->```md
->[Wikipedia](https://en.wikipedia.org/wiki/Viola%E2%80%93Jones_object_detection_framework)
->```
->>リンク
-[Wikipedia](https://en.wikipedia.org/wiki/)
 
----
+## Link
+:::{example}
+[Wikipedia](https://ja.wikipedia.org/wiki/Markdown)
+:::
+
 
 ## Checkbox
->```md
->- [ ] タスク1
->- [x] タスク2
->```
->>- [ ] タスク1
->>- [x] タスク2
----
+:::{example}
+- [ ] task 1
+- [x] task 2
+:::
 
 
 ## raw text, code, bold, italic, strikethrough
->````md
->```
->asdf
->```
->
->`asdf`
->
->*asdf*
->_adsf_
->
->**asdf**
->__adsf__
->
->***asdf***
->___adsf___
->*__adsf__*
->~~asdf~~
->````
->>```
->>asdf
->>```
->>
->>`asdf`
->>
->>*asdf*
->>_adsf_
->>
->>**asdf**
->>__adsf__
->>
->>***asdf***
->>___adsf___
->>*__adsf__*
->>
->>~~asdf~~
----
+::::{example}
+```
+asdf
+```
+
+`asdf`
+
+*asdf*
+_adsf_
+
+**asdf**
+__adsf__
+
+***asdf***
+___adsf___
+*__adsf__*
+~~asdf~~
+::::
+
 
 ## Latex
->```md
->>$\LaTeX$
->$$
->\left( \sum_{k=1}^n a_k b_k \right)^2 \leq
->\left( \sum_{k=1}^n a_k^2 \right) \left( \sum_{k=1}^n b_k^2 >\right)
->$$
->```
->>$\LaTeX$
->>
->>$$
+:::{example}
+$\LaTeX$
+
+$$
 \left( \sum_{k=1}^n a_k b_k \right)^2 \leq
 \left( \sum_{k=1}^n a_k^2 \right) \left( \sum_{k=1}^n b_k^2 \right)
 $$
+:::
+
 
 ## Quote
->```md
->> This is a quote.
->```
->> This is a quote.
----
+:::{example}
+> This is a quote.
+:::
+
 
 ## Table
->```md
->| Header 1 | Header 2 | Header 3 |
->| :-------- | :--------: | --------: |
->| align=left | align=center | align=right |
->| cell 1   | cell 2   | cell 3   |
->| cell 4   | cell 5   | cell 6   |
->| caption |
->```
->>| Header 1 | Header 2 | Header 3 |
->>| :-------- | :--------: | --------: |
->>| align=left | align=center | align=right |
->>| cell 1   | cell 2   | cell 3   |
->>| cell 4   | cell 5   | cell 6   |
->>| caption |
----
+:::{example}
+| Header 1 | Header 2 | Header 3 |
+| :-------- | :--------: | --------: |
+| align=left | align=center | align=right |
+| cell 1   | cell 2   | cell 3   |
+| cell 4   | cell 5   | cell 6   |
+| caption |
+:::
 
 
 ## In-page link

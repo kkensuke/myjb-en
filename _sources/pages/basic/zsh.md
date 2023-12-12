@@ -42,8 +42,8 @@ export ZDOTDIR="$HOME/path/to/zsh"
 ```
 
 ```bash
-# Put the alias of .zshenv in the home directory
-.zshenv -> '/Users/$HOME/path/to/zsh/.zshenv'
+# Put the alias of .zshenv in the home directory which reads .zshenv in zsh/
+~/.zshenv -> '/Users/$HOME/path/to/zsh/.zshenv'
 ```
 
 ## `.zshrc`

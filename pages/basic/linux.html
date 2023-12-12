@@ -38,6 +38,7 @@
     <link rel="stylesheet" type="text/css" href="../../_static/proof.css" />
     <link rel="stylesheet" type="text/css" href="../../_static/styles/sphinx-examples.css" />
     <link rel="stylesheet" type="text/css" href="../../_static/myadmonitions.css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/style.css" />
     <link rel="stylesheet" type="text/css" href="../../_static/design-style.4045f2051d55cab465a707391d5b2007.min.css" />
   
   <!-- Pre-loaded scripts that we'll load fully later -->
@@ -969,9 +970,8 @@ cat<span class="w"> </span>test.txt
 </li>
 </ul>
 <p><strong>command using the other stdout</strong> <code class="docutils literal notranslate"><span class="pre">$()</span></code></p>
-<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>date<span class="w"> </span>+%Y%D
-touch<span class="w"> </span>file_<span class="sb">`</span>date<span class="w"> </span>+%Y%D<span class="sb">`</span>
-<span class="c1"># touch file_$(date +%Y%D)</span>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>date<span class="w"> </span>+%Y%m%d
+touch<span class="w"> </span>file_<span class="k">$(</span>date<span class="w"> </span>+%Y%m%d<span class="k">)</span>
 
 <span class="c1"># nested command</span>
 dirname<span class="w"> </span><span class="k">$(</span>which<span class="w"> </span>cat<span class="k">)</span>
@@ -982,8 +982,8 @@ ls<span class="w"> </span><span class="k">$(</span>dirname<span class="w"> </spa
 <hr class="docutils" />
 <section id="symbolic-links">
 <h3>Symbolic links<a class="headerlink" href="#symbolic-links" title="Permalink to this heading">#</a></h3>
-<p><code class="docutils literal notranslate"><span class="pre">ln</span> <span class="pre">-s</span></code>: make symbolic links<br />
-Symbolic links is the file that refers to another file.</p>
+<p><code class="docutils literal notranslate"><span class="pre">ln</span> <span class="pre">-s</span></code>: make a symbolic link.</p>
+<p>Symbolic links is the file that refers to another file. By creating symbolic links, you don’t have to copy the same file to multiple locations. Also, if you change the contents of the file, the changes will be reflected in all locations accessed through the symbolic link. However, if the original file is deleted, the symbolic link will be broken.</p>
 <div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>ln<span class="w"> </span>-s<span class="w"> </span>original_file<span class="w"> </span>link_file
 ls<span class="w"> </span>-l
 <span class="c1"># lrwxr-xr-x  1 user  group  12 Aug  4 15:18 link_file -&gt; original_file</span>
@@ -991,7 +991,7 @@ ls<span class="w"> </span>-l
 </div>
 <div class="admonition note">
 <p class="admonition-title">Note</p>
-<p>Aliases are similar to symlinks, but they are valid after you move the original files unlike symlinks. Although it seems aliases are more useful, aliases are not compatible with unix system. You cannot use like <code class="docutils literal notranslate"><span class="pre">cd</span> <span class="pre">alias</span></code> but <code class="docutils literal notranslate"><span class="pre">cd</span> <span class="pre">syslink</span></code>.</p>
+<p>Aliases are similar to symlinks, but they are valid after you move the original files unlike symlinks. Although it seems aliases are more useful, aliases are not compatible with unix system. You cannot use like <code class="docutils literal notranslate"><span class="pre">cd</span> <span class="pre">alias</span></code> but <code class="docutils literal notranslate"><span class="pre">cd</span> <span class="pre">symlink</span></code>.</p>
 </div>
 <div class="admonition note">
 <p class="admonition-title">Note</p>
