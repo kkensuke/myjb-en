@@ -4,7 +4,7 @@
 
 
 A path usually indicates a string to identify a location of a file/directory in a directory tree.
-PATH is one of the environmental variables and is a little different from the path explained above.
+On the other hand, `PATH` is one of the environmental variables and is a little different from the path explained above.
 
 When you input a command in the shell, the shell has to find and run the command. PATH specifies the places the shell should search for a command you input.
 
