@@ -43,7 +43,10 @@ CustomShortCut is compatible with CheatSheet. You can redefine shortcut keys eas
 
 ## [coconutBattery](https://www.coconut-flavour.com/coconutbattery/)
 You can check the device battery information of Mac, iPad, and iPhone with `coconutBattery`.
-
+```{image} img/coconutBattery.png
+:width: 300px
+:align: center
+```
 
 ## [draw.io](https://app.diagrams.net/)
 `draw.io` is a free and open source diagram software for making flowchart, network diagrams, and so on. The UI is very simple and easy to use. You can use it from a browser or desktop app. You can put mathematical equations in the diagram with $LaTeX$.
@@ -113,7 +116,7 @@ Notion is a markdown-based note app with many useful features. You can make mark
 
 ## [Shottr](https://shottr.cc/)
 `Shottr` is a free app for taking screenshots. You can take a screenshot of a whole screen: `cmd + shift + 1`, or a selected area: `cmd + shift + 2`,
-an active window: `cmd + shift + 8`, or a whole page by scrolling: `cmd + shift + 9`. Moreover, you can use multi-language OCR to convert the screenshot to text: `cmd + option + ctrl + O` (not zero).
+an active window: `cmd + shift + 8`, or a whole page by scrolling: `cmd + shift + 9`. Moreover, you can use multi-language OCR to convert the screenshot to text: `cmd + option + ctrl + o`.
 `````{tab-set}
 ````{tab-item} blur
 ```{image} img/shottr-blur.png
@@ -168,7 +171,6 @@ an active window: `cmd + shift + 8`, or a whole page by scrolling: `cmd + shift 
 :width: 700px
 :align: center
 ```
-
 
 ## [Unsplash Wallpapers](https://apps.apple.com/us/app/unsplash-wallpapers/id1284863847?mt=12)
 `Unsplash Wallpapers` is a free app for setting beautiful wallpapers. You can set a new wallpaper from a menu bar icon.

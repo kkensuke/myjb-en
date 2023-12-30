@@ -10,9 +10,10 @@ You can get a temporary email address for 10 minutes. You can use it to sign up 
 :align: center
 ```
 
-## [2OCR](https://2ocr.com/)
-You can convert images to text. It can detect multiple languages.
-```{image} img/2ocr.png
+## [PDF24 Tools](https://tools.pdf24.org/en/)
+You can edit PDF files in many ways with this service.
+You can also make searchable PDF files via OCR.
+```{image} img/PDF24.png
 :width: 700px
 :align: center
 ```
