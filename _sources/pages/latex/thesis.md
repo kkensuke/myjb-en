@@ -122,9 +122,9 @@
 \input{chapters/0-symbols.tex}
 \newpage
 \pagestyle{fancy}
-\input{chapters/0-intro.tex}
+\input{chapters/1-intro.tex}
 \newpage
-\input{chapters/1-asdf.tex}
+\input{chapters/2-asdf.tex}
 
 \newpage
 % \bibliographystyle{unsrt}
@@ -171,15 +171,15 @@
 ### `chapters/0-abstract.tex`
 ```latex
 \thispagestyle{plain}
+\null\vspace{\fill}
+
 \begin{center}
-    \null\vspace{\fill}
-    
     \textbf{\Large Abstract}
-    
-    abstract abstract abstract abstract abstract abstract abstract abstract abstract abstract abstract abstract abstract abstract abstract abstract abstract abstract abstract abstract abstract abstract abstract abstract abstract abstract abstract abstract abstract abstract abstract abstract abstract abstract abstract abstract abstract abstract abstract abstract abstract abstract abstract abstract abstract abstract abstract abstract abstract abstract abstract abstract abstract abstract abstract abstract abstract abstract abstract abstract abstract abstract abstract abstract abstract abstract abstract abstract abstract abstract abstract abstract abstract abstract abstract abstract abstract abstract abstract abstract abstract abstract abstract abstract abstract abstract abstract abstract abstract abstract abstract abstract abstract abstract abstract abstract abstract abstract abstract abstract abstract abstract abstract abstract abstract abstract abstract abstract abstract abstract abstract abstract abstract abstract abstract abstract abstract abstract abstract abstract abstract abstract abstract abstract abstract abstract abstract abstract abstract abstract abstract abstract abstract abstract abstract abstract abstract abstract abstract abstract abstract abstract abstract abstract abstract abstract abstract abstract abstract abstract abstract abstract abstract abstract abstract abstract 
-    
-    \vspace{\fill}
 \end{center}
+
+abstract abstract abstract abstract abstract abstract abstract abstract abstract abstract abstract abstract abstract abstract abstract abstract abstract abstract abstract abstract abstract abstract abstract abstract abstract abstract abstract abstract abstract abstract abstract abstract abstract abstract abstract abstract abstract abstract abstract abstract abstract abstract abstract abstract abstract abstract abstract abstract abstract abstract abstract abstract abstract abstract abstract abstract abstract abstract abstract abstract abstract abstract abstract abstract abstract abstract abstract abstract abstract abstract abstract abstract abstract abstract abstract abstract abstract abstract abstract abstract abstract abstract abstract abstract abstract abstract abstract abstract abstract abstract abstract abstract abstract abstract abstract abstract abstract abstract abstract abstract abstract abstract abstract abstract abstract abstract abstract abstract abstract abstract abstract abstract abstract abstract abstract abstract abstract abstract abstract abstract abstract abstract abstract abstract abstract abstract abstract abstract abstract abstract abstract abstract abstract abstract abstract abstract abstract abstract abstract abstract abstract abstract abstract abstract abstract abstract abstract abstract abstract abstract abstract abstract abstract abstract abstract abstract 
+
+\vspace{\fill}
 ```
 
 ### `chapters/0-symbols.tex`
@@ -211,14 +211,14 @@
 \end{tabular}
 ```
 
-### `chapters/0-intro.tex`
+### `chapters/1-intro.tex`
 ```latex
 \chapter{Introduction}
 \lipsum[1-6]
 A reference to a paper\cite{aharonov1998quantum}.
 ```
 
-### `chapters/1-asdf.tex`
+### `chapters/2-asdf.tex`
 ```latex
 \chapter{asdf}
 \lipsum[1]
