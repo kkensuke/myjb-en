@@ -30,6 +30,21 @@
 \usepackage{authblk}
 % url
 \usepackage{url}
+% cite
+\usepackage[
+    backend=biber, 
+    style=phys,
+    sortcites=true,
+    biblabel=brackets,
+    giveninits=true,
+    abbreviate=false,
+    block=space,
+    backref=true, backrefstyle=two,
+]{biblatex}
+% For arXiv paper, use @article instead of @misc 
+% and add "journaltitle = {{arXiv}:0000.00000 [category]},"
+% and remove "doi = {...}"
+\addbibresource{ref.bib}
 % color
 \usepackage{xcolor}
 \hypersetup{
@@ -112,8 +127,9 @@
 \input{chapters/1-asdf.tex}
 
 \newpage
-\bibliographystyle{unsrt}
-\bibliography{ref}
+% \bibliographystyle{unsrt}
+% \bibliography{ref}
+\printbibliography[title=References] % for biblatex
 
 \newpage
 \appendix
@@ -125,30 +141,30 @@
 ### `chapters/0-title.tex`
 ```latex
 \begin{titlepage}
+    \vspace*{1cm}
+
     \begin{center}
-        \vspace*{1cm}
-
         \textbf{\LARGE Title}
-
-        \vspace{0.5cm}
-        % {\LARGE Thesis Subtitle}
-
-        \vspace{1.5cm}
-
-        \textbf{\LARGE Your Name}
-
-        \vfill
-
-        \Large
-        A thesis presented for the degree of ...
-
-        % \includegraphics[width=0.4\textwidth]{university.png}
-
-        Department of Physics, Graduate School of Science,\\
-        The University of ..., Country\\
-        \today
-
     \end{center}
+
+    \vspace{0.5cm}
+    % {\LARGE Thesis Subtitle}
+
+    \vspace{1.5cm}
+
+    \textbf{\LARGE Your Name}
+
+    \vfill
+
+    \Large
+    A thesis presented for the degree of ...
+
+    % \includegraphics[width=0.4\textwidth]{university.png}
+
+    Department of Physics, Graduate School of Science,\\
+    The University of ..., Country\\
+    \today
+
 \end{titlepage}
 ```
 
@@ -199,6 +215,7 @@
 ```latex
 \chapter{Introduction}
 \lipsum[1-6]
+A reference to a paper\cite{aharonov1998quantum}.
 ```
 
 ### `chapters/1-asdf.tex`
@@ -213,6 +230,22 @@
 \lipsum[1]
 ```
 
+## `ref.bib`
+```bibtex
+@article{aharonov1998quantum,
+  title        = {Quantum Circuits with Mixed States},
+  url          = {http://arxiv.org/abs/quant-ph/9806029},
+  journaltitle = {{arXiv}:quant-ph/9806029},
+  publisher    = {{arXiv}},
+  author       = {Aharonov, Dorit and Kitaev, Alexei and Nisan, Noam},
+  urldate      = {2022-09-15},
+  date         = {1998-06-08},
+  langid       = {english},
+  eprinttype   = {arxiv},
+  eprint       = {quant-ph/9806029},
+  keywords     = {Quantum Physics}
+}
+```
 
 
 ## Output
