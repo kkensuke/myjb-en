@@ -149,7 +149,7 @@ alias rl='exec ${SHELL} -l' #reload
 
 
 ### zip encryption
-```
+```bash
 zipen(){
 	zip -er enc.zip "$@"
 }

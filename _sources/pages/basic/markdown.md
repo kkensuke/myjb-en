@@ -42,7 +42,7 @@ In the following, you see how to write Markdown and how it looks like.
 ## Color
 You can use HTML in Markdown.
 :::{example}
-<font color="red">赤い文字</font>
+<font color="red">Red</font>
 :::
 
 ## Code

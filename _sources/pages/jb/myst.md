@@ -492,7 +492,7 @@ This is a footnote[^mylabel].
 
 ## Check for missing references
 You can check for missing references when building a Jupyter Book. To do so, use the following options:
-```shell
+```bash
 jupyter-book build -W -n --keep-going docs/
 ```
 

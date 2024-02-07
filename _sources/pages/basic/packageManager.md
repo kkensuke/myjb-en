@@ -32,7 +32,7 @@ To install it, input next code in the Terminal (you should check the newest code
 ```
 
 you will get next output:
-```zsh
+```bash
 ==> Next steps:
 - Run these two commands in your terminal to add Homebrew to your PATH:
     echo 'eval "$(/opt/homebrew/bin/brew shellenv)"' >> /Users/kensuke/.zprofile
@@ -43,13 +43,13 @@ you will get next output:
 ```
 
 So input next to add Homebrew to your PATH (change Username below):
-```zsh
+```bash
 echo 'eval "$(/opt/homebrew/bin/brew shellenv)"' >> /Users/Username/.zprofile
 eval "$(/opt/homebrew/bin/brew shellenv)"
 ```
 
 Let's check whether you succeeded!
-```zsh
+```bash
 brew --version
 ```
 if you get: `Homebrew x.x.x`, you succeeded.
@@ -60,21 +60,21 @@ To make a virtual environment for python, venv is the easiest tool! Although the
 Let's make a venv.
 Making and deleting a venv are really easy. Let's make a test venv in your home directory.
 
-```zsh
+```bash
 python3 -m venv ~/test
 ```
 then activate the venv:
-```zsh
+```bash
 source test/bin/activate
 ```
 or
-```zsh
+```bash
 . test/bin/activate
 ```
 
 Now your venv is activated. You can see the name of venv on the left side of your user name in the terminal like `(test) Username@MacBook-Pro ~ %`.
 Let's check the version of python:
-```zsh
+```bash
 python -V
 ```
 and you get `Python 3.x.x`.
@@ -82,21 +82,21 @@ and you get `Python 3.x.x`.
 Now you made a new venv and activated it, but actually there is almost nothing in the venv.
 `pip list --format=freeze` shows the packages in your venv and there is no output for now.
 Before installing something, you might have to upgrade `pip`, which is a python package manager(change Username below):
-```zsh
+```bash
 /Users/Username/test/bin/python3 -m pip install --upgrade pip
 ```
 then let's install a package (here numpy)!
-```zsh
+```bash
 pip install numpy
 ```
 and let's check:
-```zsh
+```bash
 pip list --format=freeze
 ```
 and you get `numpy==x.xx.x`.
 
 If you want to use python as a beginner, you should install matplotlib, pandas, and jupyter-lab;
-```zsh
+```bash
 pip install matplotlib
 pip install jupyterlab
 ```
@@ -108,7 +108,7 @@ To deactivate the venv, just input: `deactivate` in the terminal. To activate ag
 
 ````{warning}
 If you want to delete the venv, remove it with:
-```zsh
+```bash
 rm -rf ~/test
 ```
 in the terminal.
@@ -117,7 +117,7 @@ in the terminal.
 ## Let's use jupyter-lab!
 You installed jupyter-lab, so let's try to use it !!
 
-```zsh
+```bash
 jupyter-lab
 ```
 Your default browser will show up and open jupyter-lab.
