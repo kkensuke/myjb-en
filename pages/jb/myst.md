@@ -1,12 +1,11 @@
 ---
 jupytext:
+  formats: md:myst
   text_representation:
     extension: .md
     format_name: myst
-    format_version: 0.13
-    jupytext_version: 1.15.0
 kernelspec:
-  display_name: 'Python 3.8.9 (''venv'': venv)'
+  display_name: Python 3 (ipykernel)
   language: python
   name: python3
 myst:
@@ -230,8 +229,7 @@ equation ref: {eq}`mylabel`
 
 
 ## Executable code
-
-::::md
+::::{code-block} md
 ```{code-cell} ipython3
 note = "Python syntax highlighting"
 print(note)
