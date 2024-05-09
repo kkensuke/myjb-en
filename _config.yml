@@ -6,7 +6,7 @@ title                       : My note  # The title of the book. Will be placed i
 author                      : kkensuke           # The author of the book
 email                       :
 copyright                   : "2023"           # Copyright year to be placed in the footer
-logo                        : mylogo.png         # A path to the book logo
+# logo                        : mylogo.png         # A path to the book logo
 abstract                    : note
 only_build_toc_files        : true
 
